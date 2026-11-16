@@ -30,10 +30,26 @@ Provenance matters in two directions: establishing what a human authored and ide
 ## Reservations and errors
 
 1. **The open-source branch is overbroad.** Footnote 52 (p. 15) admits non-copyleft licenses have been most popular for some time, despite the abstract's claim about "most" open-source licenses being viral. Footnote 7 (p. 3) incorrectly calls MIT "weak copyleft." The MIT text permits use, modification, sublicensing and sale subject to preserving its copyright and permission notice; it does not require publishing the surrounding program's source. Copyleft obligations also depend on the actual license, covered material, kind of combination and triggering acts. Neither public GitHub visibility nor use of an AI tool establishes those facts.
-2. **The adoption statistic is overstated.** The introduction says nearly 90% of coders use AI tools to write software. Its cited 2025 Stack Overflow source actually says 84% of respondents use **or plan to use** AI tools in their development process. Intent is not current use, and use somewhere in development is not proof AI authored a particular program. The same survey reports most respondents were not vibe coding. The paper itself quotes the broader survey wording correctly in footnote 4. This limits the statistic's support for the scale and timing of the forecast; it does not refute the conditional legal analysis.
+2. **The adoption statistic is overstated.** The introduction says nearly 90% of coders use AI tools to write software. Its cited 2025 Stack Overflow source actually says 84% of respondents use **or plan to use** AI tools in their development process. Intent is not current use, and use somewhere in development is not proof AI authored a particular program. The same survey reports most respondents were not vibe coding. The paper itself quotes the broader survey wording correctly in footnote 4. This limits the statistic's support for the scale and timing of the forecast; it does not refute the conditional legal analysis. Even widespread AI-tool adoption would not establish what proportion of a program's expressive content was machine-authored.
 3. **One copied snippet does not automatically erase an entire repository's copyright.** Section 103(a) excludes parts employing material unlawfully, and the legislative notes explicitly preserve unaffected parts. How extensively infringement pervades a derivative work is material. Lemley acknowledges separability on p. 14. Applying his broad conclusion to a specific codebase needs facts and legal analysis.
 4. **Forecasts are not measured findings.** The essay does not supply a new representative audit of current AI-generated code, a measured split between copied and novel output, or evidence that cheap generation guarantees inexpensive reliable maintenance. It acknowledges uncertainty about memorization (fn. 56, p. 16). Draft placeholders include "[cite]" in fn. 33 and unresolved supra references. These do not refute the legal argument, but they lower confidence in categorical empirical claims.
 5. **Jurisdiction matters.** The analysis is mainly U.S.-law-based and acknowledges differing treatment elsewhere (fn. 58, p. 17). This reading is not an assessment of Indonesian law, a worldwide ownership conclusion, or advice about a particular project's license.
+
+
+### Notice requirements are not the same as copyleft
+
+MIT is not obligation-free. Its license requires preserving the copyright and permission notice in copies or substantial portions of the software. But it permits modified and larger works to be distributed under different terms and without source code. That is why it is classified as permissive, not weak copyleft.
+
+Copyleft concerns reciprocal licensing of covered downstream material. "Weak" copyleft limits the scope of that reciprocity; it does not mean merely that a license has a small condition such as retaining a notice. For example, Mozilla describes MPL 2.0 as file-level copyleft. When distributing modified MPL-covered source files, those files stay under MPL; when distributing executable form, the covered source must be made available and recipients told how to obtain it. Separate new files containing no MPL code can remain under different, including proprietary, terms. This does not automatically require opening the entire combined application.
+
+The distinction matters to the paper's argument: copying MIT-licensed code can create a notice obligation without forcing the surrounding application to become open source. Copying copyleft code calls for a different, license-specific analysis of the covered material and the acts that trigger its conditions.
+
+Sources checked 16 November 2026:
+
+- MIT's actual terms: https://opensource.org/license/mit
+- MIT classification and downstream terms: https://choosealicense.com/licenses/mit/
+- MPL scope and examples, especially Q1 and Q8-12: https://www.mozilla.org/en-US/MPL/2.0/FAQ/
+- MPL 2.0, sections 1.10 and 3.1-3.4: https://www.mozilla.org/en-US/MPL/2.0/
 
 ## Practical reading
 
