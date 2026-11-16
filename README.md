@@ -14,4 +14,6 @@ Each note states when its facts were checked, links the official pages it relied
 - [How To Make (almost) Anything 2026](docs/htmaa-2026.md) - lecture and recitation summaries, a Hacker News discussion, and explicit coverage limits.
 - [Zero-cash break-even method](docs/zero-cash-break-even.md) - a reusable way to price small offers when the real input is time, not cash: cash break-even vs economic break-even, with imputed labor, scenario discipline and fee verification.
 
+- [What it would take to create .jakarta](docs/jakarta-tld.md) - the ICANN path for a city TLD, current .jakarta status, costs, government support rules, and the .amsterdam precedent.
+
 Project-specific research that only makes sense inside its own project stays in that project's repository instead.
