@@ -1,0 +1,12 @@
+# kaji
+
+Research notes from building personal software, written up so they are useful beyond the project they started in.
+
+Each note states when its facts were checked, links the official pages it relied on, and separates what is verified from what is still a proposal. Free tiers, platform rules and fees change without notice, so treat the check dates as part of the content.
+
+## Notes
+
+- [Android app updates without the APK hunt](docs/android-app-updates.md) - the signing-key and prompt rules behind every update route, and five routes compared: in-app updater, Obtainium, own F-Droid repo, Google Play tracks, and manual APKs.
+- [Zero-cash break-even method](docs/zero-cash-break-even.md) - a reusable way to price small offers when the real input is time, not cash: cash break-even vs economic break-even, with imputed labor, scenario discipline and fee verification.
+
+Project-specific research that only makes sense inside its own project stays in that project's repository instead.
