@@ -51,6 +51,12 @@ Sources checked 16 November 2026:
 - MPL scope and examples, especially Q1 and Q8-12: https://www.mozilla.org/en-US/MPL/2.0/FAQ/
 - MPL 2.0, sections 1.10 and 3.1-3.4: https://www.mozilla.org/en-US/MPL/2.0/
 
+## GPLv3 text check
+
+The complete GPL version 3 text (29 June 2007), including sections 0-17 and its application guidance, was read on 16 November 2026 from a saved-page PDF after the direct web fetch failed. Sections 5(c) and 6 support the paper's point about reciprocal licensing and Corresponding Source when conveying covered modified works or object code. Those conditions concern covered works and their mode of conveyance, not every program that happens to use an AI tool.
+
+The limits are explicit in the license: section 0 says network interaction without transfer of a copy is not conveying; section 2 permits making, running and propagating covered works that are not conveyed under its stated conditions; and section 5 excludes separate, independent works in a qualifying aggregate from the covered work's licensing scope. Section 2 also says program output is covered only when its content constitutes a covered work. These provisions support keeping the paper's copyleft branch conditional on actual covered material and triggering acts. They do not change MIT into a copyleft license or establish the license status of any particular AI-generated program.
+
 ## Practical reading
 
 Do not infer "AI code is free of legal risk," "all open source forces disclosure," or "all software ownership has disappeared." A more defensible takeaway is: claim only rights actually held; preserve evidence of substantive human expression; check dependencies and third-party licensing; and do not confuse inability to claim copyright with permission to copy someone else's protected material. No existing license or copyright notice should be changed solely because of this essay.
@@ -63,5 +69,6 @@ Do not infer "AI code is free of legal risk," "all open source forces disclosure
 4. U.S. statute and legislative explanation of unlawful material and unaffected contributions: https://uscode.house.gov/us/usc/t17/s103/
 5. Actual MIT license terms: https://opensource.org/license/mit
 6. Actual cited adoption survey: https://survey.stackoverflow.co/2025/ai
+7. GNU GPL version 3, full text read from a saved-page PDF after the direct fetch failed: https://www.gnu.org/licenses/gpl-3.0.html
 
-These primary/official sources were opened, not inferred from search snippets. The GNU GPL page fetch failed; no claim of independently reviewing the complete GPL text is made. This is a reading assessment, not an exhaustive case-law or international-law audit.
+These sources were read, not inferred from search snippets. The GPL direct-fetch limitation was resolved by reading its complete saved-page PDF; no claim is made that the failed web fetch later succeeded. This is a reading assessment, not an exhaustive case-law or international-law audit.
