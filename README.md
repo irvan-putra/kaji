@@ -16,6 +16,7 @@ Each note states when its facts were checked, links the official pages it relied
 
 - [Android app updates without the APK hunt](docs/android-app-updates.md) - the signing-key and prompt rules behind every update route, and five routes compared: in-app updater, Obtainium, own F-Droid repo, Google Play tracks, and manual APKs.
 - [How To Make (almost) Anything 2026](docs/htmaa-2026.md) - lecture and recitation summaries, a Hacker News discussion, and explicit coverage limits.
+- [How Freebuff says its ad-funded coding agent is paid for](docs/freebuff-ad-funded-ai-tools.md) - company claims on ads, usage limits and paid plans; no evidence of actual cost coverage.
 - [Zero-cash break-even method](docs/zero-cash-break-even.md) - a reusable way to price small offers when the real input is time, not cash: cash break-even vs economic break-even, with imputed labor, scenario discipline and fee verification.
 
 - [What it would take to create .jakarta](docs/jakarta-tld.md) - the ICANN path for a city TLD, current .jakarta status, costs, government support rules, and the .amsterdam precedent.
