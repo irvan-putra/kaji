@@ -18,6 +18,7 @@ Each note states when its facts were checked, links the official pages it relied
 
 - [PAN as a model for sharing research tasks](docs/pan-shared-tasks.md) - what Webis's PAN shared-task series and TIRA do (defined tasks, submitted software that can be re-run), and what a small project could borrow.
 
+- [Android home-screen widgets: which views are allowed, and how taps work in lists](docs/android-home-screen-widget-view-and-tap-constraints.md) - Android documentation summary; runtime behavior was not tested.
 - [Android app updates without the APK hunt](docs/android-app-updates.md) - the signing-key and prompt rules behind every update route, and five routes compared: in-app updater, Obtainium, own F-Droid repo, Google Play tracks, and manual APKs.
 - [How To Make (almost) Anything 2026](docs/htmaa-2026.md) - lecture and recitation summaries, a Hacker News discussion, and explicit coverage limits.
 - [How Freebuff says its ad-funded coding agent is paid for](docs/freebuff-ad-funded-ai-tools.md) - company claims on ads, usage limits and paid plans; no evidence of actual cost coverage.
