@@ -8,6 +8,8 @@ Each note states when its facts were checked, links the official pages it relied
 
 - [Local-first software](docs/local-first-software.md) - source ideals and unvalidated design proposals.
 - [Showing an edit conflict as branches](docs/conflict-resolution-ui-idea.md) - an unbuilt, untested UI idea; sync and merge behavior remain open.
+- [Crypto in Indonesia: supervision, seller tax and wallet design](docs/crypto-in-indonesia-regulation-tax-wallet-choice.md) - dated summary of official texts, not financial, legal or tax advice.
+- [WonderOS items and local-first notes](docs/wonderos-items-and-local-first-notes.md) - a project reading; sync behavior was not checked.
 - [Receiving payments from Indonesia](docs/receiving-payments-from-indonesia.md) - general provider information, checked 2026-11-16; not financial or tax advice.
 - [Shizuku as an app-update option](docs/shizuku-app-updates.md) - a supplement to the app-update comparison; setup and fit were not tested.
 - [Changing an Android application ID](docs/android-application-id-change.md) - official-docs reading and migration checks; not tested on a device.
