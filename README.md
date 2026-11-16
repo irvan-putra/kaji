@@ -15,5 +15,6 @@ Each note states when its facts were checked, links the official pages it relied
 - [Zero-cash break-even method](docs/zero-cash-break-even.md) - a reusable way to price small offers when the real input is time, not cash: cash break-even vs economic break-even, with imputed labor, scenario discipline and fee verification.
 
 - [What it would take to create .jakarta](docs/jakarta-tld.md) - the ICANN path for a city TLD, current .jakarta status, costs, government support rules, and the .amsterdam precedent.
+- [Jakarta Smart City feasibility sketch for .jakarta](docs/jakarta-smart-city-feasibility.md) - indicative Rupiah fee conversions and a proposal outline, with BLUD authority, procurement path, demand, and costs left for proper study and review.
 
 Project-specific research that only makes sense inside its own project stays in that project's repository instead.
