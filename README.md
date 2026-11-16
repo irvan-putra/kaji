@@ -6,6 +6,10 @@ Each note states when its facts were checked, links the official pages it relied
 
 ## Notes
 
+- [Local-first software](docs/local-first-software.md) - source ideals and unvalidated design proposals.
+- [Receiving payments from Indonesia](docs/receiving-payments-from-indonesia.md) - general provider information, checked 2026-11-16; not financial or tax advice.
+- [Shizuku as an app-update option](docs/shizuku-app-updates.md) - a supplement to the app-update comparison; setup and fit were not tested.
+- [Changing an Android application ID](docs/android-application-id-change.md) - official-docs reading and migration checks; not tested on a device.
 - [The End of Software Copyright](docs/lemley-software-copyright.md) - a critical reading of Lemley's U.S.-focused argument about AI-generated software, authorship, licensing and the limits of its empirical claims.
 
 - [PAN as a model for sharing research tasks](docs/pan-shared-tasks.md) - what Webis's PAN shared-task series and TIRA do (defined tasks, submitted software that can be re-run), and what a small project could borrow.
