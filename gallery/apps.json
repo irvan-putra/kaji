@@ -125,7 +125,7 @@
    "name": "saku",
    "state": "available",
    "tag": "Synthetic demo only",
-   "about": "Synthetic entries only. Not for real passwords, accounts or keys; no real vault, network, sync or Autofill. Development checkpoint; license selection is pending. The full suite has one documented failure.",
+   "about": "Synthetic entries only. Not for real passwords, accounts or keys; no real vault, network, sync or Autofill. Development checkpoint; license selection is pending. Full suite: 13 tests, one known failure, KdbxSpikeTest.readsPykeepassRoundtrip.",
    "repo": "https://github.com/irvan-putra/saku",
    "version": "0.1.0",
    "icon": "saku.png",
