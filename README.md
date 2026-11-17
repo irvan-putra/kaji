@@ -8,6 +8,8 @@ Each note states when its facts were checked, links the official pages it relied
 
 Three authored page examples are available under [`examples/`](examples/README.md): the [live interactive Indomie engineering spec](https://vanipy.com/kaji/indomie/), an archived Insting workshop landing-page draft, and the conflict-resolution concept. The separate tabular Indomie recipe-box card remains in the examples directory and is not replaced by the interactive page. The Insting example is not an active offer; its signup controls are disabled. Conflict screenshots are concepts using invented items and names.
 
+The [synthetic break-even charts](https://vanipy.com/kaji/economics-synthetic/) are a separate public-safe adaptation of an already-public hypothetical example. They are not the original private-valued comparisons.
+
 This repo also includes illustrations alongside the Android-update, application-ID, zero-cash, and conflict-resolution research notes. They are explicitly labeled as illustrations, not product screenshots or measured evidence.
 
 ## Research index illustration

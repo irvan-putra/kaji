@@ -1,4 +1,4 @@
-name: Deploy Indomie engineering spec at /indomie on GitHub Pages
+name: Deploy Indomie and synthetic Kaji pages to GitHub Pages
 
 on:
   push:
@@ -6,6 +6,9 @@ on:
     paths:
       - '.github/workflows/deploy-indomie-pages.yml'
       - 'examples/indomie/**'
+      - 'examples/economics-synthetic/**'
+      - 'README.md'
+      - 'examples/README.md'
   workflow_dispatch:
 
 permissions:
@@ -34,7 +37,11 @@ jobs:
         run: |
           mkdir -p public/indomie
           cp -R examples/indomie/. public/indomie/
-      - name: Upload only the Indomie engineering spec
+      - name: Stage the synthetic break-even page
+        run: |
+          mkdir -p public/economics-synthetic
+          cp -R examples/economics-synthetic/. public/economics-synthetic/
+      - name: Upload selected public pages
         uses: actions/upload-pages-artifact@v4
         with:
           path: public
