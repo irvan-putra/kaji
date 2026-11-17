@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-17 15:59 WIB",
+ "checked": "2026-11-17 17:00 WIB",
  "apps": [
   {
    "name": "itdapk",
@@ -99,24 +99,39 @@
   },
   {
    "name": "bidik",
-   "state": "source",
-   "tag": "Prototype, no APK",
-   "about": "Captures queued web pages on the phone and sends the captures back to a chosen contact. No APK is published.",
-   "repo": "https://github.com/irvan-putra/bidik"
+   "state": "available",
+   "tag": "Experimental test build",
+   "about": "Prototype; account creation is optional and user-triggered. Live account creation, pairing and send-back are not verified on a real phone. After pairing, launches may attempt sync and send without a per-run prompt.",
+   "repo": "https://github.com/irvan-putra/bidik",
+   "version": "0.1.0",
+   "icon": "bidik.png",
+   "apk": "https://github.com/irvan-putra/bidik/releases/download/v0.1.0/bidik-v0.1.0.apk",
+   "release": "https://github.com/irvan-putra/bidik/releases/tag/v0.1.0",
+   "sha256": "2a1dd3798bf311a5998b7e76d4a411f94191f68d671c85203966889030f0f903"
   },
   {
    "name": "denyut",
-   "state": "source",
-   "tag": "Early work in progress, no APK",
-   "about": "Open-source personal assistant: a Delta Chat bot with an Android wrapper. All behavior lives in plain files. No APK is published.",
-   "repo": "https://github.com/irvan-putra/denyut"
+   "state": "available",
+   "tag": "Experimental test build",
+   "about": "Notes and reminders can work offline without a model. Local-model loading is disabled in this build; no model was loaded and no chat account was provisioned for qualification.",
+   "repo": "https://github.com/irvan-putra/denyut",
+   "version": "0.6.4",
+   "icon": "denyut.png",
+   "apk": "https://github.com/irvan-putra/denyut/releases/download/v0.6.4/denyut-v0.6.4.apk",
+   "release": "https://github.com/irvan-putra/denyut/releases/tag/v0.6.4",
+   "sha256": "9769b48894996a91bc4c74587ab742bafa58bcb99c7f2415bdeeb1b8db889d2d"
   },
   {
    "name": "saku",
-   "state": "source",
-   "tag": "Design draft, no APK",
-   "about": "Local-first Android password manager project. The source has only a synthetic demo screen and design notes; do not use it for real passwords. No APK is published.",
-   "repo": "https://github.com/irvan-putra/saku"
+   "state": "available",
+   "tag": "Synthetic demo only",
+   "about": "Synthetic entries only. Not for real passwords, accounts or keys; no real vault, network, sync or Autofill. Development checkpoint; license selection is pending. The full suite has one documented failure.",
+   "repo": "https://github.com/irvan-putra/saku",
+   "version": "0.1.0",
+   "icon": "saku.png",
+   "apk": "https://github.com/irvan-putra/saku/releases/download/v0.1.0/saku-v0.1.0.apk",
+   "release": "https://github.com/irvan-putra/saku/releases/tag/v0.1.0",
+   "sha256": "dfae984969d5b73eaaaa242ea3b561a95d2ea4324268439b7792b3f72d7c861c"
   }
  ]
 }
