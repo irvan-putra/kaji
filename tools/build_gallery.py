@@ -43,7 +43,7 @@ def apps():
             sha = f'<code>SHA-256 {e(a["sha256"])}</code>' if a.get("sha256") else ""
             out += f'<div class="card"><div class="top">{icon}<div><h3>{e(a["name"])}{ver}</h3><div class="tag">{e(a["tag"])}</div></div></div><p>{e(a["about"])}</p><div>{b}</div>{sha}</div>'
         out += "</div>"
-    lead = f'Every Android app built so far. All APKs are experimental test builds; check the SHA-256 after downloading. Status as of {e(d["checked"])}. Superseded older builds are not linked.'
+    lead = f'Current Android APKs, with versioned downloads and status. Check the SHA-256 after downloading. Status as of {e(d["checked"])}. Superseded older builds are not linked.'
     return page("kaji apps", lead, out, "../")
 def web():
     d = json.loads((root/"gallery/web.json").read_text())
