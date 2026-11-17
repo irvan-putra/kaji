@@ -13,7 +13,7 @@
   <header>
     <p class="eyebrow">tangle edition &middot; drag the blue numbers</p>
     <h1>Indomie Mi Goreng: the customizable recipe box</h1>
-    <p class="lede">A recipe box you can retune. Drag any blue number left or right, or tap a blue flag to flip it, and the whole card rewrites itself: quantities, timing, warnings and the footer verdict.</p>
+    <p class="lede">A recipe box you can retune. Drag any blue number left or right, or tap a blue flag to flip it, and the whole card rewrites itself. Read left to right: the cooking threads run in parallel and merge as steps come together. On phones, swipe the card sideways to follow the threads.</p>
   </header>
 
   <section class="config">
@@ -43,50 +43,61 @@
 
   <section>
     <h2>The card</h2>
-    <table class="card">
+    <div class="recipe-scroll" aria-label="Horizontally scroll the recipe table on narrow screens">
+    <table class="card" aria-label="Indomie Mi Goreng parallel-thread recipe box">
+      <colgroup>
+        <col class="ingredient-column">
+        <col class="action-column">
+        <col class="action-column">
+        <col class="mix-column">
+        <col class="plate-column">
+        <col class="serve-column">
+      </colgroup>
+      <tbody>
       <tr class="card-title">
-        <td colspan="3">Indomie Mi Goreng <span class="TKIf" data-var="anySide">with </span><span class="TKIf" data-var="withEgg">telur</span><span class="TKIf" data-var="both"> &amp; </span><span class="TKIf" data-var="withSosis">sosis</span> (<span data-var="packs" data-format="%d"></span> <span class="TKSingularPlural" data-var="packs"><span>portion</span><span>portions</span></span>)</td>
+        <td colspan="6">Indomie Mi Goreng <span class="TKIf" data-var="anySide">with </span><span class="TKIf" data-var="withEgg">telur</span><span class="TKIf" data-var="both"> &amp; </span><span class="TKIf" data-var="withSosis">sosis</span> (<span data-var="packs" data-format="%d"></span> <span class="TKSingularPlural" data-var="packs"><span>portion</span><span>portions</span></span>)</td>
       </tr>
       <tr class="card-lede">
-        <td colspan="3">Boil <span data-var="totalWater" data-format="%d"></span> ml water in a pot<span class="TKIf" data-var="multiPot"> - use a big pot or split across two</span>. <span class="TKIf" data-var="anySide">Put a frying pan on medium heat - parallel threads.</span><span class="TKIf" data-var="noSide">No side threads; single-threaded build.</span></td>
+        <td colspan="6">Boil <span data-var="totalWater" data-format="%d"></span> ml water in a pot. <span class="TKIf" data-var="anySide">Put a frying pan on medium heat - parallel threads.</span><span class="TKIf" data-var="noSide">No side threads; single-threaded build.</span></td>
       </tr>
       <tr>
         <td><span data-var="packs" data-format="%d"></span> <span class="TKSingularPlural" data-var="packs"><span>pack</span><span>packs</span></span> Indomie Mi Goreng (<span data-var="noodleGrams" data-format="%d"></span> g)</td>
-        <td>boil exactly 3:00 - timing-critical, does not scale with packs</td>
-        <td>drain, keep <span data-var="keepTbsp" data-format="%d"></span> tbsp of the water</td>
+        <td>boil exactly 3:00 - timing-critical</td>
+        <td>drain, keep <span data-var="totalKeepTbsp" data-format="%d"></span> tbsp of the water</td>
+        <td rowspan="3">into the bowl; toss 30 s until every strand is coated</td>
+        <td class="plate-cell TKDynamicRowspan" data-var="threadRows" rowspan="6" colspan="1">plate; crown with <span data-var="plateToppings"></span></td>
+        <td class="serve-cell TKDynamicRowspan" data-var="threadRows" rowspan="6">serve hot - this build does not cache</td>
       </tr>
       <tr>
         <td>seasoning oil + kecap manis sachets (<span data-var="packs" data-format="%d"></span> <span class="TKSingularPlural" data-var="packs"><span>set</span><span>sets</span></span>)</td>
         <td>empty into a large bowl</td>
-        <td>mix into a paste</td>
+        <td rowspan="2">mix into a paste</td>
       </tr>
       <tr>
         <td>bumbu + chili powder (<span data-var="chiliText"></span>)</td>
         <td>add to the bowl</td>
-        <td>into the bowl; toss 30 s until every strand is coated</td>
       </tr>
       <tr class="TKIf" data-var="withEgg">
-        <td><span data-var="eggs" data-format="%d"></span> telur (egg)<span class="TKIf" data-var="multiPack"> total, across <span data-var="packs" data-format="%d"></span> portions</span></td>
+        <td><span data-var="eggs" data-format="%d"></span> telur (egg)<span class="TKIf" data-var="multiPack"> total across <span data-var="packs" data-format="%d"></span> portions</span></td>
         <td>fry sunny-side up, ~2 min, yolk runny</td>
-        <td>park on a plate - rejoins at plating. Do not flip the egg: flipping is experimental.</td>
+        <td colspan="2" class="TKIf TKDynamicRowspan" data-var="parkedRows">park on a plate - rejoins at plating. Do not flip the egg: flipping is experimental.</td>
       </tr>
       <tr class="TKIf" data-var="withSosis">
-        <td><span data-var="sosis" data-format="%d"></span> sosis<span class="TKIf" data-var="multiPack"> total, across <span data-var="packs" data-format="%d"></span> portions</span>, sliced</td>
+        <td><span data-var="sosis" data-format="%d"></span> sosis<span class="TKIf" data-var="multiPack"> total across <span data-var="packs" data-format="%d"></span> portions</span>, sliced</td>
         <td>fry 2 min until the edges crisp</td>
-        <td>park on a plate - rejoins at plating</td>
+        <td colspan="2" class="TKIf" data-var="onlySosis">park on a plate - rejoins at plating</td>
       </tr>
       <tr>
-        <td>fried shallots sachet</td>
+        <td>fried shallots sachet (<span data-var="packs" data-format="%d"></span> <span class="TKSingularPlural" data-var="packs"><span>pack</span><span>packs</span></span>)</td>
         <td>do not cook</td>
-        <td>sprinkle last, straight from the pack</td>
-      </tr>
-      <tr class="card-plating">
-        <td colspan="3">Plate; crown with <span class="TKIf" data-var="withEgg">the egg</span><span class="TKIf" data-var="both">, </span><span class="TKIf" data-var="withSosis">sosis</span><span class="TKIf" data-var="anySide"> and </span>fried shallots. Serve hot - this build does not cache.</td>
+        <td colspan="2">sprinkle last, straight from the pack</td>
       </tr>
       <tr class="card-foot">
-        <td colspan="3">Eat hot<span class="TKIf" data-var="withEgg">, yolk broken over the noodles</span>. Critical path: the 3:00 boil - past it the noodles ship soggy (no patch, remake). Pedas: 0 = no chili &middot; &frac12; pack = level 3 &middot; full pack = level 5 (segfault).</td>
+        <td colspan="6">Eat hot<span class="TKIf" data-var="withEgg">, yolk broken over the noodles</span>. Critical path: the 3:00 boil - past it the noodles ship soggy (no patch, remake). Pedas: 0 = no chili &middot; &frac12; pack = level 3 &middot; full pack = level 5 (segfault).</td>
       </tr>
+      </tbody>
     </table>
+    </div>
   </section>
 
   <section>
@@ -143,6 +154,13 @@ Tangle.classes.TKSingularPlural = {
     }
 };
 
+// Keep merged table cells in step with the active cooking threads.
+Tangle.classes.TKDynamicRowspan = {
+    update: function (element, value) {
+        element.rowSpan = Math.max(1, Math.round(value));
+    }
+};
+
 var tangle = new Tangle(document.getElementById("recipe-box"), {
     initialize: function () {
         this.packs = 1;
@@ -168,6 +186,17 @@ var tangle = new Tangle(document.getElementById("recipe-box"), {
         this.packWarning = (this.packs >= 2) ? 1 : 0;
         this.flagTelur = this.withEgg ? "true" : "false";
         this.flagSosis = this.withSosis ? "true" : "false";
+        this.totalKeepTbsp = this.packs * this.keepTbsp;
+        this.threadRows = 4 + this.withEgg + this.withSosis;
+        this.parkedRows = this.withEgg + this.withSosis;
+        this.onlySosis = (!this.withEgg && this.withSosis) ? 1 : 0;
+
+        var toppings = [];
+        if (this.withEgg) { toppings.push("the egg"); }
+        if (this.withSosis) { toppings.push("sosis"); }
+        toppings.push("fried shallots");
+        this.plateToppings = toppings.length === 1 ? toppings[0] :
+            toppings.slice(0, -1).join(", ") + " and " + toppings[toppings.length - 1];
 
         var chiliFractions = ["no chili", "1/5 pack", "2/5 pack", "1/2 pack", "4/5 pack", "full pack"];
         this.chiliText = chiliFractions[this.pedas] + " per pack";

@@ -1,6 +1,6 @@
 # Indomie Mi Goreng: the customizable recipe box (Tangle edition)
 
-This is the main interactive Indomie page, published at `/kaji/indomie/`. It is built with [Tangle](https://github.com/worrydream/Tangle) by Bret Victor (MIT license), whose vendored libraries retain their original headers. The markup and page stylesheet live one directory up as `../index.html` and `../style.css`; the vendored Tangle libraries remain here under `lib/`.
+This is the main interactive Indomie page, published at `/kaji/indomie/`. It keeps the card's left-to-right parallel cooking threads and merged cells, while Tangle (Bret Victor, MIT license; vendored libraries retain their headers) lets you retune portions, water, spice, eggs and sosis. The markup and page stylesheet live one directory up as `../index.html` and `../style.css`; the vendored Tangle libraries remain here under `lib/`. On narrow screens, swipe horizontally through the table to follow the threads.
 
 A second, separate version is the engineering spec in `../instinct/` (published at `/kaji/indomie/instinct/`). The static tabular recipe card remains at `../images/indomie-recipe-box-v2.jpg`. These recipes have different water, draining, and spice defaults; keep them labeled as separate versions.
 

@@ -62,31 +62,47 @@ section { margin-bottom: 8px; }
 .TKFlag { cursor: pointer; }
 .TKAdjustableNumberDown { color: #122a80; border-bottom-color: #122a80; }
 
-/* The card */
+/* The parallel-thread recipe box */
+.recipe-scroll {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 18px;
+  -webkit-overflow-scrolling: touch;
+}
 table.card {
   width: 100%;
+  min-width: 680px;
+  table-layout: fixed;
   border-collapse: collapse;
   background: var(--cream);
   border: 3px solid var(--green);
   border-radius: 18px;
   overflow: hidden;
-  font-size: 15px;
+  font: 14px/1.4 Arial, Helvetica, sans-serif;
 }
+.card .ingredient-column { width: 25%; }
+.card .action-column { width: 17%; }
+.card .mix-column { width: 15%; }
+.card .plate-column { width: 13%; }
+.card .serve-column { width: 13%; }
 .card td {
   border: 2px solid var(--green);
-  padding: 12px 10px;
-  vertical-align: top;
+  padding: 10px 8px;
+  vertical-align: middle;
+  text-align: center;
 }
+.card tr:not(.card-title):not(.card-lede):not(.card-foot) > td:first-child { text-align: left; }
 .card .card-title td {
   font: 700 22px/1.3 "Helvetica Neue", Arial, sans-serif;
+  text-align: left;
   padding: 16px 12px;
 }
 .card .card-lede td,
-.card .card-plating td,
 .card .card-foot td {
   text-align: center;
   padding: 14px 16px;
 }
+.card .card-foot td { font-size: 15px; }
 
 /* Build output */
 dl.output {
@@ -126,17 +142,8 @@ code { font-family: "SF Mono", Menlo, Consolas, monospace; }
   body { padding: 16px 10px 48px; }
   h1 { font-size: 22px; }
   .sentence { font-size: 16px; }
-
-  /* Flatten the card into a stacked list; merged cells become plain blocks. */
-  table.card, .card tbody { display: block; }
-  .card tr { display: block; }
-  .card tr + tr { border-top: 2px solid var(--green); }
-  .card td {
-    display: block;
-    border: none;
-    padding: 8px 12px;
-    font-size: 15px;
-  }
-  .card .card-title td { font-size: 19px; border: none; }
-  .card .card-lede td, .card .card-plating td, .card .card-foot td { text-align: left; border: none; }
+  table.card { min-width: 680px; font-size: 13px; }
+  .card td { padding: 9px 7px; }
+  .card .card-title td { font-size: 19px; }
+  .card .card-lede td, .card .card-foot td { text-align: center; }
 }
