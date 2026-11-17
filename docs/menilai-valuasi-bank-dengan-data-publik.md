@@ -57,6 +57,17 @@ Dua contoh publik membantu merumuskan pertanyaan penelitian, tetapi tidak menguj
 - **Banco Master, Brasil.** FAQ resmi Banco Central do Brasil menyebut bahwa pada 18 November 2025 bank tersebut memerintahkan likuidasi ekstrayudisial Banco Master S/A dan sejumlah entitas terkait, serta menerapkan rezim administrasi sementara pada Banco Master Múltiplo S/A. BCB menyebut krisis likuiditas berat dan pelanggaran serius sebagai alasan. Sumber: https://www.bcb.gov.br/estabilidadefinanceira/banco-master-liquidacao. Rasio dan angka rinci lain yang beredar belum diverifikasi.
 - **Ueno Bank, Paraguay.** BCP mengumumkan pada 3 November 2026 bahwa proses resolusi dimulai setelah penyesuaian laporan keuangan selama proses regularisasi menunjukkan rasio solvabilitas kurang dari setengah minimum yang diwajibkan; keputusan direksi bertanggal 2 November 2026. Sumber resmi: https://www.bcp.gov.py/web/institucional/w/banco-central-inicia-el-procedimiento-de-resolucion-de-ueno-bank. Angka pertumbuhan kredit, likuiditas, peringkat, dan harga obligasi belum diverifikasi.
 
+## Klaim riset dan angka tambahan yang belum diperiksa
+
+Beberapa klaim yang menyertai rancangan ini belum dicocokkan dengan sumber primer. Dicatat agar tidak hilang, bukan sebagai temuan:
+
+- Satu studi yang disebut dalam materi dikatakan memakai 2.263 laporan analis di Amerika Serikat dan Eropa serta menemukan P/E dan P/BV lebih dominan daripada DDM dan residual income. Studi dan hasil itu belum diverifikasi.
+- Materi menyebut bahwa platform valuasi open-source yang ditemukan berfokus umum atau pada pasar AS/Hong Kong. Daftar platform dan cakupan pasar belum diperiksa.
+- Banco Fassil di Bolivia disebut sebagai contoh intervensi pada 26 April 2023, dengan downgrade Moody's lebih awal. Tanggal, peristiwa dan urutan downgrade belum diverifikasi.
+- Rentang klaim peringatan 12-24 bulan untuk watchlist, 6-12 bulan untuk risiko tinggi, dan 1-3 bulan untuk peristiwa likuiditas adalah klaim retrospektif dalam materi; tidak ada bukti kinerja prediktif yang menyertainya.
+- Slide proposal menyebut aset BBCA Rp1.661 triliun pada 30 Juni 2026 serta ROE Bank Mandiri 20,9% pada semester I 2026, 16,0% untuk 2016-2025, dan 19,8% untuk 2021-2025. Angka dan periode ini belum dicocokkan dengan laporan atau presentasi penerbit.
+- Laporan Tahunan Astra 2024 tersedia di https://r2.astra.co.id/annual-reports/documents/Astra-Annual-Report-2024.pdf, tetapi apakah rinciannya mengungkap bank kreditur belum diperiksa per halaman. Halaman tarif analis finansial Upwork (https://www.upwork.com/hire/financial-analysts/cost/) dikutip sebagai pembanding; tarif yang tepat belum diverifikasi dan bukan penawaran.
+
 ## Anggaran dan rancangan pendanaan (asumsi, bukan penawaran)
 
 Materi perencanaan memuat estimasi yang berbeda dan tidak direkonsiliasi:
