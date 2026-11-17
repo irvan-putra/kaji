@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/deploy-indomie-pages.yml'
       - 'examples/indomie/**'
+      - 'examples/cook/**'
       - 'examples/economics-synthetic/**'
       - 'README.md'
       - 'examples/README.md'
@@ -37,6 +38,10 @@ jobs:
         run: |
           mkdir -p public/indomie
           cp -R examples/indomie/. public/indomie/
+      - name: Stage the cook collection
+        run: |
+          mkdir -p public/cook
+          cp -R examples/cook/. public/cook/
       - name: Stage the synthetic break-even page
         run: |
           mkdir -p public/economics-synthetic

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tumis kangkung: the customizable recipe box</title>
+<link rel="stylesheet" href="../../indomie/tangle/lib/TangleKit.css">
+<link rel="stylesheet" href="../style.css?v=1">
+</head>
+<body>
+<main id="recipe-box">
+
+  <p class="crumbs"><a href="../">&larr; All Kaji recipe boxes</a></p>
+  <header>
+    <p class="eyebrow">tangle edition &middot; drag the blue numbers</p>
+    <h1>Tumis kangkung: the customizable recipe box</h1>
+    <p class="lede">Quick stir-fried water spinach. Drag any blue number left or right, or tap a blue flag to flip it, and the card rewrites itself. Read left to right: the cooking threads run in parallel and merge as steps come together. On phones, swipe the card sideways.</p>
+  </header>
+
+  <section class="config">
+    <h2>Configuration</h2>
+    <p class="sentence">Cooking <span class="TKAdjustableNumber" data-var="portions" data-min="1" data-max="4" data-step="1" data-format="%d"></span> <span class="TKSingularPlural" data-var="portions"><span>portion</span><span>portions</span></span> of tumis kangkung
+      (<span data-var="kangkungG" data-format="%d"></span>&nbsp;g of water spinach), <span class="TKAdjustableNumber" data-var="chilies" data-min="0" data-max="4" data-step="1" data-format="%d"></span> chili per portion,
+      <span class="TKAdjustableNumber" data-var="sauce" data-min="1" data-max="3" data-step="1" data-format="%d"></span>&nbsp;tbsp oyster sauce per portion.
+      Bawang goreng: <span class="TKFlag" data-var="withCrisp"></span>.</p>
+  </section>
+
+  <section>
+    <h2>The card</h2>
+    <div class="recipe-scroll" role="region" tabindex="0" aria-label="Horizontally scroll the recipe table on narrow screens">
+    <table class="card" aria-label="Tumis kangkung parallel-thread recipe box">
+      <colgroup>
+        <col class="ingredient-column">
+        <col class="action-column">
+        <col class="action-column">
+        <col class="mix-column">
+        <col class="plate-column">
+        <col class="serve-column">
+      </colgroup>
+      <tbody>
+      <tr class="card-title"><td colspan="6">Tumis kangkung <span class="TKIf" data-var="withCrisp">with bawang goreng </span>(<span data-var="portions" data-format="%d"></span> <span class="TKSingularPlural" data-var="portions"><span>portion</span><span>portions</span></span>)</td></tr>
+      <tr class="card-lede"><td colspan="6">Do all the cutting first: the pan time is about 5 minutes. Put a wok or wide pan on high heat just before you start.</td></tr>
+      <tr>
+        <td><span data-var="kangkungG" data-format="%d"></span> g kangkung</td>
+        <td>wash in 3 changes of water to remove grit; cut into 5 cm lengths, stems apart from leaves</td>
+        <td>stems first, 2 min; then the leaves, 1 min</td>
+        <td rowspan="3">toss on high heat about 2 min more, until the stems are tender and everything is steaming hot</td>
+        <td class="plate-cell TKDynamicRowspan" data-var="threadRows" rowspan="4">plate quickly<span class="TKIf" data-var="withCrisp">; scatter on the bawang goreng</span></td>
+        <td class="serve-cell TKDynamicRowspan" data-var="threadRows" rowspan="4">serve at once; it turns limp and watery if it waits</td>
+      </tr>
+      <tr>
+        <td><span data-var="shallots" data-format="%d"></span> shallots + <span data-var="garlic" data-format="%d"></span> garlic cloves</td>
+        <td>slice thinly</td>
+        <td>fry in <span data-var="oilTbsp" data-format="%d"></span> tbsp hot oil 30 s, until fragrant</td>
+      </tr>
+      <tr>
+        <td><span data-var="sauceTotal" data-format="%d"></span> tbsp oyster sauce + <span data-var="waterTbsp" data-format="%d"></span> tbsp water<span class="TKIf" data-var="hasChili">; <span data-var="chiliTotal" data-format="%d"></span> sliced chili</span></td>
+        <td>mix the sauce and water in a cup</td>
+        <td>pour in with the leaves<span class="TKIf" data-var="hasChili">; add the chili to the garlic</span></td>
+      </tr>
+      <tr class="TKIf" data-var="withCrisp">
+        <td>bawang goreng (store-bought fried shallots)</td>
+        <td>do not cook</td>
+        <td colspan="2">add at plating, so it stays crisp</td>
+      </tr>
+      <tr class="card-foot"><td colspan="6">Eat hot. Critical path: high heat, and cooking it through. A weak flame stews the greens in their own water. Never eat kangkung raw or half-cooked. <span class="TKIf" data-var="batching">Cook in batches of at most 2 portions.</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Notes</h2>
+    <dl class="output">
+      <dt>Estimated time</dt><dd>~<span data-var="runtime" data-format="%d"></span> min including washing and cutting</dd>
+      <dt>Critical path</dt><dd>High heat, about 5 min in the pan. Cook through; do not undercook.</dd>
+      <dt>Output</dt><dd><span data-var="portions" data-format="%d"></span> <span class="TKSingularPlural" data-var="portions"><span>serving</span><span>servings</span></span> as a side dish, hot. Serve with rice.</dd>
+    </dl>
+    <aside class="note"><h3>Washing</h3><p>Water spinach grows in or near water and can carry germs and parasites. Washing removes grit but does not make it safe by itself: cook it until the stems are tender and everything is steaming hot, and never eat it raw.</p></aside>
+    <aside class="note"><h3>Allergens</h3><p>Oyster sauce contains shellfish and usually soy and wheat. For a vegetarian version, use a mushroom-based sauce.</p></aside>
+    <aside class="warning TKIf" data-var="pedasWarning"><h3>Pedas warning</h3><p>Four chilies per portion is hot. Taste one slice first.</p></aside>
+  </section>
+
+  <footer>
+    <p>Water spinach grown in contaminated water has been found to carry bacteria and parasites (<a href="https://doi.org/10.1111/j.1365-3156.2007.01944.x">example study, Cambodia</a>), so this recipe cooks it through. General guidance: <a href="https://www.emro.who.int/health-topics/food-safety/questions-and-answers.html">WHO</a>. A bunch of about 200 g is a typical single portion; use whatever you have and scale. Quantities are a starting point, not a tested lab spec: taste, adjust, and use your own judgement. Built with <a href="https://github.com/worrydream/Tangle">Tangle</a> by Bret Victor (MIT), vendored under <code>indomie/tangle/lib/</code>. Nothing is cooked from this page.</p>
+  </footer>
+
+</main>
+
+<script src="../../indomie/tangle/lib/mootools.js"></script>
+<script src="../../indomie/tangle/lib/sprintf.js"></script>
+<script src="../../indomie/tangle/lib/BVTouchable.js"></script>
+<script src="../../indomie/tangle/lib/Tangle.js"></script>
+<script src="../../indomie/tangle/lib/TangleKit.js"></script>
+<script src="../cook.js"></script>
+<script>
+var tangle = new Tangle(document.getElementById("recipe-box"), {
+    initialize: function () {
+        this.portions = 1; this.chilies = 1; this.sauce = 1; this.withCrisp = 0;
+    },
+    update: function () {
+        this.kangkungG = this.portions * 200;
+        this.shallots = this.portions * 2;
+        this.garlic = this.portions * 2;
+        this.oilTbsp = this.portions;
+        this.sauceTotal = this.portions * this.sauce;
+        this.waterTbsp = this.portions * 2;
+        this.chiliTotal = this.portions * this.chilies;
+        this.hasChili = this.chilies > 0 ? 1 : 0;
+        this.batching = this.portions > 2 ? 1 : 0;
+        this.pedasWarning = this.chilies >= 4 ? 1 : 0;
+        this.runtime = 12;
+        this.threadRows = 3 + this.withCrisp;
+    }
+});
+</script>
+</body>
+</html>

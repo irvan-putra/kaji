@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spaghetti aglio e olio: the customizable recipe box</title>
+<link rel="stylesheet" href="../../indomie/tangle/lib/TangleKit.css">
+<link rel="stylesheet" href="../style.css?v=1">
+</head>
+<body>
+<main id="recipe-box">
+
+  <p class="crumbs"><a href="../">&larr; All Kaji recipe boxes</a></p>
+  <header>
+    <p class="eyebrow">tangle edition &middot; drag the blue numbers</p>
+    <h1>Spaghetti aglio e olio: the customizable recipe box</h1>
+    <p class="lede">Spaghetti with garlic, olive oil and chili. Drag any blue number left or right, or tap a blue flag to flip it, and the card rewrites itself. Read left to right: the cooking threads run in parallel and merge as steps come together. On phones, swipe the card sideways.</p>
+  </header>
+
+  <section class="config">
+    <h2>Configuration</h2>
+    <p class="sentence">Cooking <span class="TKAdjustableNumber" data-var="portions" data-min="1" data-max="4" data-step="1" data-format="%d"></span> <span class="TKSingularPlural" data-var="portions"><span>portion</span><span>portions</span></span> of spaghetti
+      (<span data-var="pastaG" data-format="%d"></span>&nbsp;g dry), <span class="TKAdjustableNumber" data-var="garlicEach" data-min="2" data-max="4" data-step="1" data-format="%d"></span> garlic cloves per portion, chili level
+      <span class="TKAdjustableNumber" data-var="chili" data-min="0" data-max="3" data-step="1" data-format="%d"></span> (<span data-var="chiliText"></span>), pasta cooked for
+      <span class="TKAdjustableNumber" data-var="boilMin" data-min="7" data-max="12" data-step="1" data-format="%d"></span>&nbsp;min (check the pack, take 1 min off).
+      Parsley: <span class="TKFlag" data-var="withParsley"></span>.</p>
+  </section>
+
+  <section>
+    <h2>The card</h2>
+    <div class="recipe-scroll" role="region" tabindex="0" aria-label="Horizontally scroll the recipe table on narrow screens">
+    <table class="card" aria-label="Spaghetti aglio e olio parallel-thread recipe box">
+      <colgroup>
+        <col class="ingredient-column">
+        <col class="action-column">
+        <col class="action-column">
+        <col class="mix-column">
+        <col class="plate-column">
+        <col class="serve-column">
+      </colgroup>
+      <tbody>
+      <tr class="card-title"><td colspan="6">Spaghetti aglio e olio <span class="TKIf" data-var="withParsley">with parsley </span>(<span data-var="portions" data-format="%d"></span> <span class="TKSingularPlural" data-var="portions"><span>portion</span><span>portions</span></span>)</td></tr>
+      <tr class="card-lede"><td colspan="6">Bring <span data-var="waterL" data-format="%d"></span> litres of water to a boil in a large pot, with <span data-var="saltG" data-format="%d"></span> g salt. Put a wide pan on the stove, off the heat. Both threads start together.</td></tr>
+      <tr>
+        <td><span data-var="pastaG" data-format="%d"></span> g dry spaghetti</td>
+        <td>boil <span data-var="boilMin" data-format="%d"></span> min, until just short of done</td>
+        <td>scoop out <span data-var="keepMl" data-format="%d"></span> ml of the water, then drain</td>
+        <td rowspan="3">tip the pasta into the pan with the garlic oil; toss 1 min over medium heat, adding the water a splash at a time until glossy</td>
+        <td class="plate-cell TKDynamicRowspan" data-var="threadRows" rowspan="4">twirl onto warm plates; <span data-var="plateToppings"></span></td>
+        <td class="serve-cell TKDynamicRowspan" data-var="threadRows" rowspan="4">serve at once; the sauce tightens as it cools</td>
+      </tr>
+      <tr>
+        <td><span data-var="garlicTotal" data-format="%d"></span> garlic cloves</td>
+        <td>slice thinly, do not mince</td>
+        <td>warm in the oil on low heat 3 to 4 min, until pale gold. Take off the heat if it browns fast.</td>
+      </tr>
+      <tr>
+        <td><span data-var="oilMl" data-format="%d"></span> ml olive oil<span class="TKIf" data-var="hasChili"> + chili flakes (<span data-var="chiliText"></span>)</span></td>
+        <td>start the oil in the cold pan</td>
+        <td>add the chili to the oil with the garlic</td>
+      </tr>
+      <tr class="TKIf" data-var="withParsley">
+        <td>parsley, a small handful per portion</td>
+        <td>chop finely</td>
+        <td colspan="2">scatter on at plating</td>
+      </tr>
+      <tr class="card-foot"><td colspan="6">Eat hot. Critical path: the pasta pot and the garlic, which burns in seconds if the heat is too high. Burnt garlic is bitter: if it goes dark brown, start the oil over.</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Notes</h2>
+    <dl class="output">
+      <dt>Estimated time</dt><dd>~<span data-var="runtime" data-format="%d"></span> min including boiling the water</dd>
+      <dt>Critical path</dt><dd>Boil <span data-var="boilMin" data-format="%d"></span> min, and keep the garlic pale gold.</dd>
+      <dt>Water</dt><dd><span data-var="waterL" data-format="%d"></span> L, with <span data-var="saltG" data-format="%d"></span> g salt</dd>
+      <dt>Output</dt><dd><span data-var="portions" data-format="%d"></span> <span class="TKSingularPlural" data-var="portions"><span>serving</span><span>servings</span></span>, hot.</dd>
+    </dl>
+    <aside class="warning TKIf" data-var="potWarning"><h3>Pot size</h3><p>This needs a large pot: 3 litres of water or more. Use two pots if yours is smaller, and keep the pan wide so the pasta tosses freely.</p></aside>
+    <aside class="note TKIf" data-var="bigPan"><h3>Large batch</h3><p>Three or four portions need a very large pan or a wok to toss in, or toss in the empty pasta pot. Otherwise cook in two batches.</p></aside>
+    <aside class="note"><h3>Allergens</h3><p>Spaghetti contains wheat (gluten). Check the label for other traces.</p></aside>
+  </section>
+
+  <footer>
+    <p>Ratios (100 g spaghetti, 2 to 4 cloves of garlic, about 35 ml olive oil, about 30 ml pasta water per portion) follow common published versions, such as <a href="https://casadellapasta.com/en/spaghetti-aglio-olio-e-peperoncino/">Casa della Pasta</a> and <a href="https://www.seriouseats.com/spaghetti-aglio-olio-recipe">Serious Eats</a>. Quantities are a starting point, not a tested lab spec: taste, adjust, and use your own judgement. Built with <a href="https://github.com/worrydream/Tangle">Tangle</a> by Bret Victor (MIT), vendored under <code>indomie/tangle/lib/</code>. Nothing is cooked from this page.</p>
+  </footer>
+
+</main>
+
+<script src="../../indomie/tangle/lib/mootools.js"></script>
+<script src="../../indomie/tangle/lib/sprintf.js"></script>
+<script src="../../indomie/tangle/lib/BVTouchable.js"></script>
+<script src="../../indomie/tangle/lib/Tangle.js"></script>
+<script src="../../indomie/tangle/lib/TangleKit.js"></script>
+<script src="../cook.js"></script>
+<script>
+var tangle = new Tangle(document.getElementById("recipe-box"), {
+    initialize: function () {
+        this.portions = 1; this.garlicEach = 3; this.chili = 1; this.boilMin = 9; this.withParsley = 1;
+    },
+    update: function () {
+        this.pastaG = this.portions * 100;
+        this.waterL = this.portions + 1;
+        if (this.waterL > 4) { this.waterL = 4; }
+        this.saltG = this.waterL * 10;
+        this.keepMl = this.portions * 30 + 30;
+        this.garlicTotal = this.portions * this.garlicEach;
+        this.oilMl = this.portions * 35;
+        this.hasChili = this.chili > 0 ? 1 : 0;
+        this.chiliG = this.chili * this.portions;
+        this.potWarning = this.waterL >= 3 ? 1 : 0;
+        this.bigPan = this.portions >= 3 ? 1 : 0;
+        this.runtime = 12 + this.boilMin - 7;
+        this.threadRows = 3 + 1 * this.withParsley;
+        this.plateToppings = this.withParsley ? "parsley on top" : "no garnish";
+        var c = ["no chili", "a light pinch", "a pinch", "a good pinch"];
+        this.chiliText = c[this.chili];
+    }
+});
+</script>
+</body>
+</html>

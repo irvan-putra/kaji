@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nasi goreng: the customizable recipe box</title>
+<link rel="stylesheet" href="../../indomie/tangle/lib/TangleKit.css">
+<link rel="stylesheet" href="../style.css?v=1">
+</head>
+<body>
+<main id="recipe-box">
+
+  <p class="crumbs"><a href="../">&larr; All Kaji recipe boxes</a></p>
+  <header>
+    <p class="eyebrow">tangle edition &middot; drag the blue numbers</p>
+    <h1>Nasi goreng: the customizable recipe box</h1>
+    <p class="lede">Fried rice built on cold, day-old rice. Drag any blue number left or right, or tap a blue flag to flip it, and the card rewrites itself. Read left to right: the cooking threads run in parallel and merge as steps come together. On phones, swipe the card sideways.</p>
+  </header>
+
+  <section class="config">
+    <h2>Configuration</h2>
+    <p class="sentence">Cooking <span class="TKAdjustableNumber" data-var="portions" data-min="1" data-max="4" data-step="1" data-format="%d"></span> <span class="TKSingularPlural" data-var="portions"><span>portion</span><span>portions</span></span> of nasi goreng
+      (<span data-var="riceG" data-format="%d"></span>&nbsp;g of cold cooked rice), <span class="TKAdjustableNumber" data-var="chilies" data-min="0" data-max="4" data-step="1" data-format="%d"></span> chili per portion,
+      <span class="TKAdjustableNumber" data-var="kecap" data-min="1" data-max="3" data-step="1" data-format="%d"></span>&nbsp;tbsp kecap manis per portion.
+      Telur: <span class="TKFlag" data-var="withEgg"></span><span class="TKIf" data-var="withEgg"> &times;<span class="TKAdjustableNumber" data-var="eggsEach" data-min="1" data-max="2" data-step="1" data-format="%d"></span> per portion</span>.
+      Kerupuk: <span class="TKFlag" data-var="withKerupuk"></span>.</p>
+  </section>
+
+  <section>
+    <h2>The card</h2>
+    <div class="recipe-scroll" role="region" tabindex="0" aria-label="Horizontally scroll the recipe table on narrow screens">
+    <table class="card" aria-label="Nasi goreng parallel-thread recipe box">
+      <colgroup>
+        <col class="ingredient-column">
+        <col class="action-column">
+        <col class="action-column">
+        <col class="mix-column">
+        <col class="plate-column">
+        <col class="serve-column">
+      </colgroup>
+      <tbody>
+      <tr class="card-title"><td colspan="6">Nasi goreng <span class="TKIf" data-var="withEgg">with telur </span><span class="TKIf" data-var="withKerupuk">and kerupuk </span>(<span data-var="portions" data-format="%d"></span> <span class="TKSingularPlural" data-var="portions"><span>portion</span><span>portions</span></span>)</td></tr>
+      <tr class="card-lede"><td colspan="6">Use rice that was cooled quickly and kept in the fridge. Put a wide pan or wok on medium-high heat. <span class="TKIf" data-var="batching">Cook in batches of at most 2 portions: a crowded pan steams the rice instead of frying it.</span></td></tr>
+      <tr>
+        <td><span data-var="shallots" data-format="%d"></span> shallots + <span data-var="garlic" data-format="%d"></span> garlic cloves<span class="TKIf" data-var="hasChili">, <span data-var="chiliTotal" data-format="%d"></span> chili</span></td>
+        <td>slice the shallots; pound everything to a rough paste</td>
+        <td>fry the paste in <span data-var="oilTbsp" data-format="%d"></span> tbsp oil until fragrant, about 1 min</td>
+        <td rowspan="3">stir-fry on high heat 3 min, until the rice is steaming hot all the way through and the grains separate</td>
+        <td class="plate-cell TKDynamicRowspan" data-var="threadRows" rowspan="5">plate; top with <span data-var="plateToppings"></span></td>
+        <td class="serve-cell TKDynamicRowspan" data-var="threadRows" rowspan="5">serve straight away, hot</td>
+      </tr>
+      <tr>
+        <td><span data-var="riceG" data-format="%d"></span> g cold cooked rice</td>
+        <td>break up the clumps with a fork</td>
+        <td>add to the pan</td>
+      </tr>
+      <tr>
+        <td><span data-var="kecapTotal" data-format="%d"></span> tbsp kecap manis + a pinch of salt</td>
+        <td>stir together in a cup</td>
+        <td>pour over the rice once it is hot</td>
+      </tr>
+      <tr class="TKIf" data-var="withEgg">
+        <td><span data-var="eggsTotal" data-format="%d"></span> <span class="TKSingularPlural" data-var="eggsTotal"><span>egg</span><span>eggs</span></span></td>
+        <td>fry in a second pan (in batches if needed), about 3 min, until the white is fully set and the yolk is firm</td>
+        <td colspan="2">park on a plate; it rejoins at plating</td>
+      </tr>
+      <tr class="TKIf" data-var="withKerupuk">
+        <td>kerupuk, a handful per portion (ready-made)</td>
+        <td>do not cook</td>
+        <td colspan="2">add at plating, so it stays crisp</td>
+      </tr>
+      <tr class="card-foot"><td colspan="6">Eat hot. Critical path: the cold rice. Warm, freshly cooked rice turns to mush in the pan. <span class="TKIf" data-var="withEgg">Eggs can carry Salmonella, so they are cooked until the yolk is firm. This matters most for young children, older people and anyone pregnant.</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Notes</h2>
+    <dl class="output">
+      <dt>Estimated time</dt><dd>~<span data-var="runtime" data-format="%d"></span> min once the rice is cold</dd>
+      <dt>Critical path</dt><dd>Stir-fry 3 min on high heat.<span class="TKIf" data-var="withEgg"> Side thread: egg fry.</span></dd>
+      <dt>Oil</dt><dd><span data-var="oilTbsp" data-format="%d"></span> tbsp for the rice, plus a little extra for the egg.</dd>
+      <dt>Output</dt><dd><span data-var="portions" data-format="%d"></span> <span class="TKSingularPlural" data-var="portions"><span>serving</span><span>servings</span></span>, hot. Rice is not good to keep: see the note.</dd>
+    </dl>
+    <aside class="note"><h3>Rice safety</h3><p>Cooked rice can carry bacteria whose toxins survive reheating. Cool it within 1 hour, refrigerate it, use it within 24 hours, and fry it until steaming hot throughout. Do not leave fried rice out. If unsure, throw it out.</p></aside>
+    <aside class="note"><h3>Allergens</h3><p>Kecap manis contains soy (and often wheat). Egg is optional. Check kerupuk labels for prawn or fish.</p></aside>
+    <aside class="warning TKIf" data-var="pedasWarning"><h3>Pedas warning</h3><p>Four chilies per portion is hot. Taste one slice first. Keep water or teh manis nearby.</p></aside>
+  </section>
+
+  <footer>
+    <p>Rice safety follows UK government and NHS guidance (<a href="https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker">gov.uk food fact checker</a>, <a href="https://www.nhs.uk/best-start-in-life/baby/weaning/safe-weaning/storing-and-reheating-food/">NHS</a>). Egg doneness follows <a href="https://www.cfs.gov.hk/english/consumer_zone/safefood_all/five_keys_apply_cook.html">Hong Kong Centre for Food Safety</a> and <a href="https://www.emro.who.int/health-topics/food-safety/questions-and-answers.html">WHO</a> advice to cook eggs thoroughly. Quantities are a starting point, not a tested lab spec: taste, adjust, and use your own judgement. Built with <a href="https://github.com/worrydream/Tangle">Tangle</a> by Bret Victor (MIT), vendored under <code>indomie/tangle/lib/</code>. Nothing is cooked from this page.</p>
+  </footer>
+
+</main>
+
+<script src="../../indomie/tangle/lib/mootools.js"></script>
+<script src="../../indomie/tangle/lib/sprintf.js"></script>
+<script src="../../indomie/tangle/lib/BVTouchable.js"></script>
+<script src="../../indomie/tangle/lib/Tangle.js"></script>
+<script src="../../indomie/tangle/lib/TangleKit.js"></script>
+<script src="../cook.js"></script>
+<script>
+var tangle = new Tangle(document.getElementById("recipe-box"), {
+    initialize: function () {
+        this.portions = 1; this.chilies = 2; this.kecap = 1;
+        this.withEgg = 1; this.eggsEach = 1; this.withKerupuk = 0;
+    },
+    update: function () {
+        this.riceG = this.portions * 250;
+        this.shallots = this.portions * 2;
+        this.garlic = this.portions * 2;
+        this.oilTbsp = this.portions;
+        this.kecapTotal = this.portions * this.kecap;
+        this.eggsTotal = this.portions * this.eggsEach;
+        this.chiliTotal = this.portions * this.chilies;
+        this.hasChili = this.chilies > 0 ? 1 : 0;
+                this.batching = this.portions > 2 ? 1 : 0;
+        this.pedasWarning = this.chilies >= 4 ? 1 : 0;
+        this.runtime = 10 + (this.withEgg ? 3 : 0);
+        this.threadRows = 3 + this.withEgg + this.withKerupuk;
+        var t = [];
+        if (this.withEgg) { t.push("the fried egg"); }
+        if (this.withKerupuk) { t.push("kerupuk"); }
+        this.plateToppings = t.length ? joinList(t) : "nothing else: it is complete";
+    }
+});
+</script>
+</body>
+</html>

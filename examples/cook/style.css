@@ -1,0 +1,162 @@
+/* Indomie recipe box - Tangle edition. Card look after the repo's recipe-box card. */
+
+:root {
+  --green: #2e7d32;
+  --cream: #f7f7e8;
+  --ink: #1b2a1b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 24px 16px 64px;
+  background: #ece9d8;
+  color: var(--ink);
+  font: 16px/1.55 Georgia, "Times New Roman", serif;
+}
+
+main { max-width: 780px; margin: 0 auto; }
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font: 12px/1.4 "Helvetica Neue", Arial, sans-serif;
+  color: var(--green);
+  margin: 0 0 6px;
+}
+
+h1 { font-size: 28px; margin: 0 0 10px; }
+h2 {
+  font: 700 13px/1.4 "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--green);
+  border-bottom: 2px solid var(--green);
+  padding-bottom: 4px;
+  margin: 34px 0 14px;
+}
+
+.lede { margin: 0 0 8px; }
+
+section { margin-bottom: 8px; }
+
+.sentence { font-size: 18px; }
+
+.flags {
+  font: 13px/1.5 "SF Mono", Menlo, Consolas, monospace;
+  background: #eef2e4;
+  border: 1px solid #cdd8bb;
+  border-radius: 6px;
+  padding: 8px 10px;
+  white-space: pre-wrap;
+}
+
+/* Tangle controls, tuned to the card palette */
+.TKAdjustableNumber, .TKFlag {
+  color: #2850c8;
+  border-bottom: 1px dashed #2850c8;
+  cursor: col-resize;
+  position: relative;
+}
+.TKFlag { cursor: pointer; }
+.TKAdjustableNumberDown { color: #122a80; border-bottom-color: #122a80; }
+
+/* The parallel-thread recipe box */
+.recipe-scroll {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 18px;
+  -webkit-overflow-scrolling: touch;
+}
+.recipe-scroll:focus-visible { outline: 3px solid #2850c8; outline-offset: 3px; }
+table.card {
+  width: 100%;
+  min-width: 680px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background: var(--cream);
+  border: 3px solid var(--green);
+  border-radius: 18px;
+  overflow: hidden;
+  font: 18px/1.4 Arial, Helvetica, sans-serif;
+}
+.card .ingredient-column { width: 25%; }
+.card .action-column { width: 17%; }
+.card .mix-column { width: 15%; }
+.card .plate-column { width: 14%; }
+.card .serve-column { width: 12%; }
+.card td {
+  border: 2px solid var(--green);
+  padding: 10px 8px;
+  vertical-align: middle;
+  text-align: center;
+}
+.card tr:not(.card-title):not(.card-lede):not(.card-foot) > td:first-child { text-align: left; }
+.card .card-title td {
+  font: 700 30px/1.2 "Helvetica Neue", Arial, sans-serif;
+  text-align: left;
+  padding: 16px 12px;
+}
+.card .card-lede td,
+.card .card-foot td {
+  font-size: 18px;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+/* Build output */
+dl.output {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 6px 18px;
+  margin: 0;
+}
+dl.output dt { font-weight: 700; }
+dl.output dd { margin: 0; }
+
+.warning {
+  border: 2px solid #b3401e;
+  background: #fdf3ee;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-top: 14px;
+}
+.warning h3 {
+  margin: 0 0 4px;
+  font: 700 13px/1.4 "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #b3401e;
+}
+.warning p { margin: 0; }
+
+footer {
+  margin-top: 40px;
+  font-size: 13px;
+  color: #55604f;
+}
+footer a { color: var(--green); }
+code { font-family: "SF Mono", Menlo, Consolas, monospace; }
+
+@media (max-width: 560px) {
+  body { padding: 16px 10px 48px; }
+  h1 { font-size: 22px; }
+  .sentence { font-size: 16px; }
+  table.card { min-width: 680px; font-size: 16px; }
+  .card td { padding: 9px 7px; }
+  .card .card-title td { font-size: 24px; }
+  .card .card-lede td, .card .card-foot td { text-align: center; }
+}
+
+/* Cook collection */
+.dish-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.dish-list li { background: var(--cream); border: 2px solid var(--green); border-radius: 12px; padding: 12px 16px; }
+.dish-list a { font: 700 20px/1.3 "Helvetica Neue", Arial, sans-serif; color: var(--green); text-decoration: none; }
+.dish-list a:hover, .dish-list a:focus { text-decoration: underline; }
+.dish-list p { margin: 4px 0 0; font-size: 15px; }
+.crumbs { font: 13px/1.4 "Helvetica Neue", Arial, sans-serif; margin: 0 0 14px; }
+.crumbs a { color: var(--green); }
+.note { border: 2px solid #8a6d1c; background: #fbf6e4; border-radius: 8px; padding: 10px 14px; margin-top: 14px; }
+.note h3 { margin: 0 0 4px; font: 700 13px/1.4 "Helvetica Neue", Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.08em; color: #8a6d1c; }
+.note p { margin: 0; }
