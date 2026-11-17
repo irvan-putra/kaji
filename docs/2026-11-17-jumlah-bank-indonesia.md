@@ -89,13 +89,25 @@ Untuk membandingkan skala antarbank, OJK mengelompokkan bank umum berdasarkan mo
 
 **Terverifikasi** terhadap pemberitaan yang mengutip POJK 12/POJK.03/2021 (Bisnis, 20 Agu 2021; Sindonews, 23 Agu 2021; Kompas, 22 Agu 2021) dan teks POJK di JDIH BPK. Teks POJK: https://peraturan.bpk.go.id/Read/221984/Peraturan%20OJK%20No.%2012%20Tahun%202021.pdf. Pemberitaan: https://finansial.bisnis.com/read/20210820/90/1431998/ojk-ubah-klasifikasi-bank-umum-dari-buku-menjadi-kbmi-ini-rinciannya
 
-Catatan: batas KBMI adalah **rentang kategori**, bukan modal inti aktual tiap bank. Penempatan tiap bank ke kelompoknya memerlukan angka modal inti tiap bank pada periode laporan yang sama. Catatan ini belum memverifikasi data per bank. Materi grafik yang diteruskan mengklaim ada nilai untuk 37 dari 48 bank per 31 Desember 2025, sementara 11 lainnya ditampilkan tanpa bobot. Angka modal dan cakupan 37/48 masih perlu diverifikasi terhadap laporan sumber. Catatan ini belum membuat treemap dari angka yang sudah diverifikasi; jangan pakai batas kategori sebagai pengganti nilai aktual.
+Catatan: batas KBMI adalah **rentang kategori**, bukan modal inti aktual tiap bank. Penempatan tiap bank ke kelompoknya memerlukan angka modal inti tiap bank pada periode laporan yang sama. Catatan ini belum memverifikasi data per bank.
+
+### Klaim modal inti dalam dua versi treemap
+
+Treemap pertama mengklaim nilai untuk 37 dari 48 bank berdasarkan modal inti (Tier-1) per 31 Desember 2025, dengan 11 ticker tanpa bobot: AGRO, BACA, BBKP, BBYB, BKSW, BNLI, BSIM, MAYA, MEGA, SDRA, dan SUPA. Angka dan cakupan versi pertama belum diverifikasi.
+
+Treemap kedua berjudul "Modal Inti Seluruh Bank yang Tercatat di BEI, 30 Juni 2026" dan mengklaim angka untuk 43 dari 48 bank; lima yang ditandai n.a. adalah BNLI, BRIS, BSIM, MEGA, dan NOBU. Berkas pengiring memuat 48 baris: 39 angka berperiode 30 Juni 2026, empat angka berperiode 31 Desember 2025 (BNGA, NISP, BMAS, MASB), dan lima baris n.a. tanpa nilai, periode, atau tautan sumber. Jadi datanya tidak mencakup satu tanggal seragam meskipun judul grafik menyebut 30 Juni 2026.
+
+Berkas pengiring menyebut angka umumnya memakai modal inti (Tier-1) masing-masing bank, bukan konsolidasian. Beberapa catatan menyatakan ekstraksi PDF sumber terpotong dan angka diambil dari cuplikan terindeks; angka tersebut belum dikonfirmasi pada tabel sumber. Nilai terbesar yang tercantum adalah BBCA Rp247,9 triliun, BBRI Rp240,4 triliun, BMRI Rp229,0 triliun, dan BBNI Rp151,3 triliun. Ada pula ubin kecil seperti MAYA, BKSW, BBYB, dan BEKS yang angkanya tidak terbaca pada gambar; angka ada di berkas pengiring.
+
+Grafik menyatakan warna mengikuti kelompok KBMI. Batas yang tercantum di atas adalah KBMI 4 di atas Rp70 triliun; KBMI 3 di atas Rp14 triliun sampai dengan Rp70 triliun; KBMI 2 di atas Rp6 triliun sampai dengan Rp14 triliun; dan KBMI 1 sampai dengan Rp6 triliun. Batas tersebut terverifikasi terhadap POJK 12/POJK.03/2021, tetapi tidak memverifikasi nilai modal atau pengelompokan aktual tiap bank.
+
+Seluruh angka modal inti dan cakupannya masih perlu diverifikasi terhadap laporan publikasi masing-masing bank. Perubahan daftar tanpa angka dari versi pertama ke versi kedua juga belum dapat dijelaskan. Gambar dan berkas Excel tidak diterbitkan ulang; catatan ini belum membuat treemap dari angka terverifikasi. Jangan pakai batas KBMI sebagai pengganti nilai aktual.
 
 ## Bagian terbuka
 
 - Belum ada **total terbaru semua bank pada satu tanggal bersama** yang terverifikasi. Acuan satu sumber dan satu periode yang tercatat di sini adalah total LPS 1.617 bank per Triwulan II 2025; angka BI Juli 2025 dan LPS Juni 2026 memberi cakupan/tanggal berbeda, sehingga tidak dijumlahkan sebagai total terbaru.
 - Status pencatatan individual ke-48 emiten belum diverifikasi satu per satu; daftar di atas adalah kandidat dari pencocokan dua sumber publik.
-- Data modal inti aktual per bank belum diverifikasi dalam catatan ini; klaim cakupan 37 dari 48 pada 31 Desember 2025 juga belum diverifikasi.
+- Angka modal inti aktual per bank, periode yang seragam, dan cakupan kedua treemap belum diverifikasi ke laporan bank. Versi pertama mengklaim 37/48 per 31 Desember 2025; versi kedua mengklaim 43/48 dengan empat angka berperiode 31 Desember 2025, sementara lima baris n.a.
 
 ## Sumber
 
