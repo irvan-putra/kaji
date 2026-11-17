@@ -32,4 +32,14 @@ Each note states when its facts were checked, links the official pages it relied
 - [What it would take to create .jakarta](docs/jakarta-tld.md) - the ICANN path for a city TLD, current .jakarta status, costs, government support rules, and the .amsterdam precedent.
 - [Jakarta Smart City feasibility sketch for .jakarta](docs/jakarta-smart-city-feasibility.md) - indicative Rupiah fee conversions and a proposal outline, with BLUD authority, procurement path, demand, and costs left for proper study and review.
 
+## English translations of the Rapi research notes
+
+The Indonesian originals remain above; English versions are additive translations.
+
+- [The number of banks in Indonesia](docs/en-2026-11-17-jumlah-bank-indonesia.md) - counts, listed-bank candidates, and the separate treemap claims; coverage and capital figures remain unverified.
+- [Mother's maiden name in bank services](docs/en-nama-ibu-kandung-layanan-bank.md) - distinguishes the regulation's example of a mother's name for authentication from mother's maiden name in the SLIK reporting list; mandatory-field status remains unverified.
+- [Measuring the economy independently](docs/en-mengukur-ekonomi-independen.md) - a proposed protocol; fieldwork has not been run and example figures remain unverified.
+- [BNI Sandbox Tester prototype](docs/en-prototipe-bni-sandbox-tester.md) - an unexecuted design; no code or API call was run.
+- [Assessing bank valuation with public data](docs/en-menilai-valuasi-bank-dengan-data-publik.md) - a proposed framework and source review; no valuation or field study was run.
+
 Project-specific research that only makes sense inside its own project stays in that project's repository instead.
