@@ -9,6 +9,7 @@ Each note states when its facts were checked, links the official pages it relied
 - [Local-first software](docs/local-first-software.md) - source ideals and unvalidated design proposals.
 - [Showing an edit conflict as branches](docs/conflict-resolution-ui-idea.md) - an unbuilt, untested UI idea; sync and merge behavior remain open.
 - [Crypto in Indonesia: supervision, seller tax and wallet design](docs/crypto-in-indonesia-regulation-tax-wallet-choice.md) - dated summary of official texts, not financial, legal or tax advice.
+- [Bank counts and listed bank tickers in Indonesia](docs/2026-11-17-jumlah-bank-indonesia.md) - dated counts with definitions, 48 unverified listing candidates, KBMI thresholds, and the missing current capital data for a treemap.
 - [WonderOS items and local-first notes](docs/wonderos-items-and-local-first-notes.md) - a project reading; sync behavior was not checked.
 - [Proving a sync/merge core with Lean and related tools](docs/proving-a-sync-merge-core-with-lean-and-friends.md) - project claims are attributed, not independently verified; no proof or tool test was run.
 - [Receiving payments from Indonesia](docs/receiving-payments-from-indonesia.md) - general provider information, checked 2026-11-16; not financial or tax advice.
