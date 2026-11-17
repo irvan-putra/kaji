@@ -38,3 +38,9 @@ That last line is the whole point of the method: the product shapes (downloads, 
 
 - [Gumroad pricing](https://gumroad.com/pricing) and [Gumroad's fees](https://gumroad.com/help/article/66-gumroads-fees)
 - [Lemon Squeezy fees](https://docs.lemonsqueezy.com/help/getting-started/fees)
+
+## Illustration
+
+![Illustration of a person climbing a rising stack of coins.](assets/illustrations/zero-cash-illustration.png)
+
+*Illustration only: not a real product screenshot, observed sales, or an earnings forecast. The examples above use hypothetical inputs.*

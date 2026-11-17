@@ -46,3 +46,9 @@ For a personal app with public source builds, a small self-updater inside the ap
 - [Play Console Help: use Play App Signing (existing-app enrollment via PEPK)](https://support.google.com/googleplay/android-developer/answer/9842756?hl=en)
 - [Play Console Help: testing requirements for personal accounts](https://support.google.com/googleplay/android-developer/answer/14151465?hl=en) · [Play Console Help: $25 registration and verification](https://support.google.com/googleplay/android-developer/answer/14659200?hl=en)
 - [F-Droid: unattended updates on Android 12+](https://f-droid.org/2024/02/08/twif.html) · [Obtainium on GitHub](https://github.com/ImranR98/Obtainium)
+
+## Illustration
+
+![Illustration of a phone with an app-update symbol, made for this comparison. It is not an installed-build screenshot.](assets/illustrations/android-updates.png)
+
+*Illustration created for this app-update comparison; it is not an installed-build screenshot or evidence that an update route was tested on a device.*

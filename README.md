@@ -4,6 +4,18 @@ Research notes from building personal software, written up so they are useful be
 
 Each note states when its facts were checked, links the official pages it relied on, and separates what is verified from what is still a proposal. Free tiers, platform rules and fees change without notice, so treat the check dates as part of the content.
 
+## Recovered examples and visuals
+
+Three standalone authored page examples are available under [`examples/`](examples/README.md): the Indomie recipe, an archived Insting workshop landing-page draft, and the conflict-resolution concept. The Insting example is not an active offer; its signup controls are disabled. Conflict screenshots are concepts using invented items and names.
+
+This repo also includes illustrations alongside the Android-update, application-ID, zero-cash, and conflict-resolution research notes. They are explicitly labeled as illustrations, not product screenshots or measured evidence.
+
+## Research index illustration
+
+![An open blank notebook with blank index cards and tags on a desk.](docs/assets/illustrations/research-index-notebook.jpg)
+
+*Generated illustration for the public research index, not a research record.*
+
 ## Notes
 
 - [Local-first software](docs/local-first-software.md) - source ideals and unvalidated design proposals.

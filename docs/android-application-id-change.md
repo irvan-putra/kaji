@@ -14,3 +14,9 @@ Status: read 2026-11-16 from Android's own pages. Where the docs are silent, thi
 
 ## Checks before changing an ID
 Whether the old ID has been published or distributed, who updates it, which signing key each ID uses, and how users move their data.
+
+## Illustration
+
+![Illustration of a phone and app icons for an application-ID migration. The example package IDs are not real app IDs.](assets/illustrations/app-id-migration.png)
+
+*Illustration only. The `com.vanipy` IDs shown are examples, not actual app IDs or proof of a completed migration.*

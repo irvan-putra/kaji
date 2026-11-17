@@ -1,0 +1,78 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Indomie Goreng: an engineer&#x27;s spec</title><link rel="stylesheet" href="style.css"></head><body><main>
+        <header><p class="eyebrow">~7 min runtime</p><h1>Indomie Goreng: an engineer&#x27;s spec</h1><p>Mi goreng, written for people who read the docs before they cook. Fully specified, lightly tested, endlessly forked.</p></header>
+
+        <figure><a href="images/indomie.jpg" target="_blank" rel="noopener" aria-label="Open full-size image"><img src="images/indomie.jpg" alt="A plate of Indomie mi goreng topped with a fried egg and lettuce"></a></figure>
+        <p class="caption">Reference output: Indomie mi goreng with telur ceplok. Photo by Gunawan Kartapranata, <a href="https://commons.wikimedia.org/wiki/File:Indomie_Mie_Goreng_Iga_Penyet_2.JPG">CC BY-SA 3.0 via Wikimedia Commons</a>. Your output may vary.</p>
+
+        <section><h2>Dependencies</h2>
+            <div>
+                <div class="row"><strong>Indomie Mi Goreng, 1 pack (85 g)</strong><span>The core runtime. Other brands are forks; behaviour is not guaranteed.</span><br><small>required</small></div>
+                <div class="row"><strong>Water, 400 ml</strong><span>For the boil phase. Filtered is a nice-to-have, not a dependency.</span><br><small>required</small></div>
+                <div class="row"><strong>Seasoning packets, 5 of 5</strong><span>Bundled with the pack. Kecap manis is not optional; do not uninstall.</span><br><small>bundled</small></div>
+                <div class="row"><strong>Egg, 1 unit</strong><span>Build flag WITH_TELUR. The classic. Sunny side up is the stable release.</span><br><small>optional</small></div>
+                <div class="row"><strong>Sosis, 1 to 2 units</strong><span>Build flag WITH_SOSIS. Slice on the bias for maximum surface area.</span><br><small>optional</small></div>
+                <div class="row"><strong>Cabe rawit or chili sauce</strong><span>Runtime parameter LEVEL_PEDAS. Defaults to 2. See Configuration.</span><br><small>to taste</small></div>
+            </div>
+        </section>
+
+        <section><h2>Configuration</h2>
+            <p>Set the flags. The build summary updates as you go.</p>
+            <fieldset><legend>Configuration</legend><label><input type="checkbox" id="telur" checked> Telur</label><label><input type="checkbox" id="sosis"> Sosis</label><label for="pedas">Level pedas: <output id="spice-label"></output></label><input type="range" id="pedas" min="0" max="5" value="2"></fieldset>
+
+
+            <pre id="flags" aria-live="polite"></pre>
+            <dl><dt>Estimated runtime</dt><dd id="runtime"></dd><dt>Critical path</dt><dd id="critical"></dd><dt>Output</dt><dd>1 serving, hot. Not cacheable.</dd></dl>
+            <aside id="warning" hidden><h3>Pedas warning</h3><p>Level <span id="warning-level"></span> exceeds the recommended envelope for most hardware. Keep teh manis within reach.</p></aside>
+        </section>
+
+        <section><h2>The algorithm</h2>
+            <ol><li>Bring 400 ml of water to a rolling boil. Do not add noodles early; a cold start introduces sogginess.</li><li>Insert the noodle block. Boil exactly 3 minutes. This is the timing-critical section.</li><li>Parallel thread: open all five seasoning packets into the serving bowl. Mixing happens in the bowl, never in the pot.</li><li>If WITH_TELUR: fry the egg in a separate pan now. Parallelizable with step 2.</li><li>Drain the noodles completely. Residual water is the leading cause of sauce-dilution bugs.</li><li>Transfer to the bowl and toss with conviction until every strand is coated. Under-tossing causes clumpy sauce; see Failure modes.</li><li>Plate, garnish with egg, sosis and extra fried shallots as configured. Serve immediately; this build does not idle well.</li></ol>
+        </section>
+
+        <section><h2>Pseudocode</h2>
+            <pre>function cookIndomie(config = {}) {
+  const { telur = true, sosis = false,
+          pedas = 2 } = config;
+  const water = boil(400);      // ml
+  add(PACK.noodles, water);
+  if (telur) spawn(fryEgg);     // side thread
+  if (sosis) spawn(frySosis);   // side thread
+  await sleep(min(3));          // hard SLA
+  drain(noodles);               // fully
+  const sauce = unpack(PACK
+    .seasoning.all);            // 5 of 5
+  return toss(noodles, sauce)
+    .garnish([shallots, egg, sosis])
+    .serve(HOT);                // no cache
+}</pre>
+        </section>
+
+        <section><h2>State diagram</h2>
+            <div class="states">
+                <span class="state">PANTRY</span><span class="arrow">→</span>
+                <span class="state">BOILING</span><span class="arrow">→</span>
+                <span class="state">DRAINED</span><span class="arrow">→</span>
+                <span class="state">SAUCED</span><span class="arrow">→</span>
+                <span class="state">PLATED</span><span class="arrow">→</span>
+                <span class="state state-final">CONSUMED</span>
+            </div>
+            <p class="caption">Terminal state is CONSUMED. There is no rollback.</p>
+        </section>
+
+        <section><h2>Failure modes</h2>
+            <div>
+                <div class="row"><strong>Soggy noodles</strong><span>Root cause: boil ran past 3 minutes. Fix: set a timer; the SLA is hard.</span></div>
+                <div class="row"><strong>Clumpy sauce</strong><span>Root cause: insufficient tossing or wet noodles. Fix: drain fully, toss like you mean it.</span></div>
+                <div class="row"><strong>Bland output</strong><span>Root cause: partial seasoning install. Fix: all five packets, every run. No cherry-picking.</span></div>
+                <div class="row"><strong>Broken yolk</strong><span>Root cause: egg flipped under load. Fix: sunny side up is stable; flipping is experimental.</span></div>
+                <div class="row"><strong>Cold build</strong><span>Root cause: plated, then abandoned for a phone. Fix: consume on completion. No hot standby.</span></div>
+            </div>
+        </section>
+
+        <section><h2>Performance notes</h2>
+            <dl><dt>Total runtime</dt><dd>~7 min end to end</dd><dt>Critical path</dt><dd>Boil 3 min → drain → toss</dd><dt>Parallelizable</dt><dd>Seasoning unpack, egg and sosis fry</dd><dt>Throughput</dt><dd>1 serving per run; scale by packs, not time</dd><dt>Resource usage</dt><dd>1 pot, 1 bowl, optional 1 pan</dd><dt>Memory footprint</dt><dd>One kitchen counter</dd></dl>
+            <aside><h3>Known issue</h3>Scaling to two packs is linear in noodles but not in happiness. Past four packs, reviewer attention drops sharply.</aside>
+        </section>
+
+        <footer>Spec written 23 Oct 2026. Battle-tested in production by warmindo everywhere since 1982. Nothing is cooked from this page.</footer>
+    </main><script>const $=id=>document.getElementById(id);const labels=['Stock build','Mild fork','Pedas','Pedas banget','Rawit overflow','Segfault'];function update(){const egg=$('telur').checked,sausage=$('sosis').checked,p=Number($('pedas').value);$('spice-label').textContent=labels[p];$('flags').textContent=`WITH_TELUR=${egg}, WITH_SOSIS=${sausage}, LEVEL_PEDAS=${p} (${labels[p].toLowerCase()})`;$('runtime').textContent=`~${7+(egg?2:0)+(sausage?2:0)} min`;$('critical').textContent='Boil 3 min, drain, toss.'+(egg||sausage?' Egg and sosis run on a side thread.':'');$('warning').hidden=p<4;$('warning-level').textContent=p;}['telur','sosis','pedas'].forEach(x=>$(x).addEventListener('input',update));update();</script></body></html>
