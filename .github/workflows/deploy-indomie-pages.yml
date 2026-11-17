@@ -1,4 +1,4 @@
-name: Deploy Indomie engineering spec to GitHub Pages
+name: Deploy Indomie engineering spec at /indomie on GitHub Pages
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://vanipy.com/kaji/indomie/
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -30,10 +30,14 @@ jobs:
         uses: actions/checkout@v6
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+      - name: Stage the spec at the /indomie path
+        run: |
+          mkdir -p public/indomie
+          cp -R examples/indomie/. public/indomie/
       - name: Upload only the Indomie engineering spec
         uses: actions/upload-pages-artifact@v4
         with:
-          path: examples/indomie
+          path: public
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

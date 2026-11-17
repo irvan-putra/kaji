@@ -6,7 +6,7 @@ Each note states when its facts were checked, links the official pages it relied
 
 ## Recovered examples and visuals
 
-Three standalone authored page examples are available under [`examples/`](examples/README.md): the Indomie recipe, an archived Insting workshop landing-page draft, and the conflict-resolution concept. The Insting example is not an active offer; its signup controls are disabled. Conflict screenshots are concepts using invented items and names.
+Three authored page examples are available under [`examples/`](examples/README.md): the [live interactive Indomie engineering spec](https://vanipy.com/kaji/indomie/), an archived Insting workshop landing-page draft, and the conflict-resolution concept. The separate tabular Indomie recipe-box card remains in the examples directory and is not replaced by the interactive page. The Insting example is not an active offer; its signup controls are disabled. Conflict screenshots are concepts using invented items and names.
 
 This repo also includes illustrations alongside the Android-update, application-ID, zero-cash, and conflict-resolution research notes. They are explicitly labeled as illustrations, not product screenshots or measured evidence.
 
