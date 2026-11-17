@@ -1,0 +1,122 @@
+{
+ "checked": "2026-11-17 15:27 WIB",
+ "apps": [
+  {
+   "name": "itdapk",
+   "version": "0.5.12",
+   "state": "available",
+   "icon": "itdapk.png",
+   "tag": "Android widget and todo app",
+   "about": "Home-screen widget and app for reminders and todo lists, with shared lists over Delta Chat. Experimental build.",
+   "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.12/itdapk-v0.5.12.apk",
+   "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.12",
+   "repo": "https://github.com/irvan-putra/intodo",
+   "sha256": "b273695e23797d8e50c59f4ca12000df168134aebef315492f0eead0dfae0207"
+  },
+  {
+   "name": "kemas",
+   "version": "0.2.1",
+   "state": "available",
+   "icon": "kemas.png",
+   "tag": "Experimental test build",
+   "about": "Cleaning accountability app. Known issue: the bottom input and Add button overlap the navigation bar. A layout fix is pending; 0.2.1 is the latest build.",
+   "apk": "https://github.com/irvan-putra/kemas/releases/download/v0.2.1/kemas-v0.2.1.apk",
+   "release": "https://github.com/irvan-putra/kemas/releases/tag/v0.2.1",
+   "repo": "https://github.com/irvan-putra/kemas",
+   "sha256": "0bdf9f1357f8bb15d0befda427b9cc94f3ac8c20ca4097ac6e7955e8fcecbc8a"
+  },
+  {
+   "name": "cabang",
+   "version": "0.3.1",
+   "state": "available",
+   "icon": "cabang.png",
+   "tag": "Experimental build",
+   "about": "Threaded, collapsible view for Delta Chat conversations.",
+   "apk": "https://github.com/irvan-putra/cabang/releases/download/v0.3.1/cabang-v0.3.1.apk",
+   "release": "https://github.com/irvan-putra/cabang/releases/tag/v0.3.1",
+   "repo": "https://github.com/irvan-putra/cabang",
+   "sha256": "1f8632bfa6217a23080d5909fe220391518dafc6a15b372e92ecd064e87f5180"
+  },
+  {
+   "name": "menit",
+   "version": "0.1.0",
+   "state": "available",
+   "icon": "menit.png",
+   "tag": "Experimental test build",
+   "about": "Estimates how much phone time goes to AI apps.",
+   "apk": "https://github.com/irvan-putra/menit/releases/download/v0.1.0-test/menit-v0.1.0.apk",
+   "release": "https://github.com/irvan-putra/menit/releases/tag/v0.1.0-test",
+   "repo": "https://github.com/irvan-putra/menit",
+   "sha256": "212beac71896ec2e0ced5d613a3a8091752b3bfd6dd6fc2a4a7fa5b00764d18e"
+  },
+  {
+   "name": "jin",
+   "state": "available",
+   "tag": "Experimental test build",
+   "about": "Phone-side Delta Chat bot runtime, built as a standalone validation app. The runtime now ships inside itdapk.",
+   "release": "https://github.com/irvan-putra/jin/releases/tag/v0.4.15",
+   "repo": "https://github.com/irvan-putra/jin",
+   "version": "0.4.15",
+   "apk": "https://github.com/irvan-putra/jin/releases/download/v0.4.15/jin-v0.4.15.apk",
+   "sha256": "11a941fec4420a35ed1a2c4d8e0f495e134c4212ad40e4cdd61b576e5fc73158",
+   "icon": "jin.png"
+  },
+  {
+   "name": "fae",
+   "state": "available",
+   "tag": "Experimental test build",
+   "about": "Pushes a ZIP file to a GitHub repository using git over SSH.",
+   "release": "https://github.com/irvan-putra/fae/releases/tag/v1.1.1",
+   "repo": "https://github.com/irvan-putra/fae",
+   "version": "1.1.1",
+   "apk": "https://github.com/irvan-putra/fae/releases/download/v1.1.1/fae-v1.1.1.apk",
+   "sha256": "f2a920f68093cbf3892b133393d9046db830e58d903ae033684fe58c04ad9ec1",
+   "icon": "fae.png"
+  },
+  {
+   "name": "sapa",
+   "state": "available",
+   "tag": "Experimental test build",
+   "about": "Helper for event moderators: counts people on camera, counts raised hands per question round and picks a random person.",
+   "release": "https://github.com/irvan-putra/sapa/releases/tag/v0.5.7",
+   "repo": "https://github.com/irvan-putra/sapa",
+   "version": "0.5.7",
+   "sha256": "7b9406125c1d6cfdb4c781f5f582f0d0907a282b819327e7b122e1a0c65a7450",
+   "apk": "https://github.com/irvan-putra/sapa/releases/download/v0.5.7/sapa-v0.5.7.apk",
+   "icon": "sapa.png"
+  },
+  {
+   "name": "onda",
+   "state": "available",
+   "tag": "Experimental test build",
+   "about": "On-device sensors and small-model demos for Android, built for an Edge AI talk.",
+   "release": "https://github.com/irvan-putra/onda/releases/tag/v0.2.1",
+   "repo": "https://github.com/irvan-putra/onda",
+   "version": "0.2.1",
+   "sha256": "6a77d3677e996a24f124a0d6af2be50ac45e3f43fc52cda84de25aa7e072ead2",
+   "apk": "https://github.com/irvan-putra/onda/releases/download/v0.2.1/onda-v0.2.1.apk",
+   "icon": "onda.png"
+  },
+  {
+   "name": "bidik",
+   "state": "source",
+   "tag": "Prototype, no APK",
+   "about": "Captures queued web pages on the phone and sends the captures back to a chosen contact. No APK is published.",
+   "repo": "https://github.com/irvan-putra/bidik"
+  },
+  {
+   "name": "denyut",
+   "state": "source",
+   "tag": "Early work in progress, no APK",
+   "about": "Open-source personal assistant: a Delta Chat bot with an Android wrapper. All behavior lives in plain files. No APK is published.",
+   "repo": "https://github.com/irvan-putra/denyut"
+  },
+  {
+   "name": "saku",
+   "state": "source",
+   "tag": "Design draft, no APK",
+   "about": "Local-first Android password manager project. The source has only a synthetic demo screen and design notes; do not use it for real passwords. No APK is published.",
+   "repo": "https://github.com/irvan-putra/saku"
+  }
+ ]
+}

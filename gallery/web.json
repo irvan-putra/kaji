@@ -1,0 +1,146 @@
+{
+ "checked": "2026-11-17 15:19 WIB",
+ "sections": [
+  {
+   "title": "Animation and cooking",
+   "items": [
+    {
+     "name": "animate",
+     "tag": "Fork of an animation skill, video demos",
+     "about": "Code-drawn canvases rendered to MP4: the original Grow video and a render of the upstream History of AI example.",
+     "url": "https://vanipy.com/animate/",
+     "source": "https://github.com/irvan-putra/animate"
+    },
+    {
+     "name": "cook",
+     "tag": "Recipe boxes: nasi goreng, aglio e olio, tumis kangkung",
+     "about": "Parallel-thread recipe tables with adjustable portions and options. Not kitchen-tested; food-safety notes are on each page.",
+     "url": "https://vanipy.com/kaji/cook/",
+     "source": "https://github.com/irvan-putra/kaji/tree/main/examples/cook"
+    },
+    {
+     "name": "Indomie recipe box",
+     "tag": "Customizable Tangle recipe",
+     "about": "The main interactive Indomie page, based on the 500 ml card.",
+     "url": "https://vanipy.com/kaji/indomie/",
+     "source": "https://github.com/irvan-putra/kaji/tree/main/examples/indomie"
+    },
+    {
+     "name": "Indomie engineer's spec",
+     "tag": "Older variant, 400 ml",
+     "about": "Kept as its own version; it is not reconciled with the recipe box. Photo credit is on the page.",
+     "url": "https://vanipy.com/kaji/indomie/instinct/"
+    }
+   ]
+  },
+  {
+   "title": "Charts and concepts",
+   "items": [
+    {
+     "name": "Synthetic break-even charts",
+     "tag": "Invented scenarios",
+     "about": "Cash vs economic break-even with made-up sales numbers.",
+     "url": "https://vanipy.com/kaji/economics-synthetic/"
+    },
+    {
+     "name": "Tumbuh draft",
+     "tag": "Archived concept, not an offer",
+     "about": "Signup controls are disabled; nothing is collected.",
+     "url": "https://vanipy.com/kaji/tumbuh/"
+    }
+   ]
+  },
+  {
+   "title": "App web versions and simulations",
+   "items": [
+    {
+     "name": "itdweb",
+     "tag": "Web version of intodo",
+     "about": "Review each change from a phone browser.",
+     "url": "https://vanipy.com/intodo/",
+     "source": "https://github.com/irvan-putra/intodo"
+    },
+    {
+     "name": "Shared-list simulation",
+     "tag": "Historical simulation",
+     "about": "A simulation, not the live app.",
+     "url": "https://vanipy.com/intodo/shared-list-simulation/"
+    },
+    {
+     "name": "Edge AI demo lab",
+     "tag": "naga",
+     "about": "Browser editions of the meetup demo scaffolds.",
+     "url": "https://vanipy.com/naga/",
+     "source": "https://github.com/irvan-putra/naga"
+    },
+    {
+     "name": "Demo lab simulation",
+     "tag": "Historical simulation",
+     "about": "A simulation, not a live service.",
+     "url": "https://vanipy.com/naga/demo-lab-simulation/"
+    },
+    {
+     "name": "vana",
+     "tag": "Review canvas",
+     "about": "Full-screen review canvas that reviews its own repo.",
+     "url": "https://vanipy.com/vana/",
+     "source": "https://github.com/irvan-putra/vana"
+    }
+   ]
+  },
+  {
+   "title": "Research and proposals",
+   "items": [
+    {
+     "name": "kaca",
+     "tag": "Research notes",
+     "about": "Tidy research notes site.",
+     "url": "https://vanipy.com/kaca/",
+     "source": "https://github.com/irvan-putra/kaca"
+    },
+    {
+     "name": "suaka",
+     "tag": "Concept",
+     "about": "Independent alternatives to big tech. Early stage.",
+     "url": "https://vanipy.com/suaka/",
+     "source": "https://github.com/irvan-putra/suaka"
+    },
+    {
+     "name": "gotong",
+     "tag": "Feasibility research",
+     "about": "Distributed AI training from Jakarta. Not validated.",
+     "url": "https://vanipy.com/gotong/",
+     "source": "https://github.com/irvan-putra/gotong"
+    },
+    {
+     "name": "mimpi",
+     "tag": "Proposal",
+     "about": "Desktop AI companion proposal. Idea stage.",
+     "url": "https://vanipy.com/mimpi/",
+     "source": "https://github.com/irvan-putra/mimpi"
+    },
+    {
+     "name": "anyam",
+     "tag": "Proposal",
+     "about": "Human-AI shared context. Idea stage.",
+     "url": "https://vanipy.com/anyam/",
+     "source": "https://github.com/irvan-putra/anyam"
+    },
+    {
+     "name": "jejak",
+     "tag": "Proposal",
+     "about": "Requirements-to-code traceability. Idea stage.",
+     "url": "https://vanipy.com/jejak/",
+     "source": "https://github.com/irvan-putra/jejak"
+    },
+    {
+     "name": "tumbuh",
+     "tag": "Proposals, not a launch",
+     "about": "Workshop and economics proposals.",
+     "url": "https://vanipy.com/tumbuh/",
+     "source": "https://github.com/irvan-putra/tumbuh"
+    }
+   ]
+  }
+ ]
+}
