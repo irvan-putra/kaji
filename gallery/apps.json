@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-17 22:27 WIB",
+ "checked": "2026-11-17 22:48 WIB",
  "apps": [
   {
    "name": "itdapk",
@@ -139,11 +139,11 @@
    "tag": "Emulator-tested only",
    "about": "Sorts commitments, inbox, space and people you lost touch with. Entries are added by hand. Offline, no permissions, no reminders, no inbox or contact access, nothing is sent. Drafts are text you send yourself. Tested on an Android emulator with synthetic data, not on a real phone. AGPL-3.0.",
    "repo": "https://github.com/irvan-putra/tumbuh-app",
-   "version": "0.1.0",
+   "version": "0.1.1",
    "icon": "tumbuh.png",
-   "apk": "https://github.com/irvan-putra/tumbuh-app/releases/download/v0.1.0/tumbuh-v0.1.0.apk",
-   "release": "https://github.com/irvan-putra/tumbuh-app/releases/tag/v0.1.0",
-   "sha256": "b2c95c235e66488f9a03ae5eedf282fb73d1b08759223cc4fac2bca5e367cbae"
+   "apk": "https://github.com/irvan-putra/tumbuh-app/releases/download/v0.1.1/tumbuh-v0.1.1.apk",
+   "release": "https://github.com/irvan-putra/tumbuh-app/releases/tag/v0.1.1",
+   "sha256": "8f733d2ca26e3511e70debbfa0ca11387b9fc793d9bf0d94223c294cfc77559a"
   }
  ]
 }
