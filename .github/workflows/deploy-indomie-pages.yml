@@ -8,6 +8,7 @@ on:
       - 'examples/indomie/**'
       - 'examples/cook/**'
       - 'examples/economics-synthetic/**'
+      - 'examples/insting/**'
       - 'README.md'
       - 'examples/README.md'
   workflow_dispatch:
@@ -46,6 +47,11 @@ jobs:
         run: |
           mkdir -p public/economics-synthetic
           cp -R examples/economics-synthetic/. public/economics-synthetic/
+      - name: Stage Tumbuh archive and legacy route
+        run: |
+          mkdir -p public/tumbuh public/insting
+          cp -R examples/insting/. public/tumbuh/
+          cp -R examples/insting/. public/insting/
       - name: Upload selected public pages
         uses: actions/upload-pages-artifact@v4
         with:
