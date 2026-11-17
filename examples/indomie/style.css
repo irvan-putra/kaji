@@ -1,1 +1,142 @@
-*{box-sizing:border-box}body{margin:0;background:#f6f3ed;color:#263b43;font:17px/1.65 system-ui,sans-serif}main{max-width:940px;margin:0 auto;padding:52px 28px;background:#fffdf8}h1{font:clamp(32px,6vw,52px)/1.12 Georgia,serif;margin:10px 0 20px}h2{font:30px/1.2 Georgia,serif;margin:48px 0 20px}h3{font-size:21px;margin:28px 0 10px}p{margin:14px 0}.eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:.13em;color:#62777b}img{max-width:100%;height:auto;display:block;border-radius:12px}figure{margin:28px 0}figcaption,.caption{font-size:14px;color:#667479;margin-top:10px}a{color:#176a70;overflow-wrap:anywhere}aside{border-left:4px solid #af7f2b;padding:15px 20px;background:#f7efdf;margin:26px 0}aside h3{margin:0}dl{display:grid;grid-template-columns:minmax(110px,1fr) 2fr;gap:12px 22px}dt{font-weight:650}dd{margin:0}.row{padding:17px 0;border-bottom:1px solid #dedfd9}.row strong{display:block}.row small{color:#62777b}.codeblock,pre{overflow:auto;background:#edf1ef;border-radius:10px;padding:16px;font:13px/1.6 ui-monospace,monospace;white-space:pre-wrap;overflow-wrap:anywhere}li{padding:7px 0}footer{margin-top:50px;padding-top:25px;border-top:1px solid #ddd;color:#62777b;font-size:14px}button,input,select{font:inherit}button{min-height:44px;padding:10px 20px;border:1px solid #97aaa7;border-radius:8px;background:#176a70;color:white}button:disabled{background:#d7ddda;color:#586864;cursor:not-allowed}fieldset{margin:20px 0;border:1px solid #bbc9c4;border-radius:8px;padding:14px}label{display:inline-flex;align-items:center;gap:10px;min-height:44px;margin-right:22px}input[type=range]{width:100%;min-height:44px}input[type=checkbox]{width:22px;height:22px}.states{display:flex;flex-wrap:wrap;gap:8px}.state{border:1px solid #95aaa2;padding:5px 9px;border-radius:5px;font:13px monospace}.landing-h1{font:clamp(30px,6vw,46px)/1.2 Georgia,serif}.landing-h2{font-size:28px;font-weight:bold}.landing-cta-note{font-size:14px;color:#667479}.landing-eyebrow{letter-spacing:.1em;text-transform:uppercase;font-size:13px}.landing-hero,.landing-final{padding:26px;border:1px solid #d5ded8;border-radius:12px;background:#f1f5ef;margin:26px 0}[hidden]{display:none!important}@media(max-width:500px){main{padding:30px 19px}dl{grid-template-columns:1fr;gap:4px}dd{margin-bottom:14px}.landing-hero,.landing-final{padding:20px}h2{font-size:27px}}
+/* Indomie recipe box - Tangle edition. Card look after the repo's recipe-box card. */
+
+:root {
+  --green: #2e7d32;
+  --cream: #f7f7e8;
+  --ink: #1b2a1b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 24px 16px 64px;
+  background: #ece9d8;
+  color: var(--ink);
+  font: 16px/1.55 Georgia, "Times New Roman", serif;
+}
+
+main { max-width: 780px; margin: 0 auto; }
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font: 12px/1.4 "Helvetica Neue", Arial, sans-serif;
+  color: var(--green);
+  margin: 0 0 6px;
+}
+
+h1 { font-size: 28px; margin: 0 0 10px; }
+h2 {
+  font: 700 13px/1.4 "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--green);
+  border-bottom: 2px solid var(--green);
+  padding-bottom: 4px;
+  margin: 34px 0 14px;
+}
+
+.lede { margin: 0 0 8px; }
+
+section { margin-bottom: 8px; }
+
+.sentence { font-size: 18px; }
+
+.flags {
+  font: 13px/1.5 "SF Mono", Menlo, Consolas, monospace;
+  background: #eef2e4;
+  border: 1px solid #cdd8bb;
+  border-radius: 6px;
+  padding: 8px 10px;
+  white-space: pre-wrap;
+}
+
+/* Tangle controls, tuned to the card palette */
+.TKAdjustableNumber, .TKFlag {
+  color: #2850c8;
+  border-bottom: 1px dashed #2850c8;
+  cursor: col-resize;
+  position: relative;
+}
+.TKFlag { cursor: pointer; }
+.TKAdjustableNumberDown { color: #122a80; border-bottom-color: #122a80; }
+
+/* The card */
+table.card {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--cream);
+  border: 3px solid var(--green);
+  border-radius: 18px;
+  overflow: hidden;
+  font-size: 15px;
+}
+.card td {
+  border: 2px solid var(--green);
+  padding: 12px 10px;
+  vertical-align: top;
+}
+.card .card-title td {
+  font: 700 22px/1.3 "Helvetica Neue", Arial, sans-serif;
+  padding: 16px 12px;
+}
+.card .card-lede td,
+.card .card-plating td,
+.card .card-foot td {
+  text-align: center;
+  padding: 14px 16px;
+}
+
+/* Build output */
+dl.output {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 6px 18px;
+  margin: 0;
+}
+dl.output dt { font-weight: 700; }
+dl.output dd { margin: 0; }
+
+.warning {
+  border: 2px solid #b3401e;
+  background: #fdf3ee;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-top: 14px;
+}
+.warning h3 {
+  margin: 0 0 4px;
+  font: 700 13px/1.4 "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #b3401e;
+}
+.warning p { margin: 0; }
+
+footer {
+  margin-top: 40px;
+  font-size: 13px;
+  color: #55604f;
+}
+footer a { color: var(--green); }
+code { font-family: "SF Mono", Menlo, Consolas, monospace; }
+
+@media (max-width: 560px) {
+  body { padding: 16px 10px 48px; }
+  h1 { font-size: 22px; }
+  .sentence { font-size: 16px; }
+
+  /* Flatten the card into a stacked list; merged cells become plain blocks. */
+  table.card, .card tbody { display: block; }
+  .card tr { display: block; }
+  .card tr + tr { border-top: 2px solid var(--green); }
+  .card td {
+    display: block;
+    border: none;
+    padding: 8px 12px;
+    font-size: 15px;
+  }
+  .card .card-title td { font-size: 19px; border: none; }
+  .card .card-lede td, .card .card-plating td, .card .card-foot td { text-align: left; border: none; }
+}

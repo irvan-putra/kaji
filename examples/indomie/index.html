@@ -1,78 +1,186 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Indomie Goreng: an engineer&#x27;s spec</title><link rel="stylesheet" href="style.css"></head><body><main>
-        <header><p class="eyebrow">~7 min runtime</p><h1>Indomie Goreng: an engineer&#x27;s spec</h1><p>Mi goreng, written for people who read the docs before they cook. Fully specified, lightly tested, endlessly forked.</p></header>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indomie Mi Goreng: the customizable recipe box</title>
+<link rel="stylesheet" href="tangle/lib/TangleKit.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="recipe-box">
 
-        <figure><a href="images/indomie.jpg" target="_blank" rel="noopener" aria-label="Open full-size image"><img src="images/indomie.jpg" alt="A plate of Indomie mi goreng topped with a fried egg and lettuce"></a></figure>
-        <p class="caption">Reference output: Indomie mi goreng with telur ceplok. Photo by Gunawan Kartapranata, <a href="https://commons.wikimedia.org/wiki/File:Indomie_Mie_Goreng_Iga_Penyet_2.JPG">CC BY-SA 3.0 via Wikimedia Commons</a>. Your output may vary.</p>
+  <header>
+    <p class="eyebrow">tangle edition &middot; drag the blue numbers</p>
+    <h1>Indomie Mi Goreng: the customizable recipe box</h1>
+    <p class="lede">A recipe box you can retune. Drag any blue number left or right, or tap a blue flag to flip it, and the whole card rewrites itself: quantities, timing, warnings and the footer verdict.</p>
+  </header>
 
-        <section><h2>Dependencies</h2>
-            <div>
-                <div class="row"><strong>Indomie Mi Goreng, 1 pack (85 g)</strong><span>The core runtime. Other brands are forks; behaviour is not guaranteed.</span><br><small>required</small></div>
-                <div class="row"><strong>Water, 400 ml</strong><span>For the boil phase. Filtered is a nice-to-have, not a dependency.</span><br><small>required</small></div>
-                <div class="row"><strong>Seasoning packets, 5 of 5</strong><span>Bundled with the pack. Kecap manis is not optional; do not uninstall.</span><br><small>bundled</small></div>
-                <div class="row"><strong>Egg, 1 unit</strong><span>Build flag WITH_TELUR. The classic. Sunny side up is the stable release.</span><br><small>optional</small></div>
-                <div class="row"><strong>Sosis, 1 to 2 units</strong><span>Build flag WITH_SOSIS. Slice on the bias for maximum surface area.</span><br><small>optional</small></div>
-                <div class="row"><strong>Cabe rawit or chili sauce</strong><span>Runtime parameter LEVEL_PEDAS. Defaults to 2. See Configuration.</span><br><small>to taste</small></div>
-            </div>
-        </section>
+  <section class="config">
+    <h2>Configuration</h2>
+    <p class="sentence">
+      Cooking
+      <span class="TKAdjustableNumber" data-var="packs" data-min="1" data-max="6" data-format="%d"></span>
+      <span class="TKSingularPlural" data-var="packs"><span>pack</span><span>packs</span></span>
+      of Indomie Mi Goreng
+      (<span data-var="noodleGrams" data-format="%d"></span>&nbsp;g of noodles),
+      <span class="TKAdjustableNumber" data-var="waterPerPack" data-min="250" data-max="750" data-step="50" data-format="%d"></span>&nbsp;ml
+      of water per pack, pedas level
+      <span class="TKAdjustableNumber" data-var="pedas" data-min="0" data-max="5" data-format="%d"></span>
+      (<span data-var="chiliText"></span>).
+      Telur:
+      <span class="TKFlag" data-var="withEgg"></span><span class="TKIf" data-var="withEgg">
+      &times;<span class="TKAdjustableNumber" data-var="eggs" data-min="1" data-max="3" data-format="%d"></span></span>.
+      Sosis:
+      <span class="TKFlag" data-var="withSosis"></span><span class="TKIf" data-var="withSosis">
+      &times;<span class="TKAdjustableNumber" data-var="sosis" data-min="1" data-max="3" data-format="%d"></span>, sliced</span>.
+      Keep
+      <span class="TKAdjustableNumber" data-var="keepTbsp" data-min="0" data-max="3" data-format="%d"></span>&nbsp;tbsp
+      of the boil water.
+    </p>
+    <p class="flags">WITH_TELUR=<span data-var="flagTelur"></span>, WITH_SOSIS=<span data-var="flagSosis"></span>, LEVEL_PEDAS=<span data-var="pedas" data-format="%d"></span> (<span data-var="pedasLabel"></span>)</p>
+  </section>
 
-        <section><h2>Configuration</h2>
-            <p>Set the flags. The build summary updates as you go.</p>
-            <fieldset><legend>Configuration</legend><label><input type="checkbox" id="telur" checked> Telur</label><label><input type="checkbox" id="sosis"> Sosis</label><label for="pedas">Level pedas: <output id="spice-label"></output></label><input type="range" id="pedas" min="0" max="5" value="2"></fieldset>
+  <section>
+    <h2>The card</h2>
+    <table class="card">
+      <tr class="card-title">
+        <td colspan="3">Indomie Mi Goreng <span class="TKIf" data-var="anySide">with </span><span class="TKIf" data-var="withEgg">telur</span><span class="TKIf" data-var="both"> &amp; </span><span class="TKIf" data-var="withSosis">sosis</span> (<span data-var="packs" data-format="%d"></span> <span class="TKSingularPlural" data-var="packs"><span>portion</span><span>portions</span></span>)</td>
+      </tr>
+      <tr class="card-lede">
+        <td colspan="3">Boil <span data-var="totalWater" data-format="%d"></span> ml water in a pot<span class="TKIf" data-var="multiPot"> - use a big pot or split across two</span>. <span class="TKIf" data-var="anySide">Put a frying pan on medium heat - parallel threads.</span><span class="TKIf" data-var="noSide">No side threads; single-threaded build.</span></td>
+      </tr>
+      <tr>
+        <td><span data-var="packs" data-format="%d"></span> <span class="TKSingularPlural" data-var="packs"><span>pack</span><span>packs</span></span> Indomie Mi Goreng (<span data-var="noodleGrams" data-format="%d"></span> g)</td>
+        <td>boil exactly 3:00 - timing-critical, does not scale with packs</td>
+        <td>drain, keep <span data-var="keepTbsp" data-format="%d"></span> tbsp of the water</td>
+      </tr>
+      <tr>
+        <td>seasoning oil + kecap manis sachets (<span data-var="packs" data-format="%d"></span> <span class="TKSingularPlural" data-var="packs"><span>set</span><span>sets</span></span>)</td>
+        <td>empty into a large bowl</td>
+        <td>mix into a paste</td>
+      </tr>
+      <tr>
+        <td>bumbu + chili powder (<span data-var="chiliText"></span>)</td>
+        <td>add to the bowl</td>
+        <td>into the bowl; toss 30 s until every strand is coated</td>
+      </tr>
+      <tr class="TKIf" data-var="withEgg">
+        <td><span data-var="eggs" data-format="%d"></span> telur (egg)<span class="TKIf" data-var="multiPack"> total, across <span data-var="packs" data-format="%d"></span> portions</span></td>
+        <td>fry sunny-side up, ~2 min, yolk runny</td>
+        <td>park on a plate - rejoins at plating. Do not flip the egg: flipping is experimental.</td>
+      </tr>
+      <tr class="TKIf" data-var="withSosis">
+        <td><span data-var="sosis" data-format="%d"></span> sosis<span class="TKIf" data-var="multiPack"> total, across <span data-var="packs" data-format="%d"></span> portions</span>, sliced</td>
+        <td>fry 2 min until the edges crisp</td>
+        <td>park on a plate - rejoins at plating</td>
+      </tr>
+      <tr>
+        <td>fried shallots sachet</td>
+        <td>do not cook</td>
+        <td>sprinkle last, straight from the pack</td>
+      </tr>
+      <tr class="card-plating">
+        <td colspan="3">Plate; crown with <span class="TKIf" data-var="withEgg">the egg</span><span class="TKIf" data-var="both">, </span><span class="TKIf" data-var="withSosis">sosis</span><span class="TKIf" data-var="anySide"> and </span>fried shallots. Serve hot - this build does not cache.</td>
+      </tr>
+      <tr class="card-foot">
+        <td colspan="3">Eat hot<span class="TKIf" data-var="withEgg">, yolk broken over the noodles</span>. Critical path: the 3:00 boil - past it the noodles ship soggy (no patch, remake). Pedas: 0 = no chili &middot; &frac12; pack = level 3 &middot; full pack = level 5 (segfault).</td>
+      </tr>
+    </table>
+  </section>
 
+  <section>
+    <h2>Build output</h2>
+    <dl class="output">
+      <dt>Estimated runtime</dt><dd>~<span data-var="runtime" data-format="%d"></span> min end to end</dd>
+      <dt>Critical path</dt><dd>Boil 3:00, drain, toss.<span class="TKIf" data-var="anySide"> Side threads: <span data-var="sideText"></span>.</span></dd>
+      <dt>Total water</dt><dd><span data-var="totalWater" data-format="%d"></span> ml (<span data-var="packs" data-format="%d"></span> &times; <span data-var="waterPerPack" data-format="%d"></span> ml)</dd>
+      <dt>Output</dt><dd><span data-var="packs" data-format="%d"></span> <span class="TKSingularPlural" data-var="packs"><span>serving</span><span>servings</span></span>, hot. Not cacheable.</dd>
+    </dl>
 
-            <pre id="flags" aria-live="polite"></pre>
-            <dl><dt>Estimated runtime</dt><dd id="runtime"></dd><dt>Critical path</dt><dd id="critical"></dd><dt>Output</dt><dd>1 serving, hot. Not cacheable.</dd></dl>
-            <aside id="warning" hidden><h3>Pedas warning</h3><p>Level <span id="warning-level"></span> exceeds the recommended envelope for most hardware. Keep teh manis within reach.</p></aside>
-        </section>
+    <aside class="warning TKIf" data-var="pedasWarning">
+      <h3>Pedas warning</h3>
+      <p>Level <span data-var="pedas" data-format="%d"></span> exceeds the recommended envelope for most hardware. Keep teh manis within reach.<span class="TKIf" data-var="segfault"> Level 5 is a full chili pack per pack: segfault territory.</span></p>
+    </aside>
+    <aside class="warning TKIf" data-var="packWarning">
+      <h3>Scaling note</h3>
+      <p>Scaling to <span data-var="packs" data-format="%d"></span> packs is linear in noodles but not in happiness. Past four packs, reviewer attention drops sharply.</p>
+    </aside>
+  </section>
 
-        <section><h2>The algorithm</h2>
-            <ol><li>Bring 400 ml of water to a rolling boil. Do not add noodles early; a cold start introduces sogginess.</li><li>Insert the noodle block. Boil exactly 3 minutes. This is the timing-critical section.</li><li>Parallel thread: open all five seasoning packets into the serving bowl. Mixing happens in the bowl, never in the pot.</li><li>If WITH_TELUR: fry the egg in a separate pan now. Parallelizable with step 2.</li><li>Drain the noodles completely. Residual water is the leading cause of sauce-dilution bugs.</li><li>Transfer to the bowl and toss with conviction until every strand is coated. Under-tossing causes clumpy sauce; see Failure modes.</li><li>Plate, garnish with egg, sosis and extra fried shallots as configured. Serve immediately; this build does not idle well.</li></ol>
-        </section>
+  <footer>
+    <p>Recipe facts match the 500&nbsp;ml recipe-box card in this repo; the separate <a href="instinct/">400&nbsp;ml engineering spec (Instinct edition)</a> remains available. Built with <a href="https://github.com/worrydream/Tangle">Tangle</a> by Bret Victor (MIT), vendored under <code>tangle/lib/</code>. Nothing is cooked from this page either.</p>
+  </footer>
 
-        <section><h2>Pseudocode</h2>
-            <pre>function cookIndomie(config = {}) {
-  const { telur = true, sosis = false,
-          pedas = 2 } = config;
-  const water = boil(400);      // ml
-  add(PACK.noodles, water);
-  if (telur) spawn(fryEgg);     // side thread
-  if (sosis) spawn(frySosis);   // side thread
-  await sleep(min(3));          // hard SLA
-  drain(noodles);               // fully
-  const sauce = unpack(PACK
-    .seasoning.all);            // 5 of 5
-  return toss(noodles, sauce)
-    .garnish([shallots, egg, sosis])
-    .serve(HOT);                // no cache
-}</pre>
-        </section>
+</main>
 
-        <section><h2>State diagram</h2>
-            <div class="states">
-                <span class="state">PANTRY</span><span class="arrow">→</span>
-                <span class="state">BOILING</span><span class="arrow">→</span>
-                <span class="state">DRAINED</span><span class="arrow">→</span>
-                <span class="state">SAUCED</span><span class="arrow">→</span>
-                <span class="state">PLATED</span><span class="arrow">→</span>
-                <span class="state state-final">CONSUMED</span>
-            </div>
-            <p class="caption">Terminal state is CONSUMED. There is no rollback.</p>
-        </section>
+<script src="tangle/lib/mootools.js"></script>
+<script src="tangle/lib/sprintf.js"></script>
+<script src="tangle/lib/BVTouchable.js"></script>
+<script src="tangle/lib/Tangle.js"></script>
+<script src="tangle/lib/TangleKit.js"></script>
+<script>
+// Clickable on/off flag that prints its state.
+Tangle.classes.TKFlag = {
+    initialize: function (element, options, tangle, variable) {
+        element.addEvent("click", function () {
+            tangle.setValue(variable, tangle.getValue(variable) ? 0 : 1);
+        });
+    },
+    update: function (element, value) {
+        element.textContent = value ? "on" : "off";
+    }
+};
 
-        <section><h2>Failure modes</h2>
-            <div>
-                <div class="row"><strong>Soggy noodles</strong><span>Root cause: boil ran past 3 minutes. Fix: set a timer; the SLA is hard.</span></div>
-                <div class="row"><strong>Clumpy sauce</strong><span>Root cause: insufficient tossing or wet noodles. Fix: drain fully, toss like you mean it.</span></div>
-                <div class="row"><strong>Bland output</strong><span>Root cause: partial seasoning install. Fix: all five packets, every run. No cherry-picking.</span></div>
-                <div class="row"><strong>Broken yolk</strong><span>Root cause: egg flipped under load. Fix: sunny side up is stable; flipping is experimental.</span></div>
-                <div class="row"><strong>Cold build</strong><span>Root cause: plated, then abandoned for a phone. Fix: consume on completion. No hot standby.</span></div>
-            </div>
-        </section>
+// First child when value is exactly 1, second child otherwise.
+Tangle.classes.TKSingularPlural = {
+    update: function (element, value) {
+        var showIndex = (value === 1) ? 0 : 1;
+        element.getChildren().each(function (child, index) {
+            if (index === showIndex) { child.style.removeProperty("display"); }
+            else { child.style.display = "none"; }
+        });
+    }
+};
 
-        <section><h2>Performance notes</h2>
-            <dl><dt>Total runtime</dt><dd>~7 min end to end</dd><dt>Critical path</dt><dd>Boil 3 min → drain → toss</dd><dt>Parallelizable</dt><dd>Seasoning unpack, egg and sosis fry</dd><dt>Throughput</dt><dd>1 serving per run; scale by packs, not time</dd><dt>Resource usage</dt><dd>1 pot, 1 bowl, optional 1 pan</dd><dt>Memory footprint</dt><dd>One kitchen counter</dd></dl>
-            <aside><h3>Known issue</h3>Scaling to two packs is linear in noodles but not in happiness. Past four packs, reviewer attention drops sharply.</aside>
-        </section>
+var tangle = new Tangle(document.getElementById("recipe-box"), {
+    initialize: function () {
+        this.packs = 1;
+        this.waterPerPack = 500;
+        this.pedas = 3;
+        this.withEgg = 1;
+        this.eggs = 1;
+        this.withSosis = 1;
+        this.sosis = 1;
+        this.keepTbsp = 1;
+    },
+    update: function () {
+        this.noodleGrams = this.packs * 85;
+        this.totalWater = this.packs * this.waterPerPack;
+        this.anySide = (this.withEgg || this.withSosis) ? 1 : 0;
+        this.both = (this.withEgg && this.withSosis) ? 1 : 0;
+        this.noSide = this.anySide ? 0 : 1;
+        this.multiPot = (this.totalWater > 1000) ? 1 : 0;
+        this.multiPack = (this.packs > 1) ? 1 : 0;
+        this.runtime = 7 + (this.withEgg ? 2 : 0) + (this.withSosis ? 2 : 0);
+        this.pedasWarning = (this.pedas >= 4) ? 1 : 0;
+        this.segfault = (this.pedas >= 5) ? 1 : 0;
+        this.packWarning = (this.packs >= 2) ? 1 : 0;
+        this.flagTelur = this.withEgg ? "true" : "false";
+        this.flagSosis = this.withSosis ? "true" : "false";
 
-        <footer>Spec written 23 Oct 2026. Battle-tested in production by warmindo everywhere since 1982. Nothing is cooked from this page.</footer>
-    </main><script>const $=id=>document.getElementById(id);const labels=['Stock build','Mild fork','Pedas','Pedas banget','Rawit overflow','Segfault'];function update(){const egg=$('telur').checked,sausage=$('sosis').checked,p=Number($('pedas').value);$('spice-label').textContent=labels[p];$('flags').textContent=`WITH_TELUR=${egg}, WITH_SOSIS=${sausage}, LEVEL_PEDAS=${p} (${labels[p].toLowerCase()})`;$('runtime').textContent=`~${7+(egg?2:0)+(sausage?2:0)} min`;$('critical').textContent='Boil 3 min, drain, toss.'+(egg||sausage?' Egg and sosis run on a side thread.':'');$('warning').hidden=p<4;$('warning-level').textContent=p;}['telur','sosis','pedas'].forEach(x=>$(x).addEventListener('input',update));update();</script></body></html>
+        var chiliFractions = ["no chili", "1/5 pack", "2/5 pack", "1/2 pack", "4/5 pack", "full pack"];
+        this.chiliText = chiliFractions[this.pedas] + " per pack";
+
+        var labels = ["Stock build", "Mild fork", "Pedas", "Pedas banget", "Rawit overflow", "Segfault"];
+        this.pedasLabel = labels[this.pedas].toLowerCase();
+
+        var sides = [];
+        if (this.withEgg) { sides.push("egg fry"); }
+        if (this.withSosis) { sides.push("sosis fry"); }
+        this.sideText = sides.join(" and ");
+    }
+});
+</script>
+</body>
+</html>

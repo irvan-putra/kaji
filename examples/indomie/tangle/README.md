@@ -1,13 +1,10 @@
 # Indomie Mi Goreng: the customizable recipe box (Tangle edition)
 
-A third variant of the Indomie pages in this repo: the recipe-box card rebuilt
-as a reactive document with [Tangle](https://github.com/worrydream/Tangle)
-(Bret Victor's library for explorable explanations, MIT licensed, vendored
-under `lib/` with its original headers).
+This is the main interactive Indomie page, published at `/kaji/indomie/`. It is built with [Tangle](https://github.com/worrydream/Tangle) by Bret Victor (MIT license), whose vendored libraries retain their original headers. The markup and page stylesheet live one directory up as `../index.html` and `../style.css`; the vendored Tangle libraries remain here under `lib/`.
 
-Every blue number on the page is draggable, and the blue on/off flags are
-clickable. Changing them rewrites the whole card: noodle grams, total water,
-chili fractions, side threads, runtime, warnings, and serving count.
+A second, separate version is the engineering spec in `../instinct/` (published at `/kaji/indomie/instinct/`). The static tabular recipe card remains at `../images/indomie-recipe-box-v2.jpg`. These recipes have different water, draining, and spice defaults; keep them labeled as separate versions.
+
+Every blue number on the page is draggable, and the blue on/off flags are clickable. Changing them rewrites the whole card: noodle grams, total water, chili fractions, side threads, runtime, warnings, and serving count.
 
 Variables:
 
@@ -18,22 +15,12 @@ Variables:
 - `withEgg` / `eggs` (1-3), `withSosis` / `sosis` (1-3): side threads
 - `keepTbsp` (0-3): boil water kept for the paste
 
-The 3:00 boil never scales with packs. Past four packs the page quotes the
-reviewer-attention warning from the engineering spec.
-
-## Sibling variants
-
-- `../` - the interactive engineering spec (checkboxes and a spice slider)
-- `../images/indomie-recipe-box-v2.jpg` - the printable recipe-box card this
-  page is a live version of
+The 3:00 boil never scales with packs. Past four packs the page quotes the reviewer-attention warning from the engineering spec.
 
 ## Files
 
-- `index.html` - markup, Tangle model, and the two small custom classes
-  (`TKFlag`, `TKSingularPlural`)
-- `style.css` - card styling; the table flattens into a stacked list under
-  560 px so nothing overflows on a phone
-- `lib/` - Tangle 0.1.0, TangleKit, mootools, sprintf, BVTouchable
-  (MIT, (c) 2011 Bret Victor)
+- `../index.html` - page markup, Tangle model, and custom classes (`TKFlag`, `TKSingularPlural`)
+- `../style.css` - card styling; the table flattens into a stacked list under 560 px so nothing overflows on a phone
+- `lib/` - Tangle 0.1.0, TangleKit, mootools, sprintf, BVTouchable (MIT, (c) 2011 Bret Victor)
 
 No build step; it is a static page and works from `file://` too.
