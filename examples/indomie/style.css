@@ -69,6 +69,7 @@ section { margin-bottom: 8px; }
   border-radius: 18px;
   -webkit-overflow-scrolling: touch;
 }
+.recipe-scroll:focus-visible { outline: 3px solid #2850c8; outline-offset: 3px; }
 table.card {
   width: 100%;
   min-width: 680px;
@@ -78,13 +79,13 @@ table.card {
   border: 3px solid var(--green);
   border-radius: 18px;
   overflow: hidden;
-  font: 14px/1.4 Arial, Helvetica, sans-serif;
+  font: 18px/1.4 Arial, Helvetica, sans-serif;
 }
 .card .ingredient-column { width: 25%; }
 .card .action-column { width: 17%; }
 .card .mix-column { width: 15%; }
-.card .plate-column { width: 13%; }
-.card .serve-column { width: 13%; }
+.card .plate-column { width: 14%; }
+.card .serve-column { width: 12%; }
 .card td {
   border: 2px solid var(--green);
   padding: 10px 8px;
@@ -93,16 +94,16 @@ table.card {
 }
 .card tr:not(.card-title):not(.card-lede):not(.card-foot) > td:first-child { text-align: left; }
 .card .card-title td {
-  font: 700 22px/1.3 "Helvetica Neue", Arial, sans-serif;
+  font: 700 30px/1.2 "Helvetica Neue", Arial, sans-serif;
   text-align: left;
   padding: 16px 12px;
 }
 .card .card-lede td,
 .card .card-foot td {
+  font-size: 18px;
   text-align: center;
   padding: 14px 16px;
 }
-.card .card-foot td { font-size: 15px; }
 
 /* Build output */
 dl.output {
@@ -142,8 +143,8 @@ code { font-family: "SF Mono", Menlo, Consolas, monospace; }
   body { padding: 16px 10px 48px; }
   h1 { font-size: 22px; }
   .sentence { font-size: 16px; }
-  table.card { min-width: 680px; font-size: 13px; }
+  table.card { min-width: 680px; font-size: 16px; }
   .card td { padding: 9px 7px; }
-  .card .card-title td { font-size: 19px; }
+  .card .card-title td { font-size: 24px; }
   .card .card-lede td, .card .card-foot td { text-align: center; }
 }
