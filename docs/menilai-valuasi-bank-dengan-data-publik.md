@@ -57,6 +57,24 @@ Dua contoh publik membantu merumuskan pertanyaan penelitian, tetapi tidak menguj
 - **Banco Master, Brasil.** FAQ resmi Banco Central do Brasil menyebut bahwa pada 18 November 2025 bank tersebut memerintahkan likuidasi ekstrayudisial Banco Master S/A dan sejumlah entitas terkait, serta menerapkan rezim administrasi sementara pada Banco Master Múltiplo S/A. BCB menyebut krisis likuiditas berat dan pelanggaran serius sebagai alasan. Sumber: https://www.bcb.gov.br/estabilidadefinanceira/banco-master-liquidacao. Rasio dan angka rinci lain yang beredar belum diverifikasi.
 - **Ueno Bank, Paraguay.** BCP mengumumkan pada 3 November 2026 bahwa proses resolusi dimulai setelah penyesuaian laporan keuangan selama proses regularisasi menunjukkan rasio solvabilitas kurang dari setengah minimum yang diwajibkan; keputusan direksi bertanggal 2 November 2026. Sumber resmi: https://www.bcp.gov.py/web/institucional/w/banco-central-inicia-el-procedimiento-de-resolucion-de-ueno-bank. Angka pertumbuhan kredit, likuiditas, peringkat, dan harga obligasi belum diverifikasi.
 
+## Anggaran dan rancangan pendanaan (asumsi, bukan penawaran)
+
+Materi perencanaan memuat estimasi yang berbeda dan tidak direkonsiliasi:
+
+- Satu estimasi rupiah menyebut Rp28,8 juta untuk pilot dua bank selama empat minggu. Hitungan yang dicantumkan terdiri dari biaya Rp24 juta dan cadangan 20% sebesar Rp4,8 juta; tahap audit data publik disebut Rp8,4 juta. Ini hanya aritmetika dan asumsi perencanaan, bukan harga vendor atau biaya yang sudah disepakati.
+- Materi proposal lain memakai estimasi parametrik dolar berdasarkan jam kerja dan kisaran tarif pembanding, termasuk contoh 25 jam dikali USD25-70 untuk audit sumber. Total rupiah tidak ditetapkan.
+- Versi proposal yang lebih ringkas tidak mencantumkan estimasi uang dan meminta penawaran per paket kerja lebih dulu. Urutan revisi tidak dapat dipastikan karena penandaan versinya tidak konsisten.
+
+Biaya yang belum masuk hitungan antara lain pajak, lisensi data berbayar, perjalanan, serta biaya izin atau kanal donasi. Tidak ada penawaran vendor, target pendanaan, penyelenggara terverifikasi, atau data lapangan yang disertakan dalam materi yang diperiksa. Angka di atas tidak boleh dibaca sebagai anggaran final atau ajakan membayar.
+
+## Tata kelola dan status materi proposal
+
+Materi proposal mengusulkan agar penggunaan dana mengikuti anggaran yang dipublikasikan, pengeluaran dan saldo dilaporkan, afiliasi pendukung dengan bank yang diteliti diungkap, kepemilikan saham terkait tim riset dinyatakan, masukan dapat disampaikan melalui kanal koreksi, dan keputusan analisis tetap pada tim riset. Ini prinsip yang diusulkan; tidak ada bukti di materi yang diperiksa bahwa pendanaan, kanal koreksi, atau tim yang menjalankannya telah aktif.
+
+Terdapat beberapa versi slide proposal; versi yang lebih ringkas menghapus estimasi uang dan ajakan donasi, serta memusatkan dokumen pada usulan lingkup pilot. Materi pitching tersedia sebagai teks rancangan, tetapi catatan ini tidak mengutip naskahnya. Halaman penggalangan dana hanya berupa rancangan dalam bahan; situs aktif dan penerimaan dana tidak terbukti. Rekaman audio disebut ada, tetapi berkas audio tidak tersedia untuk pemeriksaan. Paper akademik juga disebut dalam daftar rencana, namun tidak ada berkas paper yang dapat diperiksa; PDF yang tersedia adalah ekspor slide, bukan paper.
+
+Dengan demikian paket ini masih berstatus proposal. Belum ada bukti pekerjaan lapangan, vendor yang dipilih, pengumpulan dana, hasil valuasi, maupun uji prediksi yang dijalankan.
+
 ## Batas
 
 Ini rancangan, bukan hasil valuasi atau pemeriksaan forensik. Belum ada pengambilan sampel, ekstraksi data bank, model yang dihitung, penilaian harga, backtest, atau uji lapangan dalam catatan ini. Klaim angka yang belum dicocokkan dengan dokumen penerbit tidak disajikan sebagai fakta. Tidak ada strategi perdagangan yang disusun atau diuji.
