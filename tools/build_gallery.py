@@ -47,6 +47,11 @@ def apps():
     return page("kaji apps", lead, out, "../")
 def web():
     d = json.loads((root/"gallery/web.json").read_text())
+    # Every listed example has public source. Fail rather than silently omit a button.
+    for sec in d["sections"]:
+        for item in sec["items"]:
+            if not item.get("source", "").startswith("https://github.com/"):
+                raise ValueError("Missing GitHub source for " + item["name"])
     out = ""
     for sec in d["sections"]:
         out += f'<h2>{e(sec["title"])}</h2><div class="grid">'

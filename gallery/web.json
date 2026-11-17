@@ -29,7 +29,8 @@
      "name": "Indomie engineer's spec",
      "tag": "Older variant, 400 ml",
      "about": "Kept as its own version; it is not reconciled with the recipe box. Photo credit is on the page.",
-     "url": "https://vanipy.com/kaji/indomie/instinct/"
+     "url": "https://vanipy.com/kaji/indomie/instinct/",
+     "source": "https://github.com/irvan-putra/kaji/blob/main/examples/indomie/instinct/index.html"
     }
    ]
   },
@@ -40,13 +41,15 @@
      "name": "Synthetic break-even charts",
      "tag": "Invented scenarios",
      "about": "Cash vs economic break-even with made-up sales numbers.",
-     "url": "https://vanipy.com/kaji/economics-synthetic/"
+     "url": "https://vanipy.com/kaji/economics-synthetic/",
+     "source": "https://github.com/irvan-putra/kaji/blob/main/examples/economics-synthetic/index.html"
     },
     {
      "name": "Tumbuh draft",
      "tag": "Archived concept, not an offer",
      "about": "Signup controls are disabled; nothing is collected.",
-     "url": "https://vanipy.com/kaji/tumbuh/"
+     "url": "https://vanipy.com/kaji/tumbuh/",
+     "source": "https://github.com/irvan-putra/kaji/blob/main/examples/tumbuh/index.html"
     }
    ]
   },
@@ -64,7 +67,8 @@
      "name": "Shared-list simulation",
      "tag": "Historical simulation",
      "about": "A simulation, not the live app.",
-     "url": "https://vanipy.com/intodo/shared-list-simulation/"
+     "url": "https://vanipy.com/intodo/shared-list-simulation/",
+     "source": "https://github.com/irvan-putra/intodo/blob/main/demos-shared-list-simulation/index.html"
     },
     {
      "name": "Edge AI demo lab",
@@ -77,7 +81,8 @@
      "name": "Demo lab simulation",
      "tag": "Historical simulation",
      "about": "A simulation, not a live service.",
-     "url": "https://vanipy.com/naga/demo-lab-simulation/"
+     "url": "https://vanipy.com/naga/demo-lab-simulation/",
+     "source": "https://github.com/irvan-putra/naga/blob/main/demo-lab-simulation/index.html"
     },
     {
      "name": "vana",
