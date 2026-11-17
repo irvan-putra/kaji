@@ -1,36 +1,36 @@
-# Prototipe BNI Sandbox Tester (dokumen sumber, belum dieksekusi)
+# BNI Sandbox Tester prototype (source document, not executed)
 
-Catatan riset. Sumber diperiksa 17 November 2026.
+Research note. Source examined 17 November 2026.
 
-## Ringkasan
+## Summary
 
-Rancangan prototipe mengusulkan aplikasi Android untuk menguji konektivitas ke backend lokal dan meminta saldo dari lingkungan sandbox BNI melalui sebuah SDK. Ini rangkuman desain, bukan hasil build atau uji integrasi.
+The prototype design proposes an Android app to test connectivity to a local backend and request a balance from the BNI sandbox environment through an SDK. This is a design summary, not a build result or an integration test.
 
-## Batas dan status
+## Scope and status
 
-- Rancangan membatasi cakupan ke sandbox dan permintaan baca saldo; tidak mendeskripsikan transfer atau transaksi pembayaran.
-- Kredensial sandbox diusulkan tetap di sisi backend, bukan di aplikasi ponsel. Ini pilihan desain tertulis, belum diuji.
-- Generator, source proyek, instalasi dependency, unit test, build APK, lint, audit dependency, dan panggilan BNI belum dijalankan. Kode tidak diaudit baris per baris.
-- Rujukan yang dicantumkan untuk rancangan awal - README SDK BNI dan catatan rilis Android Gradle Plugin 8.7 - belum diverifikasi ulang. Keaslian dan keamanan dependency juga belum diperiksa.
-- Rancangan menyertakan checklist yang belum selesai. Tidak ada hasil tes sandbox yang dapat disimpulkan dari rancangan ini.
+- The design limits scope to the sandbox and balance-read requests; it does not describe transfers or payment transactions.
+- Sandbox credentials are proposed to stay on the backend side, not in the phone app. This is a written design choice, not yet tested.
+- The generator, project source, dependency installation, unit tests, APK build, lint, dependency audit, and BNI calls have not been run. The code has not been audited line by line.
+- The references listed for the initial design, the BNI SDK README and the Android Gradle Plugin 8.7 release notes, have not been re-verified. The authenticity and security of dependencies have not been checked either.
+- The design includes an unfinished checklist. No sandbox test results can be concluded from this design.
 
-## Shortlist opsi koneksi Android ke API bank (belum diuji)
+## Shortlist of Android-to-bank-API connection options (untested)
 
-Rancangan berikutnya mengusulkan urutan BNI, BCA, lalu BRI dengan pola SNAP BI, berbeda dari rancangan awal BNI One Gate Payment.
+The next design proposes the order BNI, BCA, then BRI with the SNAP BI pattern, different from the initial BNI One Gate Payment design.
 
-1. **BNI:** menggunakan SDK Node.js dan metode `SnapBI.balanceInquiry()`. Rancangan menyebut perlu kredensial aplikasi, kunci privat RSA, dan channel ID.
-2. **BCA:** rancangan menyebut endpoint `POST /openapi/v1.0/access-token/b2b` lalu SNAP balance inquiry; persyaratan yang disebut meliputi partner/corporate ID, channel ID, akun KlikBCA Bisnis terdaftar, dan tanda tangan permintaan.
-3. **BRI:** rancangan menyebut `POST /snap/v1.0/access-token/b2b` dan `POST /snap/v1.0/balance-inquiry`; persyaratan yang disebut meliputi registrasi partner, kunci RSA, tanda tangan HMAC, dan entitlement layanan AIS. Rancangan menyebut masa berlaku token 15 menit.
+1. **BNI:** uses the Node.js SDK and the `SnapBI.balanceInquiry()` method. The design states it needs application credentials, an RSA private key, and a channel ID.
+2. **BCA:** the design mentions the endpoint `POST /openapi/v1.0/access-token/b2b` followed by a SNAP balance inquiry; the stated requirements include a partner/corporate ID, channel ID, a registered KlikBCA Bisnis account, and a request signature.
+3. **BRI:** the design mentions `POST /snap/v1.0/access-token/b2b` and `POST /snap/v1.0/balance-inquiry`; the stated requirements include partner registration, an RSA key, an HMAC signature, and AIS service entitlement. The design states a 15-minute token validity.
 
-Semua endpoint dan persyaratan di atas adalah klaim rancangan, belum diverifikasi ke dokumentasi resmi. Prinsip yang diusulkan adalah menaruh kredensial dan kunci bank di backend, dengan token sesi internal berumur singkat di aplikasi. Tidak ada koneksi API yang dilakukan.
+All endpoints and requirements above are design claims, not yet verified against official documentation. The proposed principle is to keep bank credentials and keys on the backend, with short-lived internal session tokens in the app. No API connection has been made.
 
-**Pemeriksaan dokumentasi:** repositori `bni-api/bni-nodejs-sdk` dan dokumentasi developer BCA tersedia (tautan di bawah). Halaman dokumentasi SNAP BRI dikutip dalam rancangan tetapi tidak terbaca saat diperiksa; keberadaannya belum dapat dipastikan.
+**Documentation check:** the `bni-api/bni-nodejs-sdk` repository and BCA developer documentation are available (links below). The BRI SNAP documentation page is cited in the design but could not be read when checked; its existence cannot be confirmed.
 
-## Bagian terbuka
+## Open items
 
-Source belum dieksekusi; belum ada bukti alur sandbox BNI berjalan. Keputusan apakah prototipe akan dibangun atau diuji belum ada. Semua pernyataan keamanan di atas adalah rancangan tertulis, bukan hasil audit.
+The source has not been executed; there is no evidence the BNI sandbox flow works. No decision has been made on whether the prototype will be built or tested. All security statements above are written design, not audit results.
 
-## Sumber
+## Sources
 
-- Cakupan catatan ini dibatasi pada ringkasan rancangan; source code tidak disertakan.
-- Rujukan yang dicantumkan untuk rancangan awal: README SDK bni-nodejs (https://github.com/bni-api/bni-nodejs-sdk/blob/main/README.md) dan catatan rilis Android Gradle Plugin 8.7 (https://developer.android.com/build/releases/agp-8-7-0-release-notes).
+- The scope of this note is limited to the design summary; the source code is not included.
+- References listed for the initial design: the bni-nodejs SDK README (https://github.com/bni-api/bni-nodejs-sdk/blob/main/README.md) and the Android Gradle Plugin 8.7 release notes (https://developer.android.com/build/releases/agp-8-7-0-release-notes).

@@ -1,101 +1,101 @@
-# Menilai valuasi bank dengan data publik dan bukti independen
+# Assessing bank valuation with public data and independent evidence
 
-Catatan riset. Sumber diperiksa 17 November 2026; status verifikasi disebut per bagian.
+Research note. Source examined 17 November 2026; verification status is stated per section.
 
-## Pertanyaan riset
+## Research question
 
-Bagaimana memperkirakan nilai ekuitas bank tanpa hanya mengandalkan angka dari bank itu sendiri? Salah satu fokusnya adalah menguji apakah bank yang tampak murah terhadap nilai bukunya masih murah setelah risiko kredit dan biaya mempertahankan nasabah diperhitungkan.
+How can a bank's equity value be estimated without relying only on figures from the bank itself? One focus is testing whether a bank that looks cheap against its book value is still cheap after credit risk and the cost of retaining customers are taken into account.
 
-## Kerangka lima langkah (rancangan)
+## Five-step framework (design)
 
-1. **Periksa debitur.** Ambil sampel perusahaan peminjam yang mengungkap bank kreditor dalam laporan keuangan; periksa utang, arus kas, pembayaran bunga, dan kondisi usaha. Sampel publik tidak mewakili seluruh portofolio kredit.
-2. **Bandingkan biaya dana dan penilaian pasar.** Untuk bank penerbit obligasi, bandingkan yield dengan obligasi pemerintah bertenor sebanding; perhitungkan likuiditas dan senioritas.
-3. **Uji hubungan dengan nasabah.** Sampel nasabah dan merchant dapat menguji rekening mana yang dipakai untuk gaji, simpanan, dan transaksi. Ini perlu survei atau wawancara, bukan sekadar data publik.
-4. **Pisahkan penilaian eksternal dari data independen.** Peringkat kredit memberi pandangan pembanding, tetapi angka dasarnya dapat tetap berasal dari bank.
-5. **Nilai ekuitas.** Model residual income dapat dimulai dari nilai buku ekuitas yang disesuaikan, lalu menambahkan nilai kini laba di atas imbal hasil yang dituntut pemegang saham.
+1. **Examine borrowers.** Sample borrowing companies that disclose their creditor bank in financial statements; examine debt, cash flow, interest payments, and business conditions. A public sample does not represent the whole credit portfolio.
+2. **Compare funding costs and market assessment.** For bond-issuing banks, compare yields with government bonds of comparable tenor; account for liquidity and seniority.
+3. **Test customer relationships.** Sampling customers and merchants can test which accounts are used for payroll, savings, and transactions. This needs surveys or interviews, not just public data.
+4. **Separate external assessments from independent data.** Credit ratings provide a comparative view, but their underlying figures may still come from the bank.
+5. **Value the equity.** A residual income model can start from adjusted book value of equity, then add the present value of earnings above the return required by shareholders.
 
-Catatan ini berfokus pada valuasi ekuitas bank. Valuasi berbasis arus kas untuk perusahaan nonbank adalah bahasan terpisah; residual income tidak eksklusif untuk bank.
+This note focuses on bank equity valuation. Cash-flow-based valuation for non-bank companies is a separate topic; residual income is not exclusive to banks.
 
-Bahan juga mengusulkan valuasi terbalik sebagai penelitian lanjutan: memperkirakan ROE, biaya ekuitas, dan pertumbuhan yang tersirat dalam harga pasar saat ini. Tujuannya menguji asumsi harga tanpa mengharuskan pembaca menerima satu estimasi nilai wajar. Ini usulan, belum dihitung.
+The material also proposes reverse valuation as follow-up research: estimating the ROE, cost of equity, and growth implied in the current market price. The goal is to test price assumptions without requiring the reader to accept a single fair-value estimate. This is a proposal, not yet computed.
 
-## Data publik dan kerja lapangan
+## Public data and field work
 
-Data publik dapat dipakai untuk mencari peminjam yang mengungkap nama kreditornya, menguji kemampuan membayar bunga, membandingkan bunga deposito dan yield obligasi yang dipublikasikan, membaca alasan pemeringkatan, dan membangun model dengan skenario kerugian kredit, ROE, pertumbuhan, serta biaya ekuitas.
+Public data can be used to find borrowers that disclose their creditors, test interest-paying ability, compare published deposit rates and bond yields, read rating rationales, and build models with credit-loss, ROE, growth, and cost-of-equity scenarios.
 
-Wawancara debitur, pemeriksaan usaha dan agunan, akses dokumen kredit yang sah, penawaran khusus bagi nasabah besar, serta wawancara nasabah dan merchant memerlukan akses dan kerja manusia yang sesuai. Sampel publik saja tidak menjawab hal-hal tersebut.
+Borrower interviews, business and collateral inspections, lawful access to credit documents, special offers for large customers, and customer and merchant interviews require appropriate access and human work. A public sample alone does not answer those questions.
 
-Rancangan riset sebaiknya menetapkan indikator utama, faktor kontrol, aturan mengeluarkan data, dan hasil yang akan melemahkan hipotesis sebelum mengolah data. Perubahan sesudahnya perlu dicatat agar analisis eksploratif tidak tertukar dengan rencana awal.
+The research design should set primary indicators, control factors, data-exclusion rules, and results that would weaken the hypothesis before processing data. Later changes need to be recorded so exploratory analysis is not confused with the original plan.
 
-## Sumber publik dan status pemeriksaan
+## Public sources and examination status
 
-Keberadaan suatu halaman atau dokumen tidak dengan sendirinya membuktikan isi kerangka valuasi.
+The existence of a page or document does not by itself prove the contents of the valuation framework.
 
-- **PHEI/IBPA.** PHEI teridentifikasi sebagai lembaga penilaian harga efek dan halaman IBPA menampilkan benchmark rates. Sumber: Antara (https://www.antaranews.com/berita/108722/proyeksi-pasar-obligasi-melonjak-100-persen-pasca-bpa), CNN Indonesia (https://www.cnnindonesia.com/ekonomi/20160307142505-78-115830/phei-nilai-531-jenis-obligasi-senilai-rp2330-triliun), IBPA (https://siso.phei.co.id/).
-- **PEFINDO.** Dua laporan pemeringkatan publik memuat keterangan bahwa rasio dihitung dari informasi perusahaan dan laporan terbitan. Contoh sumber: https://ftp.ptsmi.co.id/cfind/source/files/rating/smi-pefindo-ratings-2026.pdf dan https://investor.jasamarga.com/newsroom/20260306_JSMR_Laporan_Hasil_Pemeringkatan_32041576_lamp2.pdf. Ini bukan pemeriksaan atas semua laporan PEFINDO.
-- **Damodaran.** Bahan menyebut pendekatan DDM, FCFE berbasis modal regulasi, dan excess return untuk bank. Halaman "Financial service companies: Value drivers" dapat diakses (https://pages.stern.nyu.edu/adamodar/New_Home_Page/littlebook/bankvaluedriver.htm), dan makalah "Valuing Financial Service Firms" tersedia (https://pages.stern.nyu.edu/~adamodar/pdfiles/papers/finfirm.pdf); kesesuaian tiap bagian dengan kerangka di atas belum diperiksa.
-- **Bunga deposito.** Halaman Deposito Berjangka BCA tersedia (https://www.bca.co.id/id/Individu/produk/simpanan/Deposito-Berjangka). Angka bunga terkini tidak dicatat di sini.
-- **Laporan emiten.** Laporan Tahunan Astra 2024 tersedia (https://r2.astra.co.id/annual-reports/documents/Astra-Annual-Report-2024.pdf); apakah rincian kreditur bank dapat dibaca di dalamnya belum diperiksa per halaman.
-- **Studi Asia Tenggara.** Tesis "A Comparative Analysis of Bank Valuation Approaches in Southeast Asia" oleh Amos Timothy Ong (2020) ada di repositori Fordham (https://research.library.fordham.edu/gabelli_thesis/73/). Materi menyatakan Residual Income Model paling dekat dengan harga untuk 32 bank ASEAN, adjusted R-squared 90,29%, dan data pasar Capital IQ; angka, metode, serta hasil tersebut belum diverifikasi.
-- **Studi Indonesia.** Artikel JIMFEB Universitas Brawijaya (2021) tersedia dan memakai BBRI, BBCA, BMRI, dan BBNI; artikel tersebut melaporkan hasil berbeda antara Excess Return Model dan DDM (https://jimfeb.ub.ac.id/index.php/jimfeb/article/view/7678).
-- **Transparansi laporan bank.** Halaman SEOJK 29/SEOJK.03/2025 tentang transparansi dan publikasi laporan bank umum konvensional tersedia (https://ojk.go.id/id/regulasi/Pages/29-SEOJK03-2025-Transparansi-dan-Publikasi-Laporan-Bank-Umum-Konvensional.aspx). Halaman itu menyebut POJK 18/2025 sebagai dasar hukum dan menyatakan SEOJK berlaku sejak 2 September 2026. Tanggal efektif POJK 18/2025 belum diperiksa terpisah; instrumen tersebut berbeda dari SEOJK. Rincian kolom publikasi di lampiran belum diperiksa.
+- **PHEI/IBPA.** PHEI is identified as a securities-pricing institution and the IBPA page displays benchmark rates. Sources: Antara (https://www.antaranews.com/berita/108722/proyeksi-pasar-obligasi-melonjak-100-persen-pasca-bpa), CNN Indonesia (https://www.cnnindonesia.com/ekonomi/20160307142505-78-115830/phei-nilai-531-jenis-obligasi-senilai-rp2330-triliun), IBPA (https://siso.phei.co.id/).
+- **PEFINDO.** Two public rating reports contain statements that ratios are calculated from company information and published reports. Example sources: https://ftp.ptsmi.co.id/cfind/source/files/rating/smi-pefindo-ratings-2026.pdf and https://investor.jasamarga.com/newsroom/20260306_JSMR_Laporan_Hasil_Pemeringkatan_32041576_lamp2.pdf. This is not an examination of all PEFINDO reports.
+- **Damodaran.** The material mentions the DDM approach, regulatory-capital-based FCFE, and excess return for banks. The "Financial service companies: Value drivers" page is accessible (https://pages.stern.nyu.edu/adamodar/New_Home_Page/littlebook/bankvaluedriver.htm), and the paper "Valuing Financial Service Firms" is available (https://pages.stern.nyu.edu/~adamodar/pdfiles/papers/finfirm.pdf); the fit of each part with the framework above has not been examined.
+- **Deposit rates.** The BCA Time Deposit page is available (https://www.bca.co.id/id/Individu/produk/simpanan/Deposito-Berjangka). Current rate figures are not recorded here.
+- **Issuer reports.** The Astra 2024 Annual Report is available (https://r2.astra.co.id/annual-reports/documents/Astra-Annual-Report-2024.pdf); whether bank-creditor details can be read in it has not been examined page by page.
+- **Southeast Asia study.** The thesis "A Comparative Analysis of Bank Valuation Approaches in Southeast Asia" by Amos Timothy Ong (2020) is in the Fordham repository (https://research.library.fordham.edu/gabelli_thesis/73/). The material states the Residual Income Model is closest to price for 32 ASEAN banks, adjusted R-squared 90.29%, and Capital IQ market data; those figures, methods, and results are unverified.
+- **Indonesia study.** A JIMFEB Universitas Brawijaya article (2021) is available and uses BBRI, BBCA, BMRI, and BBNI; the article reports different results between the Excess Return Model and DDM (https://jimfeb.ub.ac.id/index.php/jimfeb/article/view/7678).
+- **Bank report transparency.** The SEOJK 29/SEOJK.03/2025 page on transparency and publication of conventional commercial bank reports is available (https://ojk.go.id/id/regulasi/Pages/29-SEOJK03-2025-Transparansi-dan-Publikasi-Laporan-Bank-Umum-Konvensional.aspx). The page mentions POJK 18/2025 as the legal basis and states the SEOJK takes effect 2 September 2026. The effective date of POJK 18/2025 has not been checked separately; that instrument is different from the SEOJK. The publication-column details in the annex have not been examined.
 
-## Rancangan input dan pengujian
+## Input design and testing
 
-- Tetapkan tanggal valuasi kuartalan pada hari perdagangan pertama setelah kedua bank merilis laporan kuartalan yang sebanding; gunakan hanya informasi yang sudah publik saat itu.
-- Input yang diusulkan: nilai buku per lembar dari laporan konsolidasian; laba TTM; dividen dan payout dari pengumuman aksi korporasi; perkiraan residual income dengan ROE yang memudar linier dari tahun berjalan ke tingkat jangka panjang; nilai buku ramalan dengan akuntansi clean surplus; DDM dengan asumsi sama seperti residual income; dan median P/B pembanding dengan kriteria yang ditetapkan lebih dahulu.
-- Untuk perbandingan pada tanggal yang sama, uji estimasi nilai V(t) terhadap harga P(t). Untuk kemampuan prediksi, hubungkan diskon V(t)/P(t) - 1 dengan total return 12 bulan berikutnya. Membandingkan V(t) dengan P(t+12) mencampur tanggal estimasi dan harga masa depan, sehingga tidak dipakai.
-- Hal yang belum terselesaikan dalam rancangan: konsistensi OCI dengan clean surplus; risiko menghitung ganda premi negara dan premi ekuitas; tolok ukur total return; serta ketergantungan pengamatan karena jendela 12 bulan yang tumpang tindih.
+- Set quarterly valuation dates on the first trading day after both banks release comparable quarterly reports; use only information already public at that time.
+- Proposed inputs: book value per share from consolidated statements; TTM earnings; dividends and payout from corporate-action announcements; a residual income estimate with ROE fading linearly from the current year to a long-term level; forecast book value with clean surplus accounting; DDM with the same assumptions as residual income; and peer median P/B with criteria set in advance.
+- For same-date comparison, test value estimate V(t) against price P(t). For predictive ability, relate the discount V(t)/P(t) - 1 to total return over the following 12 months. Comparing V(t) with P(t+12) mixes the estimation date with a future price, so it is not used.
+- Unresolved items in the design: consistency of OCI with clean surplus; the risk of double counting country premium and equity premium; the total-return benchmark; and observation dependence from overlapping 12-month windows.
 
-## Usulan pemeriksaan forensik dari data publik
+## Proposed forensic screening from public data
 
-Rancangan screening yang diusulkan mencakup perbandingan kredit Stage 2 dan Stage 3 terhadap NPL, restrukturisasi dan hapus buku; backtest cadangan terhadap default dan recovery berikutnya; mutu pendapatan bunga dibanding arus kas; coverage Stage 3 sebelum dan sesudah agunan; lonjakan kredit akhir kuartal yang berbalik kemudian; konsentrasi pihak berelasi, sektor, dan debitur besar; restatement dan pergantian auditor; serta penilaian ulang memakai laba ternormalisasi dan ECL tertekan.
+The proposed screening design covers comparing Stage 2 and Stage 3 credit against NPL, restructuring and write-offs; backtesting provisions against subsequent defaults and recoveries; interest income quality compared with cash flow; Stage 3 coverage before and after collateral; quarter-end credit spikes that reverse afterward; related-party, sector, and large-borrower concentration; restatements and auditor changes; and revaluation using normalized earnings and stressed ECL.
 
-Ini adalah usulan penelitian yang belum diuji pada data. Ketersediaan kolom publik dan kemampuan backtest belum dipastikan. Rancangan membedakan dua pertanyaan waktu: kerentanan struktural dan apakah kemungkinan gagal sedang meningkat. Hubungan kedua sinyal itu, ambang, serta kinerja prediktif belum ditetapkan atau diuji. Tidak ada kesimpulan tentang evergreening, hubungan tersembunyi, atau manipulasi agunan. Keluaran yang dibayangkan adalah sinyal untuk pemeriksaan lebih lanjut, bukan vonis kecurangan; temuan tetap memerlukan bukti pengawas, auditor, atau pihak internal yang berwenang.
+This is a research proposal not yet tested on data. The availability of public columns and backtest feasibility have not been confirmed. The design distinguishes two timing questions: structural vulnerability and whether the probability of failure is rising. The relationship between the two signals, thresholds, and predictive performance have not been set or tested. No conclusion is drawn about evergreening, hidden relationships, or collateral manipulation. The intended output is a signal for further examination, not a fraud verdict; findings still require evidence from supervisors, auditors, or authorized insiders.
 
-## Contoh kasus yang dilaporkan regulator
+## Regulator-reported case examples
 
-Dua contoh publik membantu merumuskan pertanyaan penelitian, tetapi tidak menguji apakah indikator di atas dapat meramalkan kegagalan bank.
+Two public examples help formulate research questions but do not test whether the indicators above can predict bank failure.
 
-- **Banco Master, Brasil.** FAQ resmi Banco Central do Brasil menyebut bahwa pada 18 November 2025 bank tersebut memerintahkan likuidasi ekstrayudisial Banco Master S/A dan sejumlah entitas terkait, serta menerapkan rezim administrasi sementara pada Banco Master Múltiplo S/A. BCB menyebut krisis likuiditas berat dan pelanggaran serius sebagai alasan. Sumber: https://www.bcb.gov.br/estabilidadefinanceira/banco-master-liquidacao. Klaim rinci dalam materi - pertumbuhan kredit 81% setahun, piutang yudisial R$8,73 miliar, dan rasio Basel 11,54% - belum diverifikasi.
-- **Ueno Bank, Paraguay.** BCP mengumumkan pada 3 November 2026 bahwa proses resolusi dimulai setelah penyesuaian laporan keuangan selama proses regularisasi menunjukkan rasio solvabilitas kurang dari setengah minimum yang diwajibkan; keputusan direksi bertanggal 2 November 2026. Sumber resmi: https://www.bcp.gov.py/web/institucional/w/banco-central-inicia-el-procedimiento-de-resolucion-de-ueno-bank. Klaim rinci dalam materi - pertumbuhan kredit 49,1% year-on-year, likuiditas 20,7% dari deposito, outlook negatif Fitch pada 16 Oktober, serta pergerakan dan imbal hasil harga obligasi Ueno - belum diverifikasi terhadap sumber.
+- **Banco Master, Brazil.** The official Banco Central do Brasil FAQ states that on 18 November 2025 it ordered the extrajudicial liquidation of Banco Master S/A and several related entities, and applied a temporary administration regime to Banco Master Múltiplo S/A. BCB cited a severe liquidity crisis and serious violations as reasons. Source: https://www.bcb.gov.br/estabilidadefinanceira/banco-master-liquidacao. The detailed claims in the material, credit growth of 81% in a year, R$8.73 billion in judicial receivables, and a Basel ratio of 11.54%, are unverified.
+- **Ueno Bank, Paraguay.** BCP announced on 3 November 2026 that the resolution process began after financial-statement adjustments during the regularization process showed a solvency ratio of less than half the required minimum; the board decision is dated 2 November 2026. Official source: https://www.bcp.gov.py/web/institucional/w/banco-central-inicia-el-procedimiento-de-resolucion-de-ueno-bank. The detailed claims in the material, credit growth of 49.1% year-on-year, liquidity of 20.7% of deposits, a negative Fitch outlook on 16 October, and Ueno bond price and yield movements, are unverified against sources.
 
-## Preseden dan rancangan pengawasan yang belum diverifikasi
+## Unverified precedent and supervision designs
 
-Selain contoh kasus di atas, materi menyebut temuan SEC terkait Regions Bank (US$168 juta kredit bermasalah dilaporkan tetap berstatus lancar pada 2009), pemantauan EBA atas perpindahan Stage 1 ke Stage 3, pemeriksaan kualitas aset ECB 2014, prinsip Basel Committee 2024, dan kasus PMC Bank India pada 2019. Rujukan tepat dan klaim rinci tersebut belum diperiksa.
+Beyond the case examples above, the material mentions SEC findings on Regions Bank (US$168 million of troubled loans reported as still current in 2009), EBA monitoring of Stage 1 to Stage 3 migration, the ECB 2014 asset quality review, Basel Committee 2024 principles, and the PMC Bank India case in 2019. The exact references and detailed claims have not been examined.
 
-Materi juga mengusulkan pemantauan berjenjang: pantau data agregat terlebih dahulu, buka analisis tingkat debitur hanya setelah ada anomali, dan tetapkan konsekuensi atas penyalahgunaan data. Ini usulan kebijakan, bukan kemampuan analis eksternal atau prosedur yang sudah berjalan.
+The material also proposes tiered monitoring: watch aggregate data first, open debtor-level analysis only after anomalies appear, and set consequences for data misuse. This is a policy proposal, not an external analyst capability or a running procedure.
 
-Bahan mengangkat kemungkinan memakai hasil riset risiko untuk keputusan perdagangan, termasuk obligasi short, CDS, atau pair trade. Ini hanya mencatat pertanyaan aplikasi yang diajukan; tidak ada strategi yang direkomendasikan, diuji, atau dilakukan. Instrumen yang dapat diakses, likuiditas, katalis, biaya, dan risiko model belum ditetapkan. Klaim pergerakan atau imbal hasil harga obligasi Ueno juga belum diverifikasi.
+The material raises the possibility of using risk research results for trading decisions, including bond shorts, CDS, or pair trades. This only records the application question raised; no strategy is recommended, tested, or executed. Accessible instruments, liquidity, catalysts, costs, and model risk have not been determined. Claims about Ueno bond price or yield movements are also unverified.
 
-## Klaim riset dan angka tambahan yang belum diperiksa
+## Unverified research claims and additional figures
 
-Beberapa klaim yang menyertai rancangan ini belum dicocokkan dengan sumber primer. Dicatat agar tidak hilang, bukan sebagai temuan:
+Several claims accompanying this design have not been matched with primary sources. They are recorded so they are not lost, not as findings:
 
-- Satu studi yang disebut dalam materi dikatakan memakai 2.263 laporan analis di Amerika Serikat dan Eropa serta menemukan P/E dan P/BV lebih dominan daripada DDM dan residual income. Studi dan hasil itu belum diverifikasi.
-- Materi menyebut bahwa platform valuasi open-source yang ditemukan berfokus umum atau pada pasar AS/Hong Kong. Daftar platform dan cakupan pasar belum diperiksa.
-- Banco Fassil di Bolivia disebut sebagai contoh intervensi pada 26 April 2023, dengan downgrade Moody's lebih awal. Tanggal, peristiwa dan urutan downgrade belum diverifikasi.
-- Rentang klaim peringatan 12-24 bulan untuk watchlist, 6-12 bulan untuk risiko tinggi, dan 1-3 bulan untuk peristiwa likuiditas adalah klaim retrospektif dalam materi; tidak ada bukti kinerja prediktif yang menyertainya.
-- Slide proposal menyebut aset BBCA Rp1.661 triliun pada 30 Juni 2026 serta ROE Bank Mandiri 20,9% pada semester I 2026, 16,0% untuk 2016-2025, dan 19,8% untuk 2021-2025. Angka dan periode ini belum dicocokkan dengan laporan atau presentasi penerbit.
-- Laporan Tahunan Astra 2024 tersedia di https://r2.astra.co.id/annual-reports/documents/Astra-Annual-Report-2024.pdf, tetapi apakah rinciannya mengungkap bank kreditur belum diperiksa per halaman. Halaman tarif analis finansial Upwork (https://www.upwork.com/hire/financial-analysts/cost/) dikutip sebagai pembanding; tarif yang tepat belum diverifikasi dan bukan penawaran.
+- One study cited in the material is said to use 2,263 analyst reports in the United States and Europe and to find P/E and P/BV more dominant than DDM and residual income. The study and its results are unverified.
+- The material states that the open-source valuation platforms found focus on general or US/Hong Kong markets. The platform list and market coverage have not been examined.
+- Banco Fassil in Bolivia is cited as an intervention example on 26 April 2023, with an earlier Moody's downgrade. The dates, events, and downgrade sequence are unverified.
+- The claimed warning ranges of 12-24 months for watchlist, 6-12 months for high risk, and 1-3 months for liquidity events are retrospective claims in the material; no predictive-performance evidence accompanies them.
+- The proposal slides state BBCA assets of Rp1,661 trillion as of 30 June 2026 and Bank Mandiri ROE of 20.9% for H1 2026, 16.0% for 2016-2025, and 19.8% for 2021-2025. These figures and periods have not been matched against issuer reports or presentations.
+- The Astra 2024 Annual Report is available at https://r2.astra.co.id/annual-reports/documents/Astra-Annual-Report-2024.pdf, but whether its details disclose creditor banks has not been examined page by page. The Upwork financial analyst rates page (https://www.upwork.com/hire/financial-analysts/cost/) is cited as a comparison; the exact rates are unverified and are not an offer.
 
-## Anggaran dan rancangan pendanaan (asumsi, bukan penawaran)
+## Budget and funding design (assumptions, not offers)
 
-Materi perencanaan memuat estimasi yang berbeda dan tidak direkonsiliasi:
+The planning material contains different, unreconciled estimates:
 
-- Satu estimasi rupiah menyebut Rp28,8 juta untuk pilot dua bank selama empat minggu. Hitungan yang dicantumkan terdiri dari biaya Rp24 juta dan cadangan 20% sebesar Rp4,8 juta; tahap audit data publik disebut Rp8,4 juta. Ini hanya aritmetika dan asumsi perencanaan, bukan harga vendor atau biaya yang sudah disepakati.
-- Materi proposal lain memakai estimasi parametrik dolar berdasarkan jam kerja dan kisaran tarif pembanding, termasuk contoh 25 jam dikali USD25-70 untuk audit sumber. Total rupiah tidak ditetapkan.
-- Versi proposal yang lebih ringkas tidak mencantumkan estimasi uang dan meminta penawaran per paket kerja lebih dulu. Urutan revisi tidak dapat dipastikan karena penandaan versinya tidak konsisten.
+- One rupiah estimate states Rp28.8 million for a two-bank pilot over four weeks. The stated calculation consists of Rp24 million of costs and a 20% reserve of Rp4.8 million; the public-data audit stage is stated at Rp8.4 million. This is only planning arithmetic and assumptions, not vendor prices or agreed costs.
+- Another proposal document uses a parametric dollar estimate based on working hours and a range of comparison rates, including an example of 25 hours times USD25-70 for a source audit. No rupiah total is set.
+- A more concise proposal version lists no money estimate and asks for quotes per work package first. The revision order cannot be determined because the version labeling is inconsistent.
 
-Biaya yang belum masuk hitungan antara lain pajak, lisensi data berbayar, perjalanan, serta biaya izin atau kanal donasi. Tidak ada penawaran vendor, target pendanaan, penyelenggara terverifikasi, atau data lapangan yang disertakan dalam materi yang diperiksa. Angka di atas tidak boleh dibaca sebagai anggaran final atau ajakan membayar.
+Costs not yet counted include taxes, paid data licenses, travel, and permit or donation-channel fees. No vendor quote, funding target, verified organizer, or field data is included in the examined material. The figures above must not be read as a final budget or an invitation to pay.
 
-## Tata kelola dan status materi proposal
+## Governance and status of proposal material
 
-Materi proposal mengusulkan agar penggunaan dana mengikuti anggaran yang dipublikasikan, pengeluaran dan saldo dilaporkan, afiliasi pendukung dengan bank yang diteliti diungkap, kepemilikan saham terkait tim riset dinyatakan, masukan dapat disampaikan melalui kanal koreksi, dan keputusan analisis tetap pada tim riset. Ini prinsip yang diusulkan; tidak ada bukti di materi yang diperiksa bahwa pendanaan, kanal koreksi, atau tim yang menjalankannya telah aktif.
+The proposal material proposes that use of funds follow a published budget, spending and balances be reported, supporter affiliations with researched banks be disclosed, research-team share ownership be stated, input be submittable through a correction channel, and analysis decisions remain with the research team. These are proposed principles; there is no evidence in the examined material that fundraising, a chosen vendor, fund collection, valuation results, or predictive tests have been carried out.
 
-Bahan mencakup beberapa versi slide: satu versi 12-slide tanpa estimasi biaya, dua versi 12-slide dengan estimasi parametrik USD, satu versi 12-slide dengan judul dan redaksi yang diringkas, serta satu versi 9-slide tanpa estimasi uang dan ajakan donasi yang menyempitkan usulan ke pilot dua bank. Beberapa PDF slide juga tersedia; urutan revisi tidak pasti karena label versi tidak konsisten. Daftar tugas dan ringkasan eksekutif muncul di dalam slide, bukan sebagai berkas tersendiri. Materi pitching tersedia sebagai teks rancangan, tetapi catatan ini tidak mengutip naskahnya. Halaman penggalangan dana hanya berupa rancangan dalam bahan; situs aktif dan penerimaan dana tidak terbukti. Rekaman audio disebut ada, tetapi berkas audio tidak tersedia untuk pemeriksaan. Paper akademik juga disebut dalam daftar rencana, namun tidak ada berkas paper yang dapat diperiksa; klaim status pengirimannya saling bertentangan. PDF yang tersedia adalah ekspor slide, bukan paper. Tidak ada video yang diterima. Analisis kesenjangan satu halaman juga dirujuk, tetapi berkasnya tidak tersedia untuk pemeriksaan dan tautan privatnya tidak diterbitkan.
+The material includes slide decks (one 15-slide proposal, one 9-slide version without money estimates and a narrowed donation appeal for a two-bank pilot), several slide PDFs, task lists and executive summaries inside slides rather than as separate files, pitching material as draft text (not quoted in this note), and a fundraising page that exists only as a draft (no live site or receipt of funds is proven). An audio recording is mentioned but no audio file is available for examination. An academic paper is also mentioned in the plan list, but no paper file is available; claims about its submission status conflict with each other. The available PDFs are slide exports, not a paper. No video was received. A one-page gap analysis is also referenced, but the file is not available for examination and its private link is not published.
 
-Dengan demikian paket ini masih berstatus proposal. Belum ada bukti pekerjaan lapangan, vendor yang dipilih, pengumpulan dana, hasil valuasi, maupun uji prediksi yang dijalankan.
+So this package still has proposal status. There is no evidence of fieldwork, a selected vendor, fundraising, valuation results, or executed predictive tests.
 
-## Batas
+## Limits
 
-Ini rancangan, bukan hasil valuasi atau pemeriksaan forensik. Belum ada pengambilan sampel, ekstraksi data bank, model yang dihitung, penilaian harga, backtest, atau uji lapangan dalam catatan ini. Klaim angka yang belum dicocokkan dengan dokumen penerbit tidak disajikan sebagai fakta. Tidak ada strategi perdagangan yang disusun atau diuji.
+This is a design, not a valuation result or a forensic examination. No sampling, bank data extraction, computed model, price assessment, backtest, or field test has been done in this note. Figure claims not matched with issuer documents are not presented as fact. No trading strategy has been constructed or tested.

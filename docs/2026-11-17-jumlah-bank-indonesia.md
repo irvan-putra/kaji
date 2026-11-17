@@ -1,33 +1,33 @@
-# Jumlah bank di Indonesia
+# The number of banks in Indonesia
 
-Catatan riset; sumber diakses 17 November 2026. Status verifikasi dan cakupan disebut per bagian.
+Research note; sources accessed 17 November 2026. Verification status and scope are stated per section.
 
-## Jumlah bank
+## Number of banks
 
-- Bank Indonesia mencatat **105 bank umum** per Juli 2025 (Tabel 3 Indikator Sektor Perbankan). Sumber: https://www.bi.go.id/id/statistik/ekonomi-keuangan/sski/Documents/Tabel_3.pdf
-- LPS mencatat **1.426 BPR/BPRS** yang melaporkan data simpanan per Juni 2026, terdiri dari 1.252 BPR konvensional dan 174 BPRS (dikutip Kontan, 2 Okt 2026). Sumber: https://keuangan.kontan.co.id/news/lps-catat-simpanan-bpr-dan-bprs-tumbuh-418-jadi-rp-18178-triliun-per-juni-2026
-- **Catatan cakupan.** Fakta definisional: baris BI menghitung "Jumlah Bank Perkreditan Rakyat" (1.333 per Juli 2025, tabel yang sama), sedangkan angka LPS menghitung "BPR/BPRS yang melaporkan data simpanan" (1.426 per Juni 2026). Apa penyebab selisih kedua angka ini *unverified*.
-- Menjumlahkan 105 + 1.426 = 1.531 mencampur dua definisi dari dua lembaga pada dua tanggal; **bukan total resmi pada satu tanggal** dan dilabeli *unverified* sebagai total yang bermakna.
-- Pembanding satu sumber satu periode: LPS Laporan Kelembagaan Triwulan II 2025 mencatat total **1.617 bank** (105 bank umum + 1.512 BPR/BPRS) per Q2 2025. Sumber: https://lps.go.id/laporan-kelembagaan-lps-triwulan-ii-2025/ (kalimat laporan: "Jumlah bank pada triwulan II 2025 tercatat sebanyak 1.617 bank, dengan rincian 105 bank umum dan 1.512 BPR/BPRS.")
+- Bank Indonesia records **105 commercial banks (bank umum)** as of July 2025 (Table 3, Banking Sector Indicators). Source: https://www.bi.go.id/id/statistik/ekonomi-keuangan/sski/Documents/Tabel_3.pdf
+- LPS records **1,426 BPR/BPRS** reporting deposit data as of June 2026, consisting of 1,252 conventional BPR and 174 BPRS (quoted by Kontan, 2 Oct 2026). Source: https://keuangan.kontan.co.id/news/lps-catat-simpanan-bpr-dan-bprs-tumbuh-418-jadi-rp-18178-triliun-per-juni-2026
+- **Scope note.** A definitional fact: the BI row counts "Jumlah Bank Perkreditan Rakyat" (1,333 as of July 2025, same table), while the LPS figure counts "BPR/BPRS reporting deposit data" (1,426 as of June 2026). What explains the difference between these two figures is *unverified*.
+- Adding 105 + 1,426 = 1,531 mixes two definitions from two institutions at two dates; it is **not an official total at one date** and is labeled *unverified* as a meaningful total.
+- Single-source, single-period benchmark: the LPS Institutional Report for Q2 2025 records a total of **1,617 banks** (105 commercial banks + 1,512 BPR/BPRS) as of Q2 2025. Source: https://lps.go.id/laporan-kelembagaan-lps-triwulan-ii-2025/ (report sentence: "Jumlah bank pada triwulan II 2025 tercatat sebanyak 1.617 bank, dengan rincian 105 bank umum dan 1.512 BPR/BPRS.")
 
-## "Bank umum" itu apa?
+## What is a "bank umum"?
 
-"Bank umum" adalah nama kategori resmi OJK; di luarnya ada Bank Perekonomian Rakyat (BPR) yang layanannya lebih terbatas. Menurut OJK, sejak UU P2SK (UU No. 4 Tahun 2023) Bank Perkreditan Rakyat berganti nama menjadi Bank Perekonomian Rakyat (BPR). BPR tidak boleh menerima simpanan giro, tidak melakukan kegiatan valas (kecuali penukaran valas), dan tidak melakukan perasuransian (kecuali memasarkan produk asuransi lewat kerja sama). Sumber: https://ojk.go.id/id/kanal/perbankan/Pages/Bank-Perkreditan-Rakyat.aspx
+"Bank umum" (commercial bank) is the official OJK category name; outside it is Bank Perekonomian Rakyat (BPR), whose services are more limited. According to OJK, since the P2SK Law (Law No. 4 of 2023) Bank Perkreditan Rakyat was renamed Bank Perekonomian Rakyat (BPR). BPR may not accept current-account deposits (giro), may not conduct foreign-exchange activities (except currency exchange), and may not conduct insurance business (except marketing insurance products through cooperation). Source: https://ojk.go.id/id/kanal/perbankan/Pages/Bank-Perkreditan-Rakyat.aspx
 
-Catatan tambahan: baik bank umum maupun BPR punya varian konvensional dan syariah (bank umum syariah, BPRS), jadi pembagiannya bukan sekadar "umum vs tidak umum".
+Additional note: both bank umum and BPR have conventional and sharia variants (bank umum syariah, BPRS), so the division is not simply "umum vs non-umum".
 
-## Bank yang sahamnya tercatat di BEI
+## Banks listed on the IDX
 
-Daftar **48 kandidat** di bawah berasal dari pencocokan dua sumber (diakses 17 November 2026):
+The list of **48 candidates** below comes from matching two sources (accessed 17 November 2026):
 
-- Halaman subindustri Banks di Rapor Emiten memuat **47 emiten**; ke-47 nama di bawah cocok dengan daftar tersebut. Sumber: https://raporemiten.com/e/subindustri/banks/
-- **BANK** (Bank Aladin Syariah Tbk, d/h Bank Net Indonesia Syariah) tidak ada di daftar Rapor Emiten, tetapi tercatat di KSEI dengan bursa IDX, status Active, tanggal pencatatan 1 Februari 2021. Sumber: https://web.ksei.co.id/services/registered-securities/shares/lc/BANK
+- The Banks subindustry page on Rapor Emiten lists **47 issuers**; the 47 names below match that list. Source: https://raporemiten.com/e/subindustri/banks/
+- **BANK** (Bank Aladin Syariah Tbk, formerly Bank Net Indonesia Syariah) is not on the Rapor Emiten list, but is registered with KSEI on the IDX exchange with Active status, listed 1 February 2021. Source: https://web.ksei.co.id/services/registered-securities/shares/lc/BANK
 
-**Cakupan unverified:** 48 nama ini adalah kandidat hasil pencocokan dua sumber di atas, bukan total resmi bank tercatat di BEI. Status pencatatan tiap emiten belum dicek satu per satu ke KSEI/IDX, dan belum dibandingkan dengan daftar emiten resmi BEI. Daftar ini menghitung bank sebagai penerbit saham yang tercatat, bukan jumlah saham beredar, dan bukan penilaian apakah sahamnya aktif diperdagangkan. Klasifikasi setiap emiten sebagai bank umum (konvensional atau syariah) versus kategori bank lain belum diverifikasi satu per satu; jangan menganggap cakupan daftar ini mencakup semua kategori bank.
+**Unverified scope:** these 48 names are candidates from matching the two sources above, not an official total of banks listed on the IDX. Each issuer's listing status has not been checked one by one with KSEI/IDX, and the list has not been compared with the official IDX issuer list. This list counts banks as listed share issuers, not the number of shares outstanding, and is not an assessment of whether the shares are actively traded. The classification of each issuer as a commercial bank (conventional or sharia) versus other bank categories has not been verified one by one; do not assume this list covers all bank categories.
 
-### Daftar nama bank dan kode saham (hasil pencocokan)
+### List of bank names and stock tickers (matching result)
 
-| No. | Kode saham | Nama bank |
+| No. | Ticker | Bank name |
 | --- | --- | --- |
 | 1 | AGRO | Bank Raya Indonesia |
 | 2 | AGRS | Bank IBK Indonesia |
@@ -78,42 +78,42 @@ Daftar **48 kandidat** di bawah berasal dari pencocokan dua sumber (diakses 17 N
 | 47 | SDRA | Bank Woori Saudara Indonesia 1906 |
 | 48 | SUPA | Super Bank Indonesia |
 
-## Kelompok Bank Berdasarkan Modal Inti (KBMI)
+## Bank Groupings by Core Capital (KBMI)
 
-Untuk membandingkan skala antarbank, OJK mengelompokkan bank umum berdasarkan modal inti (POJK 12/POJK.03/2021 tentang Bank Umum, menggantikan pengelompokan lama BUKU):
+To compare scale across banks, OJK groups commercial banks by core capital (POJK 12/POJK.03/2021 on Commercial Banks, replacing the old BUKU grouping):
 
-- KBMI 1: modal inti sampai dengan Rp6 triliun
-- KBMI 2: modal inti di atas Rp6 triliun sampai dengan Rp14 triliun
-- KBMI 3: modal inti di atas Rp14 triliun sampai dengan Rp70 triliun
-- KBMI 4: modal inti di atas Rp70 triliun (terbuka ke atas)
+- KBMI 1: core capital up to Rp6 trillion
+- KBMI 2: core capital above Rp6 trillion up to Rp14 trillion
+- KBMI 3: core capital above Rp14 trillion up to Rp70 trillion
+- KBMI 4: core capital above Rp70 trillion (open-ended)
 
-**Terverifikasi** terhadap pemberitaan yang mengutip POJK 12/POJK.03/2021 (Bisnis, 20 Agu 2021; Sindonews, 23 Agu 2021; Kompas, 22 Agu 2021) dan teks POJK di JDIH BPK. Teks POJK: https://peraturan.bpk.go.id/Read/221984/Peraturan%20OJK%20No.%2012%20Tahun%202021.pdf. Pemberitaan: https://finansial.bisnis.com/read/20210820/90/1431998/ojk-ubah-klasifikasi-bank-umum-dari-buku-menjadi-kbmi-ini-rinciannya
+**Verified** against news reports citing POJK 12/POJK.03/2021 (Bisnis, 20 Aug 2021; Sindonews, 23 Aug 2021; Kompas, 22 Aug 2021) and the POJK text at JDIH BPK. POJK text: https://peraturan.bpk.go.id/Read/221984/Peraturan%20OJK%20No.%2012%20Tahun%202021.pdf. News: https://finansial.bisnis.com/read/20210820/90/1431998/ojk-ubah-klasifikasi-bank-umum-dari-buku-menjadi-kbmi-ini-rinciannya
 
-Catatan: batas KBMI adalah **rentang kategori**, bukan modal inti aktual tiap bank. Penempatan tiap bank ke kelompoknya memerlukan angka modal inti tiap bank pada periode laporan yang sama. Catatan ini belum memverifikasi data per bank.
+Note: KBMI boundaries are **category ranges**, not each bank's actual core capital. Placing each bank into its group requires each bank's core capital figure for the same reporting period. This note has not verified per-bank data.
 
-### Klaim modal inti dalam dua versi treemap
+### Core capital claims in two treemap versions
 
-Treemap pertama mengklaim nilai untuk 37 dari 48 bank berdasarkan modal inti (Tier-1) per 31 Desember 2025, dengan 11 ticker tanpa bobot: AGRO, BACA, BBKP, BBYB, BKSW, BNLI, BSIM, MAYA, MEGA, SDRA, dan SUPA. Angka dan cakupan versi pertama belum diverifikasi.
+The first treemap claimed values for 37 of 48 banks based on core capital (Tier-1) as of 31 December 2025, with 11 tickers unweighted: AGRO, BACA, BBKP, BBYB, BKSW, BNLI, BSIM, MAYA, MEGA, SDRA, and SUPA. The first version's figures and coverage are unverified.
 
-Treemap kedua berjudul "Modal Inti Seluruh Bank yang Tercatat di BEI, 30 Juni 2026" dan mengklaim angka untuk 43 dari 48 bank; lima yang ditandai n.a. adalah BNLI, BRIS, BSIM, MEGA, dan NOBU. Berkas pengiring memuat 48 baris: 39 angka berperiode 30 Juni 2026, empat angka berperiode 31 Desember 2025 (BNGA, NISP, BMAS, MASB), dan lima baris n.a. tanpa nilai, periode, atau tautan sumber. Jadi datanya tidak mencakup satu tanggal seragam meskipun judul grafik menyebut 30 Juni 2026.
+The second treemap is titled "Modal Inti Seluruh Bank yang Tercatat di BEI, 30 Juni 2026" and claims figures for 43 of 48 banks; the five marked n.a. are BNLI, BRIS, BSIM, MEGA, and NOBU. The accompanying file contains 48 rows: 39 figures dated 30 June 2026, four figures dated 31 December 2025 (BNGA, NISP, BMAS, MASB), and five n.a. rows with no value, period, or source link. So the data does not cover a single uniform date even though the chart title says 30 June 2026.
 
-Berkas pengiring menyebut angka umumnya memakai modal inti (Tier-1) masing-masing bank, bukan konsolidasian. Beberapa catatan menyatakan ekstraksi PDF sumber terpotong dan angka diambil dari cuplikan terindeks; angka tersebut belum dikonfirmasi pada tabel sumber. Nilai terbesar yang tercantum adalah BBCA Rp247,9 triliun, BBRI Rp240,4 triliun, BMRI Rp229,0 triliun, dan BBNI Rp151,3 triliun. Ada pula ubin kecil seperti MAYA, BKSW, BBYB, dan BEKS yang angkanya tidak terbaca pada gambar; angka ada di berkas pengiring.
+The accompanying file states the figures generally use each bank's individual core capital (Tier-1), not consolidated. Several notes state the source PDF extraction was truncated and the figure was taken from indexed snippets; those figures have not been confirmed on the source tables. The largest values listed are BBCA Rp247.9 trillion, BBRI Rp240.4 trillion, BMRI Rp229.0 trillion, and BBNI Rp151.3 trillion. Some small tiles such as MAYA, BKSW, BBYB, and BEKS have illegible numbers in the image; the figures are in the accompanying file.
 
-Grafik menyatakan warna mengikuti kelompok KBMI. Batas yang tercantum di atas adalah KBMI 4 di atas Rp70 triliun; KBMI 3 di atas Rp14 triliun sampai dengan Rp70 triliun; KBMI 2 di atas Rp6 triliun sampai dengan Rp14 triliun; dan KBMI 1 sampai dengan Rp6 triliun. Batas tersebut terverifikasi terhadap POJK 12/POJK.03/2021, tetapi tidak memverifikasi nilai modal atau pengelompokan aktual tiap bank.
+The chart states colors follow the KBMI groups. The boundaries listed above are KBMI 4 above Rp70 trillion; KBMI 3 above Rp14 trillion up to Rp70 trillion; KBMI 2 above Rp6 trillion up to Rp14 trillion; and KBMI 1 up to Rp6 trillion. Those boundaries are verified against POJK 12/POJK.03/2021, but this does not verify the capital values or actual grouping of each bank.
 
-Seluruh angka modal inti dan cakupannya masih perlu diverifikasi terhadap laporan publikasi masing-masing bank. Perubahan daftar tanpa angka dari versi pertama ke versi kedua juga belum dapat dijelaskan. Gambar dan berkas Excel tidak diterbitkan ulang; catatan ini belum membuat treemap dari angka terverifikasi. Jangan pakai batas KBMI sebagai pengganti nilai aktual.
+All core capital figures and their coverage still need verification against each bank's published reports. The change in the no-figure list from the first to the second version is also unexplained. The image and Excel file are not republished; this note has not built a treemap from verified figures. Do not use KBMI boundaries as a substitute for actual values.
 
-## Bagian terbuka
+## Open items
 
-- Belum ada **total terbaru semua bank pada satu tanggal bersama** yang terverifikasi. Acuan satu sumber dan satu periode yang tercatat di sini adalah total LPS 1.617 bank per Triwulan II 2025; angka BI Juli 2025 dan LPS Juni 2026 memberi cakupan/tanggal berbeda, sehingga tidak dijumlahkan sebagai total terbaru.
-- Status pencatatan individual ke-48 emiten belum diverifikasi satu per satu; daftar di atas adalah kandidat dari pencocokan dua sumber publik.
-- Angka modal inti aktual per bank, periode yang seragam, dan cakupan kedua treemap belum diverifikasi ke laporan bank. Versi pertama mengklaim 37/48 per 31 Desember 2025; versi kedua mengklaim 43/48 dengan empat angka berperiode 31 Desember 2025, sementara lima baris n.a.
+- There is no verified **latest total of all banks on a single common date**. The single-source, single-period benchmark recorded here is the LPS total of 1,617 banks as of Q2 2025; the BI July 2025 and LPS June 2026 figures have different coverage/dates, so they are not added together as a latest total.
+- The individual listing status of the 48 issuers has not been verified one by one; the list above is a candidate list from matching two public sources.
+- Actual per-bank core capital figures, a uniform period, and the coverage of both treemaps have not been verified against bank reports. The first version claimed 37/48 as of 31 December 2025; the second version claimed 43/48 with four figures dated 31 December 2025, while five rows are n.a.
 
-## Sumber
+## Sources
 
-- Bank Indonesia, Tabel 3 Indikator Sektor Perbankan: https://www.bi.go.id/id/statistik/ekonomi-keuangan/sski/Documents/Tabel_3.pdf
-- Kontan, "LPS Catat Simpanan BPR dan BPRS Tumbuh 4,18% Jadi Rp 181,78 Triliun per Juni 2026" (2 Okt 2026): https://keuangan.kontan.co.id/news/lps-catat-simpanan-bpr-dan-bprs-tumbuh-418-jadi-rp-18178-triliun-per-juni-2026
+- Bank Indonesia, Table 3 Banking Sector Indicators: https://www.bi.go.id/id/statistik/ekonomi-keuangan/sski/Documents/Tabel_3.pdf
+- Kontan, "LPS Catat Simpanan BPR dan BPRS Tumbuh 4,18% Jadi Rp 181,78 Triliun per Juni 2026" (2 Oct 2026): https://keuangan.kontan.co.id/news/lps-catat-simpanan-bpr-dan-bprs-tumbuh-418-jadi-rp-18178-triliun-per-juni-2026
 - OJK, Bank Perekonomian Rakyat: https://ojk.go.id/id/kanal/perbankan/Pages/Bank-Perkreditan-Rakyat.aspx
-- Rapor Emiten, Subindustri Banks: https://raporemiten.com/e/subindustri/banks/
-- KSEI, daftar saham tercatat BANK: https://web.ksei.co.id/services/registered-securities/shares/lc/BANK
-- LPS, Laporan Kelembagaan Triwulan II 2025: https://lps.go.id/laporan-kelembagaan-lps-triwulan-ii-2025/
+- Rapor Emiten, Banks subindustry: https://raporemiten.com/e/subindustri/banks/
+- KSEI, registered shares list BANK: https://web.ksei.co.id/services/registered-securities/shares/lc/BANK
+- LPS, Laporan Kelembagaan LPS Triwulan II 2025: https://lps.go.id/laporan-kelembagaan-lps-triwulan-ii-2025/
