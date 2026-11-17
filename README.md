@@ -10,9 +10,10 @@ Each note states when its facts were checked, links the official pages it relied
 - [Showing an edit conflict as branches](docs/conflict-resolution-ui-idea.md) - an unbuilt, untested UI idea; sync and merge behavior remain open.
 - [Crypto in Indonesia: supervision, seller tax and wallet design](docs/crypto-in-indonesia-regulation-tax-wallet-choice.md) - dated summary of official texts, not financial, legal or tax advice.
 - [Bank counts and listed bank tickers in Indonesia](docs/2026-11-17-jumlah-bank-indonesia.md) - dated counts, 48 listing candidates and KBMI thresholds; listing coverage and per-bank capital figures remain unverified.
+- [Valuing banks with public data](docs/menilai-valuasi-bank-dengan-data-publik.md) - a proposed method, public-source checks and open modeling limits; no valuation or field study was run.
 - [Mother's maiden name in bank services](docs/nama-ibu-kandung-layanan-bank.md) - what checked OJK texts say about digital authentication and SLIK; mandatory-field status and exceptions remain unverified.
-- [Measuring the economy independently](docs/mengukur-ekonomi-independen.md) - a proposed research protocol; fieldwork has not been run and forwarded example figures remain unverified.
-- [BNI Sandbox Tester prototype](docs/prototipe-bni-sandbox-tester.md) - a summary of an unexecuted design; no code was run, audited or published.
+- [Measuring the economy independently](docs/mengukur-ekonomi-independen.md) - a proposed research protocol; fieldwork has not been run and example figures remain unverified.
+- [BNI Sandbox Tester prototype](docs/prototipe-bni-sandbox-tester.md) - an unexecuted sandbox design and unverified SNAP shortlist; no code or API call was run.
 - [WonderOS items and local-first notes](docs/wonderos-items-and-local-first-notes.md) - a project reading; sync behavior was not checked.
 - [Proving a sync/merge core with Lean and related tools](docs/proving-a-sync-merge-core-with-lean-and-friends.md) - project claims are attributed, not independently verified; no proof or tool test was run.
 - [Receiving payments from Indonesia](docs/receiving-payments-from-indonesia.md) - general provider information, checked 2026-11-16; not financial or tax advice.

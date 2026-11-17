@@ -21,7 +21,7 @@ Sumber: https://www.ojk.go.id/id/regulasi/Documents/Pages/Perubahan-Kedua-POJK-N
 ## 3. Nama ayah kandung dan debitur yang tidak mengetahui orang tua kandung
 
 - Daftar informasi debitur di Penjelasan Pasal 4 ayat (1) POJK 11/2024 bersifat contoh ("antara lain") dan menyebut nama gadis ibu kandung tanpa menyebut nama ayah kandung. Daftar lengkap kolom Laporan Debitur ada di Lampiran SEOJK 11/SEOJK.01/2024 yang belum terverifikasi langsung, jadi klaim "tidak ada kolom nama ayah" dan "kolom ibu kandung mandatory" keduanya masih *unverified*.
-- *Unverified / belum ditemukan:* prosedur resmi pengisian nama gadis ibu kandung bila debitur tidak mengetahui orang tua kandungnya (misalnya anak panti asuhan). Materi yang diteruskan sendiri menyatakan lampiran tidak mengatur pengganti, kode khusus, atau pengecualian untuk kasus ini, tetapi lampirannya belum dicek langsung.
+- *Unverified / belum ditemukan:* prosedur resmi pengisian nama gadis ibu kandung bila debitur tidak mengetahui orang tua kandungnya (misalnya anak panti asuhan). Klaim bahwa lampiran tidak mengatur pengganti, kode khusus, atau pengecualian juga belum dapat diverifikasi tanpa pemeriksaan langsung atas lampiran.
 - **Kanal bertanya (terverifikasi):** Kontak 157 adalah kanal resmi OJK untuk konsumen, dengan layanan "Pertanyaan" untuk menanyakan produk/layanan sektor jasa keuangan. Sumber: https://kontak157.ojk.go.id/appkpublicportal/. Apakah pertanyaan teknis format pelaporan SLIK dijawab lewat kanal konsumen ini belum diuji; keberadaan kanal dan cakupan umumnya yang terverifikasi.
 
 ## Kesimpulan sementara
