@@ -6,7 +6,7 @@ Each note states when its facts were checked, links the official pages it relied
 
 ## Recovered examples and visuals
 
-Three authored page examples are available under [`examples/`](examples/README.md): the [live interactive Indomie engineering spec](https://vanipy.com/kaji/indomie/), an archived Insting workshop landing-page draft, and the conflict-resolution concept. The separate tabular Indomie recipe-box card remains in the examples directory and is not replaced by the interactive page. The Insting example is not an active offer; its signup controls are disabled. Conflict screenshots are concepts using invented items and names.
+The [`examples/`](examples/README.md) directory keeps three distinct Indomie variants together: the user-selected tabular recipe-box card, the [400 ml interactive engineering spec](https://vanipy.com/kaji/indomie/), and the [customizable Tangle recipe box](https://vanipy.com/kaji/indomie/tangle/) based on the card's 500 ml recipe. They are separate versions, not one reconciled recipe. The directory also contains an archived Insting workshop landing-page draft and a conflict-resolution concept. The Insting example is not an active offer; its signup controls are disabled. Conflict screenshots are concepts using invented items and names.
 
 The [synthetic break-even charts](https://vanipy.com/kaji/economics-synthetic/) are a separate public-safe adaptation of an already-public hypothetical example. They are not the original private-valued comparisons.
 
