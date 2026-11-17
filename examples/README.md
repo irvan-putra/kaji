@@ -2,6 +2,12 @@
 
 Open each `index.html` in a browser; each page uses only its local CSS, images and (for the Indomie controls) inline JavaScript. These are source examples in Kaji, not a deployed service.
 
-- [Indomie Goreng: an engineer's spec](indomie/index.html) - an interactive cooking-spec example. Its food photo is credited to Gunawan Kartapranata under CC BY-SA 3.0, with the source link on the page.
+- **Indomie Mi Goreng recipe-box card (primary tabular version):**
+
+  ![Indomie Mi Goreng with telur and sosis for one portion. A left-to-right parallel-thread recipe table with a three-minute boil as the critical path.](indomie/images/indomie-recipe-box-v2.jpg)
+
+  [Open the full-size recipe-box card](indomie/images/indomie-recipe-box-v2.jpg). This is the user-selected left-to-right version: one portion with telur and sosis; parallel cooking threads merge at plating, with the 3:00 boil as the critical path.
+
+- [Indomie Goreng: an engineer's spec](indomie/index.html) - a separate interactive cooking-spec example, retained as its own variant. It differs from the card: it uses 400 ml water, drains fully, and defaults spice to level 2, while the card uses 500 ml, reserves 1 tablespoon of water, and specifies half a chili-powder pack (about level 3). Do not treat these as one reconciled recipe. Its reference food photo is credited to Gunawan Kartapranata under CC BY-SA 3.0, with the source link on the page.
 - [Insting's first page (draft)](insting/index.html) - an archived workshop concept, not an active offer. Signup controls are disabled; there is no payment, signup or contact collection.
 - [Multiverse trimming conflict concept](conflict/index.html) - illustrative concept screens, not built UI. All items and names shown are invented.
