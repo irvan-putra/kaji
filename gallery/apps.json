@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-17 15:27 WIB",
+ "checked": "2026-11-17 15:59 WIB",
  "apps": [
   {
    "name": "itdapk",
@@ -15,15 +15,15 @@
   },
   {
    "name": "kemas",
-   "version": "0.2.1",
+   "version": "0.2.2",
    "state": "available",
    "icon": "kemas.png",
    "tag": "Experimental test build",
-   "about": "Cleaning accountability app. Known issue: the bottom input and Add button overlap the navigation bar. A layout fix is pending; 0.2.1 is the latest build.",
-   "apk": "https://github.com/irvan-putra/kemas/releases/download/v0.2.1/kemas-v0.2.1.apk",
-   "release": "https://github.com/irvan-putra/kemas/releases/tag/v0.2.1",
+   "about": "Cleaning accountability app. Version 0.2.2 corrects the bottom input/Add-button overlap with the Android navigation area. Experimental; no device-runtime test is claimed.",
+   "apk": "https://github.com/irvan-putra/kemas/releases/download/v0.2.2/kemas-v0.2.2.apk",
+   "release": "https://github.com/irvan-putra/kemas/releases/tag/v0.2.2",
    "repo": "https://github.com/irvan-putra/kemas",
-   "sha256": "0bdf9f1357f8bb15d0befda427b9cc94f3ac8c20ca4097ac6e7955e8fcecbc8a"
+   "sha256": "419150a622be9ea0661bc51f903a368ae3dce33afff8c7c165af10ab25a48b48"
   },
   {
    "name": "cabang",
@@ -39,15 +39,15 @@
   },
   {
    "name": "menit",
-   "version": "0.1.0",
+   "version": "0.1.1",
    "state": "available",
    "icon": "menit.png",
    "tag": "Experimental test build",
    "about": "Estimates how much phone time goes to AI apps.",
-   "apk": "https://github.com/irvan-putra/menit/releases/download/v0.1.0-test/menit-v0.1.0.apk",
-   "release": "https://github.com/irvan-putra/menit/releases/tag/v0.1.0-test",
+   "apk": "https://github.com/irvan-putra/menit/releases/download/v0.1.1/menit-v0.1.1.apk",
+   "release": "https://github.com/irvan-putra/menit/releases/tag/v0.1.1",
    "repo": "https://github.com/irvan-putra/menit",
-   "sha256": "212beac71896ec2e0ced5d613a3a8091752b3bfd6dd6fc2a4a7fa5b00764d18e"
+   "sha256": "7666479353644348a828e672aa4ade9a49e3e151df6a2a8d6bc1190d688acf53"
   },
   {
    "name": "jin",
