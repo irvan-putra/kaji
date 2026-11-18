@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-18 15:42 WIB",
+ "checked": "2026-11-18 17:03 WIB",
  "apps": [
   {
    "name": "tuju",
@@ -136,14 +136,14 @@
   {
    "name": "denyut",
    "state": "available",
-   "tag": "Signed useful-width widget correction; not Samsung-tested",
-   "about": "Offline notes and reminders. Useful next reminder and note count at2-3columns. Emulator-qualified, not Samsung-tested. Local-model loading remains disabled; no chat account provisioned by this update.",
-   "repo": "https://github.com/irvan-putra/denyut",
-   "version": "0.7.2",
+   "tag": "Signed full countdown and clock correction",
+   "about": "Offline notes and reminders. Narrow widgets show a complete countdown and clock on separate lines, retaining notes count. Font-aware compact fallback preserves time and notes; long one-row titles may shorten. Emulator host, render and tap-open checks passed. This correction is not yet Samsung-tested. Same package, signer, permissions and data. Local-model loading remains disabled. Source: fcd23d1.",
+   "repo": "https://github.com/irvan-putra/denyut/commit/fcd23d178c8280870344aab2073fe5464a2f0876",
+   "version": "0.7.3",
    "icon": "denyut.png",
-   "apk": "https://github.com/irvan-putra/denyut/releases/download/v0.7.2/denyut-v0.7.2.apk",
-   "release": "https://github.com/irvan-putra/denyut/releases/tag/v0.7.2",
-   "sha256": "e2116950649596b21ea4f67b7882de661067ceaaad3bbd7d0d7f689431aaa577"
+   "apk": "https://github.com/irvan-putra/denyut/releases/download/v0.7.3/denyut-v0.7.3.apk",
+   "release": "https://github.com/irvan-putra/denyut/releases/tag/v0.7.3",
+   "sha256": "bfbc3754be450340077380c6a0fcc50a93f749abafc535f8941be78fc3362b73"
   },
   {
    "name": "saku",
@@ -396,6 +396,18 @@
    "apk": "https://github.com/irvan-putra/saku/releases/download/v0.1.2/saku-v0.1.2.apk",
    "release": "https://github.com/irvan-putra/saku/releases/tag/v0.1.2",
    "sha256": "32ded85de300b2f567f06f5deb13eeef769c4d479d651c8adb7a3152b16420df"
+  },
+  {
+   "name": "denyut",
+   "state": "legacy",
+   "tag": "Previous signed build",
+   "about": "Offline notes and reminders. Useful next reminder and note count at2-3columns. Emulator-qualified, not Samsung-tested. Local-model loading remains disabled; no chat account provisioned by this update.",
+   "repo": "https://github.com/irvan-putra/denyut",
+   "version": "0.7.2",
+   "icon": "denyut-0.7.2.png",
+   "apk": "https://github.com/irvan-putra/denyut/releases/download/v0.7.2/denyut-v0.7.2.apk",
+   "release": "https://github.com/irvan-putra/denyut/releases/tag/v0.7.2",
+   "sha256": "e2116950649596b21ea4f67b7882de661067ceaaad3bbd7d0d7f689431aaa577"
   }
  ]
 }
