@@ -1,6 +1,18 @@
 {
- "checked": "2026-11-18 13:24 WIB",
+ "checked": "2026-11-18 13:32 WIB",
  "apps": [
+  {
+   "name": "tuju",
+   "version": "0.1.0",
+   "state": "available",
+   "icon": "tuju.png",
+   "tag": "Signed offline map; not phone-installed",
+   "about": "Bundled busway overview map with pinch-to-zoom and drag-to-pan. Offline map only: no live directions, journey planning, fare calculation or service updates. No permissions. Released APK not installed on a physical phone.",
+   "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.0/tuju-v0.1.0.apk",
+   "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.0",
+   "repo": "https://github.com/irvan-putra/tuju",
+   "sha256": "3e466703b4ab3ff7aeb9579025a5a55bde21795e987743da86294ca5d76c8cc3"
+  },
   {
    "name": "irvan",
    "version": "0.1.0",
