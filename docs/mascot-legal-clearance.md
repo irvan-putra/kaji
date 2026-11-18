@@ -5,7 +5,7 @@
 
 ## What "clearance" can and cannot mean
 
-No office or lawyer issues a certificate that a mascot is "legally cleared" everywhere. Four separate questions get mixed together:
+No office issues a certificate that a mascot is "legally cleared". A lawyer can give a written clearance opinion, which is a real service, but it is a risk assessment for the countries, classes and date searched, not a guarantee. Four separate questions get mixed together:
 
 1. **Do we own it?** Who made it, how, and whether the maker's rights reached the project (employee, contractor, tool terms, stock or reference material).
 2. **Does it copy someone else's work?** This is a copyright question: copying plus substantial similarity to a protected work. Similar subject matter (a purple lizard) is not enough on its own.
@@ -14,11 +14,11 @@ No office or lawyer issues a certificate that a mascot is "legally cleared" ever
 
 A written opinion from a lawyer covers questions 2 and 3 for the countries and classes searched, on the date searched. It lowers risk and documents good faith. It is not a guarantee, and a court or a rights holder can still disagree.
 
-## Question 1: ownership is the open item for AI-assisted art
+## Question 1: ownership, one open point to review for AI-assisted art
 
 - Indonesia: Law 28/2014 on Copyright says copyright arises automatically when a work takes concrete form (the "declarative" principle), and registration is not required for protection ([DGIP, introduction to copyright](https://www.dgip.go.id/menu-utama/hak-cipta/pengenalan); [DGIP FAQ](https://www.dgip.go.id/faq/daftar-faq/hak-cipta/Hc%20-%20Permohonan)). The statute defines the creator (Pencipta) as one or more *persons* who produce a work that is distinctive and personal (per the DGIP copy of [UU 28/2014](https://www.dgip.go.id/unduhan/download/uu-nomor-28-tahun-2014-tentang-hak-cipta-34-2014), search snippet; the full text was not read for this note). How that applies to a work an AI tool drew is **unverified**, and no Indonesian source on it was checked.
 - United States: the Copyright Office's 2025 AI report say AI output is protectable only where a human author determined enough of the expressive elements, and that prompts alone are not enough ([Part 2 report](https://copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf); [press release](https://newsroom.loc.gov/news/copyright-office-releases-part-2-of-artificial-intelligence-report/s/f3959c36-d616-498d-b8f9-67641fd18bab)). Human-selected and arranged edits, or human-drawn parts, can be protected.
-- Practical reading: a mascot built by a human directing an AI tool step by step may have weaker or narrower copyright than a hand-drawn one, in some countries. A lawyer should look at the actual creation record. Keeping a dated record of who did what is cheap and useful whatever the answer.
+- Practical reading: depending on the country, a mascot built by a human directing an AI tool may get weaker or narrower copyright than a hand-drawn one. That is a point for a jurisdiction-specific lawyer review of the actual creation record, not a conclusion, and it is not ranked here against the other questions. Keeping a dated record of who did what is cheap whatever the answer.
 - This note does not claim any particular mascot is or is not protected.
 
 ## Question 2 and 3: how to search
@@ -39,7 +39,7 @@ Paid step: an attorney runs a fuller search and writes an opinion on registrabil
 | [Terms.Law](https://terms.law/services/trademark-clearance-opinion/) | Opinion, one mark, up to two classes | US$1,250 (rush +US$250) |
 | [MC Law](https://mclaw.io/products/comprehensive-trademark-clearance-search-and-written-opinion) | Search and written opinion, one mark, one class, excluding search vendor fee | US$2,600 |
 
-These are US-only searches by US lawyers. An Indonesian-law opinion price was **not found** (the Indonesian consultant pages checked list registration and basic name checks, not opinion letters). Treat it as **unknown** until quoted. Indonesian vendor pages show basic checks only: for example [Hakio](https://hakio.id/biaya-merek) lists a Basic package at Rp 1,499,000 per class (struck-through Rp 1,875,000) covering a preliminary name and logo check plus filing, with DJKI's official fee charged separately.
+These are US-only searches by US lawyers. An Indonesian-law opinion price was **not found** (the Indonesian consultant pages checked list registration and basic name checks, not opinion letters). Treat it as **unknown** until quoted. Indonesian vendor pages show filing packages with basic checks, not opinion letters. Example, [Hakio](https://hakio.id/biaya-merek) (vendor page, a claim, not verified by a quote): a Basic package listed at Rp 1,499,000 per class (struck-through Rp 1,875,000) covering a preliminary name and logo check plus filing. Hakio's own FAQ says that price is the micro and small business (UMK) package and already includes DJKI's Rp 500,000 official fee, while its non-UMK package is listed at Rp 2,499,000 per class as service fee only, with the Rp 2,800,000 official fee paid separately. VAT treatment was not stated on the page and is **unknown**.
 
 ## Question 4: registering, with official fees
 
@@ -54,28 +54,28 @@ Indonesia (DJKI, tariff table under PP 30/2026 as shown on the DGIP pages):
 | Copyright recordation (not a requirement for protection) | Rp 200,000 per application (Rp 0 for songs and music) |
 | International application via Madrid, administrative fee at DJKI | Rp 750,000 per application |
 
-Source: [DGIP trademark fees](https://dgip.go.id/menu-utama/merek/biaya), [DGIP copyright fees](https://www.dgip.go.id/menu-utama/hak-cipta/biaya). Whether a project of this kind qualifies for the micro or small rate was **not checked**. Whether a mascot with a name needs separate applications for the word and the logo was **not checked**.
+Source: [DGIP trademark fees](https://dgip.go.id/menu-utama/merek/biaya), [DGIP copyright fees](https://www.dgip.go.id/menu-utama/hak-cipta/biaya). DJKI says micro and small applicants must also upload a recommendation or small-business letter from the relevant agency and a stamped statement ([DJKI, 2026-01-21](https://www.dgip.go.id/index.php/artikel/detail-artikel-berita/pelaku-usaha-kini-bisa-daftarkan-merek-sendiri-umk-dapat-tarif-khusus?kategori=Berita+Resmi+Desain+Industri)). Whether this project or Irvan qualifies was **not checked**. The same DJKI article, dated before PP 30/2026 took effect, still shows the general rate as Rp 1,800,000, so older pages disagree with the current table; the table on the DGIP fee page is the one used here. Whether a mascot with a name needs separate applications for the word and the logo was **not checked**.
 
 Other territories, official fees only:
 
 | Office | Fee | Source |
 | --- | --- | --- |
-| USPTO trademark | US$350 per class base application; extra US$100 to US$200 per class for incomplete or custom entries; US$150 per class for a statement of use on intent-to-use filings | [USPTO](https://www.uspto.gov/trademarks/trademark-fee-information) |
+| USPTO trademark | US$350 per class base application, only if it meets the base requirements; surcharges of US$100 (insufficient information), US$200 (free-text goods or services instead of the ID Manual) and US$200 per extra 1,000 characters, each per class; US$150 per class for a statement of use or amendment to allege use on intent-to-use filings | [USPTO](https://www.uspto.gov/trademarks/trademark-fee-information) |
 | US Copyright Office | US$45 (single author, one work, not for hire) or US$65 standard, electronic; fees change on 2027-01-05 | [Copyright Office fees](https://copyright.gov/about/fees.html) |
-| EUIPO EU trademark | EUR 850 for one class, EUR 50 for the second, EUR 150 for each further class | [EUIPO](https://www.euipo.europa.eu/en/trade-marks/before-applying/fees-payments) |
-| WIPO Madrid | CHF 653 basic (black and white) or CHF 903 (colour), plus CHF 100 per designated member or that member's own individual fee, plus CHF 100 per class beyond three | [WIPO](https://www.wipo.int/en/web/madrid-system/how_to/file/fees) |
+| EUIPO EU trademark | EUR 850 for one class (basic online fee), EUR 50 for the second, EUR 150 for each class from the third | [EUIPO](https://www.euipo.europa.eu/en/trade-marks/before-applying/fees-payments) |
+| WIPO Madrid | Basic fee CHF 653 (black and white) or CHF 903 (colour). Per designated member: a CHF 100 complementary fee, or instead that member's own individual fee, which differs by country. Plus a CHF 100 supplementary fee per class beyond three. Use WIPO's fee calculator for real countries; the totals below do not include Madrid | [WIPO](https://www.wipo.int/en/web/madrid-system/how_to/file/fees) |
 
 Trademark rights are territorial. An Indonesian registration gives nothing in the US or EU, so the markets that matter decide the cost. The intended markets for this mascot are **not yet decided**.
 
 ## Indicative totals (arithmetic on the listed fees only)
 
-These are sums of the figures above for one mark, one class, one country. They are not quotes.
+These add only official fees or listed prices for one mark, one class, one country, and combine no unverified quote shapes. They are not quotes. The US opinion row mixes a firm's opinion price with the USPTO fee only to show scale.
 
 | Scenario | Total |
 | --- | --- |
-| Indonesia, self-filed, free PDKI search, micro or small rate | Rp 500,000 (Rp 700,000 with copyright recordation) |
+| Indonesia, self-filed, free PDKI search, micro or small rate | Rp 500,000 (Rp 700,000 with the optional copyright recordation) |
 | Indonesia, self-filed, general rate | Rp 2,800,000 (Rp 3,000,000 with copyright recordation) |
-| Indonesia, through the Hakio Basic package, general rate | Rp 1,499,000 + Rp 2,800,000 = Rp 4,299,000 |
+| Indonesia, through a consultant | **Unknown.** Listed vendor packages differ in what they include (see above), no quote was requested, and VAT is unstated |
 | US, self-filed after own search, base application | US$350 |
 | US, attorney opinion (US$575 to US$2,600) plus USPTO base fee | US$925 to US$2,950, before any attorney filing fee |
 | EU, official fee only | EUR 850 |
