@@ -97,6 +97,13 @@
    "title": "Research and proposals",
    "items": [
     {
+     "name": "irvan",
+     "tag": "Interactive introduction",
+     "about": "A browsable map of public projects and reviewed introduction content. Website available; Android APK not released.",
+     "url": "https://vanipy.com/irvan/",
+     "source": "https://github.com/irvan-putra/irvan"
+    },
+    {
      "name": "kaca",
      "tag": "Research notes",
      "about": "Tidy research notes site.",
