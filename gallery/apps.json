@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-18 18:27 WIB",
+ "checked": "2026-11-18 19:06 WIB",
  "apps": [
   {
    "name": "tuju",
@@ -231,15 +231,15 @@
   },
   {
    "name": "intodo",
-   "version": "0.5.17",
+   "version": "0.5.18",
    "state": "available",
    "icon": "intodo.png",
-   "tag": "Signed useful-width widget correction; not Samsung-tested",
-   "about": "Useful list rows at 2-3columns; repeated same-widget resizing preserves all six synthetic items without Loading rows in Android15 emulator. Same package, signer, feed and list data. Samsung behavior unverified; no reset or feed switch.",
+   "tag": "Signed real/Demo feed switching; phone setup once",
+   "about": "Separate real and synthetic Demo feeds with independent saved items and freshness. One-time two-address setup keeps the existing key; Demo banner and return-to-real confirmation. Automated tests passed; new mode switch not verified on a physical Samsung. Public APK has no personal feed addresses.",
    "repo": "https://github.com/irvan-putra/intodo",
-   "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.17/intodo-v0.5.17.apk",
-   "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.17",
-   "sha256": "e17971ebca35e8dfb12499d3911a23e8000ab627626bc3c84a0cf2a006bc6f99"
+   "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.18/intodo-v0.5.18.apk",
+   "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.18",
+   "sha256": "796da494130d2fe4769674f339068276cd070650762da05d05fb2bbf372a61e7"
   },
   {
    "name": "menit",
@@ -432,6 +432,18 @@
    "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.2",
    "repo": "https://github.com/irvan-putra/tuju/commit/311cd12097da394d3e0d22d2be6ced5351897505",
    "sha256": "144ae3a119a05887f049e9a633ac2624bd8fc03fd00ece1740f5a6988f741bdb"
+  },
+  {
+   "name": "intodo",
+   "version": "0.5.17",
+   "state": "legacy",
+   "icon": "intodo-0.5.17.png",
+   "tag": "Previous signed widget build",
+   "about": "Useful list rows at 2-3columns; repeated same-widget resizing preserves all six synthetic items without Loading rows in Android15 emulator. Same package, signer, feed and list data. Samsung behavior unverified; no reset or feed switch.",
+   "repo": "https://github.com/irvan-putra/intodo",
+   "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.17/intodo-v0.5.17.apk",
+   "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.17",
+   "sha256": "e17971ebca35e8dfb12499d3911a23e8000ab627626bc3c84a0cf2a006bc6f99"
   }
  ]
 }
