@@ -1,177 +1,177 @@
 {
- "checked": "2026-11-18 19:29 WIB",
- "sections": [
-  {
-   "title": "Maps",
-   "items": [
+  "checked": "2026-11-18 19:48 WIB",
+  "sections": [
     {
-     "name": "tuju",
-     "tag": "Shared 4/4D map and separate return notes",
-     "about": "Plaza Festival added to the offline map. Routes 4 and 4D share one first-ten-stop trunk through Halimun, then 4D branches to Rasuna Said. Prior firsthand fare notes preserved. Same-source debug Android WebView checked on an emulator; signed APK not phone-tested. Same package/signer, no permissions. Website Arkadia return notes are separate; the return card is not embedded in the offline map.",
-     "url": "https://vanipy.com/tuju/",
-     "source": "https://github.com/irvan-putra/tuju/commit/8fea4b29fe3540524c6bce62d71fbc232b92ae30"
+      "title": "Maps",
+      "items": [
+        {
+          "name": "tuju",
+          "tag": "Outbound and both Arkadia return options on the map",
+          "about": "Both Arkadia return options drawn in the shared website/offline map. Arkadia-side7E via Ragunan,6 via Galunggung,4 to Simpang Pramuka1; or far-side Gojek to Flyover Raya Bogor,7F to Kayu Putih Rawasari. Outbound routes, shared4/4D trunk and fares retained. Emulator-tested, not Samsung-tested. Ragunan access/fare continuity, conflicting7F hours and Gojek fare/time remain unverified.",
+          "url": "https://vanipy.com/tuju/",
+          "source": "https://github.com/irvan-putra/tuju/commit/8926d0582ff9686a91f6fd2ded11363ddc58a8d5"
+        }
+      ]
+    },
+    {
+      "title": "Animation and cooking",
+      "items": [
+        {
+          "name": "animate",
+          "tag": "Fork of an animation skill, video demos",
+          "about": "Code-drawn canvases rendered to MP4: the original Grow video and a render of the upstream History of AI example.",
+          "url": "https://vanipy.com/animate/",
+          "source": "https://github.com/irvan-putra/animate"
+        },
+        {
+          "name": "cook",
+          "tag": "Recipe boxes: nasi goreng, aglio e olio, tumis kangkung",
+          "about": "Parallel-thread recipe tables with adjustable portions and options. Not kitchen-tested; food-safety notes are on each page.",
+          "url": "https://vanipy.com/kaji/cook/",
+          "source": "https://github.com/irvan-putra/kaji/tree/main/examples/cook"
+        },
+        {
+          "name": "Indomie recipe box",
+          "tag": "Customizable Tangle recipe",
+          "about": "The main interactive Indomie page, based on the 500 ml card.",
+          "url": "https://vanipy.com/kaji/indomie/",
+          "source": "https://github.com/irvan-putra/kaji/tree/main/examples/indomie"
+        },
+        {
+          "name": "Indomie engineer's spec",
+          "tag": "Older variant, 400 ml",
+          "about": "Kept as its own version; it is not reconciled with the recipe box. Photo credit is on the page.",
+          "url": "https://vanipy.com/kaji/indomie/instinct/",
+          "source": "https://github.com/irvan-putra/kaji/blob/main/examples/indomie/instinct/index.html"
+        }
+      ]
+    },
+    {
+      "title": "Charts and concepts",
+      "items": [
+        {
+          "name": "Synthetic break-even charts",
+          "tag": "Invented scenarios",
+          "about": "Cash vs economic break-even with made-up sales numbers.",
+          "url": "https://vanipy.com/kaji/economics-synthetic/",
+          "source": "https://github.com/irvan-putra/kaji/blob/main/examples/economics-synthetic/index.html"
+        },
+        {
+          "name": "Tumbuh draft",
+          "tag": "Archived concept, not an offer",
+          "about": "Signup controls are disabled; nothing is collected.",
+          "url": "https://vanipy.com/kaji/tumbuh/",
+          "source": "https://github.com/irvan-putra/kaji/blob/main/examples/tumbuh/index.html"
+        }
+      ]
+    },
+    {
+      "title": "App web versions and simulations",
+      "items": [
+        {
+          "name": "intodo web",
+          "tag": "Web version of intodo",
+          "about": "Review each change from a phone browser.",
+          "url": "https://vanipy.com/intodo/",
+          "source": "https://github.com/irvan-putra/intodo"
+        },
+        {
+          "name": "Shared-list simulation",
+          "tag": "Historical simulation",
+          "about": "A simulation, not the live app.",
+          "url": "https://vanipy.com/intodo/shared-list-simulation/",
+          "source": "https://github.com/irvan-putra/intodo/blob/main/demos-shared-list-simulation/index.html"
+        },
+        {
+          "name": "Edge AI demo lab",
+          "tag": "naga",
+          "about": "Browser editions of the meetup demo scaffolds.",
+          "url": "https://vanipy.com/naga/",
+          "source": "https://github.com/irvan-putra/naga"
+        },
+        {
+          "name": "Demo lab simulation",
+          "tag": "Historical simulation",
+          "about": "A simulation, not a live service.",
+          "url": "https://vanipy.com/naga/demo-lab-simulation/",
+          "source": "https://github.com/irvan-putra/naga/blob/main/demo-lab-simulation/index.html"
+        },
+        {
+          "name": "bedah",
+          "tag": "Review canvas",
+          "about": "Full-screen review canvas that reviews its own repo.",
+          "url": "https://vanipy.com/bedah/",
+          "source": "https://github.com/irvan-putra/bedah"
+        }
+      ]
+    },
+    {
+      "title": "Research and proposals",
+      "items": [
+        {
+          "name": "kapan",
+          "tag": "Jakarta and Jogja developer events",
+          "about": "Compact upcoming developer-event list with city chips, Jakarta/Jogja routes, ICS and organizer-sourced poster thumbnails. Tap a thumbnail for the full poster or the card for its event page. List-only phone layout retained. Refreshes about every six hours; sources and posters are best effort. Live Samsung browser not verified.",
+          "url": "https://vanipy.com/kapan/",
+          "source": "https://github.com/irvan-putra/kapan"
+        },
+        {
+          "name": "irvan",
+          "tag": "Interactive introduction",
+          "about": "A browsable project map and reviewed introduction, with both paper credits and links. Website and signed Android0.1.0 released; not phone-tested.",
+          "url": "https://vanipy.com/irvan/",
+          "source": "https://github.com/irvan-putra/irvan"
+        },
+        {
+          "name": "kaca",
+          "tag": "Research notes",
+          "about": "Tidy research notes site.",
+          "url": "https://vanipy.com/kaca/",
+          "source": "https://github.com/irvan-putra/kaca"
+        },
+        {
+          "name": "suaka",
+          "tag": "Concept",
+          "about": "Independent alternatives to big tech. Early stage.",
+          "url": "https://vanipy.com/suaka/",
+          "source": "https://github.com/irvan-putra/suaka"
+        },
+        {
+          "name": "gotong",
+          "tag": "Feasibility research",
+          "about": "Distributed AI training from Jakarta. Not validated.",
+          "url": "https://vanipy.com/gotong/",
+          "source": "https://github.com/irvan-putra/gotong"
+        },
+        {
+          "name": "mimpi",
+          "tag": "Proposal",
+          "about": "Desktop AI companion proposal. Idea stage.",
+          "url": "https://vanipy.com/mimpi/",
+          "source": "https://github.com/irvan-putra/mimpi"
+        },
+        {
+          "name": "anyam",
+          "tag": "Proposal",
+          "about": "Human-AI shared context. Idea stage.",
+          "url": "https://vanipy.com/anyam/",
+          "source": "https://github.com/irvan-putra/anyam"
+        },
+        {
+          "name": "jejak",
+          "tag": "Proposal",
+          "about": "Requirements-to-code traceability. Idea stage.",
+          "url": "https://vanipy.com/jejak/",
+          "source": "https://github.com/irvan-putra/jejak"
+        },
+        {
+          "name": "tumbuh",
+          "tag": "Proposals, not a launch",
+          "about": "Workshop and economics proposals.",
+          "url": "https://vanipy.com/tumbuh/",
+          "source": "https://github.com/irvan-putra/tumbuh"
+        }
+      ]
     }
-   ]
-  },
-  {
-   "title": "Animation and cooking",
-   "items": [
-    {
-     "name": "animate",
-     "tag": "Fork of an animation skill, video demos",
-     "about": "Code-drawn canvases rendered to MP4: the original Grow video and a render of the upstream History of AI example.",
-     "url": "https://vanipy.com/animate/",
-     "source": "https://github.com/irvan-putra/animate"
-    },
-    {
-     "name": "cook",
-     "tag": "Recipe boxes: nasi goreng, aglio e olio, tumis kangkung",
-     "about": "Parallel-thread recipe tables with adjustable portions and options. Not kitchen-tested; food-safety notes are on each page.",
-     "url": "https://vanipy.com/kaji/cook/",
-     "source": "https://github.com/irvan-putra/kaji/tree/main/examples/cook"
-    },
-    {
-     "name": "Indomie recipe box",
-     "tag": "Customizable Tangle recipe",
-     "about": "The main interactive Indomie page, based on the 500 ml card.",
-     "url": "https://vanipy.com/kaji/indomie/",
-     "source": "https://github.com/irvan-putra/kaji/tree/main/examples/indomie"
-    },
-    {
-     "name": "Indomie engineer's spec",
-     "tag": "Older variant, 400 ml",
-     "about": "Kept as its own version; it is not reconciled with the recipe box. Photo credit is on the page.",
-     "url": "https://vanipy.com/kaji/indomie/instinct/",
-     "source": "https://github.com/irvan-putra/kaji/blob/main/examples/indomie/instinct/index.html"
-    }
-   ]
-  },
-  {
-   "title": "Charts and concepts",
-   "items": [
-    {
-     "name": "Synthetic break-even charts",
-     "tag": "Invented scenarios",
-     "about": "Cash vs economic break-even with made-up sales numbers.",
-     "url": "https://vanipy.com/kaji/economics-synthetic/",
-     "source": "https://github.com/irvan-putra/kaji/blob/main/examples/economics-synthetic/index.html"
-    },
-    {
-     "name": "Tumbuh draft",
-     "tag": "Archived concept, not an offer",
-     "about": "Signup controls are disabled; nothing is collected.",
-     "url": "https://vanipy.com/kaji/tumbuh/",
-     "source": "https://github.com/irvan-putra/kaji/blob/main/examples/tumbuh/index.html"
-    }
-   ]
-  },
-  {
-   "title": "App web versions and simulations",
-   "items": [
-    {
-     "name": "intodo web",
-     "tag": "Web version of intodo",
-     "about": "Review each change from a phone browser.",
-     "url": "https://vanipy.com/intodo/",
-     "source": "https://github.com/irvan-putra/intodo"
-    },
-    {
-     "name": "Shared-list simulation",
-     "tag": "Historical simulation",
-     "about": "A simulation, not the live app.",
-     "url": "https://vanipy.com/intodo/shared-list-simulation/",
-     "source": "https://github.com/irvan-putra/intodo/blob/main/demos-shared-list-simulation/index.html"
-    },
-    {
-     "name": "Edge AI demo lab",
-     "tag": "naga",
-     "about": "Browser editions of the meetup demo scaffolds.",
-     "url": "https://vanipy.com/naga/",
-     "source": "https://github.com/irvan-putra/naga"
-    },
-    {
-     "name": "Demo lab simulation",
-     "tag": "Historical simulation",
-     "about": "A simulation, not a live service.",
-     "url": "https://vanipy.com/naga/demo-lab-simulation/",
-     "source": "https://github.com/irvan-putra/naga/blob/main/demo-lab-simulation/index.html"
-    },
-    {
-     "name": "bedah",
-     "tag": "Review canvas",
-     "about": "Full-screen review canvas that reviews its own repo.",
-     "url": "https://vanipy.com/bedah/",
-     "source": "https://github.com/irvan-putra/bedah"
-    }
-   ]
-  },
-  {
-   "title": "Research and proposals",
-   "items": [
-    {
-     "name": "kapan",
-     "tag": "Jakarta and Jogja developer events",
-     "about": "Compact upcoming developer-event list with city chips, Jakarta/Jogja routes, ICS and organizer-sourced poster thumbnails. Tap a thumbnail for the full poster or the card for its event page. List-only phone layout retained. Refreshes about every six hours; sources and posters are best effort. Live Samsung browser not verified.",
-     "url": "https://vanipy.com/kapan/",
-     "source": "https://github.com/irvan-putra/kapan"
-    },
-    {
-     "name": "irvan",
-     "tag": "Interactive introduction",
-     "about": "A browsable project map and reviewed introduction, with both paper credits and links. Website and signed Android0.1.0 released; not phone-tested.",
-     "url": "https://vanipy.com/irvan/",
-     "source": "https://github.com/irvan-putra/irvan"
-    },
-    {
-     "name": "kaca",
-     "tag": "Research notes",
-     "about": "Tidy research notes site.",
-     "url": "https://vanipy.com/kaca/",
-     "source": "https://github.com/irvan-putra/kaca"
-    },
-    {
-     "name": "suaka",
-     "tag": "Concept",
-     "about": "Independent alternatives to big tech. Early stage.",
-     "url": "https://vanipy.com/suaka/",
-     "source": "https://github.com/irvan-putra/suaka"
-    },
-    {
-     "name": "gotong",
-     "tag": "Feasibility research",
-     "about": "Distributed AI training from Jakarta. Not validated.",
-     "url": "https://vanipy.com/gotong/",
-     "source": "https://github.com/irvan-putra/gotong"
-    },
-    {
-     "name": "mimpi",
-     "tag": "Proposal",
-     "about": "Desktop AI companion proposal. Idea stage.",
-     "url": "https://vanipy.com/mimpi/",
-     "source": "https://github.com/irvan-putra/mimpi"
-    },
-    {
-     "name": "anyam",
-     "tag": "Proposal",
-     "about": "Human-AI shared context. Idea stage.",
-     "url": "https://vanipy.com/anyam/",
-     "source": "https://github.com/irvan-putra/anyam"
-    },
-    {
-     "name": "jejak",
-     "tag": "Proposal",
-     "about": "Requirements-to-code traceability. Idea stage.",
-     "url": "https://vanipy.com/jejak/",
-     "source": "https://github.com/irvan-putra/jejak"
-    },
-    {
-     "name": "tumbuh",
-     "tag": "Proposals, not a launch",
-     "about": "Workshop and economics proposals.",
-     "url": "https://vanipy.com/tumbuh/",
-     "source": "https://github.com/irvan-putra/tumbuh"
-    }
-   ]
-  }
- ]
+  ]
 }
