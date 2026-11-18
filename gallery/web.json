@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-18 15:42 WIB",
+ "checked": "2026-11-18 16:11 WIB",
  "sections": [
   {
    "title": "Maps",
@@ -7,7 +7,7 @@
     {
      "name": "tuju",
      "tag": "Website map updated; Android remains 0.1.1",
-     "about": "Website map now shows the left/upward return leg with clearer arrowheads. Website source 42b6db6; new-source emulator checks remain pending. Passenger through-riding and free-transfer assumptions are unverified. The signed Android release remains 0.1.1 and does not contain this website-only revision.",
+     "about": "Website source 296eb06 has one venue marker on the main map plus a spatial road-side and footbridge closeup. Baung is on the Arkadia side of the road; Gabus is opposite, connected by a footbridge. Separate Flyover bus switching and fare assumptions remain unverified. Repository tests passed; exact-source emulator check is pending. Signed Android remains 0.1.1 and does not include this website-only revision.",
      "url": "https://vanipy.com/tuju/",
      "source": "https://github.com/irvan-putra/tuju"
     }
