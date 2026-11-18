@@ -32,7 +32,7 @@
    "icon": "itdapk.png",
    "tag": "Previous signed build",
    "about": "Home-screen widget and app for reminders and todo lists, with shared lists over Delta Chat. Experimental build.",
-   "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.13/itdapk-v0.5.13.apk",
+   "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.13/intodo-v0.5.13.apk",
    "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.13",
    "repo": "https://github.com/irvan-putra/intodo",
    "sha256": "f01e87543ff14c4ac403334467f7e03d86d5e09b400fcb2bbdee39d099911ff1"
@@ -43,7 +43,7 @@
    "state": "available",
    "icon": "kemas.png",
    "tag": "Signed compact-widget update; not Samsung-tested",
-   "about": "Cleaning accountability with responsive compact and expanded widget modes. Existing package and signer retained; not verified on a physical Samsung.",
+   "about": "Cleaning accountability with responsive compact and expanded widget modes. Existing package and signer retained; not verified on a physical Samsung. Useful 2-3-column widget content correction is in progress.",
    "apk": "https://github.com/irvan-putra/kemas/releases/download/v0.3.1/kemas-v0.3.1.apk",
    "release": "https://github.com/irvan-putra/kemas/releases/tag/v0.3.1",
    "repo": "https://github.com/irvan-putra/kemas",
@@ -67,7 +67,7 @@
    "state": "available",
    "icon": "menit.png",
    "tag": "Signed compact-widget update; not Samsung-tested",
-   "about": "Phone-usage totals and responsive compact widgets. Existing package, signer and permissions retained; emulator qualification is not Samsung install proof.",
+   "about": "Phone-usage totals and responsive compact widgets. Existing package, signer and permissions retained; emulator qualification is not Samsung install proof. Useful 2-3-column widget content correction is in progress.",
    "apk": "https://github.com/irvan-putra/menit/releases/download/v0.2.1/menit-v0.2.1.apk",
    "release": "https://github.com/irvan-putra/menit/releases/tag/v0.2.1",
    "repo": "https://github.com/irvan-putra/menit",
@@ -137,7 +137,7 @@
    "name": "denyut",
    "state": "available",
    "tag": "Signed compact-widget update; not Samsung-tested",
-   "about": "Offline notes and reminders with responsive compact widgets. Local-model loading remains disabled; no model/chat account provisioned or Samsung install proof.",
+   "about": "Offline notes and reminders with responsive compact widgets. Local-model loading remains disabled; no model/chat account provisioned or Samsung install proof. Useful 2-3-column widget content correction is in progress.",
    "repo": "https://github.com/irvan-putra/denyut",
    "version": "0.7.1",
    "icon": "denyut.png",
@@ -149,7 +149,7 @@
    "name": "saku",
    "state": "available",
    "tag": "Synthetic prototype only; one known test failure",
-   "about": "Not for real passwords, accounts or keys. Static locked-status widget and quick-open only. Experimental local vault with a known KdbxSpikeTest.readsPykeepassRoundtrip interop failure; not all tests pass. DeltaChat sync is unfinished. No production-safety or physical-phone claim.",
+   "about": "Not for real passwords, accounts or keys. Static locked-status widget and quick-open only. Experimental local vault with a known KdbxSpikeTest.readsPykeepassRoundtrip interop failure; not all tests pass. DeltaChat sync is unfinished. No production-safety or physical-phone claim. Useful 2-3-column widget content correction is in progress.",
    "repo": "https://github.com/irvan-putra/saku",
    "version": "0.1.2",
    "icon": "saku.png",
@@ -161,7 +161,7 @@
    "name": "tumbuh",
    "state": "available",
    "tag": "Signed compact-widget update; not Samsung-tested",
-   "about": "Offline manual commitments, inbox, space and people, with responsive compact widgets. No inbox/contact access or automated sending. Not verified on a physical Samsung.",
+   "about": "Offline manual commitments, inbox, space and people, with responsive compact widgets. No inbox/contact access or automated sending. Not verified on a physical Samsung. Useful 2-3-column widget content correction is in progress.",
    "repo": "https://github.com/irvan-putra/tumbuh-app",
    "version": "0.2.1",
    "icon": "tumbuh.png",
@@ -231,15 +231,15 @@
   },
   {
    "name": "intodo",
-   "version": "0.5.14",
+   "version": "0.5.16",
    "state": "available",
    "icon": "intodo.png",
-   "tag": "Signed responsive widget update; rendering caveat",
-   "about": "App and widget for reminders and todo lists. Same com.vanipy.intodo package, signer, data and paired feed. Widget tap routing checked on an emulator; post-tap content rendering remains unverified and was explicitly bypassed. Not Samsung-tested.",
+   "tag": "Signed full rename; narrow widget fix pending",
+   "about": "Current names and update outputs use intodo only. Same package, signer, feed and list data. Old download compatibility dropped. Rename-only: useful 2-3-column widget content correction is in progress. Post-tap content rendering and physical Samsung behavior remain unverified.",
    "repo": "https://github.com/irvan-putra/intodo",
-   "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.14/intodo-v0.5.14.apk",
-   "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.14",
-   "sha256": "392c257e7e862038863d5f90076269d2d480a11993772dd7f1f809ea8bdd7c1d"
+   "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.16/intodo-v0.5.16.apk",
+   "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.16",
+   "sha256": "687908c23385118c762ee684bb4c9b9c93cededc11d3f1f7ce89afa6cd837c4a"
   },
   {
    "name": "menit",
@@ -300,6 +300,18 @@
    "apk": "https://github.com/irvan-putra/saku/releases/download/v0.1.1/saku-v0.1.1.apk",
    "release": "https://github.com/irvan-putra/saku/releases/tag/v0.1.1",
    "sha256": "cad32905084c22ad7f87beca20aaf1012085dcf6eeb08253eaba437380c4918d"
+  },
+  {
+   "name": "intodo",
+   "version": "0.5.14",
+   "state": "legacy",
+   "icon": "intodo-0.5.14.png",
+   "tag": "Previous signed build; narrow-width issue remains",
+   "about": "App and widget for reminders and todo lists. Same com.vanipy.intodo package, signer, data and paired feed. Widget tap routing checked on an emulator; post-tap content rendering remains unverified and was explicitly bypassed. Not Samsung-tested.",
+   "repo": "https://github.com/irvan-putra/intodo",
+   "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.14/intodo-v0.5.14.apk",
+   "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.14",
+   "sha256": "392c257e7e862038863d5f90076269d2d480a11993772dd7f1f809ea8bdd7c1d"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-18 13:37 WIB",
+ "checked": "2026-11-18 14:01 WIB",
  "sections": [
   {
    "title": "Animation and cooking",
@@ -99,7 +99,7 @@
     {
      "name": "kapan",
      "tag": "Jakarta and Jogja developer events",
-     "about": "Upcoming developer-event list with city chips, Jakarta/Jogja routes and ICS subscription. Month section and day-click filter removed. Refreshes about every six hours; source coverage is best effort, not complete. Multiple titles visible at 360x640 in preview; live Samsung browser not verified.",
+     "about": "Compact upcoming developer-event list with city chips, Jakarta/Jogja routes, ICS and organizer-sourced poster thumbnails. Tap a thumbnail for the full poster or the card for its event page. List-only phone layout retained. Refreshes about every six hours; sources and posters are best effort. Live Samsung browser not verified.",
      "url": "https://vanipy.com/kapan/",
      "source": "https://github.com/irvan-putra/kapan"
     },
