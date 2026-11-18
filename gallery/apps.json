@@ -7,7 +7,7 @@
    "state": "available",
    "icon": "tuju.png",
    "tag": "Signed offline map; not phone-installed",
-   "about": "Bundled busway overview map with pinch-to-zoom and drag-to-pan. Offline map only: no live directions, journey planning, fare calculation or service updates. No permissions. Released APK not installed on a physical phone.",
+   "about": "Bundled busway overview map with pinch-to-zoom and drag-to-pan. Offline map only: no live directions, journey planning, fare calculation or service updates. Direction qualifiers and fare uncertainties stay visible. No permissions. Released APK not installed on a physical phone.",
    "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.0/tuju-v0.1.0.apk",
    "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.0",
    "repo": "https://github.com/irvan-putra/tuju",
@@ -26,11 +26,11 @@
    "sha256": "fd2d07903dee74e4ff976f1bf34918df9190429a2879cb3d3d71d2a161b3b093"
   },
   {
-   "name": "itdapk",
+   "name": "intodo",
    "version": "0.5.13",
    "state": "legacy",
    "icon": "itdapk.png",
-   "tag": "Previous signed build; previous launcher name",
+   "tag": "Previous signed build",
    "about": "Home-screen widget and app for reminders and todo lists, with shared lists over Delta Chat. Experimental build.",
    "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.13/itdapk-v0.5.13.apk",
    "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.13",
