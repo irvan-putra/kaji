@@ -1,17 +1,17 @@
 {
- "checked": "2026-11-18 13:32 WIB",
+ "checked": "2026-11-18 14:32 WIB",
  "apps": [
   {
    "name": "tuju",
-   "version": "0.1.0",
+   "version": "0.1.1",
    "state": "available",
    "icon": "tuju.png",
-   "tag": "Signed offline map; not phone-installed",
-   "about": "Bundled busway overview map with pinch-to-zoom and drag-to-pan. Offline map only: no live directions, journey planning, fare calculation or service updates. Direction qualifiers and fare uncertainties stay visible. No permissions. Released APK not installed on a physical phone.",
-   "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.0/tuju-v0.1.0.apk",
-   "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.0",
+   "tag": "Signed intermediate-stop map; not Samsung-tested",
+   "about": "Offline busway map with all selected outbound intermediate stations from an operator GTFS snapshot, pinch-to-zoom and drag-to-pan. Existing direction, transfer and fare caveats remain. No live bus guarantee or physical Samsung proof. Same package/signer, no permissions.",
+   "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.1/tuju-v0.1.1.apk",
+   "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.1",
    "repo": "https://github.com/irvan-putra/tuju",
-   "sha256": "3e466703b4ab3ff7aeb9579025a5a55bde21795e987743da86294ca5d76c8cc3"
+   "sha256": "d422952ef3ad3fdbdbcd23be8df81c69c644c3853bea8342d92e57871e6df6b9"
   },
   {
    "name": "irvan",
@@ -312,6 +312,18 @@
    "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.14/intodo-v0.5.14.apk",
    "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.14",
    "sha256": "392c257e7e862038863d5f90076269d2d480a11993772dd7f1f809ea8bdd7c1d"
+  },
+  {
+   "name": "tuju",
+   "version": "0.1.0",
+   "state": "legacy",
+   "icon": "tuju-010.png",
+   "tag": "Previous signed offline map",
+   "about": "Bundled busway overview map with pinch-to-zoom and drag-to-pan. Offline map only: no live directions, journey planning, fare calculation or service updates. Direction qualifiers and fare uncertainties stay visible. No permissions. Released APK not installed on a physical phone.",
+   "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.0/tuju-v0.1.0.apk",
+   "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.0",
+   "repo": "https://github.com/irvan-putra/tuju",
+   "sha256": "3e466703b4ab3ff7aeb9579025a5a55bde21795e987743da86294ca5d76c8cc3"
   }
  ]
 }
