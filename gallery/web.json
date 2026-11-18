@@ -97,6 +97,13 @@
    "title": "Research and proposals",
    "items": [
     {
+     "name": "kapan",
+     "tag": "Jakarta and Jogja developer events",
+     "about": "Month calendar, day filtering, upcoming list and subscription feed; refreshes about every six hours. Coverage is best effort, not a complete events directory. Compact phone layout refinement is in progress.",
+     "url": "https://vanipy.com/kapan/",
+     "source": "https://github.com/irvan-putra/kapan"
+    },
+    {
      "name": "irvan",
      "tag": "Interactive introduction",
      "about": "A browsable map of public projects and reviewed introduction content. Website available; Android APK not released.",
