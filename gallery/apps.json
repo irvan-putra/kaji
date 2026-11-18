@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-19 01:31 WIB",
+  "checked": "2026-11-19 01:50 WIB",
   "apps": [
     {
       "name": "sanggup",
@@ -149,7 +149,7 @@
       "name": "bidik",
       "state": "available",
       "tag": "Test build under recording verification",
-      "about": "Adds a local screen-recording flow with Android consent. Build and signing checks pass; actual consent/start/stop/save playback flow is not yet runtime verified. Existing webpage capture/account features retained; live pairing/send-back remain unverified. No automatic recording upload intended.",
+      "about": "Local screen recording with Android consent. Ticking-screen recording passed, but static portions or the recording tail can be shortened: duration is not reliable, so this test build is not ready for general recording. Correction in progress; no replacement release yet. Existing webpage capture/account features retained; live pairing/send-back unverified. No automatic recording upload intended.",
       "repo": "https://github.com/irvan-putra/bidik/commit/4ec8d38",
       "version": "0.1.2",
       "icon": "bidik.png",
