@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-18 15:35 WIB",
+ "checked": "2026-11-18 15:42 WIB",
  "apps": [
   {
    "name": "tuju",
@@ -148,14 +148,14 @@
   {
    "name": "saku",
    "state": "available",
-   "tag": "Synthetic prototype only; one known test failure",
-   "about": "Not for real passwords, accounts or keys. Static locked-status widget and quick-open only. Experimental local vault with a known KdbxSpikeTest.readsPykeepassRoundtrip interop failure; not all tests pass. DeltaChat sync is unfinished. No production-safety or physical-phone claim. Useful 2-3-column widget content correction is in progress.",
+   "tag": "Signed widget-only correction; not Samsung-tested",
+   "about": "Experimental local vault for dummy data only, not real passwords. Useful static locked-status strip and quick-open at 2-3 columns, qualified in an emulator. No real vault-state proof. DeltaChat sync is unfinished and excluded from this release. Not tested on Samsung.",
    "repo": "https://github.com/irvan-putra/saku",
-   "version": "0.1.2",
+   "version": "0.1.3",
    "icon": "saku.png",
-   "apk": "https://github.com/irvan-putra/saku/releases/download/v0.1.2/saku-v0.1.2.apk",
-   "release": "https://github.com/irvan-putra/saku/releases/tag/v0.1.2",
-   "sha256": "32ded85de300b2f567f06f5deb13eeef769c4d479d651c8adb7a3152b16420df"
+   "apk": "https://github.com/irvan-putra/saku/releases/download/v0.1.3/saku-v0.1.3.apk",
+   "release": "https://github.com/irvan-putra/saku/releases/tag/v0.1.3",
+   "sha256": "911838f37da487df056abbee06591775759cbfcaea16730cbba3189c87e0ecf7"
   },
   {
    "name": "tumbuh",
@@ -384,6 +384,18 @@
    "release": "https://github.com/irvan-putra/kemas/releases/tag/v0.3.1",
    "repo": "https://github.com/irvan-putra/kemas",
    "sha256": "1b078b263a31313458211d9b52f6660448c869bf5d8e48de1dd79b2a3dd6dcfd"
+  },
+  {
+   "name": "saku",
+   "state": "legacy",
+   "tag": "Previous signed build",
+   "about": "Not for real passwords, accounts or keys. Static locked-status widget and quick-open only. Experimental local vault with a known KdbxSpikeTest.readsPykeepassRoundtrip interop failure; not all tests pass. DeltaChat sync is unfinished. No production-safety or physical-phone claim. Useful 2-3-column widget content correction is in progress.",
+   "repo": "https://github.com/irvan-putra/saku",
+   "version": "0.1.2",
+   "icon": "saku-0.1.2.png",
+   "apk": "https://github.com/irvan-putra/saku/releases/download/v0.1.2/saku-v0.1.2.apk",
+   "release": "https://github.com/irvan-putra/saku/releases/tag/v0.1.2",
+   "sha256": "32ded85de300b2f567f06f5deb13eeef769c4d479d651c8adb7a3152b16420df"
   }
  ]
 }
