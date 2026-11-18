@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-18 22:32 WIB",
+  "checked": "2026-11-18 22:55 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -26,9 +26,9 @@
         {
           "name": "sanggup",
           "tag": "Life-skills prototype0.2.0, same-device demo",
-          "about": "Compact20-tile grid with14active starter paths and6planned disabled tracks. Approved Sang gecko. Local-device progress and unauthenticated mentor-review demo only, not verified competency or a safety certificate. Survival/rescue beyond preparedness is still unfinished. No APK.",
+          "about": "Compact20-tile grid, all20starter paths active, with approved Sang gecko. Local-device progress and unauthenticated mentor-review demo, not verified competency or a safety certificate. Emergency starters cover fire/outdoor planning, STOP and training navigation, not expert rescue/survival or medical competency. Android prototype underway, no APK yet.",
           "url": "https://vanipy.com/sanggup/",
-          "source": "https://github.com/irvan-putra/sanggup/commit/8f53cc2bf908e2b199e5d1ff14844d532b352649"
+          "source": "https://github.com/irvan-putra/sanggup/commit/248f54b03e899371e4300ce9bca9182e642eab54"
         }
       ]
     },
