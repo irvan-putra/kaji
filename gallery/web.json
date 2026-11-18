@@ -1,15 +1,15 @@
 {
-  "checked": "2026-11-18 20:58 WIB",
+  "checked": "2026-11-18 21:12 WIB",
   "sections": [
     {
       "title": "Maps",
       "items": [
         {
           "name": "tuju",
-          "tag": "0.1.6 released; shared-spine correction in progress",
-          "about": "Current0.1.6 release puts outbound and returns on one canvas, but shared4/6/7E sections are still separate verticals. A single shared-spine correction is in progress. Emulator pinch/drag passed; not physical Samsung-tested. Ragunan access/fare continuity, conflicting7F hours and Gojek fare/time remain unverified.",
+          "tag": "Shared route spine with directional branches",
+          "about": "Shared4/6 station areas drawn once with arrows both ways and short direction-specific branches. Actual7E directional stops remain distinct; duplicate full-height return column removed. Emulator launch/pinch/drag passed; not physical Samsung-tested. Ragunan access/fare continuity, conflicting7F hours and Gojek fare/time remain unverified.",
           "url": "https://vanipy.com/tuju/",
-          "source": "https://github.com/irvan-putra/tuju/commit/900dd4f7b2ae5058300cbe53060c1c2a421fd370"
+          "source": "https://github.com/irvan-putra/tuju/commit/f08970dd607d2c4fb4f94b88c643ce53ec0169cd"
         }
       ]
     },

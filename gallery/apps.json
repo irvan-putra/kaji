@@ -1,17 +1,17 @@
 {
-  "checked": "2026-11-18 20:58 WIB",
+  "checked": "2026-11-18 21:12 WIB",
   "apps": [
     {
       "name": "tuju",
-      "version": "0.1.6",
+      "version": "0.1.7",
       "state": "available",
       "icon": "tuju.png",
-      "tag": "0.1.6 released; shared-spine correction in progress",
-      "about": "Current0.1.6 release puts outbound and returns on one canvas, but shared4/6/7E sections are still separate verticals. A single shared-spine correction is in progress. Emulator pinch/drag passed; not physical Samsung-tested. Ragunan access/fare continuity, conflicting7F hours and Gojek fare/time remain unverified.",
-      "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.6/tuju-v0.1.6.apk",
-      "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.6",
-      "repo": "https://github.com/irvan-putra/tuju/commit/900dd4f7b2ae5058300cbe53060c1c2a421fd370",
-      "sha256": "a79fede35f44953af1b8349a5abdabdb9abc20aaef90dd074303eb4a24dfd0cd"
+      "tag": "Signed shared-spine map",
+      "about": "Shared4/6 station areas drawn once with arrows both ways and short direction-specific branches. Actual7E directional stops remain distinct; duplicate full-height return column removed. Emulator launch/pinch/drag passed; not physical Samsung-tested. Ragunan access/fare continuity, conflicting7F hours and Gojek fare/time remain unverified.",
+      "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.7/tuju-v0.1.7.apk",
+      "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.7",
+      "repo": "https://github.com/irvan-putra/tuju/commit/f08970dd607d2c4fb4f94b88c643ce53ec0169cd",
+      "sha256": "8e0bd2d5c17a8e4410a407eb94888e581869178e06ac54b28b255d050035cfcc"
     },
     {
       "name": "irvan",
@@ -480,6 +480,18 @@
       "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.5",
       "repo": "https://github.com/irvan-putra/tuju/commit/8926d0582ff9686a91f6fd2ded11363ddc58a8d5",
       "sha256": "5c08de849e0a72fe13fcd4fbb8869e0a60ebc274bf9dea7a1cbadbfb24e6cf53"
+    },
+    {
+      "name": "tuju",
+      "version": "0.1.6",
+      "state": "legacy",
+      "icon": "tuju-0.1.6.png",
+      "tag": "Previous signed release; separate shared-route verticals",
+      "about": "Current0.1.6 release puts outbound and returns on one canvas, but shared4/6/7E sections are still separate verticals. A single shared-spine correction is in progress. Emulator pinch/drag passed; not physical Samsung-tested. Ragunan access/fare continuity, conflicting7F hours and Gojek fare/time remain unverified.",
+      "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.6/tuju-v0.1.6.apk",
+      "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.6",
+      "repo": "https://github.com/irvan-putra/tuju/commit/900dd4f7b2ae5058300cbe53060c1c2a421fd370",
+      "sha256": "a79fede35f44953af1b8349a5abdabdb9abc20aaef90dd074303eb4a24dfd0cd"
     }
   ]
 }
