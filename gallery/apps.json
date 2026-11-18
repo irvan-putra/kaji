@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-19 01:11 WIB",
+  "checked": "2026-11-19 01:31 WIB",
   "apps": [
     {
       "name": "sanggup",
@@ -7,7 +7,7 @@
       "state": "available",
       "icon": "sanggup.png",
       "tag": "Experimental signed test APK",
-      "about": "20 offline starter paths and animated Sang. Lowercase name/family badge, compact2x1 widget target with corner-safe text and taller resize. Debug host checked animation, practice-to-streak, nominal/minimum/tall sizes; signed launch checked. Earlier phone animation reported/shown privately. New compact Samsung placement and signed upgrade not verified. Browser/Android progress separate; not competency proof.",
+      "about": "20 offline starter paths and animated Sang. Lowercase name/family badge and short widget with clear corner spacing shown on Samsung. Debug host checked animation, practice-to-streak and nominal/minimum/tall sizes. Signed0.1.0 to0.1.1 retained a synthetic1-day streak on API34. Exact launcher grid metadata not measured; browser/Android progress separate, not competency proof.",
       "apk": "https://github.com/irvan-putra/sanggup/releases/download/v0.1.1/sanggup-v0.1.1.apk",
       "release": "https://github.com/irvan-putra/sanggup/releases/tag/v0.1.1",
       "repo": "https://github.com/irvan-putra/sanggup/commit/8211c448992dfa170aa986b35f03f9d58a8edf9c",
@@ -19,7 +19,7 @@
       "state": "available",
       "icon": "unggun.png",
       "tag": "Experimental signed presentation test",
-      "about": "Lowercase name and matching legacy/adaptive/themed version strips, bonfire retained. Same signer/package, higher version; update in place, do not uninstall. Prior rate-limit synthetic checks remain, no new runtime/live-isolate/upgrade proof and existing cooldown is not cleared early.",
+      "about": "Lowercase name and matching version strips shown on Samsung, bonfire retained. Same signer/package, higher version; update in place, do not uninstall. Signed0.1.3 to0.1.4 retained two synthetic imported app records on API34, not every possible setting or real user record. Prior rate-limit synthetic checks remain; no live-isolate runtime proof or early cooldown clearing.",
       "apk": "https://github.com/irvan-putra/unggun/releases/download/v0.1.4/unggun-v0.1.4.apk",
       "release": "https://github.com/irvan-putra/unggun/releases/tag/v0.1.4",
       "repo": "https://github.com/irvan-putra/unggun/commit/2e3d6c7940f531364a489577fd1e27ab707e1b4d",
