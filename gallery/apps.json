@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-18 14:32 WIB",
+ "checked": "2026-11-18 15:35 WIB",
  "apps": [
   {
    "name": "tuju",
@@ -39,15 +39,15 @@
   },
   {
    "name": "kemas",
-   "version": "0.3.1",
+   "version": "0.3.2",
    "state": "available",
    "icon": "kemas.png",
-   "tag": "Signed compact-widget update; not Samsung-tested",
-   "about": "Cleaning accountability with responsive compact and expanded widget modes. Existing package and signer retained; not verified on a physical Samsung. Useful 2-3-column widget content correction is in progress.",
-   "apk": "https://github.com/irvan-putra/kemas/releases/download/v0.3.1/kemas-v0.3.1.apk",
-   "release": "https://github.com/irvan-putra/kemas/releases/tag/v0.3.1",
+   "tag": "Signed useful-width widget correction; not Samsung-tested",
+   "about": "Readable zone/progress at2-3columns; before/after photos remain in wider/taller layouts. Responsive bitmap budget fixed to avoid receiver crash. Emulator-qualified, not Samsung-tested; package, signer and data preserved.",
+   "apk": "https://github.com/irvan-putra/kemas/releases/download/v0.3.2/kemas-v0.3.2.apk",
+   "release": "https://github.com/irvan-putra/kemas/releases/tag/v0.3.2",
    "repo": "https://github.com/irvan-putra/kemas",
-   "sha256": "1b078b263a31313458211d9b52f6660448c869bf5d8e48de1dd79b2a3dd6dcfd"
+   "sha256": "a3d8dcfb94eb2002149ffb20188f4463bf54218e2295c286cdd6601759d5c987"
   },
   {
    "name": "cabang",
@@ -63,15 +63,15 @@
   },
   {
    "name": "menit",
-   "version": "0.2.1",
+   "version": "0.2.2",
    "state": "available",
    "icon": "menit.png",
-   "tag": "Signed compact-widget update; not Samsung-tested",
-   "about": "Phone-usage totals and responsive compact widgets. Existing package, signer and permissions retained; emulator qualification is not Samsung install proof. Useful 2-3-column widget content correction is in progress.",
-   "apk": "https://github.com/irvan-putra/menit/releases/download/v0.2.1/menit-v0.2.1.apk",
-   "release": "https://github.com/irvan-putra/menit/releases/tag/v0.2.1",
+   "tag": "Signed useful-width widget correction; not Samsung-tested",
+   "about": "Phone-usage totals with readable stacked compact time and percentage. Useful 2-3-column content and tap-open checked in emulator, not physical Samsung. Same package, signer and permissions.",
+   "apk": "https://github.com/irvan-putra/menit/releases/download/v0.2.2/menit-v0.2.2.apk",
+   "release": "https://github.com/irvan-putra/menit/releases/tag/v0.2.2",
    "repo": "https://github.com/irvan-putra/menit",
-   "sha256": "b5576b2cc24f3cbe387a9a2e57f03f9fa0acd5c2a6df3fc330276a7a9282931c"
+   "sha256": "b78d11a8b130487fd7c50fc7ab7711e8b8ec280ec0d49538c31049a005451c52"
   },
   {
    "name": "jin",
@@ -136,14 +136,14 @@
   {
    "name": "denyut",
    "state": "available",
-   "tag": "Signed compact-widget update; not Samsung-tested",
-   "about": "Offline notes and reminders with responsive compact widgets. Local-model loading remains disabled; no model/chat account provisioned or Samsung install proof. Useful 2-3-column widget content correction is in progress.",
+   "tag": "Signed useful-width widget correction; not Samsung-tested",
+   "about": "Offline notes and reminders. Useful next reminder and note count at2-3columns. Emulator-qualified, not Samsung-tested. Local-model loading remains disabled; no chat account provisioned by this update.",
    "repo": "https://github.com/irvan-putra/denyut",
-   "version": "0.7.1",
+   "version": "0.7.2",
    "icon": "denyut.png",
-   "apk": "https://github.com/irvan-putra/denyut/releases/download/v0.7.1/denyut-v0.7.1.apk",
-   "release": "https://github.com/irvan-putra/denyut/releases/tag/v0.7.1",
-   "sha256": "8ffada80af5e09d750f54e9223275f0970cd1d0e21c1a7bbdc81143644f39f4b"
+   "apk": "https://github.com/irvan-putra/denyut/releases/download/v0.7.2/denyut-v0.7.2.apk",
+   "release": "https://github.com/irvan-putra/denyut/releases/tag/v0.7.2",
+   "sha256": "e2116950649596b21ea4f67b7882de661067ceaaad3bbd7d0d7f689431aaa577"
   },
   {
    "name": "saku",
@@ -160,14 +160,14 @@
   {
    "name": "tumbuh",
    "state": "available",
-   "tag": "Signed compact-widget update; not Samsung-tested",
-   "about": "Offline manual commitments, inbox, space and people, with responsive compact widgets. No inbox/contact access or automated sending. Not verified on a physical Samsung. Useful 2-3-column widget content correction is in progress.",
+   "tag": "Signed useful-width widget correction; not Samsung-tested",
+   "about": "Offline manual commitments, inbox, space and people. Useful title and first step at2-3columns, full details larger. Emulator-qualified, not Samsung-tested. No inbox/contact access or automated sending.",
    "repo": "https://github.com/irvan-putra/tumbuh-app",
-   "version": "0.2.1",
+   "version": "0.2.2",
    "icon": "tumbuh.png",
-   "apk": "https://github.com/irvan-putra/tumbuh-app/releases/download/v0.2.1/tumbuh-v0.2.1.apk",
-   "release": "https://github.com/irvan-putra/tumbuh-app/releases/tag/v0.2.1",
-   "sha256": "461f7d2d168eb906e3fd3a5df6d6e15e5d9a91d8b84314da05eef7693e82af1d"
+   "apk": "https://github.com/irvan-putra/tumbuh-app/releases/download/v0.2.2/tumbuh-v0.2.2.apk",
+   "release": "https://github.com/irvan-putra/tumbuh-app/releases/tag/v0.2.2",
+   "sha256": "41a33407189ef2a7a81acd79373939f3a6cf07a91930dc299871b55831df6bcd"
   },
   {
    "name": "fae",
@@ -231,15 +231,15 @@
   },
   {
    "name": "intodo",
-   "version": "0.5.16",
+   "version": "0.5.17",
    "state": "available",
    "icon": "intodo.png",
-   "tag": "Signed full rename; narrow widget fix pending",
-   "about": "Current names and update outputs use intodo only. Same package, signer, feed and list data. Old download compatibility dropped. Rename-only: useful 2-3-column widget content correction is in progress. Post-tap content rendering and physical Samsung behavior remain unverified.",
+   "tag": "Signed useful-width widget correction; not Samsung-tested",
+   "about": "Useful list rows at 2-3columns; repeated same-widget resizing preserves all six synthetic items without Loading rows in Android15 emulator. Same package, signer, feed and list data. Samsung behavior unverified; no reset or feed switch.",
    "repo": "https://github.com/irvan-putra/intodo",
-   "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.16/intodo-v0.5.16.apk",
-   "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.16",
-   "sha256": "687908c23385118c762ee684bb4c9b9c93cededc11d3f1f7ce89afa6cd837c4a"
+   "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.17/intodo-v0.5.17.apk",
+   "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.17",
+   "sha256": "e17971ebca35e8dfb12499d3911a23e8000ab627626bc3c84a0cf2a006bc6f99"
   },
   {
    "name": "menit",
@@ -324,6 +324,66 @@
    "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.0",
    "repo": "https://github.com/irvan-putra/tuju",
    "sha256": "3e466703b4ab3ff7aeb9579025a5a55bde21795e987743da86294ca5d76c8cc3"
+  },
+  {
+   "name": "intodo",
+   "version": "0.5.16",
+   "state": "legacy",
+   "icon": "intodo-0.5.16.png",
+   "tag": "Previous signed build",
+   "about": "Current names and update outputs use intodo only. Same package, signer, feed and list data. Old download compatibility dropped. Rename-only: useful 2-3-column widget content correction is in progress. Post-tap content rendering and physical Samsung behavior remain unverified.",
+   "repo": "https://github.com/irvan-putra/intodo",
+   "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.16/intodo-v0.5.16.apk",
+   "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.16",
+   "sha256": "687908c23385118c762ee684bb4c9b9c93cededc11d3f1f7ce89afa6cd837c4a"
+  },
+  {
+   "name": "menit",
+   "version": "0.2.1",
+   "state": "legacy",
+   "icon": "menit-0.2.1.png",
+   "tag": "Previous signed build",
+   "about": "Phone-usage totals and responsive compact widgets. Existing package, signer and permissions retained; emulator qualification is not Samsung install proof. Useful 2-3-column widget content correction is in progress.",
+   "apk": "https://github.com/irvan-putra/menit/releases/download/v0.2.1/menit-v0.2.1.apk",
+   "release": "https://github.com/irvan-putra/menit/releases/tag/v0.2.1",
+   "repo": "https://github.com/irvan-putra/menit",
+   "sha256": "b5576b2cc24f3cbe387a9a2e57f03f9fa0acd5c2a6df3fc330276a7a9282931c"
+  },
+  {
+   "name": "tumbuh",
+   "state": "legacy",
+   "tag": "Previous signed build",
+   "about": "Offline manual commitments, inbox, space and people, with responsive compact widgets. No inbox/contact access or automated sending. Not verified on a physical Samsung. Useful 2-3-column widget content correction is in progress.",
+   "repo": "https://github.com/irvan-putra/tumbuh-app",
+   "version": "0.2.1",
+   "icon": "tumbuh-0.2.1.png",
+   "apk": "https://github.com/irvan-putra/tumbuh-app/releases/download/v0.2.1/tumbuh-v0.2.1.apk",
+   "release": "https://github.com/irvan-putra/tumbuh-app/releases/tag/v0.2.1",
+   "sha256": "461f7d2d168eb906e3fd3a5df6d6e15e5d9a91d8b84314da05eef7693e82af1d"
+  },
+  {
+   "name": "denyut",
+   "state": "legacy",
+   "tag": "Previous signed build",
+   "about": "Offline notes and reminders with responsive compact widgets. Local-model loading remains disabled; no model/chat account provisioned or Samsung install proof. Useful 2-3-column widget content correction is in progress.",
+   "repo": "https://github.com/irvan-putra/denyut",
+   "version": "0.7.1",
+   "icon": "denyut-0.7.1.png",
+   "apk": "https://github.com/irvan-putra/denyut/releases/download/v0.7.1/denyut-v0.7.1.apk",
+   "release": "https://github.com/irvan-putra/denyut/releases/tag/v0.7.1",
+   "sha256": "8ffada80af5e09d750f54e9223275f0970cd1d0e21c1a7bbdc81143644f39f4b"
+  },
+  {
+   "name": "kemas",
+   "version": "0.3.1",
+   "state": "legacy",
+   "icon": "kemas-0.3.1.png",
+   "tag": "Previous signed build",
+   "about": "Cleaning accountability with responsive compact and expanded widget modes. Existing package and signer retained; not verified on a physical Samsung. Useful 2-3-column widget content correction is in progress.",
+   "apk": "https://github.com/irvan-putra/kemas/releases/download/v0.3.1/kemas-v0.3.1.apk",
+   "release": "https://github.com/irvan-putra/kemas/releases/tag/v0.3.1",
+   "repo": "https://github.com/irvan-putra/kemas",
+   "sha256": "1b078b263a31313458211d9b52f6660448c869bf5d8e48de1dd79b2a3dd6dcfd"
   }
  ]
 }

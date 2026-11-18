@@ -1,6 +1,18 @@
 {
- "checked": "2026-11-18 14:01 WIB",
+ "checked": "2026-11-18 15:35 WIB",
  "sections": [
+  {
+   "title": "Maps",
+   "items": [
+    {
+     "name": "tuju",
+     "tag": "Offline busway schematic; return-leg revision in progress",
+     "about": "Current website includes intermediate stations and ongoing direction-specific turnaround-map work. Arrow and return-leg layout are still being revised. Passenger through-riding and free-transfer assumptions remain unverified. Android release remains0.1.1 and does not include newer website-only revisions.",
+     "url": "https://vanipy.com/tuju/",
+     "source": "https://github.com/irvan-putra/tuju"
+    }
+   ]
+  },
   {
    "title": "Animation and cooking",
    "items": [
