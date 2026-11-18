@@ -1,17 +1,17 @@
 {
- "checked": "2026-11-18 17:06 WIB",
+ "checked": "2026-11-18 17:23 WIB",
  "apps": [
   {
    "name": "tuju",
-   "version": "0.1.1",
+   "version": "0.1.2",
    "state": "available",
    "icon": "tuju.png",
-   "tag": "Signed intermediate-stop map; not Samsung-tested",
-   "about": "Offline busway map with all selected outbound intermediate stations from an operator GTFS snapshot, pinch-to-zoom and drag-to-pan. Existing direction, transfer and fare caveats remain. No live bus guarantee or physical Samsung proof. Same package/signer, no permissions.",
-   "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.1/tuju-v0.1.1.apk",
-   "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.1",
-   "repo": "https://github.com/irvan-putra/tuju",
-   "sha256": "d422952ef3ad3fdbdbcd23be8df81c69c644c3853bea8342d92e57871e6df6b9"
+   "tag": "Signed corrected map; crossing and fare unverified",
+   "about": "Offline busway map with corrected overview and closeup: Gabus stays on the far side, beyond the footbridge and venue; Phe is beside the venue. Published APK map matches source 311cd12. Same package and signer, no permissions. Physical Flyover crossing and paying again remain unverified. Version 0.1.2 is not yet proven on a physical phone.",
+   "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.2/tuju-v0.1.2.apk",
+   "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.2",
+   "repo": "https://github.com/irvan-putra/tuju/commit/311cd12097da394d3e0d22d2be6ced5351897505",
+   "sha256": "144ae3a119a05887f049e9a633ac2624bd8fc03fd00ece1740f5a6988f741bdb"
   },
   {
    "name": "irvan",
@@ -408,6 +408,18 @@
    "apk": "https://github.com/irvan-putra/denyut/releases/download/v0.7.2/denyut-v0.7.2.apk",
    "release": "https://github.com/irvan-putra/denyut/releases/tag/v0.7.2",
    "sha256": "e2116950649596b21ea4f67b7882de661067ceaaad3bbd7d0d7f689431aaa577"
+  },
+  {
+   "name": "tuju",
+   "version": "0.1.1",
+   "state": "legacy",
+   "icon": "tuju-0.1.1.png",
+   "tag": "Previous signed map",
+   "about": "Offline busway map with all selected outbound intermediate stations from an operator GTFS snapshot, pinch-to-zoom and drag-to-pan. Existing direction, transfer and fare caveats remain. No live bus guarantee or physical Samsung proof. Same package/signer, no permissions.",
+   "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.1/tuju-v0.1.1.apk",
+   "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.1",
+   "repo": "https://github.com/irvan-putra/tuju",
+   "sha256": "d422952ef3ad3fdbdbcd23be8df81c69c644c3853bea8342d92e57871e6df6b9"
   }
  ]
 }
