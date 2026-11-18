@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-17 15:19 WIB",
+ "checked": "2026-11-18 13:19 WIB",
  "sections": [
   {
    "title": "Animation and cooking",
@@ -106,7 +106,7 @@
     {
      "name": "irvan",
      "tag": "Interactive introduction",
-     "about": "A browsable map of public projects and reviewed introduction content. Website available; Android APK not released.",
+     "about": "A browsable project map and reviewed introduction, with both paper credits and links. Website and signed Android0.1.0 released; not phone-tested.",
      "url": "https://vanipy.com/irvan/",
      "source": "https://github.com/irvan-putra/irvan"
     },

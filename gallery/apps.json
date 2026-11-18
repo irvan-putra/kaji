@@ -1,12 +1,24 @@
 {
- "checked": "2026-11-18 12:41 WIB",
+ "checked": "2026-11-18 13:24 WIB",
  "apps": [
+  {
+   "name": "irvan",
+   "version": "0.1.0",
+   "state": "available",
+   "icon": "irvan.png",
+   "tag": "Signed initial release; not phone-tested",
+   "about": "Interactive introduction and project map with reviewed content, paper credits and source links. Website and Android build available; not verified on a physical phone.",
+   "apk": "https://github.com/irvan-putra/irvan/releases/download/v0.1.0/irvan-v0.1.0.apk",
+   "release": "https://github.com/irvan-putra/irvan/releases/tag/v0.1.0",
+   "repo": "https://github.com/irvan-putra/irvan",
+   "sha256": "fd2d07903dee74e4ff976f1bf34918df9190429a2879cb3d3d71d2a161b3b093"
+  },
   {
    "name": "itdapk",
    "version": "0.5.13",
    "state": "legacy",
    "icon": "itdapk.png",
-   "tag": "Currently shipped Android APK; previous launcher name",
+   "tag": "Previous signed build; previous launcher name",
    "about": "Home-screen widget and app for reminders and todo lists, with shared lists over Delta Chat. Experimental build.",
    "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.13/itdapk-v0.5.13.apk",
    "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.13",
@@ -15,15 +27,15 @@
   },
   {
    "name": "kemas",
-   "version": "0.3.0",
+   "version": "0.3.1",
    "state": "available",
    "icon": "kemas.png",
-   "tag": "Signed widget update; not phone-tested",
-   "about": "Cleaning accountability with a home-screen widget. This delivered build predates the pending compact and expanded-mode correction. Not phone-tested.",
-   "apk": "https://github.com/irvan-putra/kemas/releases/download/v0.3.0/kemas-v0.3.0.apk",
-   "release": "https://github.com/irvan-putra/kemas/releases/tag/v0.3.0",
+   "tag": "Signed compact-widget update; not Samsung-tested",
+   "about": "Cleaning accountability with responsive compact and expanded widget modes. Existing package and signer retained; not verified on a physical Samsung.",
+   "apk": "https://github.com/irvan-putra/kemas/releases/download/v0.3.1/kemas-v0.3.1.apk",
+   "release": "https://github.com/irvan-putra/kemas/releases/tag/v0.3.1",
    "repo": "https://github.com/irvan-putra/kemas",
-   "sha256": "482a4f8c46161f038db9b521aa51acc8d562492640afb6729b08d1526e450616"
+   "sha256": "1b078b263a31313458211d9b52f6660448c869bf5d8e48de1dd79b2a3dd6dcfd"
   },
   {
    "name": "cabang",
@@ -39,21 +51,21 @@
   },
   {
    "name": "menit",
-   "version": "0.2.0",
+   "version": "0.2.1",
    "state": "available",
    "icon": "menit.png",
-   "tag": "Signed widget update; not phone-tested",
-   "about": "Phone-usage totals and a resizable home-screen widget. This delivered build predates the pending all-sizes compact revision. Emulator checks are not proof on your Samsung.",
-   "apk": "https://github.com/irvan-putra/menit/releases/download/v0.2.0/menit-v0.2.0.apk",
-   "release": "https://github.com/irvan-putra/menit/releases/tag/v0.2.0",
+   "tag": "Signed compact-widget update; not Samsung-tested",
+   "about": "Phone-usage totals and responsive compact widgets. Existing package, signer and permissions retained; emulator qualification is not Samsung install proof.",
+   "apk": "https://github.com/irvan-putra/menit/releases/download/v0.2.1/menit-v0.2.1.apk",
+   "release": "https://github.com/irvan-putra/menit/releases/tag/v0.2.1",
    "repo": "https://github.com/irvan-putra/menit",
-   "sha256": "4272e681d30199936640c9c371cd08be7de1c868bd9eaa5f920995707a1066c0"
+   "sha256": "b5576b2cc24f3cbe387a9a2e57f03f9fa0acd5c2a6df3fc330276a7a9282931c"
   },
   {
    "name": "jin",
    "state": "available",
    "tag": "Experimental test build",
-   "about": "Phone-side Delta Chat bot runtime, built as a standalone validation app. The runtime now ships inside itdapk.",
+   "about": "Phone-side Delta Chat bot runtime, built as a standalone validation app. The runtime now ships inside intodo.",
    "release": "https://github.com/irvan-putra/jin/releases/tag/v0.4.16",
    "repo": "https://github.com/irvan-putra/jin",
    "version": "0.4.16",
@@ -63,12 +75,15 @@
   },
   {
    "name": "unggah",
-   "version": "1.1.2 candidate",
-   "state": "pending",
-   "tag": "Source ready; new APK not released",
-   "about": "Pushes a ZIP to a chosen GitHub repository over SSH. New app identity com.vanipy.unggah installs separately; the existing app and its settings are untouched. Candidate only, no new signed download yet.",
+   "version": "1.1.2",
+   "state": "available",
+   "tag": "Signed new app identity; separate install",
+   "about": "Pushes a ZIP to a chosen GitHub repository over SSH. New com.vanipy.unggah identity installs separately from the previous app. Existing settings are untouched; backup/import settings and set up a new SSH key as needed.",
    "repo": "https://github.com/irvan-putra/unggah",
-   "icon": "unggah.png"
+   "icon": "unggah.png",
+   "apk": "https://github.com/irvan-putra/unggah/releases/download/v1.1.2-unggah/unggah-v1.1.2.apk",
+   "release": "https://github.com/irvan-putra/unggah/releases/tag/v1.1.2-unggah",
+   "sha256": "3b6a25c03e4423c52a52da5500645b6402efc80a5d6c56c1e0fd5616ff23132d"
   },
   {
    "name": "sapa",
@@ -109,38 +124,38 @@
   {
    "name": "denyut",
    "state": "available",
-   "tag": "Signed widget update; not phone-tested",
-   "about": "Offline notes and reminders with a home-screen widget. Local-model loading remains disabled. This delivered build predates the pending compact revision; no model/chat account provisioned or phone proof.",
+   "tag": "Signed compact-widget update; not Samsung-tested",
+   "about": "Offline notes and reminders with responsive compact widgets. Local-model loading remains disabled; no model/chat account provisioned or Samsung install proof.",
    "repo": "https://github.com/irvan-putra/denyut",
-   "version": "0.7.0",
+   "version": "0.7.1",
    "icon": "denyut.png",
-   "apk": "https://github.com/irvan-putra/denyut/releases/download/v0.7.0/denyut-v0.7.0.apk",
-   "release": "https://github.com/irvan-putra/denyut/releases/tag/v0.7.0",
-   "sha256": "07d2c5bf351035593880198ad2121b8a0159ae3bb47b268d767306ddedd2e0aa"
+   "apk": "https://github.com/irvan-putra/denyut/releases/download/v0.7.1/denyut-v0.7.1.apk",
+   "release": "https://github.com/irvan-putra/denyut/releases/tag/v0.7.1",
+   "sha256": "8ffada80af5e09d750f54e9223275f0970cd1d0e21c1a7bbdc81143644f39f4b"
   },
   {
    "name": "saku",
    "state": "available",
-   "tag": "Synthetic demo only",
-   "about": "Synthetic entries only. Not for real passwords, accounts or keys; no real vault, network, sync or Autofill. Development checkpoint; license selection is pending. Full suite: 13 tests, one known failure, KdbxSpikeTest.readsPykeepassRoundtrip.",
+   "tag": "Synthetic prototype only; one known test failure",
+   "about": "Not for real passwords, accounts or keys. Static locked-status widget and quick-open only. Experimental local vault with a known KdbxSpikeTest.readsPykeepassRoundtrip interop failure; not all tests pass. DeltaChat sync is unfinished. No production-safety or physical-phone claim.",
    "repo": "https://github.com/irvan-putra/saku",
-   "version": "0.1.1",
+   "version": "0.1.2",
    "icon": "saku.png",
-   "apk": "https://github.com/irvan-putra/saku/releases/download/v0.1.1/saku-v0.1.1.apk",
-   "release": "https://github.com/irvan-putra/saku/releases/tag/v0.1.1",
-   "sha256": "cad32905084c22ad7f87beca20aaf1012085dcf6eeb08253eaba437380c4918d"
+   "apk": "https://github.com/irvan-putra/saku/releases/download/v0.1.2/saku-v0.1.2.apk",
+   "release": "https://github.com/irvan-putra/saku/releases/tag/v0.1.2",
+   "sha256": "32ded85de300b2f567f06f5deb13eeef769c4d479d651c8adb7a3152b16420df"
   },
   {
    "name": "tumbuh",
    "state": "available",
-   "tag": "Signed widget update; not phone-tested",
-   "about": "Offline manual commitments, inbox, space and people, with a home-screen widget. No inbox/contact access or automated sending. This delivered build predates the pending compact revision; not phone-tested.",
+   "tag": "Signed compact-widget update; not Samsung-tested",
+   "about": "Offline manual commitments, inbox, space and people, with responsive compact widgets. No inbox/contact access or automated sending. Not verified on a physical Samsung.",
    "repo": "https://github.com/irvan-putra/tumbuh-app",
-   "version": "0.2.0",
+   "version": "0.2.1",
    "icon": "tumbuh.png",
-   "apk": "https://github.com/irvan-putra/tumbuh-app/releases/download/v0.2.0/tumbuh-v0.2.0.apk",
-   "release": "https://github.com/irvan-putra/tumbuh-app/releases/tag/v0.2.0",
-   "sha256": "169abc095777deb8240087f97c8d84312016e72473125debe610e259b8d1ed5a"
+   "apk": "https://github.com/irvan-putra/tumbuh-app/releases/download/v0.2.1/tumbuh-v0.2.1.apk",
+   "release": "https://github.com/irvan-putra/tumbuh-app/releases/tag/v0.2.1",
+   "sha256": "461f7d2d168eb906e3fd3a5df6d6e15e5d9a91d8b84314da05eef7693e82af1d"
   },
   {
    "name": "fae",
@@ -204,12 +219,75 @@
   },
   {
    "name": "intodo",
-   "version": "0.5.13 source candidate",
-   "state": "pending",
-   "icon": "itdapk.png",
-   "tag": "Renamed source and debug check only",
-   "about": "Android app and widget in the intodo family. Existing com.vanipy.intodo package, paired feed and local storage are preserved. New signed APK has not been released. Previous shipped download remains below.",
-   "repo": "https://github.com/irvan-putra/intodo"
+   "version": "0.5.14",
+   "state": "available",
+   "icon": "intodo.png",
+   "tag": "Signed responsive widget update; rendering caveat",
+   "about": "App and widget for reminders and todo lists. Same com.vanipy.intodo package, signer, data and paired feed. Widget tap routing checked on an emulator; post-tap content rendering remains unverified and was explicitly bypassed. Not Samsung-tested.",
+   "repo": "https://github.com/irvan-putra/intodo",
+   "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.14/intodo-v0.5.14.apk",
+   "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.14",
+   "sha256": "392c257e7e862038863d5f90076269d2d480a11993772dd7f1f809ea8bdd7c1d"
+  },
+  {
+   "name": "menit",
+   "version": "0.2.0",
+   "state": "legacy",
+   "icon": "menit-0.2.0.png",
+   "tag": "Previous signed build",
+   "about": "Phone-usage totals and a resizable home-screen widget. This delivered build predates the pending all-sizes compact revision. Emulator checks are not proof on your Samsung.",
+   "apk": "https://github.com/irvan-putra/menit/releases/download/v0.2.0/menit-v0.2.0.apk",
+   "release": "https://github.com/irvan-putra/menit/releases/tag/v0.2.0",
+   "repo": "https://github.com/irvan-putra/menit",
+   "sha256": "4272e681d30199936640c9c371cd08be7de1c868bd9eaa5f920995707a1066c0"
+  },
+  {
+   "name": "tumbuh",
+   "state": "legacy",
+   "tag": "Previous signed build",
+   "about": "Offline manual commitments, inbox, space and people, with a home-screen widget. No inbox/contact access or automated sending. This delivered build predates the pending compact revision; not phone-tested.",
+   "repo": "https://github.com/irvan-putra/tumbuh-app",
+   "version": "0.2.0",
+   "icon": "tumbuh-0.2.0.png",
+   "apk": "https://github.com/irvan-putra/tumbuh-app/releases/download/v0.2.0/tumbuh-v0.2.0.apk",
+   "release": "https://github.com/irvan-putra/tumbuh-app/releases/tag/v0.2.0",
+   "sha256": "169abc095777deb8240087f97c8d84312016e72473125debe610e259b8d1ed5a"
+  },
+  {
+   "name": "denyut",
+   "state": "legacy",
+   "tag": "Previous signed build",
+   "about": "Offline notes and reminders with a home-screen widget. Local-model loading remains disabled. This delivered build predates the pending compact revision; no model/chat account provisioned or phone proof.",
+   "repo": "https://github.com/irvan-putra/denyut",
+   "version": "0.7.0",
+   "icon": "denyut-0.7.0.png",
+   "apk": "https://github.com/irvan-putra/denyut/releases/download/v0.7.0/denyut-v0.7.0.apk",
+   "release": "https://github.com/irvan-putra/denyut/releases/tag/v0.7.0",
+   "sha256": "07d2c5bf351035593880198ad2121b8a0159ae3bb47b268d767306ddedd2e0aa"
+  },
+  {
+   "name": "kemas",
+   "version": "0.3.0",
+   "state": "legacy",
+   "icon": "kemas-0.3.0.png",
+   "tag": "Previous signed build",
+   "about": "Cleaning accountability with a home-screen widget. This delivered build predates the pending compact and expanded-mode correction. Not phone-tested.",
+   "apk": "https://github.com/irvan-putra/kemas/releases/download/v0.3.0/kemas-v0.3.0.apk",
+   "release": "https://github.com/irvan-putra/kemas/releases/tag/v0.3.0",
+   "repo": "https://github.com/irvan-putra/kemas",
+   "sha256": "482a4f8c46161f038db9b521aa51acc8d562492640afb6729b08d1526e450616"
+  },
+  {
+   "name": "saku",
+   "state": "legacy",
+   "tag": "Previous synthetic demo build",
+   "about": "Synthetic entries only. Not for real passwords, accounts or keys; no real vault, network, sync or Autofill. Development checkpoint; license selection is pending. Full suite: 13 tests, one known failure, KdbxSpikeTest.readsPykeepassRoundtrip.",
+   "repo": "https://github.com/irvan-putra/saku",
+   "version": "0.1.1",
+   "icon": "saku-0.1.1.png",
+   "apk": "https://github.com/irvan-putra/saku/releases/download/v0.1.1/saku-v0.1.1.apk",
+   "release": "https://github.com/irvan-putra/saku/releases/tag/v0.1.1",
+   "sha256": "cad32905084c22ad7f87beca20aaf1012085dcf6eeb08253eaba437380c4918d"
   }
  ]
 }
