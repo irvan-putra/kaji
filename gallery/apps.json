@@ -1,29 +1,29 @@
 {
-  "checked": "2026-11-19 00:29 WIB",
+  "checked": "2026-11-19 01:11 WIB",
   "apps": [
     {
       "name": "sanggup",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "state": "available",
       "icon": "sanggup.png",
       "tag": "Experimental signed test APK",
-      "about": "20 offline starter paths and animated Sang. Signed launch checked; practice-to-streak and hosted-widget animation tested on debug emulator only. No physical phone or Samsung/Pixel launcher placement proof. Browser/Android progress separate, duplicate Sang retained. Not a competency qualification.",
-      "apk": "https://github.com/irvan-putra/sanggup/releases/download/v0.1.0/sanggup-v0.1.0.apk",
-      "release": "https://github.com/irvan-putra/sanggup/releases/tag/v0.1.0",
-      "repo": "https://github.com/irvan-putra/sanggup/commit/ebd8f8da5724672172a9e08af65b420e4b440f41",
-      "sha256": "ba0ee5cf98b92cdd79a2c5cdb0d7b63ec9c3d15b5cae82f5bbd7e0514dce0a5b"
+      "about": "20 offline starter paths and animated Sang. Lowercase name/family badge, compact2x1 widget target with corner-safe text and taller resize. Debug host checked animation, practice-to-streak, nominal/minimum/tall sizes; signed launch checked. Earlier phone animation reported/shown privately. New compact Samsung placement and signed upgrade not verified. Browser/Android progress separate; not competency proof.",
+      "apk": "https://github.com/irvan-putra/sanggup/releases/download/v0.1.1/sanggup-v0.1.1.apk",
+      "release": "https://github.com/irvan-putra/sanggup/releases/tag/v0.1.1",
+      "repo": "https://github.com/irvan-putra/sanggup/commit/8211c448992dfa170aa986b35f03f9d58a8edf9c",
+      "sha256": "6d18deac4b7ecc7298ff8655b1b79350495d6e786a5d2cb8a575bec0813465c9"
     },
     {
       "name": "unggun",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "state": "available",
       "icon": "unggun.png",
-      "tag": "Experimental signed rate-limit test prerelease",
-      "about": "GitHub cooldown/backoff change with green synthetic tests. Signed asset package/version/checksum/icon checked. No runtime, device, emulator, upgrade or live-isolate suppression proof. Existing cooldown is not cleared early. Preserve data: do not uninstall to update.",
-      "apk": "https://github.com/irvan-putra/unggun/releases/download/v0.1.3/unggun-v0.1.3.apk",
-      "release": "https://github.com/irvan-putra/unggun/releases/tag/v0.1.3",
-      "repo": "https://github.com/irvan-putra/unggun/commit/3348963bdedcd0f66e74cb7326ab1c32de8dac07",
-      "sha256": "122879c4bfb938d539e9dec355ed217d22778e36ad0050703bf32433cfa9ce20"
+      "tag": "Experimental signed presentation test",
+      "about": "Lowercase name and matching legacy/adaptive/themed version strips, bonfire retained. Same signer/package, higher version; update in place, do not uninstall. Prior rate-limit synthetic checks remain, no new runtime/live-isolate/upgrade proof and existing cooldown is not cleared early.",
+      "apk": "https://github.com/irvan-putra/unggun/releases/download/v0.1.4/unggun-v0.1.4.apk",
+      "release": "https://github.com/irvan-putra/unggun/releases/tag/v0.1.4",
+      "repo": "https://github.com/irvan-putra/unggun/commit/2e3d6c7940f531364a489577fd1e27ab707e1b4d",
+      "sha256": "bdda07dd6b271ab20a707edd9edfb6f777a717083ccec5ea728cfe6e958665c0"
     },
     {
       "name": "tuju",
@@ -148,14 +148,14 @@
     {
       "name": "bidik",
       "state": "available",
-      "tag": "Experimental test build",
-      "about": "Prototype; account creation is optional and user-triggered. Live account creation, pairing and send-back are not verified on a real phone. After pairing, launches may attempt sync and send without a per-run prompt.",
-      "repo": "https://github.com/irvan-putra/bidik",
-      "version": "0.1.1",
+      "tag": "Test build under recording verification",
+      "about": "Adds a local screen-recording flow with Android consent. Build and signing checks pass; actual consent/start/stop/save playback flow is not yet runtime verified. Existing webpage capture/account features retained; live pairing/send-back remain unverified. No automatic recording upload intended.",
+      "repo": "https://github.com/irvan-putra/bidik/commit/4ec8d38",
+      "version": "0.1.2",
       "icon": "bidik.png",
-      "apk": "https://github.com/irvan-putra/bidik/releases/download/v0.1.1/bidik-v0.1.1.apk",
-      "release": "https://github.com/irvan-putra/bidik/releases/tag/v0.1.1",
-      "sha256": "7cdc6e208567690e99cec0502854d1801e16efd4593aadc719cbbca6271f58e6"
+      "apk": "https://github.com/irvan-putra/bidik/releases/download/v0.1.2/bidik-v0.1.2.apk",
+      "release": "https://github.com/irvan-putra/bidik/releases/tag/v0.1.2",
+      "sha256": "04a42f726232aa1012e7f442a4facc49c9d61bdb205b1a5ce22c400ec49f8d95"
     },
     {
       "name": "denyut",
