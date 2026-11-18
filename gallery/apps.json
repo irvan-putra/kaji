@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-19 00:22 WIB",
+  "checked": "2026-11-19 00:29 WIB",
   "apps": [
     {
       "name": "sanggup",
@@ -15,15 +15,15 @@
     },
     {
       "name": "unggun",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "state": "available",
       "icon": "unggun.png",
-      "tag": "Experimental signed cleanup prerelease",
-      "about": "Obtainium fork with separate com.vanipy.unggun identity. Cleanup-only0.1.2: signer, version, checksum and icon checked; device install/upgrade unverified. GitHub rate-limit fix not included. Setup guide delivered. Do not uninstall an existing app to update.",
-      "apk": "https://github.com/irvan-putra/unggun/releases/download/v0.1.2/unggun-v0.1.2.apk",
-      "release": "https://github.com/irvan-putra/unggun/releases/tag/v0.1.2",
-      "repo": "https://github.com/irvan-putra/unggun/commit/a8e40ca676dc8a629787321f821a368657fd2242",
-      "sha256": "53ac439e26b551a0d1acb5bddd1fa1d6c066db17640cdea6d90a8d65865448c4"
+      "tag": "Experimental signed rate-limit test prerelease",
+      "about": "GitHub cooldown/backoff change with green synthetic tests. Signed asset package/version/checksum/icon checked. No runtime, device, emulator, upgrade or live-isolate suppression proof. Existing cooldown is not cleared early. Preserve data: do not uninstall to update.",
+      "apk": "https://github.com/irvan-putra/unggun/releases/download/v0.1.3/unggun-v0.1.3.apk",
+      "release": "https://github.com/irvan-putra/unggun/releases/tag/v0.1.3",
+      "repo": "https://github.com/irvan-putra/unggun/commit/3348963bdedcd0f66e74cb7326ab1c32de8dac07",
+      "sha256": "122879c4bfb938d539e9dec355ed217d22778e36ad0050703bf32433cfa9ce20"
     },
     {
       "name": "tuju",
