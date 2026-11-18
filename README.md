@@ -20,6 +20,8 @@ This repo also includes illustrations alongside the Android-update, application-
 
 ## Notes
 
+- [Legal clearance for a software mascot](docs/mascot-legal-clearance.md) - what clearance can and cannot mean, free searches, official fee tables for Indonesia, US, EU and Madrid, published US opinion prices; Indonesian opinion prices unknown, not legal advice.
+
 - [Lottie, Rive and Android animation options](docs/lottie-rive-android-animation.md) - in-app motion, mascot tools, authoring costs and documented widget limits; vendor benchmarks attributed, launcher behavior untested. Includes an original decision map.
 
 - [Local-first software](docs/local-first-software.md) - source ideals and unvalidated design proposals.
