@@ -1,17 +1,17 @@
 {
-  "checked": "2026-11-18 23:12 WIB",
+  "checked": "2026-11-18 23:57 WIB",
   "apps": [
     {
       "name": "unggun",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "state": "available",
       "icon": "unggun.png",
-      "tag": "Experimental signed prerelease, launch confirmed",
-      "about": "Obtainium fork with separate com.vanipy.unggun identity. Signed asset metadata/checksum/icon checked. Launch to Apps screen confirmed; picker import and auto-update remain unverified.14-app synthetic parser test passed, not UI import. Sample entries background-exempt. Setup handoff still pending.",
-      "apk": "https://github.com/irvan-putra/unggun/releases/download/v0.1.1/unggun-v0.1.1.apk",
-      "release": "https://github.com/irvan-putra/unggun/releases/tag/v0.1.1",
-      "repo": "https://github.com/irvan-putra/unggun/commit/4df622425d3ea77a166ad8c67af9181b06e13194",
-      "sha256": "7ebd003017482b79cf72c050d5215216d0bf4ffc6e4f8b3caa0eef46c59e77fe"
+      "tag": "Experimental signed cleanup prerelease",
+      "about": "Obtainium fork with separate com.vanipy.unggun identity. Cleanup-only0.1.2: signer, version, checksum and icon checked; device install/upgrade unverified. GitHub rate-limit fix not included. Setup guide delivered. Do not uninstall an existing app to update.",
+      "apk": "https://github.com/irvan-putra/unggun/releases/download/v0.1.2/unggun-v0.1.2.apk",
+      "release": "https://github.com/irvan-putra/unggun/releases/tag/v0.1.2",
+      "repo": "https://github.com/irvan-putra/unggun/commit/a8e40ca676dc8a629787321f821a368657fd2242",
+      "sha256": "53ac439e26b551a0d1acb5bddd1fa1d6c066db17640cdea6d90a8d65865448c4"
     },
     {
       "name": "tuju",
