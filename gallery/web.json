@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-18 22:05 WIB",
+  "checked": "2026-11-18 22:32 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -25,10 +25,10 @@
       "items": [
         {
           "name": "sanggup",
-          "tag": "Cooking prototype0.1.1, same-device demo",
-          "about": "Five cooking stages, practice/history and learner/instructor role switching on one device. No identity verification, cross-device accounts or verified competency. Other tracks disabled; no APK. Gecko concept is not final.",
+          "tag": "Life-skills prototype0.2.0, same-device demo",
+          "about": "Compact20-tile grid with14active starter paths and6planned disabled tracks. Approved Sang gecko. Local-device progress and unauthenticated mentor-review demo only, not verified competency or a safety certificate. Survival/rescue beyond preparedness is still unfinished. No APK.",
           "url": "https://vanipy.com/sanggup/",
-          "source": "https://github.com/irvan-putra/sanggup/commit/001b97f5858c1b97610ac70d6af5287915c8d81e"
+          "source": "https://github.com/irvan-putra/sanggup/commit/8f53cc2bf908e2b199e5d1ff14844d532b352649"
         }
       ]
     },
