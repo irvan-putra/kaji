@@ -1,13 +1,13 @@
 {
- "checked": "2026-11-18 17:23 WIB",
+ "checked": "2026-11-18 17:41 WIB",
  "apps": [
   {
    "name": "tuju",
    "version": "0.1.2",
    "state": "available",
    "icon": "tuju.png",
-   "tag": "Signed corrected map; crossing and fare unverified",
-   "about": "Offline busway map with corrected overview and closeup: Gabus stays on the far side, beyond the footbridge and venue; Phe is beside the venue. Published APK map matches source 311cd12. Same package and signer, no permissions. Physical Flyover crossing and paying again remain unverified. Version 0.1.2 is not yet proven on a physical phone.",
+   "tag": "Signed corrected map; APK retains earlier fare notes",
+   "about": "Offline corrected overview and closeup. Gabus stays far-side beyond bridge and venue; Phe is beside the venue. APK map matches source 311cd12. Same package/signer, no permissions; not physically phone-proven. Website fare notes are newer: this 0.1.2 APK still contains the earlier uncertainty wording.",
    "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.2/tuju-v0.1.2.apk",
    "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.2",
    "repo": "https://github.com/irvan-putra/tuju/commit/311cd12097da394d3e0d22d2be6ced5351897505",

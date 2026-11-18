@@ -1,15 +1,15 @@
 {
- "checked": "2026-11-18 17:23 WIB",
+ "checked": "2026-11-18 17:41 WIB",
  "sections": [
   {
    "title": "Maps",
    "items": [
     {
      "name": "tuju",
-     "tag": "Corrected website and Android 0.1.2",
-     "about": "Offline busway map with corrected overview and closeup: Gabus stays on the far side, beyond the footbridge and venue; Phe is beside the venue. Published APK map matches source 311cd12. Same package and signer, no permissions. Physical Flyover crossing and paying again remain unverified. Version 0.1.2 is not yet proven on a physical phone.",
+     "tag": "Website fare clarification; APK still 0.1.2",
+     "about": "Corrected maps, with fare notes based on firsthand clarification: 4 to 6 has no extra fare; the Flyover link stays inside the paid area with no exit or extra fare; 6 to 7E requires an exit, very short walk and payment again. This is not independent operator-policy verification. Geometry unchanged. Android 0.1.2 retains earlier uncertainty text; a new APK is awaiting approval.",
      "url": "https://vanipy.com/tuju/",
-     "source": "https://github.com/irvan-putra/tuju/commit/311cd12097da394d3e0d22d2be6ced5351897505"
+     "source": "https://github.com/irvan-putra/tuju/commit/b675f398cbb0fc926106a8e5809cb3dce0c5f20a"
     }
    ]
   },
