@@ -1,6 +1,18 @@
 {
-  "checked": "2026-11-18 23:57 WIB",
+  "checked": "2026-11-19 00:22 WIB",
   "apps": [
+    {
+      "name": "sanggup",
+      "version": "0.1.0",
+      "state": "available",
+      "icon": "sanggup.png",
+      "tag": "Experimental signed test APK",
+      "about": "20 offline starter paths and animated Sang. Signed launch checked; practice-to-streak and hosted-widget animation tested on debug emulator only. No physical phone or Samsung/Pixel launcher placement proof. Browser/Android progress separate, duplicate Sang retained. Not a competency qualification.",
+      "apk": "https://github.com/irvan-putra/sanggup/releases/download/v0.1.0/sanggup-v0.1.0.apk",
+      "release": "https://github.com/irvan-putra/sanggup/releases/tag/v0.1.0",
+      "repo": "https://github.com/irvan-putra/sanggup/commit/ebd8f8da5724672172a9e08af65b420e4b440f41",
+      "sha256": "ba0ee5cf98b92cdd79a2c5cdb0d7b63ec9c3d15b5cae82f5bbd7e0514dce0a5b"
+    },
     {
       "name": "unggun",
       "version": "0.1.2",
