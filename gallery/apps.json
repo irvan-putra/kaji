@@ -1,17 +1,17 @@
 {
-  "checked": "2026-11-18 21:26 WIB",
+  "checked": "2026-11-18 21:43 WIB",
   "apps": [
     {
       "name": "tuju",
-      "version": "0.1.8",
+      "version": "0.1.9",
       "state": "available",
       "icon": "tuju.png",
-      "tag": "Signed left-side return layout",
-      "about": "Gojek/7F return option sits left near venue/7E, with a dashed Gojek connection below the map. Shared4/6 spine, directional7E stops and route caveats retained. Emulator checked; not physical Samsung-tested. Ragunan access/fare continuity, conflicting7F hours and Gojek fare/time remain unverified.",
-      "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.8/tuju-v0.1.8.apk",
-      "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.8",
-      "repo": "https://github.com/irvan-putra/tuju/commit/8139327c801fa848a36d1f71ee949ca48c93989d",
-      "sha256": "33154042f2c5711da4fa92f31beeeb59df43d581bae34157f2e54b9fc30b3a9a"
+      "tag": "Signed10/7F shared-spine map",
+      "about": "Shared10/7F station areas drawn once with opposite arrows and branches for distinct stops. Shared4/6 spine and7E direction-specific stops retained. Actual APK icon badges corrected to0.1.9. Emulator checked, not physical Samsung-tested. Existing fare/access,7F hours and Gojek uncertainties retained.",
+      "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.9/tuju-v0.1.9.apk",
+      "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.9",
+      "repo": "https://github.com/irvan-putra/tuju/commit/0b478eb6f3225f4e79be901fe68861efe0450f45",
+      "sha256": "0e02a180fb6c5d6fd4515028046de073b421618b799ecf15591e3f71a2f2e5cd"
     },
     {
       "name": "irvan",

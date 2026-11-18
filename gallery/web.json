@@ -1,15 +1,22 @@
 {
-  "checked": "2026-11-18 21:26 WIB",
+  "checked": "2026-11-18 21:40 WIB",
   "sections": [
     {
       "title": "Maps",
       "items": [
         {
           "name": "tuju",
-          "tag": "Left-side Gojek/7F return option",
-          "about": "Gojek/7F return option sits left near venue/7E, with a dashed Gojek connection below the map. Shared4/6 spine, directional7E stops and route caveats retained. Emulator checked; not physical Samsung-tested. Ragunan access/fare continuity, conflicting7F hours and Gojek fare/time remain unverified.",
+          "tag": "Shared10/7F two-way spine",
+          "about": "Shared10/7F station areas drawn once with opposite arrows and branches for distinct stops. Shared4/6 spine and7E direction-specific stops retained. Actual APK icon badges corrected to0.1.9. Emulator checked, not physical Samsung-tested. Existing fare/access,7F hours and Gojek uncertainties retained.",
           "url": "https://vanipy.com/tuju/",
-          "source": "https://github.com/irvan-putra/tuju/commit/8139327c801fa848a36d1f71ee949ca48c93989d"
+          "source": "https://github.com/irvan-putra/tuju/commit/0b478eb6f3225f4e79be901fe68861efe0450f45"
+        },
+        {
+          "name": "tangkai",
+          "tag": "Fictional interactive mind map",
+          "about": "Invented Maya Vale profile with color-coded branches, pan, zoom, fit and branch exploration. All people, places and activities fictional. Original private map unchanged.",
+          "url": "https://vanipy.com/tangkai/",
+          "source": "https://github.com/irvan-putra/tangkai/commit/ebb5fc2e4804057ffdc4a6b18a802f6ce540619c"
         }
       ]
     },
