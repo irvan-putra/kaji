@@ -1,15 +1,15 @@
 {
-  "checked": "2026-11-18 19:48 WIB",
+  "checked": "2026-11-18 20:58 WIB",
   "sections": [
     {
       "title": "Maps",
       "items": [
         {
           "name": "tuju",
-          "tag": "Outbound and both Arkadia return options on the map",
-          "about": "Both Arkadia return options drawn in the shared website/offline map. Arkadia-side7E via Ragunan,6 via Galunggung,4 to Simpang Pramuka1; or far-side Gojek to Flyover Raya Bogor,7F to Kayu Putih Rawasari. Outbound routes, shared4/4D trunk and fares retained. Emulator-tested, not Samsung-tested. Ragunan access/fare continuity, conflicting7F hours and Gojek fare/time remain unverified.",
+          "tag": "0.1.6 released; shared-spine correction in progress",
+          "about": "Current0.1.6 release puts outbound and returns on one canvas, but shared4/6/7E sections are still separate verticals. A single shared-spine correction is in progress. Emulator pinch/drag passed; not physical Samsung-tested. Ragunan access/fare continuity, conflicting7F hours and Gojek fare/time remain unverified.",
           "url": "https://vanipy.com/tuju/",
-          "source": "https://github.com/irvan-putra/tuju/commit/8926d0582ff9686a91f6fd2ded11363ddc58a8d5"
+          "source": "https://github.com/irvan-putra/tuju/commit/900dd4f7b2ae5058300cbe53060c1c2a421fd370"
         }
       ]
     },

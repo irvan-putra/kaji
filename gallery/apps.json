@@ -1,17 +1,17 @@
 {
-  "checked": "2026-11-18 19:48 WIB",
+  "checked": "2026-11-18 20:58 WIB",
   "apps": [
     {
       "name": "tuju",
-      "version": "0.1.5",
+      "version": "0.1.6",
       "state": "available",
       "icon": "tuju.png",
-      "tag": "Signed Arkadia return-map correction",
-      "about": "Both Arkadia return options are now drawn in the offline map: Arkadia-side 7E to Ragunan, 6 to Galunggung, 4 to Simpang Pramuka 1; or far-side Gojek to Flyover Raya Bogor, 7F to Kayu Putih Rawasari. Outbound routes, shared4/4D trunk, destinations and fares retained. Same-source debug Android emulator passed; not Samsung-tested. Ragunan access/fare continuity, differing7F hours and Gojek fare/time remain unverified.",
-      "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.5/tuju-v0.1.5.apk",
-      "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.5",
-      "repo": "https://github.com/irvan-putra/tuju/commit/8926d0582ff9686a91f6fd2ded11363ddc58a8d5",
-      "sha256": "5c08de849e0a72fe13fcd4fbb8869e0a60ebc274bf9dea7a1cbadbfb24e6cf53"
+      "tag": "0.1.6 released; shared-spine correction in progress",
+      "about": "Current0.1.6 release puts outbound and returns on one canvas, but shared4/6/7E sections are still separate verticals. A single shared-spine correction is in progress. Emulator pinch/drag passed; not physical Samsung-tested. Ragunan access/fare continuity, conflicting7F hours and Gojek fare/time remain unverified.",
+      "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.6/tuju-v0.1.6.apk",
+      "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.6",
+      "repo": "https://github.com/irvan-putra/tuju/commit/900dd4f7b2ae5058300cbe53060c1c2a421fd370",
+      "sha256": "a79fede35f44953af1b8349a5abdabdb9abc20aaef90dd074303eb4a24dfd0cd"
     },
     {
       "name": "irvan",
@@ -468,6 +468,18 @@
       "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.4",
       "repo": "https://github.com/irvan-putra/tuju/commit/8fea4b29fe3540524c6bce62d71fbc232b92ae30",
       "sha256": "80cb319a1ab9744e65c1de7bb096eab35585e2b8deeef2195f11e1c484e12182"
+    },
+    {
+      "name": "tuju",
+      "version": "0.1.5",
+      "state": "legacy",
+      "icon": "tuju-0.1.5.png",
+      "tag": "Previous signed release",
+      "about": "Both Arkadia return options are now drawn in the offline map: Arkadia-side 7E to Ragunan, 6 to Galunggung, 4 to Simpang Pramuka 1; or far-side Gojek to Flyover Raya Bogor, 7F to Kayu Putih Rawasari. Outbound routes, shared4/4D trunk, destinations and fares retained. Same-source debug Android emulator passed; not Samsung-tested. Ragunan access/fare continuity, differing7F hours and Gojek fare/time remain unverified.",
+      "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.5/tuju-v0.1.5.apk",
+      "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.5",
+      "repo": "https://github.com/irvan-putra/tuju/commit/8926d0582ff9686a91f6fd2ded11363ddc58a8d5",
+      "sha256": "5c08de849e0a72fe13fcd4fbb8869e0a60ebc274bf9dea7a1cbadbfb24e6cf53"
     }
   ]
 }
