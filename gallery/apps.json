@@ -1,17 +1,17 @@
 {
- "checked": "2026-11-18 17:41 WIB",
+ "checked": "2026-11-18 18:27 WIB",
  "apps": [
   {
    "name": "tuju",
-   "version": "0.1.2",
+   "version": "0.1.3",
    "state": "available",
    "icon": "tuju.png",
-   "tag": "Signed corrected map; APK retains earlier fare notes",
-   "about": "Offline corrected overview and closeup. Gabus stays far-side beyond bridge and venue; Phe is beside the venue. APK map matches source 311cd12. Same package/signer, no permissions; not physically phone-proven. Website fare notes are newer: this 0.1.2 APK still contains the earlier uncertainty wording.",
-   "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.2/tuju-v0.1.2.apk",
-   "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.2",
-   "repo": "https://github.com/irvan-putra/tuju/commit/311cd12097da394d3e0d22d2be6ced5351897505",
-   "sha256": "144ae3a119a05887f049e9a633ac2624bd8fc03fd00ece1740f5a6988f741bdb"
+   "tag": "Signed corrected fare notes; emulator-tested",
+   "about": "Offline corrected maps with fare notes based on firsthand clarification: 4 to 6 has no extra fare; the Flyover link stays inside the paid area with no exit or extra fare; 6 to 7E requires an exit, very short walk and payment again. Not independent operator-policy verification. Geometry unchanged. Same package/signer, no permissions. Emulator-tested, not Samsung-proven.",
+   "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.3/tuju-v0.1.3.apk",
+   "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.3",
+   "repo": "https://github.com/irvan-putra/tuju/commit/6be246aef76e21deb9cdbdf7d479b872dd556f80",
+   "sha256": "7e5eab7a23f3865e1d858ed346cd3f94816385efbe5969ce967e25b560217bdf"
   },
   {
    "name": "irvan",
@@ -420,6 +420,18 @@
    "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.1",
    "repo": "https://github.com/irvan-putra/tuju",
    "sha256": "d422952ef3ad3fdbdbcd23be8df81c69c644c3853bea8342d92e57871e6df6b9"
+  },
+  {
+   "name": "tuju",
+   "version": "0.1.2",
+   "state": "legacy",
+   "icon": "tuju-0.1.2.png",
+   "tag": "Previous signed map with older fare notes",
+   "about": "Offline corrected overview and closeup. Gabus stays far-side beyond bridge and venue; Phe is beside the venue. APK map matches source 311cd12. Same package/signer, no permissions; not physically phone-proven. Website fare notes are newer: this 0.1.2 APK still contains the earlier uncertainty wording.",
+   "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.2/tuju-v0.1.2.apk",
+   "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.2",
+   "repo": "https://github.com/irvan-putra/tuju/commit/311cd12097da394d3e0d22d2be6ced5351897505",
+   "sha256": "144ae3a119a05887f049e9a633ac2624bd8fc03fd00ece1740f5a6988f741bdb"
   }
  ]
 }

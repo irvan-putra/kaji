@@ -1,15 +1,15 @@
 {
- "checked": "2026-11-18 17:41 WIB",
+ "checked": "2026-11-18 18:27 WIB",
  "sections": [
   {
    "title": "Maps",
    "items": [
     {
      "name": "tuju",
-     "tag": "Website fare clarification; APK still 0.1.2",
-     "about": "Corrected maps, with fare notes based on firsthand clarification: 4 to 6 has no extra fare; the Flyover link stays inside the paid area with no exit or extra fare; 6 to 7E requires an exit, very short walk and payment again. This is not independent operator-policy verification. Geometry unchanged. Android 0.1.2 retains earlier uncertainty text; a new APK is awaiting approval.",
+     "tag": "Website and Android 0.1.3 fare notes aligned",
+     "about": "Offline corrected maps with fare notes based on firsthand clarification: 4 to 6 has no extra fare; the Flyover link stays inside the paid area with no exit or extra fare; 6 to 7E requires an exit, very short walk and payment again. Not independent operator-policy verification. Geometry unchanged. Same package/signer, no permissions. Emulator-tested, not Samsung-proven.",
      "url": "https://vanipy.com/tuju/",
-     "source": "https://github.com/irvan-putra/tuju/commit/b675f398cbb0fc926106a8e5809cb3dce0c5f20a"
+     "source": "https://github.com/irvan-putra/tuju/commit/6be246aef76e21deb9cdbdf7d479b872dd556f80"
     }
    ]
   },
