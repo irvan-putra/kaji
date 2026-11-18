@@ -1,17 +1,17 @@
 {
- "checked": "2026-11-18 19:15 WIB",
+ "checked": "2026-11-18 19:29 WIB",
  "apps": [
   {
    "name": "tuju",
-   "version": "0.1.3",
+   "version": "0.1.4",
    "state": "available",
    "icon": "tuju.png",
-   "tag": "Signed corrected fare notes; emulator-tested",
-   "about": "Offline corrected maps with fare notes based on firsthand clarification: 4 to 6 has no extra fare; the Flyover link stays inside the paid area with no exit or extra fare; 6 to 7E requires an exit, very short walk and payment again. Not independent operator-policy verification. Geometry unchanged. Same package/signer, no permissions. Emulator-tested, not Samsung-proven.",
-   "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.3/tuju-v0.1.3.apk",
-   "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.3",
-   "repo": "https://github.com/irvan-putra/tuju/commit/6be246aef76e21deb9cdbdf7d479b872dd556f80",
-   "sha256": "7e5eab7a23f3865e1d858ed346cd3f94816385efbe5969ce967e25b560217bdf"
+   "tag": "Signed Plaza Festival/shared-route map",
+   "about": "Plaza Festival added to the offline map. Routes 4 and 4D share one first-ten-stop trunk through Halimun, then 4D branches to Rasuna Said. Prior firsthand fare notes preserved. Same-source debug Android WebView checked on an emulator; signed APK not phone-tested. Same package/signer, no permissions.",
+   "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.4/tuju-v0.1.4.apk",
+   "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.4",
+   "repo": "https://github.com/irvan-putra/tuju/commit/8fea4b29fe3540524c6bce62d71fbc232b92ae30",
+   "sha256": "80cb319a1ab9744e65c1de7bb096eab35585e2b8deeef2195f11e1c484e12182"
   },
   {
    "name": "irvan",
@@ -444,6 +444,18 @@
    "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.17/intodo-v0.5.17.apk",
    "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.17",
    "sha256": "e17971ebca35e8dfb12499d3911a23e8000ab627626bc3c84a0cf2a006bc6f99"
+  },
+  {
+   "name": "tuju",
+   "version": "0.1.3",
+   "state": "legacy",
+   "icon": "tuju-0.1.3.png",
+   "tag": "Previous signed fare-note build",
+   "about": "Offline corrected maps with fare notes based on firsthand clarification: 4 to 6 has no extra fare; the Flyover link stays inside the paid area with no exit or extra fare; 6 to 7E requires an exit, very short walk and payment again. Not independent operator-policy verification. Geometry unchanged. Same package/signer, no permissions. Emulator-tested, not Samsung-proven.",
+   "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.1.3/tuju-v0.1.3.apk",
+   "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.3",
+   "repo": "https://github.com/irvan-putra/tuju/commit/6be246aef76e21deb9cdbdf7d479b872dd556f80",
+   "sha256": "7e5eab7a23f3865e1d858ed346cd3f94816385efbe5969ce967e25b560217bdf"
   }
  ]
 }

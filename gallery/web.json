@@ -1,15 +1,15 @@
 {
- "checked": "2026-11-18 18:27 WIB",
+ "checked": "2026-11-18 19:29 WIB",
  "sections": [
   {
    "title": "Maps",
    "items": [
     {
      "name": "tuju",
-     "tag": "Website and Android 0.1.3 fare notes aligned",
-     "about": "Offline corrected maps with fare notes based on firsthand clarification: 4 to 6 has no extra fare; the Flyover link stays inside the paid area with no exit or extra fare; 6 to 7E requires an exit, very short walk and payment again. Not independent operator-policy verification. Geometry unchanged. Same package/signer, no permissions. Emulator-tested, not Samsung-proven.",
+     "tag": "Shared 4/4D map and separate return notes",
+     "about": "Plaza Festival added to the offline map. Routes 4 and 4D share one first-ten-stop trunk through Halimun, then 4D branches to Rasuna Said. Prior firsthand fare notes preserved. Same-source debug Android WebView checked on an emulator; signed APK not phone-tested. Same package/signer, no permissions. Website Arkadia return notes are separate; the return card is not embedded in the offline map.",
      "url": "https://vanipy.com/tuju/",
-     "source": "https://github.com/irvan-putra/tuju/commit/6be246aef76e21deb9cdbdf7d479b872dd556f80"
+     "source": "https://github.com/irvan-putra/tuju/commit/8fea4b29fe3540524c6bce62d71fbc232b92ae30"
     }
    ]
   },
