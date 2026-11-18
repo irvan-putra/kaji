@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-18 19:06 WIB",
+ "checked": "2026-11-18 19:15 WIB",
  "apps": [
   {
    "name": "tuju",
@@ -234,8 +234,8 @@
    "version": "0.5.18",
    "state": "available",
    "icon": "intodo.png",
-   "tag": "Signed real/Demo feed switching; phone setup once",
-   "about": "Separate real and synthetic Demo feeds with independent saved items and freshness. One-time two-address setup keeps the existing key; Demo banner and return-to-real confirmation. Automated tests passed; new mode switch not verified on a physical Samsung. Public APK has no personal feed addresses.",
+   "tag": "Signed real/Demo switching; Samsung setup confirmed",
+   "about": "Separate real and synthetic Demo feeds with independent saved items and freshness. One-time setup keeps the existing key. Samsung setup confirmed18Nov: real app list, Demo banner/list and six DEMO-prefixed widget items. Automated tests passed; this does not prove every race/cache edge.",
    "repo": "https://github.com/irvan-putra/intodo",
    "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.18/intodo-v0.5.18.apk",
    "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.18",
