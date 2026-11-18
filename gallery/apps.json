@@ -1,6 +1,18 @@
 {
-  "checked": "2026-11-18 21:43 WIB",
+  "checked": "2026-11-18 23:12 WIB",
   "apps": [
+    {
+      "name": "unggun",
+      "version": "0.1.1",
+      "state": "available",
+      "icon": "unggun.png",
+      "tag": "Experimental signed prerelease, runtime unverified",
+      "about": "Obtainium fork with separate com.vanipy.unggun identity. Signed asset metadata/checksum/icon checked. Debug build launched; signed APK runtime and picker import NOT verified due hosted-emulator failure.14-app synthetic parser test passed, not UI import. Auto-update unverified; sample entries background-exempt. Setup handoff still pending.",
+      "apk": "https://github.com/irvan-putra/unggun/releases/download/v0.1.1/unggun-v0.1.1.apk",
+      "release": "https://github.com/irvan-putra/unggun/releases/tag/v0.1.1",
+      "repo": "https://github.com/irvan-putra/unggun/commit/4df622425d3ea77a166ad8c67af9181b06e13194",
+      "sha256": "7ebd003017482b79cf72c050d5215216d0bf4ffc6e4f8b3caa0eef46c59e77fe"
+    },
     {
       "name": "tuju",
       "version": "0.1.9",
