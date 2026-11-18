@@ -27,7 +27,7 @@ def page(title, lead, body, base):
 def btn(label, url, main=False): return f'<a class="btn{" main" if main else ""}" href="{e(url)}">{e(label)}</a>'
 def apps():
     d = json.loads((root/"gallery/apps.json").read_text())
-    groups = {"available": "Available now", "pending": "Corrected build in progress", "source": "Source only, no APK"}
+    groups = {"available": "Available now", "pending": "Corrected build in progress", "source": "Source only, no APK", "legacy": "Previous builds"}
     out = ""
     for g, title in groups.items():
         items = [a for a in d["apps"] if a["state"] == g]
@@ -43,7 +43,7 @@ def apps():
             sha = f'<code>SHA-256 {e(a["sha256"])}</code>' if a.get("sha256") else ""
             out += f'<div class="card"><div class="top">{icon}<div><h3>{e(a["name"])}{ver}</h3><div class="tag">{e(a["tag"])}</div></div></div><p>{e(a["about"])}</p><div>{b}</div>{sha}</div>'
         out += "</div>"
-    lead = f'Current Android APKs, with versioned downloads and status. Check the SHA-256 after downloading. Status as of {e(d["checked"])}. Superseded older builds are not linked.'
+    lead = f'Current Android APKs, with versioned downloads and status. Check the SHA-256 after downloading. Status as of {e(d["checked"])}. Previous builds are listed separately below.'
     return page("kaji apps", lead, out, "../")
 def web():
     d = json.loads((root/"gallery/web.json").read_text())
