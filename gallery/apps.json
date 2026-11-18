@@ -4,9 +4,9 @@
   {
    "name": "itdapk",
    "version": "0.5.13",
-   "state": "available",
+   "state": "legacy",
    "icon": "itdapk.png",
-   "tag": "Android widget and todo app",
+   "tag": "Currently shipped Android APK; previous launcher name",
    "about": "Home-screen widget and app for reminders and todo lists, with shared lists over Delta Chat. Experimental build.",
    "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.13/itdapk-v0.5.13.apk",
    "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.13",
@@ -201,6 +201,15 @@
    "release": "https://github.com/irvan-putra/kemas/releases/tag/v0.2.3",
    "repo": "https://github.com/irvan-putra/kemas",
    "sha256": "971f941af9bd818aa86a17a25df025ea2faba68baa17aa9301785859f23de575"
+  },
+  {
+   "name": "intodo",
+   "version": "0.5.13 source candidate",
+   "state": "pending",
+   "icon": "itdapk.png",
+   "tag": "Renamed source and debug check only",
+   "about": "Android app and widget in the intodo family. Existing com.vanipy.intodo package, paired feed and local storage are preserved. New signed APK has not been released. Previous shipped download remains below.",
+   "repo": "https://github.com/irvan-putra/intodo"
   }
  ]
 }
