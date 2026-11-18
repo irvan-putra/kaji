@@ -20,6 +20,8 @@ This repo also includes illustrations alongside the Android-update, application-
 
 ## Notes
 
+- [Lottie, Rive and Android animation options](docs/lottie-rive-android-animation.md) - in-app motion, mascot tools, authoring costs and documented widget limits; vendor benchmarks attributed, launcher behavior untested. Includes an original decision map.
+
 - [Local-first software](docs/local-first-software.md) - source ideals and unvalidated design proposals.
 - [Showing an edit conflict as branches](docs/conflict-resolution-ui-idea.md) - an unbuilt, untested UI idea; sync and merge behavior remain open.
 - [Crypto in Indonesia: supervision, seller tax and wallet design](docs/crypto-in-indonesia-regulation-tax-wallet-choice.md) - dated summary of official texts, not financial, legal or tax advice.

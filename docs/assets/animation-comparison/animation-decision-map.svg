@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" font-family="DejaVu Sans, sans-serif">
+  <rect width="1200" height="760" fill="#fafaf7"/>
+
+  <text x="600" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1a2e22">Where can each animation approach play on Android?</text>
+  <text x="600" y="84" text-anchor="middle" font-size="16" fill="#5a6b60">Original decision map, checked 2026-11-18. Runtime licenses are permissive; authoring cost is where the tools differ.</text>
+
+  <!-- In-app zone -->
+  <rect x="40" y="120" width="700" height="560" rx="18" fill="#eef5ef" stroke="#3d7a4f" stroke-width="2.5"/>
+  <text x="390" y="158" text-anchor="middle" font-size="22" font-weight="bold" fill="#245c36">INSIDE THE APP</text>
+  <text x="390" y="182" text-anchor="middle" font-size="14" fill="#4a6b54">any view, full frame rate, all runtimes allowed</text>
+
+  <!-- Branch 1 -->
+  <rect x="70" y="210" width="300" height="120" rx="12" fill="#ffffff" stroke="#7fa88a" stroke-width="1.5"/>
+  <text x="220" y="242" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">UI motion</text>
+  <text x="220" y="266" text-anchor="middle" font-size="13" fill="#666">fades, reveals, progress,</text>
+  <text x="220" y="284" text-anchor="middle" font-size="13" fill="#666">icon morphs, transitions</text>
+  <rect x="410" y="210" width="300" height="120" rx="12" fill="#d9ead9" stroke="#3d7a4f" stroke-width="1.5"/>
+  <text x="560" y="240" text-anchor="middle" font-size="16" font-weight="bold" fill="#245c36">Native Android</text>
+  <text x="560" y="264" text-anchor="middle" font-size="13" fill="#33553d">Compose animations,</text>
+  <text x="560" y="282" text-anchor="middle" font-size="13" fill="#33553d">AnimatedVectorDrawable</text>
+  <text x="560" y="306" text-anchor="middle" font-size="12" fill="#558060">free, no dependency</text>
+  <line x1="370" y1="270" x2="410" y2="270" stroke="#3d7a4f" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Branch 2 -->
+  <rect x="70" y="370" width="300" height="120" rx="12" fill="#ffffff" stroke="#7fa88a" stroke-width="1.5"/>
+  <text x="220" y="402" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Predetermined loops</text>
+  <text x="220" y="426" text-anchor="middle" font-size="13" fill="#666">celebrations, loaders,</text>
+  <text x="220" y="444" text-anchor="middle" font-size="13" fill="#666">empty states, onboarding art</text>
+  <rect x="410" y="370" width="300" height="120" rx="12" fill="#d9ead9" stroke="#3d7a4f" stroke-width="1.5"/>
+  <text x="560" y="400" text-anchor="middle" font-size="16" font-weight="bold" fill="#245c36">Lottie (.json / .lottie)</text>
+  <text x="560" y="424" text-anchor="middle" font-size="13" fill="#33553d">Apache-2.0 / MIT players,</text>
+  <text x="560" y="442" text-anchor="middle" font-size="13" fill="#33553d">huge free asset library</text>
+  <text x="560" y="466" text-anchor="middle" font-size="12" fill="#558060">author via AE, Lottie Creator, Figma</text>
+  <line x1="370" y1="430" x2="410" y2="430" stroke="#3d7a4f" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Branch 3 -->
+  <rect x="70" y="530" width="300" height="120" rx="12" fill="#ffffff" stroke="#7fa88a" stroke-width="1.5"/>
+  <text x="220" y="562" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Interactive mascot</text>
+  <text x="220" y="586" text-anchor="middle" font-size="13" fill="#666">reacts to taps, results,</text>
+  <text x="220" y="604" text-anchor="middle" font-size="13" fill="#666">state, maybe lip sync</text>
+  <rect x="410" y="530" width="300" height="120" rx="12" fill="#d9ead9" stroke="#3d7a4f" stroke-width="1.5"/>
+  <text x="560" y="560" text-anchor="middle" font-size="16" font-weight="bold" fill="#245c36">Rive (.riv)</text>
+  <text x="560" y="584" text-anchor="middle" font-size="13" fill="#33553d">MIT runtime, State Machine,</text>
+  <text x="560" y="602" text-anchor="middle" font-size="13" fill="#33553d">data binding, scripting</text>
+  <text x="560" y="626" text-anchor="middle" font-size="12" fill="#558060">free tier adds Rive splash screen</text>
+  <line x1="370" y1="590" x2="410" y2="590" stroke="#3d7a4f" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Widget zone -->
+  <rect x="780" y="120" width="380" height="560" rx="18" fill="#fdf3ec" stroke="#b06030" stroke-width="2.5"/>
+  <text x="970" y="158" text-anchor="middle" font-size="22" font-weight="bold" fill="#8a4a20">HOME-SCREEN WIDGET</text>
+  <text x="970" y="182" text-anchor="middle" font-size="14" fill="#8a6a50">RemoteViews: fixed system views only</text>
+
+  <rect x="810" y="210" width="320" height="86" rx="12" fill="#fbe3d4" stroke="#b06030" stroke-width="1.5"/>
+  <text x="970" y="246" text-anchor="middle" font-size="15" font-weight="bold" fill="#8a4a20">No third-party runtimes</text>
+  <text x="970" y="270" text-anchor="middle" font-size="13" fill="#7a5a40">no Lottie, Rive or PAG player views,</text>
+  <text x="970" y="286" text-anchor="middle" font-size="13" fill="#7a5a40">no 60 FPS custom rendering</text>
+
+  <rect x="810" y="330" width="320" height="96" rx="12" fill="#ffffff" stroke="#c98a5a" stroke-width="1.5"/>
+  <text x="970" y="360" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">Pre-rendered stills by state</text>
+  <text x="970" y="384" text-anchor="middle" font-size="13" fill="#666">streak done / at risk / time of day</text>
+  <text x="970" y="404" text-anchor="middle" font-size="12" fill="#a07050">the pattern Duolingo's blog describes</text>
+
+  <rect x="810" y="446" width="320" height="96" rx="12" fill="#ffffff" stroke="#c98a5a" stroke-width="1.5"/>
+  <text x="970" y="476" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">ViewFlipper flip-book</text>
+  <text x="970" y="500" text-anchor="middle" font-size="13" fill="#666">auto-flips pre-built frames with</text>
+  <text x="970" y="518" text-anchor="middle" font-size="13" fill="#666">in/out animations, no update calls</text>
+
+  <rect x="810" y="562" width="320" height="98" rx="12" fill="#ffffff" stroke="#c98a5a" stroke-width="1.5"/>
+  <text x="970" y="592" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">Refresh cadence</text>
+  <text x="970" y="614" text-anchor="middle" font-size="13" fill="#666">prompt on app events; WorkManager is</text>
+  <text x="970" y="632" text-anchor="middle" font-size="13" fill="#666">OS-scheduled, power-limited; periodic</text>
+  <text x="970" y="650" text-anchor="middle" font-size="13" fill="#666">updates: 30-min floor</text>
+
+  <!-- connector between zones -->
+  <line x1="740" y1="400" x2="780" y2="400" stroke="#999" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrG)"/>
+  <text x="760" y="388" text-anchor="middle" font-size="11" fill="#888">export frames</text>
+
+  <text x="600" y="716" text-anchor="middle" font-size="13" fill="#8a8a8a">Also compared in the note: PAG (Apache-2.0, full After Effects pipeline), SVGA (archived), video/GIF. New: RemoteViews.DrawInstructions (API 36+), unverified in the wild.</text>
+  <text x="600" y="740" text-anchor="middle" font-size="12" fill="#aaa">Illustration made for this research note; not a product screenshot or vendor art.</text>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 z" fill="#3d7a4f"/>
+    </marker>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 z" fill="#999"/>
+    </marker>
+  </defs>
+</svg>
