@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-18 17:03 WIB",
+ "checked": "2026-11-18 17:06 WIB",
  "apps": [
   {
    "name": "tuju",
@@ -136,8 +136,8 @@
   {
    "name": "denyut",
    "state": "available",
-   "tag": "Signed full countdown and clock correction",
-   "about": "Offline notes and reminders. Narrow widgets show a complete countdown and clock on separate lines, retaining notes count. Font-aware compact fallback preserves time and notes; long one-row titles may shorten. Emulator host, render and tap-open checks passed. This correction is not yet Samsung-tested. Same package, signer, permissions and data. Local-model loading remains disabled. Source: fcd23d1.",
+   "tag": "Signed time correction; shown Samsung layout accepted",
+   "about": "Offline notes and reminders. Narrow widgets show a complete countdown and clock on separate lines, retaining notes count. Font-aware compact fallback preserves time and notes; long one-row titles may shorten. Emulator host, render and tap-open checks passed. Shown narrow layout accepted on Samsung at 17:06 with full countdown, clock and notes visible. Other spans and tap behavior are not universally phone-proven. Same package, signer, permissions and data. Local-model loading remains disabled. Source: fcd23d1.",
    "repo": "https://github.com/irvan-putra/denyut/commit/fcd23d178c8280870344aab2073fe5464a2f0876",
    "version": "0.7.3",
    "icon": "denyut.png",
