@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-18 21:40 WIB",
+  "checked": "2026-11-18 22:05 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -17,6 +17,18 @@
           "about": "Invented Maya Vale profile with color-coded branches, pan, zoom, fit and branch exploration. All people, places and activities fictional. Original private map unchanged.",
           "url": "https://vanipy.com/tangkai/",
           "source": "https://github.com/irvan-putra/tangkai/commit/ebb5fc2e4804057ffdc4a6b18a802f6ce540619c"
+        }
+      ]
+    },
+    {
+      "title": "Learning by practice",
+      "items": [
+        {
+          "name": "sanggup",
+          "tag": "Cooking prototype0.1.1, same-device demo",
+          "about": "Five cooking stages, practice/history and learner/instructor role switching on one device. No identity verification, cross-device accounts or verified competency. Other tracks disabled; no APK. Gecko concept is not final.",
+          "url": "https://vanipy.com/sanggup/",
+          "source": "https://github.com/irvan-putra/sanggup/commit/001b97f5858c1b97610ac70d6af5287915c8d81e"
         }
       ]
     },
