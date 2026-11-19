@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-19 08:48 WIB",
+  "checked": "2026-11-19 09:11 WIB",
   "apps": [
     {
       "name": "sanggup",
@@ -100,13 +100,13 @@
     {
       "name": "jin",
       "state": "available",
-      "tag": "Experimental test build",
-      "about": "Phone-side Delta Chat bot runtime, built as a standalone validation app. The runtime now ships inside intodo.",
-      "release": "https://github.com/irvan-putra/jin/releases/tag/v0.4.16",
-      "repo": "https://github.com/irvan-putra/jin",
-      "version": "0.4.16",
-      "apk": "https://github.com/irvan-putra/jin/releases/download/v0.4.16/jin-v0.4.16.apk",
-      "sha256": "5ec6d27e303d420e424a08252eaae23963162435ab104700903a926b54d0c713",
+      "tag": "Signed bot UI test; OS/phone UI unverified",
+      "about": "Clearer first-use setup and everyday DeltaChat bot controls, with debugging in a left menu; existing features retained. Permanent signer and13 host tests checked; synthetic fixture renders inspected. Real OS UI smoke and phone journey remain unverified. Two-way Bidik integration is separate and not built.",
+      "release": "https://github.com/irvan-putra/jin/releases/tag/v0.5.0",
+      "repo": "https://github.com/irvan-putra/jin/commit/079812bbbd611da87af3f752bf6506692a1152cd",
+      "version": "0.5.0",
+      "apk": "https://github.com/irvan-putra/jin/releases/download/v0.5.0/jin-v0.5.0.apk",
+      "sha256": "18e11dab0b4758e7d1124a5326dac8f5046a859095f267286e8de61e9dcfaf45",
       "icon": "jin.png"
     },
     {
