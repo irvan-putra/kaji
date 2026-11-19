@@ -1,17 +1,17 @@
 {
-  "checked": "2026-11-19 14:06 WIB",
+  "checked": "2026-11-19 14:23 WIB",
   "apps": [
     {
       "name": "kokok",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "state": "available",
       "icon": "kokok.png",
-      "tag": "Experimental pairing and alarm-volume controls",
-      "about": "Reviewed publisher import, strict publisher key-id checks, visible alarm-volume readout/control, and adaptive/themed version badges. Existing alarm tone retained. Remote delivery and device-specific loudness still require verification; keep a backup alarm until setup is confirmed.",
-      "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.1.2/kokok-v0.1.2.apk",
-      "release": "https://github.com/irvan-putra/kokok/releases/tag/v0.1.2",
-      "repo": "https://github.com/irvan-putra/kokok/commit/e183c3f6134d5ebb903fc45c34cdd1a8d0154883",
-      "sha256": "5616c4894cd4b63a5c34f1f1272e2e6dc4f89e02c2f4b89b78f1e153840169fb"
+      "tag": "Experimental selectable public pairing key",
+      "about": "Selectable public pairing-key text with copy fallback, guarded optional sharing and cold-start cryptography initialization. Existing phone keys and alarm records are kept. Existing alarm tone unchanged. Remote delivery and device-specific loudness still require verification; keep a backup alarm until setup is confirmed.",
+      "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.1.3/kokok-v0.1.3.apk",
+      "release": "https://github.com/irvan-putra/kokok/releases/tag/v0.1.3",
+      "repo": "https://github.com/irvan-putra/kokok/commit/230f0eff3cb56ff1fb0ce9b747e17258e7104f85",
+      "sha256": "bc4d24f31f37b1de4bda254e9ac5e6900a894d00d7e3c007f5f3ca48f0ae480b"
     },
     {
       "name": "tengok",
