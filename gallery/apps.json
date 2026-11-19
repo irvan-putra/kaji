@@ -1,17 +1,17 @@
 {
-  "checked": "2026-11-19 11:27 WIB",
+  "checked": "2026-11-19 14:06 WIB",
   "apps": [
     {
       "name": "kokok",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "state": "available",
       "icon": "kokok.png",
-      "tag": "Experimental signed alarm-service update",
-      "about": "Foreground-service ownership added for sustained ringing; actual sustained ringing, snooze and dismiss reliability remain unverified. Do not rely on it as a primary alarm before testing; keep a normal phone alarm as backup. Secure pairing and scheduling receipt verification remain unproven.",
-      "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.1.1/kokok-v0.1.1.apk",
-      "release": "https://github.com/irvan-putra/kokok/releases/tag/v0.1.1",
-      "repo": "https://github.com/irvan-putra/kokok/commit/f479f008e25e8ed97500af3d7b02ae39bdc18be8",
-      "sha256": "5144d4da36af34bf9bb4a5d2699f3c2e9121c34e422c7c544c3a7efce015a08a"
+      "tag": "Experimental pairing and alarm-volume controls",
+      "about": "Reviewed publisher import, strict publisher key-id checks, visible alarm-volume readout/control, and adaptive/themed version badges. Existing alarm tone retained. Remote delivery and device-specific loudness still require verification; keep a backup alarm until setup is confirmed.",
+      "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.1.2/kokok-v0.1.2.apk",
+      "release": "https://github.com/irvan-putra/kokok/releases/tag/v0.1.2",
+      "repo": "https://github.com/irvan-putra/kokok/commit/e183c3f6134d5ebb903fc45c34cdd1a8d0154883",
+      "sha256": "5616c4894cd4b63a5c34f1f1272e2e6dc4f89e02c2f4b89b78f1e153840169fb"
     },
     {
       "name": "tengok",
