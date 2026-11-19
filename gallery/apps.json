@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-19 01:50 WIB",
+  "checked": "2026-11-19 08:44 WIB",
   "apps": [
     {
       "name": "sanggup",
@@ -148,14 +148,14 @@
     {
       "name": "bidik",
       "state": "available",
-      "tag": "Test build under recording verification",
-      "about": "Local screen recording with Android consent. Ticking-screen recording passed, but static portions or the recording tail can be shortened: duration is not reliable, so this test build is not ready for general recording. Correction in progress; no replacement release yet. Existing webpage capture/account features retained; live pairing/send-back unverified. No automatic recording upload intended.",
-      "repo": "https://github.com/irvan-putra/bidik/commit/4ec8d38",
-      "version": "0.1.2",
+      "tag": "Signed recorder test; emulator verified",
+      "about": "Opt-in local silent screen recording with per-session Android consent and manual share. Corrected still-screen duration and tail; moving/static consent-stop-save/playback checks passed on API34 emulator. Physical-phone home-screen recording untested. Existing webpage capture/account features retained; automatic queue sync and send-back remain unverified. Earlier0.1.2 duration defect is not fixed in its retained artifact.",
+      "repo": "https://github.com/irvan-putra/bidik/commit/fe638e716b6c6d36c9565dd95806726621a2ec8a",
+      "version": "0.1.3",
       "icon": "bidik.png",
-      "apk": "https://github.com/irvan-putra/bidik/releases/download/v0.1.2/bidik-v0.1.2.apk",
-      "release": "https://github.com/irvan-putra/bidik/releases/tag/v0.1.2",
-      "sha256": "04a42f726232aa1012e7f442a4facc49c9d61bdb205b1a5ce22c400ec49f8d95"
+      "apk": "https://github.com/irvan-putra/bidik/releases/download/v0.1.3/bidik-v0.1.3.apk",
+      "release": "https://github.com/irvan-putra/bidik/releases/tag/v0.1.3",
+      "sha256": "41057d22c802c62c8723122a18122964533386ab4eab4567e72fcd193d799ced"
     },
     {
       "name": "denyut",
