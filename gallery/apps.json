@@ -246,11 +246,11 @@
       "state": "legacy",
       "tag": "Previous signed build",
       "about": "Sorts commitments, inbox, space and people you lost touch with. Entries are added by hand. Offline, no permissions, no reminders, no inbox or contact access, nothing is sent. Drafts are text you send yourself. Tested on an Android emulator with synthetic data, not on a real phone. AGPL-3.0.",
-      "repo": "https://github.com/irvan-putra/tumbuh-app",
+      "repo": "https://github.com/irvan-putra/tumbuh",
       "version": "0.1.1",
       "icon": "tumbuh-previous.png",
-      "apk": "https://github.com/irvan-putra/tumbuh-app/releases/download/v0.1.1/tumbuh-v0.1.1.apk",
-      "release": "https://github.com/irvan-putra/tumbuh-app/releases/tag/v0.1.1",
+      "apk": "https://github.com/irvan-putra/tumbuh/releases/download/v0.1.1/tumbuh-v0.1.1.apk",
+      "release": "https://github.com/irvan-putra/tumbuh/releases/tag/v0.1.1",
       "sha256": "8f733d2ca26e3511e70debbfa0ca11387b9fc793d9bf0d94223c294cfc77559a"
     },
     {
@@ -306,11 +306,11 @@
       "state": "legacy",
       "tag": "Previous signed build",
       "about": "Offline manual commitments, inbox, space and people, with a home-screen widget. No inbox/contact access or automated sending. This delivered build predates the pending compact revision; not phone-tested.",
-      "repo": "https://github.com/irvan-putra/tumbuh-app",
+      "repo": "https://github.com/irvan-putra/tumbuh",
       "version": "0.2.0",
       "icon": "tumbuh-0.2.0.png",
-      "apk": "https://github.com/irvan-putra/tumbuh-app/releases/download/v0.2.0/tumbuh-v0.2.0.apk",
-      "release": "https://github.com/irvan-putra/tumbuh-app/releases/tag/v0.2.0",
+      "apk": "https://github.com/irvan-putra/tumbuh/releases/download/v0.2.0/tumbuh-v0.2.0.apk",
+      "release": "https://github.com/irvan-putra/tumbuh/releases/tag/v0.2.0",
       "sha256": "169abc095777deb8240087f97c8d84312016e72473125debe610e259b8d1ed5a"
     },
     {
@@ -402,11 +402,11 @@
       "state": "legacy",
       "tag": "Previous signed build",
       "about": "Offline manual commitments, inbox, space and people, with responsive compact widgets. No inbox/contact access or automated sending. Not verified on a physical Samsung. Useful 2-3-column widget content correction is in progress.",
-      "repo": "https://github.com/irvan-putra/tumbuh-app",
+      "repo": "https://github.com/irvan-putra/tumbuh",
       "version": "0.2.1",
       "icon": "tumbuh-0.2.1.png",
-      "apk": "https://github.com/irvan-putra/tumbuh-app/releases/download/v0.2.1/tumbuh-v0.2.1.apk",
-      "release": "https://github.com/irvan-putra/tumbuh-app/releases/tag/v0.2.1",
+      "apk": "https://github.com/irvan-putra/tumbuh/releases/download/v0.2.1/tumbuh-v0.2.1.apk",
+      "release": "https://github.com/irvan-putra/tumbuh/releases/tag/v0.2.1",
       "sha256": "461f7d2d168eb906e3fd3a5df6d6e15e5d9a91d8b84314da05eef7693e82af1d"
     },
     {
