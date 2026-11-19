@@ -1,6 +1,18 @@
 {
-  "checked": "2026-11-19 09:56 WIB",
+  "checked": "2026-11-19 10:57 WIB",
   "apps": [
+    {
+      "name": "tengok",
+      "version": "0.1.0",
+      "state": "available",
+      "icon": "tengok.png",
+      "tag": "Signed initial test; physical phone unverified",
+      "about": "Local-first multi-format viewer with explicit format limits. Native MIDI, text, hex, image and Open with routes passed emulator tests. No physical-phone or actual sound proof; picker selection not end-to-end verified. Not a universal file viewer.",
+      "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.1.0/tengok-v0.1.0.apk",
+      "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.1.0",
+      "repo": "https://github.com/irvan-putra/tengok/commit/ea1b710be8a4fef07472eff330fd9fa5e704558e",
+      "sha256": "4965849f2f79263ded302714dc4080aff71be1a8900ff01e0ba3a8d8bc167091"
+    },
     {
       "name": "sanggup",
       "version": "0.1.1",
