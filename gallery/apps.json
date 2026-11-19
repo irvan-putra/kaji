@@ -1,17 +1,17 @@
 {
-  "checked": "2026-11-19 14:23 WIB",
+  "checked": "2026-11-19 15:19 WIB",
   "apps": [
     {
       "name": "kokok",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "state": "available",
       "icon": "kokok.png",
-      "tag": "Experimental selectable public pairing key",
-      "about": "Selectable public pairing-key text with copy fallback, guarded optional sharing and cold-start cryptography initialization. Existing phone keys and alarm records are kept. Existing alarm tone unchanged. Remote delivery and device-specific loudness still require verification; keep a backup alarm until setup is confirmed.",
-      "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.1.3/kokok-v0.1.3.apk",
-      "release": "https://github.com/irvan-putra/kokok/releases/tag/v0.1.3",
-      "repo": "https://github.com/irvan-putra/kokok/commit/230f0eff3cb56ff1fb0ce9b747e17258e7104f85",
-      "sha256": "bc4d24f31f37b1de4bda254e9ac5e6900a894d00d7e3c007f5f3ca48f0ae480b"
+      "tag": "Experimental local alarm sound preview and chooser",
+      "about": "Preview the current alarm sound for up to 10 seconds, choose a device alarm sound for kokok only, or return to the phone default. Default unchanged until an explicit choice; no system-volume change. Existing keys and alarm records retained. Installed-device chooser, chosen-tone playback, loudness and overnight reliability still require verification; keep a backup alarm.",
+      "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.1.4/kokok-v0.1.4.apk",
+      "release": "https://github.com/irvan-putra/kokok/releases/tag/v0.1.4",
+      "repo": "https://github.com/irvan-putra/kokok/commit/a6ecd4a783f2ecd355ccd584e3ce7a4bc8418d04",
+      "sha256": "1d2e94f5f1be0ee2365cc2a87061faac874c75cd08ceffc40ec4f62ce0164f26"
     },
     {
       "name": "tengok",
