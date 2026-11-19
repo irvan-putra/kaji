@@ -28,10 +28,10 @@ Checked 2026-11-19. Source: the project's own About page, https://synthesiagame.
 
 ## Ideas to borrow (our reading, not Synthesia's claims)
 
-- Build on open file formats (MIDI, MusicXML) so users are not locked into one editor; relevant to our own MIDI work.
+- Build on open file formats (MIDI, MusicXML) so users are not locked into one editor; any sequencer or notation app stays usable.
 - Falling notes as a beginner interface: play first, notation later, with scoring to keep practice measurable.
-- The funding path is documented in public: donations, then a paid feature pack, then a licensed content store. A small project can start free and add paid layers without changing the core.
-- Naming: "Piano Hero" survived about a year before a Guitar Hero proximity complaint forced a rename. Picking a name far from big brands from the start is cheaper.
+- The funding path is documented in public: donations, then a paid feature pack, then a licensed content store. A free core can gain paid layers without changing what it is.
+- Naming: the project shipped as "Piano Hero" for about a year before a Guitar Hero proximity complaint forced a rename by contest. A public example of what naming near a big brand can cost.
 
 ## Not verified
 
