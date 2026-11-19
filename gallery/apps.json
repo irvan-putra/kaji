@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-19 09:33 WIB",
+  "checked": "2026-11-19 09:44 WIB",
   "apps": [
     {
       "name": "sanggup",
@@ -100,13 +100,13 @@
     {
       "name": "jin",
       "state": "available",
-      "tag": "Signed square-button UI test; OS/phone UI unverified",
-      "about": "Clearer first-use setup and everyday DeltaChat bot controls, square buttons, debugging in a left menu; existing features retained. Host tests and readable synthetic running/setup renders checked. Real OS UI smoke and phone journey remain unverified. Two-way Bidik integration is separate and not built.",
-      "release": "https://github.com/irvan-putra/jin/releases/tag/v0.5.1",
-      "repo": "https://github.com/irvan-putra/jin/commit/6dcc79675643f774249b0a4eee3b851d6a70ff91",
-      "version": "0.5.1",
-      "apk": "https://github.com/irvan-putra/jin/releases/download/v0.5.1/jin-v0.5.1.apk",
-      "sha256": "082cfd6ad41d447bdc9b8e92e4773dfe8f012cd2e60c848ea918a2fb5a35f413",
+      "tag": "Signed label-only UI test; real-device check pending",
+      "about": "Clarifies that the publish button and confirmation publish a new mini app (.xdc) version to chats, not a Jin app update. Square buttons retained. Host tests and supplied render checked; real-device validation remains pending. Two-way Bidik integration is separate and not built.",
+      "release": "https://github.com/irvan-putra/jin/releases/tag/v0.5.2",
+      "repo": "https://github.com/irvan-putra/jin/commit/b0b8332c9556ff05dc8ea03346eb746b47dba8bd",
+      "version": "0.5.2",
+      "apk": "https://github.com/irvan-putra/jin/releases/download/v0.5.2/jin-v0.5.2.apk",
+      "sha256": "d518a324760c39e65575ee161431cae0107385c7e0625cb4098ae80f4253569a",
       "icon": "jin.png"
     },
     {
