@@ -3,15 +3,15 @@
   "apps": [
     {
       "name": "kokok",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "state": "available",
       "icon": "kokok.png",
-      "tag": "Experimental signed pre-runtime test",
-      "about": "Experimental alarm app with17 unit checks reported. Android runtime and layout remain unverified. Do not rely on it as a primary alarm before testing; keep a normal phone alarm as backup. Secure pairing and scheduling receipt verification remain unproven.",
-      "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.1.0/kokok-v0.1.0.apk",
-      "release": "https://github.com/irvan-putra/kokok/releases/tag/v0.1.0",
-      "repo": "https://github.com/irvan-putra/kokok",
-      "sha256": "0bfb62a7cf6fbcc00e363ad0c054c09dc331487210576a47672bc74c83bdb72f"
+      "tag": "Experimental signed alarm-service update",
+      "about": "Foreground-service ownership added for sustained ringing; actual sustained ringing, snooze and dismiss reliability remain unverified. Do not rely on it as a primary alarm before testing; keep a normal phone alarm as backup. Secure pairing and scheduling receipt verification remain unproven.",
+      "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.1.1/kokok-v0.1.1.apk",
+      "release": "https://github.com/irvan-putra/kokok/releases/tag/v0.1.1",
+      "repo": "https://github.com/irvan-putra/kokok/commit/f479f008e25e8ed97500af3d7b02ae39bdc18be8",
+      "sha256": "5144d4da36af34bf9bb4a5d2699f3c2e9121c34e422c7c544c3a7efce015a08a"
     },
     {
       "name": "tengok",
@@ -184,8 +184,8 @@
     {
       "name": "denyut",
       "state": "available",
-      "tag": "Signed time correction; shown Samsung layout accepted",
-      "about": "Offline notes and reminders. Narrow widgets show a complete countdown and clock on separate lines, retaining notes count. Font-aware compact fallback preserves time and notes; long one-row titles may shorten. Emulator host, render and tap-open checks passed. Shown narrow layout accepted on Samsung at 17:06 with full countdown, clock and notes visible. Other spans and tap behavior are not universally phone-proven. Same package, signer, permissions and data. Local-model loading remains disabled. Source: fcd23d1.",
+      "tag": "Signed compact time-layout correction",
+      "about": "Offline notes and reminders. Narrow widgets show a complete countdown and clock on separate lines, retaining notes count. Font-aware compact fallback preserves time and notes; long one-row titles may shorten. Emulator host, render and tap-open checks passed. Narrow layout checked on Samsung; other spans and tap behavior are not universally phone-proven. Same package, signer, permissions and data. Local-model loading remains disabled. Source: fcd23d1.",
       "repo": "https://github.com/irvan-putra/denyut/commit/fcd23d178c8280870344aab2073fe5464a2f0876",
       "version": "0.7.3",
       "icon": "denyut.png",
@@ -282,8 +282,8 @@
       "version": "0.5.18",
       "state": "available",
       "icon": "intodo.png",
-      "tag": "Signed real/Demo switching; Samsung setup confirmed",
-      "about": "Separate real and synthetic Demo feeds with independent saved items and freshness. One-time setup keeps the existing key. Samsung setup confirmed18Nov: real app list, Demo banner/list and six DEMO-prefixed widget items. Automated tests passed; this does not prove every race/cache edge.",
+      "tag": "Signed real/Demo feed switching",
+      "about": "Separate real and synthetic Demo feeds with independent saved items and freshness. One-time setup retains the existing key. Real/Demo app and widget layouts checked on Samsung. Automated tests passed; this does not prove every race/cache edge.",
       "repo": "https://github.com/irvan-putra/intodo",
       "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.18/intodo-v0.5.18.apk",
       "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.18",
@@ -295,7 +295,7 @@
       "state": "legacy",
       "icon": "menit-0.2.0.png",
       "tag": "Previous signed build",
-      "about": "Phone-usage totals and a resizable home-screen widget. This delivered build predates the pending all-sizes compact revision. Emulator checks are not proof on your Samsung.",
+      "about": "Phone-usage totals and a resizable home-screen widget. This older build predates the all-sizes compact revision. Emulator checks are not proof on a physical Samsung.",
       "apk": "https://github.com/irvan-putra/menit/releases/download/v0.2.0/menit-v0.2.0.apk",
       "release": "https://github.com/irvan-putra/menit/releases/tag/v0.2.0",
       "repo": "https://github.com/irvan-putra/menit",
