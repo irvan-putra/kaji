@@ -19,7 +19,7 @@
       "state": "available",
       "icon": "tengok.png",
       "tag": "Experimental checksum repair and local diagnostics",
-      "about": "Buffered-byte checksum repair passed a pinned emulator fixture; a physical-device same-file trial is still required. Details falls back safely on hashing errors. Expanded diagnostics stay local and are shared only manually, with structured fields instead of file names, paths or contents. The full crash trace stays on the phone. No automatic upload. Existing MIDI, image, audio, text and hex views retain their format limits. Game and folder explorer are not included. Packaged launcher icons read 0.1.4.",
+      "about": "Buffered-byte checksum repair passed a pinned emulator fixture and a same-file device trial. This does not prove every format or provider. Details falls back safely on hashing errors. Expanded diagnostics stay local and are shared only manually, with structured fields instead of file names, paths or contents. The full crash trace stays on the phone. No automatic upload. Existing MIDI, image, audio, text and hex views retain their format limits. Game and folder explorer are not included. Packaged launcher icons read 0.1.4.",
       "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.1.4/tengok-v0.1.4.apk",
       "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.1.4",
       "repo": "https://github.com/irvan-putra/tengok/commit/8f5f4d1a31aff1123ec7099891f6df75a0887fb1",
