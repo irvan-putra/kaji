@@ -49,5 +49,6 @@ This repo also includes illustrations alongside the Android-update, application-
 
 - [What it would take to create .jakarta](docs/jakarta-tld.md) - the ICANN path for a city TLD, current .jakarta status, costs, government support rules, and the .amsterdam precedent.
 - [Jakarta Smart City feasibility sketch for .jakarta](docs/jakarta-smart-city-feasibility.md) - indicative Rupiah fee conversions and a proposal outline, with BLUD authority, procurement path, demand, and costs left for proper study and review.
+- [Synthesia: a falling-notes piano practice tool](docs/synthesia-piano-practice-tool.md) - what its About page says: falling notes, standard MIDI/MusicXML songs, and a donations-to-paid history; company claims not independently verified.
 
 Project-specific research that only makes sense inside its own project stays in that project's repository instead.
