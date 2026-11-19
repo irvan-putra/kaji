@@ -15,15 +15,15 @@
     },
     {
       "name": "tengok",
-      "version": "0.1.2",
+      "version": "0.1.4",
       "state": "available",
       "icon": "tengok.png",
-      "tag": "Experimental MIDI auto-follow and velocity shading",
-      "about": "MIDI piano-roll auto-follow and velocity shading with staggered note timing retained. Native/emulator checks passed; actual device audio and file-picker behavior still require verification. Images, audio, text and hex fallback remain available, with explicit format limits. Game and folder browsing are not included in this build. Packaged icon still shows the old 0.1.0 badge; app version is 0.1.2.",
-      "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.1.2/tengok-v0.1.2.apk",
-      "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.1.2",
-      "repo": "https://github.com/irvan-putra/tengok/commit/d45040bbdebd09b15f75b30ea53aa24c8f20754f",
-      "sha256": "c7d0c384e762a151fa327aace0bf73c7a90339776596913bbf915423cc395679"
+      "tag": "Experimental checksum repair and local diagnostics",
+      "about": "Buffered-byte checksum repair passed a pinned emulator fixture; a physical-device same-file trial is still required. Details falls back safely on hashing errors. Expanded diagnostics stay local and are shared only manually, with structured fields instead of file names, paths or contents. The full crash trace stays on the phone. No automatic upload. Existing MIDI, image, audio, text and hex views retain their format limits. Game and folder explorer are not included. Packaged launcher icons read 0.1.4.",
+      "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.1.4/tengok-v0.1.4.apk",
+      "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.1.4",
+      "repo": "https://github.com/irvan-putra/tengok/commit/8f5f4d1a31aff1123ec7099891f6df75a0887fb1",
+      "sha256": "e75d9c24497bae96909751ef5ffe28de307a14ccc4df43100f3920cbe7a1d7a5"
     },
     {
       "name": "sanggup",
