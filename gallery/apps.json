@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-19 15:19 WIB",
+  "checked": "2026-11-19 15:39 WIB",
   "apps": [
     {
       "name": "kokok",
@@ -15,15 +15,15 @@
     },
     {
       "name": "tengok",
-      "version": "0.1.0",
+      "version": "0.1.2",
       "state": "available",
       "icon": "tengok.png",
-      "tag": "Signed initial test; physical phone unverified",
-      "about": "Local-first multi-format viewer with explicit format limits. Native MIDI, text, hex, image and Open with routes passed emulator tests. No physical-phone or actual sound proof; picker selection not end-to-end verified. Not a universal file viewer.",
-      "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.1.0/tengok-v0.1.0.apk",
-      "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.1.0",
-      "repo": "https://github.com/irvan-putra/tengok/commit/ea1b710be8a4fef07472eff330fd9fa5e704558e",
-      "sha256": "4965849f2f79263ded302714dc4080aff71be1a8900ff01e0ba3a8d8bc167091"
+      "tag": "Experimental MIDI auto-follow and velocity shading",
+      "about": "MIDI piano-roll auto-follow and velocity shading with staggered note timing retained. Native/emulator checks passed; actual device audio and file-picker behavior still require verification. Images, audio, text and hex fallback remain available, with explicit format limits. Game and folder browsing are not included in this build. Packaged icon still shows the old 0.1.0 badge; app version is 0.1.2.",
+      "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.1.2/tengok-v0.1.2.apk",
+      "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.1.2",
+      "repo": "https://github.com/irvan-putra/tengok/commit/d45040bbdebd09b15f75b30ea53aa24c8f20754f",
+      "sha256": "c7d0c384e762a151fa327aace0bf73c7a90339776596913bbf915423cc395679"
     },
     {
       "name": "sanggup",
@@ -210,11 +210,11 @@
       "state": "available",
       "tag": "Signed useful-width widget correction; not Samsung-tested",
       "about": "Offline manual commitments, inbox, space and people. Useful title and first step at2-3columns, full details larger. Emulator-qualified, not Samsung-tested. No inbox/contact access or automated sending.",
-      "repo": "https://github.com/irvan-putra/tumbuh-app",
+      "repo": "https://github.com/irvan-putra/tumbuh",
       "version": "0.2.2",
       "icon": "tumbuh.png",
-      "apk": "https://github.com/irvan-putra/tumbuh-app/releases/download/v0.2.2/tumbuh-v0.2.2.apk",
-      "release": "https://github.com/irvan-putra/tumbuh-app/releases/tag/v0.2.2",
+      "apk": "https://github.com/irvan-putra/tumbuh/releases/download/v0.2.2/tumbuh-v0.2.2.apk",
+      "release": "https://github.com/irvan-putra/tumbuh/releases/tag/v0.2.2",
       "sha256": "41a33407189ef2a7a81acd79373939f3a6cf07a91930dc299871b55831df6bcd"
     },
     {
