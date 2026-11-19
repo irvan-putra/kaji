@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-19 15:39 WIB",
+  "checked": "2026-11-19 16:10 WIB",
   "apps": [
     {
       "name": "kokok",
@@ -135,15 +135,16 @@
     },
     {
       "name": "unggah",
-      "version": "1.1.2",
+      "version": "1.1.3",
       "state": "available",
-      "tag": "Signed new app identity; separate install",
-      "about": "Pushes a ZIP to a chosen GitHub repository over SSH. New com.vanipy.unggah identity installs separately from the previous app. Existing settings are untouched; backup/import settings and set up a new SSH key as needed.",
+      "tag": "Numeric-version maintenance release",
+      "about": "Pushes a ZIP to a chosen GitHub repository over SSH. Maintenance update: app version, numeric release tag, APK filename and launcher badge agree. Same com.vanipy.unggah package and release signer; update in place without uninstalling or clearing data. No feature changes or new physical-device runtime claim.",
       "repo": "https://github.com/irvan-putra/unggah",
       "icon": "unggah.png",
-      "apk": "https://github.com/irvan-putra/unggah/releases/download/v1.1.2-unggah/unggah-v1.1.2.apk",
-      "release": "https://github.com/irvan-putra/unggah/releases/tag/v1.1.2-unggah",
-      "sha256": "3b6a25c03e4423c52a52da5500645b6402efc80a5d6c56c1e0fd5616ff23132d"
+      "apk": "https://github.com/irvan-putra/unggah/releases/download/v1.1.3/unggah-v1.1.3.apk",
+      "release": "https://github.com/irvan-putra/unggah/releases/tag/v1.1.3",
+      "sha256": "af5271a7ddc57e55d9a4781bd81bc75add4211243dd99dfe40f24683b21eb547",
+      "source_commit": "https://github.com/irvan-putra/unggah/commit/46116142ca79d88a37eeb007acbdce89199d7c24"
     },
     {
       "name": "sapa",
@@ -540,6 +541,18 @@
       "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.6",
       "repo": "https://github.com/irvan-putra/tuju/commit/900dd4f7b2ae5058300cbe53060c1c2a421fd370",
       "sha256": "a79fede35f44953af1b8349a5abdabdb9abc20aaef90dd074303eb4a24dfd0cd"
+    },
+    {
+      "name": "unggah",
+      "version": "1.1.2",
+      "state": "legacy",
+      "tag": "Previous signed build",
+      "about": "Pushes a ZIP to a chosen GitHub repository over SSH. New com.vanipy.unggah identity installs separately from the previous app. Existing settings are untouched; backup/import settings and set up a new SSH key as needed.",
+      "repo": "https://github.com/irvan-putra/unggah",
+      "icon": "unggah-1.1.2.png",
+      "apk": "https://github.com/irvan-putra/unggah/releases/download/v1.1.2-unggah/unggah-v1.1.2.apk",
+      "release": "https://github.com/irvan-putra/unggah/releases/tag/v1.1.2-unggah",
+      "sha256": "3b6a25c03e4423c52a52da5500645b6402efc80a5d6c56c1e0fd5616ff23132d"
     }
   ]
 }
