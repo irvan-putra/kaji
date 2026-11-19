@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-19 09:11 WIB",
+  "checked": "2026-11-19 09:33 WIB",
   "apps": [
     {
       "name": "sanggup",
@@ -100,13 +100,13 @@
     {
       "name": "jin",
       "state": "available",
-      "tag": "Signed bot UI test; OS/phone UI unverified",
-      "about": "Clearer first-use setup and everyday DeltaChat bot controls, with debugging in a left menu; existing features retained. Permanent signer and13 host tests checked; synthetic fixture renders inspected. Real OS UI smoke and phone journey remain unverified. Two-way Bidik integration is separate and not built.",
-      "release": "https://github.com/irvan-putra/jin/releases/tag/v0.5.0",
-      "repo": "https://github.com/irvan-putra/jin/commit/079812bbbd611da87af3f752bf6506692a1152cd",
-      "version": "0.5.0",
-      "apk": "https://github.com/irvan-putra/jin/releases/download/v0.5.0/jin-v0.5.0.apk",
-      "sha256": "18e11dab0b4758e7d1124a5326dac8f5046a859095f267286e8de61e9dcfaf45",
+      "tag": "Signed square-button UI test; OS/phone UI unverified",
+      "about": "Clearer first-use setup and everyday DeltaChat bot controls, square buttons, debugging in a left menu; existing features retained. Host tests and readable synthetic running/setup renders checked. Real OS UI smoke and phone journey remain unverified. Two-way Bidik integration is separate and not built.",
+      "release": "https://github.com/irvan-putra/jin/releases/tag/v0.5.1",
+      "repo": "https://github.com/irvan-putra/jin/commit/6dcc79675643f774249b0a4eee3b851d6a70ff91",
+      "version": "0.5.1",
+      "apk": "https://github.com/irvan-putra/jin/releases/download/v0.5.1/jin-v0.5.1.apk",
+      "sha256": "082cfd6ad41d447bdc9b8e92e4773dfe8f012cd2e60c848ea918a2fb5a35f413",
       "icon": "jin.png"
     },
     {
