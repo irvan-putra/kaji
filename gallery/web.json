@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 17:13 WIB",
+  "checked": "2026-11-20 17:16 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -239,6 +239,16 @@
           "android": "https://github.com/irvan-putra/cabang/releases/tag/v0.3.2",
           "icon": "../apk/icons/cabang.png",
           "icon_note": "Android0.3.2 packaged icon; static web viewer is separate"
+        },
+        {
+          "name": "Sapa web counter",
+          "tag": "Local camera/photo test, phone unverified",
+          "about": "Browser-local people/raised-hand counter with local photo check, manual correction, timed rounds and random pick. First model/runtime load about28MB. A clear raised-hand photo passed; a backlit crowd test failed, so do not rely on it for accurate room counts or voting. Phone/live-room behavior unverified. No frame upload or online AI, Android Jev features not included. AGPL model/app and MIT runtime notices linked.",
+          "url": "https://vanipy.com/sapa/",
+          "source": "https://github.com/irvan-putra/sapa/commit/356ad8d79532ec26c759238a922abb288267a0e4",
+          "android": "https://github.com/irvan-putra/sapa/releases/tag/v0.5.8",
+          "icon": "../apk/icons/sapa.png",
+          "icon_note": "Android0.5.8 packaged icon; browser model/runtime port is separate"
         }
       ]
     },
