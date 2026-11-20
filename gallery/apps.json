@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 14:13 WIB",
+  "checked": "2026-11-20 14:17 WIB",
   "apps": [
     {
       "name": "kokok",
@@ -17,13 +17,25 @@
       "name": "kokok",
       "version": "0.1.4",
       "state": "legacy",
-      "icon": "kokok.png",
+      "icon": "kokok-0.1.4.png",
       "tag": "Previous signed build",
       "about": "Preview the current alarm sound for up to 10 seconds, choose a device alarm sound for kokok only, or return to the phone default. Default unchanged until an explicit choice; no system-volume change. Existing keys and alarm records retained. Experimental alarm delivery and local scheduling are not a guarantee of exact timing or reliability across every device state. Keep an independent backup for important wake-ups.",
       "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.1.4/kokok-v0.1.4.apk",
       "release": "https://github.com/irvan-putra/kokok/releases/tag/v0.1.4",
       "repo": "https://github.com/irvan-putra/kokok/commit/5e18e689d4dc5fa175147610d0c3b3eef0f23dbe",
       "sha256": "1d2e94f5f1be0ee2365cc2a87061faac874c75cd08ceffc40ec4f62ce0164f26"
+    },
+    {
+      "name": "sanggup",
+      "version": "0.1.3",
+      "state": "available",
+      "icon": "sanggup.png",
+      "tag": "30 offline skill paths, experimental test APK",
+      "about": "30 offline skill paths in a 5x6 grid, merged Consulting/Freelance and Priorities/Deciding, plus Teaching/mentoring and Negotiation with requested practical frameworks. Signed launch screen checked. Upgrade from0.1.2 is still being verified; do not treat publication as data-retention proof. Widget tests include passes and intermittent failures, cause under investigation. Physical-phone behavior unverified. Browser and Android progress stay separate, not competency or income proof. Newer web-only shared-subskill labels are not in these APK bytes.",
+      "apk": "https://github.com/irvan-putra/sanggup/releases/download/v0.1.3/sanggup-v0.1.3.apk",
+      "release": "https://github.com/irvan-putra/sanggup/releases/tag/v0.1.3",
+      "repo": "https://github.com/irvan-putra/sanggup/commit/2d3d2a5531ca785ec3fad54c2509abc4a5e8c9bb",
+      "sha256": "fa468f7d4bc98adc2030d30d2c913586a621c4faccfc2346ba5888a6d32de3bd"
     },
     {
       "name": "tengok",
@@ -40,9 +52,9 @@
     {
       "name": "sanggup",
       "version": "0.1.2",
-      "state": "available",
-      "icon": "sanggup.png",
-      "tag": "25 offline skill paths in a 5x5 grid, experimental test APK",
+      "state": "legacy",
+      "icon": "sanggup-0.1.2.png",
+      "tag": "Previous signed build, 25 offline paths",
       "about": "25 offline starter paths with a5x5 app grid, including Content creator and expanded Community building. Signed0.1.1-to0.1.2 upgrade retained synthetic progress/streak; post-publication checks passed. Widget tests include passes and intermittent failures under investigation, cause unproven. Physical-phone behavior unverified. Browser/Android progress stays separate, not competency or income proof. Newer web content is separate from these APK bytes.",
       "apk": "https://github.com/irvan-putra/sanggup/releases/download/v0.1.2/sanggup-v0.1.2.apk",
       "release": "https://github.com/irvan-putra/sanggup/releases/tag/v0.1.2",
