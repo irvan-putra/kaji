@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 11:03 WIB",
+  "checked": "2026-11-20 12:23 WIB",
   "apps": [
     {
       "name": "kokok",
@@ -553,6 +553,18 @@
       "apk": "https://github.com/irvan-putra/unggah/releases/download/v1.1.2-unggah/unggah-v1.1.2.apk",
       "release": "https://github.com/irvan-putra/unggah/releases/tag/v1.1.2-unggah",
       "sha256": "3b6a25c03e4423c52a52da5500645b6402efc80a5d6c56c1e0fd5616ff23132d"
+    },
+    {
+      "name": "nada",
+      "version": "0.1.2",
+      "state": "available",
+      "icon": "nada.png",
+      "tag": "Precise music recipe to MIDI",
+      "about": "Deterministic recipe-to-MIDI generator, not a conversational composing workshop. Signed Android release loaded and saved through its real UI in an emulator. Physical-phone behavior remains unverified. Supersedes 0.1.1; the production test-save trigger is removed.",
+      "apk": "https://github.com/irvan-putra/nada/releases/download/v0.1.2/nada-v0.1.2.apk",
+      "release": "https://github.com/irvan-putra/nada/releases/tag/v0.1.2",
+      "repo": "https://github.com/irvan-putra/nada/commit/5647aa8f25f4c04c59044c212b9badf0161077bf",
+      "sha256": "1081313eadbdb0b942e8ff4f333f40597ea58f3d65fc97663899987507233a6a"
     }
   ]
 }
