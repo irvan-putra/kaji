@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 16:47 WIB",
+  "checked": "2026-11-20 16:57 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -193,6 +193,24 @@
           "icon": "../apk/icons/intodo.png",
           "icon_note": "Android 0.5.19 app icon; web version is separate",
           "android": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.19"
+        },
+        {
+          "name": "menit manual web companion",
+          "tag": "Browser-local manual entries",
+          "about": "Enter daily minutes yourself from Digital Wellbeing. Separates listed AI apps from apps that may include AI; no automatic phone usage measurement. Data stays in this browser, with plain JSON backup/import. No Android data sync.",
+          "url": "https://vanipy.com/menit/",
+          "source": "https://github.com/irvan-putra/menit/commit/28e8219971296c8e6e004b4ba146ce0fefec8225",
+          "icon": "../apk/icons/menit.png",
+          "icon_note": "Android app icon; this manual web companion is separate"
+        },
+        {
+          "name": "Kokok open-tab web companion",
+          "tag": "Plan and test only, unreliable background alarms",
+          "about": "Plan local alarms and use test sound/snooze only while this browser tab stays open and awake. Not a reliable wake-up alarm. Closing, pausing or muting the tab can prevent ringing. Plain JSON export is reference only, not the encrypted Kokok feed. No phone alarms or feed are changed.",
+          "url": "https://vanipy.com/kokok/",
+          "source": "https://github.com/irvan-putra/kokok/commit/2cdd15eba3e0651c851f14435b5856f0ad0174b8",
+          "icon": "../apk/icons/kokok.png",
+          "icon_note": "Android app icon; open-tab web planner is separate"
         }
       ]
     },
