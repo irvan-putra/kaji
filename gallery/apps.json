@@ -15,9 +15,21 @@
     },
     {
       "name": "tengok",
-      "version": "0.3.4",
+      "version": "0.3.6",
       "state": "available",
       "icon": "tengok.png",
+      "tag": "Sustained-note scoring and above-key sparks test",
+      "about": "Sustained notes remain hittable until 400ms after their end, while Perfect stays within 100ms of onset. Judged hits have above-key sparks; plain touches stay distinct. Samples collapse after selection. Actual code11 APK/icon/checksum and unchanged signer verified; zero Android permissions. Emulator three-judged/zero-miss smoke passed, but the reported phone song, finger visibility and scoring need a physical retest. Each chord note still needs its own key press. Intermediate 0.3.5 remains in release history, not the current recommendation. Converters excluded. Update in place, do not uninstall.",
+      "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.6/tengok-v0.3.6.apk",
+      "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.6",
+      "repo": "https://github.com/irvan-putra/tengok/commit/f0729b47a0f7db3f16c2b898b9ee0bae152a72b2",
+      "sha256": "32298db7f5f44c8229d421950ad88602fef25e30c8bedd24d723ebced0aee975"
+    },
+    {
+      "name": "tengok",
+      "version": "0.3.4",
+      "state": "legacy",
+      "icon": "tengok034.png",
       "tag": "Published test candidate, phone/proof pending",
       "about": "Signed0.3.4/code9 candidate, actual bytes/icon/checksum verified, zero Android permissions and unchanged signer. Current emulator/upgrade proof pending; no claim of fixed phone tap/audio behavior. Prior tap-cause hypotheses remain unconfirmed. Converters stay excluded.",
       "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.4/tengok-v0.3.4.apk",
