@@ -309,9 +309,9 @@
         {
           "name": "saku",
           "tag": "Fake-data-only local vault development preview",
-          "about": "Standalone KDBX web vault development preview, not audited. Fake data only, no real passwords. Synthetic edit/save/readback checked. The library accepts trailing terminator-HMAC tampering, an unresolved security gap. No vault upload, browser persistence or sync. Phone performance and shared Android-file compatibility remain unverified; Android path stays separate.",
+          "about": "Standalone KDBX development preview, not audited. Fake data only, no real passwords. Fake KeePassXC2.7.12 KDBX4 AES/Argon2d64MiB and KDBX3.1 open/edit/save/reopen checked. A handwritten ending check rejects tested corruption, but has no independent security review.25 synthetic fixture checks and manual KeePassXC comparison are not automated oracle integration. No upload, browser persistence or sync; phone performance and shared Android-file compatibility remain unverified.",
           "url": "https://vanipy.com/saku/",
-          "source": "https://github.com/irvan-putra/saku/commit/80de643c9694535f2431422c271443ab016fa3d0",
+          "source": "https://github.com/irvan-putra/saku/commit/2f2becea20b7e90ef14b4f7c4715e93a861aae96",
           "icon": "../apk/icons/saku.png",
           "icon_note": "Android icon; standalone web development preview is separate"
         }
