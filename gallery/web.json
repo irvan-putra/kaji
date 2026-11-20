@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 17:46 WIB",
+  "checked": "2026-11-20 18:57 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -133,9 +133,9 @@
           "about": "Create, edit, complete, archive and restore tasks with lists and date labels. JSON backup and copy-only import. Separate from Android: no phone sync or timed alerts. Clearing browser data can erase tasks; backups contain unencrypted task text. Existing review prototypes remain available. Actual Tindak root serves this app directly, not a redirect. Fresh Tindak browser storage identity, unused old state intentionally not migrated.",
           "url": "https://vanipy.com/tindak/",
           "source": "https://github.com/irvan-putra/tindak/commit/3fbfc421ed57590a324e7c76d8738893a3e700d8",
-          "android": "https://github.com/irvan-putra/tindak/releases/tag/v0.5.21",
+          "android": "https://github.com/irvan-putra/tindak/releases/tag/v0.5.22",
           "icon": "../apk/icons/tindak.png",
-          "icon_note": "Android0.5.21 packaged icon; web app remains separate"
+          "icon_note": "Android 0.5.22 app icon; browser data is separate"
         },
         {
           "name": "tindak review prototype",
@@ -153,9 +153,9 @@
           "about": "A simulation, not the live app. Android task app linked separately; this is a review prototype or historical simulation, not a synced task web app.",
           "url": "https://vanipy.com/intodo/shared-list-simulation/",
           "source": "https://github.com/irvan-putra/intodo/blob/main/demos-shared-list-simulation/index.html",
-          "android": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.19",
+          "android": "https://github.com/irvan-putra/tindak/releases/tag/v0.5.22",
           "icon": "../apk/icons/intodo.png",
-          "icon_note": "Android 0.5.19 app icon; web version is separate"
+          "icon_note": "Android 0.5.22 app icon; browser data is separate"
         },
         {
           "name": "Edge AI demo lab",
