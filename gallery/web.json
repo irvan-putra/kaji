@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 18:57 WIB",
+  "checked": "2026-11-20 19:02 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -273,11 +273,29 @@
         {
           "name": "denyut",
           "tag": "Browser-local Python-core commands",
-          "about": "Deployed Python-core commands, notes retention and a tab-awake reminder. Browser-local data stays separate from Android. Not a freeform model or a reliable background/locked-phone reminder. Phone performance remains unverified.",
+          "about": "Deployed Python-core commands, notes retention and a tab-awake reminder. Browser-local data stays separate from Android. Not a freeform model or a reliable background/locked-phone reminder. Phone performance remains unverified. Separate Android widget due-time tests currently fail, including before this browser addition; browser success does not qualify Android.",
           "url": "https://vanipy.com/denyut/",
           "source": "https://github.com/irvan-putra/denyut/commit/50feb97024961da167bff364cd086a5adad1adb4",
           "icon": "../apk/icons/denyut.png",
           "icon_note": "Android app icon; browser and Android behavior/data are separate"
+        },
+        {
+          "name": "bidik",
+          "tag": "Local-video loop and GIF maker",
+          "about": "Separate browser JavaScript implementation with local video selection, loop candidates, trim, preview and GIF export. Videos are not uploaded. Synthetic desktop fixtures passed; MP4, real gameplay and phone performance remain untested. Not proof of Android loop/GIF correctness. No browser screen recording.",
+          "url": "https://vanipy.com/bidik/",
+          "source": "https://github.com/irvan-putra/bidik/commit/e4f5691d33109435f7e002150eeb000775311ec7",
+          "icon": "../apk/icons/bidik.png",
+          "icon_note": "Android app icon; browser data and behavior are separate"
+        },
+        {
+          "name": "unggun",
+          "tag": "Public GitHub release checker",
+          "about": "Check public GitHub releases and APK links using a browser-local project list. Does not install Android apps or share the Android project list. Phone installation and Android behavior remain separate.",
+          "url": "https://vanipy.com/unggun/",
+          "source": "https://github.com/irvan-putra/unggun/commit/7ed0acb2f32426e2ac25bd523e4da7504b41fa66",
+          "icon": "../apk/icons/unggun.png",
+          "icon_note": "Android app icon; browser data and behavior are separate"
         }
       ]
     },
