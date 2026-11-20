@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 17:09 WIB",
+  "checked": "2026-11-20 17:13 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -229,6 +229,16 @@
           "source": "https://github.com/irvan-putra/sambung/commit/7ac09e05c2a577bb7f146c9ba512cc5c686034c3",
           "icon": "../apk/icons/sambung.png",
           "icon_note": "Android app icon; web data is separate"
+        },
+        {
+          "name": "Cabang web viewer",
+          "tag": "Static browser viewer, no live DeltaChat",
+          "about": "Explore fictional Demo threads or open a Cabang JSON export locally. Guessed thread branches may be wrong. Static browser viewer only: no live DeltaChat account access, sending, or sync. File contents are not uploaded. Android is a separate build.",
+          "url": "https://vanipy.com/cabang/",
+          "source": "https://github.com/irvan-putra/cabang/commit/c98c4915110ec6cd4f0f2e451c4a347ef1fd36c6",
+          "android": "https://github.com/irvan-putra/cabang/releases/tag/v0.3.2",
+          "icon": "../apk/icons/cabang.png",
+          "icon_note": "Android0.3.2 packaged icon; static web viewer is separate"
         }
       ]
     },
