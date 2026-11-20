@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 16:18 WIB",
+  "checked": "2026-11-20 16:47 WIB",
   "apps": [
     {
       "name": "kokok",
@@ -143,7 +143,8 @@
       "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.13/intodo-v0.5.13.apk",
       "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.13",
       "repo": "https://github.com/irvan-putra/intodo",
-      "sha256": "f01e87543ff14c4ac403334467f7e03d86d5e09b400fcb2bbdee39d099911ff1"
+      "sha256": "f01e87543ff14c4ac403334467f7e03d86d5e09b400fcb2bbdee39d099911ff1",
+      "display_name": "tindak"
     },
     {
       "name": "kemas",
@@ -340,15 +341,29 @@
     },
     {
       "name": "intodo",
-      "version": "0.5.18",
+      "version": "0.5.19",
       "state": "available",
       "icon": "intodo.png",
+      "tag": "Signed display-name test; stable package/data identity",
+      "about": "Visible launcher, widget and app labels use tindak. Existing package, signer, pairing key, saved feeds, tasks and update paths remain unchanged. Prior0.5.18 phone checks do not prove this new0.5.19 on the physical phone. Full unit tests and signed-byte identity checks passed; no on-phone upgrade performed. Browser tasks remain separate, with no Android sync or timed alerts.",
+      "repo": "https://github.com/irvan-putra/intodo/commit/e8851e12fac519b7470f8383f43ad536a55feae8",
+      "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.19/intodo-v0.5.19.apk",
+      "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.19",
+      "sha256": "b5001fe2671cb3f6790299136c4d6e2ab1cbe5930b74823d634f9474cd0dbb06",
+      "display_name": "tindak"
+    },
+    {
+      "name": "intodo",
+      "version": "0.5.18",
+      "state": "legacy",
+      "icon": "intodo-0.5.18.png",
       "tag": "Signed real/Demo feed switching",
       "about": "Separate real and synthetic Demo feeds with independent saved items and freshness. One-time setup retains the existing key. Real/Demo app and widget layouts checked on Samsung. Automated tests passed; this does not prove every race/cache edge.",
       "repo": "https://github.com/irvan-putra/intodo",
       "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.18/intodo-v0.5.18.apk",
       "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.18",
-      "sha256": "796da494130d2fe4769674f339068276cd070650762da05d05fb2bbf372a61e7"
+      "sha256": "796da494130d2fe4769674f339068276cd070650762da05d05fb2bbf372a61e7",
+      "display_name": "tindak"
     },
     {
       "name": "menit",
@@ -420,7 +435,8 @@
       "repo": "https://github.com/irvan-putra/intodo",
       "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.14/intodo-v0.5.14.apk",
       "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.14",
-      "sha256": "392c257e7e862038863d5f90076269d2d480a11993772dd7f1f809ea8bdd7c1d"
+      "sha256": "392c257e7e862038863d5f90076269d2d480a11993772dd7f1f809ea8bdd7c1d",
+      "display_name": "tindak"
     },
     {
       "name": "tuju",
@@ -444,7 +460,8 @@
       "repo": "https://github.com/irvan-putra/intodo",
       "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.16/intodo-v0.5.16.apk",
       "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.16",
-      "sha256": "687908c23385118c762ee684bb4c9b9c93cededc11d3f1f7ce89afa6cd837c4a"
+      "sha256": "687908c23385118c762ee684bb4c9b9c93cededc11d3f1f7ce89afa6cd837c4a",
+      "display_name": "tindak"
     },
     {
       "name": "menit",
@@ -552,7 +569,8 @@
       "repo": "https://github.com/irvan-putra/intodo",
       "apk": "https://github.com/irvan-putra/intodo/releases/download/v0.5.17/intodo-v0.5.17.apk",
       "release": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.17",
-      "sha256": "e17971ebca35e8dfb12499d3911a23e8000ab627626bc3c84a0cf2a006bc6f99"
+      "sha256": "e17971ebca35e8dfb12499d3911a23e8000ab627626bc3c84a0cf2a006bc6f99",
+      "display_name": "tindak"
     },
     {
       "name": "tuju",

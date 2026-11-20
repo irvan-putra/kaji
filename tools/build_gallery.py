@@ -35,23 +35,23 @@ def apps():
     out = '<section aria-label="Filter builds by app"><h2>Choose an app</h2><div class="filter-toolbar"><button class="btn" type="button" data-filter="" aria-pressed="true">All apps</button><p id="filter-status" role="status" aria-live="polite"></p></div><div class="app-picker">'
     for name, a in unique.items():
         icon = f'<img src="icons/{e(a["icon"])}" alt="" width="44" height="44">' if a.get("icon") else f'<span class="ph" aria-hidden="true">{e(name[0])}</span>'
-        out += f'<button class="app-filter" type="button" data-filter="{e(name)}" aria-pressed="false">{icon}<span>{e(name)}</span></button>'
+        out += f'<button class="app-filter" type="button" data-filter="{e(name)}" aria-pressed="false">{icon}<span>{e(a.get("display_name", name))}</span></button>'
     out += '</div><noscript>Filtering needs JavaScript. All builds and download links are listed below.</noscript></section>'
     for g, title in groups.items():
         items = [a for a in d["apps"] if a["state"] == g]
         if not items: continue
         out += f"<section class='build-group'><h2>{e(title)}</h2><div class='grid'>"
         for a in items:
-            icon = f'<img src="icons/{e(a["icon"])}" alt="{e(a["name"])} launcher icon" width="64" height="64">' if a.get("icon") else f'<div class="ph" aria-hidden="true">{e(a["name"][0])}</div>'
+            icon = f'<img src="icons/{e(a["icon"])}" alt="{e(a.get("display_name", a["name"]))} launcher icon" width="64" height="64">' if a.get("icon") else f'<div class="ph" aria-hidden="true">{e(a["name"][0])}</div>'
             ver = f' {e(a["version"])}' if a.get("version") else ""
             b = ""
             if a.get("apk"): b += btn("Download APK", a["apk"], True)
             if a.get("release"): b += btn("Release page", a["release"])
             b += btn("Source", a["repo"])
             sha = f'<code>SHA-256 {e(a["sha256"])}</code>' if a.get("sha256") else ""
-            out += f'<div class="card" data-app="{e(a["name"])}"><div class="top">{icon}<div><h3>{e(a["name"])}{ver}</h3><div class="tag">{e(a["tag"])}</div></div></div><p>{e(a["about"])}</p><div>{b}</div>{sha}</div>'
+            out += f'<div class="card" data-app="{e(a["name"])}"><div class="top">{icon}<div><h3>{e(a.get("display_name", a["name"]))}{ver}</h3><div class="tag">{e(a["tag"])}</div></div></div><p>{e(a["about"])}</p><div>{b}</div>{sha}</div>'
         out += "</div></section>"
-    out += """<script>(()=>{const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('[data-app]')],groups=[...document.querySelectorAll('.build-group')];function filter(name){for(const b of buttons)b.setAttribute('aria-pressed',String(b.dataset.filter===name));for(const c of cards)c.hidden=!!name&&c.dataset.app!==name;for(const g of groups)g.hidden=![...g.querySelectorAll('[data-app]')].some(c=>!c.hidden);const n=cards.filter(c=>!c.hidden).length;document.getElementById('filter-status').textContent=(name?name+': ':'All apps: ')+n+' build'+(n===1?'':'s');}for(const b of buttons)b.addEventListener('click',()=>filter(b.dataset.filter));filter('');})();</script>"""
+    out += """<script>(()=>{const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('[data-app]')],groups=[...document.querySelectorAll('.build-group')];function filter(name){for(const b of buttons)b.setAttribute('aria-pressed',String(b.dataset.filter===name));for(const c of cards)c.hidden=!!name&&c.dataset.app!==name;for(const g of groups)g.hidden=![...g.querySelectorAll('[data-app]')].some(c=>!c.hidden);const n=cards.filter(c=>!c.hidden).length;document.getElementById('filter-status').textContent=(name?(buttons.find(b=>b.dataset.filter===name)?.textContent||name)+': ':'All apps: ')+n+' build'+(n===1?'':'s');}for(const b of buttons)b.addEventListener('click',()=>filter(b.dataset.filter));filter('');})();</script>"""
     lead = f'Current Android APKs, with versioned downloads and status. Check the SHA-256 after downloading. Status as of {e(d["checked"])}. Previous builds are listed separately below.'
     return page("kaji apps", lead, out, "../")
 def web():

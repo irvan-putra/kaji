@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 16:43 WIB",
+  "checked": "2026-11-20 16:47 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -133,19 +133,19 @@
           "about": "Create, edit, complete, archive and restore tasks with lists and date labels. JSON backup and copy-only import. Separate from Android: no phone sync or timed alerts. Clearing browser data can erase tasks; backups contain unencrypted task text. Existing review prototypes remain available.",
           "url": "https://vanipy.com/tindak/",
           "source": "https://github.com/irvan-putra/intodo/commit/c495a8ac20c7ea50dc188f9afdbad2d60e51591c",
-          "android": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.18",
+          "android": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.19",
           "icon": "../apk/icons/intodo.png",
-          "icon_note": "Android 0.5.18 app icon; web version is separate"
+          "icon_note": "Android 0.5.19 app icon; web version is separate"
         },
         {
           "name": "tindak review prototype",
-          "tag": "Review prototype, not a task web app",
-          "about": "Review each change from a phone browser. Android task app linked separately; this is a review prototype or historical simulation, not a synced task web app.",
-          "url": "https://vanipy.com/intodo/",
-          "source": "https://github.com/irvan-putra/intodo",
-          "android": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.18",
+          "tag": "Original review prototype",
+          "about": "Original homepage review prototype, preserved intact under its own route and original browser storage key. Tasks are now the homepage; the distinct source-code canvas remains separate under code-review.",
+          "url": "https://vanipy.com/intodo/review/",
+          "source": "https://github.com/irvan-putra/intodo/commit/6cfb527",
+          "android": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.19",
           "icon": "../apk/icons/intodo.png",
-          "icon_note": "Android 0.5.18 app icon; web version is separate"
+          "icon_note": "Android 0.5.19 app icon; web version is separate"
         },
         {
           "name": "Shared-list simulation",
@@ -153,9 +153,9 @@
           "about": "A simulation, not the live app. Android task app linked separately; this is a review prototype or historical simulation, not a synced task web app.",
           "url": "https://vanipy.com/intodo/shared-list-simulation/",
           "source": "https://github.com/irvan-putra/intodo/blob/main/demos-shared-list-simulation/index.html",
-          "android": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.18",
+          "android": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.19",
           "icon": "../apk/icons/intodo.png",
-          "icon_note": "Android 0.5.18 app icon; web version is separate"
+          "icon_note": "Android 0.5.19 app icon; web version is separate"
         },
         {
           "name": "Edge AI demo lab",
@@ -183,6 +183,16 @@
           "source": "https://github.com/irvan-putra/bedah",
           "icon": "icons/code.svg",
           "icon_note": "Web category symbol, not an Android build"
+        },
+        {
+          "name": "tindak code review",
+          "tag": "Source-review canvas",
+          "about": "Separate code-review map, preserved without replacing the original review prototype. Existing browser-local camera, card positions and review marks use the same saved-state key. Not a synced task app.",
+          "url": "https://vanipy.com/intodo/code-review/",
+          "source": "https://github.com/irvan-putra/intodo/commit/6cfb527",
+          "icon": "../apk/icons/intodo.png",
+          "icon_note": "Android 0.5.19 app icon; web version is separate",
+          "android": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.19"
         }
       ]
     },
