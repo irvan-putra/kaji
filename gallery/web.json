@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 16:33 WIB",
+  "checked": "2026-11-20 16:43 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -10,14 +10,18 @@
           "about": "Shared10/7F station areas drawn once with opposite arrows and branches for distinct stops. Shared4/6 spine and7E direction-specific stops retained. Actual APK icon badges corrected to0.1.9. Emulator checked, not physical Samsung-tested. Existing fare/access,7F hours and Gojek uncertainties retained.",
           "url": "https://vanipy.com/tuju/",
           "source": "https://github.com/irvan-putra/tuju/commit/0b478eb6f3225f4e79be901fe68861efe0450f45",
-          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.9"
+          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.9",
+          "icon": "../apk/icons/tuju.png",
+          "icon_note": "Android 0.1.9 app icon; web version is separate"
         },
         {
           "name": "tangkai",
           "tag": "Fictional interactive mind map",
           "about": "Invented Maya Vale profile with color-coded branches, pan, zoom, fit and branch exploration. All people, places and activities fictional. Original private map unchanged.",
           "url": "https://vanipy.com/tangkai/",
-          "source": "https://github.com/irvan-putra/tangkai/commit/ebb5fc2e4804057ffdc4a6b18a802f6ce540619c"
+          "source": "https://github.com/irvan-putra/tangkai/commit/ebb5fc2e4804057ffdc4a6b18a802f6ce540619c",
+          "icon": "icons/map.svg",
+          "icon_note": "Web category symbol, not an Android build"
         }
       ]
     },
@@ -30,7 +34,9 @@
           "about": "Compact20-tile grid, all20starter paths active, with approved Sang gecko. Local-device progress and unauthenticated mentor-review demo, not verified competency or a safety certificate. Emergency starters cover fire/outdoor planning, STOP and training navigation, not expert rescue/survival or medical competency. Android prototype underway, no APK yet.",
           "url": "https://vanipy.com/sanggup/",
           "source": "https://github.com/irvan-putra/sanggup/commit/248f54b03e899371e4300ce9bca9182e642eab54",
-          "android": "https://github.com/irvan-putra/sanggup/releases/tag/v0.1.4"
+          "android": "https://github.com/irvan-putra/sanggup/releases/tag/v0.1.4",
+          "icon": "../apk/icons/sanggup.png",
+          "icon_note": "Android 0.1.4 app icon; web version is separate"
         }
       ]
     },
@@ -42,28 +48,36 @@
           "tag": "Fork of an animation skill, video demos",
           "about": "Code-drawn canvases rendered to MP4: the original Grow video and a render of the upstream History of AI example.",
           "url": "https://vanipy.com/animate/",
-          "source": "https://github.com/irvan-putra/animate"
+          "source": "https://github.com/irvan-putra/animate",
+          "icon": "icons/motion.svg",
+          "icon_note": "Web category symbol, not an Android build"
         },
         {
           "name": "cook",
           "tag": "Recipe boxes: nasi goreng, aglio e olio, tumis kangkung",
           "about": "Parallel-thread recipe tables with adjustable portions and options. Not kitchen-tested; food-safety notes are on each page.",
           "url": "https://vanipy.com/kaji/cook/",
-          "source": "https://github.com/irvan-putra/kaji/tree/main/examples/cook"
+          "source": "https://github.com/irvan-putra/kaji/tree/main/examples/cook",
+          "icon": "icons/cook.svg",
+          "icon_note": "Web category symbol, not an Android build"
         },
         {
           "name": "Indomie recipe box",
           "tag": "Customizable Tangle recipe",
           "about": "The main interactive Indomie page, based on the 500 ml card.",
           "url": "https://vanipy.com/kaji/indomie/",
-          "source": "https://github.com/irvan-putra/kaji/tree/main/examples/indomie"
+          "source": "https://github.com/irvan-putra/kaji/tree/main/examples/indomie",
+          "icon": "icons/cook.svg",
+          "icon_note": "Web category symbol, not an Android build"
         },
         {
           "name": "Indomie engineer's spec",
           "tag": "Older variant, 400 ml",
           "about": "Kept as its own version; it is not reconciled with the recipe box. Photo credit is on the page.",
           "url": "https://vanipy.com/kaji/indomie/instinct/",
-          "source": "https://github.com/irvan-putra/kaji/blob/main/examples/indomie/instinct/index.html"
+          "source": "https://github.com/irvan-putra/kaji/blob/main/examples/indomie/instinct/index.html",
+          "icon": "icons/cook.svg",
+          "icon_note": "Web category symbol, not an Android build"
         },
         {
           "name": "nada",
@@ -71,7 +85,9 @@
           "about": "Deterministic recipe-to-MIDI generator. The Android test release is linked from the web app; physical-phone behavior remains unverified.",
           "url": "https://vanipy.com/nada/",
           "source": "https://github.com/irvan-putra/nada/commit/17fd889d1f218574f59091393fb13e3d949b99c8",
-          "android": "https://github.com/irvan-putra/nada/releases/tag/v0.1.2"
+          "android": "https://github.com/irvan-putra/nada/releases/tag/v0.1.2",
+          "icon": "../apk/icons/nada.png",
+          "icon_note": "Android 0.1.2 app icon; web version is separate"
         }
       ]
     },
@@ -83,14 +99,18 @@
           "tag": "Invented scenarios",
           "about": "Cash vs economic break-even with made-up sales numbers.",
           "url": "https://vanipy.com/kaji/economics-synthetic/",
-          "source": "https://github.com/irvan-putra/kaji/blob/main/examples/economics-synthetic/index.html"
+          "source": "https://github.com/irvan-putra/kaji/blob/main/examples/economics-synthetic/index.html",
+          "icon": "icons/chart.svg",
+          "icon_note": "Web category symbol, not an Android build"
         },
         {
           "name": "Tumbuh draft",
           "tag": "Archived concept, not an offer",
           "about": "Signup controls are disabled; nothing is collected.",
           "url": "https://vanipy.com/kaji/tumbuh/",
-          "source": "https://github.com/irvan-putra/kaji/blob/main/examples/tumbuh/index.html"
+          "source": "https://github.com/irvan-putra/kaji/blob/main/examples/tumbuh/index.html",
+          "icon": "../apk/icons/tumbuh.png",
+          "icon_note": "Android 0.2.2 app icon; web version is separate"
         }
       ]
     },
@@ -98,20 +118,34 @@
       "title": "Apps, prototypes and simulations",
       "items": [
         {
-          "name": "intodo tasks",
-          "tag": "Browser-local task app",
-          "about": "Create, edit, complete, archive and restore tasks with lists and date labels. JSON backup and copy-only import. Separate from Android: no phone sync or timed alerts. Clearing browser data can erase tasks; backups contain unencrypted task text. Existing review prototypes remain available.",
-          "url": "https://vanipy.com/intodo/tasks/",
-          "source": "https://github.com/irvan-putra/intodo/commit/2ac3a98b01b571526cbff1eaf8f9462fa1ac11c4",
-          "android": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.18"
+          "name": "tengok",
+          "tag": "Browser-local file viewer",
+          "about": "MIDI playback, piano roll and play-along game; browser-decoded images/audio, text and hex/details. Simple synth approximates instruments and omits pitch bends. PDF/video/SVG/office/archive rich viewers remain parked; files stay in this tab. Conversion work is separate and evolving, not a blanket format promise.",
+          "url": "https://vanipy.com/tengok/",
+          "source": "https://github.com/irvan-putra/tengok/commit/e092f24735dd0971921ebad24dee06c7f6f22f11",
+          "android": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.2",
+          "icon": "../apk/icons/tengok.png",
+          "icon_note": "Android 0.3.2 app icon; web version is separate"
         },
         {
-          "name": "intodo review prototype",
+          "name": "tindak tasks",
+          "tag": "Browser-local task app",
+          "about": "Create, edit, complete, archive and restore tasks with lists and date labels. JSON backup and copy-only import. Separate from Android: no phone sync or timed alerts. Clearing browser data can erase tasks; backups contain unencrypted task text. Existing review prototypes remain available.",
+          "url": "https://vanipy.com/tindak/",
+          "source": "https://github.com/irvan-putra/intodo/commit/c495a8ac20c7ea50dc188f9afdbad2d60e51591c",
+          "android": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.18",
+          "icon": "../apk/icons/intodo.png",
+          "icon_note": "Android 0.5.18 app icon; web version is separate"
+        },
+        {
+          "name": "tindak review prototype",
           "tag": "Review prototype, not a task web app",
           "about": "Review each change from a phone browser. Android task app linked separately; this is a review prototype or historical simulation, not a synced task web app.",
           "url": "https://vanipy.com/intodo/",
           "source": "https://github.com/irvan-putra/intodo",
-          "android": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.18"
+          "android": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.18",
+          "icon": "../apk/icons/intodo.png",
+          "icon_note": "Android 0.5.18 app icon; web version is separate"
         },
         {
           "name": "Shared-list simulation",
@@ -119,28 +153,36 @@
           "about": "A simulation, not the live app. Android task app linked separately; this is a review prototype or historical simulation, not a synced task web app.",
           "url": "https://vanipy.com/intodo/shared-list-simulation/",
           "source": "https://github.com/irvan-putra/intodo/blob/main/demos-shared-list-simulation/index.html",
-          "android": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.18"
+          "android": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.18",
+          "icon": "../apk/icons/intodo.png",
+          "icon_note": "Android 0.5.18 app icon; web version is separate"
         },
         {
           "name": "Edge AI demo lab",
           "tag": "naga",
           "about": "Browser editions of the meetup demo scaffolds.",
           "url": "https://vanipy.com/naga/",
-          "source": "https://github.com/irvan-putra/naga"
+          "source": "https://github.com/irvan-putra/naga",
+          "icon": "icons/code.svg",
+          "icon_note": "Web category symbol, not an Android build"
         },
         {
           "name": "Demo lab simulation",
           "tag": "Historical simulation",
           "about": "A simulation, not a live service.",
           "url": "https://vanipy.com/naga/demo-lab-simulation/",
-          "source": "https://github.com/irvan-putra/naga/blob/main/demo-lab-simulation/index.html"
+          "source": "https://github.com/irvan-putra/naga/blob/main/demo-lab-simulation/index.html",
+          "icon": "icons/code.svg",
+          "icon_note": "Web category symbol, not an Android build"
         },
         {
           "name": "bedah",
           "tag": "Review canvas",
           "about": "Full-screen review canvas that reviews its own repo.",
           "url": "https://vanipy.com/bedah/",
-          "source": "https://github.com/irvan-putra/bedah"
+          "source": "https://github.com/irvan-putra/bedah",
+          "icon": "icons/code.svg",
+          "icon_note": "Web category symbol, not an Android build"
         }
       ]
     },
@@ -152,7 +194,9 @@
           "tag": "Jakarta and Jogja developer events",
           "about": "Compact upcoming developer-event list with city chips, Jakarta/Jogja routes, ICS and organizer-sourced poster thumbnails. Tap a thumbnail for the full poster or the card for its event page. List-only phone layout retained. Refreshes about every six hours; sources and posters are best effort. Live Samsung browser not verified.",
           "url": "https://vanipy.com/kapan/",
-          "source": "https://github.com/irvan-putra/kapan"
+          "source": "https://github.com/irvan-putra/kapan",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
         },
         {
           "name": "irvan",
@@ -160,49 +204,63 @@
           "about": "A browsable project map and reviewed introduction, with both paper credits and links. Website and signed Android0.1.0 released; not phone-tested.",
           "url": "https://vanipy.com/irvan/",
           "source": "https://github.com/irvan-putra/irvan",
-          "android": "https://github.com/irvan-putra/irvan/releases/tag/v0.1.0"
+          "android": "https://github.com/irvan-putra/irvan/releases/tag/v0.1.0",
+          "icon": "../apk/icons/irvan.png",
+          "icon_note": "Android 0.1.0 app icon; web version is separate"
         },
         {
           "name": "kaca",
           "tag": "Research notes",
           "about": "Tidy research notes site.",
           "url": "https://vanipy.com/kaca/",
-          "source": "https://github.com/irvan-putra/kaca"
+          "source": "https://github.com/irvan-putra/kaca",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
         },
         {
           "name": "suaka",
           "tag": "Concept",
           "about": "Independent alternatives to big tech. Early stage.",
           "url": "https://vanipy.com/suaka/",
-          "source": "https://github.com/irvan-putra/suaka"
+          "source": "https://github.com/irvan-putra/suaka",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
         },
         {
           "name": "gotong",
           "tag": "Feasibility research",
           "about": "Distributed AI training from Jakarta. Not validated.",
           "url": "https://vanipy.com/gotong/",
-          "source": "https://github.com/irvan-putra/gotong"
+          "source": "https://github.com/irvan-putra/gotong",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
         },
         {
           "name": "mimpi",
           "tag": "Proposal",
           "about": "Desktop AI companion proposal. Idea stage.",
           "url": "https://vanipy.com/mimpi/",
-          "source": "https://github.com/irvan-putra/mimpi"
+          "source": "https://github.com/irvan-putra/mimpi",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
         },
         {
           "name": "anyam",
           "tag": "Proposal",
           "about": "Human-AI shared context. Idea stage.",
           "url": "https://vanipy.com/anyam/",
-          "source": "https://github.com/irvan-putra/anyam"
+          "source": "https://github.com/irvan-putra/anyam",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
         },
         {
           "name": "jejak",
           "tag": "Proposal",
           "about": "Requirements-to-code traceability. Idea stage.",
           "url": "https://vanipy.com/jejak/",
-          "source": "https://github.com/irvan-putra/jejak"
+          "source": "https://github.com/irvan-putra/jejak",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
         },
         {
           "name": "tumbuh",
@@ -210,7 +268,9 @@
           "about": "Workshop and economics proposals. The linked Android commitments app is separate from these planning drafts; no live business offer.",
           "url": "https://vanipy.com/tumbuh/",
           "source": "https://github.com/irvan-putra/tumbuh",
-          "android": "https://github.com/irvan-putra/tumbuh/releases/tag/v0.2.2"
+          "android": "https://github.com/irvan-putra/tumbuh/releases/tag/v0.2.2",
+          "icon": "../apk/icons/tumbuh.png",
+          "icon_note": "Android 0.2.2 app icon; web version is separate"
         }
       ]
     }

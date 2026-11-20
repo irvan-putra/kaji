@@ -67,9 +67,9 @@ def web():
         for w in sec["items"]:
             b = btn("Open", w["url"], True) + (btn("Source", w["source"]) if w.get("source") else "")
             if w.get("android"): b += btn("Android test release", w["android"])
-            out += f'<div class="card"><h3>{e(w["name"])}</h3><div class="tag">{e(w["tag"])}</div><p>{e(w["about"])}</p><div>{b}</div></div>'
+            out += f'<div class="card"><div class="top"><img src="{e(w["icon"])}" alt="{e(w["icon_note"])}" width="64" height="64"><div><h3>{e(w["name"])}</h3><div class="tag">{e(w["tag"])}</div></div></div><p>{e(w["about"])}</p><div>{b}</div></div>'
         out += "</div>"
-    return page("kaji web examples", f'Pages, demos and examples we made. Links checked {e(d["checked"])}. Proposals and simulations are labeled as such.', out, "../")
+    return page("kaji web examples", f'Pages, demos and examples we made. Links checked {e(d["checked"])}. Proposals and simulations are labeled as such. Numbered app icons identify the linked Android build, not a web version. Web-only projects use category symbols where no project icon exists.', out, "../")
 def home():
     body = "<div class='grid'><div class='card'><h3>Apps</h3><p>APK downloads, icons and status for every Android app.</p><div>" + btn("Open", "apk/", True) + "</div></div><div class='card'><h3>Web examples</h3><p>Animate, the cook recipe boxes, Indomie, charts and concept pages.</p><div>" + btn("Open", "web/", True) + "</div></div><div class='card'><h3>Research notes</h3><p>Cross-project notes in the repository.</p><div>" + btn("Read", "https://github.com/irvan-putra/kaji#notes") + "</div></div></div>"
     return page("kaji", "Research notes, apps and examples from building personal software.", body, "./")
