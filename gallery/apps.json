@@ -7,7 +7,7 @@
       "state": "available",
       "icon": "tindak.png",
       "tag": "Clickable reminder links; paired feed retained",
-      "about": "HTTP and HTTPS links in reminder titles and notes are light-blue and underlined, distinct from amber notes. Browser opens only after an explicit tap. Existing signer, permissions, pairing key, real feed and data preserved. Twenty native link and preservation checks passed; actual signed APK inspected. Physical-phone link tap remains unverified. Browser data stays separate.",
+      "about": "HTTP and HTTPS links in reminder titles and notes are light-blue and underlined, distinct from amber notes. Browser opens only after an explicit tap. Existing signer, permissions, pairing key, real feed and data preserved. Twenty native link and preservation checks passed; actual signed APK inspected. Physical phone screenshot confirms distinct links and the user confirmed tapping opens the browser on 20 Nov. Existing real reminders retained. Browser data stays separate.",
       "apk": "https://github.com/irvan-putra/tindak/releases/download/v0.5.22/tindak-v0.5.22.apk",
       "release": "https://github.com/irvan-putra/tindak/releases/tag/v0.5.22",
       "repo": "https://github.com/irvan-putra/tindak/commit/1e5b97ba625d4cfa4e2f81e07e6b7788ba4ea304",
