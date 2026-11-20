@@ -1,12 +1,24 @@
 {
-  "checked": "2026-11-20 15:09 WIB",
+  "checked": "2026-11-20 15:33 WIB",
   "apps": [
     {
       "name": "kokok",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "state": "available",
       "icon": "kokok.png",
-      "tag": "Optional estimated sleep and cold locked-boot alarm repair",
+      "tag": "Preserve local snooze across feed refreshes, test APK",
+      "about": "Fixes feed refresh resetting a locally snoozed next ring. New-version snoozes keep their time when included in newer feeds; identical scheduled IDs are no-ops. An already-active old-version snooze has no marker: confirm a quiet state before any feed update. This APK adds no earlier backups and does not change current alarm times. Actual signed0.2.0 in-place upgrade preserved synthetic pairing/keys/revision/alarm/sound, existing alarm rang and real snooze persisted through original/mirror/reopen. Nine state tests passed. Physical-phone/overnight behavior and new cold-boot proof remain unverified. Optional estimated sleep stays off by default, no REM/medical or automatic wake changes. Keep an independent backup. Update in place, never uninstall or clear data.",
+      "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.2.1/kokok-v0.2.1.apk",
+      "release": "https://github.com/irvan-putra/kokok/releases/tag/v0.2.1",
+      "repo": "https://github.com/irvan-putra/kokok/commit/7f84bfc3cfe260c701bcf9752936ff00b4578767",
+      "sha256": "7188f55d6c24fe32ed42cf2617e0a48132729f18b65c5e3de0113928c8fd57b9"
+    },
+    {
+      "name": "kokok",
+      "version": "0.2.0",
+      "state": "legacy",
+      "icon": "kokok-0.2.0.png",
+      "tag": "Previous signed estimated-sleep test build",
       "about": "Optional phone-based estimated sleep, off by default, requires Android10+ and compatible Google Play services. No REM, stages or medical claim; no microphone, camera, location permission or automatic alarm-time changes. Sleep records stay private; explicit clipboard summary only. Exact signed0.1.4 upgrades passed syntheticAPI34 tests for both chosen and default sound, cold pre-unlock ringing, preserved pairing/keys/alarms/sound and old-code rollback compatibility. Physical-phone overnight reliability and provider accuracy remain unverified. Keep an independent backup alarm. Update in place, do not uninstall or clear data.",
       "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.2.0/kokok-v0.2.0.apk",
       "release": "https://github.com/irvan-putra/kokok/releases/tag/v0.2.0",
@@ -55,7 +67,7 @@
       "state": "available",
       "icon": "tengok.png",
       "tag": "Phone piano, recent files and live game rank, test APK",
-      "about": "Finger-sized piano keys with automatic panning and sideways look-around drag, local recent files and a live/final game rank. Recent-file removal clears only the list, not the file; access-lost handling was inspected. Offline, zero Android permissions, no automatic file or diagnostic uploads. Published0.3.1-to0.3.2 synthetic upgrade retained a remembered folder and its Android grant via the real picker. Published piano width/panning/non-striking drag checks passed. Full published suite is being rerun after a test-log accounting fix; not yet user-delivered. Physical-phone and USB keyboard behavior remain unverified. Read-only folder explorer and existing MIDI/image/audio/text/hex limits remain; other viewer formats are not included.",
+      "about": "Finger-sized piano keys with automatic panning and sideways look-around drag, local recent files and a live/final game rank. Recent-file removal clears only the list, not the file; access-lost handling was inspected. Offline, zero Android permissions, no automatic file or diagnostic uploads. Published0.3.1-to0.3.2 synthetic upgrade retained a remembered folder and its Android grant via the real picker. Published piano width/panning/non-striking drag checks passed. Full published-APK folder/game/rank/recents and upgrade suite passed after a test-log accounting fix. Not yet user-delivered. Physical-phone and USB keyboard behavior remain unverified. Read-only folder explorer and existing MIDI/image/audio/text/hex limits remain; other viewer formats are not included.",
       "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.2/tengok-v0.3.2.apk",
       "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.2",
       "repo": "https://github.com/irvan-putra/tengok/commit/a51bea33058d0a563d458f3e53a6718e7249c2cf",
