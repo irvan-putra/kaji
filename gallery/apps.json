@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 14:55 WIB",
+  "checked": "2026-11-20 15:09 WIB",
   "apps": [
     {
       "name": "kokok",
@@ -31,7 +31,7 @@
       "state": "available",
       "icon": "sanggup.png",
       "tag": "25 offline skill tiles, signed test APK",
-      "about": "25 tiles in a5x5 grid retain all paths through seven approved groupings, with Career moves, Business frameworks, shared-skill labels and deeper stages. Actual signed grid inspected.0.1.3-to0.1.4 upgrade retention is pending; publication is not a user-delivered upgrade. Marketing is not included and further lessons remain in progress. Zero Android permissions. Browser and Android progress stay separate. Widget intermittency has no proven cause; physical-phone behavior remains unverified. Learning progress is not qualification or income proof. Update in place, do not uninstall or clear data.",
+      "about": "25 tiles in a5x5 grid retain all paths through seven approved groupings, with Career moves, Business frameworks, shared-skill labels and deeper stages. Actual signed grid inspected.Signed0.1.3-to0.1.4 synthetic upgrade retention and post-publication checks passed; not yet user-delivered. Marketing is not included and further lessons remain in progress. Zero Android permissions. Browser and Android progress stay separate. Widget intermittency has no proven cause; physical-phone behavior remains unverified. Learning progress is not qualification or income proof. Update in place, do not uninstall or clear data.",
       "apk": "https://github.com/irvan-putra/sanggup/releases/download/v0.1.4/sanggup-v0.1.4.apk",
       "release": "https://github.com/irvan-putra/sanggup/releases/tag/v0.1.4",
       "repo": "https://github.com/irvan-putra/sanggup/commit/c1ac53db096d771fb233b513099cfd9c642b3691",
@@ -55,7 +55,7 @@
       "state": "available",
       "icon": "tengok.png",
       "tag": "Phone piano, recent files and live game rank, test APK",
-      "about": "Finger-sized piano keys with automatic panning and sideways look-around drag, local recent files and a live/final game rank. Recent-file removal clears only the list, not the file; access-lost handling was inspected. Offline, zero Android permissions, no automatic file or diagnostic uploads. Published-APK upgrade retention and full smoke checks are still in progress, not a verified or user-delivered upgrade. Earlier0.3.1 emulator evidence does not prove these new bytes. Physical-phone and USB keyboard behavior remain unverified. Read-only folder explorer and existing MIDI/image/audio/text/hex limits remain; other viewer formats are not included.",
+      "about": "Finger-sized piano keys with automatic panning and sideways look-around drag, local recent files and a live/final game rank. Recent-file removal clears only the list, not the file; access-lost handling was inspected. Offline, zero Android permissions, no automatic file or diagnostic uploads. Published0.3.1-to0.3.2 synthetic upgrade retained a remembered folder and its Android grant via the real picker. Published piano width/panning/non-striking drag checks passed. Full published suite is being rerun after a test-log accounting fix; not yet user-delivered. Physical-phone and USB keyboard behavior remain unverified. Read-only folder explorer and existing MIDI/image/audio/text/hex limits remain; other viewer formats are not included.",
       "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.2/tengok-v0.3.2.apk",
       "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.2",
       "repo": "https://github.com/irvan-putra/tengok/commit/a51bea33058d0a563d458f3e53a6718e7249c2cf",
