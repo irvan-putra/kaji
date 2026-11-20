@@ -31,12 +31,12 @@
         {
           "name": "sanggup",
           "tag": "25-tile life-skills web prototype",
-          "about": "25-tile skills practice prototype with expanded paths and cross-skill links. Tested synthetic demo 0.2.0-to-0.2.1 Android upgrade retained completed stages, streak and matching learner/teacher sign-off. Not proof with user phone data; browser and APK progress remain separate.",
+          "about": "25-path skills practice prototype. Home now uses a house icon, also included in signed Android0.2.2. Browser and APK progress stay separate. Older synthetic demo0.2.0-to0.2.1 retention proof does not establish a phone or0.2.2 upgrade.",
           "url": "https://vanipy.com/sanggup/",
-          "source": "https://github.com/irvan-putra/sanggup/commit/5d41d9e57bcbdea029356dff7f1b8f8f69fce8df",
-          "android": "https://github.com/irvan-putra/sanggup/releases/tag/v0.2.0",
-          "icon": "../apk/icons/sanggup.png",
-          "icon_note": "Historical Android0.1.4 icon pending new APK byte qualification; web version separate"
+          "source": "https://github.com/irvan-putra/sanggup/commit/fc8fe7df5a92a207db3c94024feb8410e8a23a7c",
+          "android": "https://github.com/irvan-putra/sanggup/releases/tag/v0.2.2",
+          "icon": "../apk/icons/sanggup022.png",
+          "icon_note": "Launcher0.2.2 source asset from the built release commit; phone upgrade remains unverified"
         }
       ]
     },
