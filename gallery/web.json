@@ -123,9 +123,9 @@
           "about": "MIDI playback, piano roll and play-along game; browser-decoded images/audio, text and hex/details. Simple synth approximates instruments and omits pitch bends. PDF/video/SVG/office/archive rich viewers remain parked; files stay in this tab. Conversion work is separate and evolving, not a blanket format promise. Long MIDI piano rolls now scale to stay within browser canvas limits; synthetic six-minute6400-note render passed, physical cantina2 retest pending. Built-in sample links selectable, local files show no shareable URL/no upload. Android tap candidate remains unconfirmed on phone. Each sample picker now has its own selectable URL and remains visible after local-file selection; no local file payload or restoration in those links.",
           "url": "https://vanipy.com/tengok/",
           "source": "https://github.com/irvan-putra/tengok/commit/778aab882c2d6d9549213f6ca6f7ea390b8c5781",
-          "android": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.4",
+          "android": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.7",
           "icon": "../apk/icons/tengok.png",
-          "icon_note": "Android0.3.4packaged icon; web release separate"
+          "icon_note": "Android 0.3.7 icon; web input and phone behavior qualified separately"
         },
         {
           "name": "tindak tasks",

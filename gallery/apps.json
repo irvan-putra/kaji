@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 18:57 WIB",
+  "checked": "2026-11-20 19:46 WIB",
   "apps": [
     {
       "name": "tindak",
@@ -27,9 +27,21 @@
     },
     {
       "name": "tengok",
-      "version": "0.3.6",
+      "version": "0.3.7",
       "state": "available",
       "icon": "tengok.png",
+      "tag": "Held-key sparks and smoother keyboard following",
+      "about": "Judged held keys keep emitting sparks; keyboard following uses a speed-capped glide. Synthetic pointer events drove live-web spark rendering, and wide synthetic MIDI motion frames checked glide endpoints. These are not physical finger/phone smoothness proofs. Emulator pan-never-strikes and qualification passed. Same signer, zero permissions; update in place. No conversion tools included.",
+      "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.7/tengok-v0.3.7.apk",
+      "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.7",
+      "repo": "https://github.com/irvan-putra/tengok/commit/35f1f2dc45c5cc26f9f538a6f17c952dfb4ec332",
+      "sha256": "b1f65ba588c843507509fd65b1c9cd278e4c7ab0d0c3fddb0c5eff12e5d28b71"
+    },
+    {
+      "name": "tengok",
+      "version": "0.3.6",
+      "state": "legacy",
+      "icon": "tengok-0.3.6.png",
       "tag": "Sustained-note scoring and above-key sparks test",
       "about": "Sustained notes remain hittable until 400ms after their end, while Perfect stays within 100ms of onset. Judged hits have above-key sparks; plain touches stay distinct. Samples collapse after selection. Actual code11 APK/icon/checksum and unchanged signer verified; zero Android permissions. Emulator three-judged/zero-miss smoke passed, but the reported phone song, finger visibility and scoring need a physical retest. Each chord note still needs its own key press. Intermediate 0.3.5 remains in release history, not the current recommendation. Converters excluded. Update in place, do not uninstall.",
       "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.6/tengok-v0.3.6.apk",
