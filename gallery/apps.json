@@ -219,18 +219,6 @@
       "sha256": "41a33407189ef2a7a81acd79373939f3a6cf07a91930dc299871b55831df6bcd"
     },
     {
-      "name": "fae",
-      "state": "legacy",
-      "tag": "Previous app identity; existing signed download",
-      "about": "Previous app identity and icon. This existing APK remains downloadable; it is not the new unggah candidate and does not include the new package identity.",
-      "release": "https://github.com/irvan-putra/fae/releases/tag/v1.1.2",
-      "repo": "https://github.com/irvan-putra/fae",
-      "version": "1.1.2",
-      "apk": "https://github.com/irvan-putra/fae/releases/download/v1.1.2/fae-v1.1.2.apk",
-      "sha256": "53e516a60c282acbcfea95a371c625383b21fef9883c218170dade3405e1bc2d",
-      "icon": "fae.png"
-    },
-    {
       "name": "menit",
       "version": "0.1.2",
       "state": "legacy",
