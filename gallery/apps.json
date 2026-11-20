@@ -15,15 +15,15 @@
     },
     {
       "name": "tengok",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "state": "available",
       "icon": "tengok.png",
-      "tag": "MIDI game and read-only folder explorer",
-      "about": "MIDI falling-note game, on-screen piano and USB MIDI input, plus a read-only folder explorer for a folder you choose. No delete, rename or move. Existing MIDI, image, audio, text and hex views retain their format limits. Emulator UI and function checks passed; real USB keyboard behavior and version 0.3.0 on a physical phone remain unverified. Diagnostics stay local and are shared manually, never uploaded automatically. Packaged launcher icon reads 0.3.0.",
-      "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.0/tengok-v0.3.0.apk",
-      "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.0",
-      "repo": "https://github.com/irvan-putra/tengok/commit/d4af1fcdbcce35b7076b2da8625f9674b39f894c",
-      "sha256": "d47a2fb2709166da1959a07c233bba770b4cc2e7b47ea6b133deccf1e6717be4"
+      "tag": "MIDI game controls and read-only folder explorer",
+      "about": "MIDI game with late-note hints, jump, draggable clock timeline, played notes leaving the lane, a fresh round at the end and speed-adjusted scoring. Read-only chosen-folder explorer and MIDI, image, audio, text and hex views retain their format limits; no delete, rename or move. Earlier emulator checks passed; final published-APK smoke is pending. Physical-phone and USB keyboard behavior remain unverified. Diagnostics stay local and are shared manually, never uploaded automatically.",
+      "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.1/tengok-v0.3.1.apk",
+      "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.1",
+      "repo": "https://github.com/irvan-putra/tengok/commit/be521ed4445af8878fc7222a96687beb34300307",
+      "sha256": "44ed694f028b89ec72678abd0c5ad301023941829d98c0aa641154e6fe8bc52c"
     },
     {
       "name": "sanggup",
@@ -589,6 +589,18 @@
       "release": "https://github.com/irvan-putra/sambung/releases/tag/v0.1.0",
       "repo": "https://github.com/irvan-putra/sambung/commit/8095c3d",
       "sha256": "4eda63a9b158916b0b6d714f59fe636467111d575fc3059f4b735b9b76a7d59d"
+    },
+    {
+      "name": "tengok",
+      "version": "0.3.0",
+      "state": "legacy",
+      "icon": "tengok-0.3.0.png",
+      "tag": "Previous signed release",
+      "about": "MIDI falling-note game, on-screen piano and USB MIDI input, plus a read-only folder explorer for a folder you choose. No delete, rename or move. Existing MIDI, image, audio, text and hex views retain their format limits. Emulator UI and function checks passed; real USB keyboard behavior and version 0.3.0 on a physical phone remain unverified. Diagnostics stay local and are shared manually, never uploaded automatically. Packaged launcher icon reads 0.3.0.",
+      "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.0/tengok-v0.3.0.apk",
+      "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.0",
+      "repo": "https://github.com/irvan-putra/tengok/commit/d4af1fcdbcce35b7076b2da8625f9674b39f894c",
+      "sha256": "d47a2fb2709166da1959a07c233bba770b4cc2e7b47ea6b133deccf1e6717be4"
     }
   ]
 }
