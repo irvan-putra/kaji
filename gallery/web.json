@@ -31,12 +31,12 @@
         {
           "name": "sanggup",
           "tag": "25-tile life-skills web prototype",
-          "about": "25starter skill tiles with local-device progress and instructor sign-off demo, not verified competency or safety certification. Tools page and #languages alias now link to specific cross-skill sections and scroll targets. Android0.1.4 remains separate; newer Android prototype qualification/parity is not this web release.",
+          "about": "25starter skill tiles with local-device progress and instructor sign-off demo, not verified competency or safety certification. Tools page and #languages alias now link to specific cross-skill sections and scroll targets. Published Android0.2.0 remains separate and lacks these latest web edits. Synthetic0.1.4-to0.2.0progress retention passed;0.2.1candidate qualification pending, not claimed published.",
           "url": "https://vanipy.com/sanggup/",
           "source": "https://github.com/irvan-putra/sanggup/commit/5d41d9e57bcbdea029356dff7f1b8f8f69fce8df",
-          "android": "https://github.com/irvan-putra/sanggup/releases/tag/v0.1.4",
+          "android": "https://github.com/irvan-putra/sanggup/releases/tag/v0.2.0",
           "icon": "../apk/icons/sanggup.png",
-          "icon_note": "Android 0.1.4 app icon; web version is separate"
+          "icon_note": "Historical Android0.1.4 icon pending new APK byte qualification; web version separate"
         }
       ]
     },
