@@ -103,7 +103,7 @@
       "state": "available",
       "icon": "sanggup.png",
       "tag": "25 offline skill tiles, signed test APK",
-      "about": "25 offline skill paths include Security basics, merged Safety and emergencies, Coding and expanded Branding and creator. Cross-skill links and cold-load deep links are bundled. Same signing identity; zero Android permissions. In-place upgrade retention for this0.2.1is pending, not yet verified. Browser and Android progress stay separate; physical-phone and launcher-widget behavior remain unverified. Update in place, do not uninstall or clear data. An earlier0.2.1frome8742c7was briefly published and withdrawn; this current APK is from2b0353e. Learning progress is not qualification or income proof.",
+      "about": "25 offline skill paths include Security basics, merged Safety and emergencies, Coding and expanded Branding and creator. Cross-skill links and cold-load deep links are bundled. Same signing identity; zero Android permissions. In-place upgrade retention for this 0.2.1 is pending, not yet verified. Browser and Android progress stay separate; physical-phone and launcher-widget behavior remain unverified. Update in place, do not uninstall or clear data. An earlier 0.2.1 from e8742c7 was briefly published and withdrawn; this current APK is from 2b0353e. Learning progress is not qualification or income proof.",
       "apk": "https://github.com/irvan-putra/sanggup/releases/download/v0.2.1/sanggup-v0.2.1.apk",
       "release": "https://github.com/irvan-putra/sanggup/releases/tag/v0.2.1",
       "repo": "https://github.com/irvan-putra/sanggup/commit/2b0353e5f4ba9a4d2fd30e2df21ed182d7d2bed5",
