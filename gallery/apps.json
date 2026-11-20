@@ -31,7 +31,7 @@
       "state": "available",
       "icon": "tengok.png",
       "tag": "Held-key sparks and smoother keyboard following",
-      "about": "Judged held keys keep emitting sparks; keyboard following uses a speed-capped glide. Synthetic pointer events drove live-web spark rendering, and wide synthetic MIDI motion frames checked glide endpoints. These are not physical finger/phone smoothness proofs. Emulator pan-never-strikes and qualification passed. Same signer, zero permissions; update in place. No conversion tools included.",
+      "about": "Held-key sparks confirmed working on the user phone on 20 Nov. The same phone feedback says key jumps are still abrupt and note bars disappear on tap instead of continuing into the piano; fixes are in progress. Synthetic glide frames did not prove phone smoothness. Same signer, zero permissions, update in place. Conversion tools are not included.",
       "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.7/tengok-v0.3.7.apk",
       "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.7",
       "repo": "https://github.com/irvan-putra/tengok/commit/35f1f2dc45c5cc26f9f538a6f17c952dfb4ec332",
