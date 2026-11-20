@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 19:30 WIB",
+  "checked": "2026-11-20 19:43 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -31,7 +31,7 @@
         {
           "name": "sanggup",
           "tag": "25-tile life-skills web prototype",
-          "about": "25starter skill tiles with local-device progress and instructor sign-off demo, not verified competency or safety certification. Tools page and #languages alias now link to specific cross-skill sections and scroll targets. Published Android0.2.0 remains separate and lacks these latest web edits. Synthetic0.1.4-to0.2.0progress retention passed;0.2.1candidate qualification pending, not claimed published.",
+          "about": "25-tile skills practice prototype with expanded paths and cross-skill links. Tested synthetic demo 0.2.0-to-0.2.1 Android upgrade retained completed stages, streak and matching learner/teacher sign-off. Not proof with user phone data; browser and APK progress remain separate.",
           "url": "https://vanipy.com/sanggup/",
           "source": "https://github.com/irvan-putra/sanggup/commit/5d41d9e57bcbdea029356dff7f1b8f8f69fce8df",
           "android": "https://github.com/irvan-putra/sanggup/releases/tag/v0.2.0",
@@ -305,6 +305,15 @@
           "source": "https://github.com/irvan-putra/unggah/commit/78f43851764cd26839cebc0b9b67b7c92a33bec9",
           "icon": "../apk/icons/unggah.png",
           "icon_note": "Android app icon; browser comparison is read-only"
+        },
+        {
+          "name": "saku",
+          "tag": "Fake-data-only local vault development preview",
+          "about": "Standalone KDBX web vault development preview, not audited. Fake data only, no real passwords. Synthetic edit/save/readback checked. The library accepts trailing terminator-HMAC tampering, an unresolved security gap. No vault upload, browser persistence or sync. Phone performance and shared Android-file compatibility remain unverified; Android path stays separate.",
+          "url": "https://vanipy.com/saku/",
+          "source": "https://github.com/irvan-putra/saku/commit/80de643c9694535f2431422c271443ab016fa3d0",
+          "icon": "../apk/icons/saku.png",
+          "icon_note": "Android icon; standalone web development preview is separate"
         }
       ]
     },
