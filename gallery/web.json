@@ -263,9 +263,9 @@
         {
           "name": "Onda browser lab",
           "tag": "Browser sensors and local photo models",
-          "about": "Object detection, pose estimation, classification and browser-exposed sensors. Photos/camera frames stay local. Speech to text is not ported, Android retains full sensor support. Photo fixtures passed; physical-phone camera/sensor availability/speed unverified. App/model AGPL-3.0 and runtime notices included.",
+          "about": "Local object detection, pose estimation, classification, browser sensors and English speech to text. Speech model downloads on demand (~41MB), audio capped30seconds, no upload. Desktop file/fake-microphone tests passed with transcription errors; physical microphone/sensors/camera/speed untested. Converted onnx-community speech model has no own license; differing upstream permissive declarations documented, not legal certainty. Android remains fuller sensor support.",
           "url": "https://vanipy.com/onda/",
-          "source": "https://github.com/irvan-putra/onda/commit/00d724d37fe0f9b4730f8c32f02d9944ff9d8789",
+          "source": "https://github.com/irvan-putra/onda/commit/69e6f1b97ee844df06bb1619c6bf8137092d3e44",
           "android": "https://github.com/irvan-putra/onda/releases/tag/v0.2.2",
           "icon": "../apk/icons/onda.png",
           "icon_note": "Android0.2.2 icon; separate browser sensor/model subset"
