@@ -19,7 +19,7 @@
       "state": "available",
       "icon": "tengok.png",
       "tag": "MIDI game controls and read-only folder explorer",
-      "about": "MIDI game with late-note hints, jump, draggable clock timeline, played notes leaving the lane, a fresh round at the end and speed-adjusted scoring. Read-only chosen-folder explorer and MIDI, image, audio, text and hex views retain their format limits; no delete, rename or move. Earlier emulator checks passed; final published-APK smoke is pending. Physical-phone and USB keyboard behavior remain unverified. Diagnostics stay local and are shared manually, never uploaded automatically.",
+      "about": "MIDI game with late-note hints, jump, draggable clock timeline, played notes leaving the lane, a fresh round at the end and speed-adjusted scoring. Read-only chosen-folder explorer and MIDI, image, audio, text and hex views retain their format limits; no delete, rename or move. Published-APK emulator checks passed for real folder access and game runtime. Physical-phone and USB keyboard behavior remain unverified. Diagnostics stay local and are shared manually, never uploaded automatically.",
       "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.1/tengok-v0.3.1.apk",
       "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.1",
       "repo": "https://github.com/irvan-putra/tengok/commit/be521ed4445af8878fc7222a96687beb34300307",
