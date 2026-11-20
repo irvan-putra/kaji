@@ -1,6 +1,18 @@
 {
-  "checked": "2026-11-20 18:00 WIB",
+  "checked": "2026-11-20 18:15 WIB",
   "apps": [
+    {
+      "name": "tindak",
+      "version": "0.5.21",
+      "state": "available",
+      "icon": "tindak.png",
+      "tag": "Built-in offline demo, real-only feed setup",
+      "about": "Six bundled fictional demo reminders/tasks, no demo feed/key/internet required. Real setup asks only for real feed URL; existing real cache, key and address kept. External-demo cache/address retained in local recovery preferences.17focused native preservation/render checks plus full release unit/privacy/candidate-byte gates passed. Update over Tindak0.5.20, not old Intodo. No new permissions, same signer. Physical phone/demo/real-sync retest pending; saving URL is not proof of applied sync.",
+      "apk": "https://github.com/irvan-putra/tindak/releases/download/v0.5.21/tindak-v0.5.21.apk",
+      "release": "https://github.com/irvan-putra/tindak/releases/tag/v0.5.21",
+      "repo": "https://github.com/irvan-putra/tindak",
+      "sha256": "d80c7953b087162298cc7bb0670e5c8d56215451154ca60ebafa13aa1b279027"
+    },
     {
       "name": "tengok",
       "version": "0.3.4",
@@ -28,8 +40,8 @@
     {
       "name": "tindak",
       "version": "0.5.20",
-      "state": "available",
-      "icon": "tindak.png",
+      "state": "legacy",
+      "icon": "tindak-0.5.20.png",
       "tag": "Actual Tindak identity; separate install, fresh setup",
       "about": "New com.vanipy.tindak package with redesigned check-arrow icon and0.5.20 badge. Separate install, not an in-place update from old intodo; old local setup is not migrated. Existing feed remains on the old pairing until a new public key is supplied and switch confirmed. Same signer, signed-byte package/version/icon checks and native tests passed. Physical-phone behavior unverified. Browser tasks remain separate, no phone sync or timed browser alerts.",
       "apk": "https://github.com/irvan-putra/tindak/releases/download/v0.5.20/tindak-v0.5.20.apk",
