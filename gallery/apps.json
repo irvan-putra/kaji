@@ -27,15 +27,15 @@
     },
     {
       "name": "sanggup",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "state": "available",
       "icon": "sanggup.png",
-      "tag": "Experimental signed test APK",
-      "about": "20 offline starter paths and animated Sang. Lowercase name/family badge and short widget with clear corner spacing shown on Samsung. Debug host checked animation, practice-to-streak and nominal/minimum/tall sizes. Signed0.1.0 to0.1.1 retained a synthetic1-day streak on API34. Exact launcher grid metadata not measured; browser/Android progress separate, not competency proof.",
-      "apk": "https://github.com/irvan-putra/sanggup/releases/download/v0.1.1/sanggup-v0.1.1.apk",
-      "release": "https://github.com/irvan-putra/sanggup/releases/tag/v0.1.1",
-      "repo": "https://github.com/irvan-putra/sanggup/commit/8211c448992dfa170aa986b35f03f9d58a8edf9c",
-      "sha256": "6d18deac4b7ecc7298ff8655b1b79350495d6e786a5d2cb8a575bec0813465c9"
+      "tag": "25 offline skill paths in a 5x5 grid, experimental test APK",
+      "about": "25 offline starter paths with a 5x5 app grid, including Content creator and expanded Community building: activation, engagement, sponsors, partners, negotiation and benefits with evidence. Signed Android grid checked at narrow width. Widget instrumentation and signed upgrade proof are still pending for this version. Existing Sang widget and practice/streak features retained in source; exact launcher grid metadata and physical-phone behavior unverified. Browser/Android progress stays separate, not competency or income proof.",
+      "apk": "https://github.com/irvan-putra/sanggup/releases/download/v0.1.2/sanggup-v0.1.2.apk",
+      "release": "https://github.com/irvan-putra/sanggup/releases/tag/v0.1.2",
+      "repo": "https://github.com/irvan-putra/sanggup/commit/3556b21",
+      "sha256": "4aef2e08c86674ffd8204789520a82364cb970313abfab0a9396df944a101240"
     },
     {
       "name": "unggun",
@@ -589,6 +589,18 @@
       "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.0",
       "repo": "https://github.com/irvan-putra/tengok/commit/d4af1fcdbcce35b7076b2da8625f9674b39f894c",
       "sha256": "d47a2fb2709166da1959a07c233bba770b4cc2e7b47ea6b133deccf1e6717be4"
+    },
+    {
+      "name": "sanggup",
+      "version": "0.1.1",
+      "state": "legacy",
+      "icon": "sanggup-0.1.1.png",
+      "tag": "Previous signed release",
+      "about": "20 offline starter paths and animated Sang. Lowercase name/family badge and short widget with clear corner spacing shown on Samsung. Debug host checked animation, practice-to-streak and nominal/minimum/tall sizes. Signed0.1.0 to0.1.1 retained a synthetic1-day streak on API34. Exact launcher grid metadata not measured; browser/Android progress separate, not competency proof.",
+      "apk": "https://github.com/irvan-putra/sanggup/releases/download/v0.1.1/sanggup-v0.1.1.apk",
+      "release": "https://github.com/irvan-putra/sanggup/releases/tag/v0.1.1",
+      "repo": "https://github.com/irvan-putra/sanggup/commit/8211c448992dfa170aa986b35f03f9d58a8edf9c",
+      "sha256": "6d18deac4b7ecc7298ff8655b1b79350495d6e786a5d2cb8a575bec0813465c9"
     }
   ]
 }
