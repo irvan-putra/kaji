@@ -16,6 +16,7 @@ p.lead{color:var(--mu);margin:.3em 0 1em}a{color:var(--ac)}nav a{margin-right:14
 .card h3{margin:0;font-size:1.05rem}.tag{font-size:.78rem;color:var(--mu)}.card p{margin:0;color:var(--mu);font-size:.92rem;overflow-wrap:anywhere}
 .btn{display:inline-block;padding:7px 12px;border-radius:8px;border:1px solid var(--ac);text-decoration:none;font-size:.92rem;margin:4px 6px 0 0}
 .btn.main{background:var(--ac);color:var(--bg)}code{font-size:.72rem;word-break:break-all;color:var(--mu)}
+[hidden]{display:none!important}.app-picker{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:8px;margin:12px 0 20px}.app-filter{font:inherit;font-size:.75rem;line-height:1.25;min-height:92px;padding:8px 3px;background:var(--card);color:var(--fg);border:1px solid var(--ln);border-radius:12px;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;overflow-wrap:anywhere}.app-filter img,.app-filter .ph{width:44px;height:44px;border-radius:10px}.app-filter[aria-pressed=true],.filter-toolbar .btn[aria-pressed=true]{border:2px solid var(--ac);background:color-mix(in srgb,var(--ac) 9%,var(--card))}.app-filter:focus-visible{outline:3px solid var(--ac);outline-offset:2px}.filter-toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.filter-toolbar p{margin:0;color:var(--mu);font-size:.85rem}.filter-toolbar .btn{font:inherit;cursor:pointer;background:var(--card);color:var(--ac)}
 footer{margin-top:2.4em;color:var(--mu);font-size:.85rem}"""
 def page(title, lead, body, base):
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -28,11 +29,18 @@ def btn(label, url, main=False): return f'<a class="btn{" main" if main else ""}
 def apps():
     d = json.loads((root/"gallery/apps.json").read_text())
     groups = {"available": "Available now", "pending": "Corrected build in progress", "source": "Source only, no APK", "legacy": "Previous builds"}
-    out = ""
+    unique = {}
+    for a in d["apps"]:
+        if a["name"] not in unique: unique[a["name"]] = a
+    out = '<section aria-label="Filter builds by app"><h2>Choose an app</h2><div class="filter-toolbar"><button class="btn" type="button" data-filter="" aria-pressed="true">All apps</button><p id="filter-status" role="status" aria-live="polite"></p></div><div class="app-picker">'
+    for name, a in unique.items():
+        icon = f'<img src="icons/{e(a["icon"])}" alt="" width="44" height="44">' if a.get("icon") else f'<span class="ph" aria-hidden="true">{e(name[0])}</span>'
+        out += f'<button class="app-filter" type="button" data-filter="{e(name)}" aria-pressed="false">{icon}<span>{e(name)}</span></button>'
+    out += '</div><noscript>Filtering needs JavaScript. All builds and download links are listed below.</noscript></section>'
     for g, title in groups.items():
         items = [a for a in d["apps"] if a["state"] == g]
         if not items: continue
-        out += f"<h2>{e(title)}</h2><div class='grid'>"
+        out += f"<section class='build-group'><h2>{e(title)}</h2><div class='grid'>"
         for a in items:
             icon = f'<img src="icons/{e(a["icon"])}" alt="{e(a["name"])} launcher icon" width="64" height="64">' if a.get("icon") else f'<div class="ph" aria-hidden="true">{e(a["name"][0])}</div>'
             ver = f' {e(a["version"])}' if a.get("version") else ""
@@ -41,8 +49,9 @@ def apps():
             if a.get("release"): b += btn("Release page", a["release"])
             b += btn("Source", a["repo"])
             sha = f'<code>SHA-256 {e(a["sha256"])}</code>' if a.get("sha256") else ""
-            out += f'<div class="card"><div class="top">{icon}<div><h3>{e(a["name"])}{ver}</h3><div class="tag">{e(a["tag"])}</div></div></div><p>{e(a["about"])}</p><div>{b}</div>{sha}</div>'
-        out += "</div>"
+            out += f'<div class="card" data-app="{e(a["name"])}"><div class="top">{icon}<div><h3>{e(a["name"])}{ver}</h3><div class="tag">{e(a["tag"])}</div></div></div><p>{e(a["about"])}</p><div>{b}</div>{sha}</div>'
+        out += "</div></section>"
+    out += """<script>(()=>{const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('[data-app]')],groups=[...document.querySelectorAll('.build-group')];function filter(name){for(const b of buttons)b.setAttribute('aria-pressed',String(b.dataset.filter===name));for(const c of cards)c.hidden=!!name&&c.dataset.app!==name;for(const g of groups)g.hidden=![...g.querySelectorAll('[data-app]')].some(c=>!c.hidden);const n=cards.filter(c=>!c.hidden).length;document.getElementById('filter-status').textContent=(name?name+': ':'All apps: ')+n+' build'+(n===1?'':'s');}for(const b of buttons)b.addEventListener('click',()=>filter(b.dataset.filter));filter('');})();</script>"""
     lead = f'Current Android APKs, with versioned downloads and status. Check the SHA-256 after downloading. Status as of {e(d["checked"])}. Previous builds are listed separately below.'
     return page("kaji apps", lead, out, "../")
 def web():
