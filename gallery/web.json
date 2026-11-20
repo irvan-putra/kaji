@@ -211,6 +211,24 @@
           "source": "https://github.com/irvan-putra/kokok/commit/2cdd15eba3e0651c851f14435b5856f0ad0174b8",
           "icon": "../apk/icons/kokok.png",
           "icon_note": "Android app icon; open-tab web planner is separate"
+        },
+        {
+          "name": "tagih web",
+          "tag": "Existing UI, browser-local counterpart",
+          "about": "Existing invoice UI published as a browser-local counterpart, not a rewrite. Uses browser storage separate from Android. Synthetic invoice validation passed; no real customer/payment data used. No automatic Android sync, payment collection or account connection.",
+          "url": "https://vanipy.com/tagih/",
+          "source": "https://github.com/irvan-putra/tagih/commit/ddf5d49464be069029c9d373d7f066fc76c2cd61",
+          "icon": "../apk/icons/tagih.png",
+          "icon_note": "Android app icon; web data is separate"
+        },
+        {
+          "name": "Sambung web",
+          "tag": "Existing UI, browser-local counterpart",
+          "about": "Existing shared-skill/work brief UI published as a browser-local counterpart. Synthetic brief validation passed, not all flows checked. Data stays in this browser, separate from Android; no automatic sync, external provider connection or account changes.",
+          "url": "https://vanipy.com/sambung/",
+          "source": "https://github.com/irvan-putra/sambung/commit/7ac09e05c2a577bb7f146c9ba512cc5c686034c3",
+          "icon": "../apk/icons/sambung.png",
+          "icon_note": "Android app icon; web data is separate"
         }
       ]
     },
