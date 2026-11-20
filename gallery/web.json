@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 17:16 WIB",
+  "checked": "2026-11-20 17:46 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -30,10 +30,10 @@
       "items": [
         {
           "name": "sanggup",
-          "tag": "Life-skills prototype0.2.0, same-device demo",
-          "about": "Compact20-tile grid, all20starter paths active, with approved Sang gecko. Local-device progress and unauthenticated mentor-review demo, not verified competency or a safety certificate. Emergency starters cover fire/outdoor planning, STOP and training navigation, not expert rescue/survival or medical competency. Android prototype underway, no APK yet.",
+          "tag": "25-tile life-skills web prototype",
+          "about": "25starter skill tiles with local-device progress and instructor sign-off demo, not verified competency or safety certification. Tools page and #languages alias now link to specific cross-skill sections and scroll targets. Android0.1.4 remains separate; newer Android prototype qualification/parity is not this web release.",
           "url": "https://vanipy.com/sanggup/",
-          "source": "https://github.com/irvan-putra/sanggup/commit/248f54b03e899371e4300ce9bca9182e642eab54",
+          "source": "https://github.com/irvan-putra/sanggup/commit/5d41d9e57bcbdea029356dff7f1b8f8f69fce8df",
           "android": "https://github.com/irvan-putra/sanggup/releases/tag/v0.1.4",
           "icon": "../apk/icons/sanggup.png",
           "icon_note": "Android 0.1.4 app icon; web version is separate"
@@ -120,9 +120,9 @@
         {
           "name": "tengok",
           "tag": "Browser-local file viewer",
-          "about": "MIDI playback, piano roll and play-along game; browser-decoded images/audio, text and hex/details. Simple synth approximates instruments and omits pitch bends. PDF/video/SVG/office/archive rich viewers remain parked; files stay in this tab. Conversion work is separate and evolving, not a blanket format promise. Long MIDI piano rolls now scale to stay within browser canvas limits; synthetic six-minute6400-note render passed, physical cantina2 retest pending. Built-in sample links selectable, local files show no shareable URL/no upload. Android tap candidate remains unconfirmed on phone.",
+          "about": "MIDI playback, piano roll and play-along game; browser-decoded images/audio, text and hex/details. Simple synth approximates instruments and omits pitch bends. PDF/video/SVG/office/archive rich viewers remain parked; files stay in this tab. Conversion work is separate and evolving, not a blanket format promise. Long MIDI piano rolls now scale to stay within browser canvas limits; synthetic six-minute6400-note render passed, physical cantina2 retest pending. Built-in sample links selectable, local files show no shareable URL/no upload. Android tap candidate remains unconfirmed on phone. Each sample picker now has its own selectable URL and remains visible after local-file selection; no local file payload or restoration in those links.",
           "url": "https://vanipy.com/tengok/",
-          "source": "https://github.com/irvan-putra/tengok/commit/da6ebb80220155c44cafb503892498434982f472",
+          "source": "https://github.com/irvan-putra/tengok/commit/778aab882c2d6d9549213f6ca6f7ea390b8c5781",
           "android": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.3",
           "icon": "../apk/icons/tengok.png",
           "icon_note": "Android0.3.3 packaged icon; web viewer has separate fixes"
@@ -249,6 +249,26 @@
           "android": "https://github.com/irvan-putra/sapa/releases/tag/v0.5.8",
           "icon": "../apk/icons/sapa.png",
           "icon_note": "Android0.5.8 packaged icon; browser model/runtime port is separate"
+        },
+        {
+          "name": "Kemas browser comparison",
+          "tag": "Changed pixels and object counts, not cleanliness",
+          "about": "Pick before/after photos of the same spot. Local changed-pixel display and recognizable object counts, no cleanliness judgment.4.6MB model download; photos stay in browser. Android retains ghost overlay/home-screen widget. Photo fixtures passed; physical-phone camera and speed unverified. App/model AGPL-3.0 and runtime notices included.",
+          "url": "https://vanipy.com/kemas/",
+          "source": "https://github.com/irvan-putra/kemas/commit/e0201d328b1df34c84a7e372a05ab7b935cedc80",
+          "android": "https://github.com/irvan-putra/kemas/releases/tag/v0.3.2",
+          "icon": "../apk/icons/kemas.png",
+          "icon_note": "Android0.3.2 icon; separate browser features"
+        },
+        {
+          "name": "Onda browser lab",
+          "tag": "Browser sensors and local photo models",
+          "about": "Object detection, pose estimation, classification and browser-exposed sensors. Photos/camera frames stay local. Speech to text is not ported, Android retains full sensor support. Photo fixtures passed; physical-phone camera/sensor availability/speed unverified. App/model AGPL-3.0 and runtime notices included.",
+          "url": "https://vanipy.com/onda/",
+          "source": "https://github.com/irvan-putra/onda/commit/00d724d37fe0f9b4730f8c32f02d9944ff9d8789",
+          "android": "https://github.com/irvan-putra/onda/releases/tag/v0.2.2",
+          "icon": "../apk/icons/onda.png",
+          "icon_note": "Android0.2.2 icon; separate browser sensor/model subset"
         }
       ]
     },
