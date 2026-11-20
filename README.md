@@ -20,6 +20,7 @@ This repo also includes illustrations alongside the Android-update, application-
 
 ## Notes
 
+- [IDSW 2026 schedule overview and a learning plan](docs/idsw-2026.md) - the published agenda (checked 2026-11-21, subject to change), a reading of its themes, and a suggested session plan for builders of AI-assisted personal software.
 - [Designing an AI chat composer](docs/designing-an-ai-chat-composer.md) - Sketch Together's video about the AI message-input box: controls, attachments, voice, states, mobile behavior and accessibility. Transcript-based reading, not a music-composition model or tested design rule.
 
 - [Legal clearance for a software mascot](docs/mascot-legal-clearance.md) - what clearance can and cannot mean, free searches, official fee tables for Indonesia, US, EU and Madrid, published US opinion prices; Indonesian opinion prices unknown, not legal advice.
