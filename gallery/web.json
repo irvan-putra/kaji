@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 16:18 WIB",
+  "checked": "2026-11-20 16:33 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -98,7 +98,15 @@
       "title": "Apps, prototypes and simulations",
       "items": [
         {
-          "name": "intodo web",
+          "name": "intodo tasks",
+          "tag": "Browser-local task app",
+          "about": "Create, edit, complete, archive and restore tasks with lists and date labels. JSON backup and copy-only import. Separate from Android: no phone sync or timed alerts. Clearing browser data can erase tasks; backups contain unencrypted task text. Existing review prototypes remain available.",
+          "url": "https://vanipy.com/intodo/tasks/",
+          "source": "https://github.com/irvan-putra/intodo/commit/2ac3a98b01b571526cbff1eaf8f9462fa1ac11c4",
+          "android": "https://github.com/irvan-putra/intodo/releases/tag/v0.5.18"
+        },
+        {
+          "name": "intodo review prototype",
           "tag": "Review prototype, not a task web app",
           "about": "Review each change from a phone browser. Android task app linked separately; this is a review prototype or historical simulation, not a synced task web app.",
           "url": "https://vanipy.com/intodo/",
