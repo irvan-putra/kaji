@@ -20,6 +20,8 @@ This repo also includes illustrations alongside the Android-update, application-
 
 ## Notes
 
+- [Designing an AI chat composer](docs/designing-an-ai-chat-composer.md) - Sketch Together's video about the AI message-input box: controls, attachments, voice, states, mobile behavior and accessibility. Transcript-based reading, not a music-composition model or tested design rule.
+
 - [Legal clearance for a software mascot](docs/mascot-legal-clearance.md) - what clearance can and cannot mean, free searches, official fee tables for Indonesia, US, EU and Madrid, published US opinion prices; Indonesian opinion prices unknown, not legal advice.
 
 - [Lottie, Rive and Android animation options](docs/lottie-rive-android-animation.md) - in-app motion, mascot tools, authoring costs and documented widget limits; vendor benchmarks attributed, launcher behavior untested. Includes an original decision map.
