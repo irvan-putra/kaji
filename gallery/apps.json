@@ -75,9 +75,21 @@
     },
     {
       "name": "kokok",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "state": "available",
       "icon": "kokok.png",
+      "tag": "Collapsed alarm history, no alarm deletion",
+      "about": "Dismissed, canceled and missed alarms move into collapsed History. Scheduled, ringing and snoozed alarms stay in the main list. No alarm records, pairing keys or scheduled times are deleted or reset. Same signer and permissions. Direct signed0.1.4-to-candidate API34 emulator upgrade preserved synthetic key/pairing/revision/sound/alarms, existing OS alarm rang, and actual snooze persisted through reopen. Physical API36 phone update and overnight behavior remain unverified. This APK does not activate earlier backup alarms. Optional sleep estimates stay off by default. Keep an independent backup. Update in place, never uninstall or clear data.",
+      "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.2.2/kokok-v0.2.2.apk",
+      "release": "https://github.com/irvan-putra/kokok/releases/tag/v0.2.2",
+      "repo": "https://github.com/irvan-putra/kokok/commit/2832b1bc0b7ce9e014da89b3bf502ca354d0d2b4",
+      "sha256": "a56b16b1888643d6d154ddb07fe644839cbcfcb5ef62b97a77c0fb6eb76a988b"
+    },
+    {
+      "name": "kokok",
+      "version": "0.2.1",
+      "state": "legacy",
+      "icon": "kokok021.png",
       "tag": "Preserve local snooze across feed refreshes, test APK",
       "about": "Fixes feed refresh resetting a locally snoozed next ring. New-version snoozes keep their time when included in newer feeds; identical scheduled IDs are no-ops. An already-active old-version snooze has no marker: confirm a quiet state before any feed update. This APK adds no earlier backups and does not change current alarm times. Actual signed0.2.0 in-place upgrade preserved synthetic pairing/keys/revision/alarm/sound, existing alarm rang and real snooze persisted through original/mirror/reopen. Nine state tests passed. Physical-phone/overnight behavior and new cold-boot proof remain unverified. Optional estimated sleep stays off by default, no REM/medical or automatic wake changes. Keep an independent backup. Update in place, never uninstall or clear data.",
       "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.2.1/kokok-v0.2.1.apk",
