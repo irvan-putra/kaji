@@ -378,8 +378,20 @@
     {
       "name": "bidik",
       "state": "available",
-      "tag": "Signed trimmer, preview-delete and game-audio test",
-      "about": "Adds recording-preview deletion, trim controls and game-audio capture controls. Loop selection can include multiple cycles; exact real-clip cut boundaries and on-device GIF bytes remain unverified. Synthetic retention was tested from0.1.3 to development0.1.4 before the version/badge rebadge; this is not proof of an installed0.1.4-to-published0.1.5 upgrade. Physical Samsung A24 behavior remains unverified. Jin client remains inert, no cross-app message flow.",
+      "tag": "Signed prerelease with capture and queue-ID wiring",
+      "about": "Published test APK, code7, same signing identity as0.1.5. Capture/game-audio, optional mic, motion overlay, preview/delete, trim and loop-detection work have synthetic or emulator checks, not a new A24 gameplay take. Queue-ID result wiring included. Fresh-boot Jin ChatControl fixture route passed separately; no live relay was dispatched and approvals are pending. Existing edge-drag defect stays separate. Real motion sensitivity, intended-screen outcome and real clip/GIF behavior remain unverified; update in place.",
+      "repo": "https://github.com/irvan-putra/bidik/commit/1dd932226274d31913b17ca764d51d227f9a3036",
+      "version": "0.1.6",
+      "icon": "bidik016.png",
+      "apk": "https://github.com/irvan-putra/bidik/releases/download/v0.1.6/bidik-v0.1.6.apk",
+      "release": "https://github.com/irvan-putra/bidik/releases/tag/v0.1.6",
+      "sha256": "9f8033a3c3ce89199dcad835ac837b73e1acb170709906ddea26f6a7d32ee14f"
+    },
+    {
+      "name": "bidik",
+      "state": "legacy",
+      "tag": "Historical signed0.1.5 test release",
+      "about": "Historical published0.1.5 APK. Preview/delete, trim and game-audio controls; real-clip cut boundaries and on-device GIF bytes were not verified. Later0.1.6 source and queue-ID integration are separate. Existing bytes and releases retained.",
       "repo": "https://github.com/irvan-putra/bidik/commit/fc17f4d585770279c2ccdf450bf9988c07d75528",
       "version": "0.1.5",
       "icon": "bidik.png",
