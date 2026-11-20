@@ -572,11 +572,23 @@
       "state": "available",
       "icon": "tagih.png",
       "tag": "Local-first invoice and payment records",
-      "about": "Offline invoice tracker with due dates, manually recorded payments, recoverable archive and JSON/CSV exports. No permissions, bank connection or payment processing. Signed emulator launch and empty JSON export checked; full invoice workflows and physical-phone behavior remain unverified.",
+      "about": "Offline invoice tracker with due dates, manually recorded payments, recoverable archive and JSON/CSV exports. No permissions, bank connection or payment processing. Synthetic emulator lifecycle checked create, sent, partial/full payments, paid, archive/restore and CSV contents; physical-phone behavior remains unverified.",
       "apk": "https://github.com/irvan-putra/tagih/releases/download/v0.1.0/tagih-v0.1.0.apk",
       "release": "https://github.com/irvan-putra/tagih/releases/tag/v0.1.0",
       "repo": "https://github.com/irvan-putra/tagih/commit/75d19ca4b6fb9c888e956f6c927c5c6cdbaede3b",
       "sha256": "168e60b8c362572d4558d06f22cc9101aa5b4099e9f16a24fd67f72c9fc2d0b0"
+    },
+    {
+      "name": "sambung",
+      "version": "0.1.0",
+      "state": "available",
+      "icon": "sambung.png",
+      "tag": "Manual AI brief and reply handoff",
+      "about": "Offline request briefs, clipboard/share handoff, reply-shape checks and local history. You carry the text to an assistant and review the result before sharing it back. No network permission, provider account connection, API key, subscription access or automatic result application. Physical-phone behavior remains unverified.",
+      "apk": "https://github.com/irvan-putra/sambung/releases/download/v0.1.0/sambung-v0.1.0.apk",
+      "release": "https://github.com/irvan-putra/sambung/releases/tag/v0.1.0",
+      "repo": "https://github.com/irvan-putra/sambung/commit/8095c3d",
+      "sha256": "4eda63a9b158916b0b6d714f59fe636467111d575fc3059f4b735b9b76a7d59d"
     }
   ]
 }
