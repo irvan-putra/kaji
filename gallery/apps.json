@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 12:23 WIB",
+  "checked": "2026-11-20 12:39 WIB",
   "apps": [
     {
       "name": "kokok",
@@ -565,6 +565,18 @@
       "release": "https://github.com/irvan-putra/nada/releases/tag/v0.1.2",
       "repo": "https://github.com/irvan-putra/nada/commit/5647aa8f25f4c04c59044c212b9badf0161077bf",
       "sha256": "1081313eadbdb0b942e8ff4f333f40597ea58f3d65fc97663899987507233a6a"
+    },
+    {
+      "name": "tagih",
+      "version": "0.1.0",
+      "state": "available",
+      "icon": "tagih.png",
+      "tag": "Local-first invoice and payment records",
+      "about": "Offline invoice tracker with due dates, manually recorded payments, recoverable archive and JSON/CSV exports. No permissions, bank connection or payment processing. Signed emulator launch and empty JSON export checked; full invoice workflows and physical-phone behavior remain unverified.",
+      "apk": "https://github.com/irvan-putra/tagih/releases/download/v0.1.0/tagih-v0.1.0.apk",
+      "release": "https://github.com/irvan-putra/tagih/releases/tag/v0.1.0",
+      "repo": "https://github.com/irvan-putra/tagih/commit/75d19ca4b6fb9c888e956f6c927c5c6cdbaede3b",
+      "sha256": "168e60b8c362572d4558d06f22cc9101aa5b4099e9f16a24fd67f72c9fc2d0b0"
     }
   ]
 }
