@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-19 16:10 WIB",
+  "checked": "2026-11-20 10:43 WIB",
   "apps": [
     {
       "name": "kokok",
@@ -15,15 +15,15 @@
     },
     {
       "name": "tengok",
-      "version": "0.1.4",
+      "version": "0.3.0",
       "state": "available",
       "icon": "tengok.png",
-      "tag": "Experimental checksum repair and local diagnostics",
-      "about": "Buffered-byte checksum repair passed a pinned emulator fixture and a same-file device trial. This does not prove every format or provider. Details falls back safely on hashing errors. Expanded diagnostics stay local and are shared only manually, with structured fields instead of file names, paths or contents. The full crash trace stays on the phone. No automatic upload. Existing MIDI, image, audio, text and hex views retain their format limits. Game and folder explorer are not included. Packaged launcher icons read 0.1.4.",
-      "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.1.4/tengok-v0.1.4.apk",
-      "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.1.4",
-      "repo": "https://github.com/irvan-putra/tengok/commit/8f5f4d1a31aff1123ec7099891f6df75a0887fb1",
-      "sha256": "e75d9c24497bae96909751ef5ffe28de307a14ccc4df43100f3920cbe7a1d7a5"
+      "tag": "MIDI game and read-only folder explorer",
+      "about": "MIDI falling-note game, on-screen piano and USB MIDI input, plus a read-only folder explorer for a folder you choose. No delete, rename or move. Existing MIDI, image, audio, text and hex views retain their format limits. Emulator UI and function checks passed; real USB keyboard behavior and version 0.3.0 on a physical phone remain unverified. Diagnostics stay local and are shared manually, never uploaded automatically. Packaged launcher icon reads 0.3.0.",
+      "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.0/tengok-v0.3.0.apk",
+      "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.0",
+      "repo": "https://github.com/irvan-putra/tengok/commit/d4af1fcdbcce35b7076b2da8625f9674b39f894c",
+      "sha256": "d47a2fb2709166da1959a07c233bba770b4cc2e7b47ea6b133deccf1e6717be4"
     },
     {
       "name": "sanggup",
