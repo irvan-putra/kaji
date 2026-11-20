@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 19:02 WIB",
+  "checked": "2026-11-20 19:30 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -296,6 +296,15 @@
           "source": "https://github.com/irvan-putra/unggun/commit/7ed0acb2f32426e2ac25bd523e4da7504b41fa66",
           "icon": "../apk/icons/unggun.png",
           "icon_note": "Android app icon; browser data and behavior are separate"
+        },
+        {
+          "name": "unggah",
+          "tag": "Read-only ZIP and public-repo comparison",
+          "about": "Compare a local ZIP with a public GitHub repository. Deployed synthetic comparison checked. GitHub sign-in and relay are absent, real writes are disabled, and no upload or commit is made. Browser capability is separate from Android.",
+          "url": "https://vanipy.com/unggah/",
+          "source": "https://github.com/irvan-putra/unggah/commit/78f43851764cd26839cebc0b9b67b7c92a33bec9",
+          "icon": "../apk/icons/unggah.png",
+          "icon_note": "Android app icon; browser comparison is read-only"
         }
       ]
     },
