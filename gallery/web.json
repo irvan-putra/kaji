@@ -269,6 +269,15 @@
           "android": "https://github.com/irvan-putra/onda/releases/tag/v0.2.2",
           "icon": "../apk/icons/onda.png",
           "icon_note": "Android0.2.2 icon; separate browser sensor/model subset"
+        },
+        {
+          "name": "denyut",
+          "tag": "Browser-local Python-core commands",
+          "about": "Deployed Python-core commands, notes retention and a tab-awake reminder. Browser-local data stays separate from Android. Not a freeform model or a reliable background/locked-phone reminder. Phone performance remains unverified.",
+          "url": "https://vanipy.com/denyut/",
+          "source": "https://github.com/irvan-putra/denyut/commit/50feb97024961da167bff364cd086a5adad1adb4",
+          "icon": "../apk/icons/denyut.png",
+          "icon_note": "Android app icon; browser and Android behavior/data are separate"
         }
       ]
     },
