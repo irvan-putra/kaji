@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 14:52 WIB",
+  "checked": "2026-11-20 14:55 WIB",
   "apps": [
     {
       "name": "kokok",
@@ -51,10 +51,22 @@
     },
     {
       "name": "tengok",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "state": "available",
       "icon": "tengok.png",
-      "tag": "MIDI game controls and read-only folder explorer",
+      "tag": "Phone piano, recent files and live game rank, test APK",
+      "about": "Finger-sized piano keys with automatic panning and sideways look-around drag, local recent files and a live/final game rank. Recent-file removal clears only the list, not the file; access-lost handling was inspected. Offline, zero Android permissions, no automatic file or diagnostic uploads. Published-APK upgrade retention and full smoke checks are still in progress, not a verified or user-delivered upgrade. Earlier0.3.1 emulator evidence does not prove these new bytes. Physical-phone and USB keyboard behavior remain unverified. Read-only folder explorer and existing MIDI/image/audio/text/hex limits remain; other viewer formats are not included.",
+      "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.2/tengok-v0.3.2.apk",
+      "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.2",
+      "repo": "https://github.com/irvan-putra/tengok/commit/a51bea33058d0a563d458f3e53a6718e7249c2cf",
+      "sha256": "e13e258e1bbe4bcd4922d909dba732a5ed98ad2791b1029a026b76c6148a8db5"
+    },
+    {
+      "name": "tengok",
+      "version": "0.3.1",
+      "state": "legacy",
+      "icon": "tengok-0.3.1.png",
+      "tag": "Previous signed test build",
       "about": "MIDI game with late-note hints, jump, draggable clock timeline, played notes leaving the lane, a fresh round at the end and speed-adjusted scoring. Read-only chosen-folder explorer and MIDI, image, audio, text and hex views retain their format limits; no delete, rename or move. Published-APK emulator checks passed for real folder access and game runtime. Physical-phone and USB keyboard behavior remain unverified. Diagnostics stay local and are shared manually, never uploaded automatically.",
       "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.1/tengok-v0.3.1.apk",
       "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.1",
