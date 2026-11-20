@@ -282,7 +282,7 @@
         {
           "name": "bidik",
           "tag": "Local-video loop and GIF maker",
-          "about": "Separate browser JavaScript implementation with local video selection, loop candidates, trim, preview and GIF export. Videos are not uploaded. Synthetic desktop fixtures passed; MP4, real gameplay and phone performance remain untested. Not proof of Android loop/GIF correctness. No browser screen recording.",
+          "about": "Separate browser JavaScript loop/GIF maker with local video selection, candidates, trim, preview and export. Videos are not uploaded. Synthetic WebM and H.264 MP4 desktop Chrome fixtures passed; phone recordings, HEVC, variable frame rate, large files and phone performance remain untested. Not proof of Android loop/GIF correctness. No browser screen recording.",
           "url": "https://vanipy.com/bidik/",
           "source": "https://github.com/irvan-putra/bidik/commit/e4f5691d33109435f7e002150eeb000775311ec7",
           "icon": "../apk/icons/bidik.png",
