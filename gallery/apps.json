@@ -379,7 +379,7 @@
       "name": "bidik",
       "state": "available",
       "tag": "Signed prerelease with capture and queue-ID wiring",
-      "about": "Published test APK, code7, same signing identity as0.1.5. Capture/game-audio, optional mic, motion overlay, preview/delete, trim and loop-detection work have synthetic or emulator checks, not a new A24 gameplay take. Queue-ID result wiring included. Fresh-boot Jin ChatControl fixture route passed separately; no live relay was dispatched and approvals are pending. Existing edge-drag defect stays separate. Real motion sensitivity, intended-screen outcome and real clip/GIF behavior remain unverified; update in place.",
+      "about": "Published test APK, code7, same signing identity as0.1.5. Capture/game-audio, optional mic, motion overlay, preview/delete, trim and loop-detection work have synthetic or emulator checks, not a new A24 gameplay take. Queue-ID result wiring included. Fresh-boot Jin ChatControl fixture route passed separately; a live relay remains unverified. Existing edge-drag defect stays separate. Real motion sensitivity, intended-screen outcome and real clip/GIF behavior remain unverified; update in place.",
       "repo": "https://github.com/irvan-putra/bidik/commit/1dd932226274d31913b17ca764d51d227f9a3036",
       "version": "0.1.6",
       "icon": "bidik016.png",
