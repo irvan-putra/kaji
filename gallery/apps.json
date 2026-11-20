@@ -1,12 +1,24 @@
 {
-  "checked": "2026-11-20 12:39 WIB",
+  "checked": "2026-11-20 14:13 WIB",
   "apps": [
     {
       "name": "kokok",
-      "version": "0.1.4",
+      "version": "0.2.0",
       "state": "available",
       "icon": "kokok.png",
-      "tag": "Experimental local alarm sound preview and chooser",
+      "tag": "Optional estimated sleep and cold locked-boot alarm repair",
+      "about": "Optional phone-based estimated sleep, off by default, requires Android10+ and compatible Google Play services. No REM, stages or medical claim; no microphone, camera, location permission or automatic alarm-time changes. Sleep records stay private; explicit clipboard summary only. Exact signed0.1.4 upgrades passed syntheticAPI34 tests for both chosen and default sound, cold pre-unlock ringing, preserved pairing/keys/alarms/sound and old-code rollback compatibility. Physical-phone overnight reliability and provider accuracy remain unverified. Keep an independent backup alarm. Update in place, do not uninstall or clear data.",
+      "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.2.0/kokok-v0.2.0.apk",
+      "release": "https://github.com/irvan-putra/kokok/releases/tag/v0.2.0",
+      "repo": "https://github.com/irvan-putra/kokok/commit/4050232ef9c38d29d4b869e4608cd27ef1594b7a",
+      "sha256": "8550ba9651f5ee2bbd5ed08c893d8121a4331f33bf196648b1c879d631a60ce5"
+    },
+    {
+      "name": "kokok",
+      "version": "0.1.4",
+      "state": "legacy",
+      "icon": "kokok.png",
+      "tag": "Previous signed build",
       "about": "Preview the current alarm sound for up to 10 seconds, choose a device alarm sound for kokok only, or return to the phone default. Default unchanged until an explicit choice; no system-volume change. Existing keys and alarm records retained. Experimental alarm delivery and local scheduling are not a guarantee of exact timing or reliability across every device state. Keep an independent backup for important wake-ups.",
       "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.1.4/kokok-v0.1.4.apk",
       "release": "https://github.com/irvan-putra/kokok/releases/tag/v0.1.4",
@@ -31,7 +43,7 @@
       "state": "available",
       "icon": "sanggup.png",
       "tag": "25 offline skill paths in a 5x5 grid, experimental test APK",
-      "about": "25 offline starter paths with a 5x5 app grid, including Content creator and expanded Community building: activation, engagement, sponsors, partners, negotiation and benefits with evidence. Signed Android grid checked at narrow width. Widget instrumentation and signed upgrade proof are still pending for this version. Existing Sang widget and practice/streak features retained in source; exact launcher grid metadata and physical-phone behavior unverified. Browser/Android progress stays separate, not competency or income proof.",
+      "about": "25 offline starter paths with a5x5 app grid, including Content creator and expanded Community building. Signed0.1.1-to0.1.2 upgrade retained synthetic progress/streak; post-publication checks passed. Widget tests include passes and intermittent failures under investigation, cause unproven. Physical-phone behavior unverified. Browser/Android progress stays separate, not competency or income proof. Newer web content is separate from these APK bytes.",
       "apk": "https://github.com/irvan-putra/sanggup/releases/download/v0.1.2/sanggup-v0.1.2.apk",
       "release": "https://github.com/irvan-putra/sanggup/releases/tag/v0.1.2",
       "repo": "https://github.com/irvan-putra/sanggup/commit/3556b21",
