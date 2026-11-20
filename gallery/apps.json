@@ -1,11 +1,23 @@
 {
-  "checked": "2026-11-20 17:34 WIB",
+  "checked": "2026-11-20 18:00 WIB",
   "apps": [
     {
       "name": "tengok",
-      "version": "0.3.3",
+      "version": "0.3.4",
       "state": "available",
       "icon": "tengok.png",
+      "tag": "Published test candidate, phone/proof pending",
+      "about": "Signed0.3.4/code9 candidate, actual bytes/icon/checksum verified, zero Android permissions and unchanged signer. Current emulator/upgrade proof pending; no claim of fixed phone tap/audio behavior. Prior tap-cause hypotheses remain unconfirmed. Converters stay excluded.",
+      "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.4/tengok-v0.3.4.apk",
+      "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.4",
+      "repo": "https://github.com/irvan-putra/tengok/commit/b3c0691da75b97ef7255cd6d421328cf6a88ec6e",
+      "sha256": "d32cb7e51441928df917cd5429abea56641aefa35530859baf0b70086ad6b575"
+    },
+    {
+      "name": "tengok",
+      "version": "0.3.3",
+      "state": "legacy",
+      "icon": "tengok-0.3.3.png",
       "tag": "Phone tap candidate, cause not yet confirmed",
       "about": "Test candidate for the reported phone tap issue. Code changes target parent touch interception and quick sideways wobble, but earlier old/new emulator checks both passed, so the phone cause and fix remain unconfirmed. User phone retest decides. Zero Android permissions; existing viewers/piano/rank/recent-file features retained. Converters excluded and kept on their branch. Upgrade-preservation proof pending separately, not claimed.",
       "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.3/tengok-v0.3.3.apk",
