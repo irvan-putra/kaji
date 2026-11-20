@@ -1,6 +1,18 @@
 {
-  "checked": "2026-11-20 17:09 WIB",
+  "checked": "2026-11-20 17:34 WIB",
   "apps": [
+    {
+      "name": "tengok",
+      "version": "0.3.3",
+      "state": "available",
+      "icon": "tengok.png",
+      "tag": "Phone tap candidate, cause not yet confirmed",
+      "about": "Test candidate for the reported phone tap issue. Code changes target parent touch interception and quick sideways wobble, but earlier old/new emulator checks both passed, so the phone cause and fix remain unconfirmed. User phone retest decides. Zero Android permissions; existing viewers/piano/rank/recent-file features retained. Converters excluded and kept on their branch. Upgrade-preservation proof pending separately, not claimed.",
+      "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.3/tengok-v0.3.3.apk",
+      "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.3",
+      "repo": "https://github.com/irvan-putra/tengok/commit/c1e6ff6a6b136b398649e279b5d7e2036906c91d",
+      "sha256": "cc88c87a0e02e80c09cf15f591ee21b7b92edd5e0f54bbca302d8855f2dc81f6"
+    },
     {
       "name": "tindak",
       "version": "0.5.20",
@@ -88,8 +100,8 @@
     {
       "name": "tengok",
       "version": "0.3.2",
-      "state": "available",
-      "icon": "tengok.png",
+      "state": "legacy",
+      "icon": "tengok-0.3.2.png",
       "tag": "Phone piano, recent files and live game rank, test APK",
       "about": "Finger-sized piano keys with automatic panning and sideways look-around drag, local recent files and a live/final game rank. Recent-file removal clears only the list, not the file; access-lost handling was inspected. Offline, zero Android permissions, no automatic file or diagnostic uploads. Published0.3.1-to0.3.2 synthetic upgrade retained a remembered folder and its Android grant via the real picker. Published piano width/panning/non-striking drag checks passed. Full published-APK folder/game/rank/recents and upgrade suite passed after a test-log accounting fix. Not yet user-delivered. Physical-phone and USB keyboard behavior remain unverified. Read-only folder explorer and existing MIDI/image/audio/text/hex limits remain; other viewer formats are not included.",
       "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.3.2/tengok-v0.3.2.apk",

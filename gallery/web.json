@@ -120,12 +120,12 @@
         {
           "name": "tengok",
           "tag": "Browser-local file viewer",
-          "about": "MIDI playback, piano roll and play-along game; browser-decoded images/audio, text and hex/details. Simple synth approximates instruments and omits pitch bends. PDF/video/SVG/office/archive rich viewers remain parked; files stay in this tab. Conversion work is separate and evolving, not a blanket format promise.",
+          "about": "MIDI playback, piano roll and play-along game; browser-decoded images/audio, text and hex/details. Simple synth approximates instruments and omits pitch bends. PDF/video/SVG/office/archive rich viewers remain parked; files stay in this tab. Conversion work is separate and evolving, not a blanket format promise. Long MIDI piano rolls now scale to stay within browser canvas limits; synthetic six-minute6400-note render passed, physical cantina2 retest pending. Built-in sample links selectable, local files show no shareable URL/no upload. Android tap candidate remains unconfirmed on phone.",
           "url": "https://vanipy.com/tengok/",
-          "source": "https://github.com/irvan-putra/tengok/commit/e092f24735dd0971921ebad24dee06c7f6f22f11",
-          "android": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.2",
+          "source": "https://github.com/irvan-putra/tengok/commit/da6ebb80220155c44cafb503892498434982f472",
+          "android": "https://github.com/irvan-putra/tengok/releases/tag/v0.3.3",
           "icon": "../apk/icons/tengok.png",
-          "icon_note": "Android 0.3.2 app icon; web version is separate"
+          "icon_note": "Android0.3.3 packaged icon; web viewer has separate fixes"
         },
         {
           "name": "tindak tasks",
