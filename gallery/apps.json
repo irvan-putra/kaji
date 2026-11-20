@@ -1,6 +1,18 @@
 {
-  "checked": "2026-11-20 16:47 WIB",
+  "checked": "2026-11-20 16:59 WIB",
   "apps": [
+    {
+      "name": "jumpa",
+      "version": "0.1.0",
+      "state": "available",
+      "icon": "jumpa.png",
+      "tag": "Signed personal CRM test, zero permissions",
+      "about": "Offline browser-style people notes, promises and organization context. Read-only manual contact links, no bulk contact access. Demo data is separate from real records. Published APK identity/icon/checksum verified; physical-phone behavior untested. Kunjung relationship is undecided, no feature merge.",
+      "repo": "https://github.com/irvan-putra/jumpa/tree/v0.1.0",
+      "apk": "https://github.com/irvan-putra/jumpa/releases/download/v0.1.0/jumpa-v0.1.0.apk",
+      "release": "https://github.com/irvan-putra/jumpa/releases/tag/v0.1.0",
+      "sha256": "02c69c0447d622ede1de3becc8e48749be258652417eddae481b58e7d59bfc59"
+    },
     {
       "name": "kokok",
       "version": "0.2.1",
