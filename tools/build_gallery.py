@@ -66,6 +66,7 @@ def web():
         out += f'<h2>{e(sec["title"])}</h2><div class="grid">'
         for w in sec["items"]:
             b = btn("Open", w["url"], True) + (btn("Source", w["source"]) if w.get("source") else "")
+            if w.get("android"): b += btn("Android test release", w["android"])
             out += f'<div class="card"><h3>{e(w["name"])}</h3><div class="tag">{e(w["tag"])}</div><p>{e(w["about"])}</p><div>{b}</div></div>'
         out += "</div>"
     return page("kaji web examples", f'Pages, demos and examples we made. Links checked {e(d["checked"])}. Proposals and simulations are labeled as such.', out, "../")

@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 15:33 WIB",
+  "checked": "2026-11-20 16:18 WIB",
   "apps": [
     {
       "name": "kokok",
@@ -233,11 +233,23 @@
     {
       "name": "bidik",
       "state": "available",
+      "tag": "Signed trimmer, preview-delete and game-audio test",
+      "about": "Adds recording-preview deletion, trim controls and game-audio capture controls. Loop selection can include multiple cycles; exact real-clip cut boundaries and on-device GIF bytes remain unverified. Synthetic retention was tested from0.1.3 to development0.1.4 before the version/badge rebadge; this is not proof of an installed0.1.4-to-published0.1.5 upgrade. Physical Samsung A24 behavior remains unverified. Jin client remains inert, no cross-app message flow.",
+      "repo": "https://github.com/irvan-putra/bidik/commit/fc17f4d585770279c2ccdf450bf9988c07d75528",
+      "version": "0.1.5",
+      "icon": "bidik.png",
+      "apk": "https://github.com/irvan-putra/bidik/releases/download/v0.1.5/bidik-v0.1.5.apk",
+      "release": "https://github.com/irvan-putra/bidik/releases/tag/v0.1.5",
+      "sha256": "1bc75487d80d8a63a476106d531e0486ee6212fc80958b05ad543931cf168fb8"
+    },
+    {
+      "name": "bidik",
+      "state": "legacy",
       "tag": "Signed recording-controls test; A24 behavior unverified",
       "about": "Delayed start, auto-stop, status/navigation-bar crop and looping-GIF export with manual trim fallback. Main controls stay on the home screen, other actions in a left drawer. Emulator recording tests passed; physical Samsung A24 capture behavior is unverified. Loop quality depends on the clip; no perfect-loop guarantee. Jin client is inert, no cross-app message flow.",
       "repo": "https://github.com/irvan-putra/bidik/commit/67fa086d044ea38d6d8c2c6ae42aaa0efb70e70b",
       "version": "0.1.4",
-      "icon": "bidik.png",
+      "icon": "bidik-0.1.4.png",
       "apk": "https://github.com/irvan-putra/bidik/releases/download/v0.1.4/bidik-v0.1.4.apk",
       "release": "https://github.com/irvan-putra/bidik/releases/tag/v0.1.4",
       "sha256": "a7e126570a8ec8fdf75b49cf4cdc52aa23a9924e5ce2b69ea2e9e430ea2d6966"
