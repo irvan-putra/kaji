@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-21 12:28 WIB",
+  "checked": "2026-11-21 16:32 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -324,6 +324,15 @@
           "android": "https://github.com/irvan-putra/simak/releases/tag/v0.3.2",
           "icon": "../apk/icons/simak032.png",
           "icon_note": "Packaged Android0.3.2 icon; qualified and delivered. Web and Android are separate."
+        },
+        {
+          "name": "halo",
+          "tag": "Hello World · Node web service",
+          "about": "A minimal Hello World page hosted on NEO App. Generic deployment example using a small Node static server.",
+          "url": "https://irvan.app.neoapp.id/",
+          "source": "https://github.com/irvan-putra/halo/commit/808046993d1edbeac193c8c2bd28f19ae1c6e5b8",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
         }
       ]
     },
@@ -412,6 +421,15 @@
           "android": "https://github.com/irvan-putra/tumbuh/releases/tag/v0.2.2",
           "icon": "../apk/icons/tumbuh.png",
           "icon_note": "Android 0.2.2 app icon; web version is separate"
+        },
+        {
+          "name": "NEO App and Excellent services",
+          "tag": "Public-source service explainer",
+          "about": "Application deployment versus managed business email and infrastructure services. Vendor-attributed features, dated advertised terms, scope limits and questions before choosing. Not a benchmark or deliverability rating.",
+          "url": "https://vanipy.com/kaji/cloud-and-email/",
+          "source": "https://github.com/irvan-putra/kaji",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
         }
       ]
     }

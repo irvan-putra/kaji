@@ -64,3 +64,5 @@ This repo also includes illustrations alongside the Android-update, application-
 - [Repo Exchange: a public catalogue of GitHub repos ranked by star growth](docs/repoexchange.md) - what repoexchange.web.id's public pages offer (24H/7D/30D star-growth leaderboard, editor's picks, reviewed submissions); no RSS or newsletter at check time, figures not cross-checked.
 
 Project-specific research that only makes sense inside its own project stays in that project's repository instead.
+
+- [NEO App and Excellent: app hosting and managed email](https://vanipy.com/kaji/cloud-and-email/) - a public-source service guide, category distinctions, advertised commercial terms and questions before choosing. [Source note](docs/cloud-and-email.md).

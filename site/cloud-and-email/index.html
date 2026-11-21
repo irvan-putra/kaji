@@ -1,0 +1,62 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NEO App and Excellent: app hosting and managed email | kaji</title><style>*{box-sizing:border-box}body{overflow-wrap:anywhere;margin:0;background:#f4f1eb;color:#202b29;font:17px/1.65 system-ui,sans-serif}main{max-width:1150px;margin:auto;padding:44px 32px 100px}nav{font-size:14px;margin-bottom:35px}a{color:#156c60;overflow-wrap:anywhere}h1{font:600 clamp(32px,5vw,56px)/1.12 Georgia,serif;max-width:900px;margin:0 0 30px}h2{font:500 30px/1.25 Georgia,serif;margin:65px 0 25px}p{max-width:950px}img{display:block;width:100%;border-radius:16px;margin:30px 0}table{table-layout:fixed;border-collapse:collapse;width:100%;font-size:15px;background:#fffdf8}th,td{overflow-wrap:anywhere;min-width:0;text-align:left;vertical-align:top;padding:18px;border-bottom:1px solid #d9dfda}th{background:#dfece6;font-size:13px;text-transform:uppercase;letter-spacing:.04em}ul{padding-left:24px}li{margin:8px 0}footer{border-top:1px solid #bbc8c0;margin-top:50px;padding-top:20px;font-size:14px}@media(max-width:650px){main{padding:26px 18px 70px}body{font-size:16px}h2{font-size:28px;margin-top:48px}table,tbody,tr,td{display:block;width:100%!important}thead{display:none}table{background:transparent}tr{background:#fffdf8;border:1px solid #d9dfda;border-radius:12px;margin:0 0 18px;padding:8px 16px}td{border:0;padding:10px 0;font-size:15px}td:before{content:attr(data-label);display:block;color:#597269;font:600 11px/1.5 system-ui;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}td:first-child{font-size:21px}img{border-radius:10px}}code{font-size:.9em}h3{font-size:21px;margin-top:36px}img{max-width:800px}</style><main><nav><a href="../">Kaji</a> / Public service notes · 21 Nov 2026</nav>
+<h1>Run an app, or run business email?</h1>
+<p>Biznet GIO's NEO App and Excellent solve different starting problems. <strong>NEO App is an application deployment platform.</strong> <strong>Excellent offers managed email and infrastructure services, alongside licensing, support and training.</strong> They are not direct substitutes just because both involve servers.</p>
+<p>This is a public-source explainer, checked 21 November 2026. Product features and commercial terms below are the vendors' advertised descriptions, not an independent performance, security or email-deliverability test.</p>
+<h2>The short version</h2>
+<table><thead><tr><th>Need</th><th>Relevant service</th><th>What to establish first</th></tr></thead><tbody>
+<tr><td data-label="Need">Put application code online</td><td data-label="Relevant service">Biznet GIO NEO App: source or image deployment, runtime, HTTPS and managed backend components.</td><td data-label="What to establish first">Runtime support, persistent data, full resource cost, backups and an exit path.</td></tr>
+<tr><td data-label="Need">Operate company email on a domain</td><td data-label="Relevant service">Excellent Managed Services Email Server: Zimbra on VPS/cloud with server operation handled by Excellent.</td><td data-label="What to establish first">Users, mailbox sizes, licensing, migration, location, recovery and support scope.</td></tr>
+<tr><td data-label="Need">Maintain existing mail or virtualization infrastructure</td><td data-label="Relevant service">Excellent's Zimbra support, patching and training; Proxmox implementation and licensing services.</td><td data-label="What to establish first">Who owns each operational task, supported versions, response times and maintenance windows.</td></tr>
+</tbody></table>
+<h2>Biznet GIO NEO App: from code to a running service</h2>
+<p><a href="https://www.biznetgio.com/product/neo-app-platform">NEO App's official product page</a> describes a platform as a service (PaaS). Instead of starting by configuring a server over SSH, developers supply application code or a container and use the platform's build and deployment flow.</p>
+<ul>
+<li><strong>Deployment inputs:</strong> Git repositories, ZIP or tar.gz source archives, templates, Dockerfiles and prebuilt container images. The page also advertises AI-agent deployment through MCP.</li>
+<li><strong>Application types:</strong> public web applications, static sites and background workers. Listed runtimes include Node.js, Python, Go and PHP/Laravel, with framework and monorepo detection.</li>
+<li><strong>Backend building blocks:</strong> managed PostgreSQL, NATS queues, cron jobs and S3 object storage are advertised. Their presence does not mean every component is included in one compute price.</li>
+<li><strong>Operations:</strong> automatic HTTPS, an app.neoapp.id subdomain, custom-domain support, logs, resource graphs, a browser terminal and rollback. The vendor advertises horizontal autoscaling; its scale-to-zero description specifically discusses idle background workers. Check eligibility rather than assuming all services stop billing when idle.</li>
+</ul>
+<p><strong>Public commercial snapshot:</strong> the page advertises &quot;starting from Rp50/hour,&quot; top-ups starting at Rp100,000, no monthly contract, and free bandwidth egress, subdomain and SSL. These are public headline terms as checked on 21 November 2026, not a quote for any particular configuration or account. Confirm applicable tax, resources, databases, storage, replicas, limits and billing behavior before deployment. The headline rate is not a complete application budget.</p>
+<p><strong>What this does not establish:</strong> the product page is not a benchmark, a recovery test or evidence that an application is secure. Runtime compatibility, app dependencies, secrets, data retention, backups, observability and deployment rollback still need a project-specific check. A rollback of code is not automatically a rollback or backup of database contents.</p>
+<h2>Excellent: managed email and infrastructure expertise</h2>
+<p><a href="https://www.excellent.co.id/product-services/">Excellent's product and services page</a> lists Zimbra, Proxmox, SSL certificates, support and maintenance, technical books/modules, and training. Its <a href="https://www.excellent.co.id/zimbra/">Zimbra service page</a> covers installation, upgrades and patching, repairs, managed services, Network Edition licensing and training.</p>
+<h3>Managed Zimbra email</h3>
+<p>The <a href="https://zimbra.excellent.co.id/ems">Excellent Managed Services page</a> describes Zimbra email hosted on VPS/cloud infrastructure prepared and managed by its team. Advertised work includes setup, updates, hardening and performance tuning. It also describes an anti-spam/anti-virus gateway option, authenticated SMTP relay, and MX backup.</p>
+<p>Those features address different jobs. A mail platform runs mailboxes and collaboration; a spam gateway filters traffic; a relay handles outgoing delivery; MX backup temporarily queues incoming mail during an outage and forwards it when the primary service returns. <strong>MX queuing is not the same as a complete mailbox backup and restore service.</strong> Ask separately about retention, restore points, deletion recovery and tested recovery times.</p>
+<p>The vendor says its authenticated relay can help sending reputation and reduce legitimate mail landing in spam. That is a service claim, not a guarantee of inbox placement. This note does not independently rate Excellent's IP reputation or mail deliverability.</p>
+<h3>Beyond email</h3>
+<ul>
+<li><strong>Proxmox:</strong> Excellent lists Proxmox Mail Gateway licensing and Proxmox Virtual Environment implementation. These are distinct products: a mail security gateway versus a virtualization platform. <a href="https://www.proxmox.com/en/products/proxmox-virtual-environment/overview">Proxmox's own VE overview</a> describes management of virtual machines and containers, with compute, networking and storage.</li>
+<li><strong>SSL certificates:</strong> its services page lists single-domain, multi-domain, wildcard and extended-validation certificates. Confirm current issuer, validation requirements and renewal ownership rather than treating older partner names as a current certification check.</li>
+<li><strong>Support and training:</strong> mail-server maintenance and Linux, virtualization and mail-server training are listed, with regular, special, in-house and online formats. Availability and exact scope need confirmation.</li>
+</ul>
+<h2>Excellent's published cost notes need a full quote</h2>
+<p>The EMS page publishes important exclusions and conditions. As checked on 21 November 2026, it says:</p>
+<ul>
+<li>Prices exclude VAT; domain and hosting charges are separate from package charges.</li>
+<li>Its stated package location is Singapore, with a 20% package surcharge for Indonesia.</li>
+<li>Setup is Rp1,000,000 for Bronze–Silver and Rp1,500,000 for Gold–Premium; annual upfront payment waives setup.</li>
+<li>Monthly payment is upfront. Zimbra Network Edition licensing is excluded and charged per user account.</li>
+<li>A standard single-domain SSL certificate is listed at Rp500,000/year. Migration is an additional service priced according to the amount of data; multi-server charges multiply by server count.</li>
+</ul>
+<p>These are published notes, not a verified all-in package quotation. Base package pricing was not readable in the fetched page text, so no monthly package total is asserted here. Confirm whether the current proposal still uses these terms, which items overlap with hosting, and the exact tax-inclusive total. A managed email budget depends on users, storage, licensing, server count, location, migration and support scope, not just one headline number.</p>
+<h2>A fair comparison follows the workload</h2>
+<p>For an app, evaluate NEO App's deployment flow, data services, resource billing and portability. For managed company email, evaluate Excellent's operating scope, migration, licensing and recovery commitments. They can be complementary rather than competing services.</p>
+<p>Biznet GIO also advertises a separate <a href="https://www.biznetgio.com/product/vps-zimbra">VPS Zimbra product</a>. That is a closer starting point for an email-service comparison than NEO App. It is a different product: do not transfer NEO App's features or pricing to it, and compare management responsibilities and inclusions explicitly.</p>
+<h3>Questions before choosing</h3>
+<ul>
+<li><strong>Application hosting:</strong> Which resources keep billing when idle? What survives redeployment? How are backups restored? What costs apply to databases, storage and autoscaling? Can code and data be exported without proprietary dependencies?</li>
+<li><strong>Business email:</strong> Who controls the domain and DNS? Who sets and maintains SPF, DKIM and DMARC? Are relay IPs shared or dedicated? What are the sending limits, abuse rules and incident response times?</li>
+<li><strong>Managed service:</strong> What are the uptime and support commitments, recovery point/time targets, data location, maintenance schedule, access controls and exit/migration terms? Request these in writing.</li>
+</ul>
+<h2>Source ledger</h2>
+<p>Official product and documentation pages opened on 21 November 2026. Vendor claims are attributed above; no independent ranking or procurement recommendation is implied.</p>
+<ol>
+<li><a href="https://www.biznetgio.com/product/neo-app-platform">Biznet GIO: NEO App</a> — deployment routes, components, advertised features and public headline commercial terms.</li>
+<li><a href="https://www.excellent.co.id/product-services/">Excellent: Products and Services</a> — service categories.</li>
+<li><a href="https://zimbra.excellent.co.id/ems">Excellent Managed Services</a> — managed email scope, relay, MX backup and published cost conditions.</li>
+<li><a href="https://www.excellent.co.id/zimbra/">Excellent: Zimbra</a> — installation, patching, support, licensing and training.</li>
+<li><a href="https://www.biznetgio.com/product/vps-zimbra">Biznet GIO: VPS Zimbra</a> — separate email-hosting product, not NEO App.</li>
+<li><a href="https://www.proxmox.com/en/products/proxmox-virtual-environment/overview">Proxmox VE overview</a> — virtualization category and components.</li>
+</ol>
+<footer><a href="../">Kaji</a> · Public information only. No account information, customer-specific quotes or private recommendations are included. Vendor offerings and prices can change.</footer></main></html>
