@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-21 12:10 WIB",
+  "checked": "2026-11-21 12:16 WIB",
   "apps": [
     {
       "name": "simak",
@@ -51,11 +51,23 @@
     },
     {
       "name": "tuju",
-      "version": "0.2.1",
+      "version": "0.2.3",
       "state": "available",
+      "icon": "tuju023.png",
+      "tag": "Official access guide and labeled venue map",
+      "about": "Delivered 21 Nov 12:16. Official IDSW access guide bundled offline, plus labeled LRT Rasuna Said marker, final JPO walk and Sunday Car Free Day warning on the top map. Wrapped venue text avoids the 5M spine. Published-APK emulator map-fit and offline guide checks passed; actual offline guide and live desktop/mobile map pixels reviewed. Existing route geometry, timer and optional GPS retained. Package/code14/lowercase label/two location permissions/pinned signer and published hash independently checked. Physical phone and real-ride GPS remain unproven; no battery claim.",
+      "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.2.3/tuju-v0.2.3.apk",
+      "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.3",
+      "repo": "https://github.com/irvan-putra/tuju/commit/855782a5df7340e65e66dd9b5321702c9119259d",
+      "sha256": "a977decac4dcac3d2c148fb602769477dbd76f02cf4cdc6736c7d6ce05d86ab8"
+    },
+    {
+      "name": "tuju",
+      "version": "0.2.1",
+      "state": "legacy",
       "icon": "tuju021.png",
       "tag": "Journey timer and optional foreground GPS",
-      "about": "Offline map plus selected-stop journey timer and optional on-device GPS distance. GPS is off by default, asks location permission when enabled, and stops when the screen is left. Comparison uses operator GTFS timetable minutes and straight-line stop distances, not road distance or live travel times. Uncovered figures stay unavailable. Emulator UI/timer checks passed; real-ride GPS and physical phone unproven. Declares fine/coarse location; no INTERNET permission.",
+      "about": "Historical 0.2.1, superseded by 0.2.3. Offline map plus selected-stop journey timer and optional on-device GPS distance. GPS is off by default, asks location permission when enabled, and stops when the screen is left. Comparison uses operator GTFS timetable minutes and straight-line stop distances, not road distance or live travel times. Uncovered figures stay unavailable. Emulator UI/timer checks passed; real-ride GPS and physical phone unproven. Declares fine/coarse location; no INTERNET permission.",
       "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.2.1/tuju-v0.2.1.apk",
       "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.1",
       "repo": "https://github.com/irvan-putra/tuju/commit/53c4c2fd336f6a553812d955b25624cf0ff0b126",
