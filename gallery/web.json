@@ -318,7 +318,7 @@
         {
           "name": "simak",
           "tag": "IDSW agenda, local stars and notes",
-          "about": "Two-day agenda from idsw.dev with suggested learning guide, stars and per-session notes stored on this browser. Offline behavior is not yet verified. Android version is separate; battery use unmeasured. No contacts access in this web companion.",
+          "about": "Two-day agenda from idsw.dev with suggested learning guide, stars and per-session notes stored on this browser. Service-worker activation and seven cached shell assets checked; true cold-offline navigation remains untested. Android version is separate; battery use unmeasured. No contacts access in this web companion.",
           "url": "https://vanipy.com/simak/",
           "source": "https://github.com/irvan-putra/simak/commit/5be4f1f0af801765e6f95413f00b1ec50e22840e",
           "android": "https://github.com/irvan-putra/simak/releases/tag/v0.1.0",
