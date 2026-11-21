@@ -85,3 +85,5 @@ Project-specific research that only makes sense inside its own project stays in 
 - [Laras Router](https://vanipy.com/kaji/larasrouter/) - model API compatibility, QRIS wallet, token rates and billing/data boundaries.
 
 - [InfoTech Jakarta](https://vanipy.com/kaji/infotech-jakarta/) - public event feed/calendar, verify actual event with organizers.
+
+- [Intelecto](https://vanipy.com/kaji/intelecto/) - textbook/Reader/LMS ecosystem, in-product AI and unconfirmed external access.

@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-21 16:47 WIB",
+  "checked": "2026-11-21 17:24 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -526,6 +526,15 @@
           "tag": "Public event-resource guide",
           "about": "Instagram and linked tech-event calendar, with organizer verification and availability caveats.",
           "url": "https://vanipy.com/kaji/infotech-jakarta/",
+          "source": "https://github.com/irvan-putra/kaji",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
+        },
+        {
+          "name": "Intelecto",
+          "tag": "Education · in-product AI versus external access",
+          "about": "Intelecto: learning with AI inside, external AI access unconfirmed",
+          "url": "https://vanipy.com/kaji/intelecto/",
           "source": "https://github.com/irvan-putra/kaji",
           "icon": "icons/research.svg",
           "icon_note": "Web category symbol, not an Android build"
