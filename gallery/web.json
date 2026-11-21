@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-21 11:51 WIB",
+  "checked": "2026-11-21 12:10 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -318,12 +318,12 @@
         {
           "name": "simak",
           "tag": "IDSW agenda, local stars and notes",
-          "about": "Web cache repair delivered 21 Nov 11:40. Returning clients now upgrade the old offline cache and load the current agenda, including the official Day 1 17:05 panel. A warm cloud-browser test with synthetic saved state preserved a legacy whole-block note and Registration star. Physical-phone web confirmation remains pending. No contacts access in this web companion. Linked Android 0.3.2 is published but its emulator qualification has not passed; it is not yet delivered as a qualified APK.",
+          "about": "Web cache repair delivered 21 Nov 11:40. Returning clients now upgrade the old offline cache and load the current agenda, including the official Day 1 17:05 panel. A warm cloud-browser test with synthetic saved state preserved a legacy whole-block note and Registration star. Physical-phone web confirmation remains pending. No contacts access in this web companion. Linked Android 0.3.2 passed published-APK upgrade qualification; final panel screenshot review and APK delivery are pending. Physical-phone and battery proof remain absent.",
           "url": "https://vanipy.com/simak/",
           "source": "https://github.com/irvan-putra/simak/commit/fe2c26e2aeeca367320e7730586042a43632336d",
           "android": "https://github.com/irvan-putra/simak/releases/tag/v0.3.2",
           "icon": "../apk/icons/simak032.png",
-          "icon_note": "Packaged Android 0.3.2 icon; Android qualification has not passed. Web and Android are separate."
+          "icon_note": "Packaged Android 0.3.2 icon; upgrade qualification passed, final APK delivery pending. Web and Android are separate."
         }
       ]
     },

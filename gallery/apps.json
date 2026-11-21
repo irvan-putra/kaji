@@ -1,13 +1,13 @@
 {
-  "checked": "2026-11-21 11:51 WIB",
+  "checked": "2026-11-21 12:10 WIB",
   "apps": [
     {
       "name": "simak",
       "version": "0.3.2",
       "state": "pending",
       "icon": "simak032.png",
-      "tag": "Official panel update; qualification not passed",
-      "about": "Published 21 Nov, not delivered as a qualified APK. Adds the official Day 1 17:05 panel title and panelists. Published-APK emulator qualification has not passed; the previous attempt was obstructed by a launcher ANR overlay; a CI-only handling change is being retried. This is not an established app regression. Existing 0.3.0 remains the last qualified APK. Same package, pinned signer and five permissions; code 6, lowercase label and published SHA-256 independently checked. Physical 0.3.2 behavior and battery use unmeasured. Web cache repair is separate and already delivered.",
+      "tag": "Official panel update; qualified, delivery pending",
+      "about": "Published-APK emulator upgrade qualification passed from 0.3.0 to 0.3.2. The same Bagas note is retained and highlights are readable. Final actual-APK panel screenshot review and delivery are still pending. Adds the official Day 1 17:05 panel title and panelists. Same package, pinned signer and five permissions; code 6, lowercase label and published SHA-256 independently checked. Physical-phone behavior and battery unmeasured; no new star/alarm carryover proof. Web cache repair is separate and already delivered.",
       "apk": "https://github.com/irvan-putra/simak/releases/download/v0.3.2/simak-v0.3.2.apk",
       "release": "https://github.com/irvan-putra/simak/releases/tag/v0.3.2",
       "repo": "https://github.com/irvan-putra/simak/commit/fe2c26e2aeeca367320e7730586042a43632336d",
