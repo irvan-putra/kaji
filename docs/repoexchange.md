@@ -22,7 +22,7 @@ Growth compares the latest star count with a prior snapshot, with a maximum snap
 
 ## What is not offered at check time
 
-- **No RSS, Atom feed or newsletter.** /feed, /rss, /feed.xml, /rss.xml, /sitemap.xml and /robots.txt all return 404, and the page head contains no feed link. Following the catalogue currently means revisiting the site.
+- **No feed or newsletter was discoverable in this dated check.** The page head contains no RSS/Atom feed link, and the common feed paths /feed, /rss, /feed.xml and /rss.xml returned 404 at check time (no sitemap.xml or robots.txt either). Whether the owner plans one is unknown from the public site; following the catalogue currently means revisiting it.
 - **No static rendering.** The leaderboard is populated client-side; a plain HTML fetch shows only "Loading…" placeholders.
 
 ## Not verified
