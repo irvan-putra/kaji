@@ -20,6 +20,10 @@ This repo also includes illustrations alongside the Android-update, application-
 
 ## Notes
 
+- [Hamming, Levenshtein and the cost of a missing letter](https://vanipy.com/kaji/edit-distance/) - illustrated reading of arXiv2211.12496v1, theorem assumptions and synthetic name-ranking examples; separate design proposal, no implementation claim. [Source note](docs/hamming-levenshtein-reading.md).
+
+- [Hamming, Levenshtein and the cost of a missing letter](https://vanipy.com/kaji/edit-distance/) - illustrated reading of arXiv2211.12496v1, theorem assumptions and synthetic name-ranking examples; separate design proposal, no implementation claim. [Source note](docs/hamming-levenshtein-reading.md).
+
 - [Fork or keep: repos versus existing open source](https://vanipy.com/kaji/reuse/) - illustrated comparison tables and [source note](docs/fork-or-keep-open-source-comparison.md), with named candidates, four code-inspected followups and unexamined legacy scope labeled; no adoption, fork, license change or integration proof.
 
 - [IDSW 2026 schedule overview and a learning plan](docs/idsw-2026.md) - the published agenda (checked 2026-11-21, subject to change), a reading of its themes, and a suggested session plan for builders of AI-assisted personal software.

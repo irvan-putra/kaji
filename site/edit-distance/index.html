@@ -1,0 +1,199 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hamming, Levenshtein and missing letters | kaji</title><style>*{box-sizing:border-box}body{overflow-wrap:anywhere;margin:0;background:#f4f1eb;color:#202b29;font:17px/1.65 system-ui,sans-serif}main{max-width:1150px;margin:auto;padding:44px 32px 100px}nav{font-size:14px;margin-bottom:35px}a{color:#156c60;overflow-wrap:anywhere}h1{font:600 clamp(32px,5vw,56px)/1.12 Georgia,serif;max-width:900px;margin:0 0 30px}h2{font:500 30px/1.25 Georgia,serif;margin:65px 0 25px}p{max-width:950px}img{display:block;width:100%;border-radius:16px;margin:30px 0}table{table-layout:fixed;border-collapse:collapse;width:100%;font-size:15px;background:#fffdf8}th,td{overflow-wrap:anywhere;min-width:0;text-align:left;vertical-align:top;padding:18px;border-bottom:1px solid #d9dfda}th{background:#dfece6;font-size:13px;text-transform:uppercase;letter-spacing:.04em}td:first-child{font-weight:650;width:13%}td:nth-child(2){width:31%}ul{padding-left:24px}li{margin:8px 0}footer{border-top:1px solid #bbc8c0;margin-top:50px;padding-top:20px;font-size:14px}@media(max-width:650px){main{padding:26px 18px 70px}body{font-size:16px}h2{font-size:28px;margin-top:48px}table,tbody,tr,td{display:block;width:100%!important}thead{display:none}table{background:transparent}tr{background:#fffdf8;border:1px solid #d9dfda;border-radius:12px;margin:0 0 18px;padding:8px 16px}td{border:0;padding:10px 0;font-size:15px}td:before{content:attr(data-label);display:block;color:#597269;font:600 11px/1.5 system-ui;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}td:first-child{font-size:21px}img{border-radius:10px}}code{font-size:.9em}h3{font-size:21px;margin-top:36px}img{max-width:800px}td:first-child{font-weight:500}</style><main><nav><a href="../">Kaji</a> / Paper reading · 21 Nov 2026</nav><h1>Hamming, Levenshtein and the cost of a missing letter</h1>
+<p>Reading note, 21 Nov 2026. Selected text: <strong>An Algorithmic Bridge Between Hamming and Levenshtein Distances</strong>, Elazar Goldenberg, Tomasz Kociumaka, Robert Krauthgamer and Barna Saha, arXiv:2211.12496v1, 22 Nov 2022. <a href="https://export.arxiv.org/pdf/2211.12496v1.pdf">Read the selected PDF</a>. This note reads the complete 26-page v1, including its appendix. A conference counterpart appeared at ITCS 2023; this is not a survey of advances since 2022.</p>
+<p><strong>The useful distinction:</strong> Hamming counts different characters at fixed positions. Levenshtein can also insert and delete characters, so it can realign strings. The paper studies how the cost of those operations changes algorithmic complexity. It does not propose a personal-name matching system. A short-name sorting design for Simak is discussed separately below, with synthetic examples only. The paper's advanced algorithm has not been implemented as part of this reading note.</p>
+<p><img alt="Original explanatory diagram comparing fixed positions with an edit alignment on synthetic strings" src="../assets/edit-distance-bridge.png"/></p>
+<p><em>Original explanatory illustration, computed synthetic string example, not a paper figure, app screenshot or measured name-matching result.</em></p>
+<h2>Three distances, three questions</h2>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>What counts as an edit?</th>
+<th>What it tells us</th>
+<th>Limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Measure">Hamming</td>
+<td data-label="What counts as an edit?">Substitute one character at a fixed position, cost 1</td>
+<td data-label="What it tells us">How many positions differ?</td>
+<td data-label="Limit">Requires equal-length strings; it cannot realign after an insertion or deletion.</td>
+</tr>
+<tr>
+<td data-label="Measure">Unit-cost Levenshtein</td>
+<td data-label="What counts as an edit?">Insert, delete or substitute one character, each cost 1</td>
+<td data-label="What it tells us">Minimum number of edits to transform one string into another</td>
+<td data-label="Limit">Character order matters; a word-order change can look very distant. It is not identity confidence.</td>
+</tr>
+<tr>
+<td data-label="Measure">The paper's weighted ED_a</td>
+<td data-label="What counts as an edit?">Insertion/deletion cost 1; substitution costs 1/a, for a at least 1</td>
+<td data-label="What it tells us">How computation changes when substitutions are cheaper than insertions/deletions</td>
+<td data-label="Limit">The parameter encodes a chosen error model, not a learned likelihood of two people being the same.</td>
+</tr>
+</tbody>
+</table>
+<p>For <code>abcde</code> and <code>bcdea</code>, Hamming is <strong>5</strong>: every position differs. Unit-cost Levenshtein is <strong>2</strong>: delete the initial <code>a</code>, then insert <code>a</code> at the end. This is a sequence shift, not a special transposition operation.</p>
+<p>At <code>a = 4</code>, substituting all five characters costs <code>5/4 = 1.25</code>, less than the two-indel alignment. The weighted optimum is therefore <strong>1.25</strong>, verified with a small exact dynamic program. These toy computations are not an implementation of the paper's fast algorithms.</p>
+<p>A scaling detail matters. For sufficiently large <code>a</code> on equal-length strings, a substitution-only alignment is optimal and <code>ED_a = Hamming/a</code>. Thus <code>a × ED_a</code> equals Hamming in that regime. Unscaled <code>ED_a</code> tends to zero as substitutions become free; its numeric value does not tend to the ordinary Hamming count. At <code>a = 1</code>, ED_a is ordinary unit-cost Levenshtein.</p>
+<h2>What the paper contributes</h2>
+<p>Let <code>n</code> be the total length of both strings, <code>k</code> a threshold/bound on weighted distance, and <code>epsilon</code> an approximation parameter. The stated algorithmic propositions use a positive integer a; the cost-model intuition allows a at least 1. The soft-O notation below hides polylogarithmic factors. Bounds are attributed to the selected v1, not reproduced proofs or measured performance.</p>
+<table>
+<thead>
+<tr>
+<th>Contribution</th>
+<th>Result in the paper</th>
+<th>How to read it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Contribution">Deterministic exact algorithm</td>
+<td data-label="Result in the paper">Proposition 1.1: <code>O(n + k min(n, ka))</code>, computing ED_a or reporting it exceeds k</td>
+<td data-label="How to read it">An adaptation of diagonal/wavefront-style edit computation and longest-common-extension queries. For a=1 this gives <code>O(n + k min(n,k))</code>.</td>
+</tr>
+<tr>
+<td data-label="Contribution">Conditional lower bound</td>
+<td data-label="Result in the paper">Theorem 1.9 makes the exact bound essentially tight up to subpolynomial factors under the Orthogonal Vectors Conjecture, over the specified parameter range</td>
+<td data-label="How to read it">A conditional theoretical barrier, not an unconditional claim that no faster method can ever exist.</td>
+</tr>
+<tr>
+<td data-label="Contribution">Randomized approximation</td>
+<td data-label="Result in the paper">Theorem 1.5: for constant epsilon and the relevant k&gt;=1 regime, soft-<code>O(n/a + a k^3)</code> for the bounded <code>(1+epsilon)</code> gap problem</td>
+<td data-label="How to read it">Sublinear in n only for suitable a and sufficiently small k. The full theorem includes epsilon dependence and separate k&lt;1 and large-k cases.</td>
+</tr>
+<tr>
+<td data-label="Contribution">Separate edit budgets</td>
+<td data-label="Result in the paper">Theorem 1.6: a <code>(1,1+epsilon)</code> bicriteria result for at most k_I indels and roughly k_S substitutions; fixed-epsilon time soft-<code>O(n k_I/k_S + k_S k_I^3)</code></td>
+<td data-label="How to read it">Allows no multiplicative relaxation of the indel budget, while relaxing substitutions. Most relevant when indels are much fewer than substitutions and total distance is small enough.</td>
+</tr>
+<tr>
+<td data-label="Contribution">Technical tool</td>
+<td data-label="Result in the paper">Approximate longest-common-extension queries, randomized preprocessing and almost-periodic string structure</td>
+<td data-label="How to read it">The engine behind their sublinear results, not a drop-in scoring formula for a contact list.</td>
+</tr>
+</tbody>
+</table>
+<p>The formal bounded approximation is a decision guarantee: YES when <code>ED_a &lt;= k</code>, NO when <code>ED_a &gt; (1+epsilon)k</code>, and either answer in between. The bicriteria version similarly distinguishes the original budgets from the relaxed substitution budget. It does not promise to resolve that gap exactly.</p>
+<h3>Why the speed-up is possible</h3>
+<p>The paper assumes constant-time random access to input characters and known string lengths. It can probe selected positions rather than read every character. It uses sampling and approximate periodicity to answer extension queries efficiently, then feeds those answers into coarser-grained alignment computations. Correctness is with high probability for the randomized results.</p>
+<p>That is different from reading names from storage, normalizing them and sorting every candidate in an application. The theorem does not make that end-to-end pipeline sublinear. A low theoretical bound also does not establish a practical speed-up for short strings: no short-name benchmark or phone battery result is presented here.</p>
+<p>The authors motivate their substitution-heavy model partly with sequence-comparison applications such as computational biology. Their chosen cost ratio is not evidence that substitutions are cheaper than insertions for human names, nor a recommendation for a specific contact-matching weight.</p>
+<h2>A separate practical proposal for Simak</h2>
+<p>This section is application design inspired by the distinction between metrics, <strong>not a result of the paper and not a release/implementation claim</strong>. Simak's implementation and qualification are tracked separately. No app code, eligibility threshold or stored contact data is changed by this note.</p>
+<p>Keep two jobs separate:</p>
+<ol>
+<li><strong>Eligibility:</strong> which pairs are shown as possible name matches. Preserve existing accepted partial matches when changing only sorting.</li>
+<li><strong>Ranking:</strong> in what order those eligible pairs appear for a given speaker.</li>
+</ol>
+<p>A reasonable design to evaluate is:</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Proposed behavior</th>
+<th>Why not just use one edit-distance number?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Stage">Name parsing</td>
+<td data-label="Proposed behavior">Separate real speakers; remove affiliations before comparing names, while retaining the full label for display</td>
+<td data-label="Why not just use one edit-distance number?">An organization or role is not part of a person's name. Punctuation inside an affiliation must not invent another speaker.</td>
+</tr>
+<tr>
+<td data-label="Stage">Exact tier</td>
+<td data-label="Proposed behavior">Full normalized string equality first, with an explicit case/punctuation/space policy</td>
+<td data-label="Why not just use one edit-distance number?">Transparent and stable. Normalization still needs tests; it does not prove identity.</td>
+</tr>
+<tr>
+<td data-label="Stage">Reordered-full-name tier</td>
+<td data-label="Proposed behavior">Same complete name-token multiset in a different order next</td>
+<td data-label="Why not just use one edit-distance number?">Raw Levenshtein can penalize harmless word-order changes severely. Use a multiset so duplicate words are not silently lost.</td>
+</tr>
+<tr>
+<td data-label="Stage">Partial tier</td>
+<td data-label="Proposed behavior">Evaluate normalized Levenshtein similarity alongside token overlap/coverage of both names</td>
+<td data-label="Why not just use one edit-distance number?">Character closeness and shared words answer different questions. A common-token-only match should not automatically beat a near-full-name match.</td>
+</tr>
+<tr>
+<td data-label="Stage">Stable ties</td>
+<td data-label="Proposed behavior">Alphabetical tie-break within each speaker's matches, then a deterministic secondary key if labels are identical</td>
+<td data-label="Why not just use one edit-distance number?">Contact-provider row order should not decide visible ranking. Do not expose private identifiers.</td>
+</tr>
+</tbody>
+</table>
+<p>One common illustrative normalization is <code>similarity = 1 - distance/max(length1,length2)</code>. Identical nonempty strings score 1. The both-empty case needs an explicit rule, and empty strings should not become accidental identity hints. This normalization is a design choice, <strong>not the paper's ED_a or a calibrated probability</strong>. No fixed edit/token blend weight is justified by this paper; choose one only after explicit synthetic acceptance cases and, if authorized, suitable evaluation data.</p>
+<h2>Synthetic examples: why tiers matter</h2>
+<p>All names in this table are invented test strings, not contacts or speaker-contact mappings. Lowercase inputs include the single space as a character. Values were computed with exact unit-cost Levenshtein dynamic programming.</p>
+<table>
+<thead>
+<tr>
+<th>Name A</th>
+<th>Name B</th>
+<th>Levenshtein</th>
+<th>Illustrative similarity</th>
+<th>Lesson</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Name A">mira sen</td>
+<td data-label="Name B">mira sen</td>
+<td data-label="Levenshtein">0</td>
+<td data-label="Illustrative similarity">1.000</td>
+<td data-label="Lesson">Exact tier.</td>
+</tr>
+<tr>
+<td data-label="Name A">mira sen</td>
+<td data-label="Name B">sen mira</td>
+<td data-label="Levenshtein">8</td>
+<td data-label="Illustrative similarity">0.000</td>
+<td data-label="Lesson">Same complete token multiset, reordered. Raw character distance alone misses this.</td>
+</tr>
+<tr>
+<td data-label="Name A">mira sen</td>
+<td data-label="Name B">mira seen</td>
+<td data-label="Levenshtein">1</td>
+<td data-label="Illustrative similarity">0.889</td>
+<td data-label="Lesson">One inserted letter; Hamming is undefined because lengths differ.</td>
+</tr>
+<tr>
+<td data-label="Name A">mira sen</td>
+<td data-label="Name B">mira</td>
+<td data-label="Levenshtein">4</td>
+<td data-label="Illustrative similarity">0.500</td>
+<td data-label="Lesson">Partial name, not a full match. Preserve eligibility separately from order.</td>
+</tr>
+<tr>
+<td data-label="Name A">mira sen</td>
+<td data-label="Name B">mira tan</td>
+<td data-label="Levenshtein">2</td>
+<td data-label="Illustrative similarity">0.750</td>
+<td data-label="Lesson">Good character similarity is still not evidence of the same person.</td>
+</tr>
+</tbody>
+</table>
+<p>Token overlap also has choices: set versus multiset, coverage of the shorter name versus both names, handling initials and repeated words. Accents, Unicode normalization, nicknames, transliteration and titles require an explicit policy rather than accidental behavior. Stripping punctuation is not universally harmless. No single score can remove these ambiguities.</p>
+<h2>What this note does not establish</h2>
+<ul>
+<li>No implementation, integration, speed benchmark, production ranking quality or battery saving is claimed.</li>
+<li>No contact names, screenshots, private mappings or device logs were used in the published examples.</li>
+<li>No fuzzy-match threshold is tightened or partial match removed by this note.</li>
+<li>A high string-similarity score is not a probability, identity proof or permission to merge contacts.</li>
+<li>The v1 proofs were read, not formally verified or independently rederived. Their 2022 statements about prior state of the art are not presented as current 2026 facts.</li>
+</ul>
+<p>For a short-name UI, start with a simple exact distance implementation and readable deterministic tiers, then test the result. The research paper matters because it shows how changing the error model changes both the distance and its computational difficulty, not because its most advanced algorithm must be used in a small contact list.</p>
+<h2>Sources and reading map</h2>
+<ul>
+<li><a href="https://export.arxiv.org/pdf/2211.12496v1.pdf">Selected arXiv v1 PDF, 22 Nov 2022</a>: abstract and Section 1 for motivation and statements; Sections 2-3 for exact/approximate ED_a; Section 4 for approximate extension queries; Section 5 for the conditional lower bound; Appendix A for bicriteria algorithms.</li>
+<li><a href="https://arxiv.org/abs/2211.12496">arXiv record</a>: authors and version/publication context.</li>
+<li><a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2023.58">ITCS 2023 publication record</a>: conference counterpart, DOI <code>10.4230/LIPIcs.ITCS.2023.58</code>. This reading remains pinned to the selected v1.</li>
+<li>
+<p><a href="https://xlinux.nist.gov/dads/HTML/HammingDistance.html">NIST: Hamming distance</a> and <a href="https://xlinux.nist.gov/dads/HTML/Levenshtein.html">NIST: Levenshtein distance</a>: supplementary definitions.</p>
+</li>
+<li>
+<p><a href="https://www.unicode.org/reports/tr15/">Unicode Standard Annex #15: Unicode Normalization Forms</a>: supplementary background for the application-design caution about normalization, not a human-name matching policy.</p>
+</li>
+</ul><footer><a href="https://github.com/irvan-putra/kaji/blob/main/docs/hamming-levenshtein-reading.md">Canonical note and history</a></footer></main></html>
