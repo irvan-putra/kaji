@@ -20,7 +20,7 @@ This repo also includes illustrations alongside the Android-update, application-
 
 ## Notes
 
-- [Fork or keep: repos versus existing open source](docs/fork-or-keep-open-source-comparison.md) - dated public-source comparison, bounded candidates, README-only and unexamined coverage labeled; no adoption, fork, license change or integration proof.
+- [Fork or keep: repos versus existing open source](https://vanipy.com/kaji/reuse/) - illustrated comparison tables and [source note](docs/fork-or-keep-open-source-comparison.md), with named candidates, four code-inspected followups and unexamined legacy scope labeled; no adoption, fork, license change or integration proof.
 
 - [IDSW 2026 schedule overview and a learning plan](docs/idsw-2026.md) - the published agenda (checked 2026-11-21, subject to change), a reading of its themes, and a suggested session plan for builders of AI-assisted personal software.
 - [Designing an AI chat composer](docs/designing-an-ai-chat-composer.md) - Sketch Together's video about the AI message-input box: controls, attachments, voice, states, mobile behavior and accessibility. Transcript-based reading, not a music-composition model or tested design rule.

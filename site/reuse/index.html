@@ -1,0 +1,249 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fork or keep: repos vs open source</title><style>*{box-sizing:border-box}body{overflow-wrap:anywhere;margin:0;background:#f4f1eb;color:#202b29;font:17px/1.65 system-ui,sans-serif}main{max-width:1150px;margin:auto;padding:44px 32px 100px}nav{font-size:14px;margin-bottom:35px}a{color:#156c60;overflow-wrap:anywhere}h1{font:600 clamp(32px,5vw,56px)/1.12 Georgia,serif;max-width:900px;margin:0 0 30px}h2{font:500 30px/1.25 Georgia,serif;margin:65px 0 25px}p{max-width:950px}img{display:block;width:100%;border-radius:16px;margin:30px 0}table{table-layout:fixed;border-collapse:collapse;width:100%;font-size:15px;background:#fffdf8}th,td{overflow-wrap:anywhere;min-width:0;text-align:left;vertical-align:top;padding:18px;border-bottom:1px solid #d9dfda}th{background:#dfece6;font-size:13px;text-transform:uppercase;letter-spacing:.04em}td:first-child{font-weight:650;width:13%}td:nth-child(2){width:31%}ul{padding-left:24px}li{margin:8px 0}footer{border-top:1px solid #bbc8c0;margin-top:50px;padding-top:20px;font-size:14px}@media(max-width:650px){main{padding:26px 18px 70px}body{font-size:16px}h2{font-size:28px;margin-top:48px}table,tbody,tr,td{display:block;width:100%!important}thead{display:none}table{background:transparent}tr{background:#fffdf8;border:1px solid #d9dfda;border-radius:12px;margin:0 0 18px;padding:8px 16px}td{border:0;padding:10px 0;font-size:15px}td:before{content:attr(data-label);display:block;color:#597269;font:600 11px/1.5 system-ui;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}td:first-child{font-size:21px}img{border-radius:10px}}</style><main><nav><a href="../">Kaji</a> / Public-source research · 21 Nov 2026</nav><h1>Fork or keep: our repos vs open source</h1>
+<p><em>73 public repos checked on 21 Nov 2026. Inventory coverage is split below into named candidate comparisons, code-inspected experiments, existing forks, content and unexamined legacy repos. Candidate licenses and maintenance signals were checked that day. Nothing was changed, forked or adopted.</em></p>
+<p><img alt="Illustration: one branch merging into a shared river, another continuing on its own path" src="../assets/fork-or-keep-hero.png"/></p>
+<p><em>Generated concept illustration of reuse and independent development, not a product screenshot or integration proof.</em></p>
+<h2>Strongest candidates, evaluate first</h2>
+<table>
+<thead>
+<tr>
+<th>Repo</th>
+<th>Candidate to evaluate</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Repo">gitsafescan</td>
+<td data-label="Candidate to evaluate">gitleaks (MIT, release ~8 months ago, commits into Oct 2026); trufflehog (AGPL-3, released 2 days ago, verifies live keys)</td>
+<td data-label="Why">Both scan full git history. Running them as external tools alongside gitsafescan avoids combining code in this pass; if one is ever bundled or distributed, its license obligations need review first. gitsafescan has no LICENSE file. Keep its own checks either way: personal data, private network references and risky tracked paths are not what secret scanners look for.</td>
+</tr>
+<tr>
+<td data-label="Repo">simak</td>
+<td data-label="Candidate to evaluate">Publish the agenda as .ics or frab XML for Giggity (GPL-2.0, commits this week)</td>
+<td data-label="Why">Giggity reads Pentabarf/frab/wafer/Pretalx/OSEM XML and plain .ics, and per its README already has talk selection, reminders and search. A feed export from schedule.json lets IDSW attendees use it, while simak keeps its notes and on-device contact matching. A feed adapter keeps the two as separate programs, which sidesteps the GPL-2.0-only versus AGPL-3 combination question; actual obligations depend on how it is shipped.</td>
+</tr>
+<tr>
+<td data-label="Repo">utak</td>
+<td data-label="Candidate to evaluate">Observable Framework (ISC license, latest release Mar 2026)</td>
+<td data-label="Why">utak is a concept with no app yet, so there is no rework cost. Observable Framework builds interactive, data-driven pages as a static site that fits GitHub Pages. Idyll matches the explorable-explanations domain exactly, but its repo has been dormant for about 46 months.</td>
+</tr>
+<tr>
+<td data-label="Repo">cabang</td>
+<td data-label="Candidate to evaluate">Decide strategy before going deeper: deltachat-android fork, upstream proposal, or standalone</td>
+<td data-label="Why">cabang is GPL-3, the same license identifier as deltachat-android (upstream released v2.69.0 eleven days ago). cabang's README says its Android flows have not run on a device or live account yet. A standalone client means maintaining a whole chat UI for one threaded-reply feature; a patch on a deltachat-android fork, or an upstream proposal, would keep the diff small. Matching identifiers alone do not settle distribution obligations; those need review before any fork ships.</td>
+</tr>
+</tbody>
+</table>
+<h2>Your call, these change what you use daily</h2>
+<table>
+<thead>
+<tr>
+<th>Repo</th>
+<th>Compared with</th>
+<th>The decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Repo">tindak</td>
+<td data-label="Compared with">Tasks.org (GPL-3, released 4 days ago)</td>
+<td data-label="The decision">Tasks.org is a mature Android tasks app with widgets and recurrence; tindak has no LICENSE file yet. Using Tasks.org as an app needs no license decision. Borrowing its GPL-3 code into tindak would make tindak a GPL-3 derivative, a separate licensing decision, not part of this comparison. tindak's DeltaChat webxdc shared lists and assistant feeds have no equivalent in Tasks.org, so tindak stays either way; the open question is who handles personal tasks.</td>
+</tr>
+<tr>
+<td data-label="Repo">menit</td>
+<td data-label="Compared with">ActivityWatch (MPL-2, released 6 days ago, has an Android app)</td>
+<td data-label="The decision">ActivityWatch tracks app usage on-device, overlapping menit's core. menit's difference, per its README, is estimating how much phone time goes to AI specifically, with only Usage access and no network permission. Adopt ActivityWatch and treat AI apps as a category, or keep menit deliberately narrow.</td>
+</tr>
+<tr>
+<td data-label="Repo">jumpa</td>
+<td data-label="Compared with">Monica (AGPL-3; code active, latest release v4.1.2 about 31 months old)</td>
+<td data-label="The decision">Monica is a full personal CRM: notes, relationship history, reminders, but needs a self-hosted server. jumpa is a zero-permission offline Android app (GPL-3). If one hosted service is acceptable, Monica covers the concept and more; if offline-only matters, jumpa stays.</td>
+</tr>
+<tr>
+<td data-label="Repo">kokok</td>
+<td data-label="Compared with">Fossify Clock (GPL-3, latest release about 9 months ago)</td>
+<td data-label="The decision">kokok is AGPL-3. GPLv3 section 13 provides a documented path for combining GPL-3 code into an AGPL-3 work, but the concrete obligations still need review before any fork. kokok's actual feature, alarms applied from an assistant's signed, encrypted feed, has no counterpart in Fossify Clock's published feature list, so that layer stays custom either way.</td>
+</tr>
+</tbody>
+</table>
+<h2>Checked and kept custom, with the reason</h2>
+<table>
+<thead>
+<tr>
+<th>Repo</th>
+<th>Checked against</th>
+<th>Reason it stays custom</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Repo">tuju</td>
+<td data-label="Checked against">Transportr (GPL-3, active); public-transport-enabler; OpenTripPlanner</td>
+<td data-label="Reason it stays custom">The provider list in public-transport-enabler's source covers Europe, the UAE and the US only, no Indonesia. OpenTripPlanner could route from TransJakarta GTFS but needs a hosted server. The offline single-screen map stays custom.</td>
+</tr>
+<tr>
+<td data-label="Repo">tampung</td>
+<td data-label="Checked against">Seedvault</td>
+<td data-label="Reason it stays custom">Seedvault's README states it must be integrated into the Android ROM and cannot be installed as a regular app; ruled out on a stock Samsung. tampung's restic append-only research remains the viable path.</td>
+</tr>
+<tr>
+<td data-label="Repo">tagih</td>
+<td data-label="Checked against">Crater (AGPL-3); Invoice Ninja (Elastic License 2.0)</td>
+<td data-label="Reason it stays custom">Crater is server-based and its latest release, 6.0.6, is about 57 months old. Invoice Ninja is source-available, not OSI open source. Neither fits an offline, local-first Android tracker.</td>
+</tr>
+<tr>
+<td data-label="Repo">tengok</td>
+<td data-label="Checked against">Readwide; Amaze File Utilities (GPL-3, latest release about 28 months ago)</td>
+<td data-label="Reason it stays custom">Both cover documents and media, neither reads MIDI. tengok's MIDI-first scope (piano roll, playback, planned game mode) stays custom.</td>
+</tr>
+<tr>
+<td data-label="Repo">nada</td>
+<td data-label="Checked against">mido (MIT); music21 (BSD-3)</td>
+<td data-label="Reason it stays custom">Both are Python-only, so they are not drop-in for nada's browser runtime. Using mido on the Python CLI side is possible in principle, but nada's README describes a byte-parity contract between its Python and JS implementations, so any such reuse needs a parity evaluation first, not a straight swap.</td>
+</tr>
+<tr>
+<td data-label="Repo">denting</td>
+<td data-label="Checked against">mido, music21</td>
+<td data-label="Reason it stays custom">Same runtime mismatch as nada: denting runs in the browser. Its deterministic, no-AI edit engine is the product; nothing checked covers it.</td>
+</tr>
+<tr>
+<td data-label="Repo">bedah</td>
+<td data-label="Checked against">likec4 (MIT, released 7 days ago)</td>
+<td data-label="Reason it stays custom">likec4 does C4 diagrams-as-code well, but bedah is a FreeForm-style infinite review canvas with generated self-review content; likec4 covers neither, and adopting it would mean reworking the content pipeline. Worth evaluating only if the C4 layer grows on its own.</td>
+</tr>
+<tr>
+<td data-label="Repo">kemas</td>
+<td data-label="Checked against">Loop Habit Tracker (GPL-3, released last month)</td>
+<td data-label="Reason it stays custom">Loop tracks recurring habit streaks. kemas is before-and-after cleaning photos with difference analysis, a different job.</td>
+</tr>
+<tr>
+<td data-label="Repo">bidik</td>
+<td data-label="Checked against">Open Recorder (GPL-3, released last month)</td>
+<td data-label="Reason it stays custom">Overlaps only bidik's screen-recording feature. The capture queue and assistant pairing are the project; Open Recorder is a readable reference.</td>
+</tr>
+<tr>
+<td data-label="Repo">kapan</td>
+<td data-label="Checked against">Mobilizon; eventio</td>
+<td data-label="Reason it stays custom">Mobilizon is a full federated events platform, far heavier than one static page. eventio is a 7-star scraper. kapan already publishes a standard events.ics feed, which is the interop that matters here.</td>
+</tr>
+<tr>
+<td data-label="Repo">denyut + jin</td>
+<td data-label="Checked against">deltabot (MPL-2, dormant ~38 months); Delta Chat JSON-RPC bindings</td>
+<td data-label="Reason it stays custom">Delta Chat's own documentation (py.delta.chat) recommends the JSON-RPC bindings, maintained by core developers, for new bots. jin already runs a bot from the phone through the Delta Chat core. Keep the apps custom on top of the maintained official bindings rather than any stale bot framework.</td>
+</tr>
+<tr>
+<td data-label="Repo">daya</td>
+<td data-label="Checked against">cookiecutter, Yeoman, Plop, Hygen</td>
+<td data-label="Reason it stays custom">Those stamp out project trees from templates. daya compiles a small chatbot-written recipe into a finished mini-app, a different problem. Borrow their incremental-generation ideas at most.</td>
+</tr>
+<tr>
+<td data-label="Repo">sanggup</td>
+<td data-label="Checked against">Lingonaut</td>
+<td data-label="Reason it stays custom">Lingonaut is a community Duolingo alternative for language learning only, and its official source repo could not be verified. Nothing checked covers life-skills paths with instructor sign-off.</td>
+</tr>
+<tr>
+<td data-label="Repo">saku</td>
+<td data-label="Checked against">KeePass ecosystem</td>
+<td data-label="Reason it stays custom">saku's README says license selection is still pending, no storage implementation is selected, and KeePassJava2 interoperability spikes are in progress (one known failing test). A synthetic demo APK exists. Its KeePass-ecosystem path already avoids from-scratch crypto. No action.</td>
+</tr>
+<tr>
+<td data-label="Repo">patuh</td>
+<td data-label="Checked against">todogroup/repolinter (Apache-2.0, last push Feb 2026)</td>
+<td data-label="Reason it stays custom">repolinter lints repositories against generic open-source policies. patuh checks this app family's own conventions: package IDs, icon geometry, versions, gallery catalog. repolinter is a candidate only if generic policy checks are ever wanted.</td>
+</tr>
+<tr>
+<td data-label="Repo">sambung</td>
+<td data-label="Checked against">simonw/llm (Apache-2.0, active)</td>
+<td data-label="Reason it stays custom">llm packs prompts for the command line; sambung's reply-shape validation and Android share-target round trip are the product. A candidate for ideas, not adoption.</td>
+</tr>
+<tr>
+<td data-label="Repo">sapa</td>
+<td data-label="Checked against">Google MediaPipe pose models</td>
+<td data-label="Reason it stays custom">Already reuses MediaPipe on-device, per its README. Nothing checked covers question rounds and random audience picks.</td>
+</tr>
+<tr>
+<td data-label="Repo">unggah</td>
+<td data-label="Checked against">MGit (GPL-3, active, pushed Sep 2026)</td>
+<td data-label="Reason it stays custom">MGit is a general Android git client; unggah's ZIP-to-commit-to-push flow is a narrower job. Evaluate MGit only if general git operations on the phone are ever wanted.</td>
+</tr>
+</tbody>
+</table>
+<h2>Code-inspected this round</h2>
+<table>
+<thead>
+<tr>
+<th>Repo</th>
+<th>What the code shows</th>
+<th>Candidate / verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Repo">tumbuh</td>
+<td data-label="What the code shows">Public proposals site plus the consolidated Android app (v0.2.2, AGPL-3 in android/, Java with no third-party libraries, no internet permission). The app is a manual triage list: items carry a 1 to 5 weight and a decision (keep, renegotiate, ask for help, let go, done), each with a first step and an editable draft message.</td>
+<td data-label="Candidate / verdict">Checked against Tasks.org (GPL-3, released 4 days ago): mature, but no weighting, decision options or draft messages, so this flow stays custom. The proposal and economics pages are content; no upstream applies.</td>
+</tr>
+<tr>
+<td data-label="Repo">kembang</td>
+<td data-label="What the code shows">On each new issue the workflow branches, runs an AI step and opens a PR, but the AI step is a placeholder and the README says you must add your own AI service integration. So kembang is a scaffold, not a working automation. No license file.</td>
+<td data-label="Candidate / verdict">OpenHands (MIT, about 94k stars, pushed this week) ships an official GitHub Action that does the real loop: label an issue fix-me or comment @openhands-agent and its agent opens a pull request. Candidate to evaluate instead of completing the scaffold; it needs an LLM API key and a trial run.</td>
+</tr>
+<tr>
+<td data-label="Repo">picu</td>
+<td data-label="What the code shows">No README, but the code is readable: roadmap_generator.py asks what triggered your learning journey, sends it to Alibaba Cloud DashScope (qwen-plus) and writes the returned JSON roadmap as interlinked markdown files with Next Steps links; example/ holds generated Python-topic roadmaps. Purpose reconstructed from code, not docs. Created and last pushed 6 Mar 2025, a single-day experiment with no license file.</td>
+<td data-label="Candidate / verdict">simonw/llm (Apache-2.0, active) or fabric (MIT, active) could run such a prompt generically, but neither emits the interlinked node files picu writes; if revived, llm templates and schemas are the candidate to evaluate.</td>
+</tr>
+<tr>
+<td data-label="Repo">tayang</td>
+<td data-label="What the code shows">background_listening.py is a hands-free slide clicker: background microphone, local Whisper (base model) through the SpeechRecognition library, next/back voice commands driving pyautogui clicks and arrow keys. train_journey.py is not code but a slide deck in pysentation format (mimseyedi/pysentation, GPL-3, last push Mar 2025). Created and last pushed 30 Nov 2024, a single-day experiment with no license file.</td>
+<td data-label="Candidate / verdict">It already reuses Whisper; if revived, faster-whisper (MIT, active) or whisper.cpp (MIT, active) are the maintained recognition backends to evaluate.</td>
+</tr>
+</tbody>
+</table>
+<h2>Already forks or previously decided</h2>
+<p>unggun is the Obtainium fork, animate is a fork with an upstream PR open, encore is the chatmail/core fork carrying our fix. saku's KeePass-ecosystem direction is recorded above.</p>
+<h2>Content, research and idea repos (20)</h2>
+<p>kunjung, suaka, pustaka, kaji, kaca, gotong, mimpi, anyam, jejak, naga, pandu, catat, irvan, tapak, tangkai, onda, aiq, paper2repo, sapi, pythonid-10-2026. These are notes, demos, proposals and presentation pages rather than reusable wheels, so no upstream comparison applies to them.</p>
+<h2>Legacy forks and pre-2026 sites (19, not examined)</h2>
+<p>awx, bitstarter, setup, hello-lambda-jakarta, hackathon, typing, org-ruby, pyconapac2024-teaser, minima, devguide, vault-cli, PL101ProjectTemplate, adaptechid, myschoolcampid, old-visi-web, haskell-intro, vnproject.id, irvan-putra, irvan-putra.github.io. Old forks and sites, left as they are; no archiving suggested.</p>
+<h2>Read me first</h2>
+<p>Maintenance is judged from each project's latest release and last commit as observed on 21 Nov 2026; a recent release is not a security audit, and no candidate here has had a proof-of-concept integration. Lingonaut's source availability is unverified. License notes compare identifiers and documented clauses only; they are not legal advice, and no license changes are authorized. "Nothing covers it" claims are bounded to the candidates named beside each repo. For picu, kembang and tayang the purposes are reconstructed from reading their code (single-day experiments without docs) and are labeled as such.</p>
+<h2>Sources</h2>
+<ul>
+<li>Live repo inventory: https://api.github.com/users/irvan-putra/repos</li>
+<li>https://github.com/gitleaks/gitleaks</li>
+<li>https://github.com/trufflesecurity/trufflehog</li>
+<li>https://github.com/Wilm0r/giggity</li>
+<li>https://github.com/observablehq/framework</li>
+<li>https://github.com/idyll-lang/idyll</li>
+<li>https://github.com/deltachat/deltachat-android</li>
+<li>https://py.delta.chat/</li>
+<li>https://github.com/tasks/tasks</li>
+<li>https://github.com/ActivityWatch/activitywatch</li>
+<li>https://github.com/monicahq/monica</li>
+<li>https://github.com/FossifyOrg/Clock</li>
+<li>https://github.com/schildbach/public-transport-enabler</li>
+<li>https://github.com/grote/Transportr</li>
+<li>https://github.com/seedvault-app/seedvault</li>
+<li>https://github.com/crater-invoice-inc/crater</li>
+<li>https://invoiceninja.github.io/docs/legal/license</li>
+<li>https://github.com/likec4/likec4</li>
+<li>https://github.com/mido/mido</li>
+<li>https://github.com/iSoron/uhabits</li>
+<li>https://github.com/NoneBaiano/OpenRecorder</li>
+<li>https://github.com/deltachat-bot/deltabot</li>
+<li>https://github.com/TeamAmaze/AmazeFileUtilities</li>
+<li>https://github.com/todogroup/repolinter</li>
+<li>https://github.com/maks/MGit</li>
+<li>https://github.com/simonw/llm</li>
+<li>https://docs.openhands.dev/openhands/usage/run-openhands/github-action</li>
+<li>https://github.com/danielmiessler/Fabric</li>
+<li>https://github.com/SYSTRAN/faster-whisper</li>
+<li>https://github.com/ggml-org/whisper.cpp</li>
+<li>https://github.com/mimseyedi/pysentation</li>
+<li>https://github.com/irvan-putra/picu/blob/main/roadmap_generator.py</li>
+<li>https://github.com/irvan-putra/kembang/blob/main/.github/workflows/issue-to-pr.yml</li>
+<li>https://github.com/irvan-putra/tayang/blob/main/background_listening.py</li>
+<li>https://github.com/irvan-putra/tumbuh/blob/main/android/README.md</li>
+</ul>
+<p><em>Checked 21 Nov 2026 against each project's GitHub repo, README and releases, plus our repos' public READMEs and code. No repo, file or setting was changed; every "your call" item waits for the owner.</em></p><footer><a href="https://github.com/irvan-putra/kaji/blob/main/docs/fork-or-keep-open-source-comparison.md">Canonical research note and source history</a></footer></main></html>
