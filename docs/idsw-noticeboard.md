@@ -1,6 +1,6 @@
 # IDSW community noticeboard
 
-17 deduplicated topics from 14 photos, checked 21 November 2026. Images and personal identities/contact details excluded. Statuses distinguish notice claims from verified destinations.
+20 deduplicated topics from the original 14 close-ups and later board photos, updated 21 November 2026. Images and personal identities/contact details excluded. Statuses distinguish notice claims from verified destinations.
 
 ## Sources
 
