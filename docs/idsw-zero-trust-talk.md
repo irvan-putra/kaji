@@ -40,3 +40,8 @@ Correction pass 14:53 WIB after main review: management API is not the whole con
 ## Naming sidebar (added 21 Nov 14:59 WIB)
 
 User asked whether ziti pasta inspired the name and asked to add it to Kaji. Added a short sourced aside after the intro: NetFoundry's own blog (Philip Griffiths) says Ziti is a code name from the letters Z T, connected to Zero Trust, with pasta mascot Ziggy leaning into the coincidence. Attribution preserved; the aside does not claim the pasta played no role.
+
+## Daughter explanation addition (21 Nov 2026, 15:06 WIB)
+- User asked to bring the NetFoundry article's explanation into the page, especially the explanation to the daughter (WhatsApp 15:04:50 and 15:05:15).
+- Source: Philip Griffiths, "Demystifying the Magic of Zero Trust Networking with my Daughter", NetFoundry blog, July 2024: https://netfoundry.io/ziti-openziti/demystifying-the-magic-of-zero-trust-networking-with-my-daughter/
+- Added section "Zero trust, explained to a daughter": castle-and-moat-to-city background, three tiers (relabeled VPN/firewall proxy, software-defined perimeter, app-embedded SDK) in fresh wording with attribution and link; vendor "impossible" claim labeled as such.
