@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 900" role="img" aria-label="Six stages of voice traveling between two devices, from sound pressure to packets and back">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#156c60"/></marker>
+</defs>
+<rect width="680" height="900" fill="#fffdf8"/>
+<g font-family="system-ui,sans-serif" fill="#202b29">
+
+<text x="20" y="46" font-size="26" font-weight="700">1. Capture</text>
+<text x="215" y="46" font-size="17" fill="#597269">sound becomes electricity</text>
+<rect x="20" y="64" width="300" height="64" rx="12" fill="#f4f1eb" stroke="#bbc8c0"/>
+<text x="170" y="92" font-size="19" text-anchor="middle">MEMS diaphragm</text>
+<text x="170" y="114" font-size="16" text-anchor="middle" fill="#597269">pressure moves capacitance</text>
+<path d="M330 96 h30" stroke="#156c60" stroke-width="3" marker-end="url(#a)"/>
+<rect x="368" y="64" width="292" height="64" rx="12" fill="#dfece6" stroke="#156c60"/>
+<text x="514" y="92" font-size="19" text-anchor="middle">ASIC</text>
+<text x="514" y="114" font-size="16" text-anchor="middle" fill="#2f4f47">amplify, filter, ADC or PDM</text>
+
+<text x="20" y="190" font-size="26" font-weight="700">2. Convert</text>
+<text x="215" y="190" font-size="17" fill="#597269">electricity becomes numbers</text>
+<rect x="20" y="208" width="640" height="64" rx="12" fill="#f4f1eb" stroke="#bbc8c0"/>
+<text x="340" y="236" font-size="19" text-anchor="middle">PCM samples</text>
+<text x="340" y="258" font-size="16" text-anchor="middle" fill="#597269">example: 44.1 kHz, 16-bit</text>
+
+<text x="20" y="334" font-size="26" font-weight="700">3. Process</text>
+<text x="215" y="334" font-size="17" fill="#597269">numbers become compact</text>
+<rect x="20" y="352" width="300" height="64" rx="12" fill="#f4f1eb" stroke="#bbc8c0"/>
+<text x="170" y="380" font-size="19" text-anchor="middle">FIR low-pass</text>
+<text x="170" y="402" font-size="16" text-anchor="middle" fill="#597269">downsample to 8 kHz</text>
+<path d="M330 384 h30" stroke="#156c60" stroke-width="3" marker-end="url(#a)"/>
+<rect x="368" y="352" width="292" height="64" rx="12" fill="#dfece6" stroke="#156c60"/>
+<text x="514" y="380" font-size="19" text-anchor="middle">G.711 mu-law</text>
+<text x="514" y="402" font-size="16" text-anchor="middle" fill="#2f4f47">8 bits per sample, 64 kbit/s</text>
+
+<text x="20" y="478" font-size="26" font-weight="700">4. Transmit</text>
+<text x="215" y="478" font-size="17" fill="#597269">numbers cross the network</text>
+<rect x="20" y="496" width="300" height="64" rx="12" fill="#f4f1eb" stroke="#bbc8c0"/>
+<text x="170" y="524" font-size="19" text-anchor="middle">RTP packet, 20 ms</text>
+<text x="170" y="546" font-size="16" text-anchor="middle" fill="#597269">160-byte payload, 50 per second</text>
+<path d="M330 528 h30" stroke="#156c60" stroke-width="3" marker-end="url(#a)"/>
+<rect x="368" y="496" width="292" height="64" rx="12" fill="#dfece6" stroke="#156c60"/>
+<text x="514" y="524" font-size="19" text-anchor="middle">On the wire</text>
+<text x="514" y="546" font-size="16" text-anchor="middle" fill="#2f4f47">+12 RTP, +8 UDP, +20 IP: 200 bytes</text>
+
+<text x="20" y="622" font-size="26" font-weight="700">5. Receive</text>
+<text x="215" y="622" font-size="17" fill="#597269">packets become numbers again</text>
+<rect x="20" y="640" width="640" height="64" rx="12" fill="#f4f1eb" stroke="#bbc8c0"/>
+<text x="340" y="668" font-size="19" text-anchor="middle">Jitter buffer</text>
+<text x="340" y="690" font-size="16" text-anchor="middle" fill="#597269">reorder by sequence, time by timestamp, conceal gaps, decode to 8 kHz PCM</text>
+
+<text x="20" y="766" font-size="26" font-weight="700">6. Playback</text>
+<text x="215" y="766" font-size="17" fill="#597269">numbers become sound</text>
+<rect x="20" y="784" width="300" height="64" rx="12" fill="#f4f1eb" stroke="#bbc8c0"/>
+<text x="170" y="812" font-size="19" text-anchor="middle">DAC to analog</text>
+<text x="170" y="834" font-size="16" text-anchor="middle" fill="#597269">voltage drives the coil</text>
+<path d="M330 816 h30" stroke="#156c60" stroke-width="3" marker-end="url(#a)"/>
+<rect x="368" y="784" width="292" height="64" rx="12" fill="#dfece6" stroke="#156c60"/>
+<text x="514" y="812" font-size="19" text-anchor="middle">Speaker diaphragm</text>
+<text x="514" y="834" font-size="16" text-anchor="middle" fill="#2f4f47">air moves again</text>
+
+<path d="M660 128 v 68" stroke="#bbc8c0" stroke-width="2" marker-end="url(#a)"/>
+<path d="M660 272 v 68" stroke="#bbc8c0" stroke-width="2" marker-end="url(#a)"/>
+<path d="M660 416 v 68" stroke="#bbc8c0" stroke-width="2" marker-end="url(#a)"/>
+<path d="M660 560 v 68" stroke="#bbc8c0" stroke-width="2" marker-end="url(#a)"/>
+<path d="M660 704 v 68" stroke="#bbc8c0" stroke-width="2" marker-end="url(#a)"/>
+</g>
+</svg>
