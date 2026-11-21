@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20 19:43 WIB",
+  "checked": "2026-11-21 07:25 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -314,6 +314,16 @@
           "source": "https://github.com/irvan-putra/saku/commit/2f2becea20b7e90ef14b4f7c4715e93a861aae96",
           "icon": "../apk/icons/saku.png",
           "icon_note": "Android icon; standalone web development preview is separate"
+        },
+        {
+          "name": "simak",
+          "tag": "IDSW agenda, local stars and notes",
+          "about": "Two-day agenda from idsw.dev with suggested learning guide, stars and per-session notes stored on this browser. Offline behavior is not yet verified. Android version is separate; battery use unmeasured. No contacts access in this web companion.",
+          "url": "https://vanipy.com/simak/",
+          "source": "https://github.com/irvan-putra/simak/commit/5be4f1f0af801765e6f95413f00b1ec50e22840e",
+          "android": "https://github.com/irvan-putra/simak/releases/tag/v0.1.0",
+          "icon": "../apk/icons/simak010.png",
+          "icon_note": "Packaged Android0.1.0 icon; browser version is separate"
         }
       ]
     },
