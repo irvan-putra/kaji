@@ -28,7 +28,7 @@ def page(title, lead, body, base):
 def btn(label, url, main=False): return f'<a class="btn{" main" if main else ""}" href="{e(url)}">{e(label)}</a>'
 def apps():
     d = json.loads((root/"gallery/apps.json").read_text())
-    groups = {"available": "Available now", "pending": "Corrected build in progress", "source": "Source only, no APK", "legacy": "Previous builds"}
+    groups = {"available": "Available now", "pending": "Qualification in progress", "source": "Source only, no APK", "legacy": "Previous builds"}
     unique = {}
     for a in d["apps"]:
         if a["name"] not in unique: unique[a["name"]] = a
