@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-21 11:04 WIB",
+  "checked": "2026-11-21 11:51 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -7,9 +7,9 @@
         {
           "name": "tuju",
           "tag": "Journey timer and optional foreground GPS",
-          "about": "Route map plus selected-stop journey timer and optional on-device GPS distance. GPS is off by default, asks location access when enabled, and stops when the screen is left. Comparison uses operator GTFS timetable minutes and straight-line stop distances, not road distance or live travel times. Uncovered figures stay unavailable. Browser UI/timer checks passed; real-ride GPS and physical phone unproven. Browser and Android state remain separate.",
+          "about": "Route map plus selected-stop journey timer and optional on-device GPS distance. GPS is off by default, asks location access when enabled, and stops when the screen is left. Comparison uses operator GTFS timetable minutes and straight-line stop distances, not road distance or live travel times. Uncovered figures stay unavailable. Browser UI/timer checks passed; real-ride GPS and physical phone unproven. Browser and Android state remain separate. Official IDSW access guide is now on the web page and top map, with a labeled LRT marker, final walk and Sunday Car Free Day warning. Latest map layout correction is published. Android 0.2.2 is an undelivered intermediate build; complete 0.2.3 is still being built and qualified. The linked 0.2.1 remains the last delivered APK.",
           "url": "https://vanipy.com/tuju/",
-          "source": "https://github.com/irvan-putra/tuju/commit/53c4c2fd336f6a553812d955b25624cf0ff0b126",
+          "source": "https://github.com/irvan-putra/tuju/commit/855782a5df7340e65e66dd9b5321702c9119259d",
           "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.1",
           "icon": "../apk/icons/tuju021.png",
           "icon_note": "Packaged Android0.2.1 icon; browser version is separate"
@@ -318,12 +318,12 @@
         {
           "name": "simak",
           "tag": "IDSW agenda, local stars and notes",
-          "about": "Two-day agenda from idsw.dev with suggested learning guide, stars and per-session notes stored on this browser. Service-worker activation and seven cached shell assets checked; true cold-offline navigation remains untested. Android version is separate; battery use unmeasured. No contacts access in this web companion.",
+          "about": "Web cache repair delivered 21 Nov 11:40. Returning clients now upgrade the old offline cache and load the current agenda, including the official Day 1 17:05 panel. A warm cloud-browser test with synthetic saved state preserved a legacy whole-block note and Registration star. Physical-phone web confirmation remains pending. No contacts access in this web companion. Linked Android 0.3.2 is published but its emulator qualification has not passed; it is not yet delivered as a qualified APK.",
           "url": "https://vanipy.com/simak/",
-          "source": "https://github.com/irvan-putra/simak/commit/5be4f1f0af801765e6f95413f00b1ec50e22840e",
-          "android": "https://github.com/irvan-putra/simak/releases/tag/v0.3.0",
-          "icon": "../apk/icons/simak030.png",
-          "icon_note": "Packaged Android0.3.0 icon; published APK runtime qualification pending; web and Android remain separate"
+          "source": "https://github.com/irvan-putra/simak/commit/fe2c26e2aeeca367320e7730586042a43632336d",
+          "android": "https://github.com/irvan-putra/simak/releases/tag/v0.3.2",
+          "icon": "../apk/icons/simak032.png",
+          "icon_note": "Packaged Android 0.3.2 icon; Android qualification has not passed. Web and Android are separate."
         }
       ]
     },

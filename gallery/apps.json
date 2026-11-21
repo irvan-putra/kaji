@@ -1,6 +1,18 @@
 {
-  "checked": "2026-11-21 11:15 WIB",
+  "checked": "2026-11-21 11:51 WIB",
   "apps": [
+    {
+      "name": "simak",
+      "version": "0.3.2",
+      "state": "pending",
+      "icon": "simak032.png",
+      "tag": "Official panel update; qualification not passed",
+      "about": "Published 21 Nov, not delivered as a qualified APK. Adds the official Day 1 17:05 panel title and panelists. Published-APK emulator qualification has not passed; the latest attempt failed and is under review. Existing 0.3.0 remains the last qualified APK. Same package, pinned signer and five permissions; code 6, lowercase label and published SHA-256 independently checked. Physical 0.3.2 behavior and battery use unmeasured. Web cache repair is separate and already delivered.",
+      "apk": "https://github.com/irvan-putra/simak/releases/download/v0.3.2/simak-v0.3.2.apk",
+      "release": "https://github.com/irvan-putra/simak/releases/tag/v0.3.2",
+      "repo": "https://github.com/irvan-putra/simak/commit/fe2c26e2aeeca367320e7730586042a43632336d",
+      "sha256": "fcf5cfa733aafe8bb4e3544e141d5a29be7bab0eff0c16c56c9f0d3a1b9cc897"
+    },
     {
       "name": "simak",
       "version": "0.3.0",
@@ -48,6 +60,18 @@
       "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.1",
       "repo": "https://github.com/irvan-putra/tuju/commit/53c4c2fd336f6a553812d955b25624cf0ff0b126",
       "sha256": "913e19ef70be18b2482ddd3b42b1cd693b5bdf3dcf8f01ead26210eec7b36764"
+    },
+    {
+      "name": "tuju",
+      "version": "0.2.2",
+      "state": "legacy",
+      "icon": "tuju022.png",
+      "tag": "Superseded text-only access guide; not delivered",
+      "about": "Published intermediate build with the offline official access-guide card, before the requested top-map addition. Superseded and not delivered. Complete 0.2.3 is still being built and qualified; use 0.2.1 as the last delivered APK. Published bytes, SHA-256, package, code 13, lowercase label, two location permissions and pinned signer independently checked. The post-publish catalog/registry check did not pass; that is separate from APK identity. No new physical-phone or real-ride GPS proof.",
+      "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.2.2/tuju-v0.2.2.apk",
+      "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.2",
+      "repo": "https://github.com/irvan-putra/tuju/commit/90403a3311f182fcd46068cb6ac6bd5833a09348",
+      "sha256": "7cfb2db1fdf2115230ffc7f68063a717c70093475ec1bc3629e52b75af6b5381"
     },
     {
       "name": "simak",
