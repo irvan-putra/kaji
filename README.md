@@ -66,3 +66,5 @@ This repo also includes illustrations alongside the Android-update, application-
 Project-specific research that only makes sense inside its own project stays in that project's repository instead.
 
 - [NEO App and Excellent: app hosting and managed email](https://vanipy.com/kaji/cloud-and-email/) - a public-source service guide, category distinctions, advertised commercial terms and questions before choosing. [Source note](docs/cloud-and-email.md).
+
+- [Midtrans agent skills and receiving customer payments](https://vanipy.com/kaji/midtrans/) - beta integration guidance, Payment Link versus app checkout, individual merchant requirements, dated fees and payout limits. [Source note](docs/midtrans.md).

@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-21 16:32 WIB",
+  "checked": "2026-11-21 16:47 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -326,11 +326,11 @@
           "icon_note": "Packaged Android0.3.2 icon; qualified and delivered. Web and Android are separate."
         },
         {
-          "name": "halo",
-          "tag": "Hello World · Node web service",
-          "about": "A minimal Hello World page hosted on NEO App. Generic deployment example using a small Node static server.",
-          "url": "https://irvan.app.neoapp.id/",
-          "source": "https://github.com/irvan-putra/halo/commit/808046993d1edbeac193c8c2bd28f19ae1c6e5b8",
+          "name": "biz",
+          "tag": "Hello World · stopped demo",
+          "about": "A minimal Hello World deployment example using a Node static server. The hosted demo is stopped; source is retained.",
+          "url": "https://github.com/irvan-putra/biz",
+          "source": "https://github.com/irvan-putra/biz",
           "icon": "icons/research.svg",
           "icon_note": "Web category symbol, not an Android build"
         }
@@ -427,6 +427,15 @@
           "tag": "Public-source service explainer",
           "about": "Application deployment versus managed business email and infrastructure services. Vendor-attributed features, dated advertised terms, scope limits and questions before choosing. Not a benchmark or deliverability rating.",
           "url": "https://vanipy.com/kaji/cloud-and-email/",
+          "source": "https://github.com/irvan-putra/kaji",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
+        },
+        {
+          "name": "Midtrans payment integration notes",
+          "tag": "Public-source explainer",
+          "about": "Official beta agent skills, Payment Link versus API integration, individual merchant requirements, public fee and payout caveats. Not a live payment integration or merchant approval.",
+          "url": "https://vanipy.com/kaji/midtrans/",
           "source": "https://github.com/irvan-putra/kaji",
           "icon": "icons/research.svg",
           "icon_note": "Web category symbol, not an Android build"
