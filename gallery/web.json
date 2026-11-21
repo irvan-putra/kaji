@@ -457,6 +457,51 @@
           "source": "https://github.com/remotebrowser/remotebrowser",
           "icon": "icons/research.svg",
           "icon_note": "Web category symbol, not an Android build"
+        },
+        {
+          "name": "PingPolls methods",
+          "tag": "Source-checked explainer · dated limits",
+          "about": "PingPolls: a conversation, a choice and a timing signal",
+          "url": "https://vanipy.com/kaji/pingpolls/",
+          "source": "https://github.com/irvan-putra/kaji",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
+        },
+        {
+          "name": "Dukkung",
+          "tag": "Source-checked explainer · dated limits",
+          "about": "Dukkung: one creator page for tips, sales and memberships",
+          "url": "https://vanipy.com/kaji/dukkung/",
+          "source": "https://github.com/irvan-putra/kaji",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
+        },
+        {
+          "name": "Kubeletto",
+          "tag": "Source-checked explainer · dated limits",
+          "about": "Kubeletto: container hosting, with beta billing questions",
+          "url": "https://vanipy.com/kaji/kubeletto/",
+          "source": "https://github.com/irvan-putra/kaji",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
+        },
+        {
+          "name": "YukYuk",
+          "tag": "Source-checked explainer · dated limits",
+          "about": "YukYuk: AI media tools, credits and visibility choices",
+          "url": "https://vanipy.com/kaji/yukyuk/",
+          "source": "https://github.com/irvan-putra/kaji",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
+        },
+        {
+          "name": "Genesis",
+          "tag": "Source-checked explainer · dated limits",
+          "about": "Genesis: schema and GCP infrastructure in one workspace",
+          "url": "https://vanipy.com/kaji/genesis/",
+          "source": "https://github.com/irvan-putra/kaji",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
         }
       ]
     }

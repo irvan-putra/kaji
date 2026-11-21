@@ -72,3 +72,10 @@ Project-specific research that only makes sense inside its own project stays in 
 - [IDSW community noticeboard](https://vanipy.com/kaji/noticeboard/) - 17 deduplicated job, tool and service leads with verification labels, price discrepancies and private contacts excluded. [Source note](docs/idsw-noticeboard.md).
 
 - [Remote Browser](https://vanipy.com/kaji/remotebrowser/) - open-source browser fleet, API/SDK use, VM requirements, optional LLM harness, production safety and AGPL limits. [Research note](docs/remotebrowser.md).
+
+- [PingPolls: a conversation, a choice and a timing signal](https://vanipy.com/kaji/pingpolls/)
+- [Dukkung: one creator page for tips, sales and memberships](https://vanipy.com/kaji/dukkung/)
+- [Kubeletto: container hosting, with beta billing questions](https://vanipy.com/kaji/kubeletto/)
+
+- [YukYuk: AI media tools, credits and visibility choices](https://vanipy.com/kaji/yukyuk/)
+- [Genesis: schema and GCP infrastructure in one workspace](https://vanipy.com/kaji/genesis/)
