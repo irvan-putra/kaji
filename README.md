@@ -70,3 +70,5 @@ Project-specific research that only makes sense inside its own project stays in 
 - [Midtrans agent skills and receiving customer payments](https://vanipy.com/kaji/midtrans/) - beta integration guidance, Payment Link versus app checkout, individual merchant requirements, dated fees and payout limits. [Source note](docs/midtrans.md).
 
 - [IDSW community noticeboard](https://vanipy.com/kaji/noticeboard/) - 17 deduplicated job, tool and service leads with verification labels, price discrepancies and private contacts excluded. [Source note](docs/idsw-noticeboard.md).
+
+- [Remote Browser](https://vanipy.com/kaji/remotebrowser/) - open-source browser fleet, API/SDK use, VM requirements, optional LLM harness, production safety and AGPL limits. [Research note](docs/remotebrowser.md).

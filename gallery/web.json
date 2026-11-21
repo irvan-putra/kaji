@@ -448,6 +448,15 @@
           "source": "https://github.com/irvan-putra/kaji",
           "icon": "icons/research.svg",
           "icon_note": "Web category symbol, not an Android build"
+        },
+        {
+          "name": "Remote Browser",
+          "tag": "Open-source browser fleet · source review",
+          "about": "What the fleet manages, API/SDK connections, VM host requirements, optional model harness and deployment/security limits. No installation.",
+          "url": "https://vanipy.com/kaji/remotebrowser/",
+          "source": "https://github.com/remotebrowser/remotebrowser",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
         }
       ]
     }
