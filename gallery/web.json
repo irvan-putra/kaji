@@ -6,13 +6,13 @@
       "items": [
         {
           "name": "tuju",
-          "tag": "Shared10/7F two-way spine",
-          "about": "Shared10/7F station areas drawn once with opposite arrows and branches for distinct stops. Shared4/6 spine and7E direction-specific stops retained. Actual APK icon badges corrected to0.1.9. Emulator checked, not physical Samsung-tested. Existing fare/access,7F hours and Gojek uncertainties retained.",
+          "tag": "Journey timer and optional foreground GPS",
+          "about": "Offline map plus selected-stop journey timer and optional on-device GPS distance. GPS is off by default, asks location permission when enabled, and stops when the screen is left. Comparison uses operator GTFS timetable minutes and straight-line stop distances, not road distance or live travel times. Uncovered figures stay unavailable. Emulator UI/timer checks passed; real-ride GPS and physical phone unproven. Declares fine/coarse location; no INTERNET permission.",
           "url": "https://vanipy.com/tuju/",
-          "source": "https://github.com/irvan-putra/tuju/commit/0b478eb6f3225f4e79be901fe68861efe0450f45",
-          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.1.9",
-          "icon": "../apk/icons/tuju.png",
-          "icon_note": "Android 0.1.9 app icon; web version is separate"
+          "source": "https://github.com/irvan-putra/tuju/commit/53c4c2fd336f6a553812d955b25624cf0ff0b126",
+          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.1",
+          "icon": "../apk/icons/tuju021.png",
+          "icon_note": "Packaged Android0.2.1 icon; browser version is separate"
         },
         {
           "name": "tangkai",
@@ -321,9 +321,9 @@
           "about": "Two-day agenda from idsw.dev with suggested learning guide, stars and per-session notes stored on this browser. Service-worker activation and seven cached shell assets checked; true cold-offline navigation remains untested. Android version is separate; battery use unmeasured. No contacts access in this web companion.",
           "url": "https://vanipy.com/simak/",
           "source": "https://github.com/irvan-putra/simak/commit/5be4f1f0af801765e6f95413f00b1ec50e22840e",
-          "android": "https://github.com/irvan-putra/simak/releases/tag/v0.1.0",
-          "icon": "../apk/icons/simak010.png",
-          "icon_note": "Packaged Android0.1.0 icon; browser version is separate"
+          "android": "https://github.com/irvan-putra/simak/releases/tag/v0.2.0",
+          "icon": "../apk/icons/simak020.png",
+          "icon_note": "Packaged Android0.2.0 icon; contact matching is APK-only"
         }
       ]
     },
