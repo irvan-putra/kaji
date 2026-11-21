@@ -439,6 +439,15 @@
           "source": "https://github.com/irvan-putra/kaji",
           "icon": "icons/research.svg",
           "icon_note": "Web category symbol, not an Android build"
+        },
+        {
+          "name": "IDSW community noticeboard",
+          "tag": "Jobs, tools and services · dated leads",
+          "about": "Deduplicated event notices with verified destinations, unverified vacancies and promotions clearly separated. No photos or personal contacts republished.",
+          "url": "https://vanipy.com/kaji/noticeboard/",
+          "source": "https://github.com/irvan-putra/kaji",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
         }
       ]
     }
