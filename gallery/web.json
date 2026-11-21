@@ -502,6 +502,33 @@
           "source": "https://github.com/irvan-putra/kaji",
           "icon": "icons/research.svg",
           "icon_note": "Web category symbol, not an Android build"
+        },
+        {
+          "name": "CodingTool.dev",
+          "tag": "Developer utilities · data-flow limits",
+          "about": "CodingTool: small developer utilities, with per-tool data boundaries",
+          "url": "https://vanipy.com/kaji/codingtool/",
+          "source": "https://github.com/irvan-putra/kaji",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
+        },
+        {
+          "name": "Laras Router",
+          "tag": "Model API gateway · billing limits",
+          "about": "Laras Router: a model API gateway with a QRIS wallet",
+          "url": "https://vanipy.com/kaji/larasrouter/",
+          "source": "https://github.com/irvan-putra/kaji",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
+        },
+        {
+          "name": "InfoTech Jakarta",
+          "tag": "Public event-resource guide",
+          "about": "Instagram and linked tech-event calendar, with organizer verification and availability caveats.",
+          "url": "https://vanipy.com/kaji/infotech-jakarta/",
+          "source": "https://github.com/irvan-putra/kaji",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an Android build"
         }
       ]
     }

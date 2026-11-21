@@ -79,3 +79,9 @@ Project-specific research that only makes sense inside its own project stays in 
 
 - [YukYuk: AI media tools, credits and visibility choices](https://vanipy.com/kaji/yukyuk/)
 - [Genesis: schema and GCP infrastructure in one workspace](https://vanipy.com/kaji/genesis/)
+
+- [CodingTool.dev](https://vanipy.com/kaji/codingtool/) - utilities, examples and local/hybrid/server processing limits.
+
+- [Laras Router](https://vanipy.com/kaji/larasrouter/) - model API compatibility, QRIS wallet, token rates and billing/data boundaries.
+
+- [InfoTech Jakarta](https://vanipy.com/kaji/infotech-jakarta/) - public event feed/calendar, verify actual event with organizers.
