@@ -15,6 +15,19 @@
 <tr><td data-label="Slide example">MEMS microphone: diaphragm, capacitance, ASIC, ADC/PDM</td><td data-label="Check against the standards">Confirmed with real variety. A MEMS membrane vibrates with sound and its capacitance against a fixed plate changes; a separate ASIC in the same package does the amplification. What leaves the package varies: some microphones output analog directly, most digital ones use delta-sigma conversion producing a 1-bit PDM stream, and some output I2S words instead. Piezoelectric elements are an emerging alternative to capacitive sensing.</td><td data-label="Reading">Confirmed; ADC and PDM are alternatives, not a fixed sequence.</td></tr>
 </tbody>
 </table>
+<h2>The codec step, checked arithmetic</h2>
+<p>A second slide from the same talk, "Why encode audio differently?" (labeled VOICE LAB / 06 / CODECS), isolates the codec step itself. Its point: G.711 mu-law maps each linear 16-bit sample to an 8-bit code <em>at the same sample rate</em>. No samples are dropped in this step; each one just gets smaller, and decoding gives back an approximation, not the original. The slide shows the original and decoded waveforms side by side with playback buttons for each.</p>
+<p>The slide's worked example takes three consecutive 16-bit samples and traces them through encode and decode. Every figure on it can be reproduced exactly with the ITU G.711 reference mu-law algorithm, and we did:</p>
+<table>
+<thead><tr><th>PCM input (16-bit)</th><th>G.711 mu-law code (8-bit)</th><th>Decoded PCM (16-bit)</th></tr></thead>
+<tbody>
+<tr><td data-label="PCM input (16-bit)">-7205</td><td data-label="G.711 mu-law code (8-bit)">0x23</td><td data-label="Decoded PCM (16-bit)">-7164</td></tr>
+<tr><td data-label="PCM input (16-bit)">-7293</td><td data-label="G.711 mu-law code (8-bit)">0x22</td><td data-label="Decoded PCM (16-bit)">-7420</td></tr>
+<tr><td data-label="PCM input (16-bit)">1618</td><td data-label="G.711 mu-law code (8-bit)">0xC4</td><td data-label="Decoded PCM (16-bit)">1628</td></tr>
+</tbody>
+</table>
+<p>All three codes and all three decoded values match the slide to the unit. So three samples that took 6 bytes as PCM travel as 3 bytes and come back as 6 bytes again, with values close to but not identical to the originals: the encoding is lossy, deliberately. Mu-law spends its 256 codes unevenly, finely near silence and coarsely at loud amplitudes, which matches how the ear notices error; on these samples the absolute error is 41, 127 and 10 out of a 32768 range.</p>
+<p>Two different reductions are easy to confuse here, and the talk keeps them separate. <strong>Downsampling</strong> (44.1 kHz to 8 kHz in the process stage) reduces the <em>number</em> of samples. <strong>Companding</strong> (16-bit to 8-bit mu-law, this slide) reduces the <em>size of each</em> sample at whatever rate is left. Together they take the example stream from 705.6 kbit/s to 64 kbit/s, an 11-fold reduction, before a single packet is sent.</p>
 <h2>One example, not every call</h2>
 <p>The slide's own footnote says this is an illustrative G.711 path, not the exact stack every device uses, and the standards back the footnote:</p>
 <ul>
