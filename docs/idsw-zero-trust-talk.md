@@ -36,3 +36,7 @@ User follow-up 14:50:17 WIB: research how much latency zero trust could add, and
 User question 14:52:37 WIB: the speaker said the new version also hides the controller, user confused. Verified against OpenZiti v2.0 announcement (controller APIs bindable over the overlay, "the controller is dark", --network-identity login), the 1.8 management-plane blog (XWeb overlay bindPoints), and the add-by-URL blog (enrollment bootstrap: enrollment JWT out-of-band vs URL + IdP sign-in, auto-enroll in 2.0). Page section attributes the claim, confirms it for the management/control plane, and keeps the two boundaries explicit: routers still accept connections, and one small enrollment path stays reachable.
 
 Correction pass 14:53 WIB after main review: management API is not the whole control plane. Section now names the three API surfaces (management, fabric/router control channel, client edge API for auth and enrollment), states management+fabric are the surfaces that can bind over the overlay, keeps the client edge API and routers as the reachable remainder, and notes overlay binding is a supported configuration, not the out-of-box default.
+
+## Naming sidebar (added 21 Nov 14:59 WIB)
+
+User asked whether ziti pasta inspired the name and asked to add it to Kaji. Added a short sourced aside after the intro: NetFoundry's own blog (Philip Griffiths) says Ziti is a code name from the letters Z T, connected to Zero Trust, with pasta mascot Ziggy leaning into the coincidence. Attribution preserved; the aside does not claim the pasta played no role.
