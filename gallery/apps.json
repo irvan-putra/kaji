@@ -3,11 +3,23 @@
   "apps": [
     {
       "name": "simak",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "state": "available",
+      "icon": "simak021.png",
+      "tag": "Contact-name agenda highlights corrected",
+      "about": "Offline IDSW agenda, stars, notes and reminders. Possible contact-name hints on both-day agenda cards stay on-device and are not identity proof. Affiliation normalization and multi-speaker joins fixed; partial-name thresholds retained. Published APK emulator checks cover plain, affiliated, multi-speaker and affiliation-semicolon cards, persistence, visible reminder notification and reboot rearm. Same five permissions and pinned signer. Physical-phone reminder behavior and battery use unmeasured.",
+      "apk": "https://github.com/irvan-putra/simak/releases/download/v0.2.1/simak-v0.2.1.apk",
+      "release": "https://github.com/irvan-putra/simak/releases/tag/v0.2.1",
+      "repo": "https://github.com/irvan-putra/simak/commit/73582c099dd09bad242ec27cd9318dc7f3db2326",
+      "sha256": "10da3774c71f9d63e6a1eeae828ff4bd7a76deedf6450a3dd4da20b8cbe86cb0"
+    },
+    {
+      "name": "simak",
+      "version": "0.2.0",
+      "state": "legacy",
       "icon": "simak020.png",
       "tag": "Possible contact names on agenda cards",
-      "about": "Bundled IDSW agenda, stars, local notes and reminders. Agenda cards can show possible contact-name matches on both days, with uncertainty labels; names stay on device, not identity proof. Same five declared permissions and pinned signer as0.1.0. Published0.2.0 bytes, lowercase label and versioned icon checked. Post-publication emulator qualification is still pending;0.1.0 reminder firing and reboot-rearm proof does not qualify this update. Physical-phone and battery behavior unmeasured.",
+      "about": "Historical0.2.0 release. Limited synthetic plain-speaker check passed, but affiliation and multi-speaker card joins plus affiliation parsing were defective. Superseded by0.2.1. Partial-name matching remains intentional.",
       "apk": "https://github.com/irvan-putra/simak/releases/download/v0.2.0/simak-v0.2.0.apk",
       "release": "https://github.com/irvan-putra/simak/releases/tag/v0.2.0",
       "repo": "https://github.com/irvan-putra/simak/commit/1c4f7fa7b59c30fab6efbb0d9c363046a1bd050f",
