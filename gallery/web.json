@@ -7,7 +7,7 @@
         {
           "name": "tuju",
           "tag": "Journey timer and optional foreground GPS",
-          "about": "Offline map plus selected-stop journey timer and optional on-device GPS distance. GPS is off by default, asks location permission when enabled, and stops when the screen is left. Comparison uses operator GTFS timetable minutes and straight-line stop distances, not road distance or live travel times. Uncovered figures stay unavailable. Emulator UI/timer checks passed; real-ride GPS and physical phone unproven. Declares fine/coarse location; no INTERNET permission.",
+          "about": "Route map plus selected-stop journey timer and optional on-device GPS distance. GPS is off by default, asks location access when enabled, and stops when the screen is left. Comparison uses operator GTFS timetable minutes and straight-line stop distances, not road distance or live travel times. Uncovered figures stay unavailable. Browser UI/timer checks passed; real-ride GPS and physical phone unproven. Browser and Android state remain separate.",
           "url": "https://vanipy.com/tuju/",
           "source": "https://github.com/irvan-putra/tuju/commit/53c4c2fd336f6a553812d955b25624cf0ff0b126",
           "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.1",
