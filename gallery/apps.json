@@ -1,13 +1,13 @@
 {
-  "checked": "2026-11-21 12:16 WIB",
+  "checked": "2026-11-21 12:28 WIB",
   "apps": [
     {
       "name": "simak",
       "version": "0.3.2",
-      "state": "pending",
+      "state": "available",
       "icon": "simak032.png",
-      "tag": "Official panel update; qualified, delivery pending",
-      "about": "Published-APK emulator upgrade qualification passed from 0.3.0 to 0.3.2. The same Bagas note is retained and highlights are readable. Final actual-APK panel screenshot review and delivery are still pending. Adds the official Day 1 17:05 panel title and panelists. Same package, pinned signer and five permissions; code 6, lowercase label and published SHA-256 independently checked. Physical-phone behavior and battery unmeasured; no new star/alarm carryover proof. Web cache repair is separate and already delivered.",
+      "tag": "Official panel update; qualified and delivered",
+      "about": "Delivered 21 Nov 12:28. Official Day 1 17:05 panel title and all three panelists are readable in the actual published APK, without overlap. Full capture run44869630641 and upgrade qualification44868142748 passed. Upgrade from0.3.0 retained the same Bagas note and readable highlights. Same package, pinned signer and five permissions; code6, lowercase label and published SHA-256 independently checked. Physical-phone behavior and battery unmeasured; no new star/alarm carryover proof. Web cache repair is separate and already delivered.",
       "apk": "https://github.com/irvan-putra/simak/releases/download/v0.3.2/simak-v0.3.2.apk",
       "release": "https://github.com/irvan-putra/simak/releases/tag/v0.3.2",
       "repo": "https://github.com/irvan-putra/simak/commit/fe2c26e2aeeca367320e7730586042a43632336d",
@@ -16,10 +16,10 @@
     {
       "name": "simak",
       "version": "0.3.0",
-      "state": "available",
+      "state": "legacy",
       "icon": "simak030.png",
       "tag": "Six lightning cards and ranked name hints",
-      "about": "Delivered21Nov11:15. Six lightning-talk cards share14:30-15:30. Name hints rank exact/reordered-full matches before two-sided token coverage and normalized Levenshtein, with alphabetical ties; partial-name eligibility unchanged. Published-APK emulator qualification passed. In-place legacy note migration and explanation visually proven; legacy stars/alarms have code-equivalent carryover only, not runtime migration proof. Optional legacy block retains unsplit state without assigning it to a speaker. Physical0.3.0 behavior and battery unmeasured. Same five permissions/pinned signer/code4, published hash matches sidecar. Contact names stay on-device; hints are not identity proof.",
+      "about": "Historical0.3.0, superseded by0.3.2. Delivered21Nov11:15. Six lightning-talk cards share14:30-15:30. Name hints rank exact/reordered-full matches before two-sided token coverage and normalized Levenshtein, with alphabetical ties; partial-name eligibility unchanged. Published-APK emulator qualification passed. In-place legacy note migration and explanation visually proven; legacy stars/alarms have code-equivalent carryover only, not runtime migration proof. Optional legacy block retains unsplit state without assigning it to a speaker. Physical0.3.0 behavior and battery unmeasured. Same five permissions/pinned signer/code4, published hash matches sidecar. Contact names stay on-device; hints are not identity proof.",
       "apk": "https://github.com/irvan-putra/simak/releases/download/v0.3.0/simak-v0.3.0.apk",
       "release": "https://github.com/irvan-putra/simak/releases/tag/v0.3.0",
       "repo": "https://github.com/irvan-putra/simak/commit/a75670b434755eafcdcb6c791e6a43197313b3a8",
