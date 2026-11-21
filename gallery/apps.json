@@ -1,13 +1,13 @@
 {
-  "checked": "2026-11-21 11:04 WIB",
+  "checked": "2026-11-21 11:15 WIB",
   "apps": [
     {
       "name": "simak",
       "version": "0.3.0",
-      "state": "pending",
+      "state": "available",
       "icon": "simak030.png",
-      "tag": "Published; runtime qualification in progress",
-      "about": "Published21Nov, not yet delivered. New six-card lightning-talk layout, optional retained legacy block state and revised name-match ordering await published-APK runtime qualification. Existing partial-name eligibility is retained by design. Independent published-APK check confirms code4/lowercase label, versioned packaged icon, same five permissions and pinned signer; APK hash matches sidecar. Runtime ranking, migration, reminders, reboot behavior and phone battery not yet qualified for this version. Contact names remain on-device and hints are not identity proof.",
+      "tag": "Six lightning cards and ranked name hints",
+      "about": "Delivered21Nov11:15. Six lightning-talk cards share14:30-15:30. Name hints rank exact/reordered-full matches before two-sided token coverage and normalized Levenshtein, with alphabetical ties; partial-name eligibility unchanged. Published-APK emulator qualification passed. In-place legacy note migration and explanation visually proven; legacy stars/alarms have code-equivalent carryover only, not runtime migration proof. Optional legacy block retains unsplit state without assigning it to a speaker. Physical0.3.0 behavior and battery unmeasured. Same five permissions/pinned signer/code4, published hash matches sidecar. Contact names stay on-device; hints are not identity proof.",
       "apk": "https://github.com/irvan-putra/simak/releases/download/v0.3.0/simak-v0.3.0.apk",
       "release": "https://github.com/irvan-putra/simak/releases/tag/v0.3.0",
       "repo": "https://github.com/irvan-putra/simak/commit/a75670b434755eafcdcb6c791e6a43197313b3a8",
@@ -16,10 +16,10 @@
     {
       "name": "simak",
       "version": "0.2.1",
-      "state": "available",
+      "state": "legacy",
       "icon": "simak021.png",
       "tag": "Contact-name agenda highlights corrected",
-      "about": "Offline IDSW agenda, stars, notes and reminders. Possible contact-name hints on both-day agenda cards stay on-device and are not identity proof. Affiliation normalization and multi-speaker joins fixed; partial-name thresholds retained. Published APK emulator checks cover plain, affiliated, multi-speaker and affiliation-semicolon cards, persistence, visible reminder notification and reboot rearm. Same five permissions and pinned signer. Physical-phone reminder behavior and battery use unmeasured.",
+      "about": "Historical0.2.1, superseded by0.3.0. User confirmed agenda highlighting on phone21Nov10:48 for this version. Expanded emulator suite covered affiliation/multi-speaker parsing, persistence, notification and reboot rearm. Partial thresholds retained. Phone reminder firing and battery unmeasured.",
       "apk": "https://github.com/irvan-putra/simak/releases/download/v0.2.1/simak-v0.2.1.apk",
       "release": "https://github.com/irvan-putra/simak/releases/tag/v0.2.1",
       "repo": "https://github.com/irvan-putra/simak/commit/73582c099dd09bad242ec27cd9318dc7f3db2326",
