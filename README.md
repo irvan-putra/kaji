@@ -20,6 +20,8 @@ This repo also includes illustrations alongside the Android-update, application-
 
 ## Notes
 
+- [import zerotrust: an IDSW talk, checked](https://vanipy.com/kaji/zero-trust/) - five slide CVEs checked against primary advisories (one identifier mismatch, score-version caveats), the FBI ARTEX FLASH verified, and OpenZiti's network/host/application deployment models with their trust boundaries. [Source note](docs/idsw-zero-trust-talk.md).
+
 - [Hamming, Levenshtein and the cost of a missing letter](https://vanipy.com/kaji/edit-distance/) - illustrated reading of arXiv2211.12496v1, theorem assumptions and synthetic name-ranking examples; separate design proposal, no implementation claim. [Source note](docs/hamming-levenshtein-reading.md).
 
 
