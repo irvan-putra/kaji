@@ -11,7 +11,7 @@ Source ledger for site/voice-packets/ ("from air to packets and back: an IDSW ta
 - ITU-T G.711 title "Pulse code modulation (PCM) of voice frequencies": https://www.itu.int/rec/T-REC-G.711/en
 - RFC 3551: PCMA/PCMU sample-based, 8-bit samples, 8,000 Hz clock; section 4.2 default 20 ms packetization; longer-packet delay trade-off: https://www.rfc-editor.org/rfc/rfc3551.html
 - RFC 3550 section 5.1: "The first twelve octets are present in every RTP packet"; 16-bit sequence number increments per packet; 32-bit timestamp = sampling instant: https://www.rfc-editor.org/rfc/rfc3550.html
-- Arithmetic: 8,000 x 0.020 = 160-byte payload; 160 + 12 = 172 (slide's lower label); +8 UDP +20 IPv4 = 200 bytes on the wire; 50 packets/s.
+- Arithmetic: 8,000 x 0.020 = 160-byte payload; 160 + 12 = 172 (slide's lower label); +8 UDP +20 IPv4 = 200 bytes as a minimal IPv4 packet (before link-layer framing, options or encryption overhead); 50 packets/s.
 - MEMS microphone chain (capacitive diaphragm, companion ASIC, analog vs PDM vs I2S outputs, piezoelectric alternative): https://www.allaboutcircuits.com/technical-articles/introduction-to-microelectromechanical-systems-microphone-technology/
 - Opus as common modern alternative: RFC 6716, https://www.rfc-editor.org/rfc/rfc6716.html
 

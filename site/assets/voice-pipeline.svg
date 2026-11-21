@@ -38,7 +38,7 @@
 <text x="170" y="546" font-size="16" text-anchor="middle" fill="#597269">160-byte payload, 50 per second</text>
 <path d="M330 528 h30" stroke="#156c60" stroke-width="3" marker-end="url(#a)"/>
 <rect x="368" y="496" width="292" height="64" rx="12" fill="#dfece6" stroke="#156c60"/>
-<text x="514" y="524" font-size="19" text-anchor="middle">On the wire</text>
+<text x="514" y="524" font-size="19" text-anchor="middle">IPv4 packet</text>
 <text x="514" y="546" font-size="16" text-anchor="middle" fill="#2f4f47">+12 RTP, +8 UDP, +20 IP: 200 bytes</text>
 
 <text x="20" y="622" font-size="26" font-weight="700">5. Receive</text>
