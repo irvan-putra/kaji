@@ -22,3 +22,7 @@ Network access (edge router, no code changes, port still open inside zone), host
 ## Limits stated on the page
 
 Zero trust reduces exposure; it does not patch CVEs; it cannot see caller-side defects (OpenSSL case); it moves trust to the controller/enrollment/policy plane, which then needs the same care as any identity system.
+
+## Speaker takeaway slide (added 21 Nov 14:49 WIB)
+
+Eighth photo from the user (WhatsApp 14:48:31, message id ending QzhBNTU4AA==), relayed through main agent's inline inspection: the speaker's closing position revises indiscriminate immediate patching toward (1) prioritizing urgent patches with orderly scheduled backend patching, (2) active mitigation instead of doing nothing, (3) machine/device identity over IP-based trust, (4) hiding/restricting exposure through zero trust. Rendered as the speaker's takeaway with the page's own cautions: exploited and internet-facing defects remain patch-now items, and zero trust mitigates exposure without closing the defects.

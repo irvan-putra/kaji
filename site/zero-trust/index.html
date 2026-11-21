@@ -35,6 +35,15 @@
 <li><strong>It does not help when the caller is the problem.</strong> The OpenSSL defect needs the calling application to hand the library a near-2 GB length. That is an API-usage defect inside trusted code, and an identity check on the network cannot see it.</li>
 <li><strong>It moves trust rather than deleting it.</strong> The controller, enrollment process and policy definitions now decide who gets in. They become high-value systems that need the same care as any identity infrastructure. NIST SP 800-207's framing applies: no implicit trust from network location, per-session authorization, and continual re-evaluation, not a one-time setup.</li>
 </ul>
+<h2>The speaker's takeaway</h2>
+<p>The closing slide revises the opening cat meme. Rather than treating every new CVE as a drop-everything emergency, the speaker's position is:</p>
+<ul>
+<li><strong>Prioritize urgent patches.</strong> Patch what is actively exploited or directly exposed first, and let the rest follow an orderly, scheduled backend cycle instead of panic.</li>
+<li><strong>Mitigate actively.</strong> When a patch cannot land immediately, reduce what an attacker can reach in the meantime rather than doing nothing.</li>
+<li><strong>Trust machine and device identity, not IP addresses.</strong> A network location says nothing about who is calling.</li>
+<li><strong>Hide and restrict exposure through zero trust.</strong> Make as much of the system and application surface unreachable as possible.</li>
+</ul>
+<p>Risk-based patch prioritization is standard practice, and this page's sources support the ordering: CISA's Known Exploited Vulnerabilities catalog exists precisely to tell operators which issues cannot wait, while vendor advisories and distribution trackers carry the scheduled remainder. The claim table above shows what that split looks like for these five CVEs. Two cautions stay attached. Exploited and internet-facing defects, php2shell and Java4Shell here, remain patch-now items under any prioritization scheme. And zero trust is the mitigation layer, not the fix: it shrinks what is reachable and how far a compromise spreads, but the defects themselves close only when the software is updated.</p>
 <h2>Sources checked 21 Nov 2026</h2>
 <ul>
 <li><a href="https://idsw.dev/2026/index.html">IDSW 2026 official agenda</a> (session and listed speaker)</li>
