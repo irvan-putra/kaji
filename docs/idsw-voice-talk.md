@@ -23,3 +23,7 @@ Source ledger for site/voice-packets/ ("from air to packets and back: an IDSW ta
 - User sent a third photo ("add this too", WhatsApp 15:10:56): slide "Why encode audio differently?" (VOICE LAB / 06 / CODECS), same talk.
 - Slide example: PCM [-7205, -7293, 1618] -> mu-law [0x23, 0x22, 0xC4] -> decoded [-7164, -7420, 1628]. All six figures reproduced exactly with the ITU G.711 reference mu-law algorithm (bias 132, clip 32635); added as a checked-arithmetic section with the companding-vs-downsampling distinction kept explicit.
 - Photo not reproduced; no faces or venue imagery published.
+
+## Speaker references addition (21 Nov 2026, 15:24 WIB)
+- User sent the talk's closing reference slide ("add this too", WhatsApp 15:23:35). Added "The speaker's references" section with all nine destinations; every link opened and verified resolving on 21 Nov 2026 (Analog Devices sigma-delta tutorial, Infineon IM69D130, ITU-T G.711, RFC 3550 s5.1, RFC 3551 s4.5.14, github.com/yosephbernandus/voip-stack, github.com/yosephbernandus/voice-lab, bsw.kadcom.dev FFT article, pycon2026.yosephbernandus.com "Voice Calls Byte by Byte").
+- Reference photo not reproduced; no faces or venue imagery published.
