@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-21 17:24 WIB",
+  "checked": "2026-11-21 17:59 WIB",
   "sections": [
     {
       "title": "Maps",
@@ -538,6 +538,15 @@
           "source": "https://github.com/irvan-putra/kaji",
           "icon": "icons/research.svg",
           "icon_note": "Web category symbol, not an Android build"
+        },
+        {
+          "name": "Models so far",
+          "tag": "Six model references · sizes, roles and limits",
+          "about": "Classifier versus generator; named quantized downloads, license caveats and Inkling 2 Mini desktop-scale limits.",
+          "url": "https://vanipy.com/kaji/models/",
+          "source": "https://github.com/irvan-putra/kaji",
+          "icon": "icons/research.svg",
+          "icon_note": "Research symbol, no model runtime"
         }
       ]
     }

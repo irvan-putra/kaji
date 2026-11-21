@@ -87,3 +87,5 @@ Project-specific research that only makes sense inside its own project stays in 
 - [InfoTech Jakarta](https://vanipy.com/kaji/infotech-jakarta/) - public event feed/calendar, verify actual event with organizers.
 
 - [Intelecto](https://vanipy.com/kaji/intelecto/) - textbook/Reader/LMS ecosystem, in-product AI and unconfirmed external access.
+
+- [Models so far](https://vanipy.com/kaji/models/) - six model references, named download sizes, license caveats and runtime limits.
