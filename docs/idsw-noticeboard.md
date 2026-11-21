@@ -19,3 +19,7 @@
 - https://larasrouter.com
 
 Goodtalenta company link seen on notice and tested: https://s.goodtalenta.com/pt-goodthink-teknologi-asia redirected to login with matching company target; no vacancy verified. Genesis and Intelecto inspected in browser after text fetch was sparse/unavailable. Goodtalenta login observed, no sign-in.
+
+## Later photo update, 21 November 2026
+
+Three notes newly captured by the later photos, not confirmed newly added to the board: Akar Inti Teknologi hiring DevOps/Infra and Business Analyst; a Protelindo careers-address note; and a blurry possible DevOps engineer hiring note with employer unknown. Initial developer/engineer reading of Akar was corrected using the clearer photo. The handwritten address protelindo.net/careers is a transcription only, not a verified vacancy/application link. Original images, faces, reflections and personal contacts are not published.
