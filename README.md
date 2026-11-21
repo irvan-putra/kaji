@@ -89,3 +89,7 @@ Project-specific research that only makes sense inside its own project stays in 
 - [Intelecto](https://vanipy.com/kaji/intelecto/) - textbook/Reader/LMS ecosystem, in-product AI and unconfirmed external access.
 
 - [Models so far](https://vanipy.com/kaji/models/) - six model references, named download sizes, license caveats and runtime limits.
+
+## AI product insights
+
+[41 public product-feedback summaries](https://vanipy.com/kaji/ai-product-insights/) with [sanitized Markdown notes](docs/ai-product-insights.md). Requests and observations, not a roadmap; personal details and private tracking links excluded.

@@ -549,6 +549,20 @@
           "icon_note": "Research symbol, no model runtime"
         }
       ]
+    },
+    {
+      "title": "AI product insights",
+      "items": [
+        {
+          "name": "AI product insights",
+          "tag": "41 product-feedback summaries",
+          "about": "Sanitized feedback on AI assistants, consent, continuity, sharing, code ownership and delivery. Requests and observations, not a roadmap or current defect list. Private tracking links and personal details excluded.",
+          "url": "https://vanipy.com/kaji/ai-product-insights/",
+          "source": "https://github.com/irvan-putra/kaji",
+          "icon": "icons/research.svg",
+          "icon_note": "Web category symbol, not an app release"
+        }
+      ]
     }
   ]
 }
