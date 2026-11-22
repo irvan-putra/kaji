@@ -8,9 +8,9 @@
 <path d="M200 278 C 212 120, 224 90, 240 92 C 262 96, 268 220, 320 262 C 350 278, 420 279, 460 279" stroke="#156c60" stroke-width="3" fill="none" stroke-dasharray="7 5"/>
 <line x1="60" y1="272" x2="640" y2="272" stroke="#b3261e" stroke-width="3"/>
 <line x1="420" y1="70" x2="470" y2="70" stroke="#156c60" stroke-width="3" stroke-dasharray="7 5"/>
-<text x="480" y="75" font-size="14">requests to CDN: one shared document for everyone</text>
+<text x="478" y="75" font-size="13">CDN requests: one shared file</text>
 <line x1="420" y1="100" x2="470" y2="100" stroke="#b3261e" stroke-width="3"/>
-<text x="480" y="105" font-size="14">position requests to server: 0</text>
+<text x="478" y="105" font-size="13">server position requests: 0</text>
 <text x="640" y="305" font-size="13" text-anchor="end" fill="#597269">time (seconds)</text>
 <text x="60" y="330" font-size="14" font-weight="600" fill="#7a6a1f">The slide marks this plot as an illustration; it is not a measurement.</text>
 </g>
