@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-22 21:41 WIB",
+  "checked": "2026-11-22 22:19 WIB",
   "apps": [
     {
       "name": "simak",
@@ -55,7 +55,7 @@
       "state": "available",
       "icon": "tuju025.png",
       "tag": "The Breeze BSD via S11 and Grand Indonesia via 4C",
-      "about": "Published 22 Nov. The combined map adds both directions of S11 between Central Park and Serpong BSD, then an explicit 2.2 km / 29 min walk to The Breeze BSD. Pedestrian conditions remain unverified on site. Direct 4C to Grand Indonesia extends the shared 4C/5M spine through SMPN 8; its independent return joins the existing Megaria homebound spine. Intermediate stops, direction arrows, prior destinations, journey meter and optional GPS retained. Published checksum, package, code 16, two location permissions, pinned signer and icon badge checked by the release gates. Emulator pinch check is being rechecked; physical-phone installation and real GPS remain unverified.",
+      "about": "Published 22 Nov. The combined map adds both directions of S11 between Central Park and Serpong BSD, then an explicit 2.2 km / 29 min walk to The Breeze BSD. Pedestrian conditions remain unverified on site. Direct 4C to Grand Indonesia extends the shared 4C/5M spine through SMPN 8; its independent return joins the existing Megaria homebound spine. Intermediate stops, direction arrows, prior destinations, journey meter and optional GPS retained. Published checksum, package, code 16, two location permissions, pinned signer and icon badge checked by the release gates. Emulator pinch, drag and journey-meter tests passed, with both new destinations captured in the Android WebView. Physical-phone installation and real GPS remain unverified.",
       "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.2.5/tuju-v0.2.5.apk",
       "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.5",
       "repo": "https://github.com/irvan-putra/tuju/commit/21ab8a378d591f6db5e2ebbe5449866ceb8207b4",
