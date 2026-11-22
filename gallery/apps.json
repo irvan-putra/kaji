@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22 16:15 WIB",
+ "checked": "2026-11-22 18:51 WIB",
  "apps": [
   {
    "name": "simak",
@@ -279,15 +279,15 @@
   },
   {
    "name": "sanggup",
-   "version": "0.2.3",
+   "version": "0.2.4",
    "state": "available",
-   "icon": "sanggup023.png",
-   "tag": "Study plans, community kit, sign-off links, signed test APK",
-   "about": "Delivered 22 Nov at 16:15. Catches up with web 0.2.5: milestone sign-off page, study-group plan page, community kit and the four-quadrants Career stage are bundled offline; sign-off and plan share links open in a browser. Code 9, zero permissions and same signing identity. Published bytes checked against the sidecar checksum. Actual phone install or upgrade remains unverified; the older synthetic upgrade proof does not cover this release. Browser and Android progress stay separate. Update in place, never clear storage.",
-   "apk": "https://github.com/irvan-putra/sanggup/releases/download/v0.2.3/sanggup-v0.2.3.apk",
-   "release": "https://github.com/irvan-putra/sanggup/releases/tag/v0.2.3",
-   "repo": "https://github.com/irvan-putra/sanggup/commit/666ca403a5763563759a618e9988ed415f627f4c",
-   "sha256": "4758de583893d9006c433d67e709d33bf4e1eaa6bf746efc642040a01d7e39b5"
+   "icon": "sanggup024.png",
+   "tag": "IDSW Coding exercises, study plans, community kit, sign-off links, signed test APK",
+   "about": "Delivered 22 Nov at 18:50. Catches up with the current web prototype: six new Coding stages from IDSW 2026 talks (test-cost comparison, measured CI spend, authorization as explicit permission, deterministic race reproduction, cross-app call counting, stateless-scope mapping) plus new Coding sources are bundled offline; sign-off and plan share links open in a browser. Code 10, zero permissions and same signing identity. Published bytes checked against the sidecar checksum. Actual phone install or upgrade remains unverified; the older synthetic upgrade proof does not cover this release. Browser and Android progress stay separate. Update in place, never clear storage.",
+   "apk": "https://github.com/irvan-putra/sanggup/releases/download/v0.2.4/sanggup-v0.2.4.apk",
+   "release": "https://github.com/irvan-putra/sanggup/releases/tag/v0.2.4",
+   "repo": "https://github.com/irvan-putra/sanggup/commit/f5876517bb277ba8c8535a0f801a33f605d12f5c",
+   "sha256": "278ddf2302c943cee35c1f20e7ce326e1c4497bfe216ad7d8e6f31ed82808d8a"
   },
   {
    "name": "sanggup",
