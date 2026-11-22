@@ -4,7 +4,7 @@ type: research-note
 ---
 # Is AI safe? Yes, but: an IDSW keynote, checked (source note)
 
-Public page: https://vanipy.com/kaji/ai-safety/ . Reading of the IDSW 2026 day-two keynote "Pesan Systems Engineering Modern dalam Membangun Purwarupa AI ke Sistem Produksi yang Aman, Teruji, dan Layak Dipercaya" (22 Nov 2026, 10:05-10:50, listed speaker Mansur Maturidi Arief, KFUPM AI Verification and Validation Lab, per the official agenda), based on photographed slides sent during the talk, which are not reproduced.
+Public page: https://vanipy.com/kaji/ai-safety/ . Reading of the IDSW 2026 day-two keynote "Pesan Systems Engineering Modern dalam Membangun Purwarupa AI ke Sistem Produksi yang Aman, Teruji, dan Layak Dipercaya" (22 Nov 2026, 10:05-10:50, listed speaker Mansur Maturidi Arief, KFUPM AI Verification and Validation Lab, per the official agenda), based on photographed slides sent during the talk, which are not reproduced. Attribution is agenda-based: the slides carry no title card; the match rests on the agenda slot, photo timing inside it, same venue as the confirmed preceding session, and content fit with the announced title.
 
 ## Reference-check results (checked 22 Nov 2026)
 
