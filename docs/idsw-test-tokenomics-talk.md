@@ -12,7 +12,7 @@ Slide byline Ivo (@ivokun); the deck is public at https://decks.ivokun.com/token
 
 ## What was checked (22 Nov 2026)
 
-- The Samuel Robertson (10 Nov) and Peter Steinberger (8 Oct) posts exist; the 4,000-tests post is widely read as satire, which the page labels as an interpretation, not a confirmed result.
+- The Samuel Robertson (10 Nov) and Peter Steinberger (8 Oct) posts exist; the 4,000-tests post can be read as satire, which the page labels as one possible interpretation without primary confirmation, not a confirmed result.
 - Vincent Koc's measured follow-up (16 Nov 2026, https://vincent.build/openclaw-ci-cost-reduction/): weekly runner-hours down 86.5%, 417,906 net test-file lines removed 28 Sep - 13 Nov, with his caveats (workloads differed, savings not additive, merge speed not established). Units kept distinct from steipete's self-reported cumulative 1.3M deleted-test count; the page does not equate them.
 - The 28 Sep "sampah" post on the slide was transcribed from the photo only; unverified, labeled as the slide's claim.
 - Surrounding discourse verified as real (guides on agents deleting/weakening tests), linked as pattern context, not as proof of any anecdote.
