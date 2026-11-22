@@ -22,3 +22,5 @@ Speaker's name printed on the closing/thank-you slides. No appearance-based iden
 - Speaker's results (zero position lookups, zero collisions at one million, 32-byte draw secret, days-to-hours proof time) attributed, not reproduced or endorsed. "Tickets cannot be forged" treated as an absolute claim to describe, not guarantee. Closing rhetoric kept as exhortation.
 - Sanggup adaptation: Coding stages cd30-cd32 (race reproduction, N+1 journey count, stateless-scope mapping exercise), all synthetic and local; no traffic to third-party services; no hand-rolled crypto exercise.
 - Private source-photo references live only in the collector's internal synthesis; not published.
+
+Diagrams: the four worked-example graphics on the page (race timeline, cross-API N+1, opening-time CDN plot, ten-registrant shuffle) are original recreations drawn from the photographed slides on 23 Nov 2026, with Indonesian labels translated. Source photos remain unpublished in the private collection.

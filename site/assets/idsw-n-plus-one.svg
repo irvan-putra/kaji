@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 260" role="img" aria-label="A frontend calls the product list API once, then calls the product detail API N times, one per product">
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#156c60"/></marker></defs>
+<rect width="680" height="260" fill="#fffdf8"/>
+<g font-family="system-ui,sans-serif" fill="#202b29">
+<rect x="20" y="60" width="210" height="140" rx="12" fill="#f4f1eb" stroke="#bbc8c0"/>
+<text x="125" y="105" font-size="19" text-anchor="middle" font-weight="700">Frontend</text>
+<text x="125" y="135" font-size="14" text-anchor="middle" fill="#597269">search products,</text>
+<text x="125" y="156" font-size="14" text-anchor="middle" fill="#597269">then fetch details</text>
+<text x="125" y="177" font-size="14" text-anchor="middle" fill="#597269">for each product</text>
+<path d="M232 100 C 280 100, 300 92, 330 90" stroke="#156c60" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<path d="M232 160 C 280 160, 300 168, 330 170" stroke="#156c60" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<rect x="338" y="52" width="322" height="76" rx="12" fill="#dfece6" stroke="#156c60"/>
+<text x="499" y="84" font-size="18" text-anchor="middle" font-weight="600">API: list products</text>
+<text x="499" y="110" font-size="15" text-anchor="middle" fill="#2f4f47">1 request</text>
+<rect x="338" y="140" width="322" height="76" rx="12" fill="#f4e9b8" stroke="#b8a32a"/>
+<text x="499" y="172" font-size="18" text-anchor="middle" font-weight="600">API: get product detail</text>
+<text x="499" y="198" font-size="15" text-anchor="middle" fill="#7a6a1f">N requests: one per product</text>
+</g>
+</svg>
