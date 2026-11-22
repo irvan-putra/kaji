@@ -1,18 +1,18 @@
 {
-  "checked": "2026-11-21 17:59 WIB",
+  "checked": "2026-11-23 00:15 WIB",
   "sections": [
     {
       "title": "Maps",
       "items": [
         {
           "name": "tuju",
-          "tag": "Journey timer and optional foreground GPS",
-          "about": "Delivered 21 Nov 12:16. Official IDSW access guide bundled offline, plus labeled LRT Rasuna Said marker, final JPO walk and Sunday Car Free Day warning on the top map. Wrapped venue text avoids the 5M spine. Published-APK emulator map-fit and offline guide checks passed; actual offline guide and live desktop/mobile map pixels reviewed. Existing route geometry, timer and optional GPS retained. Package/code14/lowercase label/two location permissions/pinned signer and published hash independently checked. Physical phone and real-ride GPS remain unproven; no battery claim. Browser and Android state remain separate.",
+          "tag": "Portrait route map, straight 4C and BINUS Alam Sutera",
+          "about": "Published 23 Nov. Portrait combined map: straight red 4C spines, purple 5M branches, with S11 and S61 stacked below. Separate BINUS main-building and mall-extension markers use their own walking connections. Take 4C to Bundaran Senayan, a separate pedestrian transfer, then S61 to Forest Park; return S61 uses the different Mall stop. All prior destinations, intermediate stops, journey meter and optional GPS remain. Signed APK hash, package, code 17, two location permissions, pinned signer and 0.2.6 icon checked. Emulator pinch, pan and journey-meter tests passed. Physical-phone installation and real GPS remain unverified. Walks depend on the selected entrances; sidewalks, crossings, gates and fare continuity are not verified on site. Browser and Android state remain separate.",
           "url": "https://vanipy.com/tuju/",
-          "source": "https://github.com/irvan-putra/tuju/commit/855782a5df7340e65e66dd9b5321702c9119259d",
-          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.3",
-          "icon": "../apk/icons/tuju023.png",
-          "icon_note": "Packaged Android 0.2.3 icon; emulator-qualified and delivered. Physical phone and ride GPS unproven."
+          "source": "https://github.com/irvan-putra/tuju/commit/b17ac311d96763267f3a9169b3e4a4d94030ab34",
+          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.6",
+          "icon": "../apk/icons/tuju026.png",
+          "icon_note": "Packaged Android 0.2.6 icon. Emulator pinch, pan and journey-meter tests passed. Physical-phone installation and real GPS unverified."
         },
         {
           "name": "tangkai",
