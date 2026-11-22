@@ -6,13 +6,13 @@
       "items": [
         {
           "name": "tuju",
-          "tag": "Shared S11/S61 rows only for same-named stops",
-          "about": "Published 23 Nov. S11 and S61 stops now share a row only when they are the same named station on opposite sides; differently named stops keep their own rows, since distance alone does not show a shared boarding point. Also carries the label-clearance fixes, Central Park return leg and shorter layout. Red 4C and 5M out/return columns are not yet combined. Physical phone and real GPS unverified.",
+          "tag": "Two parallel direction lines for S11 and S61",
+          "about": "Published 23 Nov. S11 and S61 are drawn as two close parallel direction lines, each with its own stop markers and labels outside, so no stop is shown as the same boarding point as one in the other direction. The Central Park walk splits into a walk to the outbound stop and a walk home from the return stop. Map is shorter. Red 4C and purple 5M columns are not yet changed. Physical phone and real GPS unverified.",
           "url": "https://vanipy.com/tuju/",
-          "source": "https://github.com/irvan-putra/tuju/commit/e2c5d6f",
-          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.11",
-          "icon": "../apk/icons/tuju0211.png",
-          "icon_note": "Packaged Android 0.2.11 icon. Physical phone and real GPS unverified."
+          "source": "https://github.com/irvan-putra/tuju/commit/4fd6c62",
+          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.12",
+          "icon": "../apk/icons/tuju0212.png",
+          "icon_note": "Packaged Android 0.2.12 icon. Physical phone and real GPS unverified."
         },
         {
           "name": "tangkai",
