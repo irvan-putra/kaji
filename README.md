@@ -33,6 +33,8 @@ This repo also includes illustrations alongside the Android-update, application-
 
 - [Secrets: three jobs, three tools (review)](https://vanipy.com/kaji/secrets/review/) - a design review comparing a phone password vault, OpenBao for app and bot secrets, and SOPS-encrypted repo config, with OpenBao claims linked to its own docs and cost/hosting left unverified; a decision checklist, not an implementation. Nothing is built, installed, moved or paid for; Saku stays parked.
 
+- [Secrets: OpenBao hosting options and a leak recovery plan](https://vanipy.com/kaji/secrets/hosting-recovery/) - first-pass follow-up research: vendor-advertised price floors explicitly not qualified as recommendations, seal-method-dependent unseal tradeoffs, and a generic leaked-secret recovery checklist grounded in GitHub's remediation guidance; no setup, signup, spend or real inventory.
+
 - [IDSW 2026 schedule overview and a learning plan](docs/idsw-2026.md) - the published agenda (checked 2026-11-21, subject to change), a reading of its themes, and a suggested session plan for builders of AI-assisted personal software.
 - [Designing an AI chat composer](docs/designing-an-ai-chat-composer.md) - Sketch Together's video about the AI message-input box: controls, attachments, voice, states, mobile behavior and accessibility. Transcript-based reading, not a music-composition model or tested design rule.
 
