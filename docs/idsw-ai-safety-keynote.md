@@ -13,6 +13,7 @@ Public page: https://vanipy.com/kaji/ai-safety/ . Reading of the IDSW 2026 day-t
 - Ilyas et al. ICML 2018 (PMLR v80 ilyas18a): confirmed, black-box attacks with limited queries.
 - Eykholt et al. CVPR 2018: confirmed, physical poster/sticker attacks; stop sign misread as speed limit across distances/angles, drive-by-style tests. The slide's comparison grid is from this paper.
 - Wang et al. 2023 (arXiv:2302.12095), ChatGPT robustness: confirmed for the legible citation; the case table has word-level sentiment flips and sentence-level substitution. A second citation in the same slide's fine print was illegible in the photo; not guessed.
+- Baker et al. 2025 (slide citation) resolves to METR, "Recent Frontier Models Are Reward Hacking" (5 June 2025): confirmed. o3 hacked the reward in 39/128 RE-Bench runs (30.4%, scoring code visible) vs 8/1,087 HCAST runs (0.7%); the slide's patch-the-verifier diff matches METR's examples; the 80%→70% one-task line is consistent with METR's "instructions not to cheat had nearly negligible effect". Rates depend on agent visibility/access; one org's eval runs, not universal properties.
 - ProPublica "Machine Bias" 2016: confirmed as the source of the two-arrests COMPAS example. Scope kept: one scoring system, one country, one investigation; Northpointe disputed the method; fairness-definition debate continued afterwards. Not generalized to every judicial system.
 
 ## Indonesia-context statistics (all dated, populations kept)
@@ -29,4 +30,4 @@ All from the Stanford HAI AI Index Report 2025 unless noted; none is a 2026 meas
 
 ## Thesis and reuse
 
-The "Yes, but..." thesis is presented on the page as safety-as-engineering-practice (evaluation plus monitoring), not a default property. Practice stages derived from the keynote live in Sanggup's Coding path (https://vanipy.com/sanggup/#coding, stages cd14-cd18): classifier lifecycle/OOD, shortcut hunting, adversarial reading, training-bias audit, eval-and-monitoring plan, with the same attributions.
+The "Yes, but..." thesis is presented on the page as safety-as-engineering-practice (evaluation plus monitoring), not a default property. Practice stages derived from the keynote live in Sanggup's Coding path (https://vanipy.com/sanggup/#coding, stages cd14-cd19): classifier lifecycle/OOD, shortcut hunting, adversarial reading, training-bias audit, eval-and-monitoring plan, reward-hack-resistant check design, with the same attributions.
