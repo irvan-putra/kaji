@@ -6,13 +6,13 @@
       "items": [
         {
           "name": "tuju",
-          "tag": "Clear crossing arcs and unverified Cawang interchange",
-          "about": "Published 23 Nov. The 7F branch and the Matraman 3 link now cross the 9/10 return line and the 4C outbound line with clear arcs, so neither reads as a join. The Cawang Sentral outbound note now says 10 and 9 use different GTFS platform IDs and that the paid-area interchange is not verified. Physical phone and real GPS unverified.",
+          "tag": "Bakoel and Grand Indonesia moved up, S61 block right",
+          "about": "Published 23 Nov. The Bakoel Koffie and Grand Indonesia destination pins moved up beside the lines they belong to, with shorter walking links, and the whole S61 block sits right, under the Bundaran Senayan pair, with its walk links re-anchored. The page also gains a local edit mode: drag a destination or a whole route block, then copy the moves as feedback. Physical phone and real GPS unverified.",
           "url": "https://vanipy.com/tuju/",
-          "source": "https://github.com/irvan-putra/tuju/commit/e19c047",
-          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.16",
-          "icon": "../apk/icons/tuju0216.png",
-          "icon_note": "Packaged Android 0.2.16 icon. Physical phone and real GPS unverified."
+          "source": "https://github.com/irvan-putra/tuju/commit/e3a2813",
+          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.17",
+          "icon": "../apk/icons/tuju0217.png",
+          "icon_note": "Packaged Android 0.2.17 icon. Physical phone and real GPS unverified."
         },
         {
           "name": "tangkai",
