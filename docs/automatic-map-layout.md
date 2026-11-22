@@ -1,6 +1,6 @@
 # Automatic layout for transit-style maps (research for Tuju and future maps)
 
-Checked 2026-11-23. Tuju is the case that prompted this note. Nothing here was adopted, installed in a project, paid for, or used to change Tuju. Tuju's layout fix is a separate, ongoing piece of work.
+Checked 2026-11-23. Tuju is the case that prompted this note. Nothing here was adopted, installed in a project, paid for, or used to change Tuju. Tuju's layout fix is a separate, ongoing piece of work. Updated later the same day with Irvan's answers to the two open questions (see the last section).
 
 ## What the map needs
 
@@ -15,13 +15,15 @@ From the feedback on Tuju 0.2.8 and the follow-ups, the layout has to do eight t
 7. Draw outbound and return as one shared spine with the two directions on opposite sides where the real stop locations support it, and as separate branches only where they actually differ. Stops are merged only after their coordinates are checked, so two different boarding points are never drawn as one stop.
 8. Grow tall, not wide: a portrait map that scrolls down reads better on a phone than a wide one.
 
+Two clarifications from Irvan (2026-11-23) frame all eight. First, Tuju is a personal schematic: it is built for one rider, anchored where his trips start, and covers the routes he actually rides rather than the whole city network, so geographic fidelity is not a goal in itself. Second, real stop coordinates are a tool for identity and access questions, not a general layout rule: whether two stops are the same station, the same bridge stop on opposite sides of a big road, which side of the road a stop is on when a footbridge is involved and whether it sits before or after the bridge, and which stop is nearer the destination. Nearby stops are never interchangeable on distance alone.
+
 Today the Tuju generator (`tools/build_route_map.py`) places each column by hand with fixed x/y values and label offsets, then tests check some geometry afterwards. Every fix is a manual nudge, and a nudge for one problem tends to create another. The extracted data (`data/route-stops.json`) holds stop id, name and sequence only, with no coordinates.
 
 ## Short answer
 
 No single free tool does all eight. The best fit is to split the job:
 
-- **Shape of the network** (bends, crossings, shared spines): LOOM and octi, or a small purpose-built solver.
+- **Shape of the network** (bends, crossings, shared spines): a small purpose-built solver. LOOM/octi is parked for now (see the caveat in option 1).
 - **Walking links and text clearance**: obstacle-avoiding connector routing (libavoid), or the same idea in a few dozen lines of grid search.
 - **Checks**: automated scoring of crossings, bends, line spacing and line-versus-text overlap, so every change is measured, not eyeballed.
 
@@ -43,7 +45,7 @@ The cheapest first step is the last one, because it works with the current hand-
 
 - **Not tested:** Tuju's real network, labels (no station names appear in my two renders, so label behaviour is unknown), and walking links (the tool has no walking-link concept; modelling one as an extra dashed "line" is an untested idea). Real input needs stop coordinates, which means re-reading `stops.txt` from the GTFS feed.
 - Fit with the shared-spine preference: treating outbound and return as two lines through the same corridor is what `topo` (merge overlapping segments) and `loom` (order lines side by side) are built for, and merging is decided from coordinates, which matches the "check real stop locations first" rule. Whether `octi` can be steered toward a tall, portrait result was not found in the README and was not tested.
-- Caveat: `octi` keeps the map roughly geographic. Tuju's current design deliberately straightens each corridor into its own column. Using LOOM would change the look of the map, so that is a design choice for Irvan, not an automatic upgrade.
+- Caveat: `octi` keeps the map roughly geographic. Tuju's current design deliberately straightens each corridor into its own column, and Irvan's answer (2026-11-23) is that the geographic octilinear look is not the direction for Tuju. LOOM/octi stays parked unless a future test shows it makes the map less wide than the current hand-built layout; that width win is the bar he set for revisiting it.
 - License: LOOM is GPL-3.0 (per its GitHub page); Tuju's repository carries the AGPL-3.0 text. Whether and how the two combine was not checked and is unresolved here; running LOOM only as a separate build-time command is a different case from copying its code, but that distinction has not been confirmed against the licence text.
 
 ### 2. Mixed-integer programming for metro maps (Nöllenburg and Wolff)
@@ -77,11 +79,13 @@ The cheapest first step is the last one, because it works with the current hand-
 1. **Measure first (no new dependency).** Extend Tuju's existing geometry tests into one score: count of crossings, count of bends, minimum gap between lines of any colour, and any overlap between a line and a text box (using each label's real width, including wrapped notes). Print it for every build. This turns "try to decrease crossings" into a number that must go down.
 2. **Route walking links by search.** Put all label boxes and route lines on a coarse grid as blocked cells with a margin, then find each walking link with A* that charges for bends and crossings. This is the same idea as libavoid in a small amount of Python and keeps the build dependency-free.
 3. **Pack columns by search.** Treat each corridor (outbound and return together where coordinates allow) as a movable block, with a fixed page width and free height, and minimise total link length plus the score above. Pure Python local search is enough at Tuju's size.
-4. **Try LOOM as an experiment.** Export the network with coordinates, run `topo | loom | octi`, and compare its crossings and bends against the hand layout on the same score. Adopt only if it wins and Irvan likes the look.
+4. **LOOM stays parked.** After Irvan's 2026-11-23 answer, an export-and-run experiment (`topo | loom | octi`) is worth doing only to test one thing: whether the octilinear result is less wide than the current hand-built layout. If it does not win on width, the column layout stays.
 
 Items 1 to 3 are proposals; none has been built or run on Tuju. Item 4's tool has been run on example data only.
 
-## Open questions
+## Open questions: answered 2026-11-23
 
-- Tall and shared-spine are now stated preferences. Still open: is a more geographic octilinear drawing acceptable, or only the current column style? That decides whether LOOM is a candidate at all.
-- Are stop coordinates from the public GTFS feed acceptable as build input? (They are public data; the cost is a larger extract.)
+Both questions that were open when this note was first written were answered by Irvan the same day:
+
+- **Geographic octilinear as the overall style: no.** Tuju is a personal map anchored where his trips start, not a general city transit map, and the current hand-built column layout stays. An octilinear engine may be worth a fresh look in the future, but only if it makes the map less wide than the naive layout in use today; that is the stated bar for adopting it.
+- **Stop coordinates as build input: yes for targeted decisions, not as a general rule.** From his experience with transit maps, real coordinates break down when used as a general layout rule. They are the right tool for deciding whether two stops are the same station, the same bridge stop on opposite sides of a big road, and footbridge access: which side of the road a stop is on, whether it sits before or after the footbridge, and which stop is nearer the destination. That also settles the second open question: the public GTFS feed's stop coordinates are useful build input for exactly these checks.
