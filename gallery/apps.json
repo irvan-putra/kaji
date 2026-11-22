@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22 19:18 WIB",
+ "checked": "2026-11-22 21:41 WIB",
  "apps": [
   {
    "name": "simak",
@@ -51,11 +51,23 @@
   },
   {
    "name": "tuju",
-   "version": "0.2.3",
+   "version": "0.2.4",
    "state": "available",
+   "icon": "tuju024.png",
+   "tag": "Bakoel Koffie destination and drawn Cikini return",
+   "about": "Published 22 Nov. Fifth destination Bakoel Koffie (Cikini, Menteng): the combined top map rings the Farmasi RP Soeroso alighting stop on the existing 5M leg and draws the full homebound column - 5M from Kantor Pos Cikini to Megaria, same-stop change to 4C for Pramuka BPKP 1, intermediate stops from official GTFS trips 5M-R02 and 4C-R10 checked 22 Nov. Journey meter gained both homebound legs; page gains venue, getting-there and coming-back cards. Existing route geometry, timer and optional GPS retained. Published bytes, SHA-256, package, code 15, lowercase label, two location permissions and pinned signer independently checked by the release gates; emulator smoke passed. Actual phone install or upgrade remains unverified.",
+   "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.2.4/tuju-v0.2.4.apk",
+   "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.4",
+   "repo": "https://github.com/irvan-putra/tuju/commit/8bf529b12d66753bf38c1e518997aad63c3ad457",
+   "sha256": "75797860babd8c3b69a06d9ab8bb26b17a5e619f8b72e3f358310f47ef6ea750"
+  },
+  {
+   "name": "tuju",
+   "version": "0.2.3",
+   "state": "legacy",
    "icon": "tuju023.png",
    "tag": "Official access guide and labeled venue map",
-   "about": "Delivered 21 Nov 12:16. Official IDSW access guide bundled offline, plus labeled LRT Rasuna Said marker, final JPO walk and Sunday Car Free Day warning on the top map. Wrapped venue text avoids the 5M spine. Published-APK emulator map-fit and offline guide checks passed; actual offline guide and live desktop/mobile map pixels reviewed. Existing route geometry, timer and optional GPS retained. Package/code14/lowercase label/two location permissions/pinned signer and published hash independently checked. Physical phone and real-ride GPS remain unproven; no battery claim.",
+   "about": "Historical 0.2.3, superseded by 0.2.4. Delivered 21 Nov 12:16. Official IDSW access guide bundled offline, plus labeled LRT Rasuna Said marker, final JPO walk and Sunday Car Free Day warning on the top map. Wrapped venue text avoids the 5M spine. Published-APK emulator map-fit and offline guide checks passed; actual offline guide and live desktop/mobile map pixels reviewed. Existing route geometry, timer and optional GPS retained. Package/code14/lowercase label/two location permissions/pinned signer and published hash independently checked. Physical phone and real-ride GPS remain unproven; no battery claim.",
    "apk": "https://github.com/irvan-putra/tuju/releases/download/v0.2.3/tuju-v0.2.3.apk",
    "release": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.3",
    "repo": "https://github.com/irvan-putra/tuju/commit/855782a5df7340e65e66dd9b5321702c9119259d",
