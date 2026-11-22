@@ -1,6 +1,6 @@
 # Automatic layout for transit-style maps (research for Tuju and future maps)
 
-Checked 2026-11-23. Tuju is the case that prompted this note. Nothing here was adopted, installed in a project, paid for, or used to change Tuju. Tuju's layout fix is a separate, ongoing piece of work. Updated 2026-11-23: the two open questions below are now settled as design requirements (see the last section).
+Checked 2026-11-23. Tuju is the case that prompted this note. Tuju's layout fix is a separate, ongoing piece of work. Updated 2026-11-23: the two open questions below are now settled as design requirements (see the last section). Updated later the same day: items 1 to 3 of the recommended path are now built as small developer tools in the Tuju repository. The drawn map is unchanged (byte-identical SVG); the routing and packing tools are not applied to the live map; LOOM stays parked.
 
 ## What the map needs
 
@@ -76,12 +76,12 @@ The cheapest first step is the last one, because it works with the current hand-
 
 ## Recommended path, in order
 
-1. **Measure first (no new dependency).** Extend Tuju's existing geometry tests into one score: count of crossings, count of bends, minimum gap between lines of any colour, and any overlap between a line and a text box (using each label's real width, including wrapped notes). Print it for every build. This turns "try to decrease crossings" into a number that must go down.
-2. **Route walking links by search.** Put all label boxes and route lines on a coarse grid as blocked cells with a margin, then find each walking link with A* that charges for bends and crossings. This is the same idea as libavoid in a small amount of Python and keeps the build dependency-free.
-3. **Pack columns by search.** Treat each corridor (outbound and return together where coordinates allow) as a movable block, with a fixed page width and free height, and minimise total link length plus the score above. Pure Python local search is enough at Tuju's size.
+1. **Measure first (no new dependency): built.** Extend Tuju's existing geometry tests into one score: count of crossings, count of bends, minimum gap between lines of any colour, and any overlap between a line and a text box (using each label's real width, including wrapped notes). Print it for every build. This turns "try to decrease crossings" into a number that must go down. Implemented 2026-11-23 as `tools/score_route_map.py` in the Tuju repository, printed by every map build. One caveat on the numbers: label boxes use an estimated width per character and curves are approximated by short segments, so a score is an estimate for comparing builds, not verified layout quality; a human still checks the rendered map.
+2. **Route walking links by search: built as a tool, not applied to the map.** Put all label boxes and route lines on a coarse grid as blocked cells with a margin, then find each walking link with A* that charges for bends and crossings. This is the same idea as libavoid in a small amount of Python and keeps the build dependency-free. Implemented 2026-11-23 as `tools/route_walk_links.py`: unit-tested on synthetic scenes (labels avoided, straight runs preferred, a short detour can beat a crossing), producing orthogonal links in the same style as the hand-drawn walks. It is not wired into the generator and has not routed any link on the live map; adopting it for a specific walk is a separate, per-link step.
+3. **Pack columns by search: built as a tool, not applied to the map.** Treat each corridor (outbound and return together where coordinates allow) as a movable block, with a fixed page width and free height, and minimise total link length plus the score above. Pure Python local search is enough at Tuju's size. Implemented 2026-11-23 as `tools/pack_columns.py`: simulated annealing over block positions, unit-tested for overlap-free, in-width, cost-reducing placements. No corridor of the live map has been repacked with it.
 4. **LOOM stays parked.** An export-and-run experiment (`topo | loom | octi`) remains worth doing only as a future test of one thing: whether the octilinear result is less wide and easier to follow than the current hand-built layout. It is an option to revisit, not a planned migration; if it does not win, the column layout stays.
 
-Items 1 to 3 are proposals; none has been built or run on Tuju. Item 4's tool has been run on example data only.
+Items 1 to 3 are built as developer tools in the Tuju repository, documented in [`tools/LAYOUT_PROPOSALS.md`](https://github.com/irvan-putra/tuju/blob/cedd579ac035c0c852f5e8617884e2763713aca3/tools/LAYOUT_PROPOSALS.md); only the build-time score print is active, and the written map is byte-identical before and after. The walk router and column packer are opt-in tools, not yet applied to or visually proven on the live map. Item 4's tool has been run on example data only and stays parked.
 
 ## Open questions: settled 2026-11-23
 
