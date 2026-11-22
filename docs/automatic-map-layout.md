@@ -4,7 +4,7 @@ Checked 2026-11-23. Tuju is the case that prompted this note. Nothing here was a
 
 ## What the map needs
 
-From the feedback on Tuju 0.2.8, the layout has to do six things at once:
+From the feedback on Tuju 0.2.8 and the follow-ups, the layout has to do eight things at once:
 
 1. Keep parallel lines apart (spacing), including walking links beside route lines.
 2. Cross as few times as possible, and mark the crossings that remain.
@@ -12,12 +12,14 @@ From the feedback on Tuju 0.2.8, the layout has to do six things at once:
 4. Keep every line clear of every piece of text, including multi-line notes.
 5. Use the page well (less empty space, less scrolling).
 6. Keep the real connections: layout may move things, never change which stop joins which.
+7. Draw outbound and return as one shared spine with the two directions on opposite sides where the real stop locations support it, and as separate branches only where they actually differ. Stops are merged only after their coordinates are checked, so two different boarding points are never drawn as one stop.
+8. Grow tall, not wide: a portrait map that scrolls down reads better on a phone than a wide one.
 
 Today the Tuju generator (`tools/build_route_map.py`) places each column by hand with fixed x/y values and label offsets, then tests check some geometry afterwards. Every fix is a manual nudge, and a nudge for one problem tends to create another. The extracted data (`data/route-stops.json`) holds stop id, name and sequence only, with no coordinates.
 
 ## Short answer
 
-No single free tool does all six. The best fit is to split the job:
+No single free tool does all eight. The best fit is to split the job:
 
 - **Shape of the network** (bends, crossings, shared spines): LOOM and octi, or a small purpose-built solver.
 - **Walking links and text clearance**: obstacle-avoiding connector routing (libavoid), or the same idea in a few dozen lines of grid search.
@@ -40,6 +42,7 @@ The cheapest first step is the last one, because it works with the current hand-
 ![LOOM output for a made-up 3-line toy graph with one shared stretch](../site/map-layout/loom-toy.png)
 
 - **Not tested:** Tuju's real network, labels (no station names appear in my two renders, so label behaviour is unknown), and walking links (the tool has no walking-link concept; modelling one as an extra dashed "line" is an untested idea). Real input needs stop coordinates, which means re-reading `stops.txt` from the GTFS feed.
+- Fit with the shared-spine preference: treating outbound and return as two lines through the same corridor is what `topo` (merge overlapping segments) and `loom` (order lines side by side) are built for, and merging is decided from coordinates, which matches the "check real stop locations first" rule. Whether `octi` can be steered toward a tall, portrait result was not found in the README and was not tested.
 - Caveat: `octi` keeps the map roughly geographic. Tuju's current design deliberately straightens each corridor into its own column. Using LOOM would change the look of the map, so that is a design choice for Irvan, not an automatic upgrade.
 - License: LOOM is GPL-3.0 (per its GitHub page); Tuju's repository carries the AGPL-3.0 text. Whether and how the two combine was not checked and is unresolved here; running LOOM only as a separate build-time command is a different case from copying its code, but that distinction has not been confirmed against the licence text.
 
@@ -73,12 +76,12 @@ The cheapest first step is the last one, because it works with the current hand-
 
 1. **Measure first (no new dependency).** Extend Tuju's existing geometry tests into one score: count of crossings, count of bends, minimum gap between lines of any colour, and any overlap between a line and a text box (using each label's real width, including wrapped notes). Print it for every build. This turns "try to decrease crossings" into a number that must go down.
 2. **Route walking links by search.** Put all label boxes and route lines on a coarse grid as blocked cells with a margin, then find each walking link with A* that charges for bends and crossings. This is the same idea as libavoid in a small amount of Python and keeps the build dependency-free.
-3. **Pack columns by search.** Treat each corridor column as a movable block and minimise total link length plus the score above. Pure Python local search is enough at Tuju's size.
+3. **Pack columns by search.** Treat each corridor (outbound and return together where coordinates allow) as a movable block, with a fixed page width and free height, and minimise total link length plus the score above. Pure Python local search is enough at Tuju's size.
 4. **Try LOOM as an experiment.** Export the network with coordinates, run `topo | loom | octi`, and compare its crossings and bends against the hand layout on the same score. Adopt only if it wins and Irvan likes the look.
 
 Items 1 to 3 are proposals; none has been built or run on Tuju. Item 4's tool has been run on example data only.
 
 ## Open questions
 
-- Should Tuju stay a "column per corridor" diagram, or is a more geographic octilinear map acceptable? This decides whether LOOM is a candidate at all.
+- Tall and shared-spine are now stated preferences. Still open: is a more geographic octilinear drawing acceptable, or only the current column style? That decides whether LOOM is a candidate at all.
 - Are stop coordinates from the public GTFS feed acceptable as build input? (They are public data; the cost is a larger extract.)
