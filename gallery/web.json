@@ -6,13 +6,13 @@
       "items": [
         {
           "name": "tuju",
-          "tag": "Shorter map, Central Park return, shared S11 and S61 lines",
-          "about": "Published 23 Nov. After rider feedback on organization and wasted space: the map is about 22% shorter, S11 and S61 sit in the empty left and lower areas, crossing hops drop from 9 to 3, walking links and notes keep clear of text, S11 and S61 outbound and return stops share one spine where GTFS coordinates are within about 130 m, and corridor 9 / 10 gains a return leg from GTFS trips 9-R02 and 10-R02. The red 4C and 5M out/return columns are not yet merged. Emulator checks per release workflow; physical phone and real GPS unverified.",
+          "tag": "No route lines through station labels near Galunggung",
+          "about": "Published 23 Nov. Fixes route lines running through station labels around Galunggung, Setiabudi Integritas and Kuningan Madya, and a line through the 6 to 4 note. Also carries 0.2.9: shorter map, Central Park return leg, shared S11 and S61 spines. The red 4C and 5M out/return columns are not yet merged. Physical phone and real GPS unverified.",
           "url": "https://vanipy.com/tuju/",
-          "source": "https://github.com/irvan-putra/tuju/commit/b435258",
-          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.9",
-          "icon": "../apk/icons/tuju029.png",
-          "icon_note": "Packaged Android 0.2.9 icon. Physical phone and real GPS unverified."
+          "source": "https://github.com/irvan-putra/tuju/commit/0a65307",
+          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.10",
+          "icon": "../apk/icons/tuju0210.png",
+          "icon_note": "Packaged Android 0.2.10 icon. Physical phone and real GPS unverified."
         },
         {
           "name": "tangkai",
