@@ -4,7 +4,7 @@ type: research-note
 ---
 # Skill times confidence, four quadrants: an IDSW lightning-talk slide, checked (source note)
 
-Public page: https://vanipy.com/kaji/skill-confidence/ . Reading of four photographed slides from the IDSW 2026 day-two lightning block (photos received 22 Nov 2026, 15:01-15:04 WIB), not reproduced: the four-quadrant overview plus kondisi/solusi detail slides for quadrants 1, 2 and 3. Quadrant 4's detail slide and any further deck have not been seen; the page says so rather than claiming a full talk.
+Public page: https://vanipy.com/kaji/skill-confidence/ . Reading of six photographed slides from the IDSW 2026 day-two lightning block (photos received 22 Nov 2026, 15:01-15:06 WIB), not reproduced: the four-quadrant overview, kondisi/solusi detail slides for quadrants 1, 2 and 3, a closing "Setelah Kuadran 4: bukan garis finish" slide (per-skill quadrants; returning to quadrant 1 on a new task is normal, not failure), and a "Peran lead" slide (helicopter view, task-to-skill mapping, deliberately exposing engineers to new things; about matching tasks to people, not ranking people). Quadrant 4's detail slide and any further deck have not been seen; the page says so rather than claiming a full talk.
 
 ## Attribution status
 
