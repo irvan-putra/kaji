@@ -35,8 +35,12 @@ This repo also includes illustrations alongside the Android-update, application-
 
 - [Secrets: OpenBao hosting options and a leak recovery plan](https://vanipy.com/kaji/secrets/hosting-recovery/) - first-pass follow-up research: vendor-advertised price floors explicitly not qualified as recommendations, seal-method-dependent unseal tradeoffs, and a generic leaked-secret recovery checklist grounded in GitHub's remediation guidance; no setup, signup, spend or real inventory.
 
+- [Untuk Internal: Bangun Tool Sendiri, Langganan, atau On-premise Opensource? : an IDSW lightning talk, checked](https://vanipy.com/kaji/internal-tools/) - the build-vs-subscribe-vs-self-hosted lightning talk's search destinations and example projects verified (awesome-selfhosted, OpenObserve, Parseable, rustrak, the speaker's central-logs repo), with decision criteria kept as the speaker's heuristics and partly legible slide text marked approximate. [Source note](docs/idsw-internal-tools-talk.md).
+
 - [IDSW 2026 schedule overview and a learning plan](docs/idsw-2026.md) - the published agenda (checked 2026-11-21, subject to change), a reading of its themes, and a suggested session plan for builders of AI-assisted personal software.
 - [Designing an AI chat composer](docs/designing-an-ai-chat-composer.md) - Sketch Together's video about the AI message-input box: controls, attachments, voice, states, mobile behavior and accessibility. Transcript-based reading, not a music-composition model or tested design rule.
+
+- [One review page per decision set](docs/human-review-pages.md) - a reusable method for collecting a person's decisions: one page, limits and non-goals per option, not-proposed items listed with reasons, ticks stored only on the reviewer's device, and narrow interpretation of the reply (an everything-ticked reply is not a blank cheque; money, other people and accounts still need their own approval).
 
 - [Legal clearance for a software mascot](docs/mascot-legal-clearance.md) - what clearance can and cannot mean, free searches, official fee tables for Indonesia, US, EU and Madrid, published US opinion prices; Indonesian opinion prices unknown, not legal advice.
 
