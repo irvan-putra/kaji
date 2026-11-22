@@ -16,5 +16,5 @@ Title-slide byline Bagas Wastu (@bgwastu). No further identity verification done
 
 ## Scope decisions
 
-- Page gives the authorization boundary (own device, own account, token handled like a password, terms may restrict, no blanket legal claim) and deliberately no extraction how-to, commands or scripts.
+- Page gives the authorization boundary (explicit permission covering device, account, data and intended API use - ownership alone does not settle it - plus token handled like a password, terms may restrict, no blanket legal claim) and deliberately no extraction how-to, commands or scripts.
 - Sanggup adaptation: Coding stage cd29 (whose device / whose account / whose permission), a written boundary exercise with no real data pull: https://vanipy.com/sanggup/#coding .
