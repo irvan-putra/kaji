@@ -6,13 +6,13 @@
       "items": [
         {
           "name": "tuju",
-          "tag": "Red 4C and purple 5M as parallel direction lines",
-          "about": "Published 23 Nov. Red 4C and purple 5M now use two close parallel direction lines like S11 and S61: outbound on the left with labels outside left, homebound on the right with labels outside right, and the shared 4C and 5M section as a middle line. Each direction keeps its own stop order; no stops are paired by distance. Existing walks and links are kept. Physical phone and real GPS unverified.",
+          "tag": "Clean 5M hop and shared middle line markers",
+          "about": "Published 23 Nov. Fixes on 0.2.13: the 5M branch now hops cleanly over the red 4C homebound line, the shared 4C and 5M middle line has its own stop markers and direction arrows, and the 6 stop labels beside the 4D return line sit clear of it. Central Park 9/10 columns are not yet changed. Physical phone and real GPS unverified.",
           "url": "https://vanipy.com/tuju/",
-          "source": "https://github.com/irvan-putra/tuju/commit/1dd52ec",
-          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.13",
-          "icon": "../apk/icons/tuju0213.png",
-          "icon_note": "Packaged Android 0.2.13 icon. Physical phone and real GPS unverified."
+          "source": "https://github.com/irvan-putra/tuju/commit/5ee09d0",
+          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.14",
+          "icon": "../apk/icons/tuju0214.png",
+          "icon_note": "Packaged Android 0.2.14 icon. Physical phone and real GPS unverified."
         },
         {
           "name": "tangkai",
