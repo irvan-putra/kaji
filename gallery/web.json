@@ -6,13 +6,13 @@
       "items": [
         {
           "name": "tuju",
-          "tag": "Two parallel direction lines for S11 and S61",
-          "about": "Published 23 Nov. S11 and S61 are drawn as two close parallel direction lines, each with its own stop markers and labels outside, so no stop is shown as the same boarding point as one in the other direction. The Central Park walk splits into a walk to the outbound stop and a walk home from the return stop. Map is shorter. Red 4C and purple 5M columns are not yet changed. Physical phone and real GPS unverified.",
+          "tag": "Red 4C and purple 5M as parallel direction lines",
+          "about": "Published 23 Nov. Red 4C and purple 5M now use two close parallel direction lines like S11 and S61: outbound on the left with labels outside left, homebound on the right with labels outside right, and the shared 4C and 5M section as a middle line. Each direction keeps its own stop order; no stops are paired by distance. Existing walks and links are kept. Physical phone and real GPS unverified.",
           "url": "https://vanipy.com/tuju/",
-          "source": "https://github.com/irvan-putra/tuju/commit/4fd6c62",
-          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.12",
-          "icon": "../apk/icons/tuju0212.png",
-          "icon_note": "Packaged Android 0.2.12 icon. Physical phone and real GPS unverified."
+          "source": "https://github.com/irvan-putra/tuju/commit/1dd52ec",
+          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.13",
+          "icon": "../apk/icons/tuju0213.png",
+          "icon_note": "Packaged Android 0.2.13 icon. Physical phone and real GPS unverified."
         },
         {
           "name": "tangkai",
