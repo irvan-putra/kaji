@@ -26,6 +26,8 @@ This repo also includes illustrations alongside the Android-update, application-
 - [(Human) Attention is All You Need: an IDSW talk, checked](https://vanipy.com/kaji/attention/) - the day-two attention-and-agents talk's references verified (Kahneman's WYSIATI, Asch 1946, Neff's three elements), its delegation boundary and Notice-Choose-Delegate-Review-Enough loop summarized, demo figures and slide-cited posts labeled as such. [Source note](docs/idsw-attention-talk.md).
 - [Front-End Job is Dying: What I Own as a Design Engineer: an IDSW talk, checked](https://vanipy.com/kaji/frontend-job/) - the design-engineering talk's assembly-versus-judgment argument separated from what verifies: the typed-contract example, the drag-and-drop quality checklist and the virtualization demo check out, while the market framing stays the speaker's position. [Source note](docs/idsw-frontend-job-talk.md).
 
+- [Automatic layout for transit-style maps](https://vanipy.com/kaji/map-layout/) - options for fewer crossings, fewer bends, line spacing and text clearance on route maps like Tuju's: LOOM/octi (built and run on a bundled example and a toy graph only), the Nöllenburg and Wolff optimization model, libavoid routing and others, with a measure-first plan; nothing adopted or run on Tuju, licence compatibility with the AGPL left unresolved. [Source note](docs/automatic-map-layout.md).
+
 - [Hamming, Levenshtein and the cost of a missing letter](https://vanipy.com/kaji/edit-distance/) - illustrated reading of arXiv2211.12496v1, theorem assumptions and synthetic name-ranking examples; separate design proposal, no implementation claim. [Source note](docs/hamming-levenshtein-reading.md).
 
 

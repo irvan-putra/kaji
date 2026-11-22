@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automatic layout for transit-style maps | kaji</title>
+<style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#0f1115;color:#e8e9ec;margin:0;line-height:1.55}main{max-width:720px;margin:0 auto;padding:2rem 1.25rem 4rem}a{color:#7db4ff;overflow-wrap:anywhere}code{background:#1c2028;padding:.05em .3em;border-radius:3px;overflow-wrap:anywhere}h1{font-size:1.6rem}h2{margin-top:2rem}h3{margin-top:1.5rem}img{max-width:100%;height:auto;border-radius:6px}figure{margin:1rem 0}figcaption{font-size:.85rem;opacity:.75}@media(prefers-color-scheme:light){body{background:#fff;color:#1a1c20}a{color:#0b5cc4}code{background:#eef0f3}}</style></head><body><main>
+<h1>Automatic layout for transit-style maps (research for Tuju and future maps)</h1>
+<p>Checked 2026-11-23. Tuju is the case that prompted this note. Nothing here was adopted, installed in a project, paid for, or used to change Tuju. Tuju&#x27;s layout fix is a separate, ongoing piece of work.</p>
+<h2>What the map needs</h2>
+<p>From the feedback on Tuju 0.2.8, the layout has to do six things at once:</p>
+<ol>
+<li>Keep parallel lines apart (spacing), including walking links beside route lines.</li>
+<li>Cross as few times as possible, and mark the crossings that remain.</li>
+<li>Use few bends (no needless turns).</li>
+<li>Keep every line clear of every piece of text, including multi-line notes.</li>
+<li>Use the page well (less empty space, less scrolling).</li>
+<li>Keep the real connections: layout may move things, never change which stop joins which.</li>
+</ol>
+<p>Today the Tuju generator (<code>tools/build_route_map.py</code>) places each column by hand with fixed x/y values and label offsets, then tests check some geometry afterwards. Every fix is a manual nudge, and a nudge for one problem tends to create another. The extracted data (<code>data/route-stops.json</code>) holds stop id, name and sequence only, with no coordinates.</p>
+<h2>Short answer</h2>
+<p>No single free tool does all six. The best fit is to split the job:</p>
+<ul>
+<li><strong>Shape of the network</strong> (bends, crossings, shared spines): LOOM and octi, or a small purpose-built solver.</li>
+<li><strong>Walking links and text clearance</strong>: obstacle-avoiding connector routing (libavoid), or the same idea in a few dozen lines of grid search.</li>
+<li><strong>Checks</strong>: automated scoring of crossings, bends, line spacing and line-versus-text overlap, so every change is measured, not eyeballed.</li>
+</ul>
+<p>The cheapest first step is the last one, because it works with the current hand-placed generator and gives any future engine a target to beat.</p>
+<h2>Options</h2>
+<h3>1. LOOM suite (ad-freiburg/loom): best match for crossings, shared spines, bends</h3>
+<ul>
+<li>Source: <a href="https://github.com/ad-freiburg/loom">https://github.com/ad-freiburg/loom</a> , GPL-3.0, C++, 317 stars when checked.</li>
+<li>Pipeline of command-line tools reading and writing GeoJSON line graphs: <code>topo</code> (merge overlapping lines into one shared segment), <code>loom</code> (order the lines inside a shared segment to minimize line crossings), <code>octi</code> (turn the graph into a schematic with horizontal, vertical and 45-degree lines), <code>transitmap -l</code> (render SVG with labels).</li>
+<li>Papers behind it: Bast, Brosi, Storandt, &quot;Metro Maps on Octilinear Grid Graphs&quot; (EuroVis 2020, <a href="https://doi.org/10.1111/cgf.13986">https://doi.org/10.1111/cgf.13986</a>) and &quot;Metro Maps on Flexible Base Grids&quot; (SSTD 2021). Only the titles and the README were read, not the papers&#x27; full text.</li>
+<li>Why it fits: a shared spine drawn once with several lines side by side is exactly what Tuju&#x27;s 4/6/7E and 10/7F stretches are, and ordering lines inside a spine to avoid crossings is what <code>loom</code> is for.</li>
+<li><strong>Tested here (small, one-off):</strong> built from source (commit 1e47578, dated 2026-07-24) with cmake and g++, then ran two inputs through <code>loom | octi | transitmap -l</code>: the bundled Freiburg example, and a made-up 8-stop, 3-line toy graph with one shared stretch (<a href="toy.json">toy.json</a>). Both finished without errors (about 0.2 s for Freiburg on a 2-core sandbox; one run, not a performance measurement). Renders below. In the toy, the three lines run side by side through the shared stretch and the drawing uses only straight vertical and horizontal segments. In the Freiburg render the shared stretches are bundled, with 45-degree diagonals.</li>
+</ul>
+<figure><img src="loom-freiburg.png" alt="LOOM output for the bundled Freiburg example, octilinear, with shared stretches bundled" loading="lazy"><figcaption>LOOM output for the bundled Freiburg example, octilinear, with shared stretches bundled</figcaption></figure>
+<figure><img src="loom-toy.png" alt="LOOM output for a made-up 3-line toy graph with one shared stretch" loading="lazy"><figcaption>LOOM output for a made-up 3-line toy graph with one shared stretch</figcaption></figure>
+<ul>
+<li><strong>Not tested:</strong> Tuju&#x27;s real network, labels (no station names appear in my two renders, so label behaviour is unknown), and walking links (the tool has no walking-link concept; modelling one as an extra dashed &quot;line&quot; is an untested idea). Real input needs stop coordinates, which means re-reading <code>stops.txt</code> from the GTFS feed.</li>
+<li>Caveat: <code>octi</code> keeps the map roughly geographic. Tuju&#x27;s current design deliberately straightens each corridor into its own column. Using LOOM would change the look of the map, so that is a design choice for Irvan, not an automatic upgrade.</li>
+<li>License: LOOM is GPL-3.0 (per its GitHub page); Tuju&#x27;s repository carries the AGPL-3.0 text. Whether and how the two combine was not checked and is unresolved here; running LOOM only as a separate build-time command is a different case from copying its code, but that distinction has not been confirmed against the licence text.</li>
+</ul>
+<h3>2. Mixed-integer programming for metro maps (Nöllenburg and Wolff)</h3>
+<ul>
+<li>Paper: &quot;Drawing and Labeling High-Quality Metro Maps by Mixed-Integer Programming&quot;, IEEE TVCG 2011, <a href="https://pubmed.ncbi.nlm.nih.gov/20498505/">https://pubmed.ncbi.nlm.nih.gov/20498505/</a> . Only the abstract page was read.</li>
+<li>yWorks wrote up an implementation using this model with a solver (lpsolve, then CPLEX, which was quicker): <a href="https://www.yworks.com/blog/automatic-metro-map-generation">https://www.yworks.com/blog/automatic-metro-map-generation</a> . Their post says the full algorithm is not in the yFiles library and the linear-programming part depends on third-party software, and yFiles itself is commercial.</li>
+<li>This is the most complete formulation (bends, line length, relative position and labels together), but no ready free implementation was found. Using it would mean writing our own model with a free solver. Untested.</li>
+</ul>
+<h3>3. libavoid (Adaptagrams): for walking links and text clearance</h3>
+<ul>
+<li><a href="https://www.adaptagrams.org/documentation/libavoid.html">https://www.adaptagrams.org/documentation/libavoid.html</a> and <a href="https://github.com/mjwybrow/adaptagrams">https://github.com/mjwybrow/adaptagrams</a> . C++ library for &quot;object-avoiding orthogonal and polyline connector routing&quot;; used in Inkscape&#x27;s connector tool. The page says there are no official releases yet, though the code is described as stable. Licence: LGPL 2.1 or later, per the header of <code>router.h</code> and <code>LICENSE.LGPL</code> in the repo (<a href="https://github.com/mjwybrow/adaptagrams/blob/master/cola/libavoid/router.h">https://github.com/mjwybrow/adaptagrams/blob/master/cola/libavoid/router.h</a>). The README also mentions commercial licences.</li>
+<li>Idea: treat every label and note as an obstacle box, route each walking link around the boxes with few bends, and let the router separate parallel segments. This targets the &quot;lines touching text&quot; and &quot;walking link wanders across the map&quot; complaints directly.</li>
+<li>Untested. It is C++, so using it from Tuju&#x27;s Python build means a wrapper or a small compiled helper.</li>
+</ul>
+<h3>4. ELK (Eclipse Layout Kernel, elkjs)</h3>
+<ul>
+<li><a href="https://github.com/kieler/elkjs">https://github.com/kieler/elkjs</a> and <a href="https://eclipse.dev/elk/reference/algorithms/org-eclipse-elk-layered.html">https://eclipse.dev/elk/reference/algorithms/org-eclipse-elk-layered.html</a> . JavaScript port of a layered layout algorithm with ports and orthogonal edge routing, built for directed node-link diagrams.</li>
+<li>Fits columns and arrows well, but it lays out graphs where each connection is an edge, not metro lines that share segments, so Tuju&#x27;s shared spines would need workarounds. Its licence is EPL-2.0; a GitHub issue asks about EPL-2.0 and GPLv3 compatibility (<a href="https://github.com/kieler/elkjs/issues/312">https://github.com/kieler/elkjs/issues/312</a>) and was not resolved here. Untested.</li>
+</ul>
+<h3>5. Others looked at and set aside</h3>
+<ul>
+<li><strong>d3-tube-map</strong> (<a href="https://github.com/johnwalley/d3-tube-map">https://github.com/johnwalley/d3-tube-map</a> , BSD 3-Clause): draws London-style maps, but the coordinates are given by hand, so it does not solve layout.</li>
+<li><strong>metroflow</strong> (<a href="https://github.com/bartromgens/metroflow">https://github.com/bartromgens/metroflow</a>): interactive map editor on canvas; the README calls it pre-alpha.</li>
+<li><strong>WebCola</strong> (<a href="https://github.com/tgdwyer/WebCola">https://github.com/tgdwyer/WebCola</a>): constraint-based force layout in the browser; useful for non-overlap and alignment constraints, not metro-specific. Untested.</li>
+<li><strong>OGDF</strong> (<a href="https://www.ogdf.uni-osnabrueck.de/license/">https://www.ogdf.uni-osnabrueck.de/license/</a> , GPL 2 or 3): large C++ graph drawing framework with orthogonal layout; heavy for this job.</li>
+<li><strong>Graphviz</strong> (<code>splines=ortho</code>, <a href="https://graphviz.org/docs/attrs/splines/">https://graphviz.org/docs/attrs/splines/</a>): generic graph layout; no notion of lines sharing a corridor.</li>
+<li><strong>Transit app&#x27;s generated maps</strong> (<a href="https://blog.transitapp.com/how-we-built-the-worlds-prettiest-auto-generated-transit-maps-12d0c6fa502f/">https://blog.transitapp.com/how-we-built-the-worlds-prettiest-auto-generated-transit-maps-12d0c6fa502f/</a>): a good description of a pipeline (shapes, OSM matching, then drawing), but proprietary, so a source of ideas only.</li>
+</ul>
+<h2>Recommended path, in order</h2>
+<ol>
+<li><strong>Measure first (no new dependency).</strong> Extend Tuju&#x27;s existing geometry tests into one score: count of crossings, count of bends, minimum gap between lines of any colour, and any overlap between a line and a text box (using each label&#x27;s real width, including wrapped notes). Print it for every build. This turns &quot;try to decrease crossings&quot; into a number that must go down.</li>
+<li><strong>Route walking links by search.</strong> Put all label boxes and route lines on a coarse grid as blocked cells with a margin, then find each walking link with A* that charges for bends and crossings. This is the same idea as libavoid in a small amount of Python and keeps the build dependency-free.</li>
+<li><strong>Pack columns by search.</strong> Treat each corridor column as a movable block and minimise total link length plus the score above. Pure Python local search is enough at Tuju&#x27;s size.</li>
+<li><strong>Try LOOM as an experiment.</strong> Export the network with coordinates, run <code>topo | loom | octi</code>, and compare its crossings and bends against the hand layout on the same score. Adopt only if it wins and Irvan likes the look.</li>
+</ol>
+<p>Items 1 to 3 are proposals; none has been built or run on Tuju. Item 4&#x27;s tool has been run on example data only.</p>
+<h2>Open questions</h2>
+<ul>
+<li>Should Tuju stay a &quot;column per corridor&quot; diagram, or is a more geographic octilinear map acceptable? This decides whether LOOM is a candidate at all.</li>
+<li>Are stop coordinates from the public GTFS feed acceptable as build input? (They are public data; the cost is a larger extract.)</li>
+</ul>
+</main></body></html>
