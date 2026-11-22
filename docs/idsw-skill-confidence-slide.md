@@ -4,11 +4,11 @@ type: research-note
 ---
 # Skill times confidence, four quadrants: an IDSW lightning-talk slide, checked (source note)
 
-Public page: https://vanipy.com/kaji/skill-confidence/ . Reading of six photographed slides from the IDSW 2026 day-two lightning block (photos received 22 Nov 2026, 15:01-15:06 WIB), not reproduced: the four-quadrant overview, kondisi/solusi detail slides for quadrants 1, 2 and 3, a closing "Setelah Kuadran 4: bukan garis finish" slide (per-skill quadrants; returning to quadrant 1 on a new task is normal, not failure), and a "Peran lead" slide (helicopter view, task-to-skill mapping, deliberately exposing engineers to new things; about matching tasks to people, not ranking people). Quadrant 4's detail slide and any further deck have not been seen; the page says so rather than claiming a full talk.
+Public page: https://vanipy.com/kaji/skill-confidence/ . Reading of seven photographed slides from the IDSW 2026 day-two lightning block (photos received 22 Nov 2026, 15:01-15:07 WIB), not reproduced: the four-quadrant overview, kondisi/solusi detail slides for quadrants 1, 2 and 3, a closing "Setelah Kuadran 4: bukan garis finish" slide (per-skill quadrants; returning to quadrant 1 on a new task is normal, not failure), and a "Peran lead" slide (helicopter view, task-to-skill mapping, deliberately exposing engineers to new things; about matching tasks to people, not ranking people). Quadrant 4's detail slide has not been photographed (the overview covers all four quadrants), and the batch looks near the talk's end since a closing slide arrived; the page still avoids claiming a full deck capture.
 
 ## Attribution status
 
-Unconfirmed. The agenda's six lightning talks carry no per-talk times and the slide has no visible name. Content fits at least "Task Done, Skill Not" (Azzam Muhammadi Rizqun Karima) and "What Good Mentorship Felt Like to Me as a Junior Engineer" (luthfiyyah hanifah amari). No identification from appearance. Await a named slide or other evidence.
+Confirmed via the closing thank-you slide, which carries the printed name Luthfiyyah Hanifah Amari, matching the agenda listing "What Good Mentorship Felt Like to Me as a Junior Engineer - luthfiyyah hanifah amari". Basis: printed on-slide name + official agenda; no identification from appearance. The closing slide's personal gratitude story is summarized on the page, not quoted in full. The 14:42 support-ecosystem slide (mentor, study group, community) is very likely from the same deck but carries no name, so that link stays unconfirmed.
 
 ## What was checked (22 Nov 2026)
 
