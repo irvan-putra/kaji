@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" role="img" aria-label="Illustrative graph with a concurrency limit: response time spikes briefly and settles, while the limit drops when slow and rises gradually during recovery">
+<rect width="680" height="330" fill="#fffdf8"/>
+<g font-family="system-ui,sans-serif" fill="#202b29">
+<text x="20" y="34" font-size="17" font-weight="600">With a concurrency limit</text>
+<text x="20" y="56" font-size="13" fill="#597269">The limit drops when slow, rises gradually during recovery</text>
+<line x1="60" y1="255" x2="640" y2="255" stroke="#bbc8c0" stroke-width="2"/>
+<path d="M60 230 L170 230 L215 150 L255 185 L300 215 L360 228 L460 232 L640 234" fill="none" stroke="#b3261e" stroke-width="3"/>
+<path d="M60 105 L190 105 L235 175 L300 195 L400 140 L520 112 L640 105" fill="none" stroke="#156c60" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M60 250 H300 V205 H640" fill="none" stroke="#202b29" stroke-width="3"/>
+<line x1="60" y1="285" x2="100" y2="285" stroke="#b3261e" stroke-width="3"/>
+<text x="108" y="290" font-size="13">response time</text>
+<line x1="220" y1="285" x2="260" y2="285" stroke="#156c60" stroke-width="3" stroke-dasharray="8 6"/>
+<text x="268" y="290" font-size="13">concurrency limit</text>
+<line x1="408" y1="285" x2="448" y2="285" stroke="#202b29" stroke-width="3"/>
+<text x="456" y="290" font-size="13">instances ready</text>
+<text x="640" y="290" font-size="12" text-anchor="end" fill="#597269">illustration · time</text>
+<text x="20" y="318" font-size="13" font-weight="600" fill="#7a6a1f">Approximate recreation from a photographed slide. The slide marks it an illustration, not a measurement.</text>
+</g>
+</svg>
