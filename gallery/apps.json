@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22 18:51 WIB",
+ "checked": "2026-11-22 19:12 WIB",
  "apps": [
   {
    "name": "simak",
@@ -283,7 +283,7 @@
    "state": "available",
    "icon": "sanggup024.png",
    "tag": "IDSW Coding exercises, study plans, community kit, sign-off links, signed test APK",
-   "about": "Delivered 22 Nov at 18:50. Catches up with the current web prototype: six new Coding stages from IDSW 2026 talks (test-cost comparison, measured CI spend, authorization as explicit permission, deterministic race reproduction, cross-app call counting, stateless-scope mapping) plus new Coding sources are bundled offline; sign-off and plan share links open in a browser. Code 10, zero permissions and same signing identity. Published bytes checked against the sidecar checksum. Actual phone install or upgrade remains unverified; the older synthetic upgrade proof does not cover this release. Browser and Android progress stay separate. Update in place, never clear storage.",
+   "about": "Published 22 Nov at 18:50. Not yet delivered or installed; actual phone install or upgrade remains the owner's step and unverified. Catches up with the current web prototype: six new Coding stages from IDSW 2026 talks (test-cost comparison, measured CI spend, authorization as explicit permission, deterministic race reproduction, cross-app call counting, stateless-scope mapping) plus new Coding sources are bundled offline; sign-off and plan share links open in a browser. Code 10, zero permissions and same signing identity. Published bytes checked against the sidecar checksum. The older synthetic upgrade proof does not cover this release. Browser and Android progress stay separate. Update in place, never clear storage.",
    "apk": "https://github.com/irvan-putra/sanggup/releases/download/v0.2.4/sanggup-v0.2.4.apk",
    "release": "https://github.com/irvan-putra/sanggup/releases/tag/v0.2.4",
    "repo": "https://github.com/irvan-putra/sanggup/commit/f5876517bb277ba8c8535a0f801a33f605d12f5c",
