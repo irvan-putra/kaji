@@ -858,14 +858,26 @@
   {
    "name": "onda",
    "state": "available",
-   "tag": "Experimental test build",
+   "tag": "Single launcher icon release",
+   "about": "Same app as 0.2.2 with one 192px launcher icon (no density variants) and the 0.2.3 badge. Same package and release signer; update in place without uninstalling or clearing data. No feature changes.",
+   "release": "https://github.com/irvan-putra/onda/releases/tag/v0.2.3",
+   "repo": "https://github.com/irvan-putra/onda",
+   "version": "0.2.3",
+   "sha256": "810969725d10a47352ad04e0a57ed7fd2ef67ddb96fb3f46c5feaffbbe700e25",
+   "apk": "https://github.com/irvan-putra/onda/releases/download/v0.2.3/onda-v0.2.3.apk",
+   "icon": "onda.png"
+  },
+  {
+   "name": "onda",
+   "state": "legacy",
+   "tag": "Previous signed build",
    "about": "On-device sensors and small-model demos for Android, built for an Edge AI talk.",
    "release": "https://github.com/irvan-putra/onda/releases/tag/v0.2.2",
    "repo": "https://github.com/irvan-putra/onda",
    "version": "0.2.2",
    "sha256": "b3e6465a55c50ae9cfcc5191ba8613908c9b029e9f654d5e3202f1759caf3276",
    "apk": "https://github.com/irvan-putra/onda/releases/download/v0.2.2/onda-v0.2.2.apk",
-   "icon": "onda.png"
+   "icon": "onda-0.2.2.png"
   },
   {
    "name": "bidik",
