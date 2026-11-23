@@ -151,10 +151,10 @@
           "name": "Shared-list simulation",
           "tag": "Historical simulation",
           "about": "A simulation, not the live app. Android task app linked separately; this is a review prototype or historical simulation, not a synced task web app.",
-          "url": "https://vanipy.com/intodo/shared-list-simulation/",
-          "source": "https://github.com/irvan-putra/intodo/blob/main/demos-shared-list-simulation/index.html",
+          "url": "https://vanipy.com/tindak/shared-list-simulation/",
+          "source": "https://github.com/irvan-putra/tindak/blob/main/demos-shared-list-simulation/index.html",
           "android": "https://github.com/irvan-putra/tindak/releases/tag/v0.5.23",
-          "icon": "../apk/icons/intodo.png",
+          "icon": "../apk/icons/tindak.png",
           "icon_note": "Android 0.5.23 app icon; browser data is separate"
         },
         {
@@ -326,11 +326,11 @@
           "icon_note": "Packaged Android0.3.2 icon; qualified and delivered. Web and Android are separate."
         },
         {
-          "name": "biz",
+          "name": "naung",
           "tag": "Hello World · stopped demo",
           "about": "A minimal Hello World deployment example using a Node static server. The hosted demo is stopped; source is retained.",
-          "url": "https://github.com/irvan-putra/biz",
-          "source": "https://github.com/irvan-putra/biz",
+          "url": "https://github.com/irvan-putra/naung",
+          "source": "https://github.com/irvan-putra/naung",
           "icon": "icons/research.svg",
           "icon_note": "Web category symbol, not an Android build"
         }
