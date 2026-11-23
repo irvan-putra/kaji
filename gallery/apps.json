@@ -798,8 +798,20 @@
     {
       "name": "bidik",
       "state": "available",
-      "tag": "Signed prerelease with capture and queue-ID wiring",
-      "about": "Published test APK, code7, same signing identity as0.1.5. Capture/game-audio, optional mic, motion overlay, preview/delete, trim and loop-detection work have synthetic or emulator checks, not a new A24 gameplay take. Queue-ID result wiring included. Fresh-boot Jin ChatControl fixture route passed separately; a live relay remains unverified. Existing edge-drag defect stays separate. Real motion sensitivity, intended-screen outcome and real clip/GIF behavior remain unverified; update in place.",
+      "tag": "Dot toggle, reachable motion CSVs, single full-colour icon",
+      "about": "Published test APK, code 10, same signing identity as 0.1.5-0.1.8. The motion dot is its own toggle now: MOTION keeps controlling capture and the .motion.csv sidecar, DOT only controls the on-screen dot, both off by default, and either one starts the sensor stream. Each recording lists its motion CSV with its own view, share and delete; deleting a video removes the sidecar. One 192px full-colour launcher icon replaces the density ladder, adaptive XML and the monochrome layer that themed-icons launchers flattened. Emulator record run and unit tests green on the release pipeline; source gate 22/22 including the full-colour icon rule; checksum matches the published v0.1.9 APK. Shares hand the receiver a temporary read grant that dies with the receiver's process - re-share from the list rather than reopening from the receiver's history. Signed prerelease APK; update in place, never uninstall or clear data.",
+      "repo": "https://github.com/irvan-putra/bidik/commit/65226a28c63129e00c3c91185feee760c4f45483",
+      "version": "0.1.9",
+      "icon": "bidik019.png",
+      "apk": "https://github.com/irvan-putra/bidik/releases/download/v0.1.9/bidik-v0.1.9.apk",
+      "release": "https://github.com/irvan-putra/bidik/releases/tag/v0.1.9",
+      "sha256": "085c2f8e543f982e3c058cee6ff9756849a23b011ee278924129c016558fde83"
+    },
+    {
+      "name": "bidik",
+      "state": "legacy",
+      "tag": "Historical 0.1.6 capture and queue-ID wiring release",
+      "about": "Historical 0.1.6 release, superseded by 0.1.9. Capture/game-audio, optional mic, motion overlay, preview/delete, trim and loop-detection had synthetic or emulator checks; real motion sensitivity, intended-screen outcome and real clip/GIF behavior remained unverified. Existing bytes and releases retained.",
       "repo": "https://github.com/irvan-putra/bidik/commit/1dd932226274d31913b17ca764d51d227f9a3036",
       "version": "0.1.6",
       "icon": "bidik016.png",
