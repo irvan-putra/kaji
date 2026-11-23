@@ -6,13 +6,13 @@
       "items": [
         {
           "name": "tuju",
-          "tag": "Walk-review loop recomputed for transit (busway-first)",
-          "about": "Published 23 Nov. The walk-review page's one-go review loop is now a transit route: nine stops in the fewest-transfer round-trip order from home, with per-leg bus routes, transfer counts and times labeled as transit estimates. The page keeps its local edit mode: drag a destination or a whole route block, then copy the moves as feedback. Physical phone and real GPS unverified.",
+          "tag": "J.CO Reserve (AI Hotel Thamrin) destination pin at Tosari",
+          "about": "Published 23 Nov. Adds a J.CO Reserve (AI Hotel Thamrin) destination pin beside Grand Indonesia on the 4C corridor: out via 4C to Tosari 3 (~700 m walk), home from Tosari 2 (~200 m), with dashed walk links forking off the Grand Indonesia stubs into a shared trunk. The page keeps its local edit mode and offline walk review.",
           "url": "https://vanipy.com/tuju/",
-          "source": "https://github.com/irvan-putra/tuju/commit/d14b53e",
-          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.22",
-          "icon": "../apk/icons/tuju0222.png",
-          "icon_note": "Packaged Android 0.2.22 icon. Physical phone and real GPS unverified."
+          "source": "https://github.com/irvan-putra/tuju/commit/04ed962",
+          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.23",
+          "icon": "../apk/icons/tuju0223.png",
+          "icon_note": "Packaged Android 0.2.23 icon. Physical phone and real GPS unverified."
         },
         {
           "name": "tangkai",
