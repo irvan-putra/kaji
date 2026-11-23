@@ -3,8 +3,20 @@
   "apps": [
     {
       "name": "simak",
-      "version": "0.3.2",
+      "version": "0.3.3",
       "state": "available",
+      "icon": "simak033.png",
+      "tag": "New binoculars launcher icon",
+      "about": "Delivered 23 Nov 12:35. Launcher icon replaced with the binoculars-and-star design Irvan picked from four candidates, regenerated through the shared badge script (full-width 0.3.3 strip, family corner radius, adaptive and themed layers). Patuh source gate, signed-build checks and the pre-publish byte gate on the packaged icon all passed in run45118491453; the published APK carries the new icons at every density (pixel-verified against the generator output) and its SHA-256 matches the attached checksum. Same package, signer and permissions as 0.3.2; no app-code change beyond the icon and version. Physical-phone behavior unmeasured.",
+      "apk": "https://github.com/irvan-putra/simak/releases/download/v0.3.3/simak-v0.3.3.apk",
+      "release": "https://github.com/irvan-putra/simak/releases/tag/v0.3.3",
+      "repo": "https://github.com/irvan-putra/simak/commit/510b3e233af4bcb9aa296ee38f0adec5c43395af",
+      "sha256": "48220e23a76a846134a476c469e8b13fd208d01a25c9ea58f8aed1e0bda7083a"
+    },
+    {
+      "name": "simak",
+      "version": "0.3.2",
+      "state": "legacy",
       "icon": "simak032.png",
       "tag": "Official panel update; qualified and delivered",
       "about": "Delivered 21 Nov 12:28. Official Day 1 17:05 panel title and all three panelists are readable in the actual published APK, without overlap. Full capture run44869630641 and upgrade qualification44868142748 passed. Upgrade from0.3.0 retained the same Bagas note and readable highlights. Same package, pinned signer and five permissions; code6, lowercase label and published SHA-256 independently checked. Physical-phone behavior and battery unmeasured; no new star/alarm carryover proof. Web cache repair is separate and already delivered.",
