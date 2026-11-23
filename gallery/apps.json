@@ -821,14 +821,26 @@
   {
    "name": "jin",
    "state": "available",
-   "tag": "Signed label-only UI test; real-device check pending",
+   "tag": "Single launcher icon release",
+   "about": "Same app as 0.5.2 with one 192px launcher icon (no density variants) and the 0.5.3 badge. Same package and release signer; update in place without uninstalling or clearing data. The robot head is now amber so the icon passes the full-color rule. No feature changes.",
+   "release": "https://github.com/irvan-putra/jin/releases/tag/v0.5.3",
+   "repo": "https://github.com/irvan-putra/jin/commit/653a11e",
+   "version": "0.5.3",
+   "apk": "https://github.com/irvan-putra/jin/releases/download/v0.5.3/jin-v0.5.3.apk",
+   "sha256": "20bce9a29e12f156be57aac6dca39c97abaa69f8ae144e547b81a25b83e31681",
+   "icon": "jin.png"
+  },
+  {
+   "name": "jin",
+   "state": "legacy",
+   "tag": "Previous signed build",
    "about": "Clarifies that the publish button and confirmation publish a new mini app (.xdc) version to chats, not a Jin app update. Square buttons retained. Host tests and supplied render checked; real-device validation remains pending. Two-way Bidik integration is separate and not built.",
    "release": "https://github.com/irvan-putra/jin/releases/tag/v0.5.2",
    "repo": "https://github.com/irvan-putra/jin/commit/b0b8332c9556ff05dc8ea03346eb746b47dba8bd",
    "version": "0.5.2",
    "apk": "https://github.com/irvan-putra/jin/releases/download/v0.5.2/jin-v0.5.2.apk",
    "sha256": "d518a324760c39e65575ee161431cae0107385c7e0625cb4098ae80f4253569a",
-   "icon": "jin.png"
+   "icon": "jin-0.5.2.png"
   },
   {
    "name": "unggah",
