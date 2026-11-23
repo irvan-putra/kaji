@@ -62,7 +62,7 @@ unggun is the Obtainium fork, animate is a fork with an upstream PR open, encore
 
 ## Content, research and idea repos (20)
 
-kunjung, suaka, pustaka, kaji, kaca, gotong, mimpi, anyam, jejak, naga, pandu, catat, irvan, tapak, tangkai, onda, aiq, paper2repo, sapi, pythonid-10-2026. These are notes, demos, proposals and presentation pages rather than reusable wheels, so no upstream comparison applies to them.
+kunjung, suaka, pustaka, kaji, kaca, gotong, mimpi, anyam, jejak, naga, kaidah, catat, irvan, tapak, tangkai, onda, aiq, paper2repo, sapi, pythonid-10-2026. These are notes, demos, proposals and presentation pages rather than reusable wheels, so no upstream comparison applies to them.
 
 ## Legacy forks and pre-2026 sites (19, not examined)
 
