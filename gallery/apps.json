@@ -651,15 +651,15 @@
     },
     {
       "name": "unggun",
-      "version": "0.1.4",
+      "version": "1.0.3",
       "state": "available",
       "icon": "unggun.png",
-      "tag": "Experimental signed presentation test",
-      "about": "Lowercase name and matching version strips shown on Samsung, bonfire retained. Same signer/package, higher version; update in place, do not uninstall. Signed0.1.3 to0.1.4 retained two synthetic imported app records on API34, not every possible setting or real user record. Prior rate-limit synthetic checks remain; no live-isolate runtime proof or early cooldown clearing.",
-      "apk": "https://github.com/irvan-putra/unggun/releases/download/v0.1.4/unggun-v0.1.4.apk",
-      "release": "https://github.com/irvan-putra/unggun/releases/tag/v0.1.4",
-      "repo": "https://github.com/irvan-putra/unggun/commit/2e3d6c7940f531364a489577fd1e27ab707e1b4d",
-      "sha256": "bdda07dd6b271ab20a707edd9edfb6f777a717083ccec5ea728cfe6e958665c0"
+      "tag": "Experimental native recode (prerelease)",
+      "about": "Native Kotlin recode of the GitHub-release updater (supersedes the Flutter fork; same package and signer, installs in place). Prerelease: GitHub-source tracking with per-app prerelease toggle, manual checks that respect GitHub rate limits, stock installer, notifications, logs. No background scheduled checks yet; silent-update behavior verified on a Samsung A24 only.",
+      "apk": "https://github.com/irvan-putra/unggun/releases/download/v1.0.3/unggun-v1.0.3.apk",
+      "release": "https://github.com/irvan-putra/unggun/releases/tag/v1.0.3",
+      "repo": "https://github.com/irvan-putra/unggun/commit/74ef8a0cd896485da94c1993967dc1cce920701a",
+      "sha256": "253db3c5a5b84fa606af919dbbb56502eee2c433db6496b1b4073be90181981d"
     },
     {
       "name": "tuju",
