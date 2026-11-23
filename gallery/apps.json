@@ -399,8 +399,20 @@
   },
   {
    "name": "tengok",
-   "version": "0.6.1",
+   "version": "0.7.0",
    "state": "available",
+   "icon": "tengok070.png",
+   "tag": "Read-only ZIP contents, offline",
+   "about": "ZIP files show paths, declared sizes and encrypted-entry labels instead of the hex fallback. Read-only directory listing only: nothing is extracted or executed. Limits: 32 MB archives and 2,000 entries; no ZIP64, split archives or password opening. Existing viewers preserved. Signed prerelease APK, same Tengok signer, zero Android permissions. Synthetic parser tests and release checks passed. Physical-phone test pending.",
+   "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.7.0/tengok-v0.7.0.apk",
+   "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.7.0",
+   "repo": "https://github.com/irvan-putra/tengok",
+   "sha256": "d9d78f1d4cc459724c8cde7e4d18bb1226c1b0d1a43e9c63f1442dcac468b10e"
+  },
+  {
+   "name": "tengok",
+   "version": "0.6.1",
+   "state": "legacy",
    "icon": "tengok061.png",
    "tag": "Remembered shared files fail safe: pick-again card, no dead-end hex offer",
    "about": "Re-opening a file another app shared (like a bidik recording) from the recent-files list after its one-time share access lapsed no longer lands on an error with a hex offer that could only fail the same way. It now shows the same pick-the-file-again card as any other lost access, and tengok declares visibility of bidik's share provider so those files resolve at all. The file itself is never touched or copied. Same video player, game and viewers as 0.6.0. Still offline, still zero Android permissions. Signed prerelease APK; update in place, never uninstall or clear data.",
