@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-23",
+ "checked": "2026-11-24",
  "apps": [
   {
    "name": "simak",
@@ -808,27 +808,27 @@
   },
   {
    "name": "unggah",
-   "version": "1.1.3",
+   "version": "1.1.4",
    "state": "available",
-   "tag": "Numeric-version maintenance release",
-   "about": "Pushes a ZIP to a chosen GitHub repository over SSH. Maintenance update: app version, numeric release tag, APK filename and launcher badge agree. Same com.vanipy.unggah package and release signer; update in place without uninstalling or clearing data. No feature changes or new physical-device runtime claim.",
+   "tag": "Single launcher icon release",
+   "about": "Pushes a ZIP to a chosen GitHub repository over SSH. Ships one 192px launcher icon (no density variants) with the 1.1.4 badge. Same com.vanipy.unggah package and release signer; update in place without uninstalling or clearing data. No feature changes.",
    "repo": "https://github.com/irvan-putra/unggah",
    "icon": "unggah.png",
-   "apk": "https://github.com/irvan-putra/unggah/releases/download/v1.1.3/unggah-v1.1.3.apk",
-   "release": "https://github.com/irvan-putra/unggah/releases/tag/v1.1.3",
-   "sha256": "af5271a7ddc57e55d9a4781bd81bc75add4211243dd99dfe40f24683b21eb547",
-   "source_commit": "https://github.com/irvan-putra/unggah/commit/46116142ca79d88a37eeb007acbdce89199d7c24"
+   "apk": "https://github.com/irvan-putra/unggah/releases/download/v1.1.4/unggah-v1.1.4.apk",
+   "release": "https://github.com/irvan-putra/unggah/releases/tag/v1.1.4",
+   "sha256": "7b17f5fb12527b577711fc7375302b81b88095083e0b6fbede94b95e54a4164c",
+   "source_commit": "https://github.com/irvan-putra/unggah/commit/148707b"
   },
   {
    "name": "sapa",
    "state": "available",
-   "tag": "Experimental test build",
+   "tag": "Single launcher icon release",
    "about": "Helper for event moderators: counts people on camera, counts raised hands per question round and picks a random person.",
-   "release": "https://github.com/irvan-putra/sapa/releases/tag/v0.5.8",
+   "release": "https://github.com/irvan-putra/sapa/releases/tag/v0.5.9",
    "repo": "https://github.com/irvan-putra/sapa",
-   "version": "0.5.8",
-   "sha256": "e956f3c5b6c7b85597c2fc6832c448d792d1ba8f0f9ac5f89b9c5dc516fc04a7",
-   "apk": "https://github.com/irvan-putra/sapa/releases/download/v0.5.8/sapa-v0.5.8.apk",
+   "version": "0.5.9",
+   "sha256": "a74262ded07e711be75576e6a72ce13da17744ff7f173c4d429b2d9fbb07c2dd",
+   "apk": "https://github.com/irvan-putra/sapa/releases/download/v0.5.9/sapa-v0.5.9.apk",
    "icon": "sapa.png"
   },
   {
