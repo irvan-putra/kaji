@@ -399,8 +399,20 @@
   },
   {
    "name": "tengok",
-   "version": "0.7.0",
+   "version": "0.7.1",
    "state": "available",
+   "icon": "tengok071.png",
+   "tag": "Tap ZIP entries to view in memory, offline",
+   "about": "ZIP entries open in Tengok: text, images, audio, MIDI and hex. No temporary extraction files or new permissions. Stored/deflated entries only, up to 16 MB per file and 100:1 compression, with size and CRC checks. ZIP listing remains capped at 32 MB and 2,000 entries; encrypted files cannot open. Nested ZIPs and Android video entries show hex. Same signer and existing regular-file viewers. Android text-open and back check passed; synthetic parser/bomb checks passed. Physical-phone entry-opening test pending.",
+   "apk": "https://github.com/irvan-putra/tengok/releases/download/v0.7.1/tengok-v0.7.1.apk",
+   "release": "https://github.com/irvan-putra/tengok/releases/tag/v0.7.1",
+   "repo": "https://github.com/irvan-putra/tengok",
+   "sha256": "a71ed1f4008f04be2e128285be7d4870370b81e2406ef508b30185000b311c45"
+  },
+  {
+   "name": "tengok",
+   "version": "0.7.0",
+   "state": "legacy",
    "icon": "tengok070.png",
    "tag": "Read-only ZIP contents, offline",
    "about": "ZIP files show paths, declared sizes and encrypted-entry labels instead of the hex fallback. Read-only directory listing only: nothing is extracted or executed. Limits: 32 MB archives and 2,000 entries; no ZIP64, split archives or password opening. Existing viewers preserved. Signed prerelease APK, same Tengok signer, zero Android permissions. Synthetic parser tests and release checks passed. Physical-phone test pending.",
