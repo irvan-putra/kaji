@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-23",
+  "checked": "2026-11-24",
   "sections": [
     {
       "title": "Maps",
@@ -333,6 +333,26 @@
           "source": "https://github.com/irvan-putra/naung",
           "icon": "icons/research.svg",
           "icon_note": "Web category symbol, not an Android build"
+        },
+        {
+          "name": "jumpa web",
+          "tag": "Browser-local relationship notebook, demo first",
+          "about": "People with dated affiliations, notes, promises, archive and a separate demo set of invented people. Data stays in this browser, with plain JSON export and copy-only import. Phone-contact linking, the Kunjung handoff and any sync stay Android-only. Synthetic data only; physical-phone browser check pending.",
+          "url": "https://vanipy.com/jumpa/",
+          "source": "https://github.com/irvan-putra/jumpa/commit/b24e5e2ac2f6b22186a0cd9e71d83b5c725766ed",
+          "android": "https://github.com/irvan-putra/jumpa/releases/tag/v0.1.1",
+          "icon": "../apk/icons/jumpa.png",
+          "icon_note": "Android 0.1.1 app icon; web data is separate"
+        },
+        {
+          "name": "jin web page",
+          "tag": "Explainer and install guide, no live bot",
+          "about": "What Jin does, how to set up your own DeltaChat bot on an Android phone, trust limits, and the APK link with a QR for the APK download only. The bot cannot run in a browser, and no public demo bot or bot contact QR is published.",
+          "url": "https://vanipy.com/jin/",
+          "source": "https://github.com/irvan-putra/jin/commit/45db37a",
+          "android": "https://github.com/irvan-putra/jin/releases/tag/v0.5.2",
+          "icon": "../apk/icons/jin.png",
+          "icon_note": "Android 0.5.2 app icon; the bot runs only on the phone"
         }
       ]
     },
