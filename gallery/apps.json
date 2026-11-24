@@ -1451,14 +1451,26 @@
   {
    "name": "kapan",
    "version": "0.2.2",
-   "state": "available",
+   "state": "legacy",
    "icon": "kapan022.png",
    "tag": "Developer events and film dates in Jakarta and Jogja, plus widget",
-   "about": "Widget now lists every pick (up to five), each with a days-and-hours countdown ('2d 10h', under a day '20h') as the owner asked, replacing the two fixed rows that dropped Build Club, PyJogja and Doomsday. Panel adds the subline 'picked by instinct from what it knows, plus your stars'. Android redraws a widget about every 30 minutes and on app opens, so widget countdowns restate at each redraw and cannot tick every second like the in-app panel. One permission (INTERNET). Unit tests for the countdown format pass; widget render mocked from the real formatting code; not yet run on a physical phone.",
+   "about": "Historical 0.2.2, superseded by 0.2.3. The widget listed at most five picks, silently dropping the rest once a sixth was added. Widget now lists every pick (up to five), each with a days-and-hours countdown ('2d 10h', under a day '20h') as the owner asked, replacing the two fixed rows that dropped Build Club, PyJogja and Doomsday.",
    "apk": "https://github.com/irvan-putra/kapan/releases/download/v0.2.2/kapan-v0.2.2.apk",
    "release": "https://github.com/irvan-putra/kapan/releases/tag/v0.2.2",
    "repo": "https://github.com/irvan-putra/kapan/commit/c3e2e12",
    "sha256": "fb38554a712c8566cbce7d67b099e49ffefece985ac905eb2ff911e0ed0b5aba"
+  },
+  {
+   "name": "kapan",
+   "version": "0.2.3",
+   "state": "available",
+   "icon": "kapan023.png",
+   "tag": "Developer events and film dates in Jakarta and Jogja, plus widget",
+   "about": "The widget is now a scrollable list with no cap: every pick, sorted by date, and any row past the visible area is a swipe away inside the widget (0.2.2 dropped the sixth pick silently). Countdowns are days-and-hours ('2d 10h', under a day '20h') restated on the ~30-minute OS tick plus app opens; a widget cannot tick every second. Picks cover hosted/going events and films; going registrations come from the owner's signed-in Luma list read by Instinct (an AI assistant) plus on-device i'm-going marks. One permission (INTERNET). Unit tests pass; widget render mocked from the real formatting code; not yet run on a physical phone.",
+   "apk": "https://github.com/irvan-putra/kapan/releases/download/v0.2.3/kapan-v0.2.3.apk",
+   "release": "https://github.com/irvan-putra/kapan/releases/tag/v0.2.3",
+   "repo": "https://github.com/irvan-putra/kapan/commit/0dbe113",
+   "sha256": "9ed85fefd581091a0e4d3e52364f91d7f3e2589ee5cb58aa2caaf56a9a39e44e"
   }
  ]
 }
