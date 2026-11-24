@@ -71,7 +71,7 @@ This repo also includes illustrations alongside the Android-update, application-
 - [BNI Sandbox Tester prototype](docs/prototipe-bni-sandbox-tester.md) - an unexecuted sandbox design and unverified SNAP shortlist; no code or API call was run.
 - [WonderOS items and local-first notes](docs/wonderos-items-and-local-first-notes.md) - a project reading; sync behavior was not checked.
 - [Proving a sync/merge core with Lean and related tools](docs/proving-a-sync-merge-core-with-lean-and-friends.md) - project claims are attributed, not independently verified; no proof or tool test was run.
-- [Receiving payments from Indonesia](docs/receiving-payments-from-indonesia.md) - general provider information, checked 2026-11-16; not financial or tax advice.
+- [Receiving payments from Indonesia](docs/receiving-payments-from-indonesia.md) - general provider information, checked 2026-11-16, Payoneer US receiving accounts added 2026-11-24; not financial or tax advice.
 - [Shizuku as an app-update option](docs/shizuku-app-updates.md) - a supplement to the app-update comparison; setup and fit were not tested.
 - [Changing an Android application ID](docs/android-application-id-change.md) - official-docs reading and migration checks; not tested on a device.
 - [The End of Software Copyright](docs/lemley-software-copyright.md) - a critical reading of Lemley's U.S.-focused argument about AI-generated software, authorship, licensing and the limits of its empirical claims.

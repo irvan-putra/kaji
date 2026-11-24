@@ -1,13 +1,15 @@
 # Receiving payments as an Indonesian resident: what to check
 
-Status: general information, not financial or tax advice. Facts below were read on 2026-11-16 from the provider's own page where a URL is given. Anything else is open.
+Status: general information, not financial or tax advice. Facts below were read on 2026-11-16 (the Payoneer entries on 2026-11-24) from the provider's own page where a URL is given. Anything else is open.
 
 ## Verified
 - Wise: its help center says personal account holders with an address in Indonesia can no longer hold money or currencies in the account and must withdraw any remaining balance to a local bank account. Any withdrawal deadline mentioned elsewhere was a transition rule and is not stated on the page read, so it is not claimed here. https://wise.com/help/articles/7GuCMPA7SYaX3NFgM3uxgp/changes-to-the-multi-currency-account-for-customers-in-indonesia
 - Gumroad: its payout page lists Indonesia with IDR bank deposit (its page says PayPal is offered only for countries without bank deposits, so PayPal payout for Indonesia is not established by that page). Payoneer, Wise and wire are not supported. Verification needs a government photo ID and proof of residence or a registered business; the standard minimum payout is $100 USD. Checked 2026-11-16. https://gumroad.com/help/article/13-getting-paid
 - Lemon Squeezy: its supported-countries page lists Indonesia among countries with bank or PayPal payouts. https://docs.lemonsqueezy.com/help/getting-started/supported-countries
 - Stripe: Stripe's own global availability page (https://stripe.com/global) did not show Indonesia's status in the text read. Confirm there before assuming availability.
+- Payoneer, US receiving account (added 2026-11-24 at Irvan's request, "Payoneer can be used to open a USA bank account"): Payoneer's own guide says its platform gives eligible users US account details (routing and account numbers) to receive USD from US clients and marketplaces, withdrawable to a local bank account. Payoneer's help center calls these "receiving accounts": bank details used to receive payments into the Payoneer account, usable only for receiving, not for sending funds. Payoneer's guide says plainly that these are not the same as a traditional US bank account. https://www.payoneer.com/resources/business/how-to-open-us-bank-account/ and https://payoneer.custhelp.com/app/answers/detail/a_id/18786/~/receiving-accounts---faq
+- Payoneer and Bank of America, Chase or Wells Fargo: the idea that a Payoneer account can be used to open linked accounts at these banks, under the same name, was passed on by Irvan and is unverified. Neither Payoneer page above says it. Payoneer's guide says banks may ask non-residents for a passport, a US address, a US tax ID and sometimes an in-person visit. Check each bank's own non-resident page before relying on it.
 
 ## Not verified (open)
-- Payoneer's terms and fees for Indonesia, PayPal's receiving fees, Paddle's and Polar's coverage of Indonesian sellers, and any local gateway.
+- Payoneer's eligibility, terms and fees for Indonesian residents (the pages above were not read for Indonesia), PayPal's receiving fees, Paddle's and Polar's coverage of Indonesian sellers, and any local gateway.
 - Tax: Lemon Squeezy's own page says the merchant of record is responsible for collecting sales tax on purchases (https://docs.lemonsqueezy.com/help/payments/merchant-of-record). Other providers' tax handling and the seller's own Indonesian income tax treatment were not researched.
