@@ -481,12 +481,6 @@
    "live": "https://vanipy.com/patuh/"
   },
   {
-   "repo": "pelokalan-ideas",
-   "sha": "209bcf5",
-   "url": "https://github.com/irvan-putra/pelokalan-ideas/commit/209bcf5",
-   "live": "https://github.com/irvan-putra/pelokalan-ideas"
-  },
-  {
    "repo": "pustaka",
    "sha": "3dc9ae8",
    "url": "https://github.com/irvan-putra/pustaka/commit/3dc9ae8",
@@ -618,7 +612,6 @@
  ],
  "planned": [
   "In-app About text: add the same AI-assistance line in each app's next release (no forced releases). Status: planned.",
-  "pelokalan-ideas: the page has the line locally, but pushing to that repo returned 403 with the saved credential (another task created it). Status: blocked, waiting on a fix.",
   "A few Pages deploys failed on GitHub's side during the burst of pushes (bidik, onda, saku, sapa); re-run in progress, then live checks. Status: in progress.",
   "Subpages of each site (for example kapan/jakarta, other kaji pages) carry the line only where listed above. Status: root pages only, rest planned if Irvan wants it.",
   "Wording left as is on purpose: sanggup lesson text (advice to learners), release workflow comments about a person attaching an APK, tindak's mock 'Reviewed by: no one yet', and kaji research content. Status: flagged, not changed."
