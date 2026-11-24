@@ -672,8 +672,8 @@
   },
   {
    "repo": "kembang",
-   "sha": "49e116b2",
-   "url": "https://github.com/irvan-putra/kembang/commit/49e116b2ab10d1d56bd548abc95c39e39007f9fd",
+   "sha": "652ee321",
+   "url": "https://github.com/irvan-putra/kembang/commit/652ee321cdf1c97b3e8381a4004a61ddc55d101a",
    "live": "https://github.com/irvan-putra/kembang"
   },
   {
@@ -773,9 +773,9 @@
   }
  ],
  "subpages": {
-  "status": "Source updated; deployment checks in progress.",
+  "status": "Done: all 73 checked live URLs now carry the exact disclosure line.",
   "html_files_changed": 73,
-  "note": "73 deployed HTML files received the line in this pass, including Tindak task-homepage source. Kapan Jakarta and Jogja were already covered by its current shared template; Kaca notes already inherit its shared layout. Third-party libraries, test snapshots, redirect stubs and HTML fragments are not relabeled.",
+  "note": "73 deployed HTML files received the line in this pass, including Tindak task-homepage source. The refreshed honesty page also uses the exact line. Kapan Jakarta and Jogja were already covered by its current shared template; Kaca notes already inherit its shared layout. Daya generated-page templates were updated so rebuilding keeps the line. Third-party libraries, test snapshots, redirect stubs and HTML fragments are not relabeled.",
   "commits": [
    {
     "repo": "bedah",
@@ -1110,6 +1110,66 @@
      "name": "irvan-putra",
      "email": "irvan.putra@gmail.com",
      "date": "2026-11-24T06:48:22Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "kembang",
+    "sha": "652ee321cdf1c97b3e8381a4004a61ddc55d101a",
+    "success": true,
+    "url": "https://github.com/irvan-putra/kembang/commit/652ee321cdf1c97b3e8381a4004a61ddc55d101a",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:49:30Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "kaji",
+    "sha": "398410e49453c4b92894a736e771479de8dc2c78",
+    "success": true,
+    "url": "https://github.com/irvan-putra/kaji/commit/398410e49453c4b92894a736e771479de8dc2c78",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:49:55Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "denting",
+    "sha": "633c334a104928264afadfdc0602d094c033d2c3",
+    "success": true,
+    "url": "https://github.com/irvan-putra/denting/commit/633c334a104928264afadfdc0602d094c033d2c3",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:54:07Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "suaka",
+    "sha": "4582e9808ba5f9b1ebb77a178a00b9991f4edb1e",
+    "success": true,
+    "url": "https://github.com/irvan-putra/suaka/commit/4582e9808ba5f9b1ebb77a178a00b9991f4edb1e",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:54:28Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "tumbuh",
+    "sha": "d3d8b1c7b9e0149c0b3180582222285081150a38",
+    "success": true,
+    "url": "https://github.com/irvan-putra/tumbuh/commit/d3d8b1c7b9e0149c0b3180582222285081150a38",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:54:48Z"
     },
     "account": "irvan-putra"
    }
