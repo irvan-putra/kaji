@@ -1399,6 +1399,18 @@
       "release": "https://github.com/irvan-putra/kapan/releases/tag/v0.1.0",
       "repo": "https://github.com/irvan-putra/kapan/commit/188cd00b014bb80ff36fb3027207a2b2799db39c",
       "sha256": "6c226cbd5674e57f21e10c9fe2ad47611c345412075971583734a1a98b16de95"
+    },
+    {
+      "name": "kapan",
+      "version": "0.1.1",
+      "state": "available",
+      "icon": "kapan011.png",
+      "tag": "Developer events and film dates in Jakarta and Jogja, plus widget",
+      "about": "Audience tabs now show a clearly selected state (0.1.0 made neither look active). Event cards show the organizer. The moviegoers tab leads with big releases, anime and game adaptations; festivals and regular screenings sit in their own section. Two tabs (developers, moviegoers), 1x1 circular countdown widget plus a larger two-row widget, data refreshes at most every three hours with offline cache. One permission (INTERNET). Checked by unit tests and static layout renders; tab styling not yet verified on a physical phone.",
+      "apk": "https://github.com/irvan-putra/kapan/releases/download/v0.1.1/kapan-v0.1.1.apk",
+      "release": "https://github.com/irvan-putra/kapan/releases/tag/v0.1.1",
+      "repo": "https://github.com/irvan-putra/kapan/commit/ef89b9768947084675cf1d28e6069d98c51a384d",
+      "sha256": "4a97a5ab36eb1c7f1f0bf5cff232f3720658d59467d76f4d48123e02f38de9cd"
     }
   ]
 }
