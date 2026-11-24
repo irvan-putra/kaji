@@ -17,7 +17,7 @@ From the feedback on Tuju 0.2.8 and the follow-ups, the layout has to do eight t
 
 Three design requirements frame all eight. First, Tuju is a personal schematic: it is built for one rider, anchored at a chosen starting point, and covers the routes actually ridden from there rather than the whole city network, so geographic fidelity is not a goal in itself. Second, real stop coordinates are a tool for identity and access questions, not a general layout rule: whether two stops are the same station, the same bridge stop on opposite sides of a big road, which side of the road a stop is on when a footbridge is involved and whether it sits before or after the bridge, and which stop is nearer the destination. Nearby stops are never interchangeable on distance alone. The reverse limit also holds: proximity is not walkability. Especially between cities, big roads sometimes have no crossing or footbridge, so two stops can sit close in coordinates and still not connect on foot. Coordinates alone cannot prove a safe or legal crossing; unknown pedestrian access stays marked as unknown, never drawn as a usable walk. Third, the reference look for shared stretches comes from TransJakarta's own route diagrams (for example corridor S11): two close parallel direction lines, each direction keeping its own stop marks and its own names on the outside, including stops named as the opposite of another stop. The result stays narrow and never implies that stops facing each other are the same boarding point.
 
-Today the Tuju generator (`tools/build_route_map.py`) places each column by hand with fixed x/y values and label offsets, then tests check some geometry afterwards. Every fix is a manual nudge, and a nudge for one problem tends to create another. The extracted data (`data/route-stops.json`) holds stop id, name and sequence only, with no coordinates.
+Today the Tuju generator (`tools/build_route_map.py`) places each column (AI-written code) with fixed x/y values and label offsets, then tests check some geometry afterwards. Every fix is a manual nudge by the AI, and a nudge for one problem tends to create another. The extracted data (`data/route-stops.json`) holds stop id, name and sequence only, with no coordinates.
 
 ## Short answer
 
@@ -27,7 +27,7 @@ No single free tool does all eight. The best fit is to split the job:
 - **Walking links and text clearance**: obstacle-avoiding connector routing (libavoid), or the same idea in a few dozen lines of grid search.
 - **Checks**: automated scoring of crossings, bends, line spacing and line-versus-text overlap, so every change is measured, not eyeballed.
 
-The cheapest first step is the last one, because it works with the current hand-placed generator and gives any future engine a target to beat.
+The cheapest first step is the last one, because it works with the current fixed-coordinate generator and gives any future engine a target to beat.
 
 ## Options
 
