@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PythonID-bot: contribution ideas (review)</title>
+<style>
+body{font:16px/1.5 system-ui,sans-serif;margin:0;padding:16px;max-width:720px;margin:auto;color:#1b1b1b;background:#fafaf7}
+h1{font-size:1.4rem}h2{font-size:1.1rem;margin-top:1.6rem}
+.card{border:1px solid #ccc;border-radius:10px;padding:12px;margin:12px 0;background:#fff}
+.card label{display:flex;gap:10px;font-weight:600;align-items:flex-start}
+.card input{margin-top:5px;width:20px;height:20px;flex:none}
+.card p,.card ul{margin:.4rem 0 .4rem 30px}
+.note{background:#fff7dd;border:1px solid #e6d28a;border-radius:10px;padding:10px;margin:12px 0}
+.rec{background:#e9f5ee;border:1px solid #9ed3b3;border-radius:6px;padding:0 6px;font-size:.8rem;font-weight:600;color:#1a7f37;white-space:nowrap}
+.meta{font-size:.85rem;color:#555;margin-left:30px}
+button{font-size:1rem;padding:10px 14px;border-radius:8px;border:1px solid #333;background:#222;color:#fff}
+textarea{width:100%;height:9rem;box-sizing:border-box}
+small{color:#555}
+a{color:#0b6b4f}
+</style></head><body>
+<nav><a href="../../">kaji</a></nav>
+<h1>PythonID-bot: contribution ideas</h1>
+<p>Options review only. Nothing here is built, committed or decided. PythonID-bot is Rezha's Telegram moderation bot for the PythonID community (profile checks, captcha for new members, layered anti-spam, AI-assisted spam monitoring). The repo is private at the moment, so this page stays high-level on purpose and no internals are quoted. Checked against the source at commit <code>8b2c65c</code> (24 Nov 2026): 1,390 tests pass, lint and type-check clean, 97% line coverage. Rezha is OK with AI-assisted contributions (Irvan, 24 Nov).</p>
+<div class="note"><b>Short answer.</b> The project is already well tooled: CI across five Python versions, strict-ish typing, property-based tests, Dependabot. The natural first contributions are the few remaining coverage gaps and a contributor guide (marked <span class="rec">recommended</span>). Anything that changes moderation behavior or adds a feature needs Rezha's agreement on shape before any code is written. Nothing is pushed without Irvan approving the exact change first.</div>
+
+<h2>A. Ready now - small, standard, low risk</h2>
+<div class="card"><label><input type="checkbox" data-t="A1. Coverage lift for the five service modules under 95%"> Coverage lift toward 100% <span class="rec">recommended</span></label><p>Five service modules sit between 70% and 95% line coverage (text-formatting helpers, the scheduler, rich message rendering, captcha recovery, admin cache) while the project aims for full coverage. Pure test additions, no behavior change.</p><p class="meta">Effort: small-medium &middot; Risk: low &middot; Buy-in: not needed. Deliberately tests only.</p></div>
+<div class="card"><label><input type="checkbox" data-t="A2. Coverage gate in CI (fail-under threshold)"> Coverage gate in CI <span class="rec">recommended</span></label><p>CI runs the tests but does not enforce a coverage floor, so coverage can silently regress. Add a fail-under threshold at roughly today's level.</p><p class="meta">Effort: small &middot; Risk: low &middot; Buy-in: the threshold number.</p></div>
+<div class="card"><label><input type="checkbox" data-t="A3. CONTRIBUTING.md (setup, checks, PR conventions)"> CONTRIBUTING.md <span class="rec">recommended</span></label><p>There is no contributor guide: setup with uv, the test/lint/type commands, and PR conventions currently live only in agent-facing docs. A short human-facing guide lowers the bar for the next community contributor.</p><p class="meta">Effort: small &middot; Risk: low &middot; Buy-in: Rezha may want the conventions in his own words.</p></div>
+<div class="card"><label><input type="checkbox" data-t="A4. Property-based tests for the text-formatting helpers"> Property-based tests for formatting helpers</label><p>The project already uses Hypothesis. The vendored Markdown escaping/mention helpers are pure functions with stable output, a natural fit for round-trip and never-crash properties.</p><p class="meta">Effort: small &middot; Risk: low &middot; Buy-in: not needed. Folds into A1 if preferred.</p></div>
+
+<h2>B. Features - need Rezha's buy-in on shape first</h2>
+<div class="card"><label><input type="checkbox" data-t="B5. Admin command to reset guest-bot strikes"> Admin reset for guest-bot strikes</label><p>Guest-bot strikes currently sit outside the self-service unrestriction flow by design; an admin-side command to review and clear them would close that loop without changing the deliberate default.</p><p class="meta">Effort: small-medium &middot; Risk: low &middot; Buy-in: command shape. Deliberately admin-only.</p></div>
+<div class="card"><label><input type="checkbox" data-t="B6. False-positive feedback on AI spam alerts"> Feedback buttons on AI spam alerts</label><p>The AI spam monitor is monitor-only and posts alerts with action buttons. Letting admins mark a false positive from the alert, recorded for threshold tuning, would close the feedback loop.</p><p class="meta">Effort: medium &middot; Risk: medium &middot; Buy-in: definitely. Deliberately keeps the monitor non-enforcing.</p></div>
+<div class="card"><label><input type="checkbox" data-t="B7. Periodic moderation digest for admins"> Moderation digest for admins</label><p>A scheduled per-group summary for admins: warnings issued, captcha completions and timeouts, spam deletions. The data already exists in the bot's database.</p><p class="meta">Effort: medium &middot; Risk: low-medium &middot; Buy-in: feature.</p></div>
+
+<h2>C. Docs and community</h2>
+<div class="card"><label><input type="checkbox" data-t="C8. Indonesian README alongside the English one"> Indonesian README</label><p>The bot's interface and community are Indonesian; the README is English-only. An Indonesian translation next to it fits the audience.</p><p class="meta">Effort: small &middot; Risk: low &middot; Buy-in: not needed.</p></div>
+<div class="card"><label><input type="checkbox" data-t="C9. Human-facing architecture overview"> Architecture overview doc</label><p>The repo has thorough agent-facing docs; a short human-readable architecture map (plugin system, handler order, where to add what) would serve new contributors.</p><p class="meta">Effort: small-medium &middot; Risk: low &middot; Buy-in: not needed.</p></div>
+
+<h2>Deliberately not proposed</h2>
+<ul>
+<li>Framework or architecture changes: the aiogram 3 migration just landed and the plugin system is fresh.</li>
+<li>Turning the AI spam monitor into auto-enforcement: monitor-only is a deliberate design choice.</li>
+<li>Changing warning thresholds, probation length or other community policy: that is group governance, not code.</li>
+<li>More CI or dependency automation: the matrix is broad and Dependabot is already active.</li>
+</ul>
+
+<h2>One decision before anything is pushed</h2>
+<div class="card"><label><input type="checkbox" data-t="D10. Attribution: follow the project's own contributor norms for AI-assisted wording"> Attribution wording</label><p>The project has its own contributor norms covering AI-assisted work, and our pelokalan norm was to disclose. Tick to follow the project's norms; leave unticked and add a note if you want our usual disclosure line or prefer to ask Rezha first.</p><p class="meta">Decides the wording of every commit and PR. Deliberately settled before any code.</p></div>
+
+<h2>Your notes</h2>
+<p><textarea id="n" placeholder="Anything to add, combine, or rule out..."></textarea></p>
+
+<h2>Reply to me</h2>
+<button id="b">Copy my review as text</button>
+<p><textarea id="o" readonly></textarea></p>
+<p><small>Ticks are stored only in this browser (localStorage); the page sends nothing anywhere. Prepared 24 Nov 2026 from a source read; effort and risk are rough estimates. Public page; the repo it discusses is private, so it stays high-level on purpose.</small></p>
+<script>
+var k='pythonid-bot-review-v1',s=JSON.parse(localStorage.getItem(k)||'{}');
+document.querySelectorAll('input[data-t]').forEach(function(i){i.checked=!!s[i.dataset.t];
+i.onchange=function(){s[i.dataset.t]=i.checked;localStorage.setItem(k,JSON.stringify(s));r()}});
+document.getElementById('n').oninput=r;
+function r(){var a=[].filter.call(document.querySelectorAll('input[data-t]'),function(i){return i.checked}).map(function(i){return '- '+i.dataset.t});
+var n=document.getElementById('n').value.trim();
+var t='My PythonID-bot contribution picks:\n'+(a.length?a.join('\n'):'- (nothing ticked)');
+if(n)t+='\nNotes: '+n;
+document.getElementById('o').value=t}
+document.getElementById('b').onclick=function(){var t=document.getElementById('o');t.select();
+(navigator.clipboard?navigator.clipboard.writeText(t.value):Promise.reject()).catch(function(){document.execCommand('copy')})};
+r();
+</script><p class="ai-disclosure" style="font:12px/1.5 system-ui,sans-serif;text-align:center;padding:12px 16px;margin:20px auto;max-width:70ch">Built with AI assistance (Instinct and others). Not everything has been reviewed by Irvan.</p>
+</body></html>
