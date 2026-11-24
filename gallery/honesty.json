@@ -1,0 +1,626 @@
+{
+ "updated": "2026-11-24",
+ "changes": [
+  {
+   "repo": "kapan",
+   "what": "Footer under the movie list",
+   "before": "checked by a person",
+   "after": "checked by instinct (an ai assistant) on the linked source page",
+   "commits": [
+    {
+     "repo": "kapan",
+     "sha": "e1f5cf7",
+     "url": "https://github.com/irvan-putra/kapan/commit/e1f5cf7"
+    }
+   ],
+   "live": "https://vanipy.com/kapan/",
+   "status": "done",
+   "note": "Made by the Kapan task, same day Irvan asked who \"this person\" was."
+  },
+  {
+   "repo": "kapan",
+   "what": "Movie list intro and footer",
+   "before": "hand-tracked from public source pages",
+   "after": "tracked from public source pages, dates checked by instinct (an ai assistant)",
+   "commits": [
+    {
+     "repo": "kapan",
+     "sha": "e07d1e9",
+     "url": "https://github.com/irvan-putra/kapan/commit/e07d1e9"
+    }
+   ],
+   "live": "https://vanipy.com/kapan/",
+   "status": "done",
+   "note": "The app string ships in the next app release."
+  },
+  {
+   "repo": "kapan",
+   "what": "Countdown heading",
+   "before": "hand-picked countdowns / selected countdowns",
+   "after": "your countdowns (picked by instinct ... plus your stars)",
+   "commits": [
+    {
+     "repo": "kapan",
+     "sha": "97dcada",
+     "url": "https://github.com/irvan-putra/kapan/commit/97dcada"
+    },
+    {
+     "repo": "kapan",
+     "sha": "d61b994",
+     "url": "https://github.com/irvan-putra/kapan/commit/d61b994"
+    }
+   ],
+   "live": "https://vanipy.com/kapan/",
+   "status": "done",
+   "note": ""
+  },
+  {
+   "repo": "kapan",
+   "what": "Code comment and README",
+   "before": "groups are hand-picked dev groups; hand-picked list",
+   "after": "a chosen list of dev groups",
+   "commits": [
+    {
+     "repo": "kapan",
+     "sha": "ba9e176",
+     "url": "https://github.com/irvan-putra/kapan/commit/ba9e176"
+    }
+   ],
+   "live": "https://vanipy.com/kapan/",
+   "status": "done",
+   "note": ""
+  },
+  {
+   "repo": "irvan",
+   "what": "Map description (page and app asset)",
+   "before": "A hand-drawn style map",
+   "after": "An illustrated map, then An AI-generated illustrated map",
+   "commits": [
+    {
+     "repo": "irvan",
+     "sha": "fda9ccb",
+     "url": "https://github.com/irvan-putra/irvan/commit/fda9ccb"
+    },
+    {
+     "repo": "irvan",
+     "sha": "594b568",
+     "url": "https://github.com/irvan-putra/irvan/commit/594b568"
+    }
+   ],
+   "live": "https://vanipy.com/irvan/",
+   "status": "done",
+   "note": ""
+  },
+  {
+   "repo": "daya",
+   "what": "README, compose page, held-out set descriptions",
+   "before": "hand-written / hand-authored / written by hand",
+   "after": "directly coded / separately authored, then AI-written",
+   "commits": [
+    {
+     "repo": "daya",
+     "sha": "8655fce",
+     "url": "https://github.com/irvan-putra/daya/commit/8655fce"
+    },
+    {
+     "repo": "daya",
+     "sha": "3f825ba",
+     "url": "https://github.com/irvan-putra/daya/commit/3f825ba"
+    },
+    {
+     "repo": "daya",
+     "sha": "0b19ab5",
+     "url": "https://github.com/irvan-putra/daya/commit/0b19ab5"
+    },
+    {
+     "repo": "daya",
+     "sha": "9f50f49",
+     "url": "https://github.com/irvan-putra/daya/commit/9f50f49"
+    }
+   ],
+   "live": "https://vanipy.com/daya/compose.html",
+   "status": "done",
+   "note": "Second step needed because the first replacement words still sounded human."
+  },
+  {
+   "repo": "anyam",
+   "what": "README, page, walkthrough script",
+   "before": "hand-written checks and extraction",
+   "after": "scripted, then AI-written",
+   "commits": [
+    {
+     "repo": "anyam",
+     "sha": "c9e3a69",
+     "url": "https://github.com/irvan-putra/anyam/commit/c9e3a69"
+    },
+    {
+     "repo": "anyam",
+     "sha": "d336e88",
+     "url": "https://github.com/irvan-putra/anyam/commit/d336e88"
+    }
+   ],
+   "live": "https://vanipy.com/anyam/",
+   "status": "done",
+   "note": ""
+  },
+  {
+   "repo": "bedah",
+   "what": "Naming page and README",
+   "before": "Hand-written canvas and build logic; one-line responsibilities are hand-written",
+   "after": "Canvas and build logic / written directly in source, then AI-written (Instinct)",
+   "commits": [
+    {
+     "repo": "bedah",
+     "sha": "095afbb",
+     "url": "https://github.com/irvan-putra/bedah/commit/095afbb"
+    },
+    {
+     "repo": "bedah",
+     "sha": "e7afd83",
+     "url": "https://github.com/irvan-putra/bedah/commit/e7afd83"
+    }
+   ],
+   "live": "https://vanipy.com/bedah/naming/",
+   "status": "done",
+   "note": ""
+  },
+  {
+   "repo": "tuju",
+   "what": "Code comment, layout notes",
+   "before": "everything around it is hand-written; hand-placed layout; hand-drawn links",
+   "after": "written directly in source, then AI-written (Instinct); fixed-coordinate layout; existing links",
+   "commits": [
+    {
+     "repo": "tuju",
+     "sha": "fd96d27",
+     "url": "https://github.com/irvan-putra/tuju/commit/fd96d27"
+    },
+    {
+     "repo": "tuju",
+     "sha": "cd4a173",
+     "url": "https://github.com/irvan-putra/tuju/commit/cd4a173"
+    }
+   ],
+   "live": "https://vanipy.com/tuju/exp/layout/",
+   "status": "done",
+   "note": ""
+  },
+  {
+   "repo": "kaji",
+   "what": "Gallery footer, web examples lead, map-layout note",
+   "before": "Pages are hand-maintained; Pages, demos and examples we made; in my two renders",
+   "after": "maintained by Instinct (an AI assistant); made with Instinct (an AI assistant); the two renders. Also \"hand\" placement wording in the map-layout note",
+   "commits": [
+    {
+     "repo": "kaji",
+     "sha": "786565b",
+     "url": "https://github.com/irvan-putra/kaji/commit/786565b"
+    },
+    {
+     "repo": "kaji",
+     "sha": "c77cdd6",
+     "url": "https://github.com/irvan-putra/kaji/commit/c77cdd6"
+    }
+   ],
+   "live": "https://vanipy.com/kaji/web/",
+   "status": "done",
+   "note": ""
+  },
+  {
+   "repo": "skills",
+   "what": "Footnotes",
+   "before": "Every name ... checked against its official source; entries are re-verified; None are tested by us",
+   "after": "... checked by Instinct (an AI assistant); re-checked by Instinct; None have been tested here",
+   "commits": [
+    {
+     "repo": "skills",
+     "sha": "dbb0e5b",
+     "url": "https://github.com/irvan-putra/skills/commit/dbb0e5b"
+    }
+   ],
+   "live": "https://vanipy.com/skills/motion/",
+   "status": "done",
+   "note": ""
+  },
+  {
+   "repo": "utak",
+   "what": "Review notes",
+   "before": "62 subpages were reviewed; every essay was read in full",
+   "after": "... reviewed by Instinct (an AI assistant)",
+   "commits": [
+    {
+     "repo": "utak",
+     "sha": "412e8a4",
+     "url": "https://github.com/irvan-putra/utak/commit/412e8a4"
+    }
+   ],
+   "live": "https://vanipy.com/utak/",
+   "status": "done",
+   "note": ""
+  },
+  {
+   "repo": "tapak",
+   "what": "Sources and footer",
+   "before": "responsibilities checked against his supplied CV; Public sources checked 18 November 2026",
+   "after": "checked by Instinct (an AI assistant)",
+   "commits": [
+    {
+     "repo": "tapak",
+     "sha": "3d21cd8",
+     "url": "https://github.com/irvan-putra/tapak/commit/3d21cd8"
+    }
+   ],
+   "live": "https://vanipy.com/tapak/",
+   "status": "done",
+   "note": ""
+  },
+  {
+   "repo": "sapi",
+   "what": "BCA production map checks",
+   "before": "Each step ... checked against BCA's official pages",
+   "after": "Each step ... was checked by Instinct (an AI assistant) against ...",
+   "commits": [
+    {
+     "repo": "sapi",
+     "sha": "8f748e0",
+     "url": "https://github.com/irvan-putra/sapi/commit/8f748e0"
+    }
+   ],
+   "live": "https://github.com/irvan-putra/sapi/blob/main/docs/BCA-PRODUCTION-MAP-CHECKS.md",
+   "status": "done",
+   "note": ""
+  },
+  {
+   "repo": "kaidah",
+   "what": "Data-repo README and shared-log notes",
+   "before": "A public, curated log",
+   "after": "A public log written by AI (Instinct)",
+   "commits": [
+    {
+     "repo": "kaidah",
+     "sha": "3d4db64",
+     "url": "https://github.com/irvan-putra/kaidah/commit/3d4db64"
+    }
+   ],
+   "live": "https://github.com/irvan-putra/kaidah",
+   "status": "done",
+   "note": ""
+  }
+ ],
+ "disclosure": [
+  {
+   "repo": "aiq",
+   "sha": "4ca9cec",
+   "url": "https://github.com/irvan-putra/aiq/commit/4ca9cec",
+   "live": "https://github.com/irvan-putra/aiq"
+  },
+  {
+   "repo": "anyam",
+   "sha": "ebd9052",
+   "url": "https://github.com/irvan-putra/anyam/commit/ebd9052",
+   "live": "https://github.com/irvan-putra/anyam"
+  },
+  {
+   "repo": "bedah",
+   "sha": "ca4db7c",
+   "url": "https://github.com/irvan-putra/bedah/commit/ca4db7c",
+   "live": "https://vanipy.com/bedah/"
+  },
+  {
+   "repo": "bidik",
+   "sha": "0fc0c3e",
+   "url": "https://github.com/irvan-putra/bidik/commit/0fc0c3e",
+   "live": "https://vanipy.com/bidik/"
+  },
+  {
+   "repo": "cabang",
+   "sha": "09177d7",
+   "url": "https://github.com/irvan-putra/cabang/commit/09177d7",
+   "live": "https://vanipy.com/cabang/"
+  },
+  {
+   "repo": "cadang",
+   "sha": "6e56d8e",
+   "url": "https://github.com/irvan-putra/cadang/commit/6e56d8e",
+   "live": "https://github.com/irvan-putra/cadang"
+  },
+  {
+   "repo": "daya",
+   "sha": "68b77d9",
+   "url": "https://github.com/irvan-putra/daya/commit/68b77d9",
+   "live": "https://vanipy.com/daya/"
+  },
+  {
+   "repo": "denting",
+   "sha": "8719cbc",
+   "url": "https://github.com/irvan-putra/denting/commit/8719cbc",
+   "live": "https://vanipy.com/denting/"
+  },
+  {
+   "repo": "denyut",
+   "sha": "59cf22f",
+   "url": "https://github.com/irvan-putra/denyut/commit/59cf22f",
+   "live": "https://github.com/irvan-putra/denyut"
+  },
+  {
+   "repo": "gitsafescan",
+   "sha": "6093df6",
+   "url": "https://github.com/irvan-putra/gitsafescan/commit/6093df6",
+   "live": "https://github.com/irvan-putra/gitsafescan"
+  },
+  {
+   "repo": "gotong",
+   "sha": "f879665",
+   "url": "https://github.com/irvan-putra/gotong/commit/f879665",
+   "live": "https://github.com/irvan-putra/gotong"
+  },
+  {
+   "repo": "irvan",
+   "sha": "d162ef2",
+   "url": "https://github.com/irvan-putra/irvan/commit/d162ef2",
+   "live": "https://vanipy.com/irvan/"
+  },
+  {
+   "repo": "irvan-putra.github.io",
+   "sha": "a5f936d",
+   "url": "https://github.com/irvan-putra/irvan-putra.github.io/commit/a5f936d",
+   "live": "https://github.com/irvan-putra/irvan-putra.github.io"
+  },
+  {
+   "repo": "jasa",
+   "sha": "f299132",
+   "url": "https://github.com/irvan-putra/jasa/commit/f299132",
+   "live": "https://github.com/irvan-putra/jasa"
+  },
+  {
+   "repo": "jejak",
+   "sha": "663d6f7",
+   "url": "https://github.com/irvan-putra/jejak/commit/663d6f7",
+   "live": "https://github.com/irvan-putra/jejak"
+  },
+  {
+   "repo": "jin",
+   "sha": "4e63fbd",
+   "url": "https://github.com/irvan-putra/jin/commit/4e63fbd",
+   "live": "https://vanipy.com/jin/"
+  },
+  {
+   "repo": "jumpa",
+   "sha": "f305801",
+   "url": "https://github.com/irvan-putra/jumpa/commit/f305801",
+   "live": "https://vanipy.com/jumpa/"
+  },
+  {
+   "repo": "kaca",
+   "sha": "0bbe8b2",
+   "url": "https://github.com/irvan-putra/kaca/commit/0bbe8b2",
+   "live": "https://vanipy.com/kaca/"
+  },
+  {
+   "repo": "kaidah",
+   "sha": "860df4a",
+   "url": "https://github.com/irvan-putra/kaidah/commit/860df4a",
+   "live": "https://github.com/irvan-putra/kaidah"
+  },
+  {
+   "repo": "kaji",
+   "sha": "632133f",
+   "url": "https://github.com/irvan-putra/kaji/commit/632133f",
+   "live": "https://github.com/irvan-putra/kaji"
+  },
+  {
+   "repo": "kapan",
+   "sha": "bdd843a",
+   "url": "https://github.com/irvan-putra/kapan/commit/bdd843a",
+   "live": "https://vanipy.com/kapan/"
+  },
+  {
+   "repo": "kemas",
+   "sha": "07a581c",
+   "url": "https://github.com/irvan-putra/kemas/commit/07a581c",
+   "live": "https://github.com/irvan-putra/kemas"
+  },
+  {
+   "repo": "kokok",
+   "sha": "aef5b4c",
+   "url": "https://github.com/irvan-putra/kokok/commit/aef5b4c",
+   "live": "https://vanipy.com/kokok/"
+  },
+  {
+   "repo": "kunjung",
+   "sha": "d2202c2",
+   "url": "https://github.com/irvan-putra/kunjung/commit/d2202c2",
+   "live": "https://vanipy.com/kunjung/"
+  },
+  {
+   "repo": "menit",
+   "sha": "6af99c9",
+   "url": "https://github.com/irvan-putra/menit/commit/6af99c9",
+   "live": "https://vanipy.com/menit/"
+  },
+  {
+   "repo": "mimpi",
+   "sha": "64c2629",
+   "url": "https://github.com/irvan-putra/mimpi/commit/64c2629",
+   "live": "https://github.com/irvan-putra/mimpi"
+  },
+  {
+   "repo": "nada",
+   "sha": "9e5be06",
+   "url": "https://github.com/irvan-putra/nada/commit/9e5be06",
+   "live": "https://vanipy.com/nada/"
+  },
+  {
+   "repo": "naga",
+   "sha": "845e551",
+   "url": "https://github.com/irvan-putra/naga/commit/845e551",
+   "live": "https://vanipy.com/naga/"
+  },
+  {
+   "repo": "naung",
+   "sha": "8d64610",
+   "url": "https://github.com/irvan-putra/naung/commit/8d64610",
+   "live": "https://github.com/irvan-putra/naung"
+  },
+  {
+   "repo": "onda",
+   "sha": "39f637e",
+   "url": "https://github.com/irvan-putra/onda/commit/39f637e",
+   "live": "https://github.com/irvan-putra/onda"
+  },
+  {
+   "repo": "paper2repo",
+   "sha": "211a80b",
+   "url": "https://github.com/irvan-putra/paper2repo/commit/211a80b",
+   "live": "https://github.com/irvan-putra/paper2repo"
+  },
+  {
+   "repo": "patuh",
+   "sha": "b06eafd",
+   "url": "https://github.com/irvan-putra/patuh/commit/b06eafd",
+   "live": "https://vanipy.com/patuh/"
+  },
+  {
+   "repo": "pelokalan-ideas",
+   "sha": "209bcf5",
+   "url": "https://github.com/irvan-putra/pelokalan-ideas/commit/209bcf5",
+   "live": "https://github.com/irvan-putra/pelokalan-ideas"
+  },
+  {
+   "repo": "pustaka",
+   "sha": "3dc9ae8",
+   "url": "https://github.com/irvan-putra/pustaka/commit/3dc9ae8",
+   "live": "https://github.com/irvan-putra/pustaka"
+  },
+  {
+   "repo": "saku",
+   "sha": "12bf687",
+   "url": "https://github.com/irvan-putra/saku/commit/12bf687",
+   "live": "https://vanipy.com/saku/"
+  },
+  {
+   "repo": "sambung",
+   "sha": "22c6b01",
+   "url": "https://github.com/irvan-putra/sambung/commit/22c6b01",
+   "live": "https://vanipy.com/sambung/"
+  },
+  {
+   "repo": "sanggup",
+   "sha": "88108dd",
+   "url": "https://github.com/irvan-putra/sanggup/commit/88108dd",
+   "live": "https://vanipy.com/sanggup/"
+  },
+  {
+   "repo": "sapa",
+   "sha": "a10769b",
+   "url": "https://github.com/irvan-putra/sapa/commit/a10769b",
+   "live": "https://github.com/irvan-putra/sapa"
+  },
+  {
+   "repo": "sapi",
+   "sha": "646afe7",
+   "url": "https://github.com/irvan-putra/sapi/commit/646afe7",
+   "live": "https://vanipy.com/sapi/"
+  },
+  {
+   "repo": "simak",
+   "sha": "1a8b305",
+   "url": "https://github.com/irvan-putra/simak/commit/1a8b305",
+   "live": "https://vanipy.com/simak/"
+  },
+  {
+   "repo": "skills",
+   "sha": "ae065f6",
+   "url": "https://github.com/irvan-putra/skills/commit/ae065f6",
+   "live": "https://github.com/irvan-putra/skills"
+  },
+  {
+   "repo": "suaka",
+   "sha": "f1b08d4",
+   "url": "https://github.com/irvan-putra/suaka/commit/f1b08d4",
+   "live": "https://github.com/irvan-putra/suaka"
+  },
+  {
+   "repo": "tagih",
+   "sha": "2cdaf5b",
+   "url": "https://github.com/irvan-putra/tagih/commit/2cdaf5b",
+   "live": "https://vanipy.com/tagih/"
+  },
+  {
+   "repo": "tampung",
+   "sha": "cfc3b6c",
+   "url": "https://github.com/irvan-putra/tampung/commit/cfc3b6c",
+   "live": "https://github.com/irvan-putra/tampung"
+  },
+  {
+   "repo": "tangkai",
+   "sha": "639b5b6",
+   "url": "https://github.com/irvan-putra/tangkai/commit/639b5b6",
+   "live": "https://vanipy.com/tangkai/"
+  },
+  {
+   "repo": "tapak",
+   "sha": "2b0ea1e",
+   "url": "https://github.com/irvan-putra/tapak/commit/2b0ea1e",
+   "live": "https://vanipy.com/tapak/"
+  },
+  {
+   "repo": "tengok",
+   "sha": "234dc70",
+   "url": "https://github.com/irvan-putra/tengok/commit/234dc70",
+   "live": "https://vanipy.com/tengok/"
+  },
+  {
+   "repo": "tindak",
+   "sha": "9fcf3f1",
+   "url": "https://github.com/irvan-putra/tindak/commit/9fcf3f1",
+   "live": "https://vanipy.com/tindak/"
+  },
+  {
+   "repo": "tuju",
+   "sha": "a3e959b",
+   "url": "https://github.com/irvan-putra/tuju/commit/a3e959b",
+   "live": "https://vanipy.com/tuju/"
+  },
+  {
+   "repo": "tumbuh",
+   "sha": "c21e004",
+   "url": "https://github.com/irvan-putra/tumbuh/commit/c21e004",
+   "live": "https://vanipy.com/tumbuh/"
+  },
+  {
+   "repo": "unggah",
+   "sha": "7449297",
+   "url": "https://github.com/irvan-putra/unggah/commit/7449297",
+   "live": "https://github.com/irvan-putra/unggah"
+  },
+  {
+   "repo": "utak",
+   "sha": "b31d43a",
+   "url": "https://github.com/irvan-putra/utak/commit/b31d43a",
+   "live": "https://vanipy.com/utak/"
+  }
+ ],
+ "disclosure_line": "Built with AI assistance (Instinct and others). Not everything has been reviewed by Irvan.",
+ "disclosure_line_id": "Dibuat dengan bantuan AI (Instinct dan lainnya). Tidak semuanya sudah ditinjau oleh Irvan.",
+ "skipped": [
+  "PL101ProjectTemplate",
+  "haskell-intro",
+  "old-visi-web",
+  "adaptechid",
+  "myschoolcampid",
+  "tayang",
+  "picu",
+  "vnproject.id (human-written before 2026)",
+  "irvan-putra (profile README, his own words)",
+  "pythonid-10-2026 (his talk slides, AI use unknown)",
+  "kembang (AI-built, left for Irvan to decide)"
+ ],
+ "planned": [
+  "In-app About text: add the same AI-assistance line in each app's next release (no forced releases). Status: planned.",
+  "pelokalan-ideas: the page has the line locally, but pushing to that repo returned 403 with the saved credential (another task created it). Status: blocked, waiting on a fix.",
+  "A few Pages deploys failed on GitHub's side during the burst of pushes (bidik, onda, saku, sapa); re-run in progress, then live checks. Status: in progress.",
+  "Subpages of each site (for example kapan/jakarta, other kaji pages) carry the line only where listed above. Status: root pages only, rest planned if Irvan wants it.",
+  "Wording left as is on purpose: sanggup lesson text (advice to learners), release workflow comments about a person attaching an APK, tindak's mock 'Reviewed by: no one yet', and kaji research content. Status: flagged, not changed."
+ ]
+}
