@@ -1427,14 +1427,26 @@
   {
    "name": "kapan",
    "version": "0.2.0",
-   "state": "available",
+   "state": "legacy",
    "icon": "kapan020.png",
    "tag": "Developer events and film dates in Jakarta and Jogja, plus widget",
-   "about": "Countdowns now follow what the maintainer cares about: a hand-picked countdowns section on the site and a your-countdowns panel in the app tick down hosted and going events plus picked films (care.json on the site, public titles and dates only). Any card can be marked i'm going, kept on the phone, and a tell-instinct share nudges new picks. The widget counts down to your picks first, falling back to the next developer event and film. One permission (INTERNET). Checked by unit tests and static layout renders; panel and marks not yet verified on a physical phone.",
+   "about": "Historical 0.2.0, superseded by 0.2.1. On a phone that had fetched before care.json existed, the your-countdowns panel stayed hidden and the widget showed generic items. Countdowns now follow what the maintainer cares about: a hand-picked countdowns section on the site and a your-countdowns panel in the app tick down hosted and going events plus picked films (care.json on the site, public titles and dates only).",
    "apk": "https://github.com/irvan-putra/kapan/releases/download/v0.2.0/kapan-v0.2.0.apk",
    "release": "https://github.com/irvan-putra/kapan/releases/tag/v0.2.0",
    "repo": "https://github.com/irvan-putra/kapan/commit/0f63e36",
    "sha256": "8fc0b69039d8e8678ba9811afdd1c21b1ddee796123d81e04c328c6ae4d9b743"
+  },
+  {
+   "name": "kapan",
+   "version": "0.2.1",
+   "state": "available",
+   "icon": "kapan021.png",
+   "tag": "Developer events and film dates in Jakarta and Jogja, plus widget",
+   "about": "Fixes the missing countdowns seen on a phone with 0.2.0: the app and widget now fetch once when no picks are cached, so the your-countdowns panel appears. With picks present the widget counts down only to them (hosted or going events, Hexed and Avengers: Doomsday), with no generic fallback rows. Adds the Apple Developer Academy @ UC Jakarta Graduation Showcase (25 Nov, 09:30-12:00) to the picks. Picks are public titles and dates only; Instinct (an AI assistant) maintains them and the Luma profile cannot be read automatically, so new registrations need a tell-instinct nudge. One permission (INTERNET). Checked by unit tests and static layout renders; not yet run on a physical phone.",
+   "apk": "https://github.com/irvan-putra/kapan/releases/download/v0.2.1/kapan-v0.2.1.apk",
+   "release": "https://github.com/irvan-putra/kapan/releases/tag/v0.2.1",
+   "repo": "https://github.com/irvan-putra/kapan/commit/ba676d7df1574517f8b3568c5fc247433cf0d3cd",
+   "sha256": "4691664d1b1db20172c997a0c744b44bfcf2dff9a08f5f61f387144e415d0bad"
   }
  ]
 }
