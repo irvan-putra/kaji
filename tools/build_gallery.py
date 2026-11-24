@@ -23,7 +23,7 @@ def page(title, lead, body, base):
 <title>{e(title)}</title><style>{CSS}</style></head><body><main>
 <nav><a href="{base}">kaji</a><a href="{base}apk/">apps</a><a href="{base}web/">web examples</a></nav>
 <h1>{e(title)}</h1><p class="lead">{lead}</p>{body}
-<footer>Public information only. Pages are hand-maintained from <a href="https://github.com/irvan-putra/kaji/tree/main/gallery">gallery/*.json</a>; each card states its status.</footer>
+<footer>Public information only. Pages are maintained by Instinct (an AI assistant) from <a href="https://github.com/irvan-putra/kaji/tree/main/gallery">gallery/*.json</a>; each card states its status.</footer>
 </main></body></html>"""
 def btn(label, url, main=False): return f'<a class="btn{" main" if main else ""}" href="{e(url)}">{e(label)}</a>'
 def apps():
@@ -69,7 +69,7 @@ def web():
             if w.get("android"): b += btn("Android test release", w["android"])
             out += f'<div class="card"><div class="top"><img src="{e(w["icon"])}" alt="{e(w["icon_note"])}" width="64" height="64"><div><h3>{e(w["name"])}</h3><div class="tag">{e(w["tag"])}</div></div></div><p>{e(w["about"])}</p><div>{b}</div></div>'
         out += "</div>"
-    return page("kaji web examples", f'Pages, demos and examples we made. Links checked {e(d["checked"])}. Proposals and simulations are labeled as such. Numbered app icons identify the linked Android build, not a web version. Web-only projects use category symbols where no project icon exists.', out, "../")
+    return page("kaji web examples", f'Pages, demos and examples made with Instinct (an AI assistant). Links checked {e(d["checked"])} by Instinct (an AI assistant). Proposals and simulations are labeled as such. Numbered app icons identify the linked Android build, not a web version. Web-only projects use category symbols where no project icon exists.', out, "../")
 def home():
     body = "<div class='grid'><div class='card'><h3>Apps</h3><p>APK downloads, icons and status for every Android app.</p><div>" + btn("Open", "apk/", True) + "</div></div><div class='card'><h3>Web examples</h3><p>Animate, the cook recipe boxes, Indomie, charts and concept pages.</p><div>" + btn("Open", "web/", True) + "</div></div><div class='card'><h3>Research notes</h3><p>Cross-project notes in the repository.</p><div>" + btn("Read", "https://github.com/irvan-putra/kaji#notes") + "</div></div></div>"
     return page("kaji", "Research notes, apps and examples from building personal software.", body, "./")
