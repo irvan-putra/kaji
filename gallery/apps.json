@@ -1391,7 +1391,7 @@
     {
       "name": "kapan",
       "version": "0.1.0",
-      "state": "available",
+      "state": "legacy",
       "icon": "kapan010.png",
       "tag": "Developer events and film dates in Jakarta and Jogja, plus widget",
       "about": "Two audience tabs (developers, moviegoers) with the next developer event and next film or festival, each counting down on a 1x1 circular widget; a larger widget lists both. Data refreshes from the vanipy.com/kapan site JSON at most every three hours; last good data is cached offline. One permission (INTERNET). Checked by unit tests and static layout renders on the phone-width web view; not yet run on a physical phone.",
