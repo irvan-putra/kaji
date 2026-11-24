@@ -1463,14 +1463,26 @@
   {
    "name": "kapan",
    "version": "0.2.3",
-   "state": "available",
+   "state": "legacy",
    "icon": "kapan023.png",
    "tag": "Developer events and film dates in Jakarta and Jogja, plus widget",
-   "about": "The widget is now a scrollable list with no cap: every pick, sorted by date, and any row past the visible area is a swipe away inside the widget (0.2.2 dropped the sixth pick silently). Countdowns are days-and-hours ('2d 10h', under a day '20h') restated on the ~30-minute OS tick plus app opens; a widget cannot tick every second. Picks cover hosted/going events and films; going registrations come from the owner's signed-in Luma list read by Instinct (an AI assistant) plus on-device i'm-going marks. One permission (INTERNET). Unit tests pass; widget render mocked from the real formatting code; not yet run on a physical phone.",
+   "about": "Historical 0.2.3, superseded by 0.2.4. The app screen did not scroll on a physical phone and the countdown panel silently capped at five picks. The widget is now a scrollable list with no cap: every pick, sorted by date, and any row past the visible area is a swipe away inside the widget (0.2.2 dropped the sixth pick silently).",
    "apk": "https://github.com/irvan-putra/kapan/releases/download/v0.2.3/kapan-v0.2.3.apk",
    "release": "https://github.com/irvan-putra/kapan/releases/tag/v0.2.3",
    "repo": "https://github.com/irvan-putra/kapan/commit/0dbe113",
    "sha256": "9ed85fefd581091a0e4d3e52364f91d7f3e2589ee5cb58aa2caaf56a9a39e44e"
+  },
+  {
+   "name": "kapan",
+   "version": "0.2.4",
+   "state": "available",
+   "icon": "kapan024.png",
+   "tag": "Developer events and film dates in Jakarta and Jogja, plus widget",
+   "about": "Fixes on-phone findings: the whole app screen is now one scrolling page (0.2.3 stayed stuck at the REFRESH button on a real phone), and the YOUR COUNTDOWNS panel lists every pick with no cap (the sixth pick was dropped silently). Widget unchanged from 0.2.3: scrollable, all picks. Countdowns tick by the second in the app; the widget restates on the ~30-minute OS tick plus app opens. One permission (INTERNET). Unit tests pass; app and widget renders mocked from the real formatting code; the scroll fix is structural and still awaits his install for on-phone confirmation.",
+   "apk": "https://github.com/irvan-putra/kapan/releases/download/v0.2.4/kapan-v0.2.4.apk",
+   "release": "https://github.com/irvan-putra/kapan/releases/tag/v0.2.4",
+   "repo": "https://github.com/irvan-putra/kapan/commit/9ad89db",
+   "sha256": "871f2a078da0da0bd493b72c2821a57e9c3dbf3a32537ece7690fc2dcf9b6fc2"
   }
  ]
 }
