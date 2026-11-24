@@ -1439,14 +1439,26 @@
   {
    "name": "kapan",
    "version": "0.2.1",
-   "state": "available",
+   "state": "legacy",
    "icon": "kapan021.png",
    "tag": "Developer events and film dates in Jakarta and Jogja, plus widget",
-   "about": "Fixes the missing countdowns seen on a phone with 0.2.0: the app and widget now fetch once when no picks are cached, so the your-countdowns panel appears. With picks present the widget counts down only to them (hosted or going events, Hexed and Avengers: Doomsday), with no generic fallback rows. Adds the Apple Developer Academy @ UC Jakarta Graduation Showcase (25 Nov, 09:30-12:00) to the picks. Picks are public titles and dates only; Instinct (an AI assistant) maintains them and the Luma profile cannot be read automatically, so new registrations need a tell-instinct nudge. One permission (INTERNET). Checked by unit tests and static layout renders; not yet run on a physical phone.",
+   "about": "Historical 0.2.1, superseded by 0.2.2. The large widget listed only the first event and film pick, dropping the rest. Fixes the missing countdowns seen on a phone with 0.2.0: the app and widget now fetch once when no picks are cached, so the your-countdowns panel appears.",
    "apk": "https://github.com/irvan-putra/kapan/releases/download/v0.2.1/kapan-v0.2.1.apk",
    "release": "https://github.com/irvan-putra/kapan/releases/tag/v0.2.1",
    "repo": "https://github.com/irvan-putra/kapan/commit/ba676d7df1574517f8b3568c5fc247433cf0d3cd",
    "sha256": "4691664d1b1db20172c997a0c744b44bfcf2dff9a08f5f61f387144e415d0bad"
+  },
+  {
+   "name": "kapan",
+   "version": "0.2.2",
+   "state": "available",
+   "icon": "kapan022.png",
+   "tag": "Developer events and film dates in Jakarta and Jogja, plus widget",
+   "about": "Widget now lists every pick (up to five), each with a days-and-hours countdown ('2d 10h', under a day '20h') as the owner asked, replacing the two fixed rows that dropped Build Club, PyJogja and Doomsday. Panel adds the subline 'picked by instinct from what it knows, plus your stars'. Android redraws a widget about every 30 minutes and on app opens, so widget countdowns restate at each redraw and cannot tick every second like the in-app panel. One permission (INTERNET). Unit tests for the countdown format pass; widget render mocked from the real formatting code; not yet run on a physical phone.",
+   "apk": "https://github.com/irvan-putra/kapan/releases/download/v0.2.2/kapan-v0.2.2.apk",
+   "release": "https://github.com/irvan-putra/kapan/releases/tag/v0.2.2",
+   "repo": "https://github.com/irvan-putra/kapan/commit/c3e2e12",
+   "sha256": "fb38554a712c8566cbce7d67b099e49ffefece985ac905eb2ff911e0ed0b5aba"
   }
  ]
 }
