@@ -361,12 +361,13 @@
       "items": [
         {
           "name": "kapan",
-          "tag": "Jakarta and Jogja developer events",
-          "about": "Compact upcoming developer-event list with city chips, Jakarta/Jogja routes, ICS and organizer-sourced poster thumbnails. Tap a thumbnail for the full poster or the card for its event page. List-only phone layout retained. Refreshes about every six hours; sources and posters are best effort. Live Samsung browser not verified.",
+          "tag": "Jakarta and Jogja developer events and film dates",
+          "about": "Two audience tabs: developers (default) and moviegoers. Developers keep the compact upcoming-event list with city chips, Jakarta/Jogja routes, ICS and organizer-sourced poster thumbnails. Moviegoers track easy-to-miss film dates and festivals with cinema/streaming/location chips; each entry links its source page and unverified dates are labeled. Next thing counts down on each tab; deep link with #moviegoers. Sources are hand-curated, refreshed monthly. Live Samsung browser not verified.",
           "url": "https://vanipy.com/kapan/",
           "source": "https://github.com/irvan-putra/kapan",
           "icon": "icons/research.svg",
-          "icon_note": "Web category symbol, not an Android build"
+          "icon_note": "Web category symbol, not an Android build",
+          "android": "https://github.com/irvan-putra/kapan/releases/tag/v0.1.0"
         },
         {
           "name": "irvan",
