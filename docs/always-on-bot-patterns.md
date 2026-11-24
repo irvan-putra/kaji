@@ -2,7 +2,7 @@
 
 Checked 2026-11-24. Source: a 7-minute video posted by Sarah ([@sarahfim](https://x.com/sarahfim)) in [this X post](https://x.com/sarahfim/status/2124910095133745643), 2026-11-23. The post says she "reverse engineered Grok Bot, Muse, Instinct and more". She says she leads product engineering at Composio, which sells the tool-connection layer she recommends, so read the tool advice with that in mind (the post itself says it is not sponsored).
 
-This note is based on a speech-to-text transcript of the video's audio (the video has no published captions that we found). The transcript is automatic and unreviewed against the video. It is summarized here, not republished. The video's slides and images were not reviewed.
+This note is based on a speech-to-text transcript of the video's audio (the video has no published captions that we found). The transcript is automatic and unreviewed against the video. It is summarized here; the full automatic transcript is in [always-on-bot-transcript.md](always-on-bot-transcript.md). The video's slides and images were not reviewed.
 
 ## The post
 
@@ -40,7 +40,7 @@ Our interpretation, not tested:
 
 ## Scope and limits
 
-Not verified: any claim about how Grok Bot, Muse, Instinct or the open-source bot works inside; the Composio numbers; the nightly time; product descriptions of the tools mentioned. The author's claims are the author's. The video was not republished. A full verbatim transcript exists but is not published here, because reproducing the whole talk is copying it; ask if you want it.
+Not verified: any claim about how Grok Bot, Muse, Instinct or the open-source bot works inside; the Composio numbers; the nightly time; product descriptions of the tools mentioned. The author's claims are the author's. The video itself was not republished. The full automatic transcript is published in [always-on-bot-transcript.md](always-on-bot-transcript.md) at the repo owner's request; the video stays the author's.
 
 ## Sources
 
