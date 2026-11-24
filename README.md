@@ -114,3 +114,7 @@ Project-specific research that only makes sense inside its own project stays in 
 ## AI product insights
 
 [41 public product-feedback summaries](https://vanipy.com/kaji/ai-product-insights/) with [sanitized Markdown notes](docs/ai-product-insights.md). Requests and observations, not a roadmap; personal details and private tracking links excluded.
+
+---
+
+Built with AI assistance (Instinct and others). Not everything has been reviewed by Irvan.

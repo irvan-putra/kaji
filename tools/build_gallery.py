@@ -23,7 +23,7 @@ def page(title, lead, body, base):
 <title>{e(title)}</title><style>{CSS}</style></head><body><main>
 <nav><a href="{base}">kaji</a><a href="{base}apk/">apps</a><a href="{base}web/">web examples</a></nav>
 <h1>{e(title)}</h1><p class="lead">{lead}</p>{body}
-<footer>Public information only. Pages are maintained by Instinct (an AI assistant) from <a href="https://github.com/irvan-putra/kaji/tree/main/gallery">gallery/*.json</a>; each card states its status.</footer>
+<footer>Public information only. Pages are maintained by Instinct (an AI assistant) from <a href="https://github.com/irvan-putra/kaji/tree/main/gallery">gallery/*.json</a>; each card states its status.<br>Built with AI assistance (Instinct and others). Not everything has been reviewed by Irvan.</footer>
 </main></body></html>"""
 def btn(label, url, main=False): return f'<a class="btn{" main" if main else ""}" href="{e(url)}">{e(label)}</a>'
 def apps():
