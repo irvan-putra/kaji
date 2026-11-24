@@ -285,6 +285,70 @@
    "live": "https://github.com/irvan-putra/kaidah",
    "status": "done",
    "note": ""
+  },
+  {
+   "repo": "tayang",
+   "what": "Repo About and README",
+   "before": "AI-generated authorship was not stated clearly",
+   "after": "AI-written origin made explicit, plus the AI-assistance line. Confirmed by Irvan on 24 Nov 2026.",
+   "commits": [
+    {
+     "repo": "tayang",
+     "sha": "50f37601",
+     "url": "https://github.com/irvan-putra/tayang/commit/50f376017b478072a6835f55815df47d8e143b83"
+    }
+   ],
+   "live": "https://github.com/irvan-putra/tayang",
+   "status": "done",
+   "note": "Authorship wording only; no claim of full human review."
+  },
+  {
+   "repo": "picu",
+   "what": "Repo About and README",
+   "before": "AI-generated authorship was not stated clearly",
+   "after": "AI-written origin made explicit, plus the AI-assistance line. Confirmed by Irvan on 24 Nov 2026.",
+   "commits": [
+    {
+     "repo": "picu",
+     "sha": "b4bd62be",
+     "url": "https://github.com/irvan-putra/picu/commit/b4bd62beb3df2d4a4bb0ff5cf7c5f62bfa8f76a5"
+    }
+   ],
+   "live": "https://github.com/irvan-putra/picu",
+   "status": "done",
+   "note": "Authorship wording only; no claim of full human review."
+  },
+  {
+   "repo": "kembang",
+   "what": "Repo About and README",
+   "before": "AI-generated authorship was not stated clearly",
+   "after": "AI-written origin made explicit, plus the AI-assistance line. Confirmed by Irvan on 24 Nov 2026.",
+   "commits": [
+    {
+     "repo": "kembang",
+     "sha": "49e116b2",
+     "url": "https://github.com/irvan-putra/kembang/commit/49e116b2ab10d1d56bd548abc95c39e39007f9fd"
+    }
+   ],
+   "live": "https://github.com/irvan-putra/kembang",
+   "status": "done",
+   "note": "Authorship wording only; no claim of full human review."
+  },
+  {
+   "repo": "pythonid-10-2026",
+   "what": "Repo About and README; slide agenda and demo source comments",
+   "before": "AI-generated authorship was not stated clearly",
+   "after": "AI-written origin made explicit, plus the AI-assistance line. Confirmed by Irvan on 24 Nov 2026.",
+   "commits": [
+    {
+     "repo": "pythonid-10-2026",
+     "sha": "6b9b115d",
+     "url": "https://github.com/irvan-putra/pythonid-10-2026/commit/6b9b115dc4d06474cac080dc0c507aa66838a375"
+    }
+   ],
+   "live": "https://github.com/irvan-putra/pythonid-10-2026",
+   "status": "done",
+   "note": "Authorship wording only; no claim of full human review."
   }
  ],
  "disclosure": [
@@ -593,6 +657,30 @@
    "sha": "b31d43a",
    "url": "https://github.com/irvan-putra/utak/commit/b31d43a",
    "live": "https://vanipy.com/utak/"
+  },
+  {
+   "repo": "tayang",
+   "sha": "50f37601",
+   "url": "https://github.com/irvan-putra/tayang/commit/50f376017b478072a6835f55815df47d8e143b83",
+   "live": "https://github.com/irvan-putra/tayang"
+  },
+  {
+   "repo": "picu",
+   "sha": "b4bd62be",
+   "url": "https://github.com/irvan-putra/picu/commit/b4bd62beb3df2d4a4bb0ff5cf7c5f62bfa8f76a5",
+   "live": "https://github.com/irvan-putra/picu"
+  },
+  {
+   "repo": "kembang",
+   "sha": "49e116b2",
+   "url": "https://github.com/irvan-putra/kembang/commit/49e116b2ab10d1d56bd548abc95c39e39007f9fd",
+   "live": "https://github.com/irvan-putra/kembang"
+  },
+  {
+   "repo": "pythonid-10-2026",
+   "sha": "6b9b115d",
+   "url": "https://github.com/irvan-putra/pythonid-10-2026/commit/6b9b115dc4d06474cac080dc0c507aa66838a375",
+   "live": "https://github.com/irvan-putra/pythonid-10-2026"
   }
  ],
  "disclosure_line": "Built with AI assistance (Instinct and others). Not everything has been reviewed by Irvan.",
@@ -603,17 +691,428 @@
   "old-visi-web",
   "adaptechid",
   "myschoolcampid",
-  "tayang",
-  "picu",
   "vnproject.id (human-written before 2026)",
-  "irvan-putra (profile README, his own words)",
-  "pythonid-10-2026 (his talk slides, AI use unknown)",
-  "kembang (AI-built, left for Irvan to decide)"
+  "irvan-putra (profile README, his own words)"
  ],
  "planned": [
-  "In-app About text: add the same AI-assistance line in each app's next release (no forced releases). Status: planned.",
-  "A few Pages deploys failed on GitHub's side during the burst of pushes (bidik, onda, saku, sapa); re-run in progress, then live checks. Status: in progress.",
-  "Subpages of each site (for example kapan/jakarta, other kaji pages) carry the line only where listed above. Status: root pages only, rest planned if Irvan wants it.",
-  "Wording left as is on purpose: sanggup lesson text (advice to learners), release workflow comments about a person attaching an APK, tindak's mock 'Reviewed by: no one yet', and kaji research content. Status: flagged, not changed."
- ]
+  "In-app About text: add the same AI-assistance line in each app's next release, without forcing a new release. This web/README pass does not change APKs already installed.",
+  "The earlier bidik, onda, saku and sapa deployment failures were recovered. They are no longer open work. New subpage deployments are tracked separately below."
+ ],
+ "left_on_purpose": [
+  {
+   "title": "Sanggup: asking learners to get human review",
+   "where": "Coding lesson and its tools review page",
+   "links": [
+    {
+     "label": "Coding path",
+     "url": "https://vanipy.com/sanggup/#coding"
+    },
+    {
+     "label": "Tools review",
+     "url": "https://vanipy.com/sanggup/review/tools/"
+    }
+   ],
+   "what": "The lesson asks the learner to get a specific piece of code reviewed by a person. Other learning paths also ask for feedback or mentor sign-off.",
+   "why": "This is advice for a future learning exercise, not a claim that a person wrote or checked Sanggup. Replacing person with AI would change the lesson. The site now carries the AI-assistance disclosure separately.",
+   "choice": "Keep the human-feedback exercise, or request an AI-only alternative with its limits stated. No lesson requirement was changed in this wording pass.",
+   "status": "Kept as lesson advice."
+  },
+  {
+   "title": "APK release comments: corrected, not left unchanged",
+   "where": "Nine sign-test-apk workflows: bidik, denyut, jin, kemas, menit, onda, saku, sapa and unggah",
+   "links": [
+    {
+     "label": "Saku workflow",
+     "url": "https://github.com/irvan-putra/saku/blob/main/.github/workflows/sign-test-apk.yml"
+    },
+    {
+     "label": "Jin workflow",
+     "url": "https://github.com/irvan-putra/jin/blob/main/.github/workflows/sign-test-apk.yml"
+    }
+   ],
+   "what": "An old comment said a reviewed person attaches the APK by hand. These workflows actually upload an artifact and have read-only repository permissions; they do not create a release.",
+   "why": "The previous decision to leave that sentence was wrong. An account name on a release does not prove a human uploaded or reviewed it. The comments now say artifact publication is a separate step and the workflow does not establish human review. AI-assisted release publishing must not be called human review.",
+   "choice": "Keep the factual artifact-only description. If a human approval gate is wanted, that would be a separate workflow change, not something this wording edit claims to implement.",
+   "status": "Corrected in all nine workflow comments."
+  },
+  {
+   "title": "Tindak: a mock review state, not an endorsement",
+   "where": "Review prototype and archived webxdc canvas",
+   "links": [
+    {
+     "label": "Review prototype",
+     "url": "https://vanipy.com/tindak/review/"
+    },
+    {
+     "label": "Prototype source",
+     "url": "https://github.com/irvan-putra/tindak/blob/main/review-prototype/app.js"
+    }
+   ],
+   "what": "The mock screen says Reviewed by: no one yet. Proved: nothing, next to its mock-entries label.",
+   "why": "That text denies that any review has occurred. It is a prototype state, not a claim that a named person reviewed the project. The surrounding explanation describes what signed reviews could look like, not an implemented verification service.",
+   "choice": "Keep the mock state, or rename it to No reviewer recorded (demo only) if clearer. No real reviewer or signature was added.",
+   "status": "Kept as an explicit unreviewed mock state."
+  },
+  {
+   "title": "Kaji: attributed research and quotations",
+   "where": "Talk notes and research pages, for example the attention talk",
+   "links": [
+    {
+     "label": "Attention talk note",
+     "url": "https://vanipy.com/kaji/attention/"
+    },
+    {
+     "label": "AI safety talk note",
+     "url": "https://vanipy.com/kaji/ai-safety/"
+    }
+   ],
+   "what": "Research notes retain speakers statements, quotations, titles and advice about human judgment, code review and responsibility.",
+   "why": "Those words describe or quote another source. Replacing person or human with AI would misquote that source or change the argument. This does not exempt Kaji own claims about who checked a source: those must name Instinct when it did the checking. The new disclosure identifies how the page was made.",
+   "choice": "Keep attributed source wording, or request clearer quote boundaries and separate AI-written summaries where an attribution is ambiguous. This was an authorship pass, not a new verification of every research claim.",
+   "status": "Kept source attributions and quotations; added page-level disclosure."
+  }
+ ],
+ "subpages": {
+  "status": "Source updated; deployment checks in progress.",
+  "html_files_changed": 73,
+  "note": "73 deployed HTML files received the line in this pass, including Tindak task-homepage source. Kapan Jakarta and Jogja were already covered by its current shared template; Kaca notes already inherit its shared layout. Third-party libraries, test snapshots, redirect stubs and HTML fragments are not relabeled.",
+  "commits": [
+   {
+    "repo": "bedah",
+    "sha": "32342c36e9d1c6f18608454bc1e04f4f1cfcf16f",
+    "success": true,
+    "url": "https://github.com/irvan-putra/bedah/commit/32342c36e9d1c6f18608454bc1e04f4f1cfcf16f",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:36:54Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "bidik",
+    "sha": "fdd22aeb62bd525d879ef589c2c046d56aacfd81",
+    "success": true,
+    "url": "https://github.com/irvan-putra/bidik/commit/fdd22aeb62bd525d879ef589c2c046d56aacfd81",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:37:14Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "daya",
+    "sha": "6a1062d7a8944577220a8c52ea49ddc8f0bc4650",
+    "success": true,
+    "url": "https://github.com/irvan-putra/daya/commit/6a1062d7a8944577220a8c52ea49ddc8f0bc4650",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:37:34Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "denting",
+    "sha": "5e1618dd401176b6c69b5b050efd86cacaffa630",
+    "success": true,
+    "url": "https://github.com/irvan-putra/denting/commit/5e1618dd401176b6c69b5b050efd86cacaffa630",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:37:54Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "denyut",
+    "sha": "10a49005a483a1da59854cf8900f6d94afc6b149",
+    "success": true,
+    "url": "https://github.com/irvan-putra/denyut/commit/10a49005a483a1da59854cf8900f6d94afc6b149",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:38:30Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "irvan-putra.github.io",
+    "sha": "e6c4ef22b1e501c040fa2176ef377b92bce7ee61",
+    "success": true,
+    "url": "https://github.com/irvan-putra/irvan-putra.github.io/commit/e6c4ef22b1e501c040fa2176ef377b92bce7ee61",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:38:50Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "jin",
+    "sha": "7122e8d1d6da3d76392a1087e03e8bf412009535",
+    "success": true,
+    "url": "https://github.com/irvan-putra/jin/commit/7122e8d1d6da3d76392a1087e03e8bf412009535",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:39:10Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "kemas",
+    "sha": "f7a4427c78a1df656d544f7a162a6e57674a582f",
+    "success": true,
+    "url": "https://github.com/irvan-putra/kemas/commit/f7a4427c78a1df656d544f7a162a6e57674a582f",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:39:30Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "kunjung",
+    "sha": "dff2b57c073ce89d8646fcdcd8b2eab9e4615527",
+    "success": true,
+    "url": "https://github.com/irvan-putra/kunjung/commit/dff2b57c073ce89d8646fcdcd8b2eab9e4615527",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:40:11Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "menit",
+    "sha": "a451df3813bae51051ed2d6c32e7f3a5b38a28ce",
+    "success": true,
+    "url": "https://github.com/irvan-putra/menit/commit/a451df3813bae51051ed2d6c32e7f3a5b38a28ce",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:40:31Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "naga",
+    "sha": "28b238b34c966ffd25ea81747fa3658ed65a7dd4",
+    "success": true,
+    "url": "https://github.com/irvan-putra/naga/commit/28b238b34c966ffd25ea81747fa3658ed65a7dd4",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:40:51Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "onda",
+    "sha": "dbf4076159ccc32fa0b1af1c3c1eaf86e9be749b",
+    "success": true,
+    "url": "https://github.com/irvan-putra/onda/commit/dbf4076159ccc32fa0b1af1c3c1eaf86e9be749b",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:41:11Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "kembang",
+    "sha": "49e116b2ab10d1d56bd548abc95c39e39007f9fd",
+    "success": true,
+    "url": "https://github.com/irvan-putra/kembang/commit/49e116b2ab10d1d56bd548abc95c39e39007f9fd",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:42:06Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "picu",
+    "sha": "b4bd62beb3df2d4a4bb0ff5cf7c5f62bfa8f76a5",
+    "success": true,
+    "url": "https://github.com/irvan-putra/picu/commit/b4bd62beb3df2d4a4bb0ff5cf7c5f62bfa8f76a5",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:42:38Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "pythonid-10-2026",
+    "sha": "6b9b115dc4d06474cac080dc0c507aa66838a375",
+    "success": true,
+    "url": "https://github.com/irvan-putra/pythonid-10-2026/commit/6b9b115dc4d06474cac080dc0c507aa66838a375",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:42:59Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "saku",
+    "sha": "2ade5319114c30a60aaf89d0101a66501cc48cbc",
+    "success": true,
+    "url": "https://github.com/irvan-putra/saku/commit/2ade5319114c30a60aaf89d0101a66501cc48cbc",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:43:19Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "sanggup",
+    "sha": "e311a25bc3ec38f49c8de15dcc82964678aaef9c",
+    "success": true,
+    "url": "https://github.com/irvan-putra/sanggup/commit/e311a25bc3ec38f49c8de15dcc82964678aaef9c",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:43:39Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "sapa",
+    "sha": "9061e0c8ddfeb844cfb4962d367953d4e9346334",
+    "success": true,
+    "url": "https://github.com/irvan-putra/sapa/commit/9061e0c8ddfeb844cfb4962d367953d4e9346334",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:44:20Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "skills",
+    "sha": "4add162933394cdde32039fc005d517411a83797",
+    "success": true,
+    "url": "https://github.com/irvan-putra/skills/commit/4add162933394cdde32039fc005d517411a83797",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:44:40Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "suaka",
+    "sha": "24d75f5f40d5419ab85e7d3398508f55b33175c1",
+    "success": true,
+    "url": "https://github.com/irvan-putra/suaka/commit/24d75f5f40d5419ab85e7d3398508f55b33175c1",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:45:00Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "tayang",
+    "sha": "50f376017b478072a6835f55815df47d8e143b83",
+    "success": true,
+    "url": "https://github.com/irvan-putra/tayang/commit/50f376017b478072a6835f55815df47d8e143b83",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:45:20Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "daya",
+    "sha": "ec3e46bcd553e21381feb456a242c1511673a04e",
+    "success": true,
+    "url": "https://github.com/irvan-putra/daya/commit/ec3e46bcd553e21381feb456a242c1511673a04e",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:46:16Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "tengok",
+    "sha": "a3918f6ea67e226f49ecc8e48b3929b31359ceed",
+    "success": true,
+    "url": "https://github.com/irvan-putra/tengok/commit/a3918f6ea67e226f49ecc8e48b3929b31359ceed",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:46:36Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "tindak",
+    "sha": "d9518e5f016bcae2fee73d0aa5c8c022f1ae7083",
+    "success": true,
+    "url": "https://github.com/irvan-putra/tindak/commit/d9518e5f016bcae2fee73d0aa5c8c022f1ae7083",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:46:56Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "tuju",
+    "sha": "69f33b85a039bdf9a73e3131c9f511a36010bb6e",
+    "success": true,
+    "url": "https://github.com/irvan-putra/tuju/commit/69f33b85a039bdf9a73e3131c9f511a36010bb6e",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:47:16Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "tumbuh",
+    "sha": "adbed4087cfb90c32ca57d1c00a20165e987c4cb",
+    "success": true,
+    "url": "https://github.com/irvan-putra/tumbuh/commit/adbed4087cfb90c32ca57d1c00a20165e987c4cb",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:47:42Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "unggah",
+    "sha": "f60bdb1ebab023dd7499d3546f827d3cb4b02f99",
+    "success": true,
+    "url": "https://github.com/irvan-putra/unggah/commit/f60bdb1ebab023dd7499d3546f827d3cb4b02f99",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:48:02Z"
+    },
+    "account": "irvan-putra"
+   },
+   {
+    "repo": "utak",
+    "sha": "0392496d93c63b81e48e1b9dd3e2ee19ff6b1297",
+    "success": true,
+    "url": "https://github.com/irvan-putra/utak/commit/0392496d93c63b81e48e1b9dd3e2ee19ff6b1297",
+    "author": {
+     "name": "irvan-putra",
+     "email": "irvan.putra@gmail.com",
+     "date": "2026-11-24T06:48:22Z"
+    },
+    "account": "irvan-putra"
+   }
+  ]
+ }
 }
