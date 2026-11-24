@@ -45,8 +45,8 @@ a{color:#0b6b4f}
 <li>More CI or dependency automation: the matrix is broad and Dependabot is already active.</li>
 </ul>
 
-<h2>One decision before anything is pushed</h2>
-<div class="card"><label><input type="checkbox" data-t="D10. Attribution: follow the project's own contributor norms for AI-assisted wording"> Attribution wording</label><p>The project has its own contributor norms covering AI-assisted work, and our pelokalan norm was to disclose. Tick to follow the project's norms; leave unticked and add a note if you want our usual disclosure line or prefer to ask Rezha first.</p><p class="meta">Decides the wording of every commit and PR. Deliberately settled before any code.</p></div>
+<h2>Decided</h2>
+<div class="card"><label><input type="checkbox" data-t="D10. Attribution: follow each project's own contribution rules (settled 24 Nov)" checked disabled> Attribution wording - settled</label><p>Irvan's pick, 24 Nov: follow each project's own contribution rules. Commit and PR wording will follow the project's own norms for AI-assisted work, and nothing will state or imply human authorship either way.</p><p class="meta">Applies to every option on this page. Deliberately settled before any code.</p></div>
 
 <h2>Your notes</h2>
 <p><textarea id="n" placeholder="Anything to add, combine, or rule out..."></textarea></p>
@@ -57,7 +57,7 @@ a{color:#0b6b4f}
 <p><small>Ticks are stored only in this browser (localStorage); the page sends nothing anywhere. Prepared 24 Nov 2026 from a source read; effort and risk are rough estimates. Public page; the repo it discusses is private, so it stays high-level on purpose.</small></p>
 <script>
 var k='pythonid-bot-review-v1',s=JSON.parse(localStorage.getItem(k)||'{}');
-document.querySelectorAll('input[data-t]').forEach(function(i){i.checked=!!s[i.dataset.t];
+document.querySelectorAll('input[data-t]:not([disabled])').forEach(function(i){i.checked=!!s[i.dataset.t];
 i.onchange=function(){s[i.dataset.t]=i.checked;localStorage.setItem(k,JSON.stringify(s));r()}});
 document.getElementById('n').oninput=r;
 function r(){var a=[].filter.call(document.querySelectorAll('input[data-t]'),function(i){return i.checked}).map(function(i){return '- '+i.dataset.t});

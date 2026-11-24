@@ -24,5 +24,6 @@ The review page lists 9 candidate contributions in three groups plus one
 attribution decision, each with effort, risk and whether Rezha's buy-in is needed
 first. It is an options page, not a plan: nothing is pushed to the repo until
 Irvan approves each exact change. Rezha is OK with AI-assisted contributions
-(Irvan, 24 Nov); commit/PR attribution wording is the one open decision on the
-page.
+(Irvan, 24 Nov). Attribution wording is settled (Irvan, 24 Nov): follow each
+project's own contribution rules - for this repo that means its own norms apply
+to commit/PR wording, and nothing states or implies human authorship.
