@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pelokalan: contribution ideas (review)</title>
+<style>
+body{font:16px/1.5 system-ui,sans-serif;margin:0;padding:16px;max-width:720px;margin:auto;color:#1b1b1b;background:#fafaf7}
+h1{font-size:1.4rem}h2{font-size:1.1rem;margin-top:1.6rem}
+.card{border:1px solid #ccc;border-radius:10px;padding:12px;margin:12px 0;background:#fff}
+.card label{display:flex;gap:10px;font-weight:600;align-items:flex-start}
+.card input{margin-top:5px;width:20px;height:20px;flex:none}
+.card p,.card ul{margin:.4rem 0 .4rem 30px}
+.note{background:#fff7dd;border:1px solid #e6d28a;border-radius:10px;padding:10px;margin:12px 0}
+.rec{background:#e9f5ee;border:1px solid #9ed3b3;border-radius:6px;padding:0 6px;font-size:.8rem;font-weight:600;color:#1a7f37;white-space:nowrap}
+.meta{font-size:.85rem;color:#555;margin-left:30px}
+button{font-size:1rem;padding:10px 14px;border-radius:8px;border:1px solid #333;background:#222;color:#fff}
+textarea{width:100%;height:9rem;box-sizing:border-box}
+small{color:#555}
+a{color:#0b6b4f}
+</style></head><body>
+<nav><a href="../../">kaji</a></nav>
+<h1>Pelokalan: contribution ideas</h1>
+<p>Options review only. Nothing here is built, proposed upstream or decided. <a href="https://github.com/blankon/pelokalan">Pelokalan</a> is Herpiko's web-based gettext translation editor (Go + htmx, MIT); the fork for any work is <a href="https://github.com/irvan-putra/pelokalan">irvan-putra/pelokalan</a>. Every option was checked against the source at commit <code>d565b6f</code> (24 Nov 2026).</p>
+<div class="note"><b>Short answer.</b> Start small and standard: CI and tests land first (recommended set marked <span class="rec">recommended</span>). Anything that changes translator-facing behavior or adds a feature needs Herpiko's agreement on shape before a PR is written. Any PR will state it was built with AI assistance.</div>
+
+<h2>A. Ready now - small, standard, low risk</h2>
+<div class="card"><label><input type="checkbox" data-t="A1. CI workflow (build + vet + test + golangci-lint)"> CI workflow <span class="rec">recommended</span></label><p>GitHub Actions running build, go vet, the test suite and golangci-lint on push/PR. The repo has <code>make lint</code> but no CI at all.</p><p class="meta">Effort: small &middot; Risk: low &middot; Buy-in: not needed. Deliberately does not change any code.</p></div>
+<div class="card"><label><input type="checkbox" data-t="A2. Tests for netsafe, auth/SameOrigin middleware, blobstore"> Tests for untested packages <span class="rec">recommended</span></label><p>netsafe (the SSRF guard), the auth and SameOrigin middleware, and blobstore have no tests. Pure additions.</p><p class="meta">Effort: small-medium &middot; Risk: low &middot; Buy-in: not needed. Deliberately does not touch behavior.</p></div>
+<div class="card"><label><input type="checkbox" data-t="A3. CONTRIBUTING.md"> CONTRIBUTING.md</label><p>The README invites contributions but there is no guide: setup, tests, commit conventions, how to propose.</p><p class="meta">Effort: small &middot; Risk: low &middot; Buy-in: not needed, though Herpiko may reword conventions.</p></div>
+<div class="card"><label><input type="checkbox" data-t="A4. SECURITY.md + Dependabot for Go modules"> SECURITY.md + Dependabot</label><p>A security reporting policy and automated Go module update PRs.</p><p class="meta">Effort: small &middot; Risk: low &middot; Buy-in: not needed.</p></div>
+<div class="card"><label><input type="checkbox" data-t="A5. Property-based PO round-trip tests"> PO parser round-trip tests</label><p>Property-style tests: <code>write(parse(x)) == x</code> across generated entries (plurals, obsolete, multiline, contexts). Catches parser/writer drift in the heart of the app.</p><p class="meta">Effort: medium &middot; Risk: low &middot; Buy-in: not needed.</p></div>
+
+<h2>B. Translator workflow - features, need Herpiko's buy-in on shape</h2>
+<div class="card"><label><input type="checkbox" data-t="B6. Public progress API + embeddable SVG badge"> Public progress API + README badge <span class="rec">recommended</span></label><p>Read-only JSON and a shields-style SVG (percent translated, fuzzy count) per project/language, extending the existing public members API. Upstream projects could embed live translation status.</p><p class="meta">Effort: medium &middot; Risk: low-medium &middot; Buy-in: API shape. Deliberately read-only, no auth, no write API.</p></div>
+<div class="card"><label><input type="checkbox" data-t="B7. Glossary-conflict warning in the editor"> Glossary-conflict warning</label><p>Warn while typing when a translation conflicts with how the project glossary renders a term. The inconsistency data already exists on glossary pages; this surfaces it at the moment of translation.</p><p class="meta">Effort: medium &middot; Risk: medium &middot; Buy-in: behavior. Deliberately a warning, never a block.</p></div>
+<div class="card"><label><input type="checkbox" data-t="B8. Extra validation checks (punctuation, trailing space, URL parity)"> More validation checks</label><p>Extend the existing placeholder/newline validation: punctuation parity, leading/trailing space, URL and email parity. Per-project toggles.</p><p class="meta">Effort: medium &middot; Risk: low &middot; Buy-in: which checks default on.</p></div>
+<div class="card"><label><input type="checkbox" data-t="B9. Review queue: all unreviewed AI drafts in one view"> Review queue</label><p>One queue across a project listing unreviewed AI drafts and fuzzy entries, so people review instead of retyping. Matches the project's stated goal of letting contributors focus on reviewing.</p><p class="meta">Effort: medium &middot; Risk: medium &middot; Buy-in: UX design.</p></div>
+<div class="card"><label><input type="checkbox" data-t="B10. XLIFF import/export"> XLIFF import/export</label><p>Interoperability with CAT tools. Big, and only worth it if Herpiko wants that audience.</p><p class="meta">Effort: large &middot; Risk: medium-high &middot; Buy-in: definitely. Deliberately parked unless he asks.</p></div>
+
+<h2>C. Achievements-adjacent</h2>
+<div class="card"><label><input type="checkbox" data-t="C11. Badge for reviewing AI drafts"> "AI-draft reviewer" badge <span class="rec">recommended</span></label><p>Reward clearing machine-translated drafts (the orange bot markers). Nudges the exact behavior the project wants: human review of AI output.</p><p class="meta">Effort: small-medium &middot; Risk: low &middot; Buy-in: badge design.</p></div>
+<div class="card"><label><input type="checkbox" data-t="C12. Project milestones (100% language, N landed strings)"> Project milestone moments</label><p>Celebrate collective wins on the project page: a language reaching 100%, N strings accepted upstream. Complements the personal badges.</p><p class="meta">Effort: medium &middot; Risk: medium &middot; Buy-in: feature.</p></div>
+
+<h2>D. UX and accessibility</h2>
+<div class="card"><label><input type="checkbox" data-t="D13. Accessibility pass (ARIA, focus after htmx swaps, skip link, contrast)"> Accessibility pass</label><p>ARIA roles are sparse; add a skip link, dialog focus handling, focus placement after htmx swaps, contrast check. Incremental fixes.</p><p class="meta">Effort: medium &middot; Risk: low &middot; Buy-in: mostly not needed.</p></div>
+<div class="card"><label><input type="checkbox" data-t="D14. Dark theme"> Dark theme</label><p>CSS variables are already in place; add prefers-color-scheme plus a manual toggle.</p><p class="meta">Effort: medium &middot; Risk: low-medium &middot; Buy-in: design.</p></div>
+<div class="card"><label><input type="checkbox" data-t="D15. Mobile editor layout"> Mobile editor pass</label><p>Breakpoints exist, but the two-pane desktop-style editor is the core screen; make it genuinely usable on phones.</p><p class="meta">Effort: medium &middot; Risk: medium &middot; Buy-in: design.</p></div>
+
+<h2>E. Interface languages and docs</h2>
+<div class="card"><label><input type="checkbox" data-t="E16. Third UI language, dogfooded"> Third UI language</label><p>The i18n maps are test-enforced; adding e.g. Javanese or Sundanese is straightforward and could be translated using Pelokalan itself.</p><p class="meta">Effort: small-medium &middot; Risk: low &middot; Buy-in: which language.</p></div>
+<div class="card"><label><input type="checkbox" data-t="E17. Plural rules cross-checked against CLDR"> Plural rules vs CLDR</label><p>The app has its own plural-expression parser; cross-check its language table against CLDR data.</p><p class="meta">Effort: small &middot; Risk: low &middot; Buy-in: not needed.</p></div>
+<div class="card"><label><input type="checkbox" data-t="E18. README screenshot tour + Indonesian README"> README tour</label><p>Screenshots/GIFs of the editor and badge pages, plus an Indonesian README.</p><p class="meta">Effort: small &middot; Risk: low &middot; Buy-in: not needed.</p></div>
+<div class="card"><label><input type="checkbox" data-t="E19. docker-compose for one-command dev stack"> docker-compose dev stack</label><p>App + PostgreSQL in one command. <code>make prep</code> already does the database part; this completes it.</p><p class="meta">Effort: small &middot; Risk: low &middot; Buy-in: not needed.</p></div>
+
+<h2>Deliberately not proposed</h2>
+<ul>
+<li>Security headers or a CSP: already in place (nosniff, frame denial, referrer policy, sandboxed user content).</li>
+<li>Interface i18n framework fixes: the two-map system is already enforced by tests.</li>
+<li>A hosted/managed Pelokalan service, and any rewrite of the stack.</li>
+</ul>
+
+<h2>Your notes</h2>
+<p><textarea id="n" placeholder="Anything to add, combine, or rule out..."></textarea></p>
+
+<h2>Reply to me</h2>
+<button id="b">Copy my review as text</button>
+<p><textarea id="o" readonly></textarea></p>
+<p><small>Ticks are stored only in this browser (localStorage); the page sends nothing anywhere. Prepared 24 Nov 2026 from a source read; effort and risk are rough estimates. Public page, no personal data.</small></p>
+<script>
+var k='pelokalan-ideas-review-v1',s=JSON.parse(localStorage.getItem(k)||'{}');
+document.querySelectorAll('input[data-t]').forEach(function(i){i.checked=!!s[i.dataset.t];
+i.onchange=function(){s[i.dataset.t]=i.checked;localStorage.setItem(k,JSON.stringify(s));r()}});
+document.getElementById('n').oninput=r;
+function r(){var a=[].filter.call(document.querySelectorAll('input[data-t]'),function(i){return i.checked}).map(function(i){return '- '+i.dataset.t});
+var n=document.getElementById('n').value.trim();
+var t='My pelokalan contribution picks:\n'+(a.length?a.join('\n'):'- (nothing ticked)');
+if(n)t+='\nNotes: '+n;
+document.getElementById('o').value=t}
+document.getElementById('b').onclick=function(){var t=document.getElementById('o');t.select();
+(navigator.clipboard?navigator.clipboard.writeText(t.value):Promise.reject()).catch(function(){document.execCommand('copy')})};
+r();
+</script></body></html>
