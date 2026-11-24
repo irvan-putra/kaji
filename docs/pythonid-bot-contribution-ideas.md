@@ -16,14 +16,12 @@ monitor-only AI spam classifier. Python 3.11+, aiogram 3, SQLModel, MIT licensed
 The repo is private at the moment, so both the review page and this note stay
 high-level and quote no internals.
 
-State verified locally at commit `8b2c65c` (24 Nov 2026): `uv sync --dev` clean,
-1,390 tests pass, ruff clean, mypy clean (92 files), 97% line coverage overall
-with five service modules between 70% and 95%.
+The state was checked against the current source on 24 Nov 2026; specifics stay
+out of this note because the repo is private.
 
 The review page lists 9 candidate contributions in three groups plus one
 attribution decision, each with effort, risk and whether Rezha's buy-in is needed
 first. It is an options page, not a plan: nothing is pushed to the repo until
-Irvan approves each exact change. Rezha is OK with AI-assisted contributions
-(Irvan, 24 Nov). Attribution wording is settled (Irvan, 24 Nov): follow each
-project's own contribution rules - for this repo that means its own norms apply
-to commit/PR wording, and nothing states or implies human authorship.
+Irvan approves each exact change. Attribution wording is settled (Irvan, 24 Nov):
+follow each project's own contribution rules - for this repo that means its own
+norms apply to commit/PR wording, and nothing states or implies human authorship.

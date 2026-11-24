@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate site/index.html, site/apk/index.html and site/web/index.html from gallery/*.json.
 Run from the repo root: python3 tools/build_gallery.py"""
-import html, json, pathlib
+import html, json, pathlib, re
 root = pathlib.Path(__file__).resolve().parent.parent
 e = lambda s: html.escape(str(s), quote=True)
 CSS = """:root{color-scheme:light dark;--bg:#fafaf7;--fg:#1d1d1b;--mu:#605f58;--card:#fff;--ln:#dcdad0;--ac:#0b6b4f}
@@ -17,7 +17,8 @@ p.lead{color:var(--mu);margin:.3em 0 1em}a{color:var(--ac)}nav a{margin-right:14
 .btn{display:inline-block;padding:7px 12px;border-radius:8px;border:1px solid var(--ac);text-decoration:none;font-size:.92rem;margin:4px 6px 0 0}
 .btn.main{background:var(--ac);color:var(--bg)}code{font-size:.72rem;word-break:break-all;color:var(--mu)}
 [hidden]{display:none!important}.app-picker{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:8px;margin:12px 0 20px}.app-filter{font:inherit;font-size:.75rem;line-height:1.25;min-height:92px;padding:8px 3px;background:var(--card);color:var(--fg);border:1px solid var(--ln);border-radius:12px;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;overflow-wrap:anywhere}.app-filter img,.app-filter .ph{width:44px;height:44px;border-radius:10px}.app-filter[aria-pressed=true],.filter-toolbar .btn[aria-pressed=true]{border:2px solid var(--ac);background:color-mix(in srgb,var(--ac) 9%,var(--card))}.app-filter:focus-visible{outline:3px solid var(--ac);outline-offset:2px}.filter-toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.filter-toolbar p{margin:0;color:var(--mu);font-size:.85rem}.filter-toolbar .btn{font:inherit;cursor:pointer;background:var(--card);color:var(--ac)}
-footer{margin-top:2.4em;color:var(--mu);font-size:.85rem}"""
+footer{margin-top:2.4em;color:var(--mu);font-size:.85rem}
+ul.index{padding-left:1.2em}ul.index li{margin:5px 0}"""
 def page(title, lead, body, base):
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title><style>{CSS}</style></head><body><main>
@@ -70,9 +71,27 @@ def web():
             out += f'<div class="card"><div class="top"><img src="{e(w["icon"])}" alt="{e(w["icon_note"])}" width="64" height="64"><div><h3>{e(w["name"])}</h3><div class="tag">{e(w["tag"])}</div></div></div><p>{e(w["about"])}</p><div>{b}</div></div>'
         out += "</div>"
     return page("kaji web examples", f'Pages, demos and examples made with Instinct (an AI assistant). Links checked {e(d["checked"])} by Instinct (an AI assistant). Proposals and simulations are labeled as such. Numbered app icons identify the linked Android build, not a web version. Web-only projects use category symbols where no project icon exists.', out, "../")
+def notes():
+    out = []
+    for f in sorted((root/"site").rglob("index.html")):
+        rel = f.relative_to(root/"site")
+        if len(rel.parts) == 1 or rel.parts[0] in ("apk", "web", "assets"):
+            continue
+        m = re.search(r"<title>(.*?)</title>", f.read_text(), re.S)
+        if not m: continue
+        t = re.sub(r"\s*\|\s*[Kk]aji\s*$", "", html.unescape(m.group(1))).strip()
+        out.append((t, str(rel.parent) + "/"))
+    out.sort(key=lambda x: x[0].lower())
+    return "".join(f'<li><a href="{e(u)}">{e(t)}</a></li>' for t, u in out)
 def home():
     body = "<div class='grid'><div class='card'><h3>Apps</h3><p>APK downloads, icons and status for every Android app.</p><div>" + btn("Open", "apk/", True) + "</div></div><div class='card'><h3>Web examples</h3><p>Animate, the cook recipe boxes, Indomie, charts and concept pages.</p><div>" + btn("Open", "web/", True) + "</div></div><div class='card'><h3>Research notes</h3><p>Cross-project notes in the repository.</p><div>" + btn("Read", "https://github.com/irvan-putra/kaji#notes") + "</div></div></div>"
-    return page("kaji", "Research notes, apps and examples from building personal software.", body, "./")
+    body += '<h2>Notes and pages</h2><ul class="index">' + notes() + "</ul>"
+    body += ('<h2>Examples</h2><ul class="index">'
+             '<li><a href="indomie/">Indomie Mi Goreng: the customizable recipe box</a></li>'
+             '<li><a href="cook/">Kaji cook: customizable recipe boxes</a></li>'
+             '<li><a href="economics-synthetic/">Cash and time: synthetic break-even charts</a></li>'
+             '<li><a href="tumbuh/">Tumbuh&#39;s first page (draft)</a></li></ul>')
+    return page("kaji", "Research notes, apps and examples from building personal software. Every note and page is indexed below.", body, "./")
 for p, h in (("site/index.html", home()), ("site/apk/index.html", apps()), ("site/web/index.html", web())):
     f = root/p; f.parent.mkdir(parents=True, exist_ok=True); f.write_text(h)
 print("ok")
