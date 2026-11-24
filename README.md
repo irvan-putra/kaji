@@ -20,6 +20,8 @@ This repo also includes illustrations alongside the Android-update, application-
 
 ## Notes
 
+- [Five conflict modes: the Thomas-Kilmann model, explained](https://vanipy.com/kaji/conflict-modes/) - the five modes on assertiveness and cooperativeness, with the questionnaire itself left out (commercial) and the when-to-use hints in Sanggup labeled as our own teaching judgment. [Source note](docs/conflict-modes.md).
+
 - [import zerotrust: an IDSW talk, checked](https://vanipy.com/kaji/zero-trust/) - five slide CVEs checked against primary advisories (one identifier mismatch, score-version caveats), the FBI ARTEX FLASH verified, and OpenZiti's network/host/application deployment models with their trust boundaries. [Source note](docs/idsw-zero-trust-talk.md).
 - [Is AI safe? Yes, but: an IDSW keynote, checked](https://vanipy.com/kaji/ai-safety/) - the day-two keynote's references verified (shortcut learning, adversarial examples from pixels to stop signs to sentences, the COMPAS investigation) and its Indonesia-context charts kept to their survey year and population; illustrative numbers and the speaker's framings labeled as such. [Source note](docs/idsw-ai-safety-keynote.md).
 - [from air to packets and back: an IDSW talk, checked](https://vanipy.com/kaji/voice-packets/) - a talk's six-stage voice pipeline explained with an original diagram and every number verified: G.711 at 64 kbit/s, 160-byte payloads in 20 ms packets, 172 bytes with the RTP header, 200 as a minimal IPv4 packet, and why the example is illustrative rather than universal. [Source note](docs/idsw-voice-talk.md).
