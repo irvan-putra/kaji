@@ -121,6 +121,8 @@ Project-specific research that only makes sense inside its own project stays in 
 
 - [mobile-agent-testers](https://vanipy.com/kaji/mobile-agent-testers/) - 20 AI testers on 20 phones via GitHub Actions, the author's own results, and how it could test our Android apps. Read from public sources, not run.
 
+- [e2e](https://vanipy.com/kaji/e2e/) - open-source test framework (web, iOS, Android) with optional agent steps and cache replay; how it pairs with mobile-agent-testers. Read from public sources, not run.
+
 - [PI-Desktop](https://vanipy.com/kaji/pi-desktop/) - desktop workspace for coding agents with plugins and any-model support; version mismatch noted, not run.
 
 ## AI product insights
