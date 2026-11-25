@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>startup-class/setup: a 2013 EC2 setup script, read | kaji</title><style>*{box-sizing:border-box}body{overflow-wrap:anywhere;margin:0;background:#f4f1eb;color:#202b29;font:17px/1.65 system-ui,sans-serif}main{max-width:1150px;margin:auto;padding:44px 32px 100px}nav{font-size:14px;margin-bottom:35px}a{color:#156c60;overflow-wrap:anywhere}h1{font:600 clamp(32px,5vw,56px)/1.12 Georgia,serif;max-width:900px;margin:0 0 30px}h2{font:500 30px/1.25 Georgia,serif;margin:65px 0 25px}p{max-width:950px}img{display:block;width:100%;border-radius:16px;margin:30px 0}table{table-layout:fixed;border-collapse:collapse;width:100%;font-size:15px;background:#fffdf8}th,td{overflow-wrap:anywhere;min-width:0;text-align:left;vertical-align:top;padding:18px;border-bottom:1px solid #d9dfda}th{background:#dfece6;font-size:13px;text-transform:uppercase;letter-spacing:.04em}ul{padding-left:24px}li{margin:8px 0}footer{border-top:1px solid #bbc8c0;margin-top:50px;padding-top:20px;font-size:14px}@media(max-width:650px){main{padding:26px 18px 70px}body{font-size:16px}h2{font-size:28px;margin-top:48px}table,tbody,tr,td{display:block;width:100%!important}thead{display:none}table{background:transparent}tr{background:#fffdf8;border:1px solid #d9dfda;border-radius:12px;margin:0 0 18px;padding:8px 16px}td{border:0;padding:10px 0;font-size:15px}td:before{content:attr(data-label);display:block;color:#597269;font:600 11px/1.5 system-ui;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}td:first-child{font-size:21px}img{border-radius:10px}}code{font-size:.9em}h3{font-size:21px;margin-top:36px}img{max-width:800px}.callout{padding:22px;background:#e1ece6;border-radius:14px} .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{padding:22px;border:1px solid #d9dfda;background:#fffdf8;border-radius:14px;min-width:0}.card h3{font-size:23px;margin:0 0 12px}code{overflow-wrap:anywhere;white-space:normal}@media(max-width:700px){.cards{grid-template-columns:1fr}}pre{overflow-x:auto;background:#fffdf8;border:1px solid #d9dfda;padding:12px;border-radius:10px}</style><main><nav><a href="../">Kaji</a> / Research · 25 Nov 2026</nav><h1>startup-class/setup: a 2013 EC2 setup script, read</h1>
+<p>A small repo from the Startup Engineering MOOC that turns a fresh EC2 Ubuntu box into a working dev machine with one script. Read on 25 November 2026, not run.</p>
+<p>Source: <a href="https://github.com/startup-class/setup">startup-class/setup</a> ("AWS EC2 setup files for Startup Engineering MOOC", created 1 July 2013, shell; 294 stars and 1,224 forks when checked). Two files only, <code>README.md</code> and <code>setup.sh</code>. No license file is in the tree, so we read it for ideas and copy nothing.</p>
+<h2>How it is meant to be used</h2>
+<pre><code>cd $HOME
+sudo apt-get install -y git-core
+git clone https://github.com/startup-class/setup.git
+./setup/setup.sh</code></pre>
+<p>The README targets Ubuntu 12.04.2 LTS on EC2 and points to the companion <a href="https://github.com/startup-class/dotfiles">dotfiles</a> repo.</p>
+<h2>What setup.sh does, in order</h2>
+<table><thead><tr><th>Step</th><th>What it does</th></tr></thead><tbody>
+<tr><td data-label="Step">Basics</td><td data-label="What it does">Installs git and curl with apt.</td></tr>
+<tr><td data-label="Step">Node</td><td data-label="What it does">Installs nvm with a curl-to-sh line, then installs and selects Node v0.10.12.</td></tr>
+<tr><td data-label="Step">JS tooling</td><td data-label="What it does">Installs jshint globally with npm, and rlwrap for a nicer node REPL.</td></tr>
+<tr><td data-label="Step">Editor</td><td data-label="What it does">Adds a PPA, then installs emacs24 (terminal-only build).</td></tr>
+<tr><td data-label="Step">Deploy tool</td><td data-label="What it does">Installs the Heroku toolbelt with wget piped to sh.</td></tr>
+<tr><td data-label="Step">Dotfiles</td><td data-label="What it does">Clones the dotfiles repo, moves any existing dotfiles and .emacs.d aside, then symlinks .screenrc, .bash_profile, .bashrc, .bashrc_custom and .emacs.d into the home folder.</td></tr></tbody></table>
+<p>The idea worth keeping: tools and personal config come back from one repo and one command, so a throwaway cloud box is cheap to lose.</p>
+<h2>What has aged (observed in the file, not tested)</h2><ul>
+<li>It targets one Ubuntu release from 2013 and Node 0.10.12, both far behind today's versions.</li>
+<li>The nvm install uses a raw.github.com address and an old project path. The Heroku toolbelt and the emacs PPA are third-party sources that may no longer exist.</li>
+<li>Two steps pipe a downloaded script straight into a shell, with no checksum or pinned version.</li>
+<li>No <code>set -e</code>, so a failed step does not stop the script, and nothing reports which steps worked.</li>
+<li>Backups use <code>mv dotfiles dotfiles.old</code>. On a second run <code>dotfiles.old</code> already exists, so the move would behave differently. This is a reading of the code, not a run.</li></ul>
+<h2>What we take from it</h2><ul>
+<li>Keep machine setup in a script in a repo, not in memory.</li>
+<li>Keep personal config in a separate repo from the install script.</li>
+<li>Pin the versions you depend on and write down the OS the script was written for.</li>
+<li>Make the script safe to run twice, and stop on the first error.</li>
+<li>Download and read a script before running it, instead of piping it into a shell.</li></ul>
+<h2>Practice in Sanggup</h2><ul><li><a href="https://vanipy.com/sanggup/#coding/cd33">Coding: write a repeatable setup for a new machine</a></li></ul>
+<h2>Sources and scope</h2><ul><li><a href="https://github.com/startup-class/setup">startup-class/setup</a></li><li><a href="https://raw.githubusercontent.com/startup-class/setup/master/setup.sh">setup.sh (raw)</a></li><li><a href="https://github.com/startup-class/dotfiles">startup-class/dotfiles</a></li></ul><p>Checked 25 November 2026. Public pages only. Nothing was executed.</p><footer><a href="../">Back to Kaji</a> · Public sources only.</footer></main><p class="ai-disclosure" style="font:12px/1.5 system-ui,sans-serif;text-align:center;padding:12px 16px;margin:20px auto;max-width:70ch">Built with AI assistance (Instinct and others). Not everything has been reviewed by Irvan.</p>
+</html>
