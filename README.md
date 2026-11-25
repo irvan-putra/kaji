@@ -119,6 +119,10 @@ Project-specific research that only makes sense inside its own project stays in 
 
 - [Models so far](https://vanipy.com/kaji/models/) - six model references, named download sizes, license caveats and runtime limits.
 
+- [mobile-agent-testers](https://vanipy.com/kaji/mobile-agent-testers/) - 20 AI testers on 20 phones via GitHub Actions, the author's own results, and how it could test our Android apps. Read from public sources, not run.
+
+- [PI-Desktop](https://vanipy.com/kaji/pi-desktop/) - desktop workspace for coding agents with plugins and any-model support; version mismatch noted, not run.
+
 ## AI product insights
 
 [41 public product-feedback summaries](https://vanipy.com/kaji/ai-product-insights/) with [sanitized Markdown notes](docs/ai-product-insights.md). Requests and observations, not a roadmap; personal details and private tracking links excluded.
