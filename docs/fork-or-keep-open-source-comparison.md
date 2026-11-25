@@ -66,7 +66,7 @@ kunjung, suaka, pustaka, kaji, kaca, gotong, mimpi, anyam, jejak, naga, kaidah, 
 
 ## Legacy forks and pre-2026 sites (19, not examined)
 
-awx, bitstarter, setup, hello-lambda-jakarta, hackathon, typing, org-ruby, pyconapac2024-teaser, minima, devguide, vault-cli, PL101ProjectTemplate, adaptechid, myschoolcampid, old-visi-web, haskell-intro, vnproject.id, irvan-putra, irvan-putra.github.io. Old forks and sites, left as they are; no archiving suggested.
+awx, bitstarter, setup, hello-lambda-jakarta, hackathon, typing, org-ruby, pyconapac2024-teaser, minima, devguide, vault-cli, PL101ProjectTemplate, adaptechid, myschoolcampid, haskell-intro, vnproject.id, irvan-putra, irvan-putra.github.io. Old forks and sites, left as they are; no archiving suggested.
 
 ## Read me first
 
