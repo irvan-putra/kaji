@@ -64,9 +64,9 @@ unggun is the Obtainium fork, animate is a fork with an upstream PR open, encore
 
 kunjung, suaka, pustaka, kaji, kaca, gotong, mimpi, anyam, jejak, naga, kaidah, irvan, tapak, tangkai, onda, aiq, paper2repo, sapi, pythonid-10-2026. These are notes, demos, proposals and presentation pages rather than reusable wheels, so no upstream comparison applies to them.
 
-## Legacy forks and pre-2026 sites (19, not examined)
+## Legacy forks and pre-2026 sites (7, not examined)
 
-awx, bitstarter, setup, hello-lambda-jakarta, hackathon, typing, org-ruby, pyconapac2024-teaser, minima, devguide, vault-cli, PL101ProjectTemplate, adaptechid, myschoolcampid, haskell-intro, vnproject.id, irvan-putra, irvan-putra.github.io. Old forks and sites, left as they are; no archiving suggested.
+bitstarter, PL101ProjectTemplate, adaptechid, haskell-intro, vnproject.id, irvan-putra, irvan-putra.github.io. Old forks and sites, left as they are; no archiving suggested.
 
 ## Read me first
 
