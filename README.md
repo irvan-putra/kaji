@@ -20,6 +20,8 @@ This repo also includes illustrations alongside the Android-update, application-
 
 ## Notes
 
+- [So Good They Can't Ignore You: a 2015 reading note](https://vanipy.com/kaji/so-good/) - Irvan's own note on Cal Newport's book (rules: don't follow your passion, career capital, turn down a promotion, think small act big), written in 2015 for his old site and moved here unchanged except for layout. [Source note](docs/so-good-they-cant-ignore-you.md).
+
 - [Five conflict modes: the Thomas-Kilmann model, explained](https://vanipy.com/kaji/conflict-modes/) - the five modes on assertiveness and cooperativeness, with the questionnaire itself left out (commercial) and the when-to-use hints in Sanggup labeled as our own teaching judgment. [Source note](docs/conflict-modes.md).
 - [startup-class/setup: a 2013 EC2 setup script, read](https://vanipy.com/kaji/startup-class-setup/) - what the Startup Engineering MOOC's two-file setup repo installs and in what order, which parts have aged (2013 Ubuntu and Node, curl-to-sh installs, no error stop, no license file so nothing copied), and the reusable habits; read only, not run. [Source note](docs/startup-class-setup.md)
 - [DARVO: deny, attack, reverse victim and offender, explained](https://vanipy.com/kaji/darvo/) - Freyd's 1997 pattern of responses to being held accountable, with the prevalence and awareness findings labeled to the studies Wikipedia cites, and Sanggup's counter labeled as our own teaching judgment. [Source note](docs/darvo.md).
