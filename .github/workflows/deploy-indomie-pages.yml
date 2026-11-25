@@ -100,6 +100,41 @@ jobs:
           PYCODE
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/github-script@v8
+        env:
+          PAGES_ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
         with:
-          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+          script: |
+            // Use the upload's verified ID, avoiding a second artifact-service lookup.
+            const artifactId = Number(process.env.PAGES_ARTIFACT_ID);
+            if (!Number.isSafeInteger(artifactId) || artifactId <= 0) {
+              throw new Error('Missing or invalid uploaded Pages artifact ID');
+            }
+            const idToken = await core.getIDToken();
+            const {data: deployment} = await github.request(
+              'POST /repos/{owner}/{repo}/pages/deployments', {
+                ...context.repo,
+                artifact_id: artifactId,
+                pages_build_version: context.sha,
+                oidc_token: idToken
+              });
+            const deploymentId = deployment.id || deployment.status_url.split('/').pop();
+            const terminal = new Set([
+              'deployment_failed', 'deployment_perms_error', 'deployment_content_failed',
+              'deployment_cancelled', 'deployment_lost'
+            ]);
+            for (let attempt = 0; attempt < 120; attempt++) {
+              const {data: state} = await github.request(
+                'GET /repos/{owner}/{repo}/pages/deployments/{deployment_id}', {
+                  ...context.repo, deployment_id: deploymentId
+                });
+              core.info(`Pages deployment status: ${state.status}`);
+              if (state.status === 'succeed') return;
+              if (terminal.has(state.status)) throw new Error(`Pages: ${state.status}`);
+              await new Promise(resolve => setTimeout(resolve, 5000));
+            }
+            await github.request(
+              'POST /repos/{owner}/{repo}/pages/deployments/{deployment_id}/cancel', {
+                ...context.repo, deployment_id: deploymentId
+              });
+            throw new Error('Pages deployment timed out after 10 minutes');
