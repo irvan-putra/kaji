@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PythonID-bot: recent cleanup in four views</title><style>
+body{font:16px/1.6 system-ui,sans-serif;margin:0;background:#fafaf7;color:#1b1b1b}main{max-width:900px;margin:auto;padding:20px}h1{font-size:1.65rem;line-height:1.2}h2{font-size:1.25rem;margin-top:2rem}h3{font-size:1.1rem}a{color:#0b6b4f}figure{margin:20px 0;padding:16px;background:white;border:1px solid #ddd;border-radius:10px;text-align:center}img{display:block;max-width:100%;height:auto;margin:auto;max-height:none}figure:nth-of-type(-n+3) img{width:auto;max-width:100%}figcaption{color:#555;font-size:.85rem;margin-top:12px}code{overflow-wrap:anywhere;font-size:.9em}.note{padding:12px;background:#fff7dd;border:1px solid #e6d28a;border-radius:8px}.ai-disclosure{font-size:12px;color:#555;text-align:center;margin:30px 0}li{margin:8px 0}
+</style></head><body><main><nav><a href="../../">Kaji</a> / <a href="../review/">Contribution ideas</a></nav><p class="note">Diagram trial, 25 Nov 2026. PR #60 is proposed, not deployed or merged. The source repository is currently private. These are static renders of the approved Mermaid diagrams, viewable here without a GitHub account.</p><h1>Recent cleanup: four levels of detail</h1>
+<p>Architecture notes for PR #60, based on head <code>a08f6f6</code>. These diagrams describe
+the proposed code, not a deployed feature. In levels 1-3, teal boxes identify new or
+changed parts; other boxes provide existing context. Arrows name interactions,
+not deployment boundaries. C4 containers mean applications or data stores,
+not necessarily Docker containers.</p>
+<h2>1. System context: who uses it?</h2>
+<p>Members post through Telegram. An admin receives a moderation alert and chooses
+an action. The new action mutes a member and removes only recent messages the
+bot has tracked. The separate existing ban still removes all that user's messages.</p>
+<figure><a href="c4-1.png"><img src="c4-1.png" alt="C4 level 1 diagram: open full-size image for detail"></a><figcaption>Level 1. Tap the diagram to open its full-size rendered image.</figcaption></figure>
+
+<p>The member stays in the group and can read it. This is not a ban and cannot
+retrieve messages from old group history.</p>
+<h2>2. Containers: what runs and what is stored?</h2>
+<p>One existing Python application handles updates, moderation and scheduled work.
+The PR adds a metadata table to its existing SQLite database, not a new service.</p>
+<figure><a href="c4-2.png"><img src="c4-2.png" alt="C4 level 2 diagram: open full-size image for detail"></a><figcaption>Level 2. Tap the diagram to open its full-size rendered image.</figcaption></figure>
+
+<p>Only group ID, message ID, sender ID and original sent-at timestamp are stored.
+<code>recent_cleanup_hours</code> is opt-in, from 1 to 24 hours. An hourly job prunes rows
+older than 24 hours. This is a rolling retention target, not deletion at the exact
+24-hour instant; pruning depends on the scheduler running.</p>
+<h2>3. Components: where does the change fit?</h2>
+<p>Observation happens before moderation filters, including handlers that stop
+later processing. The alert's existing group-admin check remains the entry gate
+for the new action.</p>
+<figure><a href="c4-3.png"><img src="c4-3.png" alt="C4 level 3 diagram: open full-size image for detail"></a><figcaption>Level 3. Tap the diagram to open its full-size rendered image.</figcaption></figure>
+
+<p>The job node summarizes the call through <code>prune_recent_index()</code> to the database
+service. Classification is omitted here because it does not change.</p>
+<h2>4. Code: the metadata contract</h2>
+<p>This level focuses on the new index, where boundaries matter most: group,
+sender, message identity and original date. Runtime order is described next,
+rather than presenting a sequence diagram as a C4 code diagram.
+Observer and Cleanup are function groups in <code>recent_cleanup.py</code>, not new Python
+classes; the other three boxes name actual classes.</p>
+<figure><a href="c4-4.png"><img src="c4-4.png" alt="C4 level 4 diagram: open full-size image for detail"></a><figcaption>Level 4. Tap the diagram to open its full-size rendered image.</figcaption></figure>
+
+<p>The primary key is <code>(group_id, message_id)</code>. Duplicate updates and edits do not
+replace the original sender or timestamp. Queries filter by group, sender and
+inclusive original sent-at window. Anonymous/on-behalf-of-chat messages and bot
+senders are excluded.</p>
+<h3>Action order and failure limits</h3>
+<ol>
+<li>Existing alert callback checks the caller is an admin of that group.</li>
+<li>New handler rechecks opt-in, takes the group/member lock and checks its
+   in-memory completed-alert set.</li>
+<li>Telegram checks establish that this is a supergroup and the target is an
+   active non-admin, non-bot member. The code selects tracked IDs in the window.</li>
+<li>Mute first. If setup or mute fails, delete nothing and report the failure.</li>
+<li>Delete selected IDs in batches of at most 100, with a one-second gap. Allow
+   one retry for a flood wait of at most 30 seconds. Stop cleanup after an hour.</li>
+<li>Report tracked and unconfirmed IDs, not a claimed count of actual deletions.
+   Telegram skips IDs that are already missing.</li>
+</ol>
+<p>No historical backfill or durable cleanup queue is added. A restart can leave
+partial cleanup and the mute in place. Coverage can be incomplete after downtime
+or when tracking has just been enabled. Existing profile/captcha/admin
+unrestriction flows can later lift the mute; this is not a separate permanent
+moderation hold. The existing full-history ban action is unchanged.</p>
+<h2>References</h2>
+<ul>
+<li><a href="https://c4model.com/diagrams">C4 diagram levels</a></li>
+<li><a href="https://c4model.com/diagrams/system-context">System context</a></li>
+<li><a href="https://c4model.com/diagrams/container">Containers</a></li>
+<li><a href="https://c4model.com/diagrams/component">Components</a></li>
+<li><a href="https://c4model.com/diagrams/code">Code</a></li>
+<li><a href="https://core.telegram.org/bots/api#message">Telegram message fields</a></li>
+<li><a href="https://core.telegram.org/bots/api#banchatmember">Telegram ban behavior</a></li>
+<li><a href="https://core.telegram.org/bots/api#deletemessages">Telegram deletion limits</a></li>
+</ul><p class="ai-disclosure">Built with AI assistance (Instinct and others). Not everything has been reviewed by Irvan.</p></main></body></html>
