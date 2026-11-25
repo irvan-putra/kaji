@@ -60,3 +60,7 @@ The post's images are the author's and are linked, not copied. The author notes 
 ## Sources
 
 - https://greydanus.github.io/2026/11/12/pengpt/
+
+## In-browser demo
+
+https://vanipy.com/kaji/pengpt/demo/ hosts the author's browser demo: the 41.7 KB app file copied unmodified (plus an attribution comment; Apache-2.0) and a byte-identical copy of pengpt.npz (81,528,834 bytes, sha256 d678fc79c86344f17cfa1419e3ec76ee151dfd7f153026188ec445d101bfd288). The npz is committed in the repo (under GitHub's 100 MB file limit) because GitHub release assets send no CORS headers, so a browser page cannot fetch them cross-origin; the kaji release pengpt-demo-2026-11-25 keeps a second mirror. The demo loads the file with HTTP range requests, so handwriting pulls only about 6 MB and drawing pulls the rest on demand. The start card states the sizes before any download. The author's README describes the weights as open; no separate weights license file ships with the project.
