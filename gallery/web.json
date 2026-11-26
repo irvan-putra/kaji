@@ -6,13 +6,13 @@
       "items": [
         {
           "name": "tuju",
-          "tag": "Mall Kelapa Gading routes merged into the main map",
+          "tag": "Mall Kelapa Gading: get off at Kayu Putih Rawasari",
           "about": "Published 26 Nov. Mall Kelapa Gading to home on the combined map and offline route notes: 12P then corridor 10 toward PGC to Pemuda Pramuka (main), or JAK.61 / JAK.59 then the 4. The mall is a TransJakarta stop served by 12P and four JAK feeders. Times are operator GTFS (26 Nov 2026), scheduled only; fares, gates, crossings and walks are unverified. Physical phone and real GPS unverified.",
           "url": "https://vanipy.com/tuju/",
-          "source": "https://github.com/irvan-putra/tuju/commit/be7cc9c9da8a282ab75c156f5d0e2e0130c3d9e2",
-          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.27",
-          "icon": "../apk/icons/tuju0227.png",
-          "icon_note": "Packaged Android 0.2.27 icon. Physical phone and real GPS unverified."
+          "source": "https://github.com/irvan-putra/tuju/commit/be37d75f459d274666bebd540731f4c5c52bee5b",
+          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.28",
+          "icon": "../apk/icons/tuju0228.png",
+          "icon_note": "Packaged Android 0.2.28 icon. Physical phone and real GPS unverified."
         },
         {
           "name": "tangkai",
