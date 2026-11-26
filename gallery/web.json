@@ -6,13 +6,13 @@
       "items": [
         {
           "name": "tuju",
-          "tag": "Mall Kelapa Gading to home routes",
-          "about": "Published 26 Nov. Adds two ways home from Mall Kelapa Gading to the combined map and offline route notes: JAK.61 to Pulo Gadung 5 then the 4, or JAK.59 to Simpang Arion then the 4, both ending at Simpang Pramuka 2 near Pramuka BPKP 2. Stops come from the operator GTFS (26 Nov 2026) with scheduled times only; the fare, gate and crossing at each change are unverified. Physical phone and real GPS unverified.",
+          "tag": "Mall Kelapa Gading to home routes, corrected",
+          "about": "Published 26 Nov. Mall Kelapa Gading to home on the combined map and offline route notes: 12P then corridor 10 toward PGC to Pemuda Pramuka (main), or JAK.61 / JAK.59 then the 4. The mall is a TransJakarta stop served by 12P and four JAK feeders. Times are operator GTFS (26 Nov 2026), scheduled only; fares, gates, crossings and walks are unverified. Physical phone and real GPS unverified.",
           "url": "https://vanipy.com/tuju/",
-          "source": "https://github.com/irvan-putra/tuju/commit/c9eb49f6356121cfdafb3ce567533eef8a1d65f6",
-          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.25",
-          "icon": "../apk/icons/tuju0225.png",
-          "icon_note": "Packaged Android 0.2.25 icon. Physical phone and real GPS unverified."
+          "source": "https://github.com/irvan-putra/tuju/commit/85c7ac2a795e7a67195ceab896d051b08dd8a921",
+          "android": "https://github.com/irvan-putra/tuju/releases/tag/v0.2.26",
+          "icon": "../apk/icons/tuju0226.png",
+          "icon_note": "Packaged Android 0.2.26 icon. Physical phone and real GPS unverified."
         },
         {
           "name": "tangkai",
