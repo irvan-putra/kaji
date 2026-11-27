@@ -148,3 +148,7 @@ code { font-family: "SF Mono", Menlo, Consolas, monospace; }
   .card .card-title td { font-size: 24px; }
   .card .card-lede td, .card .card-foot td { text-align: center; }
 }
+
+/* section copy-permalinks */
+h2 .permalink{margin-left:.55rem;padding:0 .4rem;border:1px solid transparent;border-radius:5px;background:none;color:#55604f;font:inherit;font-size:.9rem;line-height:1.4;cursor:pointer;vertical-align:middle}
+h2 .permalink:hover,h2 .permalink:focus-visible{border-color:#2e7d32;color:#2e7d32}

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mihon-style progress notification for batch update checks | kaji</title>
-<style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#0f1115;color:#e8e9ec;margin:0;line-height:1.55}main{max-width:720px;margin:0 auto;padding:2rem 1.25rem 4rem}a{color:#7db4ff;overflow-wrap:anywhere}code{background:#1c2028;padding:.05em .3em;border-radius:3px;overflow-wrap:anywhere}h1{font-size:1.6rem}h2{margin-top:2rem}h3{margin-top:1.5rem}img{max-width:100%;height:auto;border-radius:6px}figure{margin:1rem 0}figcaption{font-size:.85rem;opacity:.75}@media(prefers-color-scheme:light){body{background:#fff;color:#1a1c20}a{color:#0b5cc4}code{background:#eef0f3}}</style></head><body><main>
+<style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#0f1115;color:#e8e9ec;margin:0;line-height:1.55}main{max-width:720px;margin:0 auto;padding:2rem 1.25rem 4rem}a{color:#7db4ff;overflow-wrap:anywhere}code{background:#1c2028;padding:.05em .3em;border-radius:3px;overflow-wrap:anywhere}h1{font-size:1.6rem}h2{margin-top:2rem}h3{margin-top:1.5rem}img{max-width:100%;height:auto;border-radius:6px}figure{margin:1rem 0}figcaption{font-size:.85rem;opacity:.75}@media(prefers-color-scheme:light){body{background:#fff;color:#1a1c20}a{color:#0b5cc4}code{background:#eef0f3}}h2 .permalink{margin-left:.55rem;padding:0 .4rem;border:1px solid transparent;border-radius:5px;background:none;color:#7d8490;font:inherit;font-size:.9rem;line-height:1.4;cursor:pointer;vertical-align:middle}
+h2 .permalink:hover,h2 .permalink:focus-visible{border-color:#7db4ff;color:#7db4ff}
+</style></head><body><main>
 <h1 id="mihons-keep-alive-progress-notification-for-batch-update-checks">Mihon’s keep-alive progress notification for batch update checks</h1>
 <p>Research note, checked 23 Nov 2026 against the current Mihon source on GitHub (mihonapp/mihon, the community fork that continues Tachiyomi; the package paths still read eu.kanade.tachiyomi). Prompted by Unggun: a batch of update checks runs silently, and when several apps sit queued behind a rate limit the phone shows nothing. The request: a keep-alive notification with progress bar updates, and Mihon is the reference because its library update solves exactly this shape of problem - hundreds of metadata checks in a background worker, with the user wanting to see it moving.</p>
-<h2 id="what-mihon-actually-does">What Mihon actually does</h2>
+<h2 id="what-mihon-actually-does">What Mihon actually does<button class="permalink" type="button" data-section="what-mihon-actually-does" aria-label="Copy link to this section" title="Copy link to this section">#</button></h2>
 <p>Two files: LibraryUpdateWorker.kt and LibraryUpdateNotifier.kt in app/src/main/java/eu/kanade/tachiyomi/data/library/ (source: https://github.com/mihonapp/mihon/tree/main/app/src/main/java/eu/kanade/tachiyomi/data/library).</p>
 <ol type="1">
 <li><strong>The worker promotes itself to a foreground service.</strong> At the start of work it calls setForeground, and getForegroundInfo() returns a ForegroundInfo built from the progress notification with FOREGROUND_SERVICE_TYPE_DATA_SYNC (Android 10+). This is the keep-alive half of the trick: while the notification is attached as foreground, Android treats the process as user-visible work, so a long batch is not killed mid-run and the notification cannot be swiped away.</li>
@@ -13,7 +15,7 @@
 <li><strong>Progress is reported before and after each item.</strong> A wrapper adds the item to a “currently updating” list, posts the notification, runs the check, then removes it, increments the completed counter, and posts again. The bar therefore moves even when individual checks are slow or stalled.</li>
 <li><strong>The notification is always canceled in a finally block</strong>, so a finished, failed or canceled batch never leaves a stale ongoing notification behind.</li>
 </ol>
-<h2 id="what-transfers-to-unggun">What transfers to Unggun</h2>
+<h2 id="what-transfers-to-unggun">What transfers to Unggun<button class="permalink" type="button" data-section="what-transfers-to-unggun" aria-label="Copy link to this section" title="Copy link to this section">#</button></h2>
 <p>Unggun’s background update task has the same shape: N apps checked with bounded concurrency, errors aggregated at the end, and today only a transient “checking updates” notification that carries no progress. The 0.1.6 change (rate-limited apps queued for automatic recheck) makes the silence more visible, because a queued recheck can sit pending for up to an hour.</p>
 <p>Directly applicable:</p>
 <ul>
@@ -23,8 +25,23 @@
 <li>Cancel the notification in finally, unconditionally.</li>
 </ul>
 <p>The caveat: Unggun’s checks run through the Flutter workmanager plugin, which does not expose WorkManager’s setForeground/expedited API. The true keep-alive (foreground-service promotion, FOREGROUND_SERVICE_TYPE_DATA_SYNC) needs either native glue or accepting that the notification is informational while the worker is an ordinary background worker subject to normal quotas. The progress-notification half is achievable from Dart today with the notification stack Unggun already uses; the progress count already exists for the UI (completed/total behind refreshProgress) and would need to be forwarded to the notification layer inside the background isolate.</p>
-<h2 id="takeaway">Takeaway</h2>
+<h2 id="takeaway">Takeaway<button class="permalink" type="button" data-section="takeaway" aria-label="Copy link to this section" title="Copy link to this section">#</button></h2>
 <p>Mihon’s design is worth copying almost literally: foreground-promoted worker plus one cached, throttled, cancelable ongoing notification whose bar moves per item. For Unggun the notification half is a straightforward change; the foreground-service half is the part that needs a platform decision first.</p>
 <p>Sources: LibraryUpdateWorker.kt and LibraryUpdateNotifier.kt, mihonapp/mihon main branch, retrieved 2026-11-23.</p>
 </main><p class="ai-disclosure" style="font:12px/1.5 system-ui,sans-serif;text-align:center;padding:12px 16px;margin:20px auto;max-width:70ch">Built with AI assistance (Instinct and others). Not everything has been reviewed by Irvan.</p>
+<script>
+document.addEventListener("click", async (event) => {
+  const button = event.target.closest(".permalink");
+  if (!button) return;
+  const original = button.textContent;
+  const url = location.origin + location.pathname + "#" + button.dataset.section;
+  try {
+    await navigator.clipboard.writeText(url);
+    button.textContent = "Copied";
+  } catch {
+    button.textContent = "Copy failed";
+  }
+  window.setTimeout(() => { button.textContent = original; }, 1600);
+});
+</script>
 </body></html>

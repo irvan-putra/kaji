@@ -160,3 +160,7 @@ code { font-family: "SF Mono", Menlo, Consolas, monospace; }
 .note { border: 2px solid #8a6d1c; background: #fbf6e4; border-radius: 8px; padding: 10px 14px; margin-top: 14px; }
 .note h3 { margin: 0 0 4px; font: 700 13px/1.4 "Helvetica Neue", Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.08em; color: #8a6d1c; }
 .note p { margin: 0; }
+
+/* section copy-permalinks */
+h2 .permalink{margin-left:.55rem;padding:0 .4rem;border:1px solid transparent;border-radius:5px;background:none;color:#55604f;font:inherit;font-size:.9rem;line-height:1.4;cursor:pointer;vertical-align:middle}
+h2 .permalink:hover,h2 .permalink:focus-visible{border-color:#2e7d32;color:#2e7d32}

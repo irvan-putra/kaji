@@ -1,9 +1,11 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hamming, Levenshtein and missing letters | kaji</title><style>*{box-sizing:border-box}body{overflow-wrap:anywhere;margin:0;background:#f4f1eb;color:#202b29;font:17px/1.65 system-ui,sans-serif}main{max-width:1150px;margin:auto;padding:44px 32px 100px}nav{font-size:14px;margin-bottom:35px}a{color:#156c60;overflow-wrap:anywhere}h1{font:600 clamp(32px,5vw,56px)/1.12 Georgia,serif;max-width:900px;margin:0 0 30px}h2{font:500 30px/1.25 Georgia,serif;margin:65px 0 25px}p{max-width:950px}img{display:block;width:100%;border-radius:16px;margin:30px 0}table{table-layout:fixed;border-collapse:collapse;width:100%;font-size:15px;background:#fffdf8}th,td{overflow-wrap:anywhere;min-width:0;text-align:left;vertical-align:top;padding:18px;border-bottom:1px solid #d9dfda}th{background:#dfece6;font-size:13px;text-transform:uppercase;letter-spacing:.04em}td:first-child{font-weight:650;width:13%}td:nth-child(2){width:31%}ul{padding-left:24px}li{margin:8px 0}footer{border-top:1px solid #bbc8c0;margin-top:50px;padding-top:20px;font-size:14px}@media(max-width:650px){main{padding:26px 18px 70px}body{font-size:16px}h2{font-size:28px;margin-top:48px}table,tbody,tr,td{display:block;width:100%!important}thead{display:none}table{background:transparent}tr{background:#fffdf8;border:1px solid #d9dfda;border-radius:12px;margin:0 0 18px;padding:8px 16px}td{border:0;padding:10px 0;font-size:15px}td:before{content:attr(data-label);display:block;color:#597269;font:600 11px/1.5 system-ui;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}td:first-child{font-size:21px}img{border-radius:10px}}code{font-size:.9em}h3{font-size:21px;margin-top:36px}img{max-width:800px}td:first-child{font-weight:500}</style><main><nav><a href="../">Kaji</a> / Paper reading · 21 Nov 2026</nav><h1>Hamming, Levenshtein and the cost of a missing letter</h1>
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hamming, Levenshtein and missing letters | kaji</title><style>*{box-sizing:border-box}body{overflow-wrap:anywhere;margin:0;background:#f4f1eb;color:#202b29;font:17px/1.65 system-ui,sans-serif}main{max-width:1150px;margin:auto;padding:44px 32px 100px}nav{font-size:14px;margin-bottom:35px}a{color:#156c60;overflow-wrap:anywhere}h1{font:600 clamp(32px,5vw,56px)/1.12 Georgia,serif;max-width:900px;margin:0 0 30px}h2{font:500 30px/1.25 Georgia,serif;margin:65px 0 25px}p{max-width:950px}img{display:block;width:100%;border-radius:16px;margin:30px 0}table{table-layout:fixed;border-collapse:collapse;width:100%;font-size:15px;background:#fffdf8}th,td{overflow-wrap:anywhere;min-width:0;text-align:left;vertical-align:top;padding:18px;border-bottom:1px solid #d9dfda}th{background:#dfece6;font-size:13px;text-transform:uppercase;letter-spacing:.04em}td:first-child{font-weight:650;width:13%}td:nth-child(2){width:31%}ul{padding-left:24px}li{margin:8px 0}footer{border-top:1px solid #bbc8c0;margin-top:50px;padding-top:20px;font-size:14px}@media(max-width:650px){main{padding:26px 18px 70px}body{font-size:16px}h2{font-size:28px;margin-top:48px}table,tbody,tr,td{display:block;width:100%!important}thead{display:none}table{background:transparent}tr{background:#fffdf8;border:1px solid #d9dfda;border-radius:12px;margin:0 0 18px;padding:8px 16px}td{border:0;padding:10px 0;font-size:15px}td:before{content:attr(data-label);display:block;color:#597269;font:600 11px/1.5 system-ui;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}td:first-child{font-size:21px}img{border-radius:10px}}code{font-size:.9em}h3{font-size:21px;margin-top:36px}img{max-width:800px}td:first-child{font-weight:500}h2 .permalink{margin-left:.55rem;padding:0 .4rem;border:1px solid transparent;border-radius:5px;background:none;color:#7d877f;font:inherit;font-size:.9rem;line-height:1.4;cursor:pointer;vertical-align:middle}
+h2 .permalink:hover,h2 .permalink:focus-visible{border-color:#156c60;color:#156c60}
+</style><main><nav><a href="../">Kaji</a> / Paper reading · 21 Nov 2026</nav><h1>Hamming, Levenshtein and the cost of a missing letter</h1>
 <p>Reading note, 21 Nov 2026. Selected text: <strong>An Algorithmic Bridge Between Hamming and Levenshtein Distances</strong>, Elazar Goldenberg, Tomasz Kociumaka, Robert Krauthgamer and Barna Saha, arXiv:2211.12496v1, 22 Nov 2022. <a href="https://export.arxiv.org/pdf/2211.12496v1.pdf">Read the selected PDF</a>. This note reads the complete 26-page v1, including its appendix. A conference counterpart appeared at ITCS 2023; this is not a survey of advances since 2022.</p>
 <p><strong>The useful distinction:</strong> Hamming counts different characters at fixed positions. Levenshtein can also insert and delete characters, so it can realign strings. The paper studies how the cost of those operations changes algorithmic complexity. It does not propose a personal-name matching system. A short-name sorting design for Simak is discussed separately below, with synthetic examples only. The paper's advanced algorithm has not been implemented as part of this reading note.</p>
 <p><img alt="Original explanatory diagram comparing fixed positions with an edit alignment on synthetic strings" src="../assets/edit-distance-bridge.png"/></p>
 <p><em>Original explanatory illustration, computed synthetic string example, not a paper figure, app screenshot or measured name-matching result.</em></p>
-<h2>Three distances, three questions</h2>
+<h2 id="three-distances-three-questions">Three distances, three questions<button class="permalink" type="button" data-section="three-distances-three-questions" aria-label="Copy link to this section" title="Copy link to this section">#</button></h2>
 <table>
 <thead>
 <tr>
@@ -37,7 +39,7 @@
 <p>For <code>abcde</code> and <code>bcdea</code>, Hamming is <strong>5</strong>: every position differs. Unit-cost Levenshtein is <strong>2</strong>: delete the initial <code>a</code>, then insert <code>a</code> at the end. This is a sequence shift, not a special transposition operation.</p>
 <p>At <code>a = 4</code>, substituting all five characters costs <code>5/4 = 1.25</code>, less than the two-indel alignment. The weighted optimum is therefore <strong>1.25</strong>, verified with a small exact dynamic program. These toy computations are not an implementation of the paper's fast algorithms.</p>
 <p>A scaling detail matters. For sufficiently large <code>a</code> on equal-length strings, a substitution-only alignment is optimal and <code>ED_a = Hamming/a</code>. Thus <code>a × ED_a</code> equals Hamming in that regime. Unscaled <code>ED_a</code> tends to zero as substitutions become free; its numeric value does not tend to the ordinary Hamming count. At <code>a = 1</code>, ED_a is ordinary unit-cost Levenshtein.</p>
-<h2>What the paper contributes</h2>
+<h2 id="what-the-paper-contributes">What the paper contributes<button class="permalink" type="button" data-section="what-the-paper-contributes" aria-label="Copy link to this section" title="Copy link to this section">#</button></h2>
 <p>Let <code>n</code> be the total length of both strings, <code>k</code> a threshold/bound on weighted distance, and <code>epsilon</code> an approximation parameter. The stated algorithmic propositions use a positive integer a; the cost-model intuition allows a at least 1. The soft-O notation below hides polylogarithmic factors. Bounds are attributed to the selected v1, not reproduced proofs or measured performance.</p>
 <table>
 <thead>
@@ -80,7 +82,7 @@
 <p>The paper assumes constant-time random access to input characters and known string lengths. It can probe selected positions rather than read every character. It uses sampling and approximate periodicity to answer extension queries efficiently, then feeds those answers into coarser-grained alignment computations. Correctness is with high probability for the randomized results.</p>
 <p>That is different from reading names from storage, normalizing them and sorting every candidate in an application. The theorem does not make that end-to-end pipeline sublinear. A low theoretical bound also does not establish a practical speed-up for short strings: no short-name benchmark or phone battery result is presented here.</p>
 <p>The authors motivate their substitution-heavy model partly with sequence-comparison applications such as computational biology. Their chosen cost ratio is not evidence that substitutions are cheaper than insertions for human names, nor a recommendation for a specific contact-matching weight.</p>
-<h2>A separate practical proposal for Simak</h2>
+<h2 id="a-separate-practical-proposal-for-simak">A separate practical proposal for Simak<button class="permalink" type="button" data-section="a-separate-practical-proposal-for-simak" aria-label="Copy link to this section" title="Copy link to this section">#</button></h2>
 <p>This section is application design inspired by the distinction between metrics, <strong>not a result of the paper and not a release/implementation claim</strong>. Simak's implementation and qualification are tracked separately. No app code, eligibility threshold or stored contact data is changed by this note.</p>
 <p>Keep two jobs separate:</p>
 <ol>
@@ -125,7 +127,7 @@
 </tbody>
 </table>
 <p>One common illustrative normalization is <code>similarity = 1 - distance/max(length1,length2)</code>. Identical nonempty strings score 1. The both-empty case needs an explicit rule, and empty strings should not become accidental identity hints. This normalization is a design choice, <strong>not the paper's ED_a or a calibrated probability</strong>. No fixed edit/token blend weight is justified by this paper; choose one only after explicit synthetic acceptance cases and, if authorized, suitable evaluation data.</p>
-<h2>Synthetic examples: why tiers matter</h2>
+<h2 id="synthetic-examples-why-tiers-matter">Synthetic examples: why tiers matter<button class="permalink" type="button" data-section="synthetic-examples-why-tiers-matter" aria-label="Copy link to this section" title="Copy link to this section">#</button></h2>
 <p>All names in this table are invented test strings, not contacts or speaker-contact mappings. Lowercase inputs include the single space as a character. Values were computed with exact unit-cost Levenshtein dynamic programming.</p>
 <table>
 <thead>
@@ -176,7 +178,7 @@
 </tbody>
 </table>
 <p>Token overlap also has choices: set versus multiset, coverage of the shorter name versus both names, handling initials and repeated words. Accents, Unicode normalization, nicknames, transliteration and titles require an explicit policy rather than accidental behavior. Stripping punctuation is not universally harmless. No single score can remove these ambiguities.</p>
-<h2>What this note does not establish</h2>
+<h2 id="what-this-note-does-not-establish">What this note does not establish<button class="permalink" type="button" data-section="what-this-note-does-not-establish" aria-label="Copy link to this section" title="Copy link to this section">#</button></h2>
 <ul>
 <li>No implementation, integration, speed benchmark, production ranking quality or battery saving is claimed.</li>
 <li>No contact names, screenshots, private mappings or device logs were used in the published examples.</li>
@@ -185,7 +187,7 @@
 <li>The v1 proofs were read, not formally verified or independently rederived. Their 2022 statements about prior state of the art are not presented as current 2026 facts.</li>
 </ul>
 <p>For a short-name UI, start with a simple exact distance implementation and readable deterministic tiers, then test the result. The research paper matters because it shows how changing the error model changes both the distance and its computational difficulty, not because its most advanced algorithm must be used in a small contact list.</p>
-<h2>Sources and reading map</h2>
+<h2 id="sources-and-reading-map">Sources and reading map<button class="permalink" type="button" data-section="sources-and-reading-map" aria-label="Copy link to this section" title="Copy link to this section">#</button></h2>
 <ul>
 <li><a href="https://export.arxiv.org/pdf/2211.12496v1.pdf">Selected arXiv v1 PDF, 22 Nov 2022</a>: abstract and Section 1 for motivation and statements; Sections 2-3 for exact/approximate ED_a; Section 4 for approximate extension queries; Section 5 for the conditional lower bound; Appendix A for bicriteria algorithms.</li>
 <li><a href="https://arxiv.org/abs/2211.12496">arXiv record</a>: authors and version/publication context.</li>
@@ -197,4 +199,19 @@
 <p><a href="https://www.unicode.org/reports/tr15/">Unicode Standard Annex #15: Unicode Normalization Forms</a>: supplementary background for the application-design caution about normalization, not a human-name matching policy.</p>
 </li>
 </ul><footer><a href="https://github.com/irvan-putra/kaji/blob/main/docs/hamming-levenshtein-reading.md">Canonical note and history</a></footer></main><p class="ai-disclosure" style="font:12px/1.5 system-ui,sans-serif;text-align:center;padding:12px 16px;margin:20px auto;max-width:70ch">Built with AI assistance (Instinct and others). Not everything has been reviewed by Irvan.</p>
+<script>
+document.addEventListener("click", async (event) => {
+  const button = event.target.closest(".permalink");
+  if (!button) return;
+  const original = button.textContent;
+  const url = location.origin + location.pathname + "#" + button.dataset.section;
+  try {
+    await navigator.clipboard.writeText(url);
+    button.textContent = "Copied";
+  } catch {
+    button.textContent = "Copy failed";
+  }
+  window.setTimeout(() => { button.textContent = original; }, 1600);
+});
+</script>
 </html>

@@ -18,14 +18,33 @@ p.lead{color:var(--mu);margin:.3em 0 1em}a{color:var(--ac)}nav a{margin-right:14
 .btn.main{background:var(--ac);color:var(--bg)}code{font-size:.72rem;word-break:break-all;color:var(--mu)}
 [hidden]{display:none!important}.app-picker{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:8px;margin:12px 0 20px}.app-filter{font:inherit;font-size:.75rem;line-height:1.25;min-height:92px;padding:8px 3px;background:var(--card);color:var(--fg);border:1px solid var(--ln);border-radius:12px;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;overflow-wrap:anywhere}.app-filter img,.app-filter .ph{width:44px;height:44px;border-radius:10px}.app-filter[aria-pressed=true],.filter-toolbar .btn[aria-pressed=true]{border:2px solid var(--ac);background:color-mix(in srgb,var(--ac) 9%,var(--card))}.app-filter:focus-visible{outline:3px solid var(--ac);outline-offset:2px}.filter-toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.filter-toolbar p{margin:0;color:var(--mu);font-size:.85rem}.filter-toolbar .btn{font:inherit;cursor:pointer;background:var(--card);color:var(--ac)}
 footer{margin-top:2.4em;color:var(--mu);font-size:.85rem}
-ul.index{padding-left:1.2em}ul.index li{margin:5px 0}"""
+ul.index{padding-left:1.2em}ul.index li{margin:5px 0}
+h2 .permalink{margin-left:.55rem;padding:0 .4rem;border:1px solid transparent;border-radius:5px;background:none;color:var(--mu);font:inherit;font-size:.9rem;line-height:1.4;cursor:pointer;vertical-align:middle}
+h2 .permalink:hover,h2 .permalink:focus-visible{border-color:var(--ac);color:var(--ac)}"""
+PERMALINK_JS = """<script>
+document.addEventListener("click", async (event) => {
+  const button = event.target.closest(".permalink");
+  if (!button) return;
+  const original = button.textContent;
+  const url = location.origin + location.pathname + "#" + button.dataset.section;
+  try {
+    await navigator.clipboard.writeText(url);
+    button.textContent = "Copied";
+  } catch {
+    button.textContent = "Copy failed";
+  }
+  window.setTimeout(() => { button.textContent = original; }, 1600);
+});
+</script>"""
+def slug(s): return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-") or "section"
+def h2p(title_html, sid): return f'<h2 id="{sid}">{title_html}<button class="permalink" type="button" data-section="{sid}" aria-label="Copy link to this section" title="Copy link to this section">#</button></h2>'
 def page(title, lead, body, base):
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title><style>{CSS}</style></head><body><main>
 <nav><a href="{base}">kaji</a><a href="{base}apk/">apps</a><a href="{base}web/">web examples</a></nav>
 <h1>{e(title)}</h1><p class="lead">{lead}</p>{body}
 <footer>Public information only. Pages are maintained by Instinct (an AI assistant) from <a href="https://github.com/irvan-putra/kaji/tree/main/gallery">gallery/*.json</a>; each card states its status.<br>Built with AI assistance (Instinct and others). Not everything has been reviewed by Irvan.</footer>
-</main></body></html>"""
+</main>{PERMALINK_JS}</body></html>"""
 def btn(label, url, main=False): return f'<a class="btn{" main" if main else ""}" href="{e(url)}">{e(label)}</a>'
 def apps():
     d = json.loads((root/"gallery/apps.json").read_text())
@@ -33,7 +52,7 @@ def apps():
     unique = {}
     for a in d["apps"]:
         if a["name"] not in unique: unique[a["name"]] = a
-    out = '<section aria-label="Filter builds by app"><h2>Choose an app</h2><div class="filter-toolbar"><button class="btn" type="button" data-filter="" aria-pressed="true">All apps</button><p id="filter-status" role="status" aria-live="polite"></p></div><div class="app-picker">'
+    out = '<section aria-label="Filter builds by app">' + h2p("Choose an app", "choose-an-app") + '<div class="filter-toolbar"><button class="btn" type="button" data-filter="" aria-pressed="true">All apps</button><p id="filter-status" role="status" aria-live="polite"></p></div><div class="app-picker">'
     for name, a in unique.items():
         icon = f'<img src="icons/{e(a["icon"])}" alt="" width="44" height="44">' if a.get("icon") else f'<span class="ph" aria-hidden="true">{e(name[0])}</span>'
         out += f'<button class="app-filter" type="button" data-filter="{e(name)}" aria-pressed="false">{icon}<span>{e(a.get("display_name", name))}</span></button>'
@@ -41,7 +60,7 @@ def apps():
     for g, title in groups.items():
         items = [a for a in d["apps"] if a["state"] == g]
         if not items: continue
-        out += f"<section class='build-group'><h2>{e(title)}</h2><div class='grid'>"
+        out += f"<section class='build-group'>" + h2p(e(title), slug(title)) + "<div class='grid'>"
         for a in items:
             icon = f'<img src="icons/{e(a["icon"])}" alt="{e(a.get("display_name", a["name"]))} launcher icon" width="64" height="64">' if a.get("icon") else f'<div class="ph" aria-hidden="true">{e(a["name"][0])}</div>'
             ver = f' {e(a["version"])}' if a.get("version") else ""
@@ -64,7 +83,7 @@ def web():
                 raise ValueError("Missing GitHub source for " + item["name"])
     out = ""
     for sec in d["sections"]:
-        out += f'<h2>{e(sec["title"])}</h2><div class="grid">'
+        out += h2p(e(sec["title"]), slug(sec["title"])) + '<div class="grid">'
         for w in sec["items"]:
             b = btn("Open", w["url"], True) + (btn("Source", w["source"]) if w.get("source") else "")
             if w.get("android"): b += btn("Android test release", w["android"])
@@ -85,8 +104,8 @@ def notes():
     return "".join(f'<li><a href="{e(u)}">{e(t)}</a></li>' for t, u in out)
 def home():
     body = "<div class='grid'><div class='card'><h3>Apps</h3><p>APK downloads, icons and status for every Android app.</p><div>" + btn("Open", "apk/", True) + "</div></div><div class='card'><h3>Web examples</h3><p>Animate, the cook recipe boxes, Indomie, charts and concept pages.</p><div>" + btn("Open", "web/", True) + "</div></div><div class='card'><h3>Research notes</h3><p>Cross-project notes in the repository.</p><div>" + btn("Read", "https://github.com/irvan-putra/kaji#notes") + "</div></div></div>"
-    body += '<h2>Notes and pages</h2><ul class="index">' + notes() + "</ul>"
-    body += ('<h2>Examples</h2><ul class="index">'
+    body += h2p("Notes and pages", "notes-and-pages") + '<ul class="index">' + notes() + "</ul>"
+    body += (h2p("Examples", "examples") + '<ul class="index">'
              '<li><a href="indomie/">Indomie Mi Goreng: the customizable recipe box</a></li>'
              '<li><a href="cook/">Kaji cook: customizable recipe boxes</a></li>'
              '<li><a href="economics-synthetic/">Cash and time: synthetic break-even charts</a></li>'
