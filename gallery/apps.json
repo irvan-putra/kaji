@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-24",
+ "checked": "2026-11-27",
  "apps": [
   {
    "name": "simak",
@@ -651,9 +651,21 @@
   },
   {
    "name": "kokok",
-   "version": "0.2.3",
+   "version": "0.3.0",
    "state": "available",
    "icon": "kokok.png",
+   "tag": "Recurring feed reminders with again/done actions",
+   "about": "Adds feed-driven recurring reminders: phone-local HH:mm time, optional ISO weekday filter, daily by default. They notify with \"again in N min\" (default 60) and \"done\" actions; swiping the notification away also brings it back in N min. An optional per-reminder ring flag hands the occurrence to the full kokok ringer. A done occurrence never re-fires; a reminder found late fires immediately, same day only; reminders resume after the first unlock following a reboot and never claim the status-bar next-alarm slot. Alarms, pairing and feed security rules unchanged; no new permissions. Unit tests cover recurrence, weekday filter, done/again and invalid-input rejection (64 tests); CI re-verified the emulator alarm flow. Physical-phone reminder notification behavior is unverified. Same release signer. Update in place, never uninstall or clear data.",
+   "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.3.0/kokok-v0.3.0.apk",
+   "release": "https://github.com/irvan-putra/kokok/releases/tag/v0.3.0",
+   "repo": "https://github.com/irvan-putra/kokok/commit/42fefe86d70a24058b385965d8c965e77bc31e94",
+   "sha256": "51a0db2562a2377532e1020680eda7896e9974d4f5622cb54264932910053b96"
+  },
+  {
+   "name": "kokok",
+   "version": "0.2.3",
+   "state": "legacy",
+   "icon": "kokok-0.2.3.png",
    "tag": "Single launcher icon release",
    "about": "Same app as 0.2.2 with one 192px launcher icon (no density variants) and the 0.2.3 badge. Same package and release signer; update in place without uninstalling or clearing data. No feature changes.",
    "apk": "https://github.com/irvan-putra/kokok/releases/download/v0.2.3/kokok-v0.2.3.apk",
