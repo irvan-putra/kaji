@@ -1,0 +1,40 @@
+name: Check section permalinks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - 'examples/**'
+      - 'gallery/**'
+      - 'tools/**'
+      - '.github/workflows/check-section-permalinks.yml'
+  pull_request:
+    paths:
+      - 'site/**'
+      - 'examples/**'
+      - 'gallery/**'
+      - 'tools/**'
+      - '.github/workflows/check-section-permalinks.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  section-permalinks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v6
+      - name: Check generated pages are up to date
+        run: |
+          python3 tools/build_gallery.py
+          python3 tools/build_honesty.py
+          if ! git diff --quiet; then
+            git --no-pager diff --stat
+            echo 'Generated pages are stale: run python3 tools/build_gallery.py and python3 tools/build_honesty.py, then commit the result.' >&2
+            exit 1
+          fi
+      - name: Check every section heading has a copy-permalink button
+        run: python3 tools/check_section_permalinks.py
