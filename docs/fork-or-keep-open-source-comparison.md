@@ -66,7 +66,7 @@ kunjung, suaka, pustaka, kaji, kaca, gotong, mimpi, anyam, jejak, naga, kaidah, 
 
 ## Legacy forks and pre-2026 sites (7, not examined)
 
-bitstarter, PL101ProjectTemplate, adaptechid, haskell-intro, vnproject.id, irvan-putra, irvan-putra.github.io. Old forks and sites, left as they are; no archiving suggested.
+monoton, PL101ProjectTemplate, adaptek, haskell-intro, vnproject.id, irvan-putra, irvan-putra.github.io. Old forks and sites, left as they are; no archiving suggested.
 
 ## Read me first
 
