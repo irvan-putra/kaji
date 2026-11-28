@@ -3,11 +3,23 @@
  "apps": [
   {
    "name": "pantau",
-   "version": "0.1.0",
+   "version": "0.1.1",
    "state": "available",
+   "icon": "pantau-0.1.1.png",
+   "tag": "AI summary removed: no code path calls an AI provider",
+   "about": "Delivered 28 Nov 18:36. Second pantau build, made at Irvan's request to remove the optional AI summary (it called OpenAI or Anthropic with a user-pasted key). The AI summary view, its LLM client, nav entry, route and strings are gone, and the webview's CSP no longer allows api.openai.com or api.anthropic.com. Nothing else changed from 0.1.0: still a fork of ActivityWatch/aw-android (upstream 0.14.4b1) with its own identity, application ID com.vanipy.pantau, full pantau rename, MPL-2.0 and attribution intact; upstream's daily release check, satisfaction poll and donation prompts remain removed, and folder sync is opt-in. Launcher icon strip now reads 0.1.1. Built, signed with the pantau test key and published by CI (run 46139867870). Built and signed in CI, not yet installed or verified on a device.",
+   "apk": "https://github.com/irvan-putra/pantau/releases/download/v0.1.1/pantau-v0.1.1.apk",
+   "release": "https://github.com/irvan-putra/pantau/releases/tag/v0.1.1",
+   "repo": "https://github.com/irvan-putra/pantau/commit/31b93ac0f4f4dcdf06f1109977bee73e7d9c9052",
+   "sha256": "cccca754185efc046622ea5d3b3bccb458015fd33ee0f8b5719c2c24fcecde4e"
+  },
+  {
+   "name": "pantau",
+   "version": "0.1.0",
+   "state": "legacy",
    "icon": "pantau-0.1.0.png",
    "tag": "First pantau build: full ActivityWatch-to-pantau rename, own art and version line",
-   "about": "Delivered 28 Nov 13:02. First pantau release: a fork of ActivityWatch/aw-android (upstream 0.14.4b1) with its own identity: app name pantau, application ID com.vanipy.pantau, original concept-C art with the 0.1.0 strip, system fonts. Full rename: Kotlin package, Rust crates and JNI libs (libpantau_server/libpantau_sync), bucket ids pantau-watcher-android*, on-device data dirs pantau/pantau-sync/pantau-server, webui identifiers, settings key pantau-notify. Upstream's daily release check, satisfaction poll, supporter nudge and donation CTAs removed; no automatic outbound calls remain in source (folder sync is opt-in). The optional AI summary, which called OpenAI or Anthropic with a user-pasted key, was removed from source on main in 6b9852a at Irvan's request; this v0.1.0 APK was built before that and still contains it, so the next build will drop it. Vendored pantau-server and pantau-webui with origins and commits in VENDORED.md; MPL-2.0 and attribution intact. CI run 46113642997 built the Rust JNI libs, assembled and signed the APK with the pantau test key; the hash below is GitHub's per-asset digest of the published file. Built and signed in CI, not yet installed or verified on a device; the JNI symbol rename is verified at compile/link level only.",
+   "about": "Historical 0.1.0, superseded by 0.1.1 (AI summary removed). This APK still contains the optional AI summary that called OpenAI or Anthropic with a user-pasted key. Delivered 28 Nov 13:02. First pantau release: a fork of ActivityWatch/aw-android (upstream 0.14.4b1) with its own identity: app name pantau, application ID com.vanipy.pantau, original concept-C art with the 0.1.0 strip, system fonts. Full rename: Kotlin package, Rust crates and JNI libs (libpantau_server/libpantau_sync), bucket ids pantau-watcher-android*, on-device data dirs pantau/pantau-sync/pantau-server, webui identifiers, settings key pantau-notify. Upstream's daily release check, satisfaction poll, supporter nudge and donation CTAs removed; no automatic outbound calls remain in source (folder sync is opt-in). The optional AI summary, which called OpenAI or Anthropic with a user-pasted key, was removed from source on main in 6b9852a at Irvan's request; this v0.1.0 APK was built before that and still contains it, so the next build will drop it. Vendored pantau-server and pantau-webui with origins and commits in VENDORED.md; MPL-2.0 and attribution intact. CI run 46113642997 built the Rust JNI libs, assembled and signed the APK with the pantau test key; the hash below is GitHub's per-asset digest of the published file. Built and signed in CI, not yet installed or verified on a device; the JNI symbol rename is verified at compile/link level only.",
    "apk": "https://github.com/irvan-putra/pantau/releases/download/v0.1.0/pantau-v0.1.0.apk",
    "release": "https://github.com/irvan-putra/pantau/releases/tag/v0.1.0",
    "repo": "https://github.com/irvan-putra/pantau/commit/81016af468beba412c5ad1447b6b1c5036417684",
